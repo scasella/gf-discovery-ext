@@ -1,0 +1,13 @@
+  pilot L7 K=64 ica=16 pca=32: paren F1 0.025 (null 0.031) AUC 0.500 (null 0.500) rec=False | quote rec=False
+  pilot L7 K=64 ica=16 pca=64: paren F1 0.037 (null 0.041) AUC 0.500 (null 0.500) rec=False | quote rec=False
+  pilot L7 K=64 ica=32 pca=32: paren F1 0.025 (null 0.031) AUC 0.500 (null 0.500) rec=False | quote rec=False
+  pilot L7 K=64 ica=32 pca=64: paren F1 0.037 (null 0.041) AUC 0.500 (null 0.500) rec=False | quote rec=False
+  pilot L7 K=128 ica=16 pca=32: paren F1 0.000 (null 0.000) AUC 0.500 (null 0.500) rec=False | quote rec=False
+  pilot L7 K=128 ica=16 pca=64: paren F1 0.033 (null 0.034) AUC 0.500 (null 0.500) rec=False | quote rec=False
+  pilot L7 K=128 ica=32 pca=32: paren F1 0.000 (null 0.000) AUC 0.500 (null 0.500) rec=False | quote rec=False
+  pilot L7 K=128 ica=32 pca=64: paren F1 0.033 (null 0.034) AUC 0.500 (null 0.500) rec=False | quote rec=False
+  pilot L7 K=256 ica=16 pca=32: paren F1 0.000 (null 0.000) AUC 0.500 (null 0.500) rec=False | quote rec=False
+  pilot L7 K=256 ica=16 pca=64: paren F1 0.000 (null 0.000) AUC 0.500 (null 0.500) rec=False | quote rec=False
+  pilot L7 K=256 ica=32 pca=32: paren F1 0.000 (null 0.000) AUC 0.500 (null 0.500) rec=False | quote rec=False
+  pilot L7 K=256 ica=32 pca=64: paren F1 0.000 (null 0.000) AUC 0.500 (null 0.500) rec=False | quote rec=False
+CHOSEN {'K': 128, 'N_ICA': 32, 'N_PCA': 64, 'n_layers_recovered': 0, 'note': 'no setting recovered on P: section-5 defaults used'}

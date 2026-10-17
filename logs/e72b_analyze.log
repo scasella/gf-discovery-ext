@@ -1,0 +1,15 @@
+[watchdog] start 22:14:48 swap 0.30 GB limit 12.0 GB cmd .venv/bin/python -u scripts/e72b_shuffle_null.py --phase analyze
+e72b sha256 55c4c3fa19d6d1a39bf76b9157428f195c91e2775297101d399d8e60f2911e02 
+[1s] swap 0.3 GB
+[43s] occS2: rows 202866 FVU 0.430 random max 0.798; above max {'logcosh': 5, 'skew': 5}; SCREENED above max s = 0 (of 35 screened); lead-rule count 0; skew/49 pct 0.5088
+[43s] S2 reproduction {'checks': {'n_rows': True, 'logcosh_n_above_max': True, 'logcosh_n_screened_above_max': True, 'logcosh_n_screened': True, 'skew_n_above_max': True, 'skew_n_screened_above_max': True, 'skew_n_screened': True, 'random_max': True, 'random_p50': True, 'skew49_es': True, 'skew49_pct': True}, 'all_ok': True, 'unit_es_quantiles_max_abs_diff': 0.0}
+[80s] occS2b1: rows 202843 FVU 0.431 random max 0.798; above max {'logcosh': 6, 'skew': 6}; SCREENED above max s = 2 (of 42 screened); lead-rule count 1; skew/49 pct 0.5304
+[115s] occS2b2: rows 202815 FVU 0.429 random max 0.772; above max {'logcosh': 6, 'skew': 10}; SCREENED above max s = 2 (of 42 screened); lead-rule count 1; skew/49 pct 0.4908
+[150s] occS2b3: rows 202839 FVU 0.431 random max 0.771; above max {'logcosh': 13, 'skew': 11}; SCREENED above max s = 1 (of 33 screened); lead-rule count 1; skew/49 pct 0.5795
+[186s] occS2b4: rows 202818 FVU 0.431 random max 0.786; above max {'logcosh': 8, 'skew': 4}; SCREENED above max s = 1 (of 38 screened); lead-rule count 1; skew/49 pct 0.4986
+[221s] occS2b5: rows 202870 FVU 0.429 random max 0.800; above max {'logcosh': 2, 'skew': 4}; SCREENED above max s = 0 (of 35 screened); lead-rule count 0; skew/49 pct 0.5025
+HASHES += ae0dd186dece50d1da677cb71beca1a53ced4f50c0684dcbc5ffcbbbd5cd7f2c  results/e72b_null_arrays.npz (e72b analyze: per-set random-direction ES and unit ES, 2026-10-16T22:18:30)
+HASHES += c67f234c171093ffb02d8249bddbe0596a72fe44244952ac749fc544c5189074  results/e72b_null.json (e72b analyze: shuffle null, s = [2, 2, 1, 1, 0], reading INDETERMINATE, 2026-10-16T22:18:30)
+[221s] ANALYZE done; s = [2, 2, 1, 1, 0]; reading INDETERMINATE
+
+[watchdog] exit 0 at 22:18:31; peak swap 0.30 GB

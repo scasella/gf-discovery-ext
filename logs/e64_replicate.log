@@ -1,0 +1,3 @@
+L7 R2: controls replicated [True, True] candidates replicated 23/40 KIR 16.6
+L12 R2: controls replicated [True, True, True, True] candidates replicated 33/51 KIR 11.8
+HASHES += b781ea197bb10752133ad570b04b974b0300bf068d1387137fde339ab31b423f  results/e64_replicate.json (e64 R2 replication, 2026-10-15T13:25:03)

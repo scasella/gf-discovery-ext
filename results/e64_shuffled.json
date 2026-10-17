@@ -1,0 +1,4073 @@
+{
+ "layers": {
+  "7": {
+   "presence": {
+    "logcosh/0": {
+     "match": 62,
+     "cos": 0.2830771464247427,
+     "context_generic": false
+    },
+    "logcosh/3": {
+     "match": 38,
+     "cos": 0.3095031282551024,
+     "context_generic": false
+    },
+    "logcosh/5": {
+     "match": 4,
+     "cos": 0.30931723999029204,
+     "context_generic": false
+    },
+    "logcosh/6": {
+     "match": 31,
+     "cos": 0.28790907330064086,
+     "context_generic": false
+    },
+    "logcosh/8": {
+     "match": 47,
+     "cos": 0.39045724504311985,
+     "context_generic": false
+    },
+    "logcosh/11": {
+     "match": 54,
+     "cos": 0.540905484913243,
+     "context_generic": false
+    },
+    "logcosh/12": {
+     "match": 32,
+     "cos": 0.3712133119740476,
+     "context_generic": false
+    },
+    "logcosh/13": {
+     "match": 13,
+     "cos": 0.3752100903566564,
+     "context_generic": false
+    },
+    "logcosh/14": {
+     "match": 18,
+     "cos": 0.30778373171312834,
+     "context_generic": false
+    },
+    "logcosh/15": {
+     "match": 37,
+     "cos": 0.514779311402406,
+     "context_generic": false
+    },
+    "logcosh/16": {
+     "match": 41,
+     "cos": 0.4255671281122864,
+     "context_generic": false
+    },
+    "logcosh/18": {
+     "match": 39,
+     "cos": 0.3592295943916627,
+     "context_generic": false
+    },
+    "logcosh/23": {
+     "match": 48,
+     "cos": 0.5323798848893257,
+     "context_generic": false
+    },
+    "logcosh/27": {
+     "match": 55,
+     "cos": 0.7151444244740603,
+     "context_generic": false
+    },
+    "logcosh/28": {
+     "match": 3,
+     "cos": 0.7723941080667791,
+     "context_generic": false
+    },
+    "logcosh/29": {
+     "match": 28,
+     "cos": 0.33612014162765735,
+     "context_generic": false
+    },
+    "logcosh/30": {
+     "match": 38,
+     "cos": 0.3765161540879024,
+     "context_generic": false
+    },
+    "logcosh/31": {
+     "match": 13,
+     "cos": 0.42791435170001696,
+     "context_generic": false
+    },
+    "logcosh/33": {
+     "match": 17,
+     "cos": 0.42496687859204507,
+     "context_generic": false
+    },
+    "logcosh/34": {
+     "match": 26,
+     "cos": 0.8488430727955436,
+     "context_generic": true
+    },
+    "logcosh/35": {
+     "match": 42,
+     "cos": 0.7772105857654488,
+     "context_generic": false
+    },
+    "logcosh/36": {
+     "match": 57,
+     "cos": 0.553869947845961,
+     "context_generic": false
+    },
+    "logcosh/37": {
+     "match": 44,
+     "cos": 0.8265799394104727,
+     "context_generic": true
+    },
+    "logcosh/38": {
+     "match": 8,
+     "cos": 0.4286243864488652,
+     "context_generic": false
+    },
+    "logcosh/41": {
+     "match": 19,
+     "cos": 0.4269061489305498,
+     "context_generic": false
+    },
+    "logcosh/42": {
+     "match": 4,
+     "cos": 0.467551651729336,
+     "context_generic": false
+    },
+    "logcosh/49": {
+     "match": 17,
+     "cos": 0.3267955976053274,
+     "context_generic": false
+    },
+    "logcosh/50": {
+     "match": 53,
+     "cos": 0.33056145467017706,
+     "context_generic": false
+    },
+    "logcosh/52": {
+     "match": 2,
+     "cos": 0.2798623385787352,
+     "context_generic": false
+    },
+    "logcosh/53": {
+     "match": 15,
+     "cos": 0.5225520572239244,
+     "context_generic": false
+    },
+    "logcosh/54": {
+     "match": 16,
+     "cos": 0.7655828849455054,
+     "context_generic": false
+    },
+    "logcosh/55": {
+     "match": 18,
+     "cos": 0.49090580159984193,
+     "context_generic": false
+    },
+    "logcosh/56": {
+     "match": 0,
+     "cos": 0.6340173699824304,
+     "context_generic": false
+    },
+    "logcosh/57": {
+     "match": 43,
+     "cos": 0.2864099643596326,
+     "context_generic": false
+    },
+    "logcosh/60": {
+     "match": 27,
+     "cos": 0.3991199518421755,
+     "context_generic": false
+    },
+    "skew/0": {
+     "match": 30,
+     "cos": 0.4606675800090023,
+     "context_generic": false
+    },
+    "skew/3": {
+     "match": 16,
+     "cos": 0.6562254647670936,
+     "context_generic": false
+    },
+    "skew/8": {
+     "match": 61,
+     "cos": 0.3739535071188582,
+     "context_generic": false
+    },
+    "skew/16": {
+     "match": 27,
+     "cos": 0.8548048957727562,
+     "context_generic": true
+    },
+    "skew/18": {
+     "match": 26,
+     "cos": 0.46994533971573454,
+     "context_generic": false
+    },
+    "skew/21": {
+     "match": 35,
+     "cos": 0.7971967270187705,
+     "context_generic": false
+    },
+    "skew/23": {
+     "match": 51,
+     "cos": 0.3241116989902777,
+     "context_generic": false
+    },
+    "skew/24": {
+     "match": 39,
+     "cos": 0.5182047878183356,
+     "context_generic": false
+    },
+    "skew/25": {
+     "match": 58,
+     "cos": 0.3301206477490895,
+     "context_generic": false
+    },
+    "skew/27": {
+     "match": 15,
+     "cos": 0.5194489701878124,
+     "context_generic": false
+    },
+    "skew/28": {
+     "match": 60,
+     "cos": 0.8556026185077257,
+     "context_generic": true
+    },
+    "skew/29": {
+     "match": 14,
+     "cos": 0.7179169339784542,
+     "context_generic": false
+    },
+    "skew/31": {
+     "match": 53,
+     "cos": 0.35921845210386105,
+     "context_generic": false
+    },
+    "skew/32": {
+     "match": 21,
+     "cos": 0.4500099509183399,
+     "context_generic": false
+    },
+    "skew/33": {
+     "match": 25,
+     "cos": 0.3009200573742462,
+     "context_generic": false
+    },
+    "skew/34": {
+     "match": 26,
+     "cos": 0.5874092363361676,
+     "context_generic": false
+    },
+    "skew/35": {
+     "match": 58,
+     "cos": 0.49715831595932475,
+     "context_generic": false
+    },
+    "skew/36": {
+     "match": 47,
+     "cos": 0.3389439511505944,
+     "context_generic": false
+    },
+    "skew/37": {
+     "match": 32,
+     "cos": 0.737763482540571,
+     "context_generic": false
+    },
+    "skew/38": {
+     "match": 57,
+     "cos": 0.3635826145504994,
+     "context_generic": false
+    },
+    "skew/39": {
+     "match": 49,
+     "cos": 0.5078608247105185,
+     "context_generic": false
+    },
+    "skew/41": {
+     "match": 6,
+     "cos": 0.3466885730226918,
+     "context_generic": false
+    },
+    "skew/46": {
+     "match": 5,
+     "cos": 0.5030354493686743,
+     "context_generic": false
+    },
+    "skew/48": {
+     "match": 31,
+     "cos": 0.5215294616765992,
+     "context_generic": false
+    },
+    "skew/49": {
+     "match": 13,
+     "cos": 0.4477119545753615,
+     "context_generic": false
+    },
+    "skew/51": {
+     "match": 50,
+     "cos": 0.7496035981431406,
+     "context_generic": false
+    },
+    "skew/57": {
+     "match": 46,
+     "cos": 0.37725878402707774,
+     "context_generic": false
+    },
+    "skew/58": {
+     "match": 54,
+     "cos": 0.40456769705228623,
+     "context_generic": false
+    },
+    "skew/59": {
+     "match": 16,
+     "cos": 0.3663646868276407,
+     "context_generic": false
+    },
+    "skew/62": {
+     "match": 24,
+     "cos": 0.5996916183191998,
+     "context_generic": false
+    }
+   },
+   "s2_yield": {
+    "logcosh": {
+     "n_screened": 27,
+     "n_screened_battery_unnamed": 15,
+     "fit_failed": false
+    },
+    "skew": {
+     "n_screened": 25,
+     "n_screened_battery_unnamed": 19,
+     "fit_failed": false
+    }
+   },
+   "kir": 25.92902583141475,
+   "chance_cos_p999": {
+    "logcosh": 0.5047759697080796,
+    "skew": 0.49790093331142105
+   },
+   "units": {
+    "logcosh": [
+     {
+      "kind": "ica_logcosh",
+      "id": 0,
+      "bimodality": 0.14194528758525848,
+      "eta2_token": 1.6471274053860247e-16,
+      "eta2_token_sq": 0.07527112702006834,
+      "eta2_token_abs": 0.11698628926629369,
+      "repro": 0.8289067149162292,
+      "skew": -0.38044431805610657,
+      "ex_kurtosis": 5.5885467529296875,
+      "screened": true,
+      "named": true,
+      "named_by": [
+       "after_digit",
+       "word_continuation"
+      ]
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 1,
+      "bimodality": 0.18550565838813782,
+      "eta2_token": 1.1360856325305917e-15,
+      "eta2_token_sq": 0.17838424653007523,
+      "eta2_token_abs": 0.17698100451233864,
+      "repro": 0.9600138664245605,
+      "skew": 0.0512748584151268,
+      "ex_kurtosis": 2.3214197158813477,
+      "screened": true,
+      "named": false,
+      "named_by": []
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 2,
+      "bimodality": 0.14571435749530792,
+      "eta2_token": 3.783104901194677e-16,
+      "eta2_token_sq": 0.11724886901557607,
+      "eta2_token_abs": 0.11348322916604846,
+      "repro": 0.4618372619152069,
+      "skew": 0.0048174480907619,
+      "ex_kurtosis": 3.3829503059387207,
+      "screened": false
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 3,
+      "bimodality": 0.31890085339546204,
+      "eta2_token": 5.833068295751239e-16,
+      "eta2_token_sq": 0.04460299810188306,
+      "eta2_token_abs": 0.07813940837293139,
+      "repro": 0.9914915561676025,
+      "skew": -1.4782047271728516,
+      "ex_kurtosis": 6.6639604568481445,
+      "screened": true,
+      "named": false,
+      "named_by": []
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 4,
+      "bimodality": 0.2588883638381958,
+      "eta2_token": 1.424630825837749e-16,
+      "eta2_token_sq": 0.12343224061610628,
+      "eta2_token_abs": 0.25376462036201625,
+      "repro": 0.984731912612915,
+      "skew": -2.3957865238189697,
+      "ex_kurtosis": 22.61119842529297,
+      "screened": true,
+      "named": true,
+      "named_by": [
+       "after_newline",
+       "prev_punct"
+      ]
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 5,
+      "bimodality": 0.20478002727031708,
+      "eta2_token": 5.910705178415612e-16,
+      "eta2_token_sq": 0.07481582000212986,
+      "eta2_token_abs": 0.10000636529989501,
+      "repro": 0.6479606628417969,
+      "skew": -0.12563420832157135,
+      "ex_kurtosis": 2.191926956176758,
+      "screened": false
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 6,
+      "bimodality": 0.14791272580623627,
+      "eta2_token": 3.7557826398767605e-16,
+      "eta2_token_sq": 0.09983547371036641,
+      "eta2_token_abs": 0.11532321898449564,
+      "repro": 0.29414576292037964,
+      "skew": -0.04268636927008629,
+      "ex_kurtosis": 4.066345691680908,
+      "screened": false
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 7,
+      "bimodality": 0.12671074271202087,
+      "eta2_token": 2.9646312065506247e-16,
+      "eta2_token_sq": 0.08848880895058399,
+      "eta2_token_abs": 0.13726065924845693,
+      "repro": 0.9176531434059143,
+      "skew": 0.8913373947143555,
+      "ex_kurtosis": 10.802353858947754,
+      "screened": true,
+      "named": false,
+      "named_by": []
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 8,
+      "bimodality": 0.21699504554271698,
+      "eta2_token": 2.2153392432418812e-16,
+      "eta2_token_sq": 0.06108446356338329,
+      "eta2_token_abs": 0.13656164006226806,
+      "repro": 0.9877699017524719,
+      "skew": -1.8920857906341553,
+      "ex_kurtosis": 17.23287010192871,
+      "screened": true,
+      "named": true,
+      "named_by": [
+       "after_newline",
+       "word_continuation"
+      ]
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 9,
+      "bimodality": 0.14627596735954285,
+      "eta2_token": 3.372093003779178e-16,
+      "eta2_token_sq": 0.0862630731335885,
+      "eta2_token_abs": 0.11757252876263632,
+      "repro": 0.6262652277946472,
+      "skew": -0.4069834053516388,
+      "ex_kurtosis": 4.86787748336792,
+      "screened": false
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 10,
+      "bimodality": 0.1694013476371765,
+      "eta2_token": 3.3296478832602983e-16,
+      "eta2_token_sq": 0.09922288982583524,
+      "eta2_token_abs": 0.13066818856129736,
+      "repro": 0.8440590500831604,
+      "skew": 0.2424900084733963,
+      "ex_kurtosis": 3.3558530807495117,
+      "screened": true,
+      "named": false,
+      "named_by": []
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 11,
+      "bimodality": 0.12913911044597626,
+      "eta2_token": 3.1687156766156944e-16,
+      "eta2_token_sq": 0.09724053176607379,
+      "eta2_token_abs": 0.12139057929845946,
+      "repro": 0.4754887521266937,
+      "skew": -0.022342391312122345,
+      "ex_kurtosis": 4.509657859802246,
+      "screened": false
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 12,
+      "bimodality": 0.1424633264541626,
+      "eta2_token": 2.636616039619393e-16,
+      "eta2_token_sq": 0.21288380003065688,
+      "eta2_token_abs": 0.248014505583529,
+      "repro": 0.9764809608459473,
+      "skew": 0.47074654698371887,
+      "ex_kurtosis": 5.883054733276367,
+      "screened": true,
+      "named": false,
+      "named_by": []
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 13,
+      "bimodality": 0.21065519750118256,
+      "eta2_token": 6.414392139646201e-16,
+      "eta2_token_sq": 0.0704968794263631,
+      "eta2_token_abs": 0.0837665126430173,
+      "repro": 0.36712390184402466,
+      "skew": -0.1760396957397461,
+      "ex_kurtosis": 1.9525232315063477,
+      "screened": false
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 14,
+      "bimodality": 0.16006703674793243,
+      "eta2_token": 2.9896884404376723e-16,
+      "eta2_token_sq": 0.18935221458367338,
+      "eta2_token_abs": 0.21103277730753053,
+      "repro": 0.977279782295227,
+      "skew": 0.177510604262352,
+      "ex_kurtosis": 3.4773974418640137,
+      "screened": true,
+      "named": true,
+      "named_by": [
+       "after_digit"
+      ]
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 15,
+      "bimodality": 0.2245270162820816,
+      "eta2_token": 4.823932055814241e-16,
+      "eta2_token_sq": 0.07053596472396834,
+      "eta2_token_abs": 0.08013168062756362,
+      "repro": 0.3542341887950897,
+      "skew": -0.09886280447244644,
+      "ex_kurtosis": 1.6394367218017578,
+      "screened": false
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 16,
+      "bimodality": 0.34074991941452026,
+      "eta2_token": 2.390315373467414e-16,
+      "eta2_token_sq": 0.026937686624821752,
+      "eta2_token_abs": 0.07345187513454951,
+      "repro": 0.9957785606384277,
+      "skew": -2.120105743408203,
+      "ex_kurtosis": 13.884944915771484,
+      "screened": true,
+      "named": false,
+      "named_by": []
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 17,
+      "bimodality": 0.1199195384979248,
+      "eta2_token": 2.7720286610419856e-16,
+      "eta2_token_sq": 0.05483518617634925,
+      "eta2_token_abs": 0.11368103499287575,
+      "repro": 0.8183262944221497,
+      "skew": 0.6825087070465088,
+      "ex_kurtosis": 9.007729530334473,
+      "screened": true,
+      "named": true,
+      "named_by": [
+       "word_continuation"
+      ]
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 18,
+      "bimodality": 0.1893520951271057,
+      "eta2_token": 3.8369969476740373e-16,
+      "eta2_token_sq": 0.0598557452223384,
+      "eta2_token_abs": 0.07869523286907355,
+      "repro": 0.5490656495094299,
+      "skew": 0.1895902454853058,
+      "ex_kurtosis": 2.6476974487304688,
+      "screened": false
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 19,
+      "bimodality": 0.17943206429481506,
+      "eta2_token": 5.168164135873052e-16,
+      "eta2_token_sq": 0.08756450751237213,
+      "eta2_token_abs": 0.1096322468729658,
+      "repro": 0.4421384632587433,
+      "skew": 0.10129766166210175,
+      "ex_kurtosis": 2.6623620986938477,
+      "screened": false
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 20,
+      "bimodality": 0.18066036701202393,
+      "eta2_token": 5.729321250953117e-16,
+      "eta2_token_sq": 0.0668813373152918,
+      "eta2_token_abs": 0.0874735404488786,
+      "repro": 0.4923710823059082,
+      "skew": 0.012311318889260292,
+      "ex_kurtosis": 2.4125027656555176,
+      "screened": false
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 21,
+      "bimodality": 0.12617206573486328,
+      "eta2_token": 2.62305655786088e-16,
+      "eta2_token_sq": 0.17895663373233456,
+      "eta2_token_abs": 0.2249341651042323,
+      "repro": 0.991855263710022,
+      "skew": -0.30370262265205383,
+      "ex_kurtosis": 5.987577438354492,
+      "screened": true,
+      "named": false,
+      "named_by": []
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 22,
+      "bimodality": 0.22065310180187225,
+      "eta2_token": 2.884302664264874e-16,
+      "eta2_token_sq": 0.06908311269533346,
+      "eta2_token_abs": 0.07908600133030462,
+      "repro": 0.4592636525630951,
+      "skew": 0.07006454467773438,
+      "ex_kurtosis": 1.7178192138671875,
+      "screened": false
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 23,
+      "bimodality": 0.20042270421981812,
+      "eta2_token": 3.1602290825421717e-16,
+      "eta2_token_sq": 0.08549923615622348,
+      "eta2_token_abs": 0.09365387541144035,
+      "repro": 0.48580825328826904,
+      "skew": -0.2604244351387024,
+      "ex_kurtosis": 2.936168670654297,
+      "screened": false
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 24,
+      "bimodality": 0.18722738325595856,
+      "eta2_token": 2.8816572730468424e-16,
+      "eta2_token_sq": 0.09758541546483968,
+      "eta2_token_abs": 0.12309632922211017,
+      "repro": 0.6519263982772827,
+      "skew": -0.44399452209472656,
+      "ex_kurtosis": 3.624300003051758,
+      "screened": false
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 25,
+      "bimodality": 0.11195763945579529,
+      "eta2_token": 2.791167466820767e-16,
+      "eta2_token_sq": 0.1743774028818801,
+      "eta2_token_abs": 0.21332489714014477,
+      "repro": 0.8676478266716003,
+      "skew": 0.37325671315193176,
+      "ex_kurtosis": 6.801909446716309,
+      "screened": true,
+      "named": false,
+      "named_by": []
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 26,
+      "bimodality": 0.2244722992181778,
+      "eta2_token": 5.240040687354832e-16,
+      "eta2_token_sq": 0.05318735522945266,
+      "eta2_token_abs": 0.06498948875093702,
+      "repro": 0.9878734350204468,
+      "skew": 0.33848682045936584,
+      "ex_kurtosis": 1.7806940078735352,
+      "screened": true,
+      "named": true,
+      "named_by": [
+       "after_digit"
+      ]
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 27,
+      "bimodality": 0.1640377789735794,
+      "eta2_token": 3.166287636395875e-16,
+      "eta2_token_sq": 0.08560169971349188,
+      "eta2_token_abs": 0.10738108334187718,
+      "repro": 0.47754228115081787,
+      "skew": 0.07741349935531616,
+      "ex_kurtosis": 3.2742919921875,
+      "screened": false
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 28,
+      "bimodality": 0.20144928991794586,
+      "eta2_token": 4.573443856139162e-16,
+      "eta2_token_sq": 0.07042098628004494,
+      "eta2_token_abs": 0.08757074471013584,
+      "repro": 0.3792433440685272,
+      "skew": 0.053279291838407516,
+      "ex_kurtosis": 2.241523265838623,
+      "screened": false
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 29,
+      "bimodality": 0.2133801281452179,
+      "eta2_token": 5.0135309213466805e-16,
+      "eta2_token_sq": 0.0843277673972187,
+      "eta2_token_abs": 0.0932274268517882,
+      "repro": 0.40386030077934265,
+      "skew": -0.022824695333838463,
+      "ex_kurtosis": 1.780470848083496,
+      "screened": false
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 30,
+      "bimodality": 0.14160293340682983,
+      "eta2_token": 3.4949930736466444e-16,
+      "eta2_token_sq": 0.06725464317312566,
+      "eta2_token_abs": 0.1003650694361883,
+      "repro": 0.41913142800331116,
+      "skew": -0.43086862564086914,
+      "ex_kurtosis": 5.285060882568359,
+      "screened": false
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 31,
+      "bimodality": 0.1761479377746582,
+      "eta2_token": 3.097905918816262e-16,
+      "eta2_token_sq": 0.07511090246168918,
+      "eta2_token_abs": 0.10910247527748687,
+      "repro": 0.5976060032844543,
+      "skew": 0.05322614312171936,
+      "ex_kurtosis": 3.019930839538574,
+      "screened": false
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 32,
+      "bimodality": 0.2455471009016037,
+      "eta2_token": 4.972411022080167e-16,
+      "eta2_token_sq": 0.03618321620551072,
+      "eta2_token_abs": 0.05639815316250868,
+      "repro": 0.9822208881378174,
+      "skew": 0.885395884513855,
+      "ex_kurtosis": 4.245820045471191,
+      "screened": true,
+      "named": true,
+      "named_by": [
+       "after_newline"
+      ]
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 33,
+      "bimodality": 0.39931485056877136,
+      "eta2_token": 3.37044897449017e-16,
+      "eta2_token_sq": 0.024941196899725734,
+      "eta2_token_abs": 0.05267991660560153,
+      "repro": 0.9955191612243652,
+      "skew": -2.4300053119659424,
+      "ex_kurtosis": 14.412015914916992,
+      "screened": true,
+      "named": false,
+      "named_by": []
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 34,
+      "bimodality": 0.10224184393882751,
+      "eta2_token": 2.745533508369594e-16,
+      "eta2_token_sq": 0.31004831574225156,
+      "eta2_token_abs": 0.24679306426715064,
+      "repro": 0.9215192198753357,
+      "skew": -0.29991617798805237,
+      "ex_kurtosis": 9.321640014648438,
+      "screened": false
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 35,
+      "bimodality": 0.16135306656360626,
+      "eta2_token": 3.517867277851215e-16,
+      "eta2_token_sq": 0.06409638587283215,
+      "eta2_token_abs": 0.08344632390900092,
+      "repro": 0.5973931550979614,
+      "skew": -0.16313791275024414,
+      "ex_kurtosis": 3.168950080871582,
+      "screened": false
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 36,
+      "bimodality": 0.1970023661851883,
+      "eta2_token": 2.6628882154328714e-16,
+      "eta2_token_sq": 0.06812126857659018,
+      "eta2_token_abs": 0.08664796465425158,
+      "repro": 0.39234259724617004,
+      "skew": -0.052953414618968964,
+      "ex_kurtosis": 2.3165674209594727,
+      "screened": false
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 37,
+      "bimodality": 0.1627044826745987,
+      "eta2_token": 2.0207120257702027e-16,
+      "eta2_token_sq": 0.08573403420643046,
+      "eta2_token_abs": 0.11393754865008483,
+      "repro": 0.4341278672218323,
+      "skew": 0.28456372022628784,
+      "ex_kurtosis": 3.836544990539551,
+      "screened": false
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 38,
+      "bimodality": 0.17933674156665802,
+      "eta2_token": 1.9913974130397028e-16,
+      "eta2_token_sq": 0.1300082159931193,
+      "eta2_token_abs": 0.15422483380826174,
+      "repro": 0.9490691423416138,
+      "skew": -0.12612666189670563,
+      "ex_kurtosis": 2.565304756164551,
+      "screened": true,
+      "named": false,
+      "named_by": []
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 39,
+      "bimodality": 0.19732168316841125,
+      "eta2_token": 2.0603800270415206e-16,
+      "eta2_token_sq": 0.09228320422965146,
+      "eta2_token_abs": 0.1333591293463919,
+      "repro": 0.8988157510757446,
+      "skew": 0.32695889472961426,
+      "ex_kurtosis": 2.663987636566162,
+      "screened": true,
+      "named": false,
+      "named_by": []
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 40,
+      "bimodality": 0.09569182246923447,
+      "eta2_token": 2.468686639170263e-16,
+      "eta2_token_sq": 0.03756428068363666,
+      "eta2_token_abs": 0.10246284568391562,
+      "repro": 0.800213634967804,
+      "skew": 0.6598055958747864,
+      "ex_kurtosis": 13.05784797668457,
+      "screened": true,
+      "named": true,
+      "named_by": [
+       "after_digit"
+      ]
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 41,
+      "bimodality": 0.1619143933057785,
+      "eta2_token": 2.122603031173647e-16,
+      "eta2_token_sq": 0.1000535667314261,
+      "eta2_token_abs": 0.1224372810714531,
+      "repro": 0.37163659930229187,
+      "skew": -0.2082090824842453,
+      "ex_kurtosis": 3.6922240257263184,
+      "screened": false
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 42,
+      "bimodality": 0.28339242935180664,
+      "eta2_token": 5.756004276291719e-16,
+      "eta2_token_sq": 0.07174294590625176,
+      "eta2_token_abs": 0.10767362623913701,
+      "repro": 0.9874935150146484,
+      "skew": 1.0985140800476074,
+      "ex_kurtosis": 4.644798278808594,
+      "screened": true,
+      "named": false,
+      "named_by": []
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 43,
+      "bimodality": 0.1466113179922104,
+      "eta2_token": 3.3672187549475136e-16,
+      "eta2_token_sq": 0.15868022346445493,
+      "eta2_token_abs": 0.18541873747737767,
+      "repro": 0.377401739358902,
+      "skew": 0.0783751904964447,
+      "ex_kurtosis": 3.7452940940856934,
+      "screened": false
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 44,
+      "bimodality": 0.19031861424446106,
+      "eta2_token": 5.565118380161347e-16,
+      "eta2_token_sq": 0.047186744366918554,
+      "eta2_token_abs": 0.09864986575072515,
+      "repro": 0.9686775207519531,
+      "skew": 0.9947658777236938,
+      "ex_kurtosis": 8.796822547912598,
+      "screened": true,
+      "named": false,
+      "named_by": []
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 45,
+      "bimodality": 0.18418137729167938,
+      "eta2_token": 4.948145061892644e-16,
+      "eta2_token_sq": 0.07274557093335443,
+      "eta2_token_abs": 0.09921067538013394,
+      "repro": 0.4220316708087921,
+      "skew": 0.09956037253141403,
+      "ex_kurtosis": 2.422454833984375,
+      "screened": false
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 46,
+      "bimodality": 0.151014044880867,
+      "eta2_token": 3.5499626669686513e-16,
+      "eta2_token_sq": 0.12244639913517835,
+      "eta2_token_abs": 0.14657677209061326,
+      "repro": 0.6133317351341248,
+      "skew": 0.13170140981674194,
+      "ex_kurtosis": 3.633181571960449,
+      "screened": false
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 47,
+      "bimodality": 0.17922650277614594,
+      "eta2_token": 4.4789895470007265e-16,
+      "eta2_token_sq": 0.057665754469065446,
+      "eta2_token_abs": 0.08519330839414298,
+      "repro": 0.8350014090538025,
+      "skew": 0.3538854122161865,
+      "ex_kurtosis": 3.79349422454834,
+      "screened": true,
+      "named": false,
+      "named_by": []
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 48,
+      "bimodality": 0.08437933027744293,
+      "eta2_token": 1.7975107171377418e-16,
+      "eta2_token_sq": 0.12439492862776497,
+      "eta2_token_abs": 0.1946017848523126,
+      "repro": 0.9189671277999878,
+      "skew": -0.0850992351770401,
+      "ex_kurtosis": 8.533295631408691,
+      "screened": true,
+      "named": false,
+      "named_by": []
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 49,
+      "bimodality": 0.18255673348903656,
+      "eta2_token": 5.15811837460355e-16,
+      "eta2_token_sq": 0.0727732773402335,
+      "eta2_token_abs": 0.09425213510236102,
+      "repro": 0.40199509263038635,
+      "skew": 0.03768961876630783,
+      "ex_kurtosis": 2.5276260375976562,
+      "screened": false
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 50,
+      "bimodality": 0.16367904841899872,
+      "eta2_token": 3.729267466527695e-16,
+      "eta2_token_sq": 0.09886634050002104,
+      "eta2_token_abs": 0.10706216106696242,
+      "repro": 0.4316636621952057,
+      "skew": -0.05854710936546326,
+      "ex_kurtosis": 2.942513942718506,
+      "screened": false
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 51,
+      "bimodality": 0.09501150995492935,
+      "eta2_token": 1.7433619112662076e-16,
+      "eta2_token_sq": 0.30532428101953635,
+      "eta2_token_abs": 0.38465248180937645,
+      "repro": 0.9641114473342896,
+      "skew": 1.1262731552124023,
+      "ex_kurtosis": 23.00911521911621,
+      "screened": false
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 52,
+      "bimodality": 0.18280664086341858,
+      "eta2_token": 3.526947985061606e-16,
+      "eta2_token_sq": 0.09373055456165512,
+      "eta2_token_abs": 0.10987252741759425,
+      "repro": 0.38642799854278564,
+      "skew": 0.1721584051847458,
+      "ex_kurtosis": 2.8336076736450195,
+      "screened": false
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 53,
+      "bimodality": 0.21327725052833557,
+      "eta2_token": 4.2854962527493844e-16,
+      "eta2_token_sq": 0.07495820081966044,
+      "eta2_token_abs": 0.08829898194715935,
+      "repro": 0.4249078929424286,
+      "skew": 0.09694750607013702,
+      "ex_kurtosis": 1.8574771881103516,
+      "screened": false
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 54,
+      "bimodality": 0.10936028510332108,
+      "eta2_token": 1.6628401214352089e-16,
+      "eta2_token_sq": 0.0771372625967314,
+      "eta2_token_abs": 0.12687336716677938,
+      "repro": 0.8671870231628418,
+      "skew": 0.20082302391529083,
+      "ex_kurtosis": 7.146334648132324,
+      "screened": true,
+      "named": true,
+      "named_by": [
+       "after_digit"
+      ]
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 55,
+      "bimodality": 0.1463322788476944,
+      "eta2_token": 2.5073596972074254e-16,
+      "eta2_token_sq": 0.06316269045656818,
+      "eta2_token_abs": 0.09986060737867662,
+      "repro": 0.6597546339035034,
+      "skew": -0.3741004765033722,
+      "ex_kurtosis": 4.8706374168396,
+      "screened": false
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 56,
+      "bimodality": 0.1305316835641861,
+      "eta2_token": 2.1408604662082474e-16,
+      "eta2_token_sq": 0.18620472767123616,
+      "eta2_token_abs": 0.22756395034763344,
+      "repro": 0.7372925281524658,
+      "skew": -0.4051079750061035,
+      "ex_kurtosis": 6.189099311828613,
+      "screened": false
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 57,
+      "bimodality": 0.15724197030067444,
+      "eta2_token": 2.617021347321791e-16,
+      "eta2_token_sq": 0.13396194440753667,
+      "eta2_token_abs": 0.17306946499352607,
+      "repro": 0.9016093611717224,
+      "skew": -0.44320395588874817,
+      "ex_kurtosis": 4.85151481628418,
+      "screened": true,
+      "named": true,
+      "named_by": [
+       "prev_capitalised"
+      ]
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 58,
+      "bimodality": 0.14109140634536743,
+      "eta2_token": 2.442352591523756e-16,
+      "eta2_token_sq": 0.0769868937321206,
+      "eta2_token_abs": 0.13248572541024256,
+      "repro": 0.8589361310005188,
+      "skew": -0.662492036819458,
+      "ex_kurtosis": 7.568512916564941,
+      "screened": true,
+      "named": true,
+      "named_by": [
+       "after_digit"
+      ]
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 59,
+      "bimodality": 0.18478241562843323,
+      "eta2_token": 3.8985429024772804e-16,
+      "eta2_token_sq": 0.10522075521915537,
+      "eta2_token_abs": 0.1333785450707725,
+      "repro": 0.52005934715271,
+      "skew": 0.3656010925769806,
+      "ex_kurtosis": 3.209988594055176,
+      "screened": false
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 60,
+      "bimodality": 0.144625723361969,
+      "eta2_token": 2.0553470932971438e-16,
+      "eta2_token_sq": 0.25264017948987477,
+      "eta2_token_abs": 0.2798195559481036,
+      "repro": 0.991481363773346,
+      "skew": 0.5738822817802429,
+      "ex_kurtosis": 6.246813774108887,
+      "screened": true,
+      "named": true,
+      "named_by": [
+       "after_newline",
+       "after_digit"
+      ]
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 61,
+      "bimodality": 0.1285959929227829,
+      "eta2_token": 3.429851537753443e-16,
+      "eta2_token_sq": 0.15671933889477047,
+      "eta2_token_abs": 0.1729046322882505,
+      "repro": 0.6022650599479675,
+      "skew": -0.35452523827552795,
+      "ex_kurtosis": 5.911098480224609,
+      "screened": false
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 62,
+      "bimodality": 0.15551400184631348,
+      "eta2_token": 4.658112643345181e-16,
+      "eta2_token_sq": 0.05604159978485425,
+      "eta2_token_abs": 0.10133756346887624,
+      "repro": 0.4337218701839447,
+      "skew": -0.440522164106369,
+      "ex_kurtosis": 4.751028537750244,
+      "screened": false
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 63,
+      "bimodality": 0.1880006045103073,
+      "eta2_token": 3.9661532346797096e-16,
+      "eta2_token_sq": 0.07746718223048142,
+      "eta2_token_abs": 0.09975704613856501,
+      "repro": 0.3546997606754303,
+      "skew": -0.17065632343292236,
+      "ex_kurtosis": 2.6074843406677246,
+      "screened": false
+     }
+    ],
+    "skew": [
+     {
+      "kind": "ica_skew",
+      "id": 0,
+      "bimodality": 0.18381567299365997,
+      "eta2_token": 3.2436385017196256e-16,
+      "eta2_token_sq": 0.14225651726156216,
+      "eta2_token_abs": 0.1350231903295251,
+      "repro": 0.6041779518127441,
+      "skew": 0.3864591419696808,
+      "ex_kurtosis": 3.5367932319641113,
+      "screened": false
+     },
+     {
+      "kind": "ica_skew",
+      "id": 1,
+      "bimodality": 0.2027764916419983,
+      "eta2_token": 3.7781866074854685e-16,
+      "eta2_token_sq": 0.07385178801499989,
+      "eta2_token_abs": 0.09253150362607179,
+      "repro": 0.6296985745429993,
+      "skew": 0.2564101219177246,
+      "ex_kurtosis": 2.108120918273926,
+      "screened": false
+     },
+     {
+      "kind": "ica_skew",
+      "id": 2,
+      "bimodality": 0.11194603145122528,
+      "eta2_token": 2.5463811274895136e-16,
+      "eta2_token_sq": 0.0883864354648557,
+      "eta2_token_abs": 0.13128625008115943,
+      "repro": 0.36804014444351196,
+      "skew": 0.9036182761192322,
+      "ex_kurtosis": 12.69498348236084,
+      "screened": false
+     },
+     {
+      "kind": "ica_skew",
+      "id": 3,
+      "bimodality": 0.26715782284736633,
+      "eta2_token": 3.9875776788658366e-16,
+      "eta2_token_sq": 0.029589103784933082,
+      "eta2_token_abs": 0.04861668240476878,
+      "repro": 0.9754694700241089,
+      "skew": 0.9658737182617188,
+      "ex_kurtosis": 4.246133327484131,
+      "screened": true,
+      "named": true,
+      "named_by": [
+       "after_newline"
+      ]
+     },
+     {
+      "kind": "ica_skew",
+      "id": 4,
+      "bimodality": 0.12186519801616669,
+      "eta2_token": 4.2073750952023345e-16,
+      "eta2_token_sq": 0.031103606533128547,
+      "eta2_token_abs": 0.09454150830262607,
+      "repro": 0.9122540354728699,
+      "skew": 0.7912578582763672,
+      "ex_kurtosis": 12.296236991882324,
+      "screened": true,
+      "named": false,
+      "named_by": []
+     },
+     {
+      "kind": "ica_skew",
+      "id": 5,
+      "bimodality": 0.18971498310565948,
+      "eta2_token": 4.4427321618586e-16,
+      "eta2_token_sq": 0.06255459778420525,
+      "eta2_token_abs": 0.0968743165066725,
+      "repro": 0.6043018698692322,
+      "skew": 0.4660584628582001,
+      "ex_kurtosis": 4.2203192710876465,
+      "screened": false
+     },
+     {
+      "kind": "ica_skew",
+      "id": 6,
+      "bimodality": 0.17342570424079895,
+      "eta2_token": 4.0563009694249906e-16,
+      "eta2_token_sq": 0.06245097925951255,
+      "eta2_token_abs": 0.08042953210016128,
+      "repro": 0.5890287756919861,
+      "skew": 0.296149879693985,
+      "ex_kurtosis": 3.4287123680114746,
+      "screened": false
+     },
+     {
+      "kind": "ica_skew",
+      "id": 7,
+      "bimodality": 0.13589832186698914,
+      "eta2_token": 2.3408998928877043e-16,
+      "eta2_token_sq": 0.08256531260798107,
+      "eta2_token_abs": 0.13728684911107425,
+      "repro": 0.9395993947982788,
+      "skew": 1.0910872220993042,
+      "ex_kurtosis": 13.033758163452148,
+      "screened": true,
+      "named": false,
+      "named_by": []
+     },
+     {
+      "kind": "ica_skew",
+      "id": 8,
+      "bimodality": 0.18813060224056244,
+      "eta2_token": 2.22124770075742e-16,
+      "eta2_token_sq": 0.05547008764951383,
+      "eta2_token_abs": 0.12223577984158054,
+      "repro": 0.9417334198951721,
+      "skew": 1.7444279193878174,
+      "ex_kurtosis": 17.38601303100586,
+      "screened": true,
+      "named": true,
+      "named_by": [
+       "after_newline",
+       "word_continuation"
+      ]
+     },
+     {
+      "kind": "ica_skew",
+      "id": 9,
+      "bimodality": 0.11427158117294312,
+      "eta2_token": 2.500126438439615e-16,
+      "eta2_token_sq": 0.04783626550809626,
+      "eta2_token_abs": 0.09222989275732155,
+      "repro": 0.9429837465286255,
+      "skew": 0.6867061257362366,
+      "ex_kurtosis": 9.808011054992676,
+      "screened": true,
+      "named": false,
+      "named_by": []
+     },
+     {
+      "kind": "ica_skew",
+      "id": 10,
+      "bimodality": 0.19592462480068207,
+      "eta2_token": 2.838772606761503e-16,
+      "eta2_token_sq": 0.15403099694581063,
+      "eta2_token_abs": 0.240335517963852,
+      "repro": 0.981240451335907,
+      "skew": 2.0141000747680664,
+      "ex_kurtosis": 24.093507766723633,
+      "screened": true,
+      "named": false,
+      "named_by": []
+     },
+     {
+      "kind": "ica_skew",
+      "id": 11,
+      "bimodality": 0.19995714724063873,
+      "eta2_token": 3.5174652748945607e-16,
+      "eta2_token_sq": 0.08374287666186124,
+      "eta2_token_abs": 0.10310836823509478,
+      "repro": 0.4936622381210327,
+      "skew": 0.1987982839345932,
+      "ex_kurtosis": 2.183657169342041,
+      "screened": false
+     },
+     {
+      "kind": "ica_skew",
+      "id": 12,
+      "bimodality": 0.12239852547645569,
+      "eta2_token": 2.8278598235644614e-16,
+      "eta2_token_sq": 0.08565763994662703,
+      "eta2_token_abs": 0.13136641629341628,
+      "repro": 0.5393255352973938,
+      "skew": 0.5248422026634216,
+      "ex_kurtosis": 7.10743522644043,
+      "screened": false
+     },
+     {
+      "kind": "ica_skew",
+      "id": 13,
+      "bimodality": 0.1892586648464203,
+      "eta2_token": 3.132551295114572e-16,
+      "eta2_token_sq": 0.032784705751714965,
+      "eta2_token_abs": 0.08570148955392506,
+      "repro": 0.875281572341919,
+      "skew": 0.9457359910011292,
+      "ex_kurtosis": 21.758285522460938,
+      "screened": true,
+      "named": false,
+      "named_by": []
+     },
+     {
+      "kind": "ica_skew",
+      "id": 14,
+      "bimodality": 0.1656748503446579,
+      "eta2_token": 4.052595641085757e-16,
+      "eta2_token_sq": 0.08337618000787335,
+      "eta2_token_abs": 0.11112499895423178,
+      "repro": 0.4128626883029938,
+      "skew": 0.44304022192955017,
+      "ex_kurtosis": 4.9426960945129395,
+      "screened": false
+     },
+     {
+      "kind": "ica_skew",
+      "id": 15,
+      "bimodality": 0.16320925951004028,
+      "eta2_token": 2.349411897853282e-16,
+      "eta2_token_sq": 0.052798671345815784,
+      "eta2_token_abs": 0.09137767893768445,
+      "repro": 0.5390733480453491,
+      "skew": 0.4320252537727356,
+      "ex_kurtosis": 4.662725448608398,
+      "screened": false
+     },
+     {
+      "kind": "ica_skew",
+      "id": 16,
+      "bimodality": 0.25717291235923767,
+      "eta2_token": 6.129951649174951e-16,
+      "eta2_token_sq": 0.07466018652798026,
+      "eta2_token_abs": 0.08171307799875252,
+      "repro": 0.7537570595741272,
+      "skew": 0.2876598536968231,
+      "ex_kurtosis": 1.1798648834228516,
+      "screened": false
+     },
+     {
+      "kind": "ica_skew",
+      "id": 17,
+      "bimodality": 0.15661436319351196,
+      "eta2_token": 3.6417659742733803e-16,
+      "eta2_token_sq": 0.08220352653673321,
+      "eta2_token_abs": 0.10278959484923979,
+      "repro": 0.6458519697189331,
+      "skew": 0.38824033737182617,
+      "ex_kurtosis": 3.5799098014831543,
+      "screened": false
+     },
+     {
+      "kind": "ica_skew",
+      "id": 18,
+      "bimodality": 0.18645404279232025,
+      "eta2_token": 3.817901698015421e-16,
+      "eta2_token_sq": 0.07683471922084144,
+      "eta2_token_abs": 0.09146228919928677,
+      "repro": 0.49832385778427124,
+      "skew": 0.3118777573108673,
+      "ex_kurtosis": 3.3182973861694336,
+      "screened": false
+     },
+     {
+      "kind": "ica_skew",
+      "id": 19,
+      "bimodality": 0.170796200633049,
+      "eta2_token": 2.502435522400175e-16,
+      "eta2_token_sq": 0.06054216552434415,
+      "eta2_token_abs": 0.10308458011924135,
+      "repro": 0.6691587567329407,
+      "skew": 0.4974459111690521,
+      "ex_kurtosis": 4.321091175079346,
+      "screened": false
+     },
+     {
+      "kind": "ica_skew",
+      "id": 20,
+      "bimodality": 0.16480134427547455,
+      "eta2_token": 3.3860580084623837e-16,
+      "eta2_token_sq": 0.09414333503575156,
+      "eta2_token_abs": 0.12482140124875309,
+      "repro": 0.46107685565948486,
+      "skew": 0.40361639857292175,
+      "ex_kurtosis": 4.108695030212402,
+      "screened": false
+     },
+     {
+      "kind": "ica_skew",
+      "id": 21,
+      "bimodality": 0.18613627552986145,
+      "eta2_token": 3.7274646820953615e-16,
+      "eta2_token_sq": 0.07949693566161391,
+      "eta2_token_abs": 0.11064348276379295,
+      "repro": 0.9425727725028992,
+      "skew": 0.6328241229057312,
+      "ex_kurtosis": 4.628591060638428,
+      "screened": true,
+      "named": false,
+      "named_by": []
+     },
+     {
+      "kind": "ica_skew",
+      "id": 22,
+      "bimodality": 0.23341305553913116,
+      "eta2_token": 3.136266034855968e-16,
+      "eta2_token_sq": 0.057990248850256665,
+      "eta2_token_abs": 0.07106731051115227,
+      "repro": 0.6378483176231384,
+      "skew": 0.3386455774307251,
+      "ex_kurtosis": 1.9114580154418945,
+      "screened": false
+     },
+     {
+      "kind": "ica_skew",
+      "id": 23,
+      "bimodality": 0.21719962358474731,
+      "eta2_token": 5.257056084567228e-16,
+      "eta2_token_sq": 0.0680782001456137,
+      "eta2_token_abs": 0.08616860473398688,
+      "repro": 0.5651205778121948,
+      "skew": 0.41151970624923706,
+      "ex_kurtosis": 2.3844990730285645,
+      "screened": false
+     },
+     {
+      "kind": "ica_skew",
+      "id": 24,
+      "bimodality": 0.14730925858020782,
+      "eta2_token": 3.7194073932325043e-16,
+      "eta2_token_sq": 0.04867067400734616,
+      "eta2_token_abs": 0.09647727294467832,
+      "repro": 0.7966029047966003,
+      "skew": 0.7028498649597168,
+      "ex_kurtosis": 7.30988883972168,
+      "screened": false
+     },
+     {
+      "kind": "ica_skew",
+      "id": 25,
+      "bimodality": 0.1902570277452469,
+      "eta2_token": 3.494592900862274e-16,
+      "eta2_token_sq": 0.14768033441959874,
+      "eta2_token_abs": 0.17912182585178196,
+      "repro": 0.9321596622467041,
+      "skew": 0.5255774855613708,
+      "ex_kurtosis": 3.719571113586426,
+      "screened": true,
+      "named": false,
+      "named_by": []
+     },
+     {
+      "kind": "ica_skew",
+      "id": 26,
+      "bimodality": 0.25681114196777344,
+      "eta2_token": 4.741172297042244e-16,
+      "eta2_token_sq": 0.05749888346896662,
+      "eta2_token_abs": 0.07092646510930697,
+      "repro": 0.9794308543205261,
+      "skew": 0.48216766119003296,
+      "ex_kurtosis": 1.6683220863342285,
+      "screened": true,
+      "named": false,
+      "named_by": []
+     },
+     {
+      "kind": "ica_skew",
+      "id": 27,
+      "bimodality": 0.10543956607580185,
+      "eta2_token": 1.9836518450893807e-16,
+      "eta2_token_sq": 0.024246353335825123,
+      "eta2_token_abs": 0.10037527281717269,
+      "repro": 0.4519234299659729,
+      "skew": 0.7143107056617737,
+      "ex_kurtosis": 13.179122924804688,
+      "screened": false
+     },
+     {
+      "kind": "ica_skew",
+      "id": 28,
+      "bimodality": 0.20690369606018066,
+      "eta2_token": 2.623817238964987e-16,
+      "eta2_token_sq": 0.08624382086614747,
+      "eta2_token_abs": 0.10677528056867211,
+      "repro": 0.5322074890136719,
+      "skew": 0.3165320158004761,
+      "ex_kurtosis": 2.417513370513916,
+      "screened": false
+     },
+     {
+      "kind": "ica_skew",
+      "id": 29,
+      "bimodality": 0.2062242180109024,
+      "eta2_token": 3.1801972270727724e-16,
+      "eta2_token_sq": 0.07493624948236106,
+      "eta2_token_abs": 0.09817040548490563,
+      "repro": 0.53902667760849,
+      "skew": 0.3031945824623108,
+      "ex_kurtosis": 2.740382671356201,
+      "screened": false
+     },
+     {
+      "kind": "ica_skew",
+      "id": 30,
+      "bimodality": 0.19211894273757935,
+      "eta2_token": 3.7325189585704107e-16,
+      "eta2_token_sq": 0.10885284714361858,
+      "eta2_token_abs": 0.13318736851287058,
+      "repro": 0.48855236172676086,
+      "skew": 0.23781046271324158,
+      "ex_kurtosis": 2.449279308319092,
+      "screened": false
+     },
+     {
+      "kind": "ica_skew",
+      "id": 31,
+      "bimodality": 0.2538824677467346,
+      "eta2_token": 1.6719321630937024e-16,
+      "eta2_token_sq": 0.10443345244033748,
+      "eta2_token_abs": 0.22527390904668998,
+      "repro": 0.9653794169425964,
+      "skew": 2.2547500133514404,
+      "ex_kurtosis": 20.70415687561035,
+      "screened": true,
+      "named": true,
+      "named_by": [
+       "prev_punct"
+      ]
+     },
+     {
+      "kind": "ica_skew",
+      "id": 32,
+      "bimodality": 0.19562819600105286,
+      "eta2_token": 5.25790795274307e-16,
+      "eta2_token_sq": 0.04510817257986561,
+      "eta2_token_abs": 0.09122687165121303,
+      "repro": 0.902716875076294,
+      "skew": 0.950346827507019,
+      "ex_kurtosis": 8.078211784362793,
+      "screened": true,
+      "named": false,
+      "named_by": []
+     },
+     {
+      "kind": "ica_skew",
+      "id": 33,
+      "bimodality": 0.37398266792297363,
+      "eta2_token": 3.1701230095280107e-16,
+      "eta2_token_sq": 0.025888798351530132,
+      "eta2_token_abs": 0.05341428784338439,
+      "repro": 0.9908613562583923,
+      "skew": 2.302593946456909,
+      "ex_kurtosis": 13.980222702026367,
+      "screened": true,
+      "named": false,
+      "named_by": []
+     },
+     {
+      "kind": "ica_skew",
+      "id": 34,
+      "bimodality": 0.1333596408367157,
+      "eta2_token": 4.2390298620484333e-16,
+      "eta2_token_sq": 0.038675655578559856,
+      "eta2_token_abs": 0.10048323230773412,
+      "repro": 0.9468673467636108,
+      "skew": 1.040850043296814,
+      "ex_kurtosis": 12.27382755279541,
+      "screened": true,
+      "named": true,
+      "named_by": [
+       "after_digit"
+      ]
+     },
+     {
+      "kind": "ica_skew",
+      "id": 35,
+      "bimodality": 0.33679696917533875,
+      "eta2_token": 2.9006310668146526e-16,
+      "eta2_token_sq": 0.025062675211211985,
+      "eta2_token_abs": 0.06674191899648209,
+      "repro": 0.9898632764816284,
+      "skew": 2.148853063583374,
+      "ex_kurtosis": 14.431280136108398,
+      "screened": true,
+      "named": false,
+      "named_by": []
+     },
+     {
+      "kind": "ica_skew",
+      "id": 36,
+      "bimodality": 0.21981410682201385,
+      "eta2_token": 5.061428362517963e-16,
+      "eta2_token_sq": 0.06597893469139242,
+      "eta2_token_abs": 0.08805462635629936,
+      "repro": 0.47710755467414856,
+      "skew": 0.29042303562164307,
+      "ex_kurtosis": 2.081076145172119,
+      "screened": false
+     },
+     {
+      "kind": "ica_skew",
+      "id": 37,
+      "bimodality": 0.1387946754693985,
+      "eta2_token": 2.5003267642849817e-16,
+      "eta2_token_sq": 0.03244014456320242,
+      "eta2_token_abs": 0.10323271618219355,
+      "repro": 0.9711042642593384,
+      "skew": 1.4514412879943848,
+      "ex_kurtosis": 22.80504035949707,
+      "screened": true,
+      "named": true,
+      "named_by": [
+       "after_newline",
+       "after_digit"
+      ]
+     },
+     {
+      "kind": "ica_skew",
+      "id": 38,
+      "bimodality": 0.1342320591211319,
+      "eta2_token": 3.6511694452147516e-16,
+      "eta2_token_sq": 0.12492956468830316,
+      "eta2_token_abs": 0.13135200106341682,
+      "repro": 0.3411410450935364,
+      "skew": 0.4126318693161011,
+      "ex_kurtosis": 5.407878875732422,
+      "screened": false
+     },
+     {
+      "kind": "ica_skew",
+      "id": 39,
+      "bimodality": 0.17185717821121216,
+      "eta2_token": 2.0552448527789022e-16,
+      "eta2_token_sq": 0.06919478690899573,
+      "eta2_token_abs": 0.11132510799105078,
+      "repro": 0.7465972900390625,
+      "skew": 0.7394976615905762,
+      "ex_kurtosis": 5.913791656494141,
+      "screened": false
+     },
+     {
+      "kind": "ica_skew",
+      "id": 40,
+      "bimodality": 0.19893565773963928,
+      "eta2_token": 3.6390309315677605e-16,
+      "eta2_token_sq": 0.10228192301831814,
+      "eta2_token_abs": 0.1364236819786585,
+      "repro": 0.7972671389579773,
+      "skew": 0.44082650542259216,
+      "ex_kurtosis": 3.1153645515441895,
+      "screened": false
+     },
+     {
+      "kind": "ica_skew",
+      "id": 41,
+      "bimodality": 0.1706162840127945,
+      "eta2_token": 2.2625677863796187e-16,
+      "eta2_token_sq": 0.08609177366770834,
+      "eta2_token_abs": 0.11557767773778134,
+      "repro": 0.503868818283081,
+      "skew": 0.4340166449546814,
+      "ex_kurtosis": 4.135374069213867,
+      "screened": false
+     },
+     {
+      "kind": "ica_skew",
+      "id": 42,
+      "bimodality": 0.18858568370342255,
+      "eta2_token": 4.0585609856310624e-16,
+      "eta2_token_sq": 0.06737754056352754,
+      "eta2_token_abs": 0.10094108454195229,
+      "repro": 0.9052543044090271,
+      "skew": 0.6616296172142029,
+      "ex_kurtosis": 4.510096073150635,
+      "screened": true,
+      "named": false,
+      "named_by": []
+     },
+     {
+      "kind": "ica_skew",
+      "id": 43,
+      "bimodality": 0.22251708805561066,
+      "eta2_token": 6.906631382840418e-16,
+      "eta2_token_sq": 0.07840480096776434,
+      "eta2_token_abs": 0.10026006478636544,
+      "repro": 0.7141359448432922,
+      "skew": 0.2996508479118347,
+      "ex_kurtosis": 2.3029723167419434,
+      "screened": false
+     },
+     {
+      "kind": "ica_skew",
+      "id": 44,
+      "bimodality": 0.20696522295475006,
+      "eta2_token": 3.5006520244427774e-16,
+      "eta2_token_sq": 0.05317410486368911,
+      "eta2_token_abs": 0.07573488918783348,
+      "repro": 0.5600396394729614,
+      "skew": 0.3045214116573334,
+      "ex_kurtosis": 2.2286853790283203,
+      "screened": false
+     },
+     {
+      "kind": "ica_skew",
+      "id": 45,
+      "bimodality": 0.18125182390213013,
+      "eta2_token": 2.9206709740971256e-16,
+      "eta2_token_sq": 0.0863365210271602,
+      "eta2_token_abs": 0.11907817099528181,
+      "repro": 0.5611628293991089,
+      "skew": 0.4201033115386963,
+      "ex_kurtosis": 3.9363298416137695,
+      "screened": false
+     },
+     {
+      "kind": "ica_skew",
+      "id": 46,
+      "bimodality": 0.21275894343852997,
+      "eta2_token": 4.2393877064024993e-16,
+      "eta2_token_sq": 0.0949532059074651,
+      "eta2_token_abs": 0.11408815068952893,
+      "repro": 0.6337657570838928,
+      "skew": 0.23725023865699768,
+      "ex_kurtosis": 1.9658546447753906,
+      "screened": false
+     },
+     {
+      "kind": "ica_skew",
+      "id": 47,
+      "bimodality": 0.2206682562828064,
+      "eta2_token": 5.074602884800976e-16,
+      "eta2_token_sq": 0.06605012080676143,
+      "eta2_token_abs": 0.08590955622185627,
+      "repro": 0.6640142202377319,
+      "skew": 0.2933248281478882,
+      "ex_kurtosis": 1.873988151550293,
+      "screened": false
+     },
+     {
+      "kind": "ica_skew",
+      "id": 48,
+      "bimodality": 0.11316566914319992,
+      "eta2_token": 2.6421129451549837e-16,
+      "eta2_token_sq": 0.03460419571604481,
+      "eta2_token_abs": 0.12334305284342875,
+      "repro": 0.8815904855728149,
+      "skew": 1.6120853424072266,
+      "ex_kurtosis": 26.46125030517578,
+      "screened": true,
+      "named": false,
+      "named_by": []
+     },
+     {
+      "kind": "ica_skew",
+      "id": 49,
+      "bimodality": 0.15905609726905823,
+      "eta2_token": 2.434837413669605e-16,
+      "eta2_token_sq": 0.03504833355613482,
+      "eta2_token_abs": 0.0887552696932933,
+      "repro": 0.931011438369751,
+      "skew": 1.005905270576477,
+      "ex_kurtosis": 9.910460472106934,
+      "screened": true,
+      "named": true,
+      "named_by": [
+       "after_digit"
+      ]
+     },
+     {
+      "kind": "ica_skew",
+      "id": 50,
+      "bimodality": 0.3273381292819977,
+      "eta2_token": 5.740743484751912e-16,
+      "eta2_token_sq": 0.04357916982307168,
+      "eta2_token_abs": 0.07685818573776006,
+      "repro": 0.9874395728111267,
+      "skew": 1.5189481973648071,
+      "ex_kurtosis": 6.838737487792969,
+      "screened": true,
+      "named": false,
+      "named_by": []
+     },
+     {
+      "kind": "ica_skew",
+      "id": 51,
+      "bimodality": 0.20391727983951569,
+      "eta2_token": 4.560699189863887e-16,
+      "eta2_token_sq": 0.06566759942581514,
+      "eta2_token_abs": 0.08842714982668616,
+      "repro": 0.32442745566368103,
+      "skew": 0.2419576346874237,
+      "ex_kurtosis": 2.4141921997070312,
+      "screened": false
+     },
+     {
+      "kind": "ica_skew",
+      "id": 52,
+      "bimodality": 0.19534951448440552,
+      "eta2_token": 2.9615812747038094e-16,
+      "eta2_token_sq": 0.06977051110648942,
+      "eta2_token_abs": 0.0980539848110135,
+      "repro": 0.506467342376709,
+      "skew": 0.355611115694046,
+      "ex_kurtosis": 3.0846705436706543,
+      "screened": false
+     },
+     {
+      "kind": "ica_skew",
+      "id": 53,
+      "bimodality": 0.21688508987426758,
+      "eta2_token": 5.737431889259193e-16,
+      "eta2_token_sq": 0.07415725340682648,
+      "eta2_token_abs": 0.08795990117451642,
+      "repro": 0.49996620416641235,
+      "skew": 0.29431432485580444,
+      "ex_kurtosis": 1.9024443626403809,
+      "screened": false
+     },
+     {
+      "kind": "ica_skew",
+      "id": 54,
+      "bimodality": 0.20533685386180878,
+      "eta2_token": 3.13286962208905e-16,
+      "eta2_token_sq": 0.07759760755777557,
+      "eta2_token_abs": 0.09971556434727774,
+      "repro": 0.6732232570648193,
+      "skew": 0.37261053919792175,
+      "ex_kurtosis": 2.391028881072998,
+      "screened": false
+     },
+     {
+      "kind": "ica_skew",
+      "id": 55,
+      "bimodality": 0.21072252094745636,
+      "eta2_token": 3.397163589404485e-16,
+      "eta2_token_sq": 0.0743172522866671,
+      "eta2_token_abs": 0.09010318529439527,
+      "repro": 0.6732038259506226,
+      "skew": 0.3861655592918396,
+      "ex_kurtosis": 2.627842903137207,
+      "screened": false
+     },
+     {
+      "kind": "ica_skew",
+      "id": 56,
+      "bimodality": 0.1753627210855484,
+      "eta2_token": 4.0651496142767457e-16,
+      "eta2_token_sq": 0.1310533557964673,
+      "eta2_token_abs": 0.147032549571961,
+      "repro": 0.8217819929122925,
+      "skew": 0.4611617922782898,
+      "ex_kurtosis": 3.759481430053711,
+      "screened": true,
+      "named": false,
+      "named_by": []
+     },
+     {
+      "kind": "ica_skew",
+      "id": 57,
+      "bimodality": 0.13738135993480682,
+      "eta2_token": 3.737517892551154e-16,
+      "eta2_token_sq": 0.0570417894978549,
+      "eta2_token_abs": 0.09959755887355537,
+      "repro": 0.8733457326889038,
+      "skew": 0.7030597925186157,
+      "ex_kurtosis": 7.406123161315918,
+      "screened": true,
+      "named": false,
+      "named_by": []
+     },
+     {
+      "kind": "ica_skew",
+      "id": 58,
+      "bimodality": 0.21945726871490479,
+      "eta2_token": 3.8586928620335917e-16,
+      "eta2_token_sq": 0.04697442661003154,
+      "eta2_token_abs": 0.06991710922149347,
+      "repro": 0.9356423616409302,
+      "skew": 0.5707734823226929,
+      "ex_kurtosis": 3.1569557189941406,
+      "screened": true,
+      "named": false,
+      "named_by": []
+     },
+     {
+      "kind": "ica_skew",
+      "id": 59,
+      "bimodality": 0.12187846004962921,
+      "eta2_token": 3.053896509109016e-16,
+      "eta2_token_sq": 0.15326657498638954,
+      "eta2_token_abs": 0.21715769260373938,
+      "repro": 0.7869342565536499,
+      "skew": 0.714905321598053,
+      "ex_kurtosis": 9.469260215759277,
+      "screened": false
+     },
+     {
+      "kind": "ica_skew",
+      "id": 60,
+      "bimodality": 0.27298229932785034,
+      "eta2_token": 4.415008380889802e-16,
+      "eta2_token_sq": 0.06477638352261965,
+      "eta2_token_abs": 0.09759301998064358,
+      "repro": 0.9676754474639893,
+      "skew": 1.041190505027771,
+      "ex_kurtosis": 4.505760669708252,
+      "screened": true,
+      "named": false,
+      "named_by": []
+     },
+     {
+      "kind": "ica_skew",
+      "id": 61,
+      "bimodality": 0.14170263707637787,
+      "eta2_token": 2.676817732996752e-16,
+      "eta2_token_sq": 0.05562469990197333,
+      "eta2_token_abs": 0.11643464102765286,
+      "repro": 0.9057188034057617,
+      "skew": 0.8299316167831421,
+      "ex_kurtosis": 8.619932174682617,
+      "screened": true,
+      "named": false,
+      "named_by": []
+     },
+     {
+      "kind": "ica_skew",
+      "id": 62,
+      "bimodality": 0.18667767941951752,
+      "eta2_token": 3.738418420195858e-16,
+      "eta2_token_sq": 0.11060707344488863,
+      "eta2_token_abs": 0.13888779557739556,
+      "repro": 0.47748565673828125,
+      "skew": 0.320888489484787,
+      "ex_kurtosis": 2.89487886428833,
+      "screened": false
+     },
+     {
+      "kind": "ica_skew",
+      "id": 63,
+      "bimodality": 0.18872930109500885,
+      "eta2_token": 3.4681006537138787e-16,
+      "eta2_token_sq": 0.06626038781885774,
+      "eta2_token_abs": 0.10317005160252257,
+      "repro": 0.3839339017868042,
+      "skew": 0.33095747232437134,
+      "ex_kurtosis": 4.272426128387451,
+      "screened": false
+     }
+    ]
+   },
+   "seconds": 30
+  },
+  "12": {
+   "presence": {
+    "logcosh/0": {
+     "match": 60,
+     "cos": 0.3207681592173222,
+     "context_generic": false
+    },
+    "logcosh/1": {
+     "match": 33,
+     "cos": 0.405833732747674,
+     "context_generic": false
+    },
+    "logcosh/2": {
+     "match": 18,
+     "cos": 0.3240342723614189,
+     "context_generic": false
+    },
+    "logcosh/6": {
+     "match": 34,
+     "cos": 0.692428013345724,
+     "context_generic": false
+    },
+    "logcosh/9": {
+     "match": 45,
+     "cos": 0.553997163124715,
+     "context_generic": false
+    },
+    "logcosh/10": {
+     "match": 46,
+     "cos": 0.34326409679617986,
+     "context_generic": false
+    },
+    "logcosh/11": {
+     "match": 52,
+     "cos": 0.32616492497478267,
+     "context_generic": false
+    },
+    "logcosh/12": {
+     "match": 42,
+     "cos": 0.9042431128215629,
+     "context_generic": true
+    },
+    "logcosh/13": {
+     "match": 40,
+     "cos": 0.35976850732958576,
+     "context_generic": false
+    },
+    "logcosh/16": {
+     "match": 40,
+     "cos": 0.413694255315067,
+     "context_generic": false
+    },
+    "logcosh/17": {
+     "match": 25,
+     "cos": 0.5359528419332015,
+     "context_generic": false
+    },
+    "logcosh/21": {
+     "match": 15,
+     "cos": 0.6095481353234999,
+     "context_generic": false
+    },
+    "logcosh/22": {
+     "match": 58,
+     "cos": 0.3752611526231632,
+     "context_generic": false
+    },
+    "logcosh/23": {
+     "match": 11,
+     "cos": 0.36187452859511604,
+     "context_generic": false
+    },
+    "logcosh/24": {
+     "match": 45,
+     "cos": 0.2796369662497624,
+     "context_generic": false
+    },
+    "logcosh/26": {
+     "match": 25,
+     "cos": 0.6001281692122493,
+     "context_generic": false
+    },
+    "logcosh/27": {
+     "match": 19,
+     "cos": 0.8096144937446423,
+     "context_generic": true
+    },
+    "logcosh/29": {
+     "match": 13,
+     "cos": 0.41408204114761615,
+     "context_generic": false
+    },
+    "logcosh/32": {
+     "match": 24,
+     "cos": 0.363099198733851,
+     "context_generic": false
+    },
+    "logcosh/33": {
+     "match": 59,
+     "cos": 0.5246455112893725,
+     "context_generic": false
+    },
+    "logcosh/37": {
+     "match": 8,
+     "cos": 0.36429078553582867,
+     "context_generic": false
+    },
+    "logcosh/40": {
+     "match": 20,
+     "cos": 0.5688674468931446,
+     "context_generic": false
+    },
+    "logcosh/44": {
+     "match": 39,
+     "cos": 0.34902346765365694,
+     "context_generic": false
+    },
+    "logcosh/45": {
+     "match": 36,
+     "cos": 0.42305161626125265,
+     "context_generic": false
+    },
+    "logcosh/46": {
+     "match": 63,
+     "cos": 0.40610915930686803,
+     "context_generic": false
+    },
+    "logcosh/48": {
+     "match": 22,
+     "cos": 0.41270501083634226,
+     "context_generic": false
+    },
+    "logcosh/50": {
+     "match": 0,
+     "cos": 0.7625075217901104,
+     "context_generic": false
+    },
+    "logcosh/53": {
+     "match": 32,
+     "cos": 0.29697318121334104,
+     "context_generic": false
+    },
+    "logcosh/54": {
+     "match": 9,
+     "cos": 0.3218144896127586,
+     "context_generic": false
+    },
+    "logcosh/55": {
+     "match": 58,
+     "cos": 0.3731491540977694,
+     "context_generic": false
+    },
+    "logcosh/56": {
+     "match": 56,
+     "cos": 0.3188344258168074,
+     "context_generic": false
+    },
+    "logcosh/57": {
+     "match": 13,
+     "cos": 0.30386519201897483,
+     "context_generic": false
+    },
+    "logcosh/59": {
+     "match": 43,
+     "cos": 0.43799327456072207,
+     "context_generic": false
+    },
+    "logcosh/60": {
+     "match": 11,
+     "cos": 0.3140432613084299,
+     "context_generic": false
+    },
+    "logcosh/61": {
+     "match": 47,
+     "cos": 0.3026614014733896,
+     "context_generic": false
+    },
+    "logcosh/63": {
+     "match": 48,
+     "cos": 0.32259341721717116,
+     "context_generic": false
+    },
+    "skew/0": {
+     "match": 9,
+     "cos": 0.5009949217360335,
+     "context_generic": false
+    },
+    "skew/1": {
+     "match": 48,
+     "cos": 0.48152710359308126,
+     "context_generic": false
+    },
+    "skew/2": {
+     "match": 47,
+     "cos": 0.39933588396974584,
+     "context_generic": false
+    },
+    "skew/5": {
+     "match": 0,
+     "cos": 0.225383604636059,
+     "context_generic": false
+    },
+    "skew/6": {
+     "match": 34,
+     "cos": 0.7130246240643784,
+     "context_generic": false
+    },
+    "skew/7": {
+     "match": 3,
+     "cos": 0.37934616587071446,
+     "context_generic": false
+    },
+    "skew/8": {
+     "match": 45,
+     "cos": 0.7215898677495992,
+     "context_generic": false
+    },
+    "skew/11": {
+     "match": 3,
+     "cos": 0.30581808134271765,
+     "context_generic": false
+    },
+    "skew/12": {
+     "match": 23,
+     "cos": 0.6255503224395988,
+     "context_generic": false
+    },
+    "skew/14": {
+     "match": 63,
+     "cos": 0.6950531503996491,
+     "context_generic": false
+    },
+    "skew/15": {
+     "match": 5,
+     "cos": 0.5387195392568659,
+     "context_generic": false
+    },
+    "skew/16": {
+     "match": 7,
+     "cos": 0.37993448319739065,
+     "context_generic": false
+    },
+    "skew/18": {
+     "match": 59,
+     "cos": 0.89801889374375,
+     "context_generic": true
+    },
+    "skew/20": {
+     "match": 13,
+     "cos": 0.6364431374875574,
+     "context_generic": false
+    },
+    "skew/21": {
+     "match": 14,
+     "cos": 0.459626153748464,
+     "context_generic": false
+    },
+    "skew/23": {
+     "match": 55,
+     "cos": 0.26596895690060574,
+     "context_generic": false
+    },
+    "skew/24": {
+     "match": 20,
+     "cos": 0.3884317649203264,
+     "context_generic": false
+    },
+    "skew/25": {
+     "match": 14,
+     "cos": 0.34323155944476996,
+     "context_generic": false
+    },
+    "skew/26": {
+     "match": 25,
+     "cos": 0.46407960880654986,
+     "context_generic": false
+    },
+    "skew/28": {
+     "match": 6,
+     "cos": 0.6865620482734766,
+     "context_generic": false
+    },
+    "skew/31": {
+     "match": 33,
+     "cos": 0.5383951709712929,
+     "context_generic": false
+    },
+    "skew/32": {
+     "match": 4,
+     "cos": 0.2816042871944797,
+     "context_generic": false
+    },
+    "skew/33": {
+     "match": 0,
+     "cos": 0.27541684659712606,
+     "context_generic": false
+    },
+    "skew/34": {
+     "match": 2,
+     "cos": 0.3368206991269603,
+     "context_generic": false
+    },
+    "skew/35": {
+     "match": 25,
+     "cos": 0.45754205807268283,
+     "context_generic": false
+    },
+    "skew/37": {
+     "match": 17,
+     "cos": 0.3463219959746364,
+     "context_generic": false
+    },
+    "skew/38": {
+     "match": 18,
+     "cos": 0.2845054736530773,
+     "context_generic": false
+    },
+    "skew/39": {
+     "match": 50,
+     "cos": 0.4234770316523105,
+     "context_generic": false
+    },
+    "skew/40": {
+     "match": 47,
+     "cos": 0.4284016960994266,
+     "context_generic": false
+    },
+    "skew/41": {
+     "match": 26,
+     "cos": 0.3632860093153202,
+     "context_generic": false
+    },
+    "skew/42": {
+     "match": 11,
+     "cos": 0.3812191175368578,
+     "context_generic": false
+    },
+    "skew/44": {
+     "match": 60,
+     "cos": 0.32498256957001903,
+     "context_generic": false
+    },
+    "skew/49": {
+     "match": 36,
+     "cos": 0.29974506922181743,
+     "context_generic": false
+    },
+    "skew/51": {
+     "match": 44,
+     "cos": 0.4305138432619461,
+     "context_generic": false
+    },
+    "skew/52": {
+     "match": 46,
+     "cos": 0.5961862114622045,
+     "context_generic": false
+    },
+    "skew/53": {
+     "match": 1,
+     "cos": 0.402300701637952,
+     "context_generic": false
+    },
+    "skew/54": {
+     "match": 8,
+     "cos": 0.28085500426652826,
+     "context_generic": false
+    },
+    "skew/57": {
+     "match": 58,
+     "cos": 0.46059538920698867,
+     "context_generic": false
+    },
+    "skew/59": {
+     "match": 55,
+     "cos": 0.5685407005374237,
+     "context_generic": false
+    },
+    "skew/61": {
+     "match": 22,
+     "cos": 0.49092482852508135,
+     "context_generic": false
+    },
+    "skew/62": {
+     "match": 30,
+     "cos": 0.6134457281677825,
+     "context_generic": false
+    },
+    "skew/63": {
+     "match": 4,
+     "cos": 0.2888623450279756,
+     "context_generic": false
+    }
+   },
+   "s2_yield": {
+    "logcosh": {
+     "n_screened": 15,
+     "n_screened_battery_unnamed": 11,
+     "fit_failed": false
+    },
+    "skew": {
+     "n_screened": 18,
+     "n_screened_battery_unnamed": 16,
+     "fit_failed": false
+    }
+   },
+   "kir": 17.757482532967803,
+   "chance_cos_p999": {
+    "logcosh": 0.5053287142224697,
+    "skew": 0.5086796600904266
+   },
+   "units": {
+    "logcosh": [
+     {
+      "kind": "ica_logcosh",
+      "id": 0,
+      "bimodality": 0.12859587371349335,
+      "eta2_token": 1.4026891316895095e-16,
+      "eta2_token_sq": 0.07482505380157281,
+      "eta2_token_abs": 0.128482089616194,
+      "repro": 0.9057852029800415,
+      "skew": 0.32174602150917053,
+      "ex_kurtosis": 5.0321455001831055,
+      "screened": true,
+      "named": false,
+      "named_by": []
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 1,
+      "bimodality": 0.12750890851020813,
+      "eta2_token": 1.6933166981147068e-16,
+      "eta2_token_sq": 0.19964314624827187,
+      "eta2_token_abs": 0.22358638411506862,
+      "repro": 0.9630022048950195,
+      "skew": -0.34486743807792664,
+      "ex_kurtosis": 5.724460601806641,
+      "screened": true,
+      "named": false,
+      "named_by": []
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 2,
+      "bimodality": 0.2037625014781952,
+      "eta2_token": 4.713249831289965e-16,
+      "eta2_token_sq": 0.05962251871274124,
+      "eta2_token_abs": 0.06940617178707689,
+      "repro": 0.9154520630836487,
+      "skew": 0.23099897801876068,
+      "ex_kurtosis": 2.1584863662719727,
+      "screened": true,
+      "named": false,
+      "named_by": []
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 3,
+      "bimodality": 0.1722688227891922,
+      "eta2_token": 2.700387767101786e-16,
+      "eta2_token_sq": 0.06618556626267269,
+      "eta2_token_abs": 0.08303883784992223,
+      "repro": 0.698303759098053,
+      "skew": 0.05067457631230354,
+      "ex_kurtosis": 2.861082077026367,
+      "screened": false
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 4,
+      "bimodality": 0.14333513379096985,
+      "eta2_token": 2.951279078452834e-16,
+      "eta2_token_sq": 0.16047636762087591,
+      "eta2_token_abs": 0.15756258581341318,
+      "repro": 0.5957582592964172,
+      "skew": -0.2949230968952179,
+      "ex_kurtosis": 4.421749591827393,
+      "screened": false
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 5,
+      "bimodality": 0.21419169008731842,
+      "eta2_token": 3.9804709627659276e-16,
+      "eta2_token_sq": 0.0793490334902314,
+      "eta2_token_abs": 0.09730029057911288,
+      "repro": 0.47887104749679565,
+      "skew": -0.019102836027741432,
+      "ex_kurtosis": 1.629544734954834,
+      "screened": false
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 6,
+      "bimodality": 0.20761047303676605,
+      "eta2_token": 4.592774842765316e-16,
+      "eta2_token_sq": 0.06675737266463797,
+      "eta2_token_abs": 0.08274627262135625,
+      "repro": 0.43834367394447327,
+      "skew": 0.12053230404853821,
+      "ex_kurtosis": 2.002274990081787,
+      "screened": false
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 7,
+      "bimodality": 0.11129097640514374,
+      "eta2_token": 3.2706731826223113e-16,
+      "eta2_token_sq": 0.05300475152530109,
+      "eta2_token_abs": 0.10306655369763139,
+      "repro": 0.7528179287910461,
+      "skew": -0.8317251205444336,
+      "ex_kurtosis": 12.518080711364746,
+      "screened": false
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 8,
+      "bimodality": 0.19892443716526031,
+      "eta2_token": 3.8906509965328865e-16,
+      "eta2_token_sq": 0.08067904407740675,
+      "eta2_token_abs": 0.08767072815532403,
+      "repro": 0.4396122097969055,
+      "skew": 0.018460584804415703,
+      "ex_kurtosis": 1.8552913665771484,
+      "screened": false
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 9,
+      "bimodality": 0.17142465710639954,
+      "eta2_token": 2.112737370681847e-16,
+      "eta2_token_sq": 0.11994468757362269,
+      "eta2_token_abs": 0.14791879614388492,
+      "repro": 0.8989251852035522,
+      "skew": -0.23813922703266144,
+      "ex_kurtosis": 3.2344884872436523,
+      "screened": true,
+      "named": true,
+      "named_by": [
+       "after_digit"
+      ]
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 10,
+      "bimodality": 0.2117622047662735,
+      "eta2_token": 6.538396673626574e-16,
+      "eta2_token_sq": 0.0787944825809359,
+      "eta2_token_abs": 0.07966244395876187,
+      "repro": 0.6074092984199524,
+      "skew": 0.367142915725708,
+      "ex_kurtosis": 2.4358739852905273,
+      "screened": false
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 11,
+      "bimodality": 0.21927538514137268,
+      "eta2_token": 4.46063527063828e-16,
+      "eta2_token_sq": 0.0428507426768055,
+      "eta2_token_abs": 0.05486638040301826,
+      "repro": 0.38606685400009155,
+      "skew": 0.048803918063640594,
+      "ex_kurtosis": 1.7151408195495605,
+      "screened": false
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 12,
+      "bimodality": 0.22583767771720886,
+      "eta2_token": 4.098430393010552e-16,
+      "eta2_token_sq": 0.04802141604308595,
+      "eta2_token_abs": 0.057335629808202934,
+      "repro": 0.4995979964733124,
+      "skew": 0.20394258201122284,
+      "ex_kurtosis": 1.634986400604248,
+      "screened": false
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 13,
+      "bimodality": 0.2184646725654602,
+      "eta2_token": 3.3955626143489324e-16,
+      "eta2_token_sq": 0.06365200237955855,
+      "eta2_token_abs": 0.07652662343241368,
+      "repro": 0.35267966985702515,
+      "skew": 0.08560695499181747,
+      "ex_kurtosis": 1.5913887023925781,
+      "screened": false
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 14,
+      "bimodality": 0.1760760098695755,
+      "eta2_token": 2.583913449470693e-16,
+      "eta2_token_sq": 0.185846201094078,
+      "eta2_token_abs": 0.23095423000009271,
+      "repro": 0.9594020843505859,
+      "skew": -0.5539541244506836,
+      "ex_kurtosis": 4.382269382476807,
+      "screened": true,
+      "named": true,
+      "named_by": [
+       "after_newline",
+       "prev_punct"
+      ]
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 15,
+      "bimodality": 0.20331671833992004,
+      "eta2_token": 5.750844415585998e-16,
+      "eta2_token_sq": 0.08866905059152722,
+      "eta2_token_abs": 0.09936550364527984,
+      "repro": 0.35801705718040466,
+      "skew": 0.10235880315303802,
+      "ex_kurtosis": 1.9598016738891602,
+      "screened": false
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 16,
+      "bimodality": 0.15388265252113342,
+      "eta2_token": 3.492578695988732e-16,
+      "eta2_token_sq": 0.03797732204250204,
+      "eta2_token_abs": 0.06799800527227327,
+      "repro": 0.4122334122657776,
+      "skew": -0.6308227181434631,
+      "ex_kurtosis": 5.907011985778809,
+      "screened": false
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 17,
+      "bimodality": 0.1865515559911728,
+      "eta2_token": 4.2826120057700754e-16,
+      "eta2_token_sq": 0.042066606328908025,
+      "eta2_token_abs": 0.06076106969563006,
+      "repro": 0.5460280776023865,
+      "skew": 0.14344094693660736,
+      "ex_kurtosis": 2.466892719268799,
+      "screened": false
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 18,
+      "bimodality": 0.16281218826770782,
+      "eta2_token": 3.4919119133207165e-16,
+      "eta2_token_sq": 0.09597374707371739,
+      "eta2_token_abs": 0.1231586078974581,
+      "repro": 0.6900113224983215,
+      "skew": -0.26287105679512024,
+      "ex_kurtosis": 3.817497730255127,
+      "screened": false
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 19,
+      "bimodality": 0.18831580877304077,
+      "eta2_token": 4.945972577108517e-16,
+      "eta2_token_sq": 0.0679127510403204,
+      "eta2_token_abs": 0.08365662511171239,
+      "repro": 0.5601386427879333,
+      "skew": -0.34989020228385925,
+      "ex_kurtosis": 2.8823347091674805,
+      "screened": false
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 20,
+      "bimodality": 0.2126380056142807,
+      "eta2_token": 4.652605684605956e-16,
+      "eta2_token_sq": 0.06665887908124662,
+      "eta2_token_abs": 0.07351897461613745,
+      "repro": 0.5460519790649414,
+      "skew": -0.20013703405857086,
+      "ex_kurtosis": 2.06253719329834,
+      "screened": false
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 21,
+      "bimodality": 0.1650577336549759,
+      "eta2_token": 1.1674035729235296e-16,
+      "eta2_token_sq": 0.10335848639609696,
+      "eta2_token_abs": 0.14326480481882664,
+      "repro": 0.8922998309135437,
+      "skew": 0.0951436460018158,
+      "ex_kurtosis": 3.1025047302246094,
+      "screened": true,
+      "named": false,
+      "named_by": []
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 22,
+      "bimodality": 0.17810317873954773,
+      "eta2_token": 1.8899463403870425e-16,
+      "eta2_token_sq": 0.08051616459662085,
+      "eta2_token_abs": 0.11690497733435247,
+      "repro": 0.9014296531677246,
+      "skew": -0.33540481328964233,
+      "ex_kurtosis": 3.499149799346924,
+      "screened": true,
+      "named": false,
+      "named_by": []
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 23,
+      "bimodality": 0.19704169034957886,
+      "eta2_token": 3.3541782285468e-16,
+      "eta2_token_sq": 0.0758363645196216,
+      "eta2_token_abs": 0.08931956377670759,
+      "repro": 0.368390291929245,
+      "skew": -0.039267245680093765,
+      "ex_kurtosis": 2.027820587158203,
+      "screened": false
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 24,
+      "bimodality": 0.21806059777736664,
+      "eta2_token": 4.493752827916457e-16,
+      "eta2_token_sq": 0.0696999450094407,
+      "eta2_token_abs": 0.07883881358065177,
+      "repro": 0.5388637185096741,
+      "skew": -0.017193233594298363,
+      "ex_kurtosis": 1.5003223419189453,
+      "screened": false
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 25,
+      "bimodality": 0.17846743762493134,
+      "eta2_token": 3.7215493350378585e-16,
+      "eta2_token_sq": 0.04523493943911515,
+      "eta2_token_abs": 0.07353918090156687,
+      "repro": 0.5660560727119446,
+      "skew": -0.4229264259338379,
+      "ex_kurtosis": 4.183425426483154,
+      "screened": false
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 26,
+      "bimodality": 0.07938885688781738,
+      "eta2_token": 2.9857461917455537e-16,
+      "eta2_token_sq": 0.3282752185677341,
+      "eta2_token_abs": 0.3268124331836409,
+      "repro": 0.9773427844047546,
+      "skew": -0.48249438405036926,
+      "ex_kurtosis": 11.821742057800293,
+      "screened": false
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 27,
+      "bimodality": 0.18307587504386902,
+      "eta2_token": 2.6914296162455434e-16,
+      "eta2_token_sq": 0.06911206793730275,
+      "eta2_token_abs": 0.08934045280206651,
+      "repro": 0.38230788707733154,
+      "skew": 0.017286069691181183,
+      "ex_kurtosis": 2.4575819969177246,
+      "screened": false
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 28,
+      "bimodality": 0.1772521734237671,
+      "eta2_token": 3.108389356208702e-16,
+      "eta2_token_sq": 0.054169496086920205,
+      "eta2_token_abs": 0.07207516312208825,
+      "repro": 0.39944106340408325,
+      "skew": -0.26922929286956787,
+      "ex_kurtosis": 3.0192689895629883,
+      "screened": false
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 29,
+      "bimodality": 0.18788272142410278,
+      "eta2_token": 3.266105188554343e-16,
+      "eta2_token_sq": 0.06556437948795327,
+      "eta2_token_abs": 0.08497899179723206,
+      "repro": 0.4323166608810425,
+      "skew": -0.1310763955116272,
+      "ex_kurtosis": 2.435657024383545,
+      "screened": false
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 30,
+      "bimodality": 0.2038452923297882,
+      "eta2_token": 3.951630890680289e-16,
+      "eta2_token_sq": 0.08052173097097637,
+      "eta2_token_abs": 0.09443062319394033,
+      "repro": 0.47974327206611633,
+      "skew": 0.013750963844358921,
+      "ex_kurtosis": 1.6230616569519043,
+      "screened": false
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 31,
+      "bimodality": 0.2219071388244629,
+      "eta2_token": 3.828712884361634e-16,
+      "eta2_token_sq": 0.054615926317444524,
+      "eta2_token_abs": 0.0612146778313131,
+      "repro": 0.34989383816719055,
+      "skew": 0.009377368725836277,
+      "ex_kurtosis": 1.5316119194030762,
+      "screened": false
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 32,
+      "bimodality": 0.19122831523418427,
+      "eta2_token": 3.3650739342267385e-16,
+      "eta2_token_sq": 0.0498123506164383,
+      "eta2_token_abs": 0.07273694883382203,
+      "repro": 0.4827929437160492,
+      "skew": -0.261293888092041,
+      "ex_kurtosis": 2.7163262367248535,
+      "screened": false
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 33,
+      "bimodality": 0.20839188992977142,
+      "eta2_token": 2.0056658259583526e-16,
+      "eta2_token_sq": 0.06507646296403256,
+      "eta2_token_abs": 0.08665354962817028,
+      "repro": 0.48933663964271545,
+      "skew": -0.13832665979862213,
+      "ex_kurtosis": 1.8674049377441406,
+      "screened": false
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 34,
+      "bimodality": 0.2624669671058655,
+      "eta2_token": 6.225923585611611e-16,
+      "eta2_token_sq": 0.06588505877815201,
+      "eta2_token_abs": 0.0931816737567107,
+      "repro": 0.9676204323768616,
+      "skew": 0.9165870547294617,
+      "ex_kurtosis": 3.959601879119873,
+      "screened": true,
+      "named": false,
+      "named_by": []
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 35,
+      "bimodality": 0.2150283008813858,
+      "eta2_token": 7.988743900639371e-16,
+      "eta2_token_sq": 0.11810229213602996,
+      "eta2_token_abs": 0.11646711092888956,
+      "repro": 0.6542525291442871,
+      "skew": 0.1346362829208374,
+      "ex_kurtosis": 1.651951789855957,
+      "screened": false
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 36,
+      "bimodality": 0.21557272970676422,
+      "eta2_token": 4.451833838061097e-16,
+      "eta2_token_sq": 0.06016938241097969,
+      "eta2_token_abs": 0.07069745085831111,
+      "repro": 0.2847876250743866,
+      "skew": -0.0178055539727211,
+      "ex_kurtosis": 1.7350635528564453,
+      "screened": false
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 37,
+      "bimodality": 0.2177884429693222,
+      "eta2_token": 6.067707250102773e-16,
+      "eta2_token_sq": 0.07852400037059439,
+      "eta2_token_abs": 0.08143933924607753,
+      "repro": 0.565270185470581,
+      "skew": -0.20056316256523132,
+      "ex_kurtosis": 1.798750877380371,
+      "screened": false
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 38,
+      "bimodality": 0.22116634249687195,
+      "eta2_token": 2.3394675760646514e-16,
+      "eta2_token_sq": 0.04250327239431339,
+      "eta2_token_abs": 0.0805842861460686,
+      "repro": 0.9664014577865601,
+      "skew": 0.9072439074516296,
+      "ex_kurtosis": 5.608875274658203,
+      "screened": true,
+      "named": true,
+      "named_by": [
+       "word_continuation"
+      ]
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 39,
+      "bimodality": 0.0934499129652977,
+      "eta2_token": 2.6504883437758293e-16,
+      "eta2_token_sq": 0.27573375771378483,
+      "eta2_token_abs": 0.3036448146997426,
+      "repro": 0.9917344450950623,
+      "skew": -0.19279220700263977,
+      "ex_kurtosis": 8.053081512451172,
+      "screened": true,
+      "named": true,
+      "named_by": [
+       "after_digit"
+      ]
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 40,
+      "bimodality": 0.1269414871931076,
+      "eta2_token": 2.4913071469550653e-16,
+      "eta2_token_sq": 0.15362518288423402,
+      "eta2_token_abs": 0.20231895915251025,
+      "repro": 0.9728879928588867,
+      "skew": 0.3040694296360016,
+      "ex_kurtosis": 5.580739974975586,
+      "screened": true,
+      "named": false,
+      "named_by": []
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 41,
+      "bimodality": 0.18625889718532562,
+      "eta2_token": 4.3937015172380687e-16,
+      "eta2_token_sq": 0.06084028286276088,
+      "eta2_token_abs": 0.07994498769420018,
+      "repro": 0.41059401631355286,
+      "skew": -0.007524763699620962,
+      "ex_kurtosis": 2.1454243659973145,
+      "screened": false
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 42,
+      "bimodality": 0.09642934054136276,
+      "eta2_token": 8.85932367511487e-17,
+      "eta2_token_sq": 0.021642674343388797,
+      "eta2_token_abs": 0.12386941094346891,
+      "repro": 0.9769580364227295,
+      "skew": 0.7165242433547974,
+      "ex_kurtosis": 13.034280776977539,
+      "screened": true,
+      "named": false,
+      "named_by": []
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 43,
+      "bimodality": 0.21700549125671387,
+      "eta2_token": 4.3686123126148023e-16,
+      "eta2_token_sq": 0.07126980312753846,
+      "eta2_token_abs": 0.07572279297357387,
+      "repro": 0.4017370343208313,
+      "skew": -0.09309336543083191,
+      "ex_kurtosis": 1.653080940246582,
+      "screened": false
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 44,
+      "bimodality": 0.1739010512828827,
+      "eta2_token": 4.140458345412356e-16,
+      "eta2_token_sq": 0.18253015702616657,
+      "eta2_token_abs": 0.13633321369897414,
+      "repro": 0.886472225189209,
+      "skew": -0.21150125563144684,
+      "ex_kurtosis": 3.2613720893859863,
+      "screened": true,
+      "named": false,
+      "named_by": []
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 45,
+      "bimodality": 0.18280541896820068,
+      "eta2_token": 3.640932838742434e-16,
+      "eta2_token_sq": 0.05751864358965584,
+      "eta2_token_abs": 0.07986575114448494,
+      "repro": 0.5776851177215576,
+      "skew": 0.06262844055891037,
+      "ex_kurtosis": 2.3135814666748047,
+      "screened": false
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 46,
+      "bimodality": 0.20469018816947937,
+      "eta2_token": 4.470839105152547e-16,
+      "eta2_token_sq": 0.07838848957204457,
+      "eta2_token_abs": 0.0880538435125491,
+      "repro": 0.4092009663581848,
+      "skew": 0.17821036279201508,
+      "ex_kurtosis": 2.134648323059082,
+      "screened": false
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 47,
+      "bimodality": 0.16199322044849396,
+      "eta2_token": 3.1270276363995797e-16,
+      "eta2_token_sq": 0.13385499029774958,
+      "eta2_token_abs": 0.15414030971997505,
+      "repro": 0.7978782653808594,
+      "skew": 0.26697877049446106,
+      "ex_kurtosis": 3.706763744354248,
+      "screened": false
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 48,
+      "bimodality": 0.21331992745399475,
+      "eta2_token": 4.634171445424826e-16,
+      "eta2_token_sq": 0.06383505034097904,
+      "eta2_token_abs": 0.06959294724025906,
+      "repro": 0.39222803711891174,
+      "skew": -0.03436547890305519,
+      "ex_kurtosis": 1.6013617515563965,
+      "screened": false
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 49,
+      "bimodality": 0.21308712661266327,
+      "eta2_token": 4.119292610358192e-16,
+      "eta2_token_sq": 0.062476598378541574,
+      "eta2_token_abs": 0.07447439155514433,
+      "repro": 0.48827558755874634,
+      "skew": 0.045598987489938736,
+      "ex_kurtosis": 1.6674151420593262,
+      "screened": false
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 50,
+      "bimodality": 0.14886634051799774,
+      "eta2_token": 3.2815207943794596e-16,
+      "eta2_token_sq": 0.13672976720110966,
+      "eta2_token_abs": 0.14070155760180114,
+      "repro": 0.4114857614040375,
+      "skew": 0.17110909521579742,
+      "ex_kurtosis": 4.4340667724609375,
+      "screened": false
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 51,
+      "bimodality": 0.18403802812099457,
+      "eta2_token": 3.083701884697482e-16,
+      "eta2_token_sq": 0.10550606328937348,
+      "eta2_token_abs": 0.0985197296556352,
+      "repro": 0.5303844809532166,
+      "skew": 0.017573900520801544,
+      "ex_kurtosis": 2.674799919128418,
+      "screened": false
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 52,
+      "bimodality": 0.21952354907989502,
+      "eta2_token": 4.0054186932886663e-16,
+      "eta2_token_sq": 0.07762478607835742,
+      "eta2_token_abs": 0.08787504822229801,
+      "repro": 0.6095044612884521,
+      "skew": -0.030777309089899063,
+      "ex_kurtosis": 1.5454974174499512,
+      "screened": false
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 53,
+      "bimodality": 0.2109295278787613,
+      "eta2_token": 2.8402319336738535e-16,
+      "eta2_token_sq": 0.06558944775558599,
+      "eta2_token_abs": 0.08277138516024904,
+      "repro": 0.42369648814201355,
+      "skew": -0.09667623043060303,
+      "ex_kurtosis": 1.713719367980957,
+      "screened": false
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 54,
+      "bimodality": 0.22947849333286285,
+      "eta2_token": 3.511485766876659e-16,
+      "eta2_token_sq": 0.04756509702887915,
+      "eta2_token_abs": 0.06464138334694682,
+      "repro": 0.9661526083946228,
+      "skew": 0.7667700052261353,
+      "ex_kurtosis": 4.061275005340576,
+      "screened": true,
+      "named": false,
+      "named_by": []
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 55,
+      "bimodality": 0.18035927414894104,
+      "eta2_token": 3.162806472688457e-16,
+      "eta2_token_sq": 0.09175150796542635,
+      "eta2_token_abs": 0.10189231856161125,
+      "repro": 0.4763964116573334,
+      "skew": 0.07978693395853043,
+      "ex_kurtosis": 2.4267091751098633,
+      "screened": false
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 56,
+      "bimodality": 0.22291220724582672,
+      "eta2_token": 4.3674896578690816e-16,
+      "eta2_token_sq": 0.08646444312988529,
+      "eta2_token_abs": 0.08860465924239715,
+      "repro": 0.577340841293335,
+      "skew": -0.33598557114601135,
+      "ex_kurtosis": 2.0352706909179688,
+      "screened": false
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 57,
+      "bimodality": 0.18256841599941254,
+      "eta2_token": 3.389432140958315e-16,
+      "eta2_token_sq": 0.08553726605450589,
+      "eta2_token_abs": 0.09556362990677998,
+      "repro": 0.2822244167327881,
+      "skew": 0.04621255770325661,
+      "ex_kurtosis": 2.635542869567871,
+      "screened": false
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 58,
+      "bimodality": 0.18851031363010406,
+      "eta2_token": 3.9971785410727797e-16,
+      "eta2_token_sq": 0.06108460889746068,
+      "eta2_token_abs": 0.07920529186947745,
+      "repro": 0.4916956424713135,
+      "skew": 0.04682622477412224,
+      "ex_kurtosis": 2.214555263519287,
+      "screened": false
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 59,
+      "bimodality": 0.21698883175849915,
+      "eta2_token": 5.365425504675572e-16,
+      "eta2_token_sq": 0.05089933555771065,
+      "eta2_token_abs": 0.05919821920671795,
+      "repro": 0.3209474980831146,
+      "skew": -0.0506269745528698,
+      "ex_kurtosis": 1.7805099487304688,
+      "screened": false
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 60,
+      "bimodality": 0.10251151770353317,
+      "eta2_token": 2.5775066922801705e-16,
+      "eta2_token_sq": 0.2765494223029979,
+      "eta2_token_abs": 0.2264306270806067,
+      "repro": 0.9405328631401062,
+      "skew": -0.6672785878181458,
+      "ex_kurtosis": 11.020295143127441,
+      "screened": true,
+      "named": false,
+      "named_by": []
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 61,
+      "bimodality": 0.23328687250614166,
+      "eta2_token": 5.352707264038142e-16,
+      "eta2_token_sq": 0.06962267178071663,
+      "eta2_token_abs": 0.07384330385496589,
+      "repro": 0.35639598965644836,
+      "skew": -0.1063694953918457,
+      "ex_kurtosis": 1.3932976722717285,
+      "screened": false
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 62,
+      "bimodality": 0.15668390691280365,
+      "eta2_token": 3.164898650899073e-16,
+      "eta2_token_sq": 0.11521996536329387,
+      "eta2_token_abs": 0.12739378510113117,
+      "repro": 0.618351399898529,
+      "skew": 0.22735589742660522,
+      "ex_kurtosis": 3.850947856903076,
+      "screened": false
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 63,
+      "bimodality": 0.20423445105552673,
+      "eta2_token": 3.347451137012654e-16,
+      "eta2_token_sq": 0.06617253835972105,
+      "eta2_token_abs": 0.07864757812562913,
+      "repro": 0.30983132123947144,
+      "skew": -0.08103463053703308,
+      "ex_kurtosis": 1.9282803535461426,
+      "screened": false
+     }
+    ],
+    "skew": [
+     {
+      "kind": "ica_skew",
+      "id": 0,
+      "bimodality": 0.2400960922241211,
+      "eta2_token": 4.595949669827683e-16,
+      "eta2_token_sq": 0.06225162857157477,
+      "eta2_token_abs": 0.06727297823944516,
+      "repro": 0.35629889369010925,
+      "skew": 0.17061582207679749,
+      "ex_kurtosis": 1.3438730239868164,
+      "screened": false
+     },
+     {
+      "kind": "ica_skew",
+      "id": 1,
+      "bimodality": 0.21060790121555328,
+      "eta2_token": 3.870300576702664e-16,
+      "eta2_token_sq": 0.05133532107372699,
+      "eta2_token_abs": 0.06552714059093473,
+      "repro": 0.443975031375885,
+      "skew": 0.3346608579158783,
+      "ex_kurtosis": 2.163001537322998,
+      "screened": false
+     },
+     {
+      "kind": "ica_skew",
+      "id": 2,
+      "bimodality": 0.2098294347524643,
+      "eta2_token": 5.157868801981502e-16,
+      "eta2_token_sq": 0.05839668469290976,
+      "eta2_token_abs": 0.0725231851247844,
+      "repro": 0.3430195152759552,
+      "skew": 0.21068315207958221,
+      "ex_kurtosis": 1.8475322723388672,
+      "screened": false
+     },
+     {
+      "kind": "ica_skew",
+      "id": 3,
+      "bimodality": 0.19991442561149597,
+      "eta2_token": 4.31699409215499e-16,
+      "eta2_token_sq": 0.10003082769476772,
+      "eta2_token_abs": 0.10684619917223405,
+      "repro": 0.5092813968658447,
+      "skew": 0.2985631823539734,
+      "ex_kurtosis": 2.4673256874084473,
+      "screened": false
+     },
+     {
+      "kind": "ica_skew",
+      "id": 4,
+      "bimodality": 0.18593646585941315,
+      "eta2_token": 2.931514656092952e-16,
+      "eta2_token_sq": 0.0640854469671117,
+      "eta2_token_abs": 0.08218560027824101,
+      "repro": 0.8962114453315735,
+      "skew": 0.441811203956604,
+      "ex_kurtosis": 3.53792667388916,
+      "screened": true,
+      "named": false,
+      "named_by": []
+     },
+     {
+      "kind": "ica_skew",
+      "id": 5,
+      "bimodality": 0.21267198026180267,
+      "eta2_token": 4.570788420334707e-16,
+      "eta2_token_sq": 0.0529663316863435,
+      "eta2_token_abs": 0.07219083529620257,
+      "repro": 0.35027891397476196,
+      "skew": 0.2306363433599472,
+      "ex_kurtosis": 2.2333931922912598,
+      "screened": false
+     },
+     {
+      "kind": "ica_skew",
+      "id": 6,
+      "bimodality": 0.20350313186645508,
+      "eta2_token": 5.669029039175948e-16,
+      "eta2_token_sq": 0.04595351021785594,
+      "eta2_token_abs": 0.059284605614697526,
+      "repro": 0.4012162387371063,
+      "skew": 0.24657879769802094,
+      "ex_kurtosis": 1.999650001525879,
+      "screened": false
+     },
+     {
+      "kind": "ica_skew",
+      "id": 7,
+      "bimodality": 0.23472507297992706,
+      "eta2_token": 4.3158527172938564e-16,
+      "eta2_token_sq": 0.05440685776024709,
+      "eta2_token_abs": 0.062185095555313895,
+      "repro": 0.4506568908691406,
+      "skew": 0.16018006205558777,
+      "ex_kurtosis": 1.2541875839233398,
+      "screened": false
+     },
+     {
+      "kind": "ica_skew",
+      "id": 8,
+      "bimodality": 0.22181713581085205,
+      "eta2_token": 3.2788235880821664e-16,
+      "eta2_token_sq": 0.05938806841800111,
+      "eta2_token_abs": 0.09164172048703063,
+      "repro": 0.632372260093689,
+      "skew": 0.5353655815124512,
+      "ex_kurtosis": 3.995389938354492,
+      "screened": false
+     },
+     {
+      "kind": "ica_skew",
+      "id": 9,
+      "bimodality": 0.16602525115013123,
+      "eta2_token": 2.380628973503118e-16,
+      "eta2_token_sq": 0.08018303043684737,
+      "eta2_token_abs": 0.11474352250550296,
+      "repro": 0.8175649046897888,
+      "skew": 0.5761223435401917,
+      "ex_kurtosis": 4.758978843688965,
+      "screened": true,
+      "named": false,
+      "named_by": []
+     },
+     {
+      "kind": "ica_skew",
+      "id": 10,
+      "bimodality": 0.2149987816810608,
+      "eta2_token": 3.324548685541274e-16,
+      "eta2_token_sq": 0.04131820897117951,
+      "eta2_token_abs": 0.06328585287741366,
+      "repro": 0.7260890603065491,
+      "skew": 0.4433939456939697,
+      "ex_kurtosis": 2.7154464721679688,
+      "screened": false
+     },
+     {
+      "kind": "ica_skew",
+      "id": 11,
+      "bimodality": 0.24656905233860016,
+      "eta2_token": 3.8880527084615303e-16,
+      "eta2_token_sq": 0.0562852313529445,
+      "eta2_token_abs": 0.06326648954280191,
+      "repro": 0.47778335213661194,
+      "skew": 0.19491922855377197,
+      "ex_kurtosis": 1.3275599479675293,
+      "screened": false
+     },
+     {
+      "kind": "ica_skew",
+      "id": 12,
+      "bimodality": 0.16473905742168427,
+      "eta2_token": 2.9621759894600013e-16,
+      "eta2_token_sq": 0.05684680312086242,
+      "eta2_token_abs": 0.07683924965761539,
+      "repro": 0.563433825969696,
+      "skew": 0.3170693516731262,
+      "ex_kurtosis": 3.2510781288146973,
+      "screened": false
+     },
+     {
+      "kind": "ica_skew",
+      "id": 13,
+      "bimodality": 0.2133432924747467,
+      "eta2_token": 4.705509553198728e-16,
+      "eta2_token_sq": 0.06472980004369644,
+      "eta2_token_abs": 0.07592335682229916,
+      "repro": 0.5861763954162598,
+      "skew": 0.3820011615753174,
+      "ex_kurtosis": 2.3786802291870117,
+      "screened": false
+     },
+     {
+      "kind": "ica_skew",
+      "id": 14,
+      "bimodality": 0.2003403753042221,
+      "eta2_token": 2.8767408290853627e-16,
+      "eta2_token_sq": 0.10796605183288609,
+      "eta2_token_abs": 0.14728886532859295,
+      "repro": 0.9393088221549988,
+      "skew": 0.6330996155738831,
+      "ex_kurtosis": 3.990055561065674,
+      "screened": true,
+      "named": true,
+      "named_by": [
+       "after_newline",
+       "prev_punct"
+      ]
+     },
+     {
+      "kind": "ica_skew",
+      "id": 15,
+      "bimodality": 0.20397211611270905,
+      "eta2_token": 5.211470974904408e-16,
+      "eta2_token_sq": 0.046737416642757046,
+      "eta2_token_abs": 0.06304995416517235,
+      "repro": 0.44914862513542175,
+      "skew": 0.312516987323761,
+      "ex_kurtosis": 2.3793416023254395,
+      "screened": false
+     },
+     {
+      "kind": "ica_skew",
+      "id": 16,
+      "bimodality": 0.21272900700569153,
+      "eta2_token": 4.100539451012928e-16,
+      "eta2_token_sq": 0.05487427713141673,
+      "eta2_token_abs": 0.06379819254429074,
+      "repro": 0.43900996446609497,
+      "skew": 0.3000531792640686,
+      "ex_kurtosis": 2.0154223442077637,
+      "screened": false
+     },
+     {
+      "kind": "ica_skew",
+      "id": 17,
+      "bimodality": 0.20015595853328705,
+      "eta2_token": 3.1179069042304516e-16,
+      "eta2_token_sq": 0.04424122072550562,
+      "eta2_token_abs": 0.05946976849141166,
+      "repro": 0.4640919268131256,
+      "skew": 0.24483543634414673,
+      "ex_kurtosis": 1.898911476135254,
+      "screened": false
+     },
+     {
+      "kind": "ica_skew",
+      "id": 18,
+      "bimodality": 0.2335447520017624,
+      "eta2_token": 3.758177073032882e-16,
+      "eta2_token_sq": 0.04817370056616914,
+      "eta2_token_abs": 0.060323578972756614,
+      "repro": 0.5838778018951416,
+      "skew": 0.28293997049331665,
+      "ex_kurtosis": 1.6723871231079102,
+      "screened": false
+     },
+     {
+      "kind": "ica_skew",
+      "id": 19,
+      "bimodality": 0.15521515905857086,
+      "eta2_token": 3.2195031922461237e-16,
+      "eta2_token_sq": 0.039282588624550044,
+      "eta2_token_abs": 0.07210325158066128,
+      "repro": 0.918554961681366,
+      "skew": 0.7639927864074707,
+      "ex_kurtosis": 6.984308242797852,
+      "screened": true,
+      "named": false,
+      "named_by": []
+     },
+     {
+      "kind": "ica_skew",
+      "id": 20,
+      "bimodality": 0.22416400909423828,
+      "eta2_token": 4.115581256780583e-16,
+      "eta2_token_sq": 0.05425535554889696,
+      "eta2_token_abs": 0.07007401330642833,
+      "repro": 0.5256767868995667,
+      "skew": 0.3138965368270874,
+      "ex_kurtosis": 1.9672355651855469,
+      "screened": false
+     },
+     {
+      "kind": "ica_skew",
+      "id": 21,
+      "bimodality": 0.1529207080602646,
+      "eta2_token": 2.8405161575946554e-16,
+      "eta2_token_sq": 0.11065436509847626,
+      "eta2_token_abs": 0.12569587678290153,
+      "repro": 0.8855341076850891,
+      "skew": 0.5943900346755981,
+      "ex_kurtosis": 5.737077713012695,
+      "screened": true,
+      "named": false,
+      "named_by": []
+     },
+     {
+      "kind": "ica_skew",
+      "id": 22,
+      "bimodality": 0.19675134122371674,
+      "eta2_token": 3.0654755642238136e-16,
+      "eta2_token_sq": 0.08174525665585204,
+      "eta2_token_abs": 0.10002830663910088,
+      "repro": 0.5279021263122559,
+      "skew": 0.31836894154548645,
+      "ex_kurtosis": 2.549037456512451,
+      "screened": false
+     },
+     {
+      "kind": "ica_skew",
+      "id": 23,
+      "bimodality": 0.23639759421348572,
+      "eta2_token": 4.054577920280774e-16,
+      "eta2_token_sq": 0.06128572872933449,
+      "eta2_token_abs": 0.07281737947601792,
+      "repro": 0.4071023464202881,
+      "skew": 0.27267152070999146,
+      "ex_kurtosis": 1.5597567558288574,
+      "screened": false
+     },
+     {
+      "kind": "ica_skew",
+      "id": 24,
+      "bimodality": 0.18383070826530457,
+      "eta2_token": 3.27482497954955e-16,
+      "eta2_token_sq": 0.04026964934725685,
+      "eta2_token_abs": 0.06287892841754525,
+      "repro": 0.9106923937797546,
+      "skew": 0.4552857577800751,
+      "ex_kurtosis": 3.6113972663879395,
+      "screened": true,
+      "named": false,
+      "named_by": []
+     },
+     {
+      "kind": "ica_skew",
+      "id": 25,
+      "bimodality": 0.19157150387763977,
+      "eta2_token": 3.533693136341088e-16,
+      "eta2_token_sq": 0.0581317255941447,
+      "eta2_token_abs": 0.09331537872858105,
+      "repro": 0.6672019958496094,
+      "skew": 0.6327607035636902,
+      "ex_kurtosis": 4.935722351074219,
+      "screened": false
+     },
+     {
+      "kind": "ica_skew",
+      "id": 26,
+      "bimodality": 0.15845966339111328,
+      "eta2_token": 4.022863564274917e-16,
+      "eta2_token_sq": 0.12890051963331356,
+      "eta2_token_abs": 0.17168701060425057,
+      "repro": 0.9791915416717529,
+      "skew": 1.252928614616394,
+      "ex_kurtosis": 13.420709609985352,
+      "screened": true,
+      "named": false,
+      "named_by": []
+     },
+     {
+      "kind": "ica_skew",
+      "id": 27,
+      "bimodality": 0.24411819875240326,
+      "eta2_token": 4.458340312756462e-16,
+      "eta2_token_sq": 0.045694169108112734,
+      "eta2_token_abs": 0.05278855155404533,
+      "repro": 0.44282299280166626,
+      "skew": 0.20020978152751923,
+      "ex_kurtosis": 1.2773776054382324,
+      "screened": false
+     },
+     {
+      "kind": "ica_skew",
+      "id": 28,
+      "bimodality": 0.17854908108711243,
+      "eta2_token": 3.560610177113229e-16,
+      "eta2_token_sq": 0.05222536992487547,
+      "eta2_token_abs": 0.07495686239836513,
+      "repro": 0.7221224308013916,
+      "skew": 0.4214596152305603,
+      "ex_kurtosis": 3.6525440216064453,
+      "screened": false
+     },
+     {
+      "kind": "ica_skew",
+      "id": 29,
+      "bimodality": 0.17902043461799622,
+      "eta2_token": 2.829553603449505e-16,
+      "eta2_token_sq": 0.047721764883138375,
+      "eta2_token_abs": 0.08994584469412203,
+      "repro": 0.8202635645866394,
+      "skew": 0.7298995852470398,
+      "ex_kurtosis": 5.825446128845215,
+      "screened": true,
+      "named": false,
+      "named_by": []
+     },
+     {
+      "kind": "ica_skew",
+      "id": 30,
+      "bimodality": 0.25828608870506287,
+      "eta2_token": 3.3213835853724107e-16,
+      "eta2_token_sq": 0.04563936582993432,
+      "eta2_token_abs": 0.05299784161858322,
+      "repro": 0.9295181035995483,
+      "skew": 0.3884811997413635,
+      "ex_kurtosis": 1.5230350494384766,
+      "screened": true,
+      "named": false,
+      "named_by": []
+     },
+     {
+      "kind": "ica_skew",
+      "id": 31,
+      "bimodality": 0.17668850719928741,
+      "eta2_token": 3.2814289532032275e-16,
+      "eta2_token_sq": 0.036536655746149733,
+      "eta2_token_abs": 0.06269246577238809,
+      "repro": 0.8936082124710083,
+      "skew": 0.5758885741233826,
+      "ex_kurtosis": 4.4240922927856445,
+      "screened": true,
+      "named": false,
+      "named_by": []
+     },
+     {
+      "kind": "ica_skew",
+      "id": 32,
+      "bimodality": 0.18806254863739014,
+      "eta2_token": 3.71343390772476e-16,
+      "eta2_token_sq": 0.05283114874407608,
+      "eta2_token_abs": 0.07166784794628654,
+      "repro": 0.4988747835159302,
+      "skew": 0.32300207018852234,
+      "ex_kurtosis": 2.468362808227539,
+      "screened": false
+     },
+     {
+      "kind": "ica_skew",
+      "id": 33,
+      "bimodality": 0.1410234272480011,
+      "eta2_token": 2.358406893708901e-16,
+      "eta2_token_sq": 0.17857088570043775,
+      "eta2_token_abs": 0.15535794057243563,
+      "repro": 0.8150478005409241,
+      "skew": 0.9379505515098572,
+      "ex_kurtosis": 10.360404968261719,
+      "screened": true,
+      "named": false,
+      "named_by": []
+     },
+     {
+      "kind": "ica_skew",
+      "id": 34,
+      "bimodality": 0.2563144266605377,
+      "eta2_token": 5.780655837782609e-16,
+      "eta2_token_sq": 0.06004579144121487,
+      "eta2_token_abs": 0.08563079226327683,
+      "repro": 0.9739195108413696,
+      "skew": 0.8626073002815247,
+      "ex_kurtosis": 3.6749820709228516,
+      "screened": true,
+      "named": false,
+      "named_by": []
+     },
+     {
+      "kind": "ica_skew",
+      "id": 35,
+      "bimodality": 0.17212548851966858,
+      "eta2_token": 3.519401206320665e-16,
+      "eta2_token_sq": 0.11718281181601327,
+      "eta2_token_abs": 0.0965972038030247,
+      "repro": 0.47391799092292786,
+      "skew": 0.2966156303882599,
+      "ex_kurtosis": 4.182953357696533,
+      "screened": false
+     },
+     {
+      "kind": "ica_skew",
+      "id": 36,
+      "bimodality": 0.25125977396965027,
+      "eta2_token": 4.396434842349976e-16,
+      "eta2_token_sq": 0.05504494401090511,
+      "eta2_token_abs": 0.06538314199285095,
+      "repro": 0.36153507232666016,
+      "skew": 0.1692514419555664,
+      "ex_kurtosis": 1.3693962097167969,
+      "screened": false
+     },
+     {
+      "kind": "ica_skew",
+      "id": 37,
+      "bimodality": 0.22981633245944977,
+      "eta2_token": 4.612802745502661e-16,
+      "eta2_token_sq": 0.06012092700230426,
+      "eta2_token_abs": 0.0741872363017554,
+      "repro": 0.5238144397735596,
+      "skew": 0.24448178708553314,
+      "ex_kurtosis": 1.624183177947998,
+      "screened": false
+     },
+     {
+      "kind": "ica_skew",
+      "id": 38,
+      "bimodality": 0.22431930899620056,
+      "eta2_token": 3.026315421851056e-16,
+      "eta2_token_sq": 0.037655285566293654,
+      "eta2_token_abs": 0.06951689538104874,
+      "repro": 0.9649718999862671,
+      "skew": 0.953827440738678,
+      "ex_kurtosis": 5.921645164489746,
+      "screened": true,
+      "named": false,
+      "named_by": []
+     },
+     {
+      "kind": "ica_skew",
+      "id": 39,
+      "bimodality": 0.17950458824634552,
+      "eta2_token": 3.10049155668393e-16,
+      "eta2_token_sq": 0.12764795991348066,
+      "eta2_token_abs": 0.1453890467048867,
+      "repro": 0.9458832144737244,
+      "skew": 0.6333932280540466,
+      "ex_kurtosis": 4.879217624664307,
+      "screened": true,
+      "named": true,
+      "named_by": [
+       "after_digit"
+      ]
+     },
+     {
+      "kind": "ica_skew",
+      "id": 40,
+      "bimodality": 0.21446330845355988,
+      "eta2_token": 3.6788075588516774e-16,
+      "eta2_token_sq": 0.055175388053755214,
+      "eta2_token_abs": 0.0664908522184057,
+      "repro": 0.32842251658439636,
+      "skew": 0.20918555557727814,
+      "ex_kurtosis": 1.8051362037658691,
+      "screened": false
+     },
+     {
+      "kind": "ica_skew",
+      "id": 41,
+      "bimodality": 0.20373746752738953,
+      "eta2_token": 5.186868466060108e-16,
+      "eta2_token_sq": 0.05524639597271357,
+      "eta2_token_abs": 0.06345160544533554,
+      "repro": 0.44906142354011536,
+      "skew": 0.2800377309322357,
+      "ex_kurtosis": 2.3185038566589355,
+      "screened": false
+     },
+     {
+      "kind": "ica_skew",
+      "id": 42,
+      "bimodality": 0.2614280879497528,
+      "eta2_token": 3.498552832369722e-16,
+      "eta2_token_sq": 0.0419142426291412,
+      "eta2_token_abs": 0.05238127255787196,
+      "repro": 0.628034770488739,
+      "skew": 0.4013938009738922,
+      "ex_kurtosis": 1.4848785400390625,
+      "screened": false
+     },
+     {
+      "kind": "ica_skew",
+      "id": 43,
+      "bimodality": 0.15105584263801575,
+      "eta2_token": 2.7404716863019575e-16,
+      "eta2_token_sq": 0.15222123416016511,
+      "eta2_token_abs": 0.13705655879689027,
+      "repro": 0.6353837847709656,
+      "skew": 0.36580589413642883,
+      "ex_kurtosis": 4.475180149078369,
+      "screened": false
+     },
+     {
+      "kind": "ica_skew",
+      "id": 44,
+      "bimodality": 0.229969784617424,
+      "eta2_token": 5.067788040679742e-16,
+      "eta2_token_sq": 0.06475857088866535,
+      "eta2_token_abs": 0.07339585632505276,
+      "repro": 0.36113274097442627,
+      "skew": 0.22933463752269745,
+      "ex_kurtosis": 1.6006765365600586,
+      "screened": false
+     },
+     {
+      "kind": "ica_skew",
+      "id": 45,
+      "bimodality": 0.19382929801940918,
+      "eta2_token": 3.4112647863961324e-16,
+      "eta2_token_sq": 0.04331146967004405,
+      "eta2_token_abs": 0.07527987179058643,
+      "repro": 0.4502715766429901,
+      "skew": 0.4074113667011261,
+      "ex_kurtosis": 4.234592437744141,
+      "screened": false
+     },
+     {
+      "kind": "ica_skew",
+      "id": 46,
+      "bimodality": 0.1927327662706375,
+      "eta2_token": 4.0143914689056307e-16,
+      "eta2_token_sq": 0.0516578256057176,
+      "eta2_token_abs": 0.06741513551700659,
+      "repro": 0.8047912120819092,
+      "skew": 0.4108389914035797,
+      "ex_kurtosis": 2.824195384979248,
+      "screened": true,
+      "named": false,
+      "named_by": []
+     },
+     {
+      "kind": "ica_skew",
+      "id": 47,
+      "bimodality": 0.1798618584871292,
+      "eta2_token": 3.2994639656428275e-16,
+      "eta2_token_sq": 0.07287878788539359,
+      "eta2_token_abs": 0.09911336276030511,
+      "repro": 0.7221487760543823,
+      "skew": 0.4982963800430298,
+      "ex_kurtosis": 4.101778984069824,
+      "screened": false
+     },
+     {
+      "kind": "ica_skew",
+      "id": 48,
+      "bimodality": 0.18282903730869293,
+      "eta2_token": 2.669093295309612e-16,
+      "eta2_token_sq": 0.060854705933810746,
+      "eta2_token_abs": 0.09009134154577819,
+      "repro": 0.8102035522460938,
+      "skew": 0.4272005558013916,
+      "ex_kurtosis": 3.8143534660339355,
+      "screened": true,
+      "named": false,
+      "named_by": []
+     },
+     {
+      "kind": "ica_skew",
+      "id": 49,
+      "bimodality": 0.1184154748916626,
+      "eta2_token": 2.8905418905832537e-16,
+      "eta2_token_sq": 0.03483687381344991,
+      "eta2_token_abs": 0.0895293013093377,
+      "repro": 0.9718513488769531,
+      "skew": 1.1866635084152222,
+      "ex_kurtosis": 19.633827209472656,
+      "screened": true,
+      "named": false,
+      "named_by": []
+     },
+     {
+      "kind": "ica_skew",
+      "id": 50,
+      "bimodality": 0.1886497139930725,
+      "eta2_token": 3.4895733186417894e-16,
+      "eta2_token_sq": 0.10220195092870855,
+      "eta2_token_abs": 0.12471608417979309,
+      "repro": 0.5363383889198303,
+      "skew": 0.403463214635849,
+      "ex_kurtosis": 3.1182985305786133,
+      "screened": false
+     },
+     {
+      "kind": "ica_skew",
+      "id": 51,
+      "bimodality": 0.19019190967082977,
+      "eta2_token": 2.3818758143310307e-16,
+      "eta2_token_sq": 0.12295926981956687,
+      "eta2_token_abs": 0.13471141737028283,
+      "repro": 0.7996809482574463,
+      "skew": 0.44337883591651917,
+      "ex_kurtosis": 3.3077549934387207,
+      "screened": false
+     },
+     {
+      "kind": "ica_skew",
+      "id": 52,
+      "bimodality": 0.21811364591121674,
+      "eta2_token": 3.848280003981127e-16,
+      "eta2_token_sq": 0.05740160019286174,
+      "eta2_token_abs": 0.07269581972880892,
+      "repro": 0.6547583341598511,
+      "skew": 0.27293485403060913,
+      "ex_kurtosis": 2.066926956176758,
+      "screened": false
+     },
+     {
+      "kind": "ica_skew",
+      "id": 53,
+      "bimodality": 0.22871197760105133,
+      "eta2_token": 5.541292762336596e-16,
+      "eta2_token_sq": 0.058426822818448014,
+      "eta2_token_abs": 0.07170861902506773,
+      "repro": 0.44105473160743713,
+      "skew": 0.21620267629623413,
+      "ex_kurtosis": 1.611940860748291,
+      "screened": false
+     },
+     {
+      "kind": "ica_skew",
+      "id": 54,
+      "bimodality": 0.2364661991596222,
+      "eta2_token": 3.519458462870199e-16,
+      "eta2_token_sq": 0.04172878597688473,
+      "eta2_token_abs": 0.06067880695086462,
+      "repro": 0.9681914448738098,
+      "skew": 0.894623875617981,
+      "ex_kurtosis": 4.620111465454102,
+      "screened": true,
+      "named": false,
+      "named_by": []
+     },
+     {
+      "kind": "ica_skew",
+      "id": 55,
+      "bimodality": 0.23325195908546448,
+      "eta2_token": 3.3552598783930567e-16,
+      "eta2_token_sq": 0.06564685819172213,
+      "eta2_token_abs": 0.07080757398332534,
+      "repro": 0.47627732157707214,
+      "skew": 0.26468625664711,
+      "ex_kurtosis": 1.5165972709655762,
+      "screened": false
+     },
+     {
+      "kind": "ica_skew",
+      "id": 56,
+      "bimodality": 0.21259978413581848,
+      "eta2_token": 3.7700400569152373e-16,
+      "eta2_token_sq": 0.059892078691597996,
+      "eta2_token_abs": 0.07235437512551386,
+      "repro": 0.6542485356330872,
+      "skew": 0.2478659749031067,
+      "ex_kurtosis": 2.0881948471069336,
+      "screened": false
+     },
+     {
+      "kind": "ica_skew",
+      "id": 57,
+      "bimodality": 0.25025588274002075,
+      "eta2_token": 4.016091861425483e-16,
+      "eta2_token_sq": 0.06057194770126505,
+      "eta2_token_abs": 0.06625088640350407,
+      "repro": 0.43482422828674316,
+      "skew": 0.16923652589321136,
+      "ex_kurtosis": 1.2894220352172852,
+      "screened": false
+     },
+     {
+      "kind": "ica_skew",
+      "id": 58,
+      "bimodality": 0.23157770931720734,
+      "eta2_token": 3.867797553213056e-16,
+      "eta2_token_sq": 0.0496955109553394,
+      "eta2_token_abs": 0.05943465595034376,
+      "repro": 0.3980609178543091,
+      "skew": 0.27350783348083496,
+      "ex_kurtosis": 1.7760915756225586,
+      "screened": false
+     },
+     {
+      "kind": "ica_skew",
+      "id": 59,
+      "bimodality": 0.09243962168693542,
+      "eta2_token": 1.483499640764671e-16,
+      "eta2_token_sq": 0.013111560613197163,
+      "eta2_token_abs": 0.0858349587769154,
+      "repro": 0.5900888442993164,
+      "skew": 1.1004600524902344,
+      "ex_kurtosis": 21.713594436645508,
+      "screened": false
+     },
+     {
+      "kind": "ica_skew",
+      "id": 60,
+      "bimodality": 0.2421063333749771,
+      "eta2_token": 3.6484063587380314e-16,
+      "eta2_token_sq": 0.05730133465309087,
+      "eta2_token_abs": 0.06773648685785155,
+      "repro": 0.320320725440979,
+      "skew": 0.1898321658372879,
+      "ex_kurtosis": 1.3676600456237793,
+      "screened": false
+     },
+     {
+      "kind": "ica_skew",
+      "id": 61,
+      "bimodality": 0.1213512271642685,
+      "eta2_token": 2.2503208858056737e-16,
+      "eta2_token_sq": 0.08643223658471447,
+      "eta2_token_abs": 0.11116136651541061,
+      "repro": 0.5691179633140564,
+      "skew": 0.5344500541687012,
+      "ex_kurtosis": 6.340706825256348,
+      "screened": false
+     },
+     {
+      "kind": "ica_skew",
+      "id": 62,
+      "bimodality": 0.2358008325099945,
+      "eta2_token": 4.752179715094412e-16,
+      "eta2_token_sq": 0.05865926255223424,
+      "eta2_token_abs": 0.06823465054203778,
+      "repro": 0.4318922758102417,
+      "skew": 0.17180810868740082,
+      "ex_kurtosis": 1.509629726409912,
+      "screened": false
+     },
+     {
+      "kind": "ica_skew",
+      "id": 63,
+      "bimodality": 0.17724382877349854,
+      "eta2_token": 2.348096218258197e-16,
+      "eta2_token_sq": 0.033707529532446504,
+      "eta2_token_abs": 0.08870229837200545,
+      "repro": 0.40413984656333923,
+      "skew": 0.43319326639175415,
+      "ex_kurtosis": 8.16618824005127,
+      "screened": false
+     }
+    ]
+   },
+   "seconds": 28
+  }
+ }
+}

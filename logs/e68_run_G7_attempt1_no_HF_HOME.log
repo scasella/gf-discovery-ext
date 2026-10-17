@@ -1,0 +1,40 @@
+e68 sha256 6c1c806de17abd3e209cfb4c5a82ed9b1bfc5dff6e0525fdd48addfb2f911233
+Loading weights:   0%|          | 0/340 [00:00<?, ?it/s]Loading weights: 100%|██████████| 340/340 [00:00<00:00, 7584.72it/s]
+[98s] G7: kept-row residuals (float32) at [5, 6, 7, 8, 9]; model freed
+huggingface_hub.errors.OfflineModeIsEnabled: Cannot reach https://huggingface.co/google/gemma-scope-2-1b-pt/resolve/main/resid_post_all/layer_7_width_16k_l0_big/params.safetensors: offline mode is enabled. To disable it, please unset the `HF_HUB_OFFLINE` environment variable.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/scasella/Downloads/gf-discovery-ext/scripts/e68_coverage_census.py", line 684, in <module>
+    main()
+    ~~~~^^
+  File "/Users/scasella/Downloads/gf-discovery-ext/scripts/e68_coverage_census.py", line 676, in main
+    stage_run(a.group)
+    ~~~~~~~~~^^^^^^^^^
+  File "/Users/scasella/Downloads/gf-discovery-ext/scripts/e68_coverage_census.py", line 386, in stage_run
+    prep, null_scores = build_prep(e67, e65, e64, L, H, rows, toks, meta, fnpz, z, keep, units, DEVICE)
+                        ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/scasella/Downloads/gf-discovery-ext/scripts/e68_coverage_census.py", line 293, in build_prep
+    src = e67.sae_params(SOURCE[L])
+  File "/Users/scasella/Downloads/gf-discovery-ext/scripts/e67_prior_feature_check.py", line 60, in sae_params
+    return load_file(hf_hub_download(REPO, f"{sub}/params.safetensors"))
+                     ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/scasella/Downloads/gf-discovery-ext/.venv/lib/python3.13/site-packages/huggingface_hub/utils/_validators.py", line 89, in _inner_fn
+    return fn(*args, **kwargs)
+  File "/Users/scasella/Downloads/gf-discovery-ext/.venv/lib/python3.13/site-packages/huggingface_hub/utils/_http.py", line 276, in _inner
+    return fn(*args, **kwargs)
+  File "/Users/scasella/Downloads/gf-discovery-ext/.venv/lib/python3.13/site-packages/huggingface_hub/file_download.py", line 1047, in hf_hub_download
+    return _hf_hub_download_to_cache_dir(
+        # Destination
+    ...<15 lines>...
+        dry_run=dry_run,
+    )
+  File "/Users/scasella/Downloads/gf-discovery-ext/.venv/lib/python3.13/site-packages/huggingface_hub/file_download.py", line 1194, in _hf_hub_download_to_cache_dir
+    _raise_on_head_call_error(head_call_error, force_download, local_files_only)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/scasella/Downloads/gf-discovery-ext/.venv/lib/python3.13/site-packages/huggingface_hub/file_download.py", line 1961, in _raise_on_head_call_error
+    raise LocalEntryNotFoundError(
+    ...<3 lines>...
+    ) from head_call_error
+huggingface_hub.errors.LocalEntryNotFoundError: An error happened while trying to locate the file on the Hub and we cannot find the requested files in the local cache. Please check your connection and try again or make sure your Internet connection is on.

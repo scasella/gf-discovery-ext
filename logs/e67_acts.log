@@ -1,0 +1,23 @@
+e67 sha256 b121979bfbaaf707b7f51d5f9709f92c4454f2cd6a3ae24f8f1ff10247c72fd4
+Loading weights:   0%|          | 0/340 [00:00<?, ?it/s]Loading weights: 100%|██████████| 340/340 [00:00<00:00, 8831.48it/s]
+/Users/scasella/Downloads/gf-discovery-ext/scripts/e67_prior_feature_check.py:175: RuntimeWarning: overflow encountered in cast
+  H[l][lo * 255:(lo + len(blk)) * 255] = st[l][:, 1:, :].float().reshape(-1, 1152).cpu().numpy().astype(np.float16)
+[182s] D2 residuals captured at [10, 11, 12, 13, 14]
+[195s] resid_post_all/L12_16k_big L0 110 best r {'Y:logcosh/13': (33, 0.236), 'Y:skew/16': (33, 0.271), 'hd:logcosh/13': (33, 0.436), 'hd:skew/16': (33, 0.432)}
+[204s] resid_post_all/L12_16k_small L0 19 best r {'Y:logcosh/13': (576, 0.184), 'Y:skew/16': (136, 0.183), 'hd:logcosh/13': (269, 0.296), 'hd:skew/16': (269, 0.299)}
+[334s] resid_post_all/L12_262k_big L0 108 best r {'Y:logcosh/13': (6938, 0.241), 'Y:skew/16': (6938, 0.247), 'hd:logcosh/13': (6976, 0.394), 'hd:skew/16': (6976, 0.389)}
+[528s] resid_post_all/L12_262k_small L0 18 best r {'Y:logcosh/13': (5346, 0.193), 'Y:skew/16': (5346, 0.192), 'hd:logcosh/13': (4211, -0.223), 'hd:skew/16': (4211, -0.23)}
+[540s] resid_post_all/L11_16k_big L0 112 best r {'Y:logcosh/13': (1835, 0.218), 'Y:skew/16': (1835, 0.222), 'hd:logcosh/13': (308, 0.422), 'hd:skew/16': (308, 0.416)}
+[548s] resid_post_all/L11_16k_small L0 18 best r {'Y:logcosh/13': (487, 0.143), 'Y:skew/16': (487, 0.136), 'hd:logcosh/13': (194, -0.238), 'hd:skew/16': (194, -0.245)}
+[559s] resid_post_all/L13_16k_big L0 113 best r {'Y:logcosh/13': (336, 0.288), 'Y:skew/16': (336, 0.306), 'hd:logcosh/13': (33, 0.437), 'hd:skew/16': (33, 0.439)}
+[566s] resid_post_all/L13_16k_small L0 19 best r {'Y:logcosh/13': (183, 0.288), 'Y:skew/16': (183, 0.29), 'hd:logcosh/13': (183, 0.232), 'hd:skew/16': (151, -0.223)}
+[595s] resid_post/L13_65k_big L0 145 best r {'Y:logcosh/13': (1384, 0.327), 'Y:skew/16': (1384, 0.352), 'hd:logcosh/13': (49650, -0.443), 'hd:skew/16': (49650, -0.447)}
+[603s] resid_post/L13_16k_medium L0 57 best r {'Y:logcosh/13': (183, 0.375), 'Y:skew/16': (183, 0.395), 'hd:logcosh/13': (151, -0.4), 'hd:skew/16': (151, -0.401)}
+[630s] resid_post/L13_65k_medium L0 57 best r {'Y:logcosh/13': (877, 0.384), 'Y:skew/16': (877, 0.383), 'hd:logcosh/13': (648, 0.366), 'hd:skew/16': (648, 0.362)}
+[748s] resid_post/L13_262k_medium L0 57 best r {'Y:logcosh/13': (7055, 0.314), 'Y:skew/16': (7055, 0.328), 'hd:logcosh/13': (5019, 0.404), 'hd:skew/16': (5019, 0.4)}
+[757s] resid_post_all/L10_16k_big L0 112 best r {'Y:logcosh/13': (93, 0.16), 'Y:skew/16': (93, 0.173), 'hd:logcosh/13': (91, 0.362), 'hd:skew/16': (91, 0.366)}
+[764s] resid_post_all/L10_16k_small L0 19 best r {'Y:logcosh/13': (714, 0.182), 'Y:skew/16': (714, 0.186), 'hd:logcosh/13': (79, -0.221), 'hd:skew/16': (0, 0.231)}
+[774s] resid_post_all/L14_16k_big L0 119 best r {'Y:logcosh/13': (0, 0.0), 'Y:skew/16': (0, 0.0), 'hd:logcosh/13': (0, 0.0), 'hd:skew/16': (0, 0.0)}
+[781s] resid_post_all/L14_16k_small L0 24 best r {'Y:logcosh/13': (0, 0.0), 'Y:skew/16': (0, 0.0), 'hd:logcosh/13': (0, 0.0), 'hd:skew/16': (0, 0.0)}
+HASHES += 14d80c9661c71fcff0a87f89358d64957cdf68d94e63a6ca10200645152fa0b9  results/e67_raw_L12_rows.npy (e67 acts: D2 kept-row raw L12 residual (fp16), for the probe, 2026-10-15T18:05:03)
+HASHES += d58c5b45138e1f2fbbf1a512cfe900181b133d1726deb6760724beac3f914dd1  results/e67_acts.json (e67 latent-activation correlations and top-latent behaviour on D2, 2026-10-15T18:05:03)

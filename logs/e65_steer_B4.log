@@ -1,0 +1,12 @@
+Loading weights:   0%|          | 0/340 [00:00<?, ?it/s]Loading weights: 100%|██████████| 340/340 [00:00<00:00, 7384.91it/s]
+[473s] L12 B4 base + RAND bank done
+[492s] L12 B4 anchor logcosh:33 PASS=True
+[568s] L12 B4 context_named logcosh:10 PASS=True
+[587s] L12 B4 candidate logcosh:13 PASS=True
+[605s] L12 B4 context_named logcosh:44 PASS=True
+[624s] L12 B4 candidate logcosh:54 PASS=True
+[643s] L12 B4 context_named logcosh:60 PASS=False
+[662s] L12 B4 context_named skew:15 PASS=True
+[681s] L12 B4 candidate skew:16 PASS=True
+[700s] L12 B4 candidate skew:54 PASS=False
+HASHES += 15b04685a3fad65f549c9d02d8a485f70820b921e540d8f4967293fb0e3e1c97  results/e65_steer_B4.json (e65 steer B4, 2026-10-15T16:32:02)

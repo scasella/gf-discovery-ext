@@ -1,0 +1,13 @@
+[watchdog] start 11:37:44 swap 2.47 GB limit 12.0 GB cmd .venv/bin/python -u scripts/e72_raw_residual_pilot.py --phase gate
+e72 sha256 338c10b252b816eb40072d4b6492f81c072850edf00a1fbf1995d1cfeb27d394 
+[1s] swap 2.5 GB
+[8s] raw V demean3 + PCA-64: var_frac 0.383
+[17s] logcosh: 31 of 64 screened; readout min R^2 1.000000
+[21s] skew: 29 of 64 screened; readout min R^2 1.000000
+HASHES += 3a4da05a324400fbbb92f3a13a3fd061a2a29d5d4cdd630ccd0c35771dec68dc  results/e72_units_raw_L12.npz (e72 gate: raw L12 D2 units, maps, readouts, patterns (before any label), 2026-10-16T11:38:11)
+[102s] paren_inside: logcosh 0.596 (p99.9 0.520) skew 0.749 (p99.9 0.516) recovered True; probe 0.778
+[104s] quote_inside: logcosh 0.762 (p99.9 0.514) skew 0.755 (p99.9 0.513) recovered True; probe 0.780
+HASHES += 2f761d23d520079e34097797d7d9f67567d3ed8e39048b7a6462928cd74cb3bd  results/e72_gate.json (e72 gate: raw L12 positive control, PASS, 2026-10-16T11:39:33)
+[109s] GATE PASS (S4v2 any-of rule: True)
+
+[watchdog] exit 0 at 11:39:34; peak swap 2.47 GB

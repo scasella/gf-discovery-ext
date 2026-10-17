@@ -1,0 +1,59 @@
+{
+ "script": "scripts/e47r_ruler_behaviour.py",
+ "rules": "e47r -- behavioural tier for Stage-2 ruler candidates (Addendum C5), 51's rig adapted to a line.\n\nFor a ruler S with level order m_1 < ... < m_k along its PC1 axis u (A-half raw type means, R10/H\ndrop, nuisance-deflated as in e46): at each INTERIOR member m_i (i = 2..k-1), steer\nh <- h + eps*||h||*u_hat (u_hat re-embedded into 1152 dims, pointing toward increasing level) at\nresid_post L at the member's own position, and read\n  Delta_i = [logit(m_{i+1}) - logit(m_{i-1})]_steered - the same unsteered.\nContexts: 8-token slices from reserve sequences 2000-7999 (disjoint from Stage 4's slices).\nEvery arm at the SAME 40 prompts. Nulls: (i) 10 random directions orthogonal to u per member;\n(iii) 50 random k-sets, each with its own PC1 axis and order; (iv) sibling geometric candidates\n(other GEOM_CANDIDATE rulers of the same layer and k). PASS = sign consistency over interior\nmembers >= (n-1)/n at some eps AND mean Delta@0.02 > (iii) p99 AND > max(i) AND > (iv) p99.\nANCHOR (label-known, run first): number words one..ten in their own PC1 order at the layer.\nIf the anchor fails, no verdict is issued on any candidate.\n",
+ "n_geom_candidates": 883,
+ "sets": [
+  {
+   "label": "anchor_numbers",
+   "layer": 6,
+   "k": 10,
+   "tokens": [
+    " one",
+    " two",
+    " three",
+    " four",
+    " five",
+    " six",
+    " seven",
+    " eight",
+    " nine",
+    " ten"
+   ],
+   "natural": {
+    "eps=0.005": {
+     "mean_delta": 0.01220703125,
+     "sign_consistency": 0.625,
+     "n": 8
+    },
+    "eps=0.01": {
+     "mean_delta": 0.024169921875000003,
+     "sign_consistency": 0.75,
+     "n": 8
+    },
+    "eps=0.02": {
+     "mean_delta": 0.04169921875,
+     "sign_consistency": 0.75,
+     "n": 8
+    }
+   },
+   "null_i": [
+    -0.00625,
+    0.015576171875000001,
+    -0.0019042968749999993,
+    0.0091796875,
+    -0.005126953124999999,
+    0.011962890625,
+    0.013378906250000001,
+    0.016894531249999997,
+    0.011865234375,
+    -0.003662109375
+   ],
+   "null_iii_p99": 0.1538328170776367,
+   "null_iv": [],
+   "null_iv_p99": null,
+   "PASS": false,
+   "n_forward": 36480
+  }
+ ],
+ "verdict": "ANCHOR FAILED -- no behavioural verdict issued on any ruler candidate"
+}

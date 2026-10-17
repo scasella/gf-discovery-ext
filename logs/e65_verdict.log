@@ -1,0 +1,2 @@
+HASHES += a9a2628b3706dc57a69a116c33655a3055cc409b98431c2921e34efe45ed2aa1  results/e65_verdict.json (e65 verdict (does not amend e64_verdict.json), 2026-10-15T16:32:15)
+CANDIDATE DISCOVERIES (post hoc) [{"layer": 12, "members": [["logcosh", 13], ["skew", 16]], "classes": ["candidate discovery under the redesigned tier 2 (post hoc)", "candidate discovery under the redesigned tier 2 (post hoc)"], "e64c_strong": false, "candidate_discovery_post_hoc": true}]

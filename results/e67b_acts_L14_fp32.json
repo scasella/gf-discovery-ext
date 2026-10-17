@@ -1,0 +1,1108 @@
+{
+ "layer": 14,
+ "rows": 203328,
+ "dtype": "float32",
+ "base_match_share": 0.10693246292793972,
+ "max_abs_residual": 67072.0,
+ "dicts": {
+  "resid_post_all/L14_16k_big": {
+   "n_latents": 16384,
+   "mean_l0": 115.77544656909033,
+   "n_nonfinite_r": 0,
+   "corr": {
+    "Y:logcosh/13": [
+     {
+      "latent": 282,
+      "r": 0.22634864926595435,
+      "freq": 0.17450129839471198
+     },
+     {
+      "latent": 14104,
+      "r": 0.2103270915051792,
+      "freq": 0.009019908718917218
+     },
+     {
+      "latent": 156,
+      "r": 0.20805238000380052,
+      "freq": 0.012620003147623545
+     },
+     {
+      "latent": 2676,
+      "r": 0.16311026767738435,
+      "freq": 0.03790919106074914
+     },
+     {
+      "latent": 175,
+      "r": 0.15749736085083435,
+      "freq": 0.14207093956562794
+     },
+     {
+      "latent": 11201,
+      "r": 0.15455940829620943,
+      "freq": 0.029081090651558075
+     },
+     {
+      "latent": 578,
+      "r": 0.1331946121906446,
+      "freq": 0.004972261567516525
+     },
+     {
+      "latent": 200,
+      "r": 0.13023986042887215,
+      "freq": 0.01023961284230406
+     },
+     {
+      "latent": 4774,
+      "r": 0.13009374352671135,
+      "freq": 0.00968386056027699
+     },
+     {
+      "latent": 1119,
+      "r": 0.12016770763382506,
+      "freq": 0.01447906830343091
+     }
+    ],
+    "Y:skew/16": [
+     {
+      "latent": 282,
+      "r": 0.271759073151895,
+      "freq": 0.17450129839471198
+     },
+     {
+      "latent": 14104,
+      "r": 0.2122474519435649,
+      "freq": 0.009019908718917218
+     },
+     {
+      "latent": 156,
+      "r": 0.21107720985649772,
+      "freq": 0.012620003147623545
+     },
+     {
+      "latent": 175,
+      "r": 0.17953025040200687,
+      "freq": 0.14207093956562794
+     },
+     {
+      "latent": 2676,
+      "r": 0.17415681701557068,
+      "freq": 0.03790919106074914
+     },
+     {
+      "latent": 11201,
+      "r": 0.16401317760517337,
+      "freq": 0.029081090651558075
+     },
+     {
+      "latent": 200,
+      "r": 0.14228968530335903,
+      "freq": 0.01023961284230406
+     },
+     {
+      "latent": 578,
+      "r": 0.1285032906885466,
+      "freq": 0.004972261567516525
+     },
+     {
+      "latent": 6154,
+      "r": 0.12777863441197385,
+      "freq": 0.007819877242681775
+     },
+     {
+      "latent": 4774,
+      "r": 0.12574777916093832,
+      "freq": 0.00968386056027699
+     }
+    ],
+    "hd:logcosh/13": [
+     {
+      "latent": 282,
+      "r": 0.4645005428748902,
+      "freq": 0.17450129839471198
+     },
+     {
+      "latent": 175,
+      "r": 0.41613487443230857,
+      "freq": 0.14207093956562794
+     },
+     {
+      "latent": 469,
+      "r": 0.3490734596486153,
+      "freq": 0.15175480012590495
+     },
+     {
+      "latent": 2676,
+      "r": 0.26543253282622176,
+      "freq": 0.03790919106074914
+     },
+     {
+      "latent": 2129,
+      "r": -0.26362243043603256,
+      "freq": 0.02158581208687441
+     },
+     {
+      "latent": 309,
+      "r": 0.2623515303855095,
+      "freq": 0.13188542650299023
+     },
+     {
+      "latent": 13327,
+      "r": -0.21926546449165712,
+      "freq": 0.010588802329241422
+     },
+     {
+      "latent": 3091,
+      "r": 0.20975562497297673,
+      "freq": 0.09003678785017312
+     },
+     {
+      "latent": 2302,
+      "r": 0.20675405764459676,
+      "freq": 0.1601599386213409
+     },
+     {
+      "latent": 10535,
+      "r": -0.20281828514250988,
+      "freq": 0.010333057916273213
+     }
+    ],
+    "hd:skew/16": [
+     {
+      "latent": 282,
+      "r": 0.4656659252269317,
+      "freq": 0.17450129839471198
+     },
+     {
+      "latent": 175,
+      "r": 0.4129149214889669,
+      "freq": 0.14207093956562794
+     },
+     {
+      "latent": 469,
+      "r": 0.3511819787888573,
+      "freq": 0.15175480012590495
+     },
+     {
+      "latent": 2129,
+      "r": -0.2675392516084294,
+      "freq": 0.02158581208687441
+     },
+     {
+      "latent": 2676,
+      "r": 0.2598505251657777,
+      "freq": 0.03790919106074914
+     },
+     {
+      "latent": 309,
+      "r": 0.25922556825974374,
+      "freq": 0.13188542650299023
+     },
+     {
+      "latent": 13327,
+      "r": -0.2253998820646927,
+      "freq": 0.010588802329241422
+     },
+     {
+      "latent": 3091,
+      "r": 0.21031621785472407,
+      "freq": 0.09003678785017312
+     },
+     {
+      "latent": 501,
+      "r": -0.20723774897089742,
+      "freq": 0.009246144161158326
+     },
+     {
+      "latent": 10535,
+      "r": -0.20715008264658535,
+      "freq": 0.010333057916273213
+     }
+    ]
+   },
+   "latents": {
+    "90": {
+     "n_active": 1589,
+     "match_share": 0.005,
+     "n_top": 200,
+     "behavioural_match": false,
+     "contexts": [
+      " maintenance, but we're changing everything from the wallpaper to the furniture,\"[[ said]] Tony Marz",
+      " is a four-day tournament and there is a lot to play for,\"[[ said]] Mina.\n",
+      " Mighty Ducks movies from the nineties.\n\"Loved 'The Mighty Ducks,'\"[[ said]] the junior right",
+      " exuberant. \u201cIt has been one of the most relaxing ways to decorate,\u201d[[ says]] Von Kersting",
+      " same circumstances are now unfolding in Syria.\nYoung people are easily deceived\u2019,[[ said]] Shamsaev",
+      "\n\u201cWe decided to take a very different musical direction from other shooters,\u201d[[ said]] Marsan.",
+      " touch with all of his friends and I\u2019ll always see him through them[[,\u201d]] Laurie told KH",
+      " average of 7,000 unique visitors daily. No wonder,[[ says]] Koh Bela,",
+      " past 12.\n\"We are sticking to the way we play[[,\"]] said Blues left",
+      ".\n\u201cScience books have been rewritten based on what comes out of Colorado[[,\u201d]] Bridenst",
+      "2.\n\u201cThis is the highest award that we give in California,\u201d[[ said]] Baldwin. \u201c",
+      "I find that there is a huge danger of radicalisation of our youth\u2019,[[ said]] Aslan Sh"
+     ]
+    },
+    "156": {
+     "n_active": 2566,
+     "match_share": 0.355,
+     "n_top": 200,
+     "behavioural_match": true,
+     "contexts": [
+      " in their attitudes toward alcohol. Some Christians believe that we have freedom to consume[[ alcohol]] in moderation.",
+      " really like this idea, but you do know that I can\u2019t donate[[ blood]]?\u201d Toth",
+      " over the counter drugs on a monthly basis\n2. You have taken prescription[[ drugs]] consistently for more",
+      " with your head in the sand:\n1. You take over the counter[[ drugs]] on a monthly",
+      "s website.\nIf the Judge offers you the option to attend traffic safety[[ school]], the court",
+      "He explained that because he is a gay man, he can\u2019t donate[[ blood]], even though",
+      " the payroll.\n- Reasonable suspicion testing allows employers to require drug or alcohol[[ testing]] based on the",
+      " Matt, and I commented that it would be great if he could play the[[ piano]] either at some",
+      " are unique to the patient. Additionally, some patients choose to have arm lift[[ surgery]] performed as part",
+      " able to choose what is right for them. No one should be denied birth[[ control]] because of where",
+      ", and afterward it can lead to hernias.\u201d Which means doing sit-[[ups]] while pregnant is",
+      " fidgety\n5. You cannot exercise without pain\n6. You take[[ medication]] to offset the"
+     ]
+    },
+    "175": {
+     "n_active": 28887,
+     "match_share": 0.43,
+     "n_top": 200,
+     "behavioural_match": true,
+     "contexts": [
+      " essentially pioneered today\u2019s concept of the theme park Halloween haunt. Despite its[[ history]], the event",
+      " interviews El Wanaco, a young Salvadoran rapper, and examines the painful[[ history]] of exchanges between",
+      "esters were not grasping was that books were a special case, with a long[[ tradition]] of mail order",
+      " kinds of issues encountered by home performance professionals in real homes. Each tells a[[ story]] of how hidden",
+      " canceled. Each of the many kids in the show had a rich, vibrant[[ story]] to tell,",
+      " live cooking show, take you through their recipe for success, sharing their creative[[ process]] from start to",
+      " the kids' sake, I caught up on all the unfolding drama, the[[ history]], plots and",
+      " for me.\nGary Whitta\u2019s writing goes deep into both the[[ history]] of the story",
+      " who people think I am.\nMany of us grew up surrounded by western[[ media]] from the show",
+      " \u201cvirtually no taxes.\u201d It always helps when you can paint a word[[ picture]] for voters,",
+      " and our land. As a show of respect, I try to incorporate our[[ language]] into the name",
+      " grand piano regulation and repairs.\n- INCORPORATING a lifetime of[[ experience]] in diagnosing and"
+     ]
+    },
+    "272": {
+     "n_active": 565,
+     "match_share": 0.015,
+     "n_top": 200,
+     "behavioural_match": false,
+     "contexts": [
+      "More than just golf\nOne of the club\u2019s leaders, Justin Van[[ E]]e, has",
+      " deaf and nonsigning hearing people in the Flemish Deaf community, Mieke Van[[ Her]]reweghe",
+      " these contract manufacturers is to climb up the value chain,\" said Elliot Papage[[org]]iou a partner",
+      ".\nEducation Officer for the Galway Cycling Campaign,\nOis\u00edn \u00d3[[ N]]idh, said",
+      " nonsigning hearing people in the Flemish Deaf community, Mieke Van Herrew[[eg]]he determines whether",
+      " and decide whether to appeal within 30 days, said member Tom Ben[[ic]].neigh_",
+      "jo (Principal Executive Officer (Accounts)) and Mrs. T. A On[[if]]ade (Senior",
+      " we're changing everything from the wallpaper to the furniture,\" said Tony Mar[[z]]ullo, director",
+      " for these contract manufacturers is to climb up the value chain,\" said Elliot Pap[[age]]orgiou a",
+      " of deaf and nonsigning hearing people in the Flemish Deaf community, Mieke[[ Van]] Herreweg",
+      " 200 finals on the girls side, as East\u2019s Oliver[[ Brad]]well took third",
+      " well as forthcoming publications on \u201cThe Music of the Organism: Uex[[k]]\u00fcll, Zuck"
+     ]
+    },
+    "282": {
+     "n_active": 35481,
+     "match_share": 0.405,
+     "n_top": 200,
+     "behavioural_match": true,
+     "contexts": [
+      " right? Are these just short term operations that disappear and reform to play dirty[[ again]] as another entity",
+      "\u2019s completely wiped out after a single trip, so I have to rebuild[[ it]] again and again",
+      "Oil Demand Has Collapsed, And It Won't Come[[ Back]] Any Time Soon",
+      " As soon as each instance reaches its player limit, a new one will be[[ created]]. If you",
+      " then slam on their brakes when they hit a red light. Then accelerate quickly[[ again]], and repeat",
+      "s completely wiped out after a single trip, so I have to rebuild it[[ again]] and again from",
+      " bolts, put air in the spare tire and and got me back on the[[ road]]. Very reasonable",
+      " than we expected. There was a problem with the Hard Drive and Paul replaced[[ it]] the same day",
+      " year-round to spice up your cooking. Your Grow Bottle can be used[[ again]] and again.",
+      " by looking through the original book and marking the images I wanted to remove and[[ replace]]. Even",
+      " prompts and switch to Dragonition Prompts. I will start from 1[[ again]] and I will",
+      " spend enormous amounts of money and effort on keeping older, \"legacy\" systems[[ running]]. The examples"
+     ]
+    },
+    "358": {
+     "n_active": 1834,
+     "match_share": 0.45,
+     "n_top": 200,
+     "behavioural_match": true,
+     "contexts": [
+      " the hall from you back in the day. Maybe you didn\u2019t like[[ them]], or maybe",
+      " help but feel that this was a hatchet job on Intel. I enjoyed[[ it]] and found it",
+      " of one of the most prestigious universities in the country. I have heard about[[ it]] from more than",
+      " for males only, but as a tomboy, that only made me want[[ it]] more. Se\u00f1",
+      "-stop bench with Vladimir Putin on TV a few Saturdays ago. I saw[[ it]] after a late",
+      " dinally so glad and excited to stay at this beautiful hotel! I recommend[[ it]] 10",
+      " be able to function without me, but do you think you'll miss[[ me]]?\nLove",
+      " stations, one of which will be worth more than the others, so build[[ it]] to look special",
+      " a while (a month? two?). I only have time to work on[[ it]] from 8",
+      " the Lig\u00f1on Hill, Legazpi City. I've seen[[ it]] previewed on",
+      " cigarette smokers don\u2019t necessarily like the taste of cigarettes, but they smoke[[ them]] because they are",
+      " Gangnam Style by K-pop artist PSY, and after having listened to[[ it]] multiple times over"
+     ]
+    },
+    "409": {
+     "n_active": 1514,
+     "match_share": 0.005,
+     "n_top": 200,
+     "behavioural_match": false,
+     "contexts": [
+      " harsh on skin).\nRelated: Discover 6 all-natural beauty fixes[[.]]\n4.",
+      "FS supports may not yet have the courage, staff or opportunity to ask themselves[[.\u201d]]\nThe Women",
+      " out of hours. We were very impressed with the level of service we received[[.\u201d]]\nYour security",
+      " Getty Images\nRelated: Learn about 15 clever uses for household items[[.]]\n1.",
+      " to win the Pac-12 for the first time ever,\u201d Boone writes[[.]]\nNo.",
+      " Wolves - Slow Down (demo)\nAmong Wolves - Hey You (demo[[)]]\nAmong Wolves",
+      " If that\u2019s your case, proceed to Part 4 of this series[[.]]\nA.",
+      " asset locations.\nAutomatically import fuel transactions and receive alerts for invalid odometers[[.]]\nIncrease efficiency",
+      " power play has been clicking, and it helps that we are playing sound offensively[[.\"]]\nThe win",
+      " and little grief from the loss of loved ones,\u201d Ukrainian President Volodymyr Zelensky tweeted[[.]]\nWe want",
+      "\n(Detroit Free Press, 11/12/09[[)]]",
+      " tips to make sure you don\u2019t have to claim on your minibus insurance[[.]]\nWhen you"
+     ]
+    },
+    "540": {
+     "n_active": 921,
+     "match_share": 0.005,
+     "n_top": 200,
+     "behavioural_match": false,
+     "contexts": [
+      ". He is associated with North Carolina Sickle Cell Syndrome Program in Charlotte,[[ North]] Carolina.\n",
+      " 72 hours.\n- FREE local pickup is available in Columbia,[[ South]] Carolina (choose",
+      " on their Facebook page Tuesday night.\nFor the second consecutive year, a[[ Long]] Beach High School",
+      " one of the panelists, who is a board member of Social Media Club of[[ Long]] Island.\n",
+      "NZIA), National Award for Architecture\n2003 Property Council of[[ New]] Zealand Building Awards",
+      " and discover. Plan your vacation online!\nServing as a valuable addition to[[ Prince]] Edward Island`",
+      " threatens historic Palm Beach restaurant\n- Brian Bandell\nTesta\u2019s[[ Palm]] Beach has served",
+      " questionable as to whether it can be used for political purposes in the City of[[ Los]] Angeles.\n",
+      " talented acts from a diverse range of genres, the festival will showcase some of[[ Western]] Australia\u2019s",
+      " and hard-charging power broker who steered billions of federal dollars to his beloved[[ West]] Virginia, died",
+      " as the Strategic Development Manager for the YWCA of Aotearoa[[ New]] Zealand. Sarah",
+      "TV anchor Randy Beamer. Each presenter, selected by PechaKucha[[ San]] Antonio\u2019s"
+     ]
+    },
+    "578": {
+     "n_active": 1011,
+     "match_share": 0.385,
+     "n_top": 200,
+     "behavioural_match": true,
+     "contexts": [
+      " saves travel expenses, preserves your work day, and allows you to absorb the[[ material]] in manageable segments",
+      " and choose on your own what suits you best. We have gathered all the[[ information]] you may need",
+      " of dealing with MCAS [Mast Cell Activation Syndrome].\nSome document their[[ symptoms]] and share pictures",
+      " school girl however he failed to turn up, However Dark Justice had all the[[ evidence]] they needed to",
+      " wooden planks will become a thing of the past.\n\u201cWe took the[[ comments]] that were made",
+      " program, the file is read by the computer, and the processor reads the[[ data]] in the file",
+      ".\nAccess and update fleet information from anywhere.\nCapture all your fleet[[ data]] in one place",
+      ", usually when you complete an online form. We don\u2019t collect your[[ information]] from anywhere or",
+      " video card starting at 1024 MB memory system will do the[[ work]] with ease.",
+      " on its own or in conjunction with another cosmetic procedure, you can get the[[ information]] and answers you",
+      " games. In addition to this, you can also play a number of the[[ games]] with free play",
+      " buy the box: Some schools offer a service where you can get your stationery[[ requirements]] delivered in a"
+     ]
+    },
+    "2676": {
+     "n_active": 7708,
+     "match_share": 0.395,
+     "n_top": 200,
+     "behavioural_match": true,
+     "contexts": [
+      " the United States, she uses her maiden name in professional contexts and her married[[ name]] otherwise. These",
+      ". These urls may belong to different domains.\nMain Issue: The first[[ click]] opens the corresponding",
+      " of grey squirrels in priority areas across Scotland.\nWe\u2019ve faced significant[[ challenges]] along the way",
+      " divorced in December 1988 (but that story has a happy[[ ending]]:Chapter ",
+      " to be much more intimate--the bar was empty and anyone who took a[[ seat]] during the first",
+      " select an Operating System and install your own software configurations (you obtain full root[[ access]]). What'",
+      " / Getty Images\nGross, cruel, chaotic. Donald Trump was called many[[ things]]. Even some",
+      " man group that aims to prevent child sexual grooming.\nReynolds had arranged two[[ meetings]] with the school",
+      " kinds of issues encountered by home performance professionals in real homes. Each tells a[[ story]] of how hidden",
+      " the market that is less crowded and make sure to maintain a six-foot[[ distance]] from other people",
+      ". Leaders can be born, elected, or trained and groomed. Others seize[[ power]] or have leadership",
+      " less devastating to borrowers. \u201cYou can slice and dice the numbers in different[[ ways]],\u201d says Mart"
+     ]
+    },
+    "5161": {
+     "n_active": 819,
+     "match_share": 0.11,
+     "n_top": 200,
+     "behavioural_match": false,
+     "contexts": [
+      " (Visy) and its former general manager Rod Carroll on account of jurisdictional[[ matters]], however did",
+      "9,598, down 14.8pc on last[[ June]], while at",
+      " names like Pepsi and 7UP, we are dedicated to creating and building[[ brands]] that delight consumers",
+      " your browser settings, or use anti-virus software to limit the ability of[[ cookies]] to track your",
+      " much larger marketing budgets. It\u2019s haul includes both Best Picture and Best[[ Director]] nominations, and",
+      " seek only rapid but should also include policies that will grow and increase interest in[[ skills]] to meet developmental",
+      " race to be the UK's biggest data provider has long been overshadowed by[[ customers]]' needs for",
+      " its head buried in the sand? This is one of the funniest scenes in[[ nature]], but an",
+      " friends of animals will gather on King Tomislav square in Zagreb to march for[[ animals]] through the center",
+      " they started living together, it was nothing but the unseen force 'necessity[[']] and 'urg",
+      " Kvitova in the second round, but she is encouraged by how the[[ injury]] has reacted to",
+      " scenes at the Beehive, it seemed to already tick the \"engagement box[[\"]] - even if"
+     ]
+    },
+    "9805": {
+     "n_active": 2181,
+     "match_share": 0.635,
+     "n_top": 200,
+     "behavioural_match": true,
+     "contexts": [
+      " But you can start JPhotoTagger in any supported language, e.[[g]]. if you",
+      " face! And what better way to meet and enjoy the start of the year[[ than]] to challenge yourself",
+      " amount is loaded on to a plastic card that is delivered in the mail,[[ likely]] in some sort",
+      " membrane keypad or product label). The new 150 size is available[[ only]] as Version I",
+      " live in (at least) three separate states, a united Iraq is possible[[ only]] if one of",
+      " you are bored.\n\"One of the most exciting ways to live life[[ is]] to avoid boredom",
+      " person holds over any premises in either of the following circumstances:\n(A[[)]] after termination of",
+      "Tom Cruise) and mother (Katie Holmes). If she were to marry,[[ say]]",
+      " to terminate provided in the lease or implied by law; or\n(B[[)]] after the term",
+      ", and the odds of them winning a road playoff game are fairly low,[[ especially]] since that game",
+      " and recover from these events.\nOne of the best ways to do this[[ is]] to ask people",
+      "ession in \u201cJCVD,\u201d Van Damme is back yet again, this[[ time]] on both sides"
+     ]
+    },
+    "12822": {
+     "n_active": 1258,
+     "match_share": 0.055,
+     "n_top": 200,
+     "behavioural_match": false,
+     "contexts": [
+      " or agreement by which lie holds after 7 days from the service of a[[ written]] demand for possession",
+      " future headlight systems.\n- High-resolution CMOS camera for real-time[[ digital]] image processing (",
+      "-key democratic managers; Arab managers are good Muslims; Chinese managers usually have[[ government]] or Party affiliations",
+      "s/infant beds (complimentary) can be requested.\nBuff[[et]] breakfasts are available",
+      "come out of shell\nLike this video? Subscribe to our free daily[[ email]] and get a",
+      " identify as humans employ a variety of coping mechanisms just to get through the four[[ letter]] word called life",
+      "'s backpack and a jar containing suspected marijuana, a glass pipe and a[[ digital]] scale in the",
+      " for women are both very pretty, with a pleasant hearts-and-strip[[es]] pattern, and",
+      " double roof\n- Corner curtains with sewn on netting\n- Finger friendly push[[ button]] upper frame\n",
+      ". How do we create a healthy feedback session? Through engagement. Activity-[[based]] retrospectives will",
+      " glory\u201d\nAll of these you can do through a simple card-game[[ style]] that is unlike",
+      " 1,679 SQM BLOCK AMONGST LANDSCAP[[ED]] GARDENS &"
+     ]
+    },
+    "13502": {
+     "n_active": 1866,
+     "match_share": 0.39,
+     "n_top": 200,
+     "behavioural_match": true,
+     "contexts": [
+      " some things ironed out.\"\nQ: Was the writing was on the[[ wall]] going into the",
+      " from carrying in a parade.\nOur emergency workers put it all on the[[ line]] each day,",
+      " ...\nRun for the border: New Mexico can't have it both[[ ways]] as far as",
+      "1\nCurtin University - Open Day\nBring your event to the next[[ level]]!\nBooth",
+      "\u201cThis sixth class of inductees recognizes the horses and people that raised the[[ bar]] in great achievements",
+      " title. The Wizards hope Otto Porter and Glen Rice Jr. take the next[[ step]] and they bolstered",
+      ", outgoing, or enthusiastic. Wow, Anna has really come out of her[[ shell]] lately. I",
+      " get this set. John I have to thank you for re-opening my[[ eyes]] to how much",
+      "Take your Employee Central Payroll system to the next[[ level]] (Part ",
+      "'re a terrible person. Don't worry though, Valve has you[[ covered]]!\nJust",
+      " shooters,\u201d said Marsan. \u201cWe weren\u2019t afraid to take a[[ risk]], though it",
+      " change?\nApple\u2019s challenge centers on how to proactively get out in[[ front]] of these issues"
+     ]
+    },
+    "14104": {
+     "n_active": 1834,
+     "match_share": 0.415,
+     "n_top": 200,
+     "behavioural_match": true,
+     "contexts": [
+      " in their attitudes toward alcohol. Some Christians believe that we have freedom to consume[[ alcohol]] in moderation.",
+      " this season, JATE and HUDDY.\nI used to watch my[[ shows]] like Dawson'",
+      " really like this idea, but you do know that I can\u2019t donate[[ blood]]?\u201d Toth",
+      " are unique to the patient. Additionally, some patients choose to have arm lift[[ surgery]] performed as part",
+      " over the counter drugs on a monthly basis\n2. You have taken prescription[[ drugs]] consistently for more",
+      " Matt, and I commented that it would be great if he could play the[[ piano]] either at some",
+      " with your head in the sand:\n1. You take over the counter[[ drugs]] on a monthly",
+      "He explained that because he is a gay man, he can\u2019t donate[[ blood]], even though",
+      "s website.\nIf the Judge offers you the option to attend traffic safety[[ school]], the court",
+      " of the upgraded site).\nOur SEO provider (we do not do our[[ SEO]] with dealer.",
+      " the payroll.\n- Reasonable suspicion testing allows employers to require drug or alcohol[[ testing]] based on the",
+      " really look up to you. That's why I want to teach first[[ grade]] when I graduate"
+     ]
+    },
+    "16080": {
+     "n_active": 1910,
+     "match_share": 0.02,
+     "n_top": 200,
+     "behavioural_match": false,
+     "contexts": [
+      " and Bosch, and joined by Sony Imaging Products & Solutions Inc, LitePoint[[ and]] the Telecommunications",
+      " Jitra, Alor Setar, Kangar, Parit Buntar[[,]] Ipoh Aman",
+      " Sungai Nibong, Butterworth, Sungai Petani, Changlun, Jitra[[,]] Alor Set",
+      "ani, Changlun, Jitra, Alor Setar, Kangar[[,]] Parit B",
+      " Alam Terminal, Sungai Nibong, Butterworth, Sungai Petani, Changlun[[,]] Jitra,",
+      ", Sungai Petani, Changlun, Jitra, Alor Setar[[,]] Kangar,",
+      ". Want even more citrus? Good news! We used Falconer\u2019s Flight[[ and]] Citra hops",
+      "S. job postings were Accenture, at 14,240[[ and]] Deloitte, at",
+      "Top Games to Watch: No. 6 Knicks vs[[.]] Wizards\nKn",
+      " Samsung Electronics, and Bosch, and joined by Sony Imaging Products & Solutions Inc[[,]] LitePoint and",
+      " knock yourself out dissecting and analyzing Sunday\u2019s conference championship games. Ravens[[ vs]]. Patriots,",
+      ", Kanger, Innokin, Aspire, Greensound, EHpro[[,]] Tobecco"
+     ]
+    }
+   },
+   "covered_hits": [],
+   "seconds": 8
+  },
+  "resid_post_all/L14_16k_small": {
+   "n_latents": 16384,
+   "mean_l0": 20.555260465848285,
+   "n_nonfinite_r": 0,
+   "corr": {
+    "Y:logcosh/13": [
+     {
+      "latent": 156,
+      "r": 0.2360942136733984,
+      "freq": 0.01821687126219704
+     },
+     {
+      "latent": 410,
+      "r": 0.18452572608670004,
+      "freq": 0.009801896443185396
+     },
+     {
+      "latent": 578,
+      "r": 0.17443031471562542,
+      "freq": 0.008336284230406044
+     },
+     {
+      "latent": 1119,
+      "r": 0.150520674884994,
+      "freq": 0.009915014164305949
+     },
+     {
+      "latent": 202,
+      "r": 0.14837057949864846,
+      "freq": 0.008410056657223795
+     },
+     {
+      "latent": 168,
+      "r": 0.13346175323857498,
+      "freq": 0.01939723009128108
+     },
+     {
+      "latent": 3979,
+      "r": 0.12960823515282868,
+      "freq": 0.006064093484419264
+     },
+     {
+      "latent": 524,
+      "r": 0.11195740039508488,
+      "freq": 0.005277187598363236
+     },
+     {
+      "latent": 4118,
+      "r": 0.10997927880091544,
+      "freq": 0.0032164778092540133
+     },
+     {
+      "latent": 233,
+      "r": 0.10236887751649476,
+      "freq": 0.015418437204910292
+     }
+    ],
+    "Y:skew/16": [
+     {
+      "latent": 156,
+      "r": 0.24245118859476852,
+      "freq": 0.01821687126219704
+     },
+     {
+      "latent": 410,
+      "r": 0.17767538783565967,
+      "freq": 0.009801896443185396
+     },
+     {
+      "latent": 578,
+      "r": 0.16904454089453413,
+      "freq": 0.008336284230406044
+     },
+     {
+      "latent": 202,
+      "r": 0.15865045029702163,
+      "freq": 0.008410056657223795
+     },
+     {
+      "latent": 168,
+      "r": 0.15203634441375638,
+      "freq": 0.01939723009128108
+     },
+     {
+      "latent": 1119,
+      "r": 0.1490254975415075,
+      "freq": 0.009915014164305949
+     },
+     {
+      "latent": 3979,
+      "r": 0.13085841510153426,
+      "freq": 0.006064093484419264
+     },
+     {
+      "latent": 183,
+      "r": 0.12382674640888901,
+      "freq": 0.011493744098205855
+     },
+     {
+      "latent": 233,
+      "r": 0.11413035345952979,
+      "freq": 0.015418437204910292
+     },
+     {
+      "latent": 524,
+      "r": 0.11069180882006971,
+      "freq": 0.005277187598363236
+     }
+    ],
+    "hd:logcosh/13": [
+     {
+      "latent": 156,
+      "r": 0.2106687470613926,
+      "freq": 0.01821687126219704
+     },
+     {
+      "latent": 168,
+      "r": 0.19130057446153836,
+      "freq": 0.01939723009128108
+     },
+     {
+      "latent": 367,
+      "r": -0.19106858325068304,
+      "freq": 0.01450857727415801
+     },
+     {
+      "latent": 301,
+      "r": -0.18751749454208316,
+      "freq": 0.007416587976078061
+     },
+     {
+      "latent": 255,
+      "r": -0.1868857756586029,
+      "freq": 0.009054335851432168
+     },
+     {
+      "latent": 2,
+      "r": -0.18676256190862894,
+      "freq": 0.009246144161158326
+     },
+     {
+      "latent": 139,
+      "r": -0.18659315995645773,
+      "freq": 0.011154390934844192
+     },
+     {
+      "latent": 363,
+      "r": -0.18274544553323044,
+      "freq": 0.007018216871262197
+     },
+     {
+      "latent": 462,
+      "r": -0.17834203628856923,
+      "freq": 0.007529705697198615
+     },
+     {
+      "latent": 213,
+      "r": -0.17738837027858534,
+      "freq": 0.007273961284230406
+     }
+    ],
+    "hd:skew/16": [
+     {
+      "latent": 156,
+      "r": 0.2024142713018351,
+      "freq": 0.01821687126219704
+     },
+     {
+      "latent": 367,
+      "r": -0.19622523804583653,
+      "freq": 0.01450857727415801
+     },
+     {
+      "latent": 301,
+      "r": -0.19326537177811684,
+      "freq": 0.007416587976078061
+     },
+     {
+      "latent": 2,
+      "r": -0.1904625828177311,
+      "freq": 0.009246144161158326
+     },
+     {
+      "latent": 168,
+      "r": 0.188021015066299,
+      "freq": 0.01939723009128108
+     },
+     {
+      "latent": 363,
+      "r": -0.1877891755975071,
+      "freq": 0.007018216871262197
+     },
+     {
+      "latent": 255,
+      "r": -0.18762218453100737,
+      "freq": 0.009054335851432168
+     },
+     {
+      "latent": 139,
+      "r": -0.1868490257796693,
+      "freq": 0.011154390934844192
+     },
+     {
+      "latent": 501,
+      "r": -0.18326822157422853,
+      "freq": 0.006678863707900535
+     },
+     {
+      "latent": 462,
+      "r": -0.18146410634012217,
+      "freq": 0.007529705697198615
+     }
+    ]
+   },
+   "latents": {
+    "27": {
+     "n_active": 2891,
+     "match_share": 0.17,
+     "n_top": 200,
+     "behavioural_match": false,
+     "contexts": [
+      " to take photos..grr...) I am so excited to clean it up[[ (]]literally...I",
+      "\nWhen we had L, I might have gone slightly overboard with some things[[ (]]see: my",
+      " to the point that I can hardly drag myself out of bed, get dressed[[ (]]and all that",
+      " that, but I digress.\nWe were nominated in a conspicuously suspicious manner[[ (]]thank you,",
+      " not really. The pieces were stunning, impeccably made and modernly classic[[ (]]yes, I",
+      ", and if they are worth their salt they will at least do the following[[ (]]although some of",
+      "\nTenderness in this form leads, if you\u2019re the impulsive type[[ (]]like me)",
+      " in his Blog Buddies post. I am willing to try out new things[[ (]]especially free things",
+      "\nAs this was the first time I\u2019ve ever revisited a book design[[ (]]with the book",
+      " the business to understand what\u2019s going on, the legal work is familiar[[ (]]which is not",
+      " by you, our lovely SMP readers. It\u2019s our third annual edition[[ (]]here\u2019s",
+      " guy wearing a Guy Fawkes mask (who is apparently Guy Fawkes himself[[--]]it is a"
+     ]
+    },
+    "36": {
+     "n_active": 2579,
+     "match_share": 0.935,
+     "n_top": 200,
+     "behavioural_match": true,
+     "contexts": [
+      "'i, 1996\nTo determine the factors affecting the[[ appearance]] of impact craters",
+      "0 payers for their providers to choose from. In that same time, the[[ number]] of providers that",
+      " in random locations across Microsoft sites.\nMicrosoft will prioritize and advocate for the[[ use]] of PowerShell Core",
+      "BUSINESS WIRE)--ISC West \u2013 HID Global, trusted leader in solutions for the[[ delivery]] of secure identity",
+      " provider might test a sample of your blood for an otherwise unexplained rise in the[[ amount]] of alpha-",
+      " proactive steps to protect Council members, city staff, and the public from the[[ risk]] of COVID-",
+      " treatment may also affect mental and emotional health.\nADT, which suppresses the[[ production]] of testosterone by",
+      " established, modelled on that conducted by the Campbell Committee\u201d, and \u201ccovering the[[ role]] of banks and",
+      " only diagnosed when a doctor detects signs such as a thinning macula or the[[ presence]] of drusen",
+      " replaced it the same day out of hours. We were very impressed with the[[ level]] of service we",
+      ", epilepsy, or even Perthes disease.\nSuch technologies contribute to the[[ development]] of personalized medicine",
+      " months ago,\" when people feared Greece would exit the euro zone.\nThe[[ number]] of unemployed Germans"
+     ]
+    },
+    "156": {
+     "n_active": 3704,
+     "match_share": 0.355,
+     "n_top": 200,
+     "behavioural_match": true,
+     "contexts": [
+      " in their attitudes toward alcohol. Some Christians believe that we have freedom to consume[[ alcohol]] in moderation.",
+      " with your head in the sand:\n1. You take over the counter[[ drugs]] on a monthly",
+      " over the counter drugs on a monthly basis\n2. You have taken prescription[[ drugs]] consistently for more",
+      " really like this idea, but you do know that I can\u2019t donate[[ blood]]?\u201d Toth",
+      "s website.\nIf the Judge offers you the option to attend traffic safety[[ school]], the court",
+      " to teach him how to walk,\u2019\u201d Johnson remembers.\nNot having had a[[ dog]] of her own",
+      " Matt, and I commented that it would be great if he could play the[[ piano]] either at some",
+      " the payroll.\n- Reasonable suspicion testing allows employers to require drug or alcohol[[ testing]] based on the",
+      " are unique to the patient. Additionally, some patients choose to have arm lift[[ surgery]] performed as part",
+      " situations include:\n- California law allows employers to require a drug or alcohol[[ test]] as a condition",
+      "ists.\u201d Biden later told CBS News, \u201cI did not use the terrorism[[ word]].\u201d\nIn",
+      " you want (or not want) to go through the process of having another[[ child]]? is a"
+     ]
+    },
+    "168": {
+     "n_active": 3944,
+     "match_share": 0.385,
+     "n_top": 200,
+     "behavioural_match": true,
+     "contexts": [
+      " from carrying in a parade.\nOur emergency workers put it all on the[[ line]] each day,",
+      " title. The Wizards hope Otto Porter and Glen Rice Jr. take the next[[ step]] and they bolstered",
+      "1\nCurtin University - Open Day\nBring your event to the next[[ level]]!\nBooth",
+      "Take your Employee Central Payroll system to the next[[ level]] (Part ",
+      "\u201cThis sixth class of inductees recognizes the horses and people that raised the[[ bar]] in great achievements",
+      ", outgoing, or enthusiastic. Wow, Anna has really come out of her[[ shell]] lately. I",
+      " shooters,\u201d said Marsan. \u201cWe weren\u2019t afraid to take a[[ risk]], though it",
+      " stare!\nThis beautiful black dress from ModCloth hits all the right jazz[[ notes]]. We love",
+      " New student Pat McClellan (Marshall) resists his advances, cutting Tommy down to[[ size]] at a party",
+      " reserve driver, Fairuz Fauzy, is set to take up a new[[ challenge]] after confirming a",
+      " We\u2019re stressed and we\u2019re hungry! Logical thought goes out the[[ window]]. We head",
+      " Competition with Boom Boom Football!\nFans of American football are in for a[[ treat]] with this game"
+     ]
+    },
+    "202": {
+     "n_active": 1710,
+     "match_share": 0.475,
+     "n_top": 200,
+     "behavioural_match": true,
+     "contexts": [
+      " Hicks, a coalition member and fellow Waterford resident. \u201cHe had been through[[ it]] two times before",
+      " help the patient administer trip-killers if needed. Some experienced individuals can do[[ that]] alone with the",
+      "64 sq ft and had NO windows/natural light. I solved those[[ issues]] by being picky",
+      " time-consuming, but more commonly used way \u2013 the way schools have done[[ it]] for so many",
+      " This is a great example that we really can do this and we can do[[ it]] for things that",
+      " expect great culinary innovation, they use to cook just Italian classics and they do[[ that]] greatly!\n",
+      " I need to tune a PDF to the Kindle display. I plan on doing[[ this]] when mine finally",
+      " game?\nA: \"Yes it was, and it had been that[[ way]] for",
+      " Department of Civil and Environmental Engineering at Colorado State University, a position he has[[ held]] since 2",
+      "changing event, I quit smoking cigars after 35 years! I did[[ it]] because I decided",
+      " overwhelming odds, we put ourselves in an often impossible situation, and keep doing[[ it]] armed with little",
+      "\nIf you look at various blogs, you\u2019ll see that people do[[ this]] in many different"
+     ]
+    },
+    "358": {
+     "n_active": 2176,
+     "match_share": 0.425,
+     "n_top": 200,
+     "behavioural_match": true,
+     "contexts": [
+      " be able to function without me, but do you think you'll miss[[ me]]?\nLove",
+      " the hall from you back in the day. Maybe you didn\u2019t like[[ them]], or maybe",
+      " for males only, but as a tomboy, that only made me want[[ it]] more. Se\u00f1",
+      " of one of the most prestigious universities in the country. I have heard about[[ it]] from more than",
+      " stations, one of which will be worth more than the others, so build[[ it]] to look special",
+      " look AWESOME.\n- Make it SEO friendly, so people can find[[ it]] quick in search",
+      " help but feel that this was a hatchet job on Intel. I enjoyed[[ it]] and found it",
+      " to offer you a significant discount from the live price of the flight to sell[[ it]], so you",
+      " 4-500 words, or we may ask you to summarise[[ it]].\nBy",
+      "-stop bench with Vladimir Putin on TV a few Saturdays ago. I saw[[ it]] after a late",
+      ", I\u2019m petrified of this frustrating horrible disease and just internalise[[ it]].\nOf",
+      " does it do to write about the feature set if you can't see[[ it]]?"
+     ]
+    },
+    "410": {
+     "n_active": 1993,
+     "match_share": 0.33,
+     "n_top": 200,
+     "behavioural_match": true,
+     "contexts": [
+      "term well-being of our players is paramount and we will stand by Ald[[on]] as he works",
+      " I am engaged. RED FLAG NUMBER ONE is that I never spoke to this[[ client]]. You will",
+      " board. If you don\u2019t have anti-static bags, wrap the[[ board]] in a sheet",
+      " Parliament was largely based around how only Labour and not the SNP could properly protect[[ Scotland]] against \"London",
+      " the only child of the late minister marshaled the courage to extol his late[[ father]] as a man",
+      " Scarf! mod, which allows the player to move faster and heals the[[ player]] faster than usual",
+      " you speak German or English and have time, you can support JPhotoT[[agger]]: The language",
+      " a Web-based interface to allow administrators to remotely access and configure the file[[ server]], includes a",
+      " padded bag; this does not provide enough protection.\nCushion the[[ product]] inside the box",
+      " assume God is evil.\"\nThe student became quiet and did not answer the[[ professor]]'s hypothetical",
+      " leaves yet folded.\nThe child often seemed to be thinking of her absent[[ mother]] and frequently spoke",
+      " homage to our journey as a business, and most importantly, to serve our[[ clients]]. So,"
+     ]
+    },
+    "497": {
+     "n_active": 1975,
+     "match_share": 0.01,
+     "n_top": 200,
+     "behavioural_match": false,
+     "contexts": [
+      "s bid, which we were very grateful to receive.\u201d\nIU political science[[ professor]] Margie Hershey",
+      " scored his 20th goal in the first period to tie Washington Capitals[[ forward]] Alex Ovech",
+      " nights at Mercato\nA local jazz icon for the past decade, percussion[[ist]] Quentin Baxter has",
+      " in Essex County; we lack child care slots,\" said ACAP child care[[ manager]] Marjorie Zmi",
+      " first time ever,\u201d Boone writes.\nNo. 39 \u2014 Providence[[ forward]] Alpha Diallo",
+      " announced this week.\nEditorial director Hiten Samtani and managing web[[ editor]] James Kleim",
+      " for the first time since 1974. Directed by Tony Award[[ winner]] Anna D.",
+      " Web site. She wrote under the name \"Keenan Bowen.\"\nMusic[[ editor]] Dave Segal,",
+      " 2012 national meet selection time. Pilh\u00f6fer joins Carleton[[ great]] Marie Marsman",
+      " crowd during the pregame ceremony, which will be emceed by associate athletics[[ director]] for communications Tom",
+      "Leach, John and Almond[[,]] Sharon (1",
+      " game of momentum, and they took it and took it early,\u201d said Dartmouth[[ coach]] Bob Gaudet"
+     ]
+    },
+    "540": {
+     "n_active": 1024,
+     "match_share": 0.0,
+     "n_top": 200,
+     "behavioural_match": false,
+     "contexts": [
+      ". He is associated with North Carolina Sickle Cell Syndrome Program in Charlotte,[[ North]] Carolina.\n",
+      " 72 hours.\n- FREE local pickup is available in Columbia,[[ South]] Carolina (choose",
+      " talented acts from a diverse range of genres, the festival will showcase some of[[ Western]] Australia\u2019s",
+      "NZIA), National Award for Architecture\n2003 Property Council of[[ New]] Zealand Building Awards",
+      " questionable as to whether it can be used for political purposes in the City of[[ Los]] Angeles.\n",
+      " as the Strategic Development Manager for the YWCA of Aotearoa[[ New]] Zealand. Sarah",
+      " Awards, Excellence in Education and Arts\n2003 Property Council of[[ New]] Zealand Building Awards",
+      " one of the panelists, who is a board member of Social Media Club of[[ Long]] Island.\n",
+      " on their Facebook page Tuesday night.\nFor the second consecutive year, a[[ Long]] Beach High School",
+      ", Obama is using the air strikes as bait with which to influence intra-[[I]]raqi political",
+      " and discover. Plan your vacation online!\nServing as a valuable addition to[[ Prince]] Edward Island`",
+      " threatens historic Palm Beach restaurant\n- Brian Bandell\nTesta\u2019s[[ Palm]] Beach has served"
+     ]
+    },
+    "578": {
+     "n_active": 1695,
+     "match_share": 0.47,
+     "n_top": 200,
+     "behavioural_match": true,
+     "contexts": [
+      " saves travel expenses, preserves your work day, and allows you to absorb the[[ material]] in manageable segments",
+      " hand it over to independent developers, making it open, and returning the collected[[ funds]] to investors.",
+      " of dealing with MCAS [Mast Cell Activation Syndrome].\nSome document their[[ symptoms]] and share pictures",
+      " program, the file is read by the computer, and the processor reads the[[ data]] in the file",
+      " wooden planks will become a thing of the past.\n\u201cWe took the[[ comments]] that were made",
+      ".\nAccess and update fleet information from anywhere.\nCapture all your fleet[[ data]] in one place",
+      " thus I am not out the money, but I wanted to publish all the[[ details]] to make sure",
+      " in Carolina communities,\u201d she said.\nDEEPP will combine the survey[[ data]] with satellite imaging",
+      " bit of unbalance. And I'm mostly interested in getting my general[[ ideas]] out at this",
+      " interactive with other social media. You can cross-post your beer check-[[ins]] to Twitter and",
+      " deals, cash to support future filmmaking endeavors and a global audience to screen their[[ work]]. Filmmakers",
+      " and leave everything for your readers. See what excites people and use that key[[ information]] to improve online"
+     ]
+    },
+    "683": {
+     "n_active": 1297,
+     "match_share": 0.65,
+     "n_top": 200,
+     "behavioural_match": true,
+     "contexts": [
+      " structures, there were no any private farmer. So the governmental property was not[[ treated]] with care.",
+      ", the Australian based Toxic Custard, a good site mind you, was[[ voted]] in \"1",
+      "'s hard drive. When the user runs the program, the file is[[ read]] by the computer",
+      " ever think about how it\u2019s made? How are glass panels and mirrors[[ cut]] to the appropriate",
+      " raking in about $30,000. He was finally[[ caught]] by Target security",
+      " disproportionate amounts of foot traffic. Many times your deck\u2019s stairs are[[ used]] when moving large",
+      "Every now and then, IRREVERENT has the dubious distinction of being[[ recognized]] for its general",
+      ", are his masterworks. All\u2019s Well That Ends Well is rightly[[ seen]] as one of",
+      "front location. Featuring a contemporary, South Beach-inspired design, Bahia is[[ described]] as \u010fSand",
+      " were nominated in a conspicuously suspicious manner (thank you, Sara) and were[[ voted]] in \"6",
+      " computer does what the program tells it to do.\nA computer program is[[ written]] by a programmer",
+      " 2015 determines the winning school. Winning filmmakers will also be[[ recognized]]. The first"
+     ]
+    },
+    "1119": {
+     "n_active": 2016,
+     "match_share": 0.515,
+     "n_top": 200,
+     "behavioural_match": true,
+     "contexts": [
+      " mission of the Integrated Decision Support Group is to combine advanced modeling techniques with software[[ engineering]] to guide organizational",
+      " fancy drinks. So, last week, I grabbed a well-read wing[[man]] and we went",
+      "wide HIV prevention and direct care and service programs, and later collaborated with other[[ leaders]] of HIV-",
+      " Can we combine what we know about past trends with observations about today\u2019s[[ challenges]] to predict where",
+      " spends much of his time on the road. He recently stopped by Radio.[[com]] to talk about",
+      "'s no greater feeling than giving back to your community. Check out this[[ site]] and find ways",
+      " demonstrate how we integrate real-world assets, learnable components, and physical[[ models]] to build a",
+      " All of the surfaces were carefully selected, the design team did a lot of[[ research]] into each product",
+      " to be an anti-natalist, much less some kind of nihilist[[,]] to defend the",
+      " market prices. Risk management shocks and related flows can team up with other dynamics[[ in]] the financial system",
+      " so should she give it back?\nMartha Stewart has been looking to the[[ web]] for love.",
+      "-around (click + drag) to see all buildings. Click on a[[ building]]'s marker"
+     ]
+    },
+    "5838": {
+     "n_active": 2749,
+     "match_share": 0.19,
+     "n_top": 200,
+     "behavioural_match": false,
+     "contexts": [
+      " banjo, and fiddle had defined the musical texture since the genre's early[[ days]].\nSp",
+      " to blame for the complete lack of scares I witnessed during my first-ever[[ visit]] to the decades",
+      " with the club for three years now after his brother\u2019s involvement peaked his[[ interest]]. Van E",
+      " Tucker when he was 6 months old after seeing his photo on an adoption[[ website]]. Looking back",
+      " season, which will be a refreshing example for a team historically known for discipline[[ problems]].\nWhile",
+      " capitol in another special session by July 1, if no other solution is[[ found]] to keep the",
+      " a team, and be ready to jump in when our ministries all open back[[ up]]! This is",
+      ". Tuukka Rask had another gutsy performance despite being on the losing[[ end]] yet again,",
+      "-Tech winner facing the Moorhead-Rogers winner at 8 p.[[m]].\nFinal",
+      ", join a team, and be ready to jump in when our ministries all[[ open]] back up!",
+      " love and living his life in the\nwake of the numerous losses he has[[ suffered]].\nA",
+      " to share cool places we camped all over the continent while full-time RV[[ing]]. When that"
+     ]
+    },
+    "6280": {
+     "n_active": 153,
+     "match_share": 0.032679738562091505,
+     "n_top": 153,
+     "behavioural_match": false,
+     "contexts": [
+      "argued), Hershey, Beavers, Periard & Graham, Frank B[[.]] Schweitzer,",
+      "5, Joseph C. Guimond, Judge.\nBronson D[[.]] James argued the",
+      " County Circuit Court 01C18545, Joseph C[[.]] Guimond",
+      "ze ubhukishe iindawo zokuhlala ezik[[he]]thekile",
+      " Adam P. Ebbin (D-Alexandria) and Delegate Patrick A[[.]] Hope (D",
+      " leader\nKANSAS CITY, Mo. (AP) \u2014 Bishop James V[[.]] Johnston Jr.",
+      " but are somehow still receiving health care anyway,\" said Laura Shone, Dr[[.]]P.H",
+      " past mistakes.\nThe Kansas City Star reports (http://bit.ly[[/]]1Mkkg",
+      " Susan Collins (R-Maine) and John Thune (R-S[[.]]D.), who",
+      " it wasn't enough, as the Sacramento River Cats (the Oakland A[[']]s AAA affiliate",
+      " to fielding a fast, compact laser polarimeter. CEO Dr. Brian G[[.]] Hoover stated,",
+      " the legislation.\nFrom a press release:\nVirginia State Senator Adam P[[.]] Ebbin ("
+     ]
+    },
+    "6391": {
+     "n_active": 106,
+     "match_share": 0.14285714285714285,
+     "n_top": 105,
+     "behavioural_match": false,
+     "contexts": [
+      " defeated, and hopeless. How do we create a healthy feedback session? Through[[ engagement]]. Activity-",
+      " tiny mites that live in and near beds \u2014 and lice, which spread through[[ contact]] with an infected",
+      " nature of their job. Community Servings. Salary estimates based on salary survey[[ data]] collected directly from",
+      "s not their responsiveness thats make them a Christian. Christians come to Jesus in[[ faith]], not by",
+      " thats make them a Christian. Christians come to Jesus in faith, not by[[ works]] (Ephesians",
+      " critical nature of their job. Community Servings. Salary estimates based on salary[[ survey]] data collected directly",
+      ".\n\"Milan have constantly changed their line-up this season due to[[ injuries]], lack of",
+      " conventional risk-return optimization. Previous posts explained price distortions that arise from liquidity[[ conditions]] and rebalancing",
+      " Rocket Review \u2013 What Are Click Magnets?\nInternet marketing is all about[[ traffic]]. If you",
+      " (Visy) and its former general manager Rod Carroll on account of jurisdictional[[ matters]], however did",
+      " in many ways, 2020 has thrust a huge spotlight on[[ something]] we\u2019ve",
+      ".\nManagement dismissed this headwind as an aberration associated with one-off[[ factors]], but uncertainty"
+     ]
+    },
+    "10097": {
+     "n_active": 159,
+     "match_share": 0.41139240506329117,
+     "n_top": 158,
+     "behavioural_match": true,
+     "contexts": [
+      " images from my first trip to Iceland. It was amazing seeing it in physical[[ form]], all those",
+      " some things ironed out.\"\nQ: Was the writing was on the[[ wall]] going into the",
+      " the market that is less crowded and make sure to maintain a six-foot[[ distance]] from other people",
+      " organise an IRC time\nfor this discussion? Or maybe there is a silent[[ majority]] who are interested",
+      " another potential \"black swan\" type event.\nThe weather will be watched[[ closely]] during the coming",
+      " am happy for the opportunity that Zen has given me. We were actually in[[ talks]] for me to",
+      ". It was amazing seeing it in physical form, all those images brought to[[ life]] on paper.",
+      " growing determines their appetite. As a result, the appetite can go up and[[ down]].\nF",
+      " quite weird to eat the flowers. It definitely has a mild watercress[[ taste]] with a hint",
+      "\nBarbour had said last week that he could run the agency by executive[[ order]] for up to",
+      " rear view of High Street has always been dramatic since the earthquakes - even more[[ so]] now. It",
+      " the United States, she uses her maiden name in professional contexts and her married[[ name]] otherwise. These"
+     ]
+    },
+    "13525": {
+     "n_active": 37,
+     "match_share": 0.0,
+     "n_top": 37,
+     "behavioural_match": false,
+     "contexts": [
+      "argued), Hershey, Beavers, Periard & Graham, Frank B[[.]] Schweitzer,",
+      " ziyavuma: ezi ndawo zokuhlala zicon[[y]]wa kakh",
+      " 561.671.5995 | [[9]]54.",
+      "ze ubhukishe iindawo zokuhlala ezik[[he]]thekile",
+      " the junior right wing, who at 6-4, 19[[8]] pounds, is",
+      "772 yards and 25 touchdowns with just nine interceptions in [[2]]012",
+      "671.5995 | 954.2[[7]]2.6",
+      " large spruce tree beside Old Town Plaza and on garlands wrapped around poles between [[2]]4th and",
+      " educational and practical experience requirements prescribed by Chartered Institute of Administration Act No. [[1]]03 of",
+      " and practical experience requirements prescribed by Chartered Institute of Administration Act No. 1[[0]]3 of ",
+      " Adam P. Ebbin (D-Alexandria) and Delegate Patrick A[[.]] Hope (D",
+      "Memphis Blues 1927 - [[1]]938"
+     ]
+    }
+   },
+   "covered_hits": [],
+   "seconds": 7
+  }
+ },
+ "swap_gb_at_end": 2.07671875
+}

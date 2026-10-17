@@ -1,0 +1,11 @@
+D2 L12 raw (e67_raw_L12_rows.npy, 203,328 kept rows), first-moment identity removal x3, coord 1038 dropped.
+Spectrum: cumvar 64=0.383 128=0.508 256=0.667 512=0.846; eig1=75,658 eig64=1,806 eig65=1,773 eig128=1,172 eig256=716 eig512=363; bf16 floor share <=1.1e-5 at every rank.
+Block probes (held-out even/odd seq): paren 1-64 .784 | 65-256 .780 | 257-512 .718 | 1-256 .818 ; quote .776 | .740 | .662 | .801 ; bracket .518|.593 ; after_colon .847|.911 ; in_url .911|.850 ; in_caps_run .716|.744 ; code_markup .667|.624 ; list_item .630|.613
+d'^2 share in 65-256 (of top 512): paren .46 quote .35 bracket .44 after_colon .41 ; in 1-64: paren .31 quote .52 after_colon .18
+ICA-192 logcosh (no per-type step), 179 iters/12 s: paren #146 .720 (top1% 58.6% vs 3.1%, repro .93, eta2sq .07); quote #128 .659 (68.7% vs 6.0%, repro .90); after_colon best .641 (tail unenriched); in_caps_run .584; bracket .617; code_markup .560
+repro (one even half): median .734, 82/192 >= .8, 103 >= .7 ; eta2(y^2) max .26 ; ex-kurtosis median 3.1, 172/192 > 1 ; KIR (block, no per-type) 19.2 ; 93 types >= 256 rows covering 58% of rows
+v1 battery naming (6.1 rule): 64/192 named (after_digit 29, next_continuation 13, next_newline 12, word_cont 8, paren 6) ; 128 unnamed
+shadow: tail-readability by best single top-64 ICA unit: median .656, 22 >= .75, 46 >= .70 ; controls paren .768 quote .849 ; tail overlap paren-block vs top64-paren .148, quote .525 ; unnamed & readability < .70: 97
+SAE (L12 16k big) L0 110, FVU 0.19 ; error share of identity-removed variance: PCs 1-64 .116, 65-256 .299, 257-1151 .558 ; unit score error share: top-64 units median .168 (r .915) ; block units median .313 (max .35, r .833) ; none >= .5
+raw kept-coord |h|: median 16.4, p99 107, max 2,048 ; ||h|| median 9,556 (1038 median 9,472) ; kept-coord norm median 1,306
+Tail-diversity (D2, heavy-tail 1% = 2,034 rows): n_docs min 384 (quote #128) median 738; n_types min 183; max type share median .095, 11/192 > .30; max single-doc share median .008, max .036, 10/192 > .02; controls #146 (654 docs, 788 types, type .059, doc .012), #128 (384 docs, 596 types, type .059, doc .019). D2-scaled screen (docs>=200, types>=50, type<=.30, doc<=.04) passes 181/192; 96/97 of unnamed non-shadow units.

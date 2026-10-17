@@ -1,0 +1,34 @@
+# Files left out of this release. Path, size in bytes, and whether docs/HASHES.txt records a hash for it.
+# All are regenerable from the scripts (see README.md), or were deleted after use upstream.
+results/.DS_Store	6148	-
+results/corpus_tokens_pass1.i32	16009920	in ledger
+results/corpus_tokens_pass2.i32	16009920	-
+results/e46s_templated_means.npz	36629522	-
+results/e64_maps_L12.npz	19355871	in ledger
+results/e64_maps_L7.npz	19366546	in ledger
+results/e67_raw_L12_rows.npy	468467840	in ledger
+results/e68_prep_G12_nullscores.npy	32532608	in ledger
+results/e68_prep_G7_nullscores.npy	32532608	in ledger
+results/e69_p0_units.npz	29049458	in ledger
+results/e72_units_raw_L12.npz	212876588	in ledger
+results/e73_calib_l0_big.npz	12883913	in ledger
+results/e73_calib_l0_small.npz	12736649	in ledger
+results/lag_deltas_L12.npz	32570482	in ledger
+results/lag_deltas_L14.npz	32571345	-
+results/lag_deltas_L16.npz	32593304	-
+results/lag_deltas_L18.npz	32620610	-
+results/lag_deltas_L20.npz	32638835	-
+results/lag_deltas_L22.npz	32652327	-
+results/lag_deltas_L24.npz	32649123	-
+results/occ_units_L12.npz	26449039	-
+results/occ_units_L24.npz	26455460	-
+results/occ_units_L7.npz	26473931	-
+results/occ_units_v2_L12.npz	97130721	in ledger
+results/occ_units_v2_L24.npz	97167513	in ledger
+results/occ_units_v2_L7.npz	97178664	in ledger
+results/phase3_lag_action_robust_deltas.npz	49380489	-
+results/phase3_token_type_mean_resid_fulln.npz	227400646	-
+results/reserve_tokens.i32	8192000	in ledger
+results/tt22_partial_A/	dir	-
+results/tt22_partial_B/	dir	-
+results/typemeans_pass1.npz	1311693738	-

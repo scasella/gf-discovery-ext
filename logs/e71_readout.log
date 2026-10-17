@@ -1,0 +1,10 @@
+[49s] (b)/(c) done for 55 L12 units
+[49s] page L7 ['logcosh/18', 'skew/36']
+[49s] page L7 ['logcosh/33']
+[50s] page L7 ['logcosh/49', 'skew/8']
+[50s] page L7 ['logcosh/52']
+[50s] page L7 ['logcosh/57', 'skew/33']
+[51s] page L12 ['logcosh/45', 'skew/5']
+[51s] page L12 ['logcosh/54', 'skew/54']
+[51s] page L12 ['logcosh/13', 'skew/16']
+HASHES += e6bf66e0d6930b3bf305bc01554c013ad23cf5f3838df91266edf57170f77200  results/e71_readout.json (e71 readout: (b) classes, (c) R^2 for every L12 unit, per-family page data, 2026-10-16T09:41:42)

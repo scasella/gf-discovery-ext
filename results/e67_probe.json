@@ -1,0 +1,42 @@
+{
+ "rows": 203328,
+ "rebuild_r2_logcosh_13": 0.9999999999999634,
+ "rebuild_r2_skew_16": 0.999999999999965,
+ "label_base_rate": 0.09396032808094375,
+ "probe_W": {
+  "heldout_auroc": 0.6861788646966978,
+  "cos_pattern_with_d": {
+   "logcosh/13": 0.6706213675127601,
+   "skew/16": 0.6937398840130273
+  },
+  "cos_Wpattern_with_unit_Wpattern": {
+   "logcosh/13": 0.4143400469354089,
+   "skew/16": 0.4069300711053078
+  },
+  "cos_filter_with_unit_Wpattern": {
+   "logcosh/13": 0.41209824903691433,
+   "skew/16": 0.4045195515355234
+  }
+ },
+ "unit_as_classifier_auroc": {
+  "logcosh/13": 0.5702706097699034,
+  "skew/16": 0.5699479019496096
+ },
+ "probe_raw": {
+  "heldout_auroc": 0.9147981929163552,
+  "cos_pattern_with_d": {
+   "logcosh/13": 0.634143529006034,
+   "skew/16": 0.7019278493231194
+  },
+  "cos_filter_with_d": {
+   "logcosh/13": 0.09809401848807424,
+   "skew/16": 0.09472865661242806
+  }
+ },
+ "class_mean_difference_raw": {
+  "cos_with_d": {
+   "logcosh/13": 0.6477822459319873,
+   "skew/16": 0.7182820641869662
+  }
+ }
+}

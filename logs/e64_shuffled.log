@@ -1,0 +1,3 @@
+L7 S2: yield {'logcosh': {'n_screened': 27, 'n_screened_battery_unnamed': 15, 'fit_failed': False}, 'skew': {'n_screened': 25, 'n_screened_battery_unnamed': 19, 'fit_failed': False}} KIR 25.9 context-generic 4/65
+L12 S2: yield {'logcosh': {'n_screened': 15, 'n_screened_battery_unnamed': 11, 'fit_failed': False}, 'skew': {'n_screened': 18, 'n_screened_battery_unnamed': 16, 'fit_failed': False}} KIR 17.8 context-generic 3/78
+HASHES += 342268918d4255dfda9adbe170e8e501c41c54526f0cd9f929cce6db8dd55b7a  results/e64_shuffled.json (e64 S2 presence and yield, 2026-10-15T12:45:21)

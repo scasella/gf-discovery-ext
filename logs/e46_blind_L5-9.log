@@ -1,0 +1,11 @@
+L5: k6: 33 single-layer, 0 grid, k8: 47 single-layer, 35 grid, k9: 53 single-layer, 42 grid, k10: 52 single-layer, 0 grid, k12: 56 single-layer, 17 grid
+L6: k6: 43 single-layer, 0 grid, k8: 57 single-layer, 49 grid, k9: 48 single-layer, 34 grid, k10: 56 single-layer, 0 grid, k12: 53 single-layer, 36 grid
+L7: k6: 41 single-layer, 0 grid, k8: 45 single-layer, 31 grid, k9: 47 single-layer, 28 grid, k10: 50 single-layer, 0 grid, k12: 52 single-layer, 18 grid
+L8: k6: 42 single-layer, 0 grid, k8: 46 single-layer, 23 grid, k9: 46 single-layer, 33 grid, k10: 48 single-layer, 0 grid, k12: 56 single-layer, 14 grid
+L9: k6: 36 single-layer, 0 grid, k8: 42 single-layer, 45 grid, k9: 41 single-layer, 29 grid, k10: 53 single-layer, 0 grid, k12: 47 single-layer, 8 grid
+L5: prefilter ruler 241 -> BH 240; prefilter grid 94 -> BH 93
+L6: prefilter ruler 257 -> BH 257; prefilter grid 119 -> BH 7
+L7: prefilter ruler 235 -> BH 235; prefilter grid 77 -> BH 77
+L8: prefilter ruler 238 -> BH 234; prefilter grid 70 -> BH 66
+L9: prefilter ruler 219 -> BH 219; prefilter grid 82 -> BH 82
+RULER_PASS 549  LATTICE_PASS 141

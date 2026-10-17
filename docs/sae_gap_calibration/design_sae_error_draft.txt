@@ -1,0 +1,10 @@
+sae_error design draft (D2 calibration numbers, all read-only, scripts err_*.py in this scratchpad)
+- L12 16k l0_big: FVU 0.032 (0.189 without 1038); e is 31.5% of identity-removed raw variance; type eta2 of e 0.055 vs raw 0.37
+- 25 known labels in e: best ICA 0.552, best v2-rep probe 0.62, best PCA-256 probe 0.70 (after_colon); paren/quote 0.57/0.58 (big), 0.63/0.65 (small)
+- ICA on e: 0-3 screened at k=64/128/256 both contrasts (dec: 36-107); PC exkurt <= 0.8
+- e~SAE(h) R2 0.056 (big)/0.040 (small); e~h 0.294/0.464; e_lin slice probes paren/quote 0.69-0.76
+- gating: pre-act AUROC among inactive 0.67-0.72; e proj on dec rows <= 0.58
+- lagged CCA e_t,e_{t-tau}: 0.43 (lag1) 0.22 (lag5) 0.14 (lag20), null 0.076-0.081
+- AMUSE-multi lags 1,2,4,8,16 k=256 m=32: 3 screened (repro .94 .84 .83), acf1 ~.38, acf16 .05-.09, eta2(y2)<=.03, labels <= .568, SAE-state |rho|<=.035, sent/line pos |rho|<=.16, bag-of-recent-types R2<=.04
+- KO (20 latents, 4.6% var): k256 a1 paren .781 quote .747; a.5 quote .705 paren .642; k1151 a1 .728/.757, a.5 none; ICA-64 a.5 none
+- planted in top-256 subspace: quote k2 .731, k4 .915; paren k2 .584, k4 .873; full-rank random u: k256 lost at k<=2 (and k=4 at k256 untested), k1151 recovered at k=4 (.81)

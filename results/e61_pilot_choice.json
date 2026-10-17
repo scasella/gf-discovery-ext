@@ -1,0 +1,9 @@
+{
+ "chosen": {
+  "K": 128,
+  "N_ICA": 32,
+  "N_PCA": 64,
+  "n_layers_recovered": 0,
+  "note": "no setting recovered on P: section-5 defaults used"
+ }
+}

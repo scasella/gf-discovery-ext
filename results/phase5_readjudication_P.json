@@ -1,0 +1,8528 @@
+{
+ "status": "COMPLETE",
+ "script": "scripts/48b_readjudicate_P.py",
+ "declared_at": "2026-08-22T22:55:17",
+ "sources": [
+  "results/phase5_agreement_screen.json",
+  "results/phase5_occurrence_plane_screen.json"
+ ],
+ "config": {
+  "layers": [
+   6,
+   7
+  ],
+  "prefix_min": 3,
+  "smoke": false
+ },
+ "declared_rules": {
+  "prereg": "docs/phase5_prereg_2026-08-22.md (R13-R18) + docs/phase5_addendum_P_2026-08-22.md (P1-P3)",
+  "scope": "re-adjudication only. No proposer is re-run for the purpose of proposing: 48's screens are re-executed ONLY to recover proposal MEMBERSHIPS, which 48 did not store for non-candidate rows, and the recovered population is verified identical to 48's before anything is guarded (see verification.regeneration). 49's 130 proposals are read from its JSON.",
+  "P1_guard": "duplicate-referent guard, label-free and distinct from R15. Normalisation: strip ONE leading space if present, then lowercase. Two members are duplicates iff their normalised strings are (i) equal, or (ii) one is a prefix of the other and the shorter has length >= 3, or (iii) Levenshtein distance <= 1. DROP RULE (operationalised here; P1 says only 'the lower-count member is dropped', which is not order-invariant for chains): within a proposal, define each member's key as (corpus count, -pool index); while any duplicate pair remains among the surviving members, drop the member with the globally smallest key among all members that are the lower-key half of at least one live duplicate pair; repeat. This is deterministic and independent of member order. NOTE (declared, not softened): rule (iii) makes every pair of single-character normalised strings duplicates, so any proposal built from single letters collapses to k = 1. That is what the frozen rule says and it is applied as written.",
+  "P2_adjudicator": "saturated-cell adjudication by the R16 channel-3 conjunct. A proposal is P2-ELIGIBLE iff, after the P1 guard: k <= 10 (P2's bound, which is also R16's declared-conjunct bound); closure gap_ratio < 2.5; rho == 1.0; all k leave-one-out subsets close (gap_ratio < 2.5); and the tier's verdict is NOT ADJUDICABLE BECAUSE a cell is saturated (p99 == 1.0) -- either the k cell or the (k-1) LOO cell. PASS_P2 := P2-eligible AND channel 3 (OV retention) > the 99th percentile of 500 random-k planes at that layer AND the frequency-matched arm passes AND the stored permuted-search mean < 0.5. The cell's conditional exact-1.0 rate is reported for every P2 row. PASS_P2 is reported SEPARATELY from R14 PASS and is never merged into it. k >= 11 saturated rows stay NOT ADJUDICABLE: P2's k <= 10 bound governs.",
+  "P2_multiplicity": "expected false PASS_P2 = 0.01 x (number of P2-adjudicated proposals), reported per source.",
+  "tier": "imported by path from scripts/48_agreement_graph_screen.py: closure first (gap_ratio < 2.5), then the R14 order conjunct against the stricter of the ch1-drawn and ch2-drawn exact cluster-like cells with the per-k screen tie class (48's D5), then LOO closure and LOO order at the (k-1) ch1 cell (48's D1), then the frequency-matched arm (200 count-matched k-sets, +-0.25 log10), then the stored permuted-search mean. Channel 3 recomputed here with 48's Channel3 for BOTH sources; 49's stored channel3_ov_retention is not used.",
+  "tie_class": "For SOURCE 48, R14's tie class is recomputed on the GUARDED population per (layer, proposer, k): guarding moves k downward, so 48's stored screen_max_rho_by_k no longer describes the population being adjudicated. For SOURCE 49 the tie-class clause is DISABLED and the order conjunct is decided by the cell p99 alone. Reason (declared here): 49's screen population per (layer, tau) is 2-33 proposals, so 'rho >= the screen's per-k maximum' is satisfied BY CONSTRUCTION by every proposal that is the only one at its k -- the clause would be vacuous and strictly permissive. 49's own tier likewise had no tie-class clause. The per-k maxima are still reported.",
+  "permuted_search": "reported AS STORED from 48. Not re-run: the guard was NOT applied inside 48's permuted searches. For proposer A this cannot matter -- the permuted searches produced 0 PASSers (and, at L7, 0 proposals at all), and a guard can only shrink proposals. For proposer B, 48 stored only passers[:10] (empty), not the permuted proposal memberships, so guard+P2 cannot be applied to them; this is stated as a limitation, not run.",
+  "deviations": [
+   "E1 (memberships not stored). 48 stored memberships only for PASS/MARGINAL candidates (2 rows, both the strict-12). Its screens are deterministic functions of the frozen channels, so the full proposal population is REGENERATED here and verified against 48's stored counts, strict-12 hashes, sources and per-(layer, proposer) tallies before any guard is applied. A mismatch aborts the run.",
+   "E2 (nulls and plants not guarded). P1 says the guard applies identically to proposals, nulls and plants. Here it is applied to PROPOSALS only: the exact cluster-like cells, the frequency-matched arm draws, the channel-3 random-k planes, the permuted searches and the plants are unguarded. Reason: a guarded null draw has variable k, so a fixed-k cell would no longer exist. Direction of bias: duplicate members inflate a set's rho, so an unguarded null is if anything HARDER to beat than a guarded one -- the deviation is conservative against PASS, not permissive.",
+   "E3 (L5 skipped). 49's L5 proposals (64 rows at tau 30/40/45) are NOT re-adjudicated. Channel 2 at L5 is not on disk (results/phase3_lag_action_robust_deltas.npz holds L6/L7 only; results/phase4_lag1_deltas_L*.npz hold L0-L4 and L10) and recomputing it needs 42's cache stream, which R12/R17 forbid while script 47 holds MPS. All 64 stored L5 verdicts were FAIL (closure), and the guard can move closure in either direction, so they are reported as NOT RE-CHECKED.",
+   "E4 (49's ring conjunct carried forward). Prereg 2.2's extra conjunct -- the cluster's shared plane > 60 deg from its own type-mean ring plane -- is a function of the occurrence-plane rows, which are not re-streamed here (same R12/R17 reason as E3). Stored ring_conjunct_pass values are carried forward and flagged: for a guarded subset the shared plane would have to be refitted.",
+   "E5 (49 tier re-implementation). 49 adjudicated with its own null construction (sampled cluster-like cells, 3 seeds, 6000 draws, plus a count-matched-random cell). Here 49's proposals are run through 48's imported tier (exact enumerated cells). To separate the guard's effect from the tier change, 49's proposals are adjudicated BOTH unguarded and guarded under 48's tier, and both are reported."
+  ]
+ },
+ "finished_at": "2026-08-22T23:02:17",
+ "runtime_seconds": 420.0,
+ "verification": {
+  "channel3_null_L6_k12": {
+   "recomputed": 0.29404244152422765,
+   "stored": 0.29404244152422765,
+   "agrees": true
+  },
+  "48_L6_A_regeneration": {
+   "n_unique_regenerated": 289,
+   "n_unique_stored": 289,
+   "counts_agree": true,
+   "strict12_present": true,
+   "strict12_present_stored": true,
+   "proposer_stats_agree": true,
+   "strict12_sources": [
+    "A/L6/m8/dedup0.88",
+    "A/L6/m8/dedup0.9",
+    "A/L6/m8/dedup0.92",
+    "A/L6/m10/dedup0.88",
+    "A/L6/m10/dedup0.9",
+    "A/L6/m10/dedup0.92"
+   ],
+   "strict12_sources_stored": [
+    "A/L6/m8/dedup0.88",
+    "A/L6/m8/dedup0.9",
+    "A/L6/m8/dedup0.92",
+    "A/L6/m10/dedup0.88",
+    "A/L6/m10/dedup0.9",
+    "A/L6/m10/dedup0.92"
+   ],
+   "strict12_sources_agree": true
+  },
+  "48_L6_B_regeneration": {
+   "n_unique_regenerated": 72675,
+   "n_unique_stored": 72675,
+   "counts_agree": true,
+   "strict12_present": true,
+   "strict12_present_stored": true,
+   "proposer_stats_agree": true,
+   "strict12_sources": [
+    "B/L6/k12/raw",
+    "B/L6/k12/dedup0.88",
+    "B/L6/k12/dedup0.9",
+    "B/L6/k12/dedup0.92",
+    "B/L6/k13/dedup0.88",
+    "B/L6/k13/dedup0.9",
+    "B/L6/k13/dedup0.92",
+    "B/L6/k14/dedup0.88",
+    "B/L6/k14/dedup0.9",
+    "B/L6/k14/dedup0.92"
+   ],
+   "strict12_sources_stored": [
+    "B/L6/k12/raw",
+    "B/L6/k12/dedup0.88",
+    "B/L6/k12/dedup0.9",
+    "B/L6/k12/dedup0.92",
+    "B/L6/k13/dedup0.88",
+    "B/L6/k13/dedup0.9",
+    "B/L6/k13/dedup0.92",
+    "B/L6/k14/dedup0.88",
+    "B/L6/k14/dedup0.9",
+    "B/L6/k14/dedup0.92"
+   ],
+   "strict12_sources_agree": true
+  },
+  "48_L6_A_tally": {
+   "regenerated": {
+    "NOT ADJUDICABLE": 15,
+    "FAIL": 273,
+    "PASS": 1
+   },
+   "stored": {
+    "PASS": 1,
+    "MARGINAL": 0,
+    "FAIL": 273,
+    "NOT ADJUDICABLE": 15
+   },
+   "agrees": true
+  },
+  "48_L6_B_tally": {
+   "regenerated": {
+    "NOT ADJUDICABLE": 3694,
+    "FAIL": 68980,
+    "MARGINAL": 1
+   },
+   "stored": {
+    "PASS": 0,
+    "MARGINAL": 1,
+    "FAIL": 68980,
+    "NOT ADJUDICABLE": 3694
+   },
+   "agrees": true
+  },
+  "48_L7_A_regeneration": {
+   "n_unique_regenerated": 295,
+   "n_unique_stored": 295,
+   "counts_agree": true,
+   "strict12_present": true,
+   "strict12_present_stored": true,
+   "proposer_stats_agree": true,
+   "strict12_sources": [
+    "A/L7/m8/dedup0.9",
+    "A/L7/m10/dedup0.9",
+    "A/L7/m12/dedup0.9"
+   ],
+   "strict12_sources_stored": [
+    "A/L7/m8/dedup0.9",
+    "A/L7/m10/dedup0.9",
+    "A/L7/m12/dedup0.9"
+   ],
+   "strict12_sources_agree": true
+  },
+  "48_L7_B_regeneration": {
+   "n_unique_regenerated": 70963,
+   "n_unique_stored": 70963,
+   "counts_agree": true,
+   "strict12_present": true,
+   "strict12_present_stored": true,
+   "proposer_stats_agree": true,
+   "strict12_sources": [
+    "B/L7/k12/raw",
+    "B/L7/k12/dedup0.9",
+    "B/L7/k12/dedup0.92",
+    "B/L7/k13/dedup0.9",
+    "B/L7/k13/dedup0.92",
+    "B/L7/k14/dedup0.9"
+   ],
+   "strict12_sources_stored": [
+    "B/L7/k12/raw",
+    "B/L7/k12/dedup0.9",
+    "B/L7/k12/dedup0.92",
+    "B/L7/k13/dedup0.9",
+    "B/L7/k13/dedup0.92",
+    "B/L7/k14/dedup0.9"
+   ],
+   "strict12_sources_agree": true
+  },
+  "48_L7_A_tally": {
+   "regenerated": {
+    "FAIL": 285,
+    "NOT ADJUDICABLE": 10
+   },
+   "stored": {
+    "PASS": 0,
+    "MARGINAL": 0,
+    "FAIL": 285,
+    "NOT ADJUDICABLE": 10
+   },
+   "agrees": true
+  },
+  "48_L7_B_tally": {
+   "regenerated": {
+    "NOT ADJUDICABLE": 2814,
+    "FAIL": 68149
+   },
+   "stored": {
+    "PASS": 0,
+    "MARGINAL": 0,
+    "FAIL": 68149,
+    "NOT ADJUDICABLE": 2814
+   },
+   "agrees": true
+  }
+ },
+ "guard": {
+  "n_types_with_at_least_one_duplicate": 3224,
+  "n_duplicate_pairs": 28194,
+  "seconds": 0.0,
+  "strict12_unchanged": true,
+  "strict12_dropped": [],
+  "examples": [
+   [
+    " t",
+    "\n"
+   ],
+   [
+    " T",
+    "\n"
+   ],
+   [
+    "t",
+    "\n"
+   ],
+   [
+    "T",
+    "\n"
+   ],
+   [
+    "in",
+    "ini"
+   ],
+   [
+    " in",
+    "ini"
+   ],
+   [
+    " In",
+    "ini"
+   ],
+   [
+    "In",
+    "ini"
+   ],
+   [
+    " IN",
+    "ini"
+   ],
+   [
+    " a",
+    "\n"
+   ],
+   [
+    " A",
+    "\n"
+   ],
+   [
+    "a",
+    "\n"
+   ],
+   [
+    "A",
+    "\n"
+   ],
+   [
+    "on",
+    " won"
+   ],
+   [
+    " on",
+    " won"
+   ],
+   [
+    " On",
+    " won"
+   ],
+   [
+    "On",
+    " won"
+   ],
+   [
+    "he",
+    "we"
+   ],
+   [
+    " he",
+    "we"
+   ],
+   [
+    " He",
+    "we"
+   ],
+   [
+    "He",
+    "we"
+   ],
+   [
+    "re",
+    "we"
+   ],
+   [
+    " re",
+    "we"
+   ],
+   [
+    " Re",
+    "we"
+   ],
+   [
+    "Re",
+    "we"
+   ]
+  ]
+ },
+ "source48": {
+  "L6_A": {
+   "n_proposals": 289,
+   "n_unique_guarded": 181,
+   "n_proposals_changed_by_guard": 266,
+   "n_guarded_below_kmin": 112,
+   "guarded_tally": {
+    "NOT ADJUDICABLE": 78,
+    "FAIL": 102,
+    "PASS": 1
+   },
+   "unguarded_tally": {
+    "NOT ADJUDICABLE": 15,
+    "FAIL": 273,
+    "PASS": 1
+   },
+   "guarded_n_gate": 16,
+   "guarded_n_closers": 16,
+   "guarded_screen_max_rho_by_k": {
+    "9": 0.9833333333333333,
+    "10": 0.7333333333333334,
+    "11": 0.9,
+    "12": 0.993006993006993,
+    "14": 0.9604395604395605,
+    "15": 0.9607142857142857
+   },
+   "guarded_tie_size_by_k": {
+    "9": 1,
+    "10": 1,
+    "11": 1,
+    "12": 1,
+    "14": 1,
+    "15": 1
+   },
+   "verdict_transitions": {
+    "FAIL -> NOT ADJUDICABLE": 112,
+    "FAIL -> FAIL": 158,
+    "NOT ADJUDICABLE -> NOT ADJUDICABLE": 15,
+    "FAIL -> PASS": 3,
+    "PASS -> PASS": 1
+   },
+   "verdict_change_rows": [
+    {
+     "original_hash": "3fdc64292458",
+     "original_verdict": "FAIL",
+     "guarded_verdict": "PASS",
+     "original_tokens": [
+      " May",
+      " June",
+      " March",
+      " April",
+      " July",
+      " August",
+      " September",
+      " January",
+      " October",
+      " November",
+      " December",
+      " February",
+      "May",
+      "April"
+     ],
+     "guarded_tokens": [
+      " May",
+      " June",
+      " March",
+      " April",
+      " July",
+      " August",
+      " September",
+      " January",
+      " October",
+      " November",
+      " December",
+      " February"
+     ],
+     "source": [
+      "A/L6/m8/raw",
+      "A/L6/m10/raw"
+     ]
+    },
+    {
+     "original_hash": "e529cdaf72ff",
+     "original_verdict": "FAIL",
+     "guarded_verdict": "PASS",
+     "original_tokens": [
+      " May",
+      " Dec",
+      " Jan",
+      " Aug",
+      " Oct",
+      " June",
+      " March",
+      " April",
+      " July",
+      " Feb",
+      " August",
+      " September",
+      " January",
+      " October",
+      " November",
+      " December",
+      " February",
+      " Nov",
+      "May",
+      "April"
+     ],
+     "guarded_tokens": [
+      " May",
+      " June",
+      " March",
+      " April",
+      " July",
+      " August",
+      " September",
+      " January",
+      " October",
+      " November",
+      " December",
+      " February"
+     ],
+     "source": [
+      "A/L6/m12/raw"
+     ]
+    },
+    {
+     "original_hash": "3556ff202b07",
+     "original_verdict": "FAIL",
+     "guarded_verdict": "PASS",
+     "original_tokens": [
+      " May",
+      " Dec",
+      " Jan",
+      " Aug",
+      " Oct",
+      " June",
+      " March",
+      " April",
+      " July",
+      " Feb",
+      " August",
+      " September",
+      " January",
+      " October",
+      " November",
+      " December",
+      " February",
+      " Nov"
+     ],
+     "guarded_tokens": [
+      " May",
+      " June",
+      " March",
+      " April",
+      " July",
+      " August",
+      " September",
+      " January",
+      " October",
+      " November",
+      " December",
+      " February"
+     ],
+     "source": [
+      "A/L6/m12/dedup0.88",
+      "A/L6/m12/dedup0.9",
+      "A/L6/m12/dedup0.92"
+     ]
+    }
+   ],
+   "n_verdict_change_rows": 3,
+   "permuted_search_mean_as_stored": 0.0,
+   "R14_rows": [
+    {
+     "member_hash": "a36a4f4f3e3b",
+     "layer": 6,
+     "k": 12,
+     "tokens": [
+      " May",
+      " June",
+      " March",
+      " April",
+      " July",
+      " August",
+      " September",
+      " January",
+      " October",
+      " November",
+      " December",
+      " February"
+     ],
+     "token_ids": [
+      3353,
+      5142,
+      5261,
+      5365,
+      5505,
+      5729,
+      5857,
+      6027,
+      6198,
+      6243,
+      6384,
+      7250
+     ],
+     "counts": [
+      777,
+      538,
+      600,
+      537,
+      539,
+      414,
+      412,
+      422,
+      417,
+      431,
+      374,
+      385
+     ],
+     "gap_ratio": 1.542422222283976,
+     "rho": 0.993006993006993,
+     "order_state": "PASS",
+     "order_detail": "rho 0.9930 in the screen's maximum tie class (0.9930)",
+     "loo_order_state": "PASS",
+     "loo_closure_pass": true,
+     "loo_rho_min": 0.990909090909091,
+     "loo_gap_max": 2.1787487800405354,
+     "cell_p99_band": [
+      0.993006993006993,
+      0.993006993006993
+     ],
+     "cell_saturated": false,
+     "verdict": "PASS",
+     "channel3": {
+      "ov_retention": 0.38609022981964664,
+      "per_head": [
+       0.4535301168119759,
+       0.41452557438948145,
+       0.3379106679650025,
+       0.3383945601121266
+      ],
+      "null_p99": 0.29404244152422765,
+      "null_mean": 0.24000575119000542,
+      "above_p99": true,
+      "declared_conjunct": false
+     },
+     "is_strict12": true,
+     "frequency_arm": {
+      "n": 200,
+      "p99": 0.9790209790209791,
+      "median": 0.7132867132867133,
+      "closure_rate": 0.09,
+      "pass_": true
+     },
+     "permuted_search_mean": 0.0,
+     "R14_PASS": true
+    }
+   ],
+   "n_R14_PASS": 1,
+   "n_P2_adjudicated": 0,
+   "expected_false_P2": 0.0,
+   "P2_rows": [],
+   "n_PASS_P2": 0,
+   "P2_rows_failed_summary": []
+  },
+  "L6_B": {
+   "n_proposals": 72675,
+   "n_unique_guarded": 48087,
+   "n_proposals_changed_by_guard": 53677,
+   "n_guarded_below_kmin": 17899,
+   "guarded_tally": {
+    "NOT ADJUDICABLE": 11742,
+    "FAIL": 36344,
+    "PASS": 1
+   },
+   "unguarded_tally": {
+    "NOT ADJUDICABLE": 3694,
+    "FAIL": 68980,
+    "MARGINAL": 1
+   },
+   "guarded_n_gate": 2986,
+   "guarded_n_closers": 4763,
+   "guarded_screen_max_rho_by_k": {
+    "9": 1.0,
+    "10": 1.0,
+    "11": 1.0,
+    "12": 0.993006993006993,
+    "13": 0.989010989010989,
+    "14": 0.9824175824175824,
+    "15": 0.975,
+    "16": 0.95,
+    "17": 0.9705882352941176,
+    "18": 0.9896800825593395,
+    "19": 0.9736842105263158,
+    "20": 0.9368421052631579
+   },
+   "guarded_tie_size_by_k": {
+    "9": 15,
+    "10": 10,
+    "11": 5,
+    "12": 1,
+    "13": 1,
+    "14": 1,
+    "15": 1,
+    "16": 1,
+    "17": 2,
+    "18": 1,
+    "19": 1,
+    "20": 1
+   },
+   "verdict_transitions": {
+    "NOT ADJUDICABLE -> NOT ADJUDICABLE": 3469,
+    "FAIL -> NOT ADJUDICABLE": 18796,
+    "FAIL -> FAIL": 50127,
+    "NOT ADJUDICABLE -> FAIL": 225,
+    "MARGINAL -> PASS": 1,
+    "FAIL -> PASS": 57
+   },
+   "verdict_change_rows": [
+    {
+     "original_hash": "a36a4f4f3e3b",
+     "original_verdict": "MARGINAL",
+     "guarded_verdict": "PASS",
+     "original_tokens": [
+      " May",
+      " June",
+      " March",
+      " April",
+      " July",
+      " August",
+      " September",
+      " January",
+      " October",
+      " November",
+      " December",
+      " February"
+     ],
+     "guarded_tokens": [
+      " May",
+      " June",
+      " March",
+      " April",
+      " July",
+      " August",
+      " September",
+      " January",
+      " October",
+      " November",
+      " December",
+      " February"
+     ],
+     "source": [
+      "B/L6/k12/raw",
+      "B/L6/k12/dedup0.88",
+      "B/L6/k12/dedup0.9",
+      "B/L6/k12/dedup0.92",
+      "B/L6/k13/dedup0.88",
+      "B/L6/k13/dedup0.9",
+      "B/L6/k13/dedup0.92",
+      "B/L6/k14/dedup0.88",
+      "B/L6/k14/dedup0.9",
+      "B/L6/k14/dedup0.92"
+     ]
+    },
+    {
+     "original_hash": "e64283836c4f",
+     "original_verdict": "FAIL",
+     "guarded_verdict": "PASS",
+     "original_tokens": [
+      " May",
+      " June",
+      " March",
+      " April",
+      " July",
+      " August",
+      " September",
+      " January",
+      " October",
+      " November",
+      " December",
+      " February",
+      "April"
+     ],
+     "guarded_tokens": [
+      " May",
+      " June",
+      " March",
+      " April",
+      " July",
+      " August",
+      " September",
+      " January",
+      " October",
+      " November",
+      " December",
+      " February"
+     ],
+     "source": [
+      "B/L6/k13/raw"
+     ]
+    },
+    {
+     "original_hash": "3fdc64292458",
+     "original_verdict": "FAIL",
+     "guarded_verdict": "PASS",
+     "original_tokens": [
+      " May",
+      " June",
+      " March",
+      " April",
+      " July",
+      " August",
+      " September",
+      " January",
+      " October",
+      " November",
+      " December",
+      " February",
+      "May",
+      "April"
+     ],
+     "guarded_tokens": [
+      " May",
+      " June",
+      " March",
+      " April",
+      " July",
+      " August",
+      " September",
+      " January",
+      " October",
+      " November",
+      " December",
+      " February"
+     ],
+     "source": [
+      "B/L6/k14/raw"
+     ]
+    },
+    {
+     "original_hash": "b5fdd671a20a",
+     "original_verdict": "FAIL",
+     "guarded_verdict": "PASS",
+     "original_tokens": [
+      " May",
+      " Aug",
+      " June",
+      " March",
+      " April",
+      " July",
+      " August",
+      " September",
+      " January",
+      " October",
+      " November",
+      " December",
+      " February",
+      "April"
+     ],
+     "guarded_tokens": [
+      " May",
+      " June",
+      " March",
+      " April",
+      " July",
+      " August",
+      " September",
+      " January",
+      " October",
+      " November",
+      " December",
+      " February"
+     ],
+     "source": [
+      "B/L6/k14/raw"
+     ]
+    },
+    {
+     "original_hash": "025e8460fa96",
+     "original_verdict": "FAIL",
+     "guarded_verdict": "PASS",
+     "original_tokens": [
+      " May",
+      " Aug",
+      " June",
+      " March",
+      " April",
+      " July",
+      " August",
+      " September",
+      " January",
+      " October",
+      " November",
+      " December",
+      " February"
+     ],
+     "guarded_tokens": [
+      " May",
+      " June",
+      " March",
+      " April",
+      " July",
+      " August",
+      " September",
+      " January",
+      " October",
+      " November",
+      " December",
+      " February"
+     ],
+     "source": [
+      "B/L6/k14/dedup0.88",
+      "B/L6/k14/dedup0.9",
+      "B/L6/k14/dedup0.92",
+      "B/L6/k15/dedup0.88",
+      "B/L6/k15/dedup0.9",
+      "B/L6/k15/dedup0.92"
+     ]
+    },
+    {
+     "original_hash": "db6a6516afab",
+     "original_verdict": "FAIL",
+     "guarded_verdict": "PASS",
+     "original_tokens": [
+      " May",
+      " Jan",
+      " June",
+      " March",
+      " April",
+      " July",
+      " August",
+      " September",
+      " January",
+      " October",
+      " November",
+      " December",
+      " February",
+      "April"
+     ],
+     "guarded_tokens": [
+      " May",
+      " June",
+      " March",
+      " April",
+      " July",
+      " August",
+      " September",
+      " January",
+      " October",
+      " November",
+      " December",
+      " February"
+     ],
+     "source": [
+      "B/L6/k14/raw"
+     ]
+    },
+    {
+     "original_hash": "3a02e3d8dbf9",
+     "original_verdict": "FAIL",
+     "guarded_verdict": "PASS",
+     "original_tokens": [
+      " May",
+      " Jan",
+      " June",
+      " March",
+      " April",
+      " July",
+      " August",
+      " September",
+      " January",
+      " October",
+      " November",
+      " December",
+      " February"
+     ],
+     "guarded_tokens": [
+      " May",
+      " June",
+      " March",
+      " April",
+      " July",
+      " August",
+      " September",
+      " January",
+      " October",
+      " November",
+      " December",
+      " February"
+     ],
+     "source": [
+      "B/L6/k14/dedup0.88",
+      "B/L6/k14/dedup0.9",
+      "B/L6/k14/dedup0.92",
+      "B/L6/k15/dedup0.88",
+      "B/L6/k15/dedup0.9",
+      "B/L6/k15/dedup0.92"
+     ]
+    },
+    {
+     "original_hash": "6bb0e54cd127",
+     "original_verdict": "FAIL",
+     "guarded_verdict": "PASS",
+     "original_tokens": [
+      " May",
+      " June",
+      " March",
+      " April",
+      " July",
+      " Feb",
+      " August",
+      " September",
+      " January",
+      " October",
+      " November",
+      " December",
+      " February",
+      "April"
+     ],
+     "guarded_tokens": [
+      " May",
+      " June",
+      " March",
+      " April",
+      " July",
+      " August",
+      " September",
+      " January",
+      " October",
+      " November",
+      " December",
+      " February"
+     ],
+     "source": [
+      "B/L6/k14/raw"
+     ]
+    },
+    {
+     "original_hash": "7d1d75a303d6",
+     "original_verdict": "FAIL",
+     "guarded_verdict": "PASS",
+     "original_tokens": [
+      " May",
+      " June",
+      " March",
+      " April",
+      " July",
+      " Feb",
+      " August",
+      " September",
+      " January",
+      " October",
+      " November",
+      " December",
+      " February"
+     ],
+     "guarded_tokens": [
+      " May",
+      " June",
+      " March",
+      " April",
+      " July",
+      " August",
+      " September",
+      " January",
+      " October",
+      " November",
+      " December",
+      " February"
+     ],
+     "source": [
+      "B/L6/k14/dedup0.88",
+      "B/L6/k14/dedup0.9",
+      "B/L6/k14/dedup0.92",
+      "B/L6/k15/dedup0.88",
+      "B/L6/k15/dedup0.9",
+      "B/L6/k15/dedup0.92"
+     ]
+    },
+    {
+     "original_hash": "398c95836cf3",
+     "original_verdict": "FAIL",
+     "guarded_verdict": "PASS",
+     "original_tokens": [
+      " May",
+      " Dec",
+      " June",
+      " March",
+      " April",
+      " July",
+      " August",
+      " September",
+      " January",
+      " October",
+      " November",
+      " December",
+      " February",
+      "April"
+     ],
+     "guarded_tokens": [
+      " May",
+      " June",
+      " March",
+      " April",
+      " July",
+      " August",
+      " September",
+      " January",
+      " October",
+      " November",
+      " December",
+      " February"
+     ],
+     "source": [
+      "B/L6/k14/raw"
+     ]
+    },
+    {
+     "original_hash": "8fdb2308ffd3",
+     "original_verdict": "FAIL",
+     "guarded_verdict": "PASS",
+     "original_tokens": [
+      " May",
+      " Dec",
+      " June",
+      " March",
+      " April",
+      " July",
+      " August",
+      " September",
+      " January",
+      " October",
+      " November",
+      " December",
+      " February"
+     ],
+     "guarded_tokens": [
+      " May",
+      " June",
+      " March",
+      " April",
+      " July",
+      " August",
+      " September",
+      " January",
+      " October",
+      " November",
+      " December",
+      " February"
+     ],
+     "source": [
+      "B/L6/k14/dedup0.88",
+      "B/L6/k14/dedup0.9",
+      "B/L6/k14/dedup0.92"
+     ]
+    },
+    {
+     "original_hash": "1f60fec6ef38",
+     "original_verdict": "FAIL",
+     "guarded_verdict": "PASS",
+     "original_tokens": [
+      " Mar",
+      " May",
+      " June",
+      " March",
+      " April",
+      " July",
+      " August",
+      " September",
+      " January",
+      " October",
+      " November",
+      " December",
+      " February",
+      "May",
+      "April"
+     ],
+     "guarded_tokens": [
+      " May",
+      " June",
+      " March",
+      " April",
+      " July",
+      " August",
+      " September",
+      " January",
+      " October",
+      " November",
+      " December",
+      " February"
+     ],
+     "source": [
+      "B/L6/k15/raw"
+     ]
+    },
+    {
+     "original_hash": "2e65367927df",
+     "original_verdict": "FAIL",
+     "guarded_verdict": "PASS",
+     "original_tokens": [
+      " Mar",
+      " May",
+      " June",
+      " March",
+      " April",
+      " July",
+      " August",
+      " September",
+      " January",
+      " October",
+      " November",
+      " December",
+      " February"
+     ],
+     "guarded_tokens": [
+      " May",
+      " June",
+      " March",
+      " April",
+      " July",
+      " August",
+      " September",
+      " January",
+      " October",
+      " November",
+      " December",
+      " February"
+     ],
+     "source": [
+      "B/L6/k15/dedup0.88",
+      "B/L6/k15/dedup0.9",
+      "B/L6/k15/dedup0.92"
+     ]
+    },
+    {
+     "original_hash": "349e347731a6",
+     "original_verdict": "FAIL",
+     "guarded_verdict": "PASS",
+     "original_tokens": [
+      " May",
+      " Aug",
+      " June",
+      " March",
+      " April",
+      " July",
+      " August",
+      " September",
+      " January",
+      " October",
+      " November",
+      " December",
+      " February",
+      "May",
+      "April"
+     ],
+     "guarded_tokens": [
+      " May",
+      " June",
+      " March",
+      " April",
+      " July",
+      " August",
+      " September",
+      " January",
+      " October",
+      " November",
+      " December",
+      " February"
+     ],
+     "source": [
+      "B/L6/k15/raw"
+     ]
+    },
+    {
+     "original_hash": "1dc87226cbfc",
+     "original_verdict": "FAIL",
+     "guarded_verdict": "PASS",
+     "original_tokens": [
+      " May",
+      " June",
+      " March",
+      " April",
+      " July",
+      " Feb",
+      " August",
+      " September",
+      " January",
+      " October",
+      " November",
+      " December",
+      " February",
+      "May",
+      "April"
+     ],
+     "guarded_tokens": [
+      " May",
+      " June",
+      " March",
+      " April",
+      " July",
+      " August",
+      " September",
+      " January",
+      " October",
+      " November",
+      " December",
+      " February"
+     ],
+     "source": [
+      "B/L6/k15/raw"
+     ]
+    },
+    {
+     "original_hash": "8edb0a8487e3",
+     "original_verdict": "FAIL",
+     "guarded_verdict": "PASS",
+     "original_tokens": [
+      " May",
+      " Jan",
+      " June",
+      " March",
+      " April",
+      " July",
+      " August",
+      " September",
+      " January",
+      " October",
+      " November",
+      " December",
+      " February",
+      "May",
+      "April"
+     ],
+     "guarded_tokens": [
+      " May",
+      " June",
+      " March",
+      " April",
+      " July",
+      " August",
+      " September",
+      " January",
+      " October",
+      " November",
+      " December",
+      " February"
+     ],
+     "source": [
+      "B/L6/k15/raw"
+     ]
+    },
+    {
+     "original_hash": "4ce35c38a673",
+     "original_verdict": "FAIL",
+     "guarded_verdict": "PASS",
+     "original_tokens": [
+      " May",
+      " June",
+      " March",
+      " April",
+      " July",
+      " Feb",
+      " August",
+      " September",
+      " January",
+      " October",
+      " November",
+      " December",
+      " February",
+      " Nov",
+      "April"
+     ],
+     "guarded_tokens": [
+      " May",
+      " June",
+      " March",
+      " April",
+      " July",
+      " August",
+      " September",
+      " January",
+      " October",
+      " November",
+      " December",
+      " February"
+     ],
+     "source": [
+      "B/L6/k15/raw"
+     ]
+    },
+    {
+     "original_hash": "37eb8b11bb5e",
+     "original_verdict": "FAIL",
+     "guarded_verdict": "PASS",
+     "original_tokens": [
+      " May",
+      " June",
+      " March",
+      " April",
+      " July",
+      " Feb",
+      " August",
+      " September",
+      " January",
+      " October",
+      " November",
+      " December",
+      " February",
+      " Nov"
+     ],
+     "guarded_tokens": [
+      " May",
+      " June",
+      " March",
+      " April",
+      " July",
+      " August",
+      " September",
+      " January",
+      " October",
+      " November",
+      " December",
+      " February"
+     ],
+     "source": [
+      "B/L6/k15/dedup0.88",
+      "B/L6/k15/dedup0.9",
+      "B/L6/k15/dedup0.92",
+      "B/L6/k16/dedup0.88",
+      "B/L6/k16/dedup0.9",
+      "B/L6/k16/dedup0.92"
+     ]
+    },
+    {
+     "original_hash": "534dd73cd246",
+     "original_verdict": "FAIL",
+     "guarded_verdict": "PASS",
+     "original_tokens": [
+      " May",
+      " Dec",
+      " June",
+      " March",
+      " April",
+      " July",
+      " Feb",
+      " August",
+      " September",
+      " January",
+      " October",
+      " November",
+      " December",
+      " February",
+      "April"
+     ],
+     "guarded_tokens": [
+      " May",
+      " June",
+      " March",
+      " April",
+      " July",
+      " August",
+      " September",
+      " January",
+      " October",
+      " November",
+      " December",
+      " February"
+     ],
+     "source": [
+      "B/L6/k15/raw"
+     ]
+    },
+    {
+     "original_hash": "1ebccbd9f9f8",
+     "original_verdict": "FAIL",
+     "guarded_verdict": "PASS",
+     "original_tokens": [
+      " May",
+      " Dec",
+      " June",
+      " March",
+      " April",
+      " July",
+      " Feb",
+      " August",
+      " September",
+      " January",
+      " October",
+      " November",
+      " December",
+      " February"
+     ],
+     "guarded_tokens": [
+      " May",
+      " June",
+      " March",
+      " April",
+      " July",
+      " August",
+      " September",
+      " January",
+      " October",
+      " November",
+      " December",
+      " February"
+     ],
+     "source": [
+      "B/L6/k15/dedup0.88",
+      "B/L6/k15/dedup0.9",
+      "B/L6/k15/dedup0.92",
+      "B/L6/k16/dedup0.88",
+      "B/L6/k16/dedup0.9",
+      "B/L6/k16/dedup0.92"
+     ]
+    },
+    {
+     "original_hash": "f76eec6d8c32",
+     "original_verdict": "FAIL",
+     "guarded_verdict": "PASS",
+     "original_tokens": [
+      " Mar",
+      " May",
+      " June",
+      " March",
+      " April",
+      " July",
+      " Feb",
+      " August",
+      " September",
+      " January",
+      " October",
+      " November",
+      " December",
+      " February",
+      "May",
+      "April"
+     ],
+     "guarded_tokens": [
+      " May",
+      " June",
+      " March",
+      " April",
+      " July",
+      " August",
+      " September",
+      " January",
+      " October",
+      " November",
+      " December",
+      " February"
+     ],
+     "source": [
+      "B/L6/k16/raw"
+     ]
+    },
+    {
+     "original_hash": "0ec7f73ff06c",
+     "original_verdict": "FAIL",
+     "guarded_verdict": "PASS",
+     "original_tokens": [
+      " Mar",
+      " May",
+      " June",
+      " March",
+      " April",
+      " July",
+      " Feb",
+      " August",
+      " September",
+      " January",
+      " October",
+      " November",
+      " December",
+      " February"
+     ],
+     "guarded_tokens": [
+      " May",
+      " June",
+      " March",
+      " April",
+      " July",
+      " August",
+      " September",
+      " January",
+      " October",
+      " November",
+      " December",
+      " February"
+     ],
+     "source": [
+      "B/L6/k16/dedup0.88",
+      "B/L6/k16/dedup0.9",
+      "B/L6/k16/dedup0.92"
+     ]
+    },
+    {
+     "original_hash": "e7dfc2c8a3a3",
+     "original_verdict": "FAIL",
+     "guarded_verdict": "PASS",
+     "original_tokens": [
+      " May",
+      " Aug",
+      " June",
+      " March",
+      " April",
+      " July",
+      " Feb",
+      " August",
+      " September",
+      " January",
+      " October",
+      " November",
+      " December",
+      " February",
+      "May",
+      "April"
+     ],
+     "guarded_tokens": [
+      " May",
+      " June",
+      " March",
+      " April",
+      " July",
+      " August",
+      " September",
+      " January",
+      " October",
+      " November",
+      " December",
+      " February"
+     ],
+     "source": [
+      "B/L6/k16/raw"
+     ]
+    },
+    {
+     "original_hash": "4592268c7665",
+     "original_verdict": "FAIL",
+     "guarded_verdict": "PASS",
+     "original_tokens": [
+      " May",
+      " Aug",
+      " June",
+      " March",
+      " April",
+      " July",
+      " Feb",
+      " August",
+      " September",
+      " January",
+      " October",
+      " November",
+      " December",
+      " February"
+     ],
+     "guarded_tokens": [
+      " May",
+      " June",
+      " March",
+      " April",
+      " July",
+      " August",
+      " September",
+      " January",
+      " October",
+      " November",
+      " December",
+      " February"
+     ],
+     "source": [
+      "B/L6/k16/dedup0.88",
+      "B/L6/k16/dedup0.9",
+      "B/L6/k16/dedup0.92"
+     ]
+    },
+    {
+     "original_hash": "fb0f81535f9b",
+     "original_verdict": "FAIL",
+     "guarded_verdict": "PASS",
+     "original_tokens": [
+      " May",
+      " Jan",
+      " June",
+      " March",
+      " April",
+      " July",
+      " Feb",
+      " August",
+      " September",
+      " January",
+      " October",
+      " November",
+      " December",
+      " February",
+      "May",
+      "April"
+     ],
+     "guarded_tokens": [
+      " May",
+      " June",
+      " March",
+      " April",
+      " July",
+      " August",
+      " September",
+      " January",
+      " October",
+      " November",
+      " December",
+      " February"
+     ],
+     "source": [
+      "B/L6/k16/raw"
+     ]
+    },
+    {
+     "original_hash": "3339abfcdc92",
+     "original_verdict": "FAIL",
+     "guarded_verdict": "PASS",
+     "original_tokens": [
+      " May",
+      " Jan",
+      " June",
+      " March",
+      " April",
+      " July",
+      " Feb",
+      " August",
+      " September",
+      " January",
+      " October",
+      " November",
+      " December",
+      " February"
+     ],
+     "guarded_tokens": [
+      " May",
+      " June",
+      " March",
+      " April",
+      " July",
+      " August",
+      " September",
+      " January",
+      " October",
+      " November",
+      " December",
+      " February"
+     ],
+     "source": [
+      "B/L6/k16/dedup0.88",
+      "B/L6/k16/dedup0.9",
+      "B/L6/k16/dedup0.92"
+     ]
+    },
+    {
+     "original_hash": "eadd81fd1f6b",
+     "original_verdict": "FAIL",
+     "guarded_verdict": "PASS",
+     "original_tokens": [
+      " Mar",
+      " May",
+      " Aug",
+      " June",
+      " March",
+      " April",
+      " July",
+      " August",
+      " September",
+      " January",
+      " October",
+      " November",
+      " December",
+      " February",
+      "May",
+      "April"
+     ],
+     "guarded_tokens": [
+      " May",
+      " June",
+      " March",
+      " April",
+      " July",
+      " August",
+      " September",
+      " January",
+      " October",
+      " November",
+      " December",
+      " February"
+     ],
+     "source": [
+      "B/L6/k16/raw"
+     ]
+    },
+    {
+     "original_hash": "02c2585c776f",
+     "original_verdict": "FAIL",
+     "guarded_verdict": "PASS",
+     "original_tokens": [
+      " Mar",
+      " May",
+      " Aug",
+      " June",
+      " March",
+      " April",
+      " July",
+      " August",
+      " September",
+      " January",
+      " October",
+      " November",
+      " December",
+      " February"
+     ],
+     "guarded_tokens": [
+      " May",
+      " June",
+      " March",
+      " April",
+      " July",
+      " August",
+      " September",
+      " January",
+      " October",
+      " November",
+      " December",
+      " February"
+     ],
+     "source": [
+      "B/L6/k16/dedup0.88",
+      "B/L6/k16/dedup0.9",
+      "B/L6/k16/dedup0.92"
+     ]
+    },
+    {
+     "original_hash": "d47ad479ab8d",
+     "original_verdict": "FAIL",
+     "guarded_verdict": "PASS",
+     "original_tokens": [
+      " May",
+      " June",
+      " March",
+      " April",
+      " July",
+      " Feb",
+      " August",
+      " September",
+      " January",
+      " October",
+      " November",
+      " December",
+      " February",
+      " Nov",
+      "May",
+      "April"
+     ],
+     "guarded_tokens": [
+      " May",
+      " June",
+      " March",
+      " April",
+      " July",
+      " August",
+      " September",
+      " January",
+      " October",
+      " November",
+      " December",
+      " February"
+     ],
+     "source": [
+      "B/L6/k16/raw"
+     ]
+    },
+    {
+     "original_hash": "a52a80616533",
+     "original_verdict": "FAIL",
+     "guarded_verdict": "PASS",
+     "original_tokens": [
+      " May",
+      " Dec",
+      " June",
+      " March",
+      " April",
+      " July",
+      " Feb",
+      " August",
+      " September",
+      " January",
+      " October",
+      " November",
+      " December",
+      " February",
+      "May",
+      "April"
+     ],
+     "guarded_tokens": [
+      " May",
+      " June",
+      " March",
+      " April",
+      " July",
+      " August",
+      " September",
+      " January",
+      " October",
+      " November",
+      " December",
+      " February"
+     ],
+     "source": [
+      "B/L6/k16/raw"
+     ]
+    },
+    {
+     "original_hash": "b436d9dcb881",
+     "original_verdict": "FAIL",
+     "guarded_verdict": "PASS",
+     "original_tokens": [
+      " Mar",
+      " May",
+      " Aug",
+      " June",
+      " March",
+      " April",
+      " July",
+      " Feb",
+      " August",
+      " September",
+      " January",
+      " October",
+      " November",
+      " December",
+      " February",
+      "May",
+      "April"
+     ],
+     "guarded_tokens": [
+      " May",
+      " June",
+      " March",
+      " April",
+      " July",
+      " August",
+      " September",
+      " January",
+      " October",
+      " November",
+      " December",
+      " February"
+     ],
+     "source": [
+      "B/L6/k17/raw"
+     ]
+    },
+    {
+     "original_hash": "2c4de4a015e2",
+     "original_verdict": "FAIL",
+     "guarded_verdict": "PASS",
+     "original_tokens": [
+      " Mar",
+      " May",
+      " Aug",
+      " June",
+      " March",
+      " April",
+      " July",
+      " Feb",
+      " August",
+      " September",
+      " January",
+      " October",
+      " November",
+      " December",
+      " February"
+     ],
+     "guarded_tokens": [
+      " May",
+      " June",
+      " March",
+      " April",
+      " July",
+      " August",
+      " September",
+      " January",
+      " October",
+      " November",
+      " December",
+      " February"
+     ],
+     "source": [
+      "B/L6/k17/dedup0.88",
+      "B/L6/k17/dedup0.9",
+      "B/L6/k17/dedup0.92"
+     ]
+    },
+    {
+     "original_hash": "63cfdfc5e88a",
+     "original_verdict": "FAIL",
+     "guarded_verdict": "PASS",
+     "original_tokens": [
+      " May",
+      " Jan",
+      " Aug",
+      " June",
+      " March",
+      " April",
+      " July",
+      " Feb",
+      " August",
+      " September",
+      " January",
+      " October",
+      " November",
+      " December",
+      " February",
+      "May",
+      "April"
+     ],
+     "guarded_tokens": [
+      " May",
+      " June",
+      " March",
+      " April",
+      " July",
+      " August",
+      " September",
+      " January",
+      " October",
+      " November",
+      " December",
+      " February"
+     ],
+     "source": [
+      "B/L6/k17/raw"
+     ]
+    },
+    {
+     "original_hash": "3775b2a59944",
+     "original_verdict": "FAIL",
+     "guarded_verdict": "PASS",
+     "original_tokens": [
+      " May",
+      " Jan",
+      " Aug",
+      " June",
+      " March",
+      " April",
+      " July",
+      " Feb",
+      " August",
+      " September",
+      " January",
+      " October",
+      " November",
+      " December",
+      " February"
+     ],
+     "guarded_tokens": [
+      " May",
+      " June",
+      " March",
+      " April",
+      " July",
+      " August",
+      " September",
+      " January",
+      " October",
+      " November",
+      " December",
+      " February"
+     ],
+     "source": [
+      "B/L6/k17/dedup0.88",
+      "B/L6/k17/dedup0.9",
+      "B/L6/k17/dedup0.92"
+     ]
+    },
+    {
+     "original_hash": "24e720ac0e57",
+     "original_verdict": "FAIL",
+     "guarded_verdict": "PASS",
+     "original_tokens": [
+      " Mar",
+      " May",
+      " Jan",
+      " June",
+      " March",
+      " April",
+      " July",
+      " Feb",
+      " August",
+      " September",
+      " January",
+      " October",
+      " November",
+      " December",
+      " February",
+      "May",
+      "April"
+     ],
+     "guarded_tokens": [
+      " May",
+      " June",
+      " March",
+      " April",
+      " July",
+      " August",
+      " September",
+      " January",
+      " October",
+      " November",
+      " December",
+      " February"
+     ],
+     "source": [
+      "B/L6/k17/raw"
+     ]
+    },
+    {
+     "original_hash": "55d0e1fc931a",
+     "original_verdict": "FAIL",
+     "guarded_verdict": "PASS",
+     "original_tokens": [
+      " Mar",
+      " May",
+      " Jan",
+      " June",
+      " March",
+      " April",
+      " July",
+      " Feb",
+      " August",
+      " September",
+      " January",
+      " October",
+      " November",
+      " December",
+      " February"
+     ],
+     "guarded_tokens": [
+      " May",
+      " June",
+      " March",
+      " April",
+      " July",
+      " August",
+      " September",
+      " January",
+      " October",
+      " November",
+      " December",
+      " February"
+     ],
+     "source": [
+      "B/L6/k17/dedup0.88",
+      "B/L6/k17/dedup0.9",
+      "B/L6/k17/dedup0.92"
+     ]
+    },
+    {
+     "original_hash": "8a43cef324bb",
+     "original_verdict": "FAIL",
+     "guarded_verdict": "PASS",
+     "original_tokens": [
+      " Mar",
+      " May",
+      " Jan",
+      " Aug",
+      " June",
+      " March",
+      " April",
+      " July",
+      " Feb",
+      " August",
+      " September",
+      " January",
+      " October",
+      " November",
+      " December",
+      " February",
+      "May",
+      "April"
+     ],
+     "guarded_tokens": [
+      " May",
+      " June",
+      " March",
+      " April",
+      " July",
+      " August",
+      " September",
+      " January",
+      " October",
+      " November",
+      " December",
+      " February"
+     ],
+     "source": [
+      "B/L6/k18/raw"
+     ]
+    },
+    {
+     "original_hash": "dc8931221bb2",
+     "original_verdict": "FAIL",
+     "guarded_verdict": "PASS",
+     "original_tokens": [
+      " Mar",
+      " May",
+      " Jan",
+      " Aug",
+      " June",
+      " March",
+      " April",
+      " July",
+      " Feb",
+      " August",
+      " September",
+      " January",
+      " October",
+      " November",
+      " December",
+      " February"
+     ],
+     "guarded_tokens": [
+      " May",
+      " June",
+      " March",
+      " April",
+      " July",
+      " August",
+      " September",
+      " January",
+      " October",
+      " November",
+      " December",
+      " February"
+     ],
+     "source": [
+      "B/L6/k18/dedup0.88",
+      "B/L6/k18/dedup0.9",
+      "B/L6/k18/dedup0.92"
+     ]
+    },
+    {
+     "original_hash": "6ac33eddc39e",
+     "original_verdict": "FAIL",
+     "guarded_verdict": "PASS",
+     "original_tokens": [
+      " May",
+      " Jan",
+      " Aug",
+      " June",
+      " March",
+      " April",
+      " July",
+      " Feb",
+      " August",
+      " September",
+      " January",
+      " October",
+      " November",
+      " December",
+      " February",
+      " Nov",
+      "May",
+      "April"
+     ],
+     "guarded_tokens": [
+      " May",
+      " June",
+      " March",
+      " April",
+      " July",
+      " August",
+      " September",
+      " January",
+      " October",
+      " November",
+      " December",
+      " February"
+     ],
+     "source": [
+      "B/L6/k18/raw"
+     ]
+    },
+    {
+     "original_hash": "e6f39b727d01",
+     "original_verdict": "FAIL",
+     "guarded_verdict": "PASS",
+     "original_tokens": [
+      " May",
+      " Jan",
+      " Aug",
+      " June",
+      " March",
+      " April",
+      " July",
+      " Feb",
+      " August",
+      " September",
+      " January",
+      " October",
+      " November",
+      " December",
+      " February",
+      " Nov"
+     ],
+     "guarded_tokens": [
+      " May",
+      " June",
+      " March",
+      " April",
+      " July",
+      " August",
+      " September",
+      " January",
+      " October",
+      " November",
+      " December",
+      " February"
+     ],
+     "source": [
+      "B/L6/k18/dedup0.88",
+      "B/L6/k18/dedup0.9",
+      "B/L6/k18/dedup0.92"
+     ]
+    },
+    {
+     "original_hash": "ae3a2f3c0c0a",
+     "original_verdict": "FAIL",
+     "guarded_verdict": "PASS",
+     "original_tokens": [
+      " Mar",
+      " May",
+      " Aug",
+      " June",
+      " March",
+      " April",
+      " July",
+      " Feb",
+      " August",
+      " September",
+      " January",
+      " October",
+      " November",
+      " December",
+      " February",
+      " Nov",
+      "May",
+      "April"
+     ],
+     "guarded_tokens": [
+      " May",
+      " June",
+      " March",
+      " April",
+      " July",
+      " August",
+      " September",
+      " January",
+      " October",
+      " November",
+      " December",
+      " February"
+     ],
+     "source": [
+      "B/L6/k18/raw"
+     ]
+    },
+    {
+     "original_hash": "54a422cc05cc",
+     "original_verdict": "FAIL",
+     "guarded_verdict": "PASS",
+     "original_tokens": [
+      " Mar",
+      " May",
+      " Aug",
+      " June",
+      " March",
+      " April",
+      " July",
+      " Feb",
+      " August",
+      " September",
+      " January",
+      " October",
+      " November",
+      " December",
+      " February",
+      " Nov"
+     ],
+     "guarded_tokens": [
+      " May",
+      " June",
+      " March",
+      " April",
+      " July",
+      " August",
+      " September",
+      " January",
+      " October",
+      " November",
+      " December",
+      " February"
+     ],
+     "source": [
+      "B/L6/k18/dedup0.88",
+      "B/L6/k18/dedup0.9",
+      "B/L6/k18/dedup0.92"
+     ]
+    },
+    {
+     "original_hash": "2bf1fc9a062e",
+     "original_verdict": "FAIL",
+     "guarded_verdict": "PASS",
+     "original_tokens": [
+      " Mar",
+      " May",
+      " Aug",
+      " Oct",
+      " June",
+      " March",
+      " April",
+      " July",
+      " Feb",
+      " August",
+      " September",
+      " January",
+      " October",
+      " November",
+      " December",
+      " February",
+      "May",
+      "April"
+     ],
+     "guarded_tokens": [
+      " May",
+      " June",
+      " March",
+      " April",
+      " July",
+      " August",
+      " September",
+      " January",
+      " October",
+      " November",
+      " December",
+      " February"
+     ],
+     "source": [
+      "B/L6/k18/raw"
+     ]
+    },
+    {
+     "original_hash": "8dce4b86066f",
+     "original_verdict": "FAIL",
+     "guarded_verdict": "PASS",
+     "original_tokens": [
+      " Mar",
+      " May",
+      " Aug",
+      " Oct",
+      " June",
+      " March",
+      " April",
+      " July",
+      " Feb",
+      " August",
+      " September",
+      " January",
+      " October",
+      " November",
+      " December",
+      " February"
+     ],
+     "guarded_tokens": [
+      " May",
+      " June",
+      " March",
+      " April",
+      " July",
+      " August",
+      " September",
+      " January",
+      " October",
+      " November",
+      " December",
+      " February"
+     ],
+     "source": [
+      "B/L6/k18/dedup0.88",
+      "B/L6/k18/dedup0.9",
+      "B/L6/k18/dedup0.92"
+     ]
+    },
+    {
+     "original_hash": "d2cf0ea5a8a2",
+     "original_verdict": "FAIL",
+     "guarded_verdict": "PASS",
+     "original_tokens": [
+      " Mar",
+      " May",
+      " Jan",
+      " Aug",
+      " June",
+      " March",
+      " April",
+      " July",
+      " Feb",
+      " August",
+      " September",
+      " January",
+      " October",
+      " November",
+      " December",
+      " February",
+      " Nov",
+      "May",
+      "April"
+     ],
+     "guarded_tokens": [
+      " May",
+      " June",
+      " March",
+      " April",
+      " July",
+      " August",
+      " September",
+      " January",
+      " October",
+      " November",
+      " December",
+      " February"
+     ],
+     "source": [
+      "B/L6/k19/raw"
+     ]
+    },
+    {
+     "original_hash": "8bcb49e3b8d9",
+     "original_verdict": "FAIL",
+     "guarded_verdict": "PASS",
+     "original_tokens": [
+      " Mar",
+      " May",
+      " Jan",
+      " Aug",
+      " June",
+      " March",
+      " April",
+      " July",
+      " Feb",
+      " August",
+      " September",
+      " January",
+      " October",
+      " November",
+      " December",
+      " February",
+      " Nov"
+     ],
+     "guarded_tokens": [
+      " May",
+      " June",
+      " March",
+      " April",
+      " July",
+      " August",
+      " September",
+      " January",
+      " October",
+      " November",
+      " December",
+      " February"
+     ],
+     "source": [
+      "B/L6/k19/dedup0.88",
+      "B/L6/k19/dedup0.9",
+      "B/L6/k19/dedup0.92"
+     ]
+    },
+    {
+     "original_hash": "14013355703d",
+     "original_verdict": "FAIL",
+     "guarded_verdict": "PASS",
+     "original_tokens": [
+      " Mar",
+      " May",
+      " Dec",
+      " Jan",
+      " Aug",
+      " June",
+      " March",
+      " April",
+      " July",
+      " Feb",
+      " August",
+      " September",
+      " January",
+      " October",
+      " November",
+      " December",
+      " February",
+      "May",
+      "April"
+     ],
+     "guarded_tokens": [
+      " May",
+      " June",
+      " March",
+      " April",
+      " July",
+      " August",
+      " September",
+      " January",
+      " October",
+      " November",
+      " December",
+      " February"
+     ],
+     "source": [
+      "B/L6/k19/raw"
+     ]
+    },
+    {
+     "original_hash": "afbe69dd263c",
+     "original_verdict": "FAIL",
+     "guarded_verdict": "PASS",
+     "original_tokens": [
+      " Mar",
+      " May",
+      " Dec",
+      " Jan",
+      " Aug",
+      " June",
+      " March",
+      " April",
+      " July",
+      " Feb",
+      " August",
+      " September",
+      " January",
+      " October",
+      " November",
+      " December",
+      " February"
+     ],
+     "guarded_tokens": [
+      " May",
+      " June",
+      " March",
+      " April",
+      " July",
+      " August",
+      " September",
+      " January",
+      " October",
+      " November",
+      " December",
+      " February"
+     ],
+     "source": [
+      "B/L6/k19/dedup0.88",
+      "B/L6/k19/dedup0.9",
+      "B/L6/k19/dedup0.92"
+     ]
+    },
+    {
+     "original_hash": "9f35b688e647",
+     "original_verdict": "FAIL",
+     "guarded_verdict": "PASS",
+     "original_tokens": [
+      " May",
+      " Jan",
+      " Aug",
+      " Oct",
+      " June",
+      " March",
+      " April",
+      " July",
+      " Feb",
+      " August",
+      " September",
+      " January",
+      " October",
+      " November",
+      " December",
+      " February",
+      " Nov",
+      "May",
+      "April"
+     ],
+     "guarded_tokens": [
+      " May",
+      " June",
+      " March",
+      " April",
+      " July",
+      " August",
+      " September",
+      " January",
+      " October",
+      " November",
+      " December",
+      " February"
+     ],
+     "source": [
+      "B/L6/k19/raw"
+     ]
+    },
+    {
+     "original_hash": "8283d3d878f8",
+     "original_verdict": "FAIL",
+     "guarded_verdict": "PASS",
+     "original_tokens": [
+      " May",
+      " Jan",
+      " Aug",
+      " Oct",
+      " June",
+      " March",
+      " April",
+      " July",
+      " Feb",
+      " August",
+      " September",
+      " January",
+      " October",
+      " November",
+      " December",
+      " February",
+      " Nov"
+     ],
+     "guarded_tokens": [
+      " May",
+      " June",
+      " March",
+      " April",
+      " July",
+      " August",
+      " September",
+      " January",
+      " October",
+      " November",
+      " December",
+      " February"
+     ],
+     "source": [
+      "B/L6/k19/dedup0.88",
+      "B/L6/k19/dedup0.9",
+      "B/L6/k19/dedup0.92"
+     ]
+    }
+   ],
+   "n_verdict_change_rows": 58,
+   "permuted_search_mean_as_stored": 0.0,
+   "R14_rows": [
+    {
+     "member_hash": "a36a4f4f3e3b",
+     "layer": 6,
+     "k": 12,
+     "tokens": [
+      " May",
+      " June",
+      " March",
+      " April",
+      " July",
+      " August",
+      " September",
+      " January",
+      " October",
+      " November",
+      " December",
+      " February"
+     ],
+     "token_ids": [
+      3353,
+      5142,
+      5261,
+      5365,
+      5505,
+      5729,
+      5857,
+      6027,
+      6198,
+      6243,
+      6384,
+      7250
+     ],
+     "counts": [
+      777,
+      538,
+      600,
+      537,
+      539,
+      414,
+      412,
+      422,
+      417,
+      431,
+      374,
+      385
+     ],
+     "gap_ratio": 1.542422222283976,
+     "rho": 0.993006993006993,
+     "order_state": "PASS",
+     "order_detail": "rho 0.9930 in the screen's maximum tie class (0.9930)",
+     "loo_order_state": "PASS",
+     "loo_closure_pass": true,
+     "loo_rho_min": 0.990909090909091,
+     "loo_gap_max": 2.1787487800405354,
+     "cell_p99_band": [
+      0.993006993006993,
+      0.993006993006993
+     ],
+     "cell_saturated": false,
+     "verdict": "PASS",
+     "channel3": {
+      "ov_retention": 0.38609022981964664,
+      "per_head": [
+       0.4535301168119759,
+       0.41452557438948145,
+       0.3379106679650025,
+       0.3383945601121266
+      ],
+      "null_p99": 0.29404244152422765,
+      "null_mean": 0.24000575119000542,
+      "above_p99": true,
+      "declared_conjunct": false
+     },
+     "is_strict12": true,
+     "frequency_arm": {
+      "n": 200,
+      "p99": 0.9790209790209791,
+      "median": 0.7132867132867133,
+      "closure_rate": 0.09,
+      "pass_": true
+     },
+     "permuted_search_mean": 0.0,
+     "R14_PASS": true
+    }
+   ],
+   "n_R14_PASS": 1,
+   "n_P2_adjudicated": 9,
+   "expected_false_P2": 0.09,
+   "P2_rows": [
+    {
+     "member_hash": "9a5a83ca0105",
+     "layer": 6,
+     "k": 9,
+     "tokens": [
+      " Bank",
+      " Power",
+      " Science",
+      " Water",
+      " Land",
+      " Energy",
+      " Wood",
+      " Centre",
+      " Systems"
+     ],
+     "token_ids": [
+      5970,
+      7338,
+      7621,
+      7768,
+      8004,
+      9904,
+      10013,
+      11368,
+      13000
+     ],
+     "counts": [
+      205,
+      195,
+      228,
+      192,
+      110,
+      139,
+      115,
+      173,
+      124
+     ],
+     "gap_ratio": 2.2566451405580685,
+     "rho": 1.0,
+     "order_state": "PASS",
+     "order_detail": "rho 1.0000 in the screen's maximum tie class (1.0000)",
+     "loo_order_state": "NOT ADJUDICABLE",
+     "loo_closure_pass": true,
+     "loo_rho_min": 0.9761904761904762,
+     "loo_gap_max": 2.3905008608554237,
+     "cell_p99_band": [
+      1.0,
+      1.0
+     ],
+     "cell_saturated": true,
+     "verdict": "NOT ADJUDICABLE",
+     "channel3": {
+      "ov_retention": 0.32537331789329754,
+      "per_head": [
+       0.39010036154603356,
+       0.3165621237866144,
+       0.2931722478403969,
+       0.3016585384001454
+      ],
+      "null_p99": 0.3095543656349977,
+      "null_mean": 0.25367112971435374,
+      "above_p99": true,
+      "declared_conjunct": true
+     },
+     "is_strict12": false,
+     "frequency_arm": {
+      "n": 200,
+      "p99": 0.9833333333333333,
+      "median": 0.8,
+      "closure_rate": 0.28,
+      "pass_": true
+     },
+     "permuted_search_mean": 0.0,
+     "p2_saturated_cell": "k",
+     "p2_exact1_rate": 0.015186915887850467,
+     "p2_reason": "eligible",
+     "PASS_P2": true,
+     "R14_PASS": false,
+     "sources": [
+      "B/L6/k9/dedup0.88",
+      "B/L6/k9/dedup0.9",
+      "B/L6/k9/dedup0.92",
+      "B/L6/k9/raw"
+     ]
+    },
+    {
+     "member_hash": "045a6dd71065",
+     "layer": 6,
+     "k": 9,
+     "tokens": [
+      " environment",
+      " security",
+      " safety",
+      " rights",
+      " protection",
+      " behavior",
+      " efficiency",
+      " identity",
+      " privacy"
+     ],
+     "token_ids": [
+      3453,
+      5052,
+      5646,
+      5726,
+      6733,
+      6868,
+      9286,
+      9834,
+      15603
+     ],
+     "counts": [
+      449,
+      446,
+      427,
+      374,
+      234,
+      158,
+      129,
+      140,
+      124
+     ],
+     "gap_ratio": 1.6957314411958258,
+     "rho": 1.0,
+     "order_state": "PASS",
+     "order_detail": "rho 1.0000 in the screen's maximum tie class (1.0000)",
+     "loo_order_state": "NOT ADJUDICABLE",
+     "loo_closure_pass": true,
+     "loo_rho_min": 0.9761904761904762,
+     "loo_gap_max": 2.3816485358132593,
+     "cell_p99_band": [
+      1.0,
+      1.0
+     ],
+     "cell_saturated": true,
+     "verdict": "NOT ADJUDICABLE",
+     "channel3": {
+      "ov_retention": 0.33760993246417725,
+      "per_head": [
+       0.35797071155912064,
+       0.3361023289112994,
+       0.3280476878174626,
+       0.32831900156882654
+      ],
+      "null_p99": 0.3095543656349977,
+      "null_mean": 0.25367112971435374,
+      "above_p99": true,
+      "declared_conjunct": true
+     },
+     "is_strict12": false,
+     "frequency_arm": {
+      "n": 200,
+      "p99": 0.9833333333333333,
+      "median": 0.7833333333333333,
+      "closure_rate": 0.285,
+      "pass_": true
+     },
+     "permuted_search_mean": 0.0,
+     "p2_saturated_cell": "k",
+     "p2_exact1_rate": 0.015186915887850467,
+     "p2_reason": "eligible",
+     "PASS_P2": true,
+     "R14_PASS": false,
+     "sources": [
+      "B/L6/k9/dedup0.88",
+      "B/L6/k9/dedup0.9",
+      "B/L6/k9/dedup0.92",
+      "B/L6/k9/raw"
+     ]
+    },
+    {
+     "member_hash": "719152009d79",
+     "layer": 6,
+     "k": 9,
+     "tokens": [
+      " time",
+      " process",
+      " level",
+      " period",
+      " moment",
+      " months",
+      " situation",
+      " era",
+      " cycle"
+     ],
+     "token_ids": [
+      990,
+      1657,
+      1984,
+      2846,
+      3479,
+      3794,
+      5371,
+      6933,
+      8881
+     ],
+     "counts": [
+      5076,
+      970,
+      728,
+      409,
+      378,
+      802,
+      293,
+      125,
+      122
+     ],
+     "gap_ratio": 1.50874694924423,
+     "rho": 1.0,
+     "order_state": "PASS",
+     "order_detail": "rho 1.0000 in the screen's maximum tie class (1.0000)",
+     "loo_order_state": "NOT ADJUDICABLE",
+     "loo_closure_pass": true,
+     "loo_rho_min": 0.8809523809523809,
+     "loo_gap_max": 2.284765459541707,
+     "cell_p99_band": [
+      1.0,
+      1.0
+     ],
+     "cell_saturated": true,
+     "verdict": "NOT ADJUDICABLE",
+     "channel3": {
+      "ov_retention": 0.3315843189132619,
+      "per_head": [
+       0.33988234741545525,
+       0.33170842906174225,
+       0.316235555103546,
+       0.3385109440723039
+      ],
+      "null_p99": 0.3095543656349977,
+      "null_mean": 0.25367112971435374,
+      "above_p99": true,
+      "declared_conjunct": true
+     },
+     "is_strict12": false,
+     "frequency_arm": {
+      "n": 200,
+      "p99": 0.9833333333333333,
+      "median": 0.7333333333333334,
+      "closure_rate": 0.29,
+      "pass_": true
+     },
+     "permuted_search_mean": 0.0,
+     "p2_saturated_cell": "k",
+     "p2_exact1_rate": 0.015186915887850467,
+     "p2_reason": "eligible",
+     "PASS_P2": true,
+     "R14_PASS": false,
+     "sources": [
+      "B/L6/k11/dedup0.88",
+      "B/L6/k11/dedup0.9",
+      "B/L6/k11/dedup0.92",
+      "B/L6/k11/raw"
+     ]
+    },
+    {
+     "member_hash": "72f66abaf1cd",
+     "layer": 6,
+     "k": 10,
+     "tokens": [
+      " May",
+      " June",
+      " March",
+      " April",
+      " July",
+      " August",
+      " January",
+      " October",
+      " December",
+      " February"
+     ],
+     "token_ids": [
+      3353,
+      5142,
+      5261,
+      5365,
+      5505,
+      5729,
+      6027,
+      6198,
+      6384,
+      7250
+     ],
+     "counts": [
+      777,
+      538,
+      600,
+      537,
+      539,
+      414,
+      422,
+      417,
+      374,
+      385
+     ],
+     "gap_ratio": 1.7015189790941383,
+     "rho": 1.0,
+     "order_state": "PASS",
+     "order_detail": "rho 1.0000 in the screen's maximum tie class (1.0000)",
+     "loo_order_state": "NOT ADJUDICABLE",
+     "loo_closure_pass": true,
+     "loo_rho_min": 1.0,
+     "loo_gap_max": 2.3569178017771386,
+     "cell_p99_band": [
+      1.0,
+      1.0
+     ],
+     "cell_saturated": true,
+     "verdict": "NOT ADJUDICABLE",
+     "channel3": {
+      "ov_retention": 0.38825753757766374,
+      "per_head": [
+       0.44850990609359287,
+       0.4213632028947482,
+       0.3419303057465031,
+       0.34122673557581074
+      ],
+      "null_p99": 0.2957652319886827,
+      "null_mean": 0.2484100159582423,
+      "above_p99": true,
+      "declared_conjunct": true
+     },
+     "is_strict12": false,
+     "frequency_arm": {
+      "n": 200,
+      "p99": 0.9878787878787879,
+      "median": 0.7333333333333334,
+      "closure_rate": 0.16,
+      "pass_": true
+     },
+     "permuted_search_mean": 0.0,
+     "p2_saturated_cell": "k",
+     "p2_exact1_rate": 0.021739130434782608,
+     "p2_reason": "eligible",
+     "PASS_P2": true,
+     "R14_PASS": false,
+     "sources": [
+      "B/L6/k11/dedup0.88",
+      "B/L6/k11/dedup0.9",
+      "B/L6/k11/dedup0.92",
+      "B/L6/k11/raw"
+     ]
+    },
+    {
+     "member_hash": "3b1046409fb6",
+     "layer": 6,
+     "k": 10,
+     "tokens": [
+      " May",
+      " June",
+      " March",
+      " April",
+      " July",
+      " August",
+      " January",
+      " October",
+      " November",
+      " February"
+     ],
+     "token_ids": [
+      3353,
+      5142,
+      5261,
+      5365,
+      5505,
+      5729,
+      6027,
+      6198,
+      6243,
+      7250
+     ],
+     "counts": [
+      777,
+      538,
+      600,
+      537,
+      539,
+      414,
+      422,
+      417,
+      431,
+      385
+     ],
+     "gap_ratio": 1.9615094775248278,
+     "rho": 1.0,
+     "order_state": "PASS",
+     "order_detail": "rho 1.0000 in the screen's maximum tie class (1.0000)",
+     "loo_order_state": "NOT ADJUDICABLE",
+     "loo_closure_pass": true,
+     "loo_rho_min": 1.0,
+     "loo_gap_max": 2.2960505619941096,
+     "cell_p99_band": [
+      1.0,
+      1.0
+     ],
+     "cell_saturated": true,
+     "verdict": "NOT ADJUDICABLE",
+     "channel3": {
+      "ov_retention": 0.38661238129669573,
+      "per_head": [
+       0.45017121916579916,
+       0.4226411285084035,
+       0.33692847555098965,
+       0.3367087019615906
+      ],
+      "null_p99": 0.2957652319886827,
+      "null_mean": 0.2484100159582423,
+      "above_p99": true,
+      "declared_conjunct": true
+     },
+     "is_strict12": false,
+     "frequency_arm": {
+      "n": 200,
+      "p99": 0.9878787878787879,
+      "median": 0.7575757575757576,
+      "closure_rate": 0.165,
+      "pass_": true
+     },
+     "permuted_search_mean": 0.0,
+     "p2_saturated_cell": "k",
+     "p2_exact1_rate": 0.021739130434782608,
+     "p2_reason": "eligible",
+     "PASS_P2": true,
+     "R14_PASS": false,
+     "sources": [
+      "B/L6/k12/dedup0.88",
+      "B/L6/k12/dedup0.9",
+      "B/L6/k12/dedup0.92",
+      "B/L6/k12/raw",
+      "B/L6/k15/dedup0.88",
+      "B/L6/k15/dedup0.9",
+      "B/L6/k15/dedup0.92",
+      "B/L6/k15/raw"
+     ]
+    }
+   ],
+   "n_PASS_P2": 5,
+   "P2_rows_failed_summary": [
+    {
+     "k": 9,
+     "rho": 1.0,
+     "tokens": [
+      " May",
+      " Dec",
+      " Jan",
+      " Aug",
+      " Oct",
+      " July",
+      " Feb",
+      " Nov",
+      "April"
+     ],
+     "ch3": 0.3758492233189345,
+     "ch3_p99": 0.3095543656349977,
+     "fail": "frequency-matched arm"
+    },
+    {
+     "k": 9,
+     "rho": 1.0,
+     "tokens": [
+      " was",
+      " out",
+      " met",
+      " come",
+      " coming",
+      " goes",
+      " brought",
+      " gone",
+      " arrived"
+     ],
+     "ch3": 0.3552749557584421,
+     "ch3_p99": 0.3095543656349977,
+     "fail": "frequency-matched arm"
+    },
+    {
+     "k": 9,
+     "rho": 1.0,
+     "tokens": [
+      " me",
+      " say",
+      " request",
+      " question",
+      " told",
+      " asked",
+      " wonder",
+      " calls",
+      " asking"
+     ],
+     "ch3": 0.3258346510419617,
+     "ch3_p99": 0.3095543656349977,
+     "fail": "frequency-matched arm"
+    },
+    {
+     "k": 10,
+     "rho": 1.0,
+     "tokens": [
+      " grow",
+      " increase",
+      " increasing",
+      " reduce",
+      " changed",
+      " prepared",
+      " rise",
+      " raised",
+      " expressed",
+      " boost"
+     ],
+     "ch3": 0.31553688947306135,
+     "ch3_p99": 0.2957652319886827,
+     "fail": "frequency-matched arm"
+    }
+   ]
+  },
+  "L7_A": {
+   "n_proposals": 295,
+   "n_unique_guarded": 183,
+   "n_proposals_changed_by_guard": 271,
+   "n_guarded_below_kmin": 121,
+   "guarded_tally": {
+    "NOT ADJUDICABLE": 77,
+    "FAIL": 106
+   },
+   "unguarded_tally": {
+    "FAIL": 285,
+    "NOT ADJUDICABLE": 10
+   },
+   "guarded_n_gate": 8,
+   "guarded_n_closers": 12,
+   "guarded_screen_max_rho_by_k": {
+    "9": 0.9833333333333333,
+    "10": 0.8787878787878788,
+    "12": 0.993006993006993,
+    "13": 0.9230769230769231,
+    "26": 0.7374358974358974
+   },
+   "guarded_tie_size_by_k": {
+    "9": 1,
+    "10": 1,
+    "12": 1,
+    "13": 1,
+    "26": 1
+   },
+   "verdict_transitions": {
+    "FAIL -> NOT ADJUDICABLE": 117,
+    "FAIL -> FAIL": 168,
+    "NOT ADJUDICABLE -> NOT ADJUDICABLE": 9,
+    "NOT ADJUDICABLE -> FAIL": 1
+   },
+   "verdict_change_rows": [],
+   "n_verdict_change_rows": 0,
+   "permuted_search_mean_as_stored": 0.0,
+   "R14_rows": [],
+   "n_R14_PASS": 0,
+   "n_P2_adjudicated": 0,
+   "expected_false_P2": 0.0,
+   "P2_rows": [],
+   "n_PASS_P2": 0,
+   "P2_rows_failed_summary": []
+  },
+  "L7_B": {
+   "n_proposals": 70963,
+   "n_unique_guarded": 48182,
+   "n_proposals_changed_by_guard": 51785,
+   "n_guarded_below_kmin": 17545,
+   "guarded_tally": {
+    "NOT ADJUDICABLE": 10931,
+    "FAIL": 37251
+   },
+   "unguarded_tally": {
+    "NOT ADJUDICABLE": 2814,
+    "FAIL": 68149
+   },
+   "guarded_n_gate": 2334,
+   "guarded_n_closers": 4901,
+   "guarded_screen_max_rho_by_k": {
+    "9": 1.0,
+    "10": 1.0,
+    "11": 1.0,
+    "12": 1.0,
+    "13": 1.0,
+    "14": 0.9912087912087912,
+    "15": 0.9678571428571429,
+    "16": 0.9735294117647059,
+    "17": 0.9754901960784313,
+    "18": 0.9298245614035088,
+    "19": 0.9631578947368421,
+    "20": 0.9759398496240601
+   },
+   "guarded_tie_size_by_k": {
+    "9": 20,
+    "10": 7,
+    "11": 3,
+    "12": 1,
+    "13": 1,
+    "14": 2,
+    "15": 1,
+    "16": 1,
+    "17": 1,
+    "18": 1,
+    "19": 1,
+    "20": 1
+   },
+   "verdict_transitions": {
+    "FAIL -> NOT ADJUDICABLE": 18083,
+    "NOT ADJUDICABLE -> NOT ADJUDICABLE": 2734,
+    "FAIL -> FAIL": 50066,
+    "NOT ADJUDICABLE -> FAIL": 80
+   },
+   "verdict_change_rows": [],
+   "n_verdict_change_rows": 0,
+   "permuted_search_mean_as_stored": 0.0,
+   "R14_rows": [],
+   "n_R14_PASS": 0,
+   "n_P2_adjudicated": 9,
+   "expected_false_P2": 0.09,
+   "P2_rows": [
+    {
+     "member_hash": "2e1157b57d26",
+     "layer": 7,
+     "k": 9,
+     "tokens": [
+      " May",
+      " June",
+      " March",
+      " April",
+      " July",
+      " August",
+      " January",
+      " October",
+      " February"
+     ],
+     "token_ids": [
+      3353,
+      5142,
+      5261,
+      5365,
+      5505,
+      5729,
+      6027,
+      6198,
+      7250
+     ],
+     "counts": [
+      777,
+      538,
+      600,
+      537,
+      539,
+      414,
+      422,
+      417,
+      385
+     ],
+     "gap_ratio": 1.7178232483686156,
+     "rho": 1.0,
+     "order_state": "PASS",
+     "order_detail": "rho 1.0000 in the screen's maximum tie class (1.0000)",
+     "loo_order_state": "NOT ADJUDICABLE",
+     "loo_closure_pass": true,
+     "loo_rho_min": 0.9761904761904762,
+     "loo_gap_max": 2.4728376721811722,
+     "cell_p99_band": [
+      1.0,
+      1.0
+     ],
+     "cell_saturated": true,
+     "verdict": "NOT ADJUDICABLE",
+     "channel3": {
+      "ov_retention": 0.4177909395671656,
+      "per_head": [
+       0.37764775636075276,
+       0.40552937761523294,
+       0.45826777548548914,
+       0.42971884880718775
+      ],
+      "null_p99": 0.3144631114300113,
+      "null_mean": 0.25418135865160485,
+      "above_p99": true,
+      "declared_conjunct": true
+     },
+     "is_strict12": false,
+     "frequency_arm": {
+      "n": 200,
+      "p99": 0.9833333333333333,
+      "median": 0.7583333333333333,
+      "closure_rate": 0.24,
+      "pass_": true
+     },
+     "permuted_search_mean": 0.0,
+     "p2_saturated_cell": "k",
+     "p2_exact1_rate": 0.020338983050847456,
+     "p2_reason": "eligible",
+     "PASS_P2": true,
+     "R14_PASS": false,
+     "sources": [
+      "B/L7/k10/dedup0.9",
+      "B/L7/k10/dedup0.92",
+      "B/L7/k10/raw",
+      "B/L7/k11/dedup0.9",
+      "B/L7/k11/dedup0.92",
+      "B/L7/k11/raw",
+      "B/L7/k12/dedup0.9",
+      "B/L7/k12/dedup0.92"
+     ]
+    },
+    {
+     "member_hash": "a104ea310bab",
+     "layer": 7,
+     "k": 9,
+     "tokens": [
+      " May",
+      " June",
+      " March",
+      " April",
+      " July",
+      " August",
+      " September",
+      " January",
+      " February"
+     ],
+     "token_ids": [
+      3353,
+      5142,
+      5261,
+      5365,
+      5505,
+      5729,
+      5857,
+      6027,
+      7250
+     ],
+     "counts": [
+      777,
+      538,
+      600,
+      537,
+      539,
+      414,
+      412,
+      422,
+      385
+     ],
+     "gap_ratio": 2.1793952839287027,
+     "rho": 1.0,
+     "order_state": "PASS",
+     "order_detail": "rho 1.0000 in the screen's maximum tie class (1.0000)",
+     "loo_order_state": "NOT ADJUDICABLE",
+     "loo_closure_pass": true,
+     "loo_rho_min": 0.9761904761904762,
+     "loo_gap_max": 2.4728376721811722,
+     "cell_p99_band": [
+      1.0,
+      1.0
+     ],
+     "cell_saturated": true,
+     "verdict": "NOT ADJUDICABLE",
+     "channel3": {
+      "ov_retention": 0.4338079074410513,
+      "per_head": [
+       0.40501612128050996,
+       0.41251553795245693,
+       0.47467679846048366,
+       0.44302317207075465
+      ],
+      "null_p99": 0.3144631114300113,
+      "null_mean": 0.25418135865160485,
+      "above_p99": true,
+      "declared_conjunct": true
+     },
+     "is_strict12": false,
+     "frequency_arm": {
+      "n": 200,
+      "p99": 0.9833333333333333,
+      "median": 0.7833333333333333,
+      "closure_rate": 0.245,
+      "pass_": true
+     },
+     "permuted_search_mean": 0.0,
+     "p2_saturated_cell": "k",
+     "p2_exact1_rate": 0.020338983050847456,
+     "p2_reason": "eligible",
+     "PASS_P2": true,
+     "R14_PASS": false,
+     "sources": [
+      "B/L7/k9/dedup0.9",
+      "B/L7/k9/dedup0.92",
+      "B/L7/k9/raw"
+     ]
+    },
+    {
+     "member_hash": "bf0c6958bc1f",
+     "layer": 7,
+     "k": 9,
+     "tokens": [
+      " was",
+      " met",
+      " come",
+      " coming",
+      " goes",
+      " brought",
+      " happened",
+      " gone",
+      " arrived"
+     ],
+     "token_ids": [
+      691,
+      1645,
+      2229,
+      4891,
+      5899,
+      6111,
+      8432,
+      8731,
+      12208
+     ],
+     "counts": [
+      13480,
+      322,
+      1347,
+      567,
+      372,
+      314,
+      285,
+      268,
+      170
+     ],
+     "gap_ratio": 2.0592648436527243,
+     "rho": 1.0,
+     "order_state": "PASS",
+     "order_detail": "rho 1.0000 in the screen's maximum tie class (1.0000)",
+     "loo_order_state": "NOT ADJUDICABLE",
+     "loo_closure_pass": true,
+     "loo_rho_min": 0.9761904761904762,
+     "loo_gap_max": 2.411419765887193,
+     "cell_p99_band": [
+      1.0,
+      1.0
+     ],
+     "cell_saturated": true,
+     "verdict": "NOT ADJUDICABLE",
+     "channel3": {
+      "ov_retention": 0.38265053734916554,
+      "per_head": [
+       0.34478707564624145,
+       0.39573241830101075,
+       0.42090924845190547,
+       0.36917340699750467
+      ],
+      "null_p99": 0.3144631114300113,
+      "null_mean": 0.25418135865160485,
+      "above_p99": true,
+      "declared_conjunct": true
+     },
+     "is_strict12": false,
+     "frequency_arm": {
+      "n": 200,
+      "p99": 0.9833333333333333,
+      "median": 0.75,
+      "closure_rate": 0.315,
+      "pass_": true
+     },
+     "permuted_search_mean": 0.0,
+     "p2_saturated_cell": "k",
+     "p2_exact1_rate": 0.020338983050847456,
+     "p2_reason": "eligible",
+     "PASS_P2": true,
+     "R14_PASS": false,
+     "sources": [
+      "B/L7/k12/dedup0.88",
+      "B/L7/k12/dedup0.9",
+      "B/L7/k12/dedup0.92"
+     ]
+    },
+    {
+     "member_hash": "2eff8657fbd3",
+     "layer": 7,
+     "k": 10,
+     "tokens": [
+      " find",
+      " showed",
+      " discover",
+      " identified",
+      " identify",
+      " revealed",
+      " confirmed",
+      " recognized",
+      " realize",
+      " noticed"
+     ],
+     "token_ids": [
+      1586,
+      6418,
+      6878,
+      8385,
+      8701,
+      9937,
+      10778,
+      12659,
+      13808,
+      14275
+     ],
+     "counts": [
+      1742,
+      204,
+      176,
+      139,
+      196,
+      171,
+      156,
+      111,
+      148,
+      138
+     ],
+     "gap_ratio": 2.079493930026796,
+     "rho": 1.0,
+     "order_state": "PASS",
+     "order_detail": "rho 1.0000 in the screen's maximum tie class (1.0000)",
+     "loo_order_state": "NOT ADJUDICABLE",
+     "loo_closure_pass": true,
+     "loo_rho_min": 0.5166666666666666,
+     "loo_gap_max": 2.457235435928407,
+     "cell_p99_band": [
+      1.0,
+      1.0
+     ],
+     "cell_saturated": true,
+     "verdict": "NOT ADJUDICABLE",
+     "channel3": {
+      "ov_retention": 0.36607648981352436,
+      "per_head": [
+       0.329735171711277,
+       0.36220145316659647,
+       0.39564077786391433,
+       0.37672855651230985
+      ],
+      "null_p99": 0.3144410233964515,
+      "null_mean": 0.24882520926745894,
+      "above_p99": true,
+      "declared_conjunct": true
+     },
+     "is_strict12": false,
+     "frequency_arm": {
+      "n": 200,
+      "p99": 0.9878787878787879,
+      "median": 0.7878787878787878,
+      "closure_rate": 0.16,
+      "pass_": true
+     },
+     "permuted_search_mean": 0.0,
+     "p2_saturated_cell": "k",
+     "p2_exact1_rate": 0.023734177215189875,
+     "p2_reason": "eligible",
+     "PASS_P2": true,
+     "R14_PASS": false,
+     "sources": [
+      "B/L7/k16/dedup0.92"
+     ]
+    }
+   ],
+   "n_PASS_P2": 4,
+   "P2_rows_failed_summary": [
+    {
+     "k": 9,
+     "rho": 1.0,
+     "tokens": [
+      " groups",
+      " models",
+      " projects",
+      " parties",
+      " businesses",
+      " structures",
+      " markets",
+      " organizations",
+      " institutions"
+     ],
+     "ch3": 0.36268798577746775,
+     "ch3_p99": 0.3144631114300113,
+     "fail": "frequency-matched arm"
+    },
+    {
+     "k": 9,
+     "rho": 1.0,
+     "tokens": [
+      " private",
+      " custom",
+      " wood",
+      " electric",
+      " metal",
+      " steel",
+      " plastic",
+      " classic",
+      " premium"
+     ],
+     "ch3": 0.3761037702231924,
+     "ch3_p99": 0.3144631114300113,
+     "fail": "frequency-matched arm"
+    },
+    {
+     "k": 10,
+     "rho": 1.0,
+     "tokens": [
+      " systems",
+      " groups",
+      " models",
+      " projects",
+      " parties",
+      " businesses",
+      " structures",
+      " markets",
+      " organizations",
+      " institutions"
+     ],
+     "ch3": 0.3527891838967525,
+     "ch3_p99": 0.3144410233964515,
+     "fail": "frequency-matched arm"
+    },
+    {
+     "k": 9,
+     "rho": 1.0,
+     "tokens": [
+      " range",
+      " array",
+      " fine",
+      " variety",
+      " mix",
+      " balance",
+      " combination",
+      " taste",
+      " wealth"
+     ],
+     "ch3": 0.36602165218284566,
+     "ch3_p99": 0.3144631114300113,
+     "fail": "frequency-matched arm"
+    },
+    {
+     "k": 9,
+     "rho": 1.0,
+     "tokens": [
+      " about",
+      " consider",
+      " discuss",
+      " comment",
+      " detail",
+      " explain",
+      " explore",
+      " perspective",
+      " thoughts"
+     ],
+     "ch3": 0.33476091217433346,
+     "ch3_p99": 0.3144631114300113,
+     "fail": "frequency-matched arm"
+    }
+   ]
+  }
+ },
+ "source49": {
+  "L5_note": "NOT RE-CHECKED. Channel 2 at L5 is not on disk and 42's cache stream may not run while 47 holds MPS (R12/R17). 64 stored L5 proposals (tau 30/40/45), all stored verdict FAIL.",
+  "L6_permuted_search_as_stored": {
+   "n_permutations": 20,
+   "per_permutation": [
+    {
+     "30": 0,
+     "40": 0,
+     "45": 0
+    },
+    {
+     "30": 0,
+     "40": 0,
+     "45": 0
+    },
+    {
+     "30": 0,
+     "40": 0,
+     "45": 0
+    },
+    {
+     "30": 0,
+     "40": 0,
+     "45": 0
+    },
+    {
+     "30": 0,
+     "40": 0,
+     "45": 0
+    },
+    {
+     "30": 0,
+     "40": 0,
+     "45": 0
+    },
+    {
+     "30": 0,
+     "40": 0,
+     "45": 0
+    },
+    {
+     "30": 0,
+     "40": 0,
+     "45": 0
+    },
+    {
+     "30": 0,
+     "40": 0,
+     "45": 0
+    },
+    {
+     "30": 0,
+     "40": 0,
+     "45": 0
+    },
+    {
+     "30": 0,
+     "40": 0,
+     "45": 0
+    },
+    {
+     "30": 0,
+     "40": 0,
+     "45": 0
+    },
+    {
+     "30": 0,
+     "40": 0,
+     "45": 0
+    },
+    {
+     "30": 0,
+     "40": 0,
+     "45": 0
+    },
+    {
+     "30": 0,
+     "40": 0,
+     "45": 0
+    },
+    {
+     "30": 0,
+     "40": 0,
+     "45": 0
+    },
+    {
+     "30": 0,
+     "40": 0,
+     "45": 0
+    },
+    {
+     "30": 0,
+     "40": 0,
+     "45": 0
+    },
+    {
+     "30": 0,
+     "40": 0,
+     "45": 0
+    },
+    {
+     "30": 0,
+     "40": 0,
+     "45": 0
+    }
+   ],
+   "mean_passers": {
+    "30": 0.0,
+    "40": 0.0,
+    "45": 0.0
+   },
+   "seconds": 213.1
+  },
+  "L6_tau30": {
+   "n_proposals": 2,
+   "n_unique_guarded": 2,
+   "n_changed_by_guard": 1,
+   "n_below_kmin": 1,
+   "stored_verdicts_49": {
+    "NOT ADJUDICABLE": 2
+   },
+   "tally_48tier_unguarded": {
+    "NOT ADJUDICABLE": 2
+   },
+   "tally_48tier_guarded": {
+    "NOT ADJUDICABLE": 2
+   },
+   "guarded_screen_max_rho_by_k": {
+    "10": 1.0
+   },
+   "proposals": [
+    {
+     "k_raw": 9,
+     "k_guarded": 1,
+     "tokens_raw": [
+      "T",
+      "P",
+      "M",
+      "R",
+      "L",
+      "B",
+      "F",
+      "H",
+      "W"
+     ],
+     "tokens_guarded": [
+      "B"
+     ],
+     "dropped": [
+      "T",
+      "P",
+      "M",
+      "R",
+      "L",
+      "F",
+      "H",
+      "W"
+     ],
+     "verdict_49_stored": "NOT ADJUDICABLE",
+     "verdict_48tier_unguarded": "NOT ADJUDICABLE",
+     "verdict_48tier_guarded": "NOT ADJUDICABLE",
+     "ring_conjunct_pass_stored": true
+    },
+    {
+     "k_raw": 10,
+     "k_guarded": 10,
+     "tokens_raw": [
+      " March",
+      " April",
+      " July",
+      " August",
+      " September",
+      " January",
+      " October",
+      " November",
+      " December",
+      " February"
+     ],
+     "tokens_guarded": [
+      " March",
+      " April",
+      " July",
+      " August",
+      " September",
+      " January",
+      " October",
+      " November",
+      " December",
+      " February"
+     ],
+     "dropped": [],
+     "verdict_49_stored": "NOT ADJUDICABLE",
+     "verdict_48tier_unguarded": "NOT ADJUDICABLE",
+     "verdict_48tier_guarded": "NOT ADJUDICABLE",
+     "ring_conjunct_pass_stored": true
+    }
+   ],
+   "skipped_no_ids": [],
+   "R14_rows": [],
+   "n_R14_PASS": 0,
+   "n_P2_adjudicated": 0,
+   "expected_false_P2": 0.0,
+   "P2_rows": [],
+   "n_PASS_P2": 0
+  },
+  "L6_tau40": {
+   "n_proposals": 12,
+   "n_unique_guarded": 12,
+   "n_changed_by_guard": 8,
+   "n_below_kmin": 3,
+   "stored_verdicts_49": {
+    "FAIL": 11,
+    "NOT ADJUDICABLE": 1
+   },
+   "tally_48tier_unguarded": {
+    "NOT ADJUDICABLE": 1,
+    "FAIL": 11
+   },
+   "tally_48tier_guarded": {
+    "NOT ADJUDICABLE": 4,
+    "FAIL": 8
+   },
+   "guarded_screen_max_rho_by_k": {
+    "11": 0.990909090909091
+   },
+   "proposals": [
+    {
+     "k_raw": 14,
+     "k_guarded": 12,
+     "tokens_raw": [
+      "It",
+      "This",
+      "If",
+      "You",
+      "With",
+      "There",
+      "When",
+      "After",
+      "Our",
+      "While",
+      "These",
+      "Since",
+      "During",
+      "Once"
+     ],
+     "tokens_guarded": [
+      "It",
+      "This",
+      "You",
+      "With",
+      "There",
+      "When",
+      "After",
+      "Our",
+      "While",
+      "Since",
+      "During",
+      "Once"
+     ],
+     "dropped": [
+      "If",
+      "These"
+     ],
+     "verdict_49_stored": "FAIL",
+     "verdict_48tier_unguarded": "FAIL",
+     "verdict_48tier_guarded": "FAIL",
+     "ring_conjunct_pass_stored": true
+    },
+    {
+     "k_raw": 9,
+     "k_guarded": 8,
+     "tokens_raw": [
+      "What",
+      "How",
+      "Do",
+      "Let",
+      "Can",
+      "Where",
+      "Why",
+      "Are",
+      "Who"
+     ],
+     "tokens_guarded": [
+      "What",
+      "How",
+      "Do",
+      "Let",
+      "Can",
+      "Where",
+      "Why",
+      "Are"
+     ],
+     "dropped": [
+      "Who"
+     ],
+     "verdict_49_stored": "NOT ADJUDICABLE",
+     "verdict_48tier_unguarded": "NOT ADJUDICABLE",
+     "verdict_48tier_guarded": "NOT ADJUDICABLE",
+     "ring_conjunct_pass_stored": true
+    },
+    {
+     "k_raw": 9,
+     "k_guarded": 5,
+     "tokens_raw": [
+      " P",
+      " R",
+      " G",
+      " O",
+      " Sh",
+      " Bl",
+      " Cal",
+      " Pre",
+      " Sw"
+     ],
+     "tokens_guarded": [
+      " R",
+      " Sh",
+      " Bl",
+      " Cal",
+      " Pre"
+     ],
+     "dropped": [
+      " P",
+      " G",
+      " O",
+      " Sw"
+     ],
+     "verdict_49_stored": "FAIL",
+     "verdict_48tier_unguarded": "FAIL",
+     "verdict_48tier_guarded": "NOT ADJUDICABLE",
+     "ring_conjunct_pass_stored": true
+    },
+    {
+     "k_raw": 16,
+     "k_guarded": 1,
+     "tokens_raw": [
+      "T",
+      "C",
+      "E",
+      "P",
+      "M",
+      "R",
+      "N",
+      "L",
+      "B",
+      "O",
+      "F",
+      "H",
+      "W",
+      "U",
+      "J",
+      "Z"
+     ],
+     "tokens_guarded": [
+      "C"
+     ],
+     "dropped": [
+      "T",
+      "E",
+      "P",
+      "M",
+      "R",
+      "N",
+      "L",
+      "B",
+      "O",
+      "F",
+      "H",
+      "W",
+      "U",
+      "J",
+      "Z"
+     ],
+     "verdict_49_stored": "FAIL",
+     "verdict_48tier_unguarded": "FAIL",
+     "verdict_48tier_guarded": "NOT ADJUDICABLE",
+     "ring_conjunct_pass_stored": true
+    },
+    {
+     "k_raw": 12,
+     "k_guarded": 11,
+     "tokens_raw": [
+      " May",
+      " March",
+      " April",
+      " July",
+      " August",
+      " September",
+      " January",
+      " October",
+      " November",
+      " December",
+      " February",
+      " Nov"
+     ],
+     "tokens_guarded": [
+      " May",
+      " March",
+      " April",
+      " July",
+      " August",
+      " September",
+      " January",
+      " October",
+      " November",
+      " December",
+      " February"
+     ],
+     "dropped": [
+      " Nov"
+     ],
+     "verdict_49_stored": "FAIL",
+     "verdict_48tier_unguarded": "FAIL",
+     "verdict_48tier_guarded": "NOT ADJUDICABLE",
+     "ring_conjunct_pass_stored": true
+    },
+    {
+     "k_raw": 9,
+     "k_guarded": 9,
+     "tokens_raw": [
+      " easy",
+      " difficult",
+      " interesting",
+      " fully",
+      " relatively",
+      " busy",
+      " dangerous",
+      " flexible",
+      " continuing"
+     ],
+     "tokens_guarded": [
+      " easy",
+      " difficult",
+      " interesting",
+      " fully",
+      " relatively",
+      " busy",
+      " dangerous",
+      " flexible",
+      " continuing"
+     ],
+     "dropped": [],
+     "verdict_49_stored": "FAIL",
+     "verdict_48tier_unguarded": "FAIL",
+     "verdict_48tier_guarded": "FAIL",
+     "ring_conjunct_pass_stored": true
+    },
+    {
+     "k_raw": 23,
+     "k_guarded": 21,
+     "tokens_raw": [
+      " local",
+      " custom",
+      " human",
+      " version",
+      " global",
+      " multi",
+      " customers",
+      " economic",
+      " physical",
+      " clients",
+      " technical",
+      " environmental",
+      " cultural",
+      " clinical",
+      " regional",
+      " historical",
+      " educational",
+      " rural",
+      " academic",
+      " innovation",
+      " participate",
+      " residential",
+      " Environmental"
+     ],
+     "tokens_guarded": [
+      " local",
+      " human",
+      " version",
+      " global",
+      " multi",
+      " customers",
+      " economic",
+      " physical",
+      " clients",
+      " technical",
+      " environmental",
+      " cultural",
+      " clinical",
+      " regional",
+      " historical",
+      " educational",
+      " rural",
+      " academic",
+      " innovation",
+      " participate",
+      " residential"
+     ],
+     "dropped": [
+      " custom",
+      " Environmental"
+     ],
+     "verdict_49_stored": "FAIL",
+     "verdict_48tier_unguarded": "FAIL",
+     "verdict_48tier_guarded": "FAIL",
+     "ring_conjunct_pass_stored": false
+    },
+    {
+     "k_raw": 10,
+     "k_guarded": 10,
+     "tokens_raw": [
+      " The",
+      " In",
+      " At",
+      " While",
+      " Every",
+      " Each",
+      " During",
+      " Using",
+      " Both",
+      " Last"
+     ],
+     "tokens_guarded": [
+      " The",
+      " In",
+      " At",
+      " While",
+      " Every",
+      " Each",
+      " During",
+      " Using",
+      " Both",
+      " Last"
+     ],
+     "dropped": [],
+     "verdict_49_stored": "FAIL",
+     "verdict_48tier_unguarded": "FAIL",
+     "verdict_48tier_guarded": "FAIL",
+     "ring_conjunct_pass_stored": true
+    },
+    {
+     "k_raw": 22,
+     "k_guarded": 22,
+     "tokens_raw": [
+      " make",
+      " because",
+      " during",
+      " keep",
+      " give",
+      " provide",
+      " bring",
+      " continue",
+      " includes",
+      " ensure",
+      " became",
+      " deliver",
+      " avoid",
+      " allows",
+      " began",
+      " gets",
+      " requires",
+      " helps",
+      " leaving",
+      " involves",
+      " creates",
+      " featuring"
+     ],
+     "tokens_guarded": [
+      " make",
+      " because",
+      " during",
+      " keep",
+      " give",
+      " provide",
+      " bring",
+      " continue",
+      " includes",
+      " ensure",
+      " became",
+      " deliver",
+      " avoid",
+      " allows",
+      " began",
+      " gets",
+      " requires",
+      " helps",
+      " leaving",
+      " involves",
+      " creates",
+      " featuring"
+     ],
+     "dropped": [],
+     "verdict_49_stored": "FAIL",
+     "verdict_48tier_unguarded": "FAIL",
+     "verdict_48tier_guarded": "FAIL",
+     "ring_conjunct_pass_stored": true
+    },
+    {
+     "k_raw": 12,
+     "k_guarded": 12,
+     "tokens_raw": [
+      " inter",
+      " based",
+      " working",
+      " political",
+      " independent",
+      " approximately",
+      " mostly",
+      " typically",
+      " mainly",
+      " largely",
+      " primarily",
+      " commonly"
+     ],
+     "tokens_guarded": [
+      " inter",
+      " based",
+      " working",
+      " political",
+      " independent",
+      " approximately",
+      " mostly",
+      " typically",
+      " mainly",
+      " largely",
+      " primarily",
+      " commonly"
+     ],
+     "dropped": [],
+     "verdict_49_stored": "FAIL",
+     "verdict_48tier_unguarded": "FAIL",
+     "verdict_48tier_guarded": "FAIL",
+     "ring_conjunct_pass_stored": false
+    },
+    {
+     "k_raw": 17,
+     "k_guarded": 11,
+     "tokens_raw": [
+      " in",
+      " (",
+      " at",
+      ").",
+      "),",
+      "\",",
+      "..",
+      " non",
+      " They",
+      " within",
+      " via",
+      " throughout",
+      " Please",
+      " consists",
+      " involving",
+      ")",
+      ";"
+     ],
+     "tokens_guarded": [
+      " in",
+      " (",
+      " at",
+      " non",
+      " They",
+      " within",
+      " via",
+      " throughout",
+      " Please",
+      " consists",
+      " involving"
+     ],
+     "dropped": [
+      ").",
+      "),",
+      "\",",
+      "..",
+      ")",
+      ";"
+     ],
+     "verdict_49_stored": "FAIL",
+     "verdict_48tier_unguarded": "FAIL",
+     "verdict_48tier_guarded": "FAIL",
+     "ring_conjunct_pass_stored": false
+    },
+    {
+     "k_raw": 48,
+     "k_guarded": 42,
+     "tokens_raw": [
+      " system",
+      " process",
+      " program",
+      " method",
+      " project",
+      " services",
+      " products",
+      " solution",
+      " systems",
+      " options",
+      " issues",
+      " companies",
+      " solutions",
+      " projects",
+      " equipment",
+      " tool",
+      " requirements",
+      " skills",
+      " rules",
+      " tools",
+      " programs",
+      " operations",
+      " protection",
+      " communication",
+      " strategy",
+      " techniques",
+      " standards",
+      " businesses",
+      " discussion",
+      " communities",
+      " tasks",
+      " decisions",
+      " teachers",
+      " buildings",
+      " technologies",
+      " vehicles",
+      " funding",
+      " strategies",
+      " experts",
+      " programme",
+      " regulations",
+      " fees",
+      " consumers",
+      " topics",
+      " firms",
+      " trends",
+      " guidelines",
+      " buyers"
+     ],
+     "tokens_guarded": [
+      " system",
+      " process",
+      " program",
+      " method",
+      " project",
+      " services",
+      " products",
+      " options",
+      " issues",
+      " companies",
+      " solutions",
+      " equipment",
+      " requirements",
+      " skills",
+      " rules",
+      " tools",
+      " operations",
+      " protection",
+      " communication",
+      " strategy",
+      " techniques",
+      " standards",
+      " businesses",
+      " discussion",
+      " communities",
+      " tasks",
+      " decisions",
+      " teachers",
+      " buildings",
+      " technologies",
+      " vehicles",
+      " funding",
+      " strategies",
+      " experts",
+      " regulations",
+      " fees",
+      " consumers",
+      " topics",
+      " firms",
+      " trends",
+      " guidelines",
+      " buyers"
+     ],
+     "dropped": [
+      " solution",
+      " systems",
+      " projects",
+      " tool",
+      " programs",
+      " programme"
+     ],
+     "verdict_49_stored": "FAIL",
+     "verdict_48tier_unguarded": "FAIL",
+     "verdict_48tier_guarded": "FAIL",
+     "ring_conjunct_pass_stored": false
+    }
+   ],
+   "skipped_no_ids": [
+    {
+     "tokens": [
+      " S",
+      " T",
+      " M",
+      " B",
+      " H",
+      " E",
+      " N",
+      " W",
+      " K"
+     ],
+     "k_raw": 9,
+     "k_dedup": 6,
+     "verdict": "NOT ADJUDICABLE",
+     "reason": "k<9 after R15 dedup",
+     "note": "membership not stored as token ids; already NOT ADJUDICABLE at k < 9 after R15, and P1 can only shrink it further -- verdict cannot change"
+    }
+   ],
+   "R14_rows": [],
+   "n_R14_PASS": 0,
+   "n_P2_adjudicated": 0,
+   "expected_false_P2": 0.0,
+   "P2_rows": [],
+   "n_PASS_P2": 0
+  },
+  "L6_tau45": {
+   "n_proposals": 18,
+   "n_unique_guarded": 18,
+   "n_changed_by_guard": 12,
+   "n_below_kmin": 3,
+   "stored_verdicts_49": {
+    "FAIL": 18
+   },
+   "tally_48tier_unguarded": {
+    "FAIL": 18
+   },
+   "tally_48tier_guarded": {
+    "NOT ADJUDICABLE": 3,
+    "MARGINAL": 1,
+    "FAIL": 14
+   },
+   "guarded_screen_max_rho_by_k": {
+    "12": 0.993006993006993
+   },
+   "proposals": [
+    {
+     "k_raw": 48,
+     "k_guarded": 28,
+     "tokens_raw": [
+      "The",
+      "In",
+      "It",
+      "We",
+      "To",
+      "This",
+      "An",
+      "For",
+      "On",
+      "If",
+      "You",
+      "All",
+      "Get",
+      "With",
+      "What",
+      "No",
+      "There",
+      "At",
+      "How",
+      "Be",
+      "Not",
+      "When",
+      "From",
+      "One",
+      "After",
+      "Do",
+      "Let",
+      "Our",
+      "Each",
+      "While",
+      "Can",
+      "Don",
+      "These",
+      "Please",
+      "Some",
+      "Since",
+      "Where",
+      "Why",
+      "Two",
+      "Many",
+      "Every",
+      "Are",
+      "Most",
+      "During",
+      "Once",
+      "Even",
+      "Who",
+      "I"
+     ],
+     "tokens_guarded": [
+      "The",
+      "We",
+      "To",
+      "This",
+      "For",
+      "You",
+      "All",
+      "With",
+      "What",
+      "How",
+      "When",
+      "From",
+      "After",
+      "Let",
+      "Our",
+      "Each",
+      "While",
+      "Please",
+      "Some",
+      "Since",
+      "Why",
+      "Many",
+      "Every",
+      "Are",
+      "Most",
+      "During",
+      "Even",
+      "I"
+     ],
+     "dropped": [
+      "In",
+      "It",
+      "An",
+      "On",
+      "If",
+      "Get",
+      "No",
+      "There",
+      "At",
+      "Be",
+      "Not",
+      "One",
+      "Do",
+      "Can",
+      "Don",
+      "These",
+      "Where",
+      "Two",
+      "Once",
+      "Who"
+     ],
+     "verdict_49_stored": "FAIL",
+     "verdict_48tier_unguarded": "FAIL",
+     "verdict_48tier_guarded": "FAIL",
+     "ring_conjunct_pass_stored": false
+    },
+    {
+     "k_raw": 10,
+     "k_guarded": 10,
+     "tokens_raw": [
+      " Ben",
+      " Dan",
+      " Sam",
+      " Tom",
+      " Michael",
+      " Robert",
+      " Jeff",
+      " Andrew",
+      " Bob",
+      " Matt"
+     ],
+     "tokens_guarded": [
+      " Ben",
+      " Dan",
+      " Sam",
+      " Tom",
+      " Michael",
+      " Robert",
+      " Jeff",
+      " Andrew",
+      " Bob",
+      " Matt"
+     ],
+     "dropped": [],
+     "verdict_49_stored": "FAIL",
+     "verdict_48tier_unguarded": "FAIL",
+     "verdict_48tier_guarded": "FAIL",
+     "ring_conjunct_pass_stored": true
+    },
+    {
+     "k_raw": 19,
+     "k_guarded": 3,
+     "tokens_raw": [
+      " S",
+      " B",
+      " R",
+      " E",
+      " N",
+      " W",
+      " O",
+      " K",
+      " Th",
+      " Re",
+      " Un",
+      " Se",
+      " Sh",
+      " Sp",
+      " Bl",
+      " Cal",
+      " Pre",
+      " Sw",
+      " Small"
+     ],
+     "tokens_guarded": [
+      " B",
+      " Cal",
+      " Small"
+     ],
+     "dropped": [
+      " S",
+      " R",
+      " E",
+      " N",
+      " W",
+      " O",
+      " K",
+      " Th",
+      " Re",
+      " Un",
+      " Se",
+      " Sh",
+      " Sp",
+      " Bl",
+      " Pre",
+      " Sw"
+     ],
+     "verdict_49_stored": "FAIL",
+     "verdict_48tier_unguarded": "FAIL",
+     "verdict_48tier_guarded": "NOT ADJUDICABLE",
+     "ring_conjunct_pass_stored": false
+    },
+    {
+     "k_raw": 17,
+     "k_guarded": 15,
+     "tokens_raw": [
+      " ,",
+      " How",
+      " What",
+      " Let",
+      " Part",
+      " Get",
+      " Don",
+      " minimum",
+      " guy",
+      " Make",
+      "See",
+      " Where",
+      " Click",
+      "May",
+      " Take",
+      " victim",
+      " doctors"
+     ],
+     "tokens_guarded": [
+      " ,",
+      " How",
+      " What",
+      " Part",
+      " Get",
+      " Don",
+      " minimum",
+      " guy",
+      " Make",
+      "See",
+      " Where",
+      " Click",
+      "May",
+      " victim",
+      " doctors"
+     ],
+     "dropped": [
+      " Let",
+      " Take"
+     ],
+     "verdict_49_stored": "FAIL",
+     "verdict_48tier_unguarded": "FAIL",
+     "verdict_48tier_guarded": "FAIL",
+     "ring_conjunct_pass_stored": false
+    },
+    {
+     "k_raw": 11,
+     "k_guarded": 10,
+     "tokens_raw": [
+      " app",
+      " woman",
+      " COVID",
+      " hotel",
+      " wedding",
+      " girls",
+      " village",
+      " loan",
+      " actor",
+      " loans",
+      " SEO"
+     ],
+     "tokens_guarded": [
+      " app",
+      " woman",
+      " COVID",
+      " hotel",
+      " wedding",
+      " girls",
+      " village",
+      " loan",
+      " actor",
+      " SEO"
+     ],
+     "dropped": [
+      " loans"
+     ],
+     "verdict_49_stored": "FAIL",
+     "verdict_48tier_unguarded": "FAIL",
+     "verdict_48tier_guarded": "FAIL",
+     "ring_conjunct_pass_stored": true
+    },
+    {
+     "k_raw": 12,
+     "k_guarded": 12,
+     "tokens_raw": [
+      " international",
+      " County",
+      " yellow",
+      " winter",
+      " colors",
+      " Christmas",
+      " teacher",
+      " outdoor",
+      " religious",
+      " boxes",
+      " spiritual",
+      " essay"
+     ],
+     "tokens_guarded": [
+      " international",
+      " County",
+      " yellow",
+      " winter",
+      " colors",
+      " Christmas",
+      " teacher",
+      " outdoor",
+      " religious",
+      " boxes",
+      " spiritual",
+      " essay"
+     ],
+     "dropped": [],
+     "verdict_49_stored": "FAIL",
+     "verdict_48tier_unguarded": "FAIL",
+     "verdict_48tier_guarded": "FAIL",
+     "ring_conjunct_pass_stored": false
+    },
+    {
+     "k_raw": 21,
+     "k_guarded": 1,
+     "tokens_raw": [
+      "T",
+      "C",
+      "E",
+      "P",
+      "M",
+      "R",
+      "D",
+      "N",
+      "L",
+      "B",
+      "O",
+      "F",
+      "H",
+      "G",
+      "W",
+      "U",
+      "V",
+      "K",
+      "J",
+      "X",
+      "Z"
+     ],
+     "tokens_guarded": [
+      "D"
+     ],
+     "dropped": [
+      "T",
+      "C",
+      "E",
+      "P",
+      "M",
+      "R",
+      "N",
+      "L",
+      "B",
+      "O",
+      "F",
+      "H",
+      "G",
+      "W",
+      "U",
+      "V",
+      "K",
+      "J",
+      "X",
+      "Z"
+     ],
+     "verdict_49_stored": "FAIL",
+     "verdict_48tier_unguarded": "FAIL",
+     "verdict_48tier_guarded": "NOT ADJUDICABLE",
+     "ring_conjunct_pass_stored": false
+    },
+    {
+     "k_raw": 9,
+     "k_guarded": 6,
+     "tokens_raw": [
+      "el",
+      "ot",
+      "ch",
+      "ir",
+      "ter",
+      "ab",
+      "un",
+      "us",
+      "ah"
+     ],
+     "tokens_guarded": [
+      "el",
+      "ot",
+      "ch",
+      "ir",
+      "ter",
+      "us"
+     ],
+     "dropped": [
+      "ab",
+      "un",
+      "ah"
+     ],
+     "verdict_49_stored": "FAIL",
+     "verdict_48tier_unguarded": "FAIL",
+     "verdict_48tier_guarded": "NOT ADJUDICABLE",
+     "ring_conjunct_pass_stored": false
+    },
+    {
+     "k_raw": 16,
+     "k_guarded": 12,
+     "tokens_raw": [
+      " May",
+      " Aug",
+      " Oct",
+      " June",
+      " March",
+      " April",
+      " July",
+      " Feb",
+      " August",
+      " September",
+      " January",
+      " October",
+      " November",
+      " December",
+      " February",
+      " Nov"
+     ],
+     "tokens_guarded": [
+      " May",
+      " June",
+      " March",
+      " April",
+      " July",
+      " August",
+      " September",
+      " January",
+      " October",
+      " November",
+      " December",
+      " February"
+     ],
+     "dropped": [
+      " Aug",
+      " Oct",
+      " Feb",
+      " Nov"
+     ],
+     "verdict_49_stored": "FAIL",
+     "verdict_48tier_unguarded": "FAIL",
+     "verdict_48tier_guarded": "MARGINAL",
+     "ring_conjunct_pass_stored": true
+    },
+    {
+     "k_raw": 10,
+     "k_guarded": 10,
+     "tokens_raw": [
+      " get",
+      " take",
+      " going",
+      " tell",
+      " trying",
+      " worth",
+      " designed",
+      " sitting",
+      " buying",
+      " scheduled"
+     ],
+     "tokens_guarded": [
+      " get",
+      " take",
+      " going",
+      " tell",
+      " trying",
+      " worth",
+      " designed",
+      " sitting",
+      " buying",
+      " scheduled"
+     ],
+     "dropped": [],
+     "verdict_49_stored": "FAIL",
+     "verdict_48tier_unguarded": "FAIL",
+     "verdict_48tier_guarded": "FAIL",
+     "ring_conjunct_pass_stored": true
+    },
+    {
+     "k_raw": 16,
+     "k_guarded": 16,
+     "tokens_raw": [
+      " real",
+      " small",
+      " big",
+      " easy",
+      " difficult",
+      " pretty",
+      " interesting",
+      " fully",
+      " huge",
+      " relatively",
+      " tough",
+      " busy",
+      " fairly",
+      " dangerous",
+      " flexible",
+      " continuing"
+     ],
+     "tokens_guarded": [
+      " real",
+      " small",
+      " big",
+      " easy",
+      " difficult",
+      " pretty",
+      " interesting",
+      " fully",
+      " huge",
+      " relatively",
+      " tough",
+      " busy",
+      " fairly",
+      " dangerous",
+      " flexible",
+      " continuing"
+     ],
+     "dropped": [],
+     "verdict_49_stored": "FAIL",
+     "verdict_48tier_unguarded": "FAIL",
+     "verdict_48tier_guarded": "FAIL",
+     "ring_conjunct_pass_stored": false
+    },
+    {
+     "k_raw": 10,
+     "k_guarded": 9,
+     "tokens_raw": [
+      " treatment",
+      " examples",
+      " talent",
+      " symptoms",
+      " criminal",
+      " surgery",
+      " apartment",
+      " recipe",
+      " lighting",
+      " recipes"
+     ],
+     "tokens_guarded": [
+      " treatment",
+      " examples",
+      " talent",
+      " symptoms",
+      " criminal",
+      " surgery",
+      " apartment",
+      " recipe",
+      " lighting"
+     ],
+     "dropped": [
+      " recipes"
+     ],
+     "verdict_49_stored": "FAIL",
+     "verdict_48tier_unguarded": "FAIL",
+     "verdict_48tier_guarded": "FAIL",
+     "ring_conjunct_pass_stored": true
+    },
+    {
+     "k_raw": 11,
+     "k_guarded": 11,
+     "tokens_raw": [
+      " patients",
+      " units",
+      " employees",
+      " military",
+      " audio",
+      " urban",
+      " corporate",
+      " photography",
+      " Student",
+      " faculty",
+      " volunteers"
+     ],
+     "tokens_guarded": [
+      " patients",
+      " units",
+      " employees",
+      " military",
+      " audio",
+      " urban",
+      " corporate",
+      " photography",
+      " Student",
+      " faculty",
+      " volunteers"
+     ],
+     "dropped": [],
+     "verdict_49_stored": "FAIL",
+     "verdict_48tier_unguarded": "FAIL",
+     "verdict_48tier_guarded": "FAIL",
+     "ring_conjunct_pass_stored": true
+    },
+    {
+     "k_raw": 33,
+     "k_guarded": 31,
+     "tokens_raw": [
+      " data",
+      " local",
+      " custom",
+      " success",
+      " research",
+      " young",
+      " human",
+      " version",
+      " analysis",
+      " global",
+      " multi",
+      " users",
+      " customers",
+      " economic",
+      " physical",
+      " clients",
+      " technical",
+      " environmental",
+      " cultural",
+      " cars",
+      " clinical",
+      " cities",
+      " leadership",
+      " regional",
+      " historical",
+      " educational",
+      " rural",
+      " academic",
+      " innovation",
+      " participate",
+      " manufacturers",
+      " residential",
+      " Environmental"
+     ],
+     "tokens_guarded": [
+      " data",
+      " local",
+      " success",
+      " research",
+      " young",
+      " human",
+      " version",
+      " analysis",
+      " global",
+      " multi",
+      " users",
+      " customers",
+      " economic",
+      " physical",
+      " clients",
+      " technical",
+      " environmental",
+      " cultural",
+      " cars",
+      " clinical",
+      " cities",
+      " leadership",
+      " regional",
+      " historical",
+      " educational",
+      " rural",
+      " academic",
+      " innovation",
+      " participate",
+      " manufacturers",
+      " residential"
+     ],
+     "dropped": [
+      " custom",
+      " Environmental"
+     ],
+     "verdict_49_stored": "FAIL",
+     "verdict_48tier_unguarded": "FAIL",
+     "verdict_48tier_guarded": "FAIL",
+     "ring_conjunct_pass_stored": false
+    },
+    {
+     "k_raw": 77,
+     "k_guarded": 68,
+     "tokens_raw": [
+      " in",
+      " and",
+      " (",
+      " or",
+      " at",
+      " The",
+      ").",
+      "),",
+      " In",
+      "\",",
+      "..",
+      " inter",
+      " how",
+      " make",
+      " because",
+      " non",
+      " during",
+      " They",
+      " within",
+      " including",
+      " keep",
+      " give",
+      " based",
+      " working",
+      " provide",
+      " until",
+      " discuss",
+      " bring",
+      " continue",
+      " via",
+      " everything",
+      " except",
+      " includes",
+      " political",
+      " ensure",
+      " became",
+      " throughout",
+      " deliver",
+      " avoid",
+      " whose",
+      " allows",
+      " While",
+      " began",
+      " earn",
+      " gets",
+      " independent",
+      " requires",
+      " Please",
+      " helps",
+      " Every",
+      " Each",
+      " families",
+      " Although",
+      " approximately",
+      " unless",
+      " regarding",
+      " leaving",
+      " election",
+      " depending",
+      " Using",
+      " residents",
+      " Both",
+      " consists",
+      " mostly",
+      " typically",
+      " mainly",
+      " Last",
+      " approval",
+      " largely",
+      " primarily",
+      " involving",
+      " involves",
+      " commonly",
+      " creates",
+      " featuring",
+      ")",
+      ";"
+     ],
+     "tokens_guarded": [
+      " in",
+      " and",
+      " (",
+      " or",
+      " at",
+      " The",
+      " inter",
+      " how",
+      " make",
+      " because",
+      " non",
+      " during",
+      " within",
+      " including",
+      " keep",
+      " give",
+      " based",
+      " working",
+      " provide",
+      " until",
+      " discuss",
+      " bring",
+      " continue",
+      " via",
+      " everything",
+      " except",
+      " includes",
+      " political",
+      " ensure",
+      " became",
+      " throughout",
+      " deliver",
+      " avoid",
+      " whose",
+      " allows",
+      " While",
+      " began",
+      " earn",
+      " gets",
+      " independent",
+      " requires",
+      " Please",
+      " helps",
+      " Each",
+      " families",
+      " Although",
+      " approximately",
+      " unless",
+      " regarding",
+      " leaving",
+      " election",
+      " depending",
+      " Using",
+      " residents",
+      " Both",
+      " consists",
+      " mostly",
+      " typically",
+      " mainly",
+      " Last",
+      " approval",
+      " largely",
+      " primarily",
+      " involving",
+      " involves",
+      " commonly",
+      " creates",
+      " featuring"
+     ],
+     "dropped": [
+      ").",
+      "),",
+      " In",
+      "\",",
+      "..",
+      " They",
+      " Every",
+      ")",
+      ";"
+     ],
+     "verdict_49_stored": "FAIL",
+     "verdict_48tier_unguarded": "FAIL",
+     "verdict_48tier_guarded": "FAIL",
+     "ring_conjunct_pass_stored": false
+    },
+    {
+     "k_raw": 27,
+     "k_guarded": 26,
+     "tokens_raw": [
+      " teach",
+      " protect",
+      " improve",
+      " initial",
+      " solid",
+      " customer",
+      " basic",
+      " larger",
+      " existing",
+      " reduce",
+      " providing",
+      " traditional",
+      " investment",
+      " transition",
+      " foreign",
+      " creative",
+      " helping",
+      " Thursday",
+      " teaching",
+      " consumer",
+      " begins",
+      " massive",
+      " comprehensive",
+      " sustainable",
+      " hundreds",
+      " innovative",
+      " strategic"
+     ],
+     "tokens_guarded": [
+      " protect",
+      " improve",
+      " initial",
+      " solid",
+      " customer",
+      " basic",
+      " larger",
+      " existing",
+      " reduce",
+      " providing",
+      " traditional",
+      " investment",
+      " transition",
+      " foreign",
+      " creative",
+      " helping",
+      " Thursday",
+      " teaching",
+      " consumer",
+      " begins",
+      " massive",
+      " comprehensive",
+      " sustainable",
+      " hundreds",
+      " innovative",
+      " strategic"
+     ],
+     "dropped": [
+      " teach"
+     ],
+     "verdict_49_stored": "FAIL",
+     "verdict_48tier_unguarded": "FAIL",
+     "verdict_48tier_guarded": "FAIL",
+     "ring_conjunct_pass_stored": false
+    },
+    {
+     "k_raw": 89,
+     "k_guarded": 79,
+     "tokens_raw": [
+      " system",
+      " process",
+      " System",
+      " program",
+      " method",
+      " model",
+      " project",
+      " services",
+      " products",
+      " solution",
+      " systems",
+      " options",
+      " growth",
+      " structure",
+      " problems",
+      " areas",
+      " region",
+      " issues",
+      " companies",
+      " events",
+      " items",
+      " evidence",
+      " activities",
+      " functions",
+      " costs",
+      " solutions",
+      " directly",
+      " projects",
+      " equipment",
+      " tool",
+      " requirements",
+      " skills",
+      " rules",
+      " tools",
+      " programs",
+      " operations",
+      " protection",
+      " Program",
+      " communication",
+      " strategy",
+      " workers",
+      " agreement",
+      " objects",
+      " opportunities",
+      " package",
+      " techniques",
+      " standards",
+      " businesses",
+      " discussion",
+      " records",
+      " facilities",
+      " communities",
+      " challenges",
+      " structures",
+      " efficiency",
+      " journey",
+      " tasks",
+      " laws",
+      " organizations",
+      " decisions",
+      " facility",
+      " teachers",
+      " expansion",
+      " assistance",
+      " buildings",
+      " technologies",
+      " locations",
+      " vehicles",
+      " funding",
+      " strategies",
+      " Hospital",
+      " experts",
+      " stores",
+      " programme",
+      " regulations",
+      " fees",
+      " principles",
+      " choices",
+      " consumers",
+      " Systems",
+      " brands",
+      " topics",
+      " styles",
+      " tradition",
+      " firms",
+      " trends",
+      " guidelines",
+      " victims",
+      " buyers"
+     ],
+     "tokens_guarded": [
+      " system",
+      " process",
+      " program",
+      " method",
+      " model",
+      " project",
+      " services",
+      " products",
+      " options",
+      " growth",
+      " structure",
+      " problems",
+      " areas",
+      " region",
+      " issues",
+      " companies",
+      " events",
+      " items",
+      " evidence",
+      " activities",
+      " functions",
+      " costs",
+      " solutions",
+      " directly",
+      " equipment",
+      " requirements",
+      " skills",
+      " rules",
+      " tools",
+      " operations",
+      " protection",
+      " communication",
+      " strategy",
+      " workers",
+      " agreement",
+      " objects",
+      " opportunities",
+      " package",
+      " techniques",
+      " standards",
+      " businesses",
+      " discussion",
+      " records",
+      " facilities",
+      " communities",
+      " challenges",
+      " efficiency",
+      " journey",
+      " tasks",
+      " laws",
+      " organizations",
+      " decisions",
+      " facility",
+      " teachers",
+      " expansion",
+      " assistance",
+      " buildings",
+      " technologies",
+      " locations",
+      " vehicles",
+      " funding",
+      " strategies",
+      " Hospital",
+      " experts",
+      " stores",
+      " regulations",
+      " fees",
+      " principles",
+      " choices",
+      " consumers",
+      " brands",
+      " topics",
+      " styles",
+      " tradition",
+      " firms",
+      " trends",
+      " guidelines",
+      " victims",
+      " buyers"
+     ],
+     "dropped": [
+      " System",
+      " solution",
+      " systems",
+      " projects",
+      " tool",
+      " programs",
+      " Program",
+      " structures",
+      " programme",
+      " Systems"
+     ],
+     "verdict_49_stored": "FAIL",
+     "verdict_48tier_unguarded": "FAIL",
+     "verdict_48tier_guarded": "FAIL",
+     "ring_conjunct_pass_stored": false
+    },
+    {
+     "k_raw": 13,
+     "k_guarded": 13,
+     "tokens_raw": [
+      " created",
+      " described",
+      " produced",
+      " presented",
+      " released",
+      " introduced",
+      " identified",
+      " revealed",
+      " issued",
+      " confirmed",
+      " launched",
+      " pulled",
+      " hosted"
+     ],
+     "tokens_guarded": [
+      " created",
+      " described",
+      " produced",
+      " presented",
+      " released",
+      " introduced",
+      " identified",
+      " revealed",
+      " issued",
+      " confirmed",
+      " launched",
+      " pulled",
+      " hosted"
+     ],
+     "dropped": [],
+     "verdict_49_stored": "FAIL",
+     "verdict_48tier_unguarded": "FAIL",
+     "verdict_48tier_guarded": "FAIL",
+     "ring_conjunct_pass_stored": true
+    }
+   ],
+   "skipped_no_ids": [
+    {
+     "tokens": [
+      " are",
+      " was",
+      " will",
+      " were",
+      " would",
+      " may",
+      " should",
+      " might",
+      " cannot"
+     ],
+     "k_raw": 9,
+     "k_dedup": 7,
+     "verdict": "NOT ADJUDICABLE",
+     "reason": "k<9 after R15 dedup",
+     "note": "membership not stored as token ids; already NOT ADJUDICABLE at k < 9 after R15, and P1 can only shrink it further -- verdict cannot change"
+    }
+   ],
+   "R14_rows": [
+    {
+     "member_hash": "a36a4f4f3e3b",
+     "layer": 6,
+     "k": 12,
+     "tokens": [
+      " May",
+      " June",
+      " March",
+      " April",
+      " July",
+      " August",
+      " September",
+      " January",
+      " October",
+      " November",
+      " December",
+      " February"
+     ],
+     "token_ids": [
+      3353,
+      5142,
+      5261,
+      5365,
+      5505,
+      5729,
+      5857,
+      6027,
+      6198,
+      6243,
+      6384,
+      7250
+     ],
+     "counts": [
+      777,
+      538,
+      600,
+      537,
+      539,
+      414,
+      412,
+      422,
+      417,
+      431,
+      374,
+      385
+     ],
+     "gap_ratio": 1.542422222283976,
+     "rho": 0.993006993006993,
+     "order_state": "MARGINAL",
+     "order_detail": "rho 0.9930 inside seed p99 band [0.9930, 0.9930]",
+     "loo_order_state": "PASS",
+     "loo_closure_pass": true,
+     "loo_rho_min": 0.990909090909091,
+     "loo_gap_max": 2.1787487800405354,
+     "cell_p99_band": [
+      0.993006993006993,
+      0.993006993006993
+     ],
+     "cell_saturated": false,
+     "verdict": "MARGINAL",
+     "channel3": {
+      "ov_retention": 0.38609022981964664,
+      "per_head": [
+       0.4535301168119759,
+       0.41452557438948145,
+       0.3379106679650025,
+       0.3383945601121266
+      ],
+      "null_p99": 0.29404244152422765,
+      "null_mean": 0.24000575119000542,
+      "above_p99": true,
+      "declared_conjunct": false
+     },
+     "is_strict12": true,
+     "frequency_arm": {
+      "n": 200,
+      "p99": 0.9790209790209791,
+      "median": 0.7132867132867133,
+      "closure_rate": 0.09,
+      "pass_": true
+     },
+     "permuted_search_mean": 0.0,
+     "R14_PASS": false
+    }
+   ],
+   "n_R14_PASS": 0,
+   "n_P2_adjudicated": 0,
+   "expected_false_P2": 0.0,
+   "P2_rows": [],
+   "n_PASS_P2": 0
+  },
+  "L7_permuted_search_as_stored": {
+   "n_permutations": 20,
+   "per_permutation": [
+    {
+     "30": 0,
+     "40": 0,
+     "45": 0
+    },
+    {
+     "30": 0,
+     "40": 0,
+     "45": 0
+    },
+    {
+     "30": 0,
+     "40": 0,
+     "45": 0
+    },
+    {
+     "30": 0,
+     "40": 0,
+     "45": 0
+    },
+    {
+     "30": 0,
+     "40": 0,
+     "45": 0
+    },
+    {
+     "30": 0,
+     "40": 0,
+     "45": 0
+    },
+    {
+     "30": 0,
+     "40": 0,
+     "45": 0
+    },
+    {
+     "30": 0,
+     "40": 0,
+     "45": 0
+    },
+    {
+     "30": 0,
+     "40": 0,
+     "45": 0
+    },
+    {
+     "30": 0,
+     "40": 0,
+     "45": 0
+    },
+    {
+     "30": 0,
+     "40": 0,
+     "45": 0
+    },
+    {
+     "30": 0,
+     "40": 0,
+     "45": 0
+    },
+    {
+     "30": 0,
+     "40": 0,
+     "45": 0
+    },
+    {
+     "30": 0,
+     "40": 0,
+     "45": 0
+    },
+    {
+     "30": 0,
+     "40": 0,
+     "45": 0
+    },
+    {
+     "30": 0,
+     "40": 0,
+     "45": 0
+    },
+    {
+     "30": 0,
+     "40": 0,
+     "45": 0
+    },
+    {
+     "30": 0,
+     "40": 0,
+     "45": 0
+    },
+    {
+     "30": 0,
+     "40": 0,
+     "45": 0
+    },
+    {
+     "30": 0,
+     "40": 0,
+     "45": 0
+    }
+   ],
+   "mean_passers": {
+    "30": 0.0,
+    "40": 0.0,
+    "45": 0.0
+   },
+   "seconds": 88.8
+  },
+  "L7_tau30": {
+   "n_proposals": 1,
+   "n_unique_guarded": 1,
+   "n_changed_by_guard": 0,
+   "n_below_kmin": 0,
+   "stored_verdicts_49": {
+    "NOT ADJUDICABLE": 1
+   },
+   "tally_48tier_unguarded": {
+    "NOT ADJUDICABLE": 1
+   },
+   "tally_48tier_guarded": {
+    "NOT ADJUDICABLE": 1
+   },
+   "guarded_screen_max_rho_by_k": {
+    "9": 0.9833333333333333
+   },
+   "proposals": [
+    {
+     "k_raw": 9,
+     "k_guarded": 9,
+     "tokens_raw": [
+      " March",
+      " April",
+      " July",
+      " August",
+      " September",
+      " January",
+      " October",
+      " November",
+      " February"
+     ],
+     "tokens_guarded": [
+      " March",
+      " April",
+      " July",
+      " August",
+      " September",
+      " January",
+      " October",
+      " November",
+      " February"
+     ],
+     "dropped": [],
+     "verdict_49_stored": "NOT ADJUDICABLE",
+     "verdict_48tier_unguarded": "NOT ADJUDICABLE",
+     "verdict_48tier_guarded": "NOT ADJUDICABLE",
+     "ring_conjunct_pass_stored": true
+    }
+   ],
+   "skipped_no_ids": [
+    {
+     "tokens": [
+      "T",
+      "P",
+      "M",
+      "R",
+      "L",
+      "B",
+      "F",
+      "H",
+      "W",
+      "V"
+     ],
+     "k_raw": 10,
+     "k_dedup": 8,
+     "verdict": "NOT ADJUDICABLE",
+     "reason": "k<9 after R15 dedup",
+     "note": "membership not stored as token ids; already NOT ADJUDICABLE at k < 9 after R15, and P1 can only shrink it further -- verdict cannot change"
+    }
+   ],
+   "R14_rows": [],
+   "n_R14_PASS": 0,
+   "n_P2_adjudicated": 0,
+   "expected_false_P2": 0.0,
+   "P2_rows": [],
+   "n_PASS_P2": 0
+  },
+  "L7_tau40": {
+   "n_proposals": 9,
+   "n_unique_guarded": 9,
+   "n_changed_by_guard": 8,
+   "n_below_kmin": 6,
+   "stored_verdicts_49": {
+    "FAIL": 7,
+    "NOT ADJUDICABLE": 2
+   },
+   "tally_48tier_unguarded": {
+    "NOT ADJUDICABLE": 2,
+    "FAIL": 7
+   },
+   "tally_48tier_guarded": {
+    "NOT ADJUDICABLE": 7,
+    "FAIL": 2
+   },
+   "guarded_screen_max_rho_by_k": {
+    "10": 0.9878787878787879
+   },
+   "proposals": [
+    {
+     "k_raw": 11,
+     "k_guarded": 8,
+     "tokens_raw": [
+      "Get",
+      "What",
+      "How",
+      "Be",
+      "Do",
+      "Let",
+      "Can",
+      "Don",
+      "Where",
+      "Why",
+      "Who"
+     ],
+     "tokens_guarded": [
+      "What",
+      "How",
+      "Be",
+      "Do",
+      "Let",
+      "Can",
+      "Where",
+      "Why"
+     ],
+     "dropped": [
+      "Get",
+      "Don",
+      "Who"
+     ],
+     "verdict_49_stored": "FAIL",
+     "verdict_48tier_unguarded": "FAIL",
+     "verdict_48tier_guarded": "NOT ADJUDICABLE",
+     "ring_conjunct_pass_stored": false
+    },
+    {
+     "k_raw": 10,
+     "k_guarded": 6,
+     "tokens_raw": [
+      "The",
+      "In",
+      "To",
+      "An",
+      "For",
+      "On",
+      "At",
+      "Over",
+      "One",
+      "Two"
+     ],
+     "tokens_guarded": [
+      "The",
+      "In",
+      "To",
+      "For",
+      "At",
+      "Over"
+     ],
+     "dropped": [
+      "An",
+      "On",
+      "One",
+      "Two"
+     ],
+     "verdict_49_stored": "NOT ADJUDICABLE",
+     "verdict_48tier_unguarded": "NOT ADJUDICABLE",
+     "verdict_48tier_guarded": "NOT ADJUDICABLE",
+     "ring_conjunct_pass_stored": true
+    },
+    {
+     "k_raw": 18,
+     "k_guarded": 18,
+     "tokens_raw": [
+      "If",
+      "All",
+      "With",
+      "Not",
+      "When",
+      "After",
+      "Each",
+      "While",
+      "Please",
+      "Some",
+      "Since",
+      "Just",
+      "Many",
+      "Every",
+      "Most",
+      "During",
+      "Once",
+      "Even"
+     ],
+     "tokens_guarded": [
+      "If",
+      "All",
+      "With",
+      "Not",
+      "When",
+      "After",
+      "Each",
+      "While",
+      "Please",
+      "Some",
+      "Since",
+      "Just",
+      "Many",
+      "Every",
+      "Most",
+      "During",
+      "Once",
+      "Even"
+     ],
+     "dropped": [],
+     "verdict_49_stored": "FAIL",
+     "verdict_48tier_unguarded": "FAIL",
+     "verdict_48tier_guarded": "FAIL",
+     "ring_conjunct_pass_stored": true
+    },
+    {
+     "k_raw": 18,
+     "k_guarded": 1,
+     "tokens_raw": [
+      "T",
+      "C",
+      "E",
+      "M",
+      "R",
+      "D",
+      "B",
+      "O",
+      "F",
+      "H",
+      "G",
+      "W",
+      "U",
+      "V",
+      "K",
+      "J",
+      "Y",
+      "Z"
+     ],
+     "tokens_guarded": [
+      "D"
+     ],
+     "dropped": [
+      "T",
+      "C",
+      "E",
+      "M",
+      "R",
+      "B",
+      "O",
+      "F",
+      "H",
+      "G",
+      "W",
+      "U",
+      "V",
+      "K",
+      "J",
+      "Y",
+      "Z"
+     ],
+     "verdict_49_stored": "FAIL",
+     "verdict_48tier_unguarded": "FAIL",
+     "verdict_48tier_guarded": "NOT ADJUDICABLE",
+     "ring_conjunct_pass_stored": true
+    },
+    {
+     "k_raw": 11,
+     "k_guarded": 5,
+     "tokens_raw": [
+      " R",
+      " F",
+      " O",
+      " V",
+      " Ch",
+      " Se",
+      " Sh",
+      " Bl",
+      " Cal",
+      " Pre",
+      " Sw"
+     ],
+     "tokens_guarded": [
+      " R",
+      " Sh",
+      " Bl",
+      " Cal",
+      " Pre"
+     ],
+     "dropped": [
+      " F",
+      " O",
+      " V",
+      " Ch",
+      " Se",
+      " Sw"
+     ],
+     "verdict_49_stored": "FAIL",
+     "verdict_48tier_unguarded": "FAIL",
+     "verdict_48tier_guarded": "NOT ADJUDICABLE",
+     "ring_conjunct_pass_stored": true
+    },
+    {
+     "k_raw": 9,
+     "k_guarded": 8,
+     "tokens_raw": [
+      " services",
+      " structure",
+      " tool",
+      " tools",
+      " strategy",
+      " opportunities",
+      " standards",
+      " laws",
+      " principles"
+     ],
+     "tokens_guarded": [
+      " services",
+      " structure",
+      " tools",
+      " strategy",
+      " opportunities",
+      " standards",
+      " laws",
+      " principles"
+     ],
+     "dropped": [
+      " tool"
+     ],
+     "verdict_49_stored": "FAIL",
+     "verdict_48tier_unguarded": "FAIL",
+     "verdict_48tier_guarded": "NOT ADJUDICABLE",
+     "ring_conjunct_pass_stored": true
+    },
+    {
+     "k_raw": 26,
+     "k_guarded": 23,
+     "tokens_raw": [
+      " process",
+      " program",
+      " method",
+      " products",
+      " solution",
+      " systems",
+      " options",
+      " companies",
+      " activities",
+      " solutions",
+      " projects",
+      " requirements",
+      " rules",
+      " programs",
+      " techniques",
+      " communities",
+      " tasks",
+      " buildings",
+      " technologies",
+      " funding",
+      " strategies",
+      " experts",
+      " programme",
+      " regulations",
+      " trends",
+      " capabilities"
+     ],
+     "tokens_guarded": [
+      " process",
+      " program",
+      " method",
+      " products",
+      " systems",
+      " options",
+      " companies",
+      " activities",
+      " solutions",
+      " projects",
+      " requirements",
+      " rules",
+      " techniques",
+      " communities",
+      " tasks",
+      " buildings",
+      " technologies",
+      " funding",
+      " strategies",
+      " experts",
+      " regulations",
+      " trends",
+      " capabilities"
+     ],
+     "dropped": [
+      " solution",
+      " programs",
+      " programme"
+     ],
+     "verdict_49_stored": "FAIL",
+     "verdict_48tier_unguarded": "FAIL",
+     "verdict_48tier_guarded": "FAIL",
+     "ring_conjunct_pass_stored": false
+    },
+    {
+     "k_raw": 10,
+     "k_guarded": 8,
+     "tokens_raw": [
+      " in",
+      " and",
+      " (",
+      " at",
+      ").",
+      "),",
+      " during",
+      " within",
+      " via",
+      ";"
+     ],
+     "tokens_guarded": [
+      " in",
+      " and",
+      " (",
+      " at",
+      ").",
+      " during",
+      " within",
+      " via"
+     ],
+     "dropped": [
+      "),",
+      ";"
+     ],
+     "verdict_49_stored": "NOT ADJUDICABLE",
+     "verdict_48tier_unguarded": "NOT ADJUDICABLE",
+     "verdict_48tier_guarded": "NOT ADJUDICABLE",
+     "ring_conjunct_pass_stored": false
+    },
+    {
+     "k_raw": 12,
+     "k_guarded": 10,
+     "tokens_raw": [
+      " Aug",
+      " March",
+      " April",
+      " July",
+      " Feb",
+      " August",
+      " September",
+      " January",
+      " October",
+      " November",
+      " December",
+      " February"
+     ],
+     "tokens_guarded": [
+      " March",
+      " April",
+      " July",
+      " August",
+      " September",
+      " January",
+      " October",
+      " November",
+      " December",
+      " February"
+     ],
+     "dropped": [
+      " Aug",
+      " Feb"
+     ],
+     "verdict_49_stored": "FAIL",
+     "verdict_48tier_unguarded": "FAIL",
+     "verdict_48tier_guarded": "NOT ADJUDICABLE",
+     "ring_conjunct_pass_stored": true
+    }
+   ],
+   "skipped_no_ids": [],
+   "R14_rows": [],
+   "n_R14_PASS": 0,
+   "n_P2_adjudicated": 0,
+   "expected_false_P2": 0.0,
+   "P2_rows": [],
+   "n_PASS_P2": 0
+  },
+  "L7_tau45": {
+   "n_proposals": 17,
+   "n_unique_guarded": 17,
+   "n_changed_by_guard": 9,
+   "n_below_kmin": 4,
+   "stored_verdicts_49": {
+    "FAIL": 15,
+    "NOT ADJUDICABLE": 2
+   },
+   "tally_48tier_unguarded": {
+    "NOT ADJUDICABLE": 2,
+    "FAIL": 15
+   },
+   "tally_48tier_guarded": {
+    "NOT ADJUDICABLE": 7,
+    "FAIL": 10
+   },
+   "guarded_screen_max_rho_by_k": {
+    "9": 0.8,
+    "10": 0.9878787878787879
+   },
+   "proposals": [
+    {
+     "k_raw": 10,
+     "k_guarded": 8,
+     "tokens_raw": [
+      "It",
+      "We",
+      "This",
+      "You",
+      "There",
+      "They",
+      "Our",
+      "These",
+      "People",
+      "I"
+     ],
+     "tokens_guarded": [
+      "We",
+      "This",
+      "You",
+      "There",
+      "They",
+      "Our",
+      "People",
+      "I"
+     ],
+     "dropped": [
+      "It",
+      "These"
+     ],
+     "verdict_49_stored": "FAIL",
+     "verdict_48tier_unguarded": "FAIL",
+     "verdict_48tier_guarded": "NOT ADJUDICABLE",
+     "ring_conjunct_pass_stored": true
+    },
+    {
+     "k_raw": 49,
+     "k_guarded": 32,
+     "tokens_raw": [
+      "The",
+      "In",
+      "Re",
+      "To",
+      "An",
+      "By",
+      "For",
+      "On",
+      "If",
+      "All",
+      "Get",
+      "With",
+      "What",
+      "No",
+      "At",
+      "How",
+      "Be",
+      "So",
+      "Over",
+      "Not",
+      "When",
+      "From",
+      "One",
+      "After",
+      "Do",
+      "Now",
+      "Let",
+      "Each",
+      "Here",
+      "While",
+      "Can",
+      "Don",
+      "Please",
+      "Some",
+      "Since",
+      "Where",
+      "Why",
+      "Two",
+      "Just",
+      "Many",
+      "Well",
+      "Every",
+      "Before",
+      "Most",
+      "During",
+      "Once",
+      "Even",
+      "Who",
+      "Today"
+     ],
+     "tokens_guarded": [
+      "The",
+      "In",
+      "Re",
+      "By",
+      "For",
+      "All",
+      "With",
+      "What",
+      "At",
+      "How",
+      "So",
+      "Over",
+      "When",
+      "From",
+      "After",
+      "Let",
+      "Each",
+      "Here",
+      "While",
+      "Please",
+      "Some",
+      "Since",
+      "Why",
+      "Just",
+      "Many",
+      "Well",
+      "Every",
+      "Before",
+      "Most",
+      "During",
+      "Even",
+      "Today"
+     ],
+     "dropped": [
+      "To",
+      "An",
+      "On",
+      "If",
+      "Get",
+      "No",
+      "Be",
+      "Not",
+      "One",
+      "Do",
+      "Now",
+      "Can",
+      "Don",
+      "Where",
+      "Two",
+      "Once",
+      "Who"
+     ],
+     "verdict_49_stored": "FAIL",
+     "verdict_48tier_unguarded": "FAIL",
+     "verdict_48tier_guarded": "FAIL",
+     "ring_conjunct_pass_stored": false
+    },
+    {
+     "k_raw": 18,
+     "k_guarded": 1,
+     "tokens_raw": [
+      "T",
+      "C",
+      "E",
+      "M",
+      "R",
+      "D",
+      "B",
+      "O",
+      "F",
+      "H",
+      "G",
+      "W",
+      "U",
+      "V",
+      "K",
+      "J",
+      "Y",
+      "Z"
+     ],
+     "tokens_guarded": [
+      "D"
+     ],
+     "dropped": [
+      "T",
+      "C",
+      "E",
+      "M",
+      "R",
+      "B",
+      "O",
+      "F",
+      "H",
+      "G",
+      "W",
+      "U",
+      "V",
+      "K",
+      "J",
+      "Y",
+      "Z"
+     ],
+     "verdict_49_stored": "FAIL",
+     "verdict_48tier_unguarded": "FAIL",
+     "verdict_48tier_guarded": "NOT ADJUDICABLE",
+     "ring_conjunct_pass_stored": true
+    },
+    {
+     "k_raw": 12,
+     "k_guarded": 4,
+     "tokens_raw": [
+      " S",
+      " O",
+      " V",
+      " Ch",
+      " Se",
+      " Al",
+      " Sh",
+      " Bl",
+      " Cal",
+      " Pre",
+      " Mc",
+      " Sw"
+     ],
+     "tokens_guarded": [
+      " S",
+      " Al",
+      " Pre",
+      " Mc"
+     ],
+     "dropped": [
+      " O",
+      " V",
+      " Ch",
+      " Se",
+      " Sh",
+      " Bl",
+      " Cal",
+      " Sw"
+     ],
+     "verdict_49_stored": "FAIL",
+     "verdict_48tier_unguarded": "FAIL",
+     "verdict_48tier_guarded": "NOT ADJUDICABLE",
+     "ring_conjunct_pass_stored": true
+    },
+    {
+     "k_raw": 13,
+     "k_guarded": 6,
+     "tokens_raw": [
+      " M",
+      " E",
+      " Th",
+      " Un",
+      " An",
+      " Ar",
+      " De",
+      " Le",
+      " Sp",
+      " El",
+      " Ab",
+      " Little",
+      " Small"
+     ],
+     "tokens_guarded": [
+      " M",
+      " Th",
+      " An",
+      " Sp",
+      " Little",
+      " Small"
+     ],
+     "dropped": [
+      " E",
+      " Un",
+      " Ar",
+      " De",
+      " Le",
+      " El",
+      " Ab"
+     ],
+     "verdict_49_stored": "FAIL",
+     "verdict_48tier_unguarded": "FAIL",
+     "verdict_48tier_guarded": "NOT ADJUDICABLE",
+     "ring_conjunct_pass_stored": false
+    },
+    {
+     "k_raw": 9,
+     "k_guarded": 9,
+     "tokens_raw": [
+      " private",
+      " blue",
+      " yellow",
+      " winter",
+      " Christmas",
+      " cultural",
+      " pink",
+      " outdoor",
+      " spiritual"
+     ],
+     "tokens_guarded": [
+      " private",
+      " blue",
+      " yellow",
+      " winter",
+      " Christmas",
+      " cultural",
+      " pink",
+      " outdoor",
+      " spiritual"
+     ],
+     "dropped": [],
+     "verdict_49_stored": "FAIL",
+     "verdict_48tier_unguarded": "FAIL",
+     "verdict_48tier_guarded": "FAIL",
+     "ring_conjunct_pass_stored": true
+    },
+    {
+     "k_raw": 11,
+     "k_guarded": 11,
+     "tokens_raw": [
+      " local",
+      " custom",
+      " human",
+      " economic",
+      " visual",
+      " creative",
+      " scientific",
+      " historical",
+      " corporate",
+      " sustainable",
+      " innovative"
+     ],
+     "tokens_guarded": [
+      " local",
+      " custom",
+      " human",
+      " economic",
+      " visual",
+      " creative",
+      " scientific",
+      " historical",
+      " corporate",
+      " sustainable",
+      " innovative"
+     ],
+     "dropped": [],
+     "verdict_49_stored": "FAIL",
+     "verdict_48tier_unguarded": "FAIL",
+     "verdict_48tier_guarded": "FAIL",
+     "ring_conjunct_pass_stored": true
+    },
+    {
+     "k_raw": 11,
+     "k_guarded": 11,
+     "tokens_raw": [
+      " story",
+      " problems",
+      " issues",
+      " evidence",
+      " political",
+      " situation",
+      " challenges",
+      " decisions",
+      " battle",
+      " choices",
+      " politics"
+     ],
+     "tokens_guarded": [
+      " story",
+      " problems",
+      " issues",
+      " evidence",
+      " political",
+      " situation",
+      " challenges",
+      " decisions",
+      " battle",
+      " choices",
+      " politics"
+     ],
+     "dropped": [],
+     "verdict_49_stored": "FAIL",
+     "verdict_48tier_unguarded": "FAIL",
+     "verdict_48tier_guarded": "FAIL",
+     "ring_conjunct_pass_stored": true
+    },
+    {
+     "k_raw": 47,
+     "k_guarded": 43,
+     "tokens_raw": [
+      " process",
+      " program",
+      " method",
+      " services",
+      " products",
+      " solution",
+      " systems",
+      " options",
+      " structure",
+      " patients",
+      " staff",
+      " companies",
+      " activities",
+      " costs",
+      " solutions",
+      " projects",
+      " tool",
+      " requirements",
+      " rules",
+      " tools",
+      " programs",
+      " operations",
+      " strategy",
+      " opportunities",
+      " techniques",
+      " standards",
+      " communities",
+      " journey",
+      " tasks",
+      " laws",
+      " teachers",
+      " buildings",
+      " technologies",
+      " locations",
+      " vehicles",
+      " funding",
+      " strategies",
+      " artists",
+      " experts",
+      " programme",
+      " regulations",
+      " principles",
+      " firms",
+      " trends",
+      " capabilities",
+      " tickets",
+      " manufacturers"
+     ],
+     "tokens_guarded": [
+      " process",
+      " program",
+      " method",
+      " services",
+      " products",
+      " systems",
+      " options",
+      " structure",
+      " patients",
+      " staff",
+      " companies",
+      " activities",
+      " costs",
+      " solutions",
+      " projects",
+      " requirements",
+      " rules",
+      " tools",
+      " operations",
+      " strategy",
+      " opportunities",
+      " techniques",
+      " standards",
+      " communities",
+      " journey",
+      " tasks",
+      " laws",
+      " teachers",
+      " buildings",
+      " technologies",
+      " locations",
+      " vehicles",
+      " funding",
+      " strategies",
+      " artists",
+      " experts",
+      " regulations",
+      " principles",
+      " firms",
+      " trends",
+      " capabilities",
+      " tickets",
+      " manufacturers"
+     ],
+     "dropped": [
+      " solution",
+      " tool",
+      " programs",
+      " programme"
+     ],
+     "verdict_49_stored": "FAIL",
+     "verdict_48tier_unguarded": "FAIL",
+     "verdict_48tier_guarded": "FAIL",
+     "ring_conjunct_pass_stored": false
+    },
+    {
+     "k_raw": 10,
+     "k_guarded": 10,
+     "tokens_raw": [
+      " The",
+      " This",
+      " When",
+      " Get",
+      " Don",
+      " Every",
+      " Even",
+      " Make",
+      " Both",
+      " Where"
+     ],
+     "tokens_guarded": [
+      " The",
+      " This",
+      " When",
+      " Get",
+      " Don",
+      " Every",
+      " Even",
+      " Make",
+      " Both",
+      " Where"
+     ],
+     "dropped": [],
+     "verdict_49_stored": "NOT ADJUDICABLE",
+     "verdict_48tier_unguarded": "NOT ADJUDICABLE",
+     "verdict_48tier_guarded": "NOT ADJUDICABLE",
+     "ring_conjunct_pass_stored": false
+    },
+    {
+     "k_raw": 11,
+     "k_guarded": 11,
+     "tokens_raw": [
+      " has",
+      " gives",
+      " includes",
+      " became",
+      " allows",
+      " helps",
+      " continues",
+      " consists",
+      " remained",
+      " involves",
+      " keeps"
+     ],
+     "tokens_guarded": [
+      " has",
+      " gives",
+      " includes",
+      " became",
+      " allows",
+      " helps",
+      " continues",
+      " consists",
+      " remained",
+      " involves",
+      " keeps"
+     ],
+     "dropped": [],
+     "verdict_49_stored": "FAIL",
+     "verdict_48tier_unguarded": "FAIL",
+     "verdict_48tier_guarded": "FAIL",
+     "ring_conjunct_pass_stored": true
+    },
+    {
+     "k_raw": 9,
+     "k_guarded": 9,
+     "tokens_raw": [
+      " In",
+      " At",
+      " Since",
+      " While",
+      " Please",
+      " Each",
+      " During",
+      " Using",
+      " Instead"
+     ],
+     "tokens_guarded": [
+      " In",
+      " At",
+      " Since",
+      " While",
+      " Please",
+      " Each",
+      " During",
+      " Using",
+      " Instead"
+     ],
+     "dropped": [],
+     "verdict_49_stored": "NOT ADJUDICABLE",
+     "verdict_48tier_unguarded": "NOT ADJUDICABLE",
+     "verdict_48tier_guarded": "NOT ADJUDICABLE",
+     "ring_conjunct_pass_stored": true
+    },
+    {
+     "k_raw": 16,
+     "k_guarded": 14,
+     "tokens_raw": [
+      " in",
+      " and",
+      " (",
+      " at",
+      ").",
+      "),",
+      " non",
+      " during",
+      " within",
+      " via",
+      " except",
+      " throughout",
+      " requires",
+      " unless",
+      " featuring",
+      ";"
+     ],
+     "tokens_guarded": [
+      " in",
+      " and",
+      " (",
+      " at",
+      ").",
+      " non",
+      " during",
+      " within",
+      " via",
+      " except",
+      " throughout",
+      " requires",
+      " unless",
+      " featuring"
+     ],
+     "dropped": [
+      "),",
+      ";"
+     ],
+     "verdict_49_stored": "FAIL",
+     "verdict_48tier_unguarded": "FAIL",
+     "verdict_48tier_guarded": "FAIL",
+     "ring_conjunct_pass_stored": false
+    },
+    {
+     "k_raw": 10,
+     "k_guarded": 10,
+     "tokens_raw": [
+      " real",
+      " big",
+      " difficult",
+      " solid",
+      " pretty",
+      " huge",
+      " wonderful",
+      " massive",
+      " tough",
+      " lovely"
+     ],
+     "tokens_guarded": [
+      " real",
+      " big",
+      " difficult",
+      " solid",
+      " pretty",
+      " huge",
+      " wonderful",
+      " massive",
+      " tough",
+      " lovely"
+     ],
+     "dropped": [],
+     "verdict_49_stored": "FAIL",
+     "verdict_48tier_unguarded": "FAIL",
+     "verdict_48tier_guarded": "FAIL",
+     "ring_conjunct_pass_stored": false
+    },
+    {
+     "k_raw": 12,
+     "k_guarded": 10,
+     "tokens_raw": [
+      " Aug",
+      " March",
+      " April",
+      " July",
+      " Feb",
+      " August",
+      " September",
+      " January",
+      " October",
+      " November",
+      " December",
+      " February"
+     ],
+     "tokens_guarded": [
+      " March",
+      " April",
+      " July",
+      " August",
+      " September",
+      " January",
+      " October",
+      " November",
+      " December",
+      " February"
+     ],
+     "dropped": [
+      " Aug",
+      " Feb"
+     ],
+     "verdict_49_stored": "FAIL",
+     "verdict_48tier_unguarded": "FAIL",
+     "verdict_48tier_guarded": "NOT ADJUDICABLE",
+     "ring_conjunct_pass_stored": true
+    },
+    {
+     "k_raw": 14,
+     "k_guarded": 13,
+     "tokens_raw": [
+      " made",
+      " taken",
+      " provided",
+      " created",
+      " sold",
+      " produced",
+      " presented",
+      " played",
+      " placed",
+      " introduced",
+      " offered",
+      " removed",
+      " bought",
+      " picked"
+     ],
+     "tokens_guarded": [
+      " made",
+      " taken",
+      " provided",
+      " created",
+      " sold",
+      " produced",
+      " presented",
+      " played",
+      " introduced",
+      " offered",
+      " removed",
+      " bought",
+      " picked"
+     ],
+     "dropped": [
+      " placed"
+     ],
+     "verdict_49_stored": "FAIL",
+     "verdict_48tier_unguarded": "FAIL",
+     "verdict_48tier_guarded": "FAIL",
+     "ring_conjunct_pass_stored": true
+    },
+    {
+     "k_raw": 10,
+     "k_guarded": 10,
+     "tokens_raw": [
+      " released",
+      " turned",
+      " announced",
+      " identified",
+      " opened",
+      " revealed",
+      " issued",
+      " launched",
+      " dropped",
+      " pulled"
+     ],
+     "tokens_guarded": [
+      " released",
+      " turned",
+      " announced",
+      " identified",
+      " opened",
+      " revealed",
+      " issued",
+      " launched",
+      " dropped",
+      " pulled"
+     ],
+     "dropped": [],
+     "verdict_49_stored": "FAIL",
+     "verdict_48tier_unguarded": "FAIL",
+     "verdict_48tier_guarded": "FAIL",
+     "ring_conjunct_pass_stored": true
+    }
+   ],
+   "skipped_no_ids": [
+    {
+     "tokens": [
+      " don",
+      " didn",
+      " doesn",
+      " isn",
+      " wasn",
+      " couldn",
+      " aren",
+      " wouldn",
+      " hasn"
+     ],
+     "k_raw": 9,
+     "k_dedup": 3,
+     "verdict": "NOT ADJUDICABLE",
+     "reason": "k<9 after R15 dedup",
+     "note": "membership not stored as token ids; already NOT ADJUDICABLE at k < 9 after R15, and P1 can only shrink it further -- verdict cannot change"
+    },
+    {
+     "tokens": [
+      "et",
+      "om",
+      "il",
+      "ol",
+      "ac",
+      "ak",
+      "ang",
+      "aw",
+      "ha"
+     ],
+     "k_raw": 9,
+     "k_dedup": 4,
+     "verdict": "NOT ADJUDICABLE",
+     "reason": "k<9 after R15 dedup",
+     "note": "membership not stored as token ids; already NOT ADJUDICABLE at k < 9 after R15, and P1 can only shrink it further -- verdict cannot change"
+    },
+    {
+     "tokens": [
+      "en",
+      "al",
+      "le",
+      "ch",
+      "ir",
+      "os",
+      "ter",
+      "ys",
+      "r"
+     ],
+     "k_raw": 9,
+     "k_dedup": 7,
+     "verdict": "NOT ADJUDICABLE",
+     "reason": "k<9 after R15 dedup",
+     "note": "membership not stored as token ids; already NOT ADJUDICABLE at k < 9 after R15, and P1 can only shrink it further -- verdict cannot change"
+    },
+    {
+     "tokens": [
+      "ar",
+      "ine",
+      "ies",
+      "ia",
+      "ors",
+      "ings",
+      "ons",
+      "ash",
+      "ai"
+     ],
+     "k_raw": 9,
+     "k_dedup": 7,
+     "verdict": "NOT ADJUDICABLE",
+     "reason": "k<9 after R15 dedup",
+     "note": "membership not stored as token ids; already NOT ADJUDICABLE at k < 9 after R15, and P1 can only shrink it further -- verdict cannot change"
+    }
+   ],
+   "R14_rows": [],
+   "n_R14_PASS": 0,
+   "n_P2_adjudicated": 0,
+   "expected_false_P2": 0.0,
+   "P2_rows": [],
+   "n_PASS_P2": 0
+  }
+ },
+ "channel3_nulls": {
+  "L6_k12": {
+   "n": 500,
+   "p99": 0.29404244152422765,
+   "mean": 0.24000575119000542,
+   "max": 0.3027738644635606
+  },
+  "L6_k9": {
+   "n": 500,
+   "p99": 0.3095543656349977,
+   "mean": 0.25367112971435374,
+   "max": 0.32908606869947865
+  },
+  "L6_k10": {
+   "n": 500,
+   "p99": 0.2957652319886827,
+   "mean": 0.2484100159582423,
+   "max": 0.3179472898592711
+  },
+  "L7_k9": {
+   "n": 500,
+   "p99": 0.3144631114300113,
+   "mean": 0.25418135865160485,
+   "max": 0.3386183950284228
+  },
+  "L7_k10": {
+   "n": 500,
+   "p99": 0.3144410233964515,
+   "mean": 0.24882520926745894,
+   "max": 0.33773496398305103
+  }
+ },
+ "permuted_search_as_stored": {
+  "L6_A": {
+   "n_permutations": 20,
+   "mean_pass": 0.0,
+   "pass_counts": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "proposal_counts": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  "L6_B": {
+   "n_permutations": 10,
+   "mean_pass": 0.0,
+   "pass_counts": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "proposal_counts": [
+    49131,
+    49274,
+    49110,
+    49896,
+    49335,
+    48666,
+    48365,
+    49090,
+    48964,
+    48932
+   ]
+  },
+  "L7_A": {
+   "n_permutations": 20,
+   "mean_pass": 0.0,
+   "pass_counts": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "proposal_counts": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  "L7_B": {
+   "n_permutations": 10,
+   "mean_pass": 0.0,
+   "pass_counts": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "proposal_counts": [
+    49973,
+    51827,
+    49718,
+    51622,
+    50280,
+    50670,
+    51529,
+    50955,
+    50637,
+    50443
+   ]
+  }
+ },
+ "summary": {
+  "strict12_guard_unchanged": true,
+  "all_R14_PASS": [
+   {
+    "member_hash": "a36a4f4f3e3b",
+    "layer": 6,
+    "k": 12,
+    "tokens": [
+     " May",
+     " June",
+     " March",
+     " April",
+     " July",
+     " August",
+     " September",
+     " January",
+     " October",
+     " November",
+     " December",
+     " February"
+    ],
+    "token_ids": [
+     3353,
+     5142,
+     5261,
+     5365,
+     5505,
+     5729,
+     5857,
+     6027,
+     6198,
+     6243,
+     6384,
+     7250
+    ],
+    "counts": [
+     777,
+     538,
+     600,
+     537,
+     539,
+     414,
+     412,
+     422,
+     417,
+     431,
+     374,
+     385
+    ],
+    "gap_ratio": 1.542422222283976,
+    "rho": 0.993006993006993,
+    "order_state": "PASS",
+    "order_detail": "rho 0.9930 in the screen's maximum tie class (0.9930)",
+    "loo_order_state": "PASS",
+    "loo_closure_pass": true,
+    "loo_rho_min": 0.990909090909091,
+    "loo_gap_max": 2.1787487800405354,
+    "cell_p99_band": [
+     0.993006993006993,
+     0.993006993006993
+    ],
+    "cell_saturated": false,
+    "verdict": "PASS",
+    "channel3": {
+     "ov_retention": 0.38609022981964664,
+     "per_head": [
+      0.4535301168119759,
+      0.41452557438948145,
+      0.3379106679650025,
+      0.3383945601121266
+     ],
+     "null_p99": 0.29404244152422765,
+     "null_mean": 0.24000575119000542,
+     "above_p99": true,
+     "declared_conjunct": false
+    },
+    "is_strict12": true,
+    "frequency_arm": {
+     "n": 200,
+     "p99": 0.9790209790209791,
+     "median": 0.7132867132867133,
+     "closure_rate": 0.09,
+     "pass_": true
+    },
+    "permuted_search_mean": 0.0,
+    "R14_PASS": true
+   },
+   {
+    "member_hash": "a36a4f4f3e3b",
+    "layer": 6,
+    "k": 12,
+    "tokens": [
+     " May",
+     " June",
+     " March",
+     " April",
+     " July",
+     " August",
+     " September",
+     " January",
+     " October",
+     " November",
+     " December",
+     " February"
+    ],
+    "token_ids": [
+     3353,
+     5142,
+     5261,
+     5365,
+     5505,
+     5729,
+     5857,
+     6027,
+     6198,
+     6243,
+     6384,
+     7250
+    ],
+    "counts": [
+     777,
+     538,
+     600,
+     537,
+     539,
+     414,
+     412,
+     422,
+     417,
+     431,
+     374,
+     385
+    ],
+    "gap_ratio": 1.542422222283976,
+    "rho": 0.993006993006993,
+    "order_state": "PASS",
+    "order_detail": "rho 0.9930 in the screen's maximum tie class (0.9930)",
+    "loo_order_state": "PASS",
+    "loo_closure_pass": true,
+    "loo_rho_min": 0.990909090909091,
+    "loo_gap_max": 2.1787487800405354,
+    "cell_p99_band": [
+     0.993006993006993,
+     0.993006993006993
+    ],
+    "cell_saturated": false,
+    "verdict": "PASS",
+    "channel3": {
+     "ov_retention": 0.38609022981964664,
+     "per_head": [
+      0.4535301168119759,
+      0.41452557438948145,
+      0.3379106679650025,
+      0.3383945601121266
+     ],
+     "null_p99": 0.29404244152422765,
+     "null_mean": 0.24000575119000542,
+     "above_p99": true,
+     "declared_conjunct": false
+    },
+    "is_strict12": true,
+    "frequency_arm": {
+     "n": 200,
+     "p99": 0.9790209790209791,
+     "median": 0.7132867132867133,
+     "closure_rate": 0.09,
+     "pass_": true
+    },
+    "permuted_search_mean": 0.0,
+    "R14_PASS": true
+   }
+  ],
+  "all_PASS_P2": [
+   {
+    "member_hash": "9a5a83ca0105",
+    "layer": 6,
+    "k": 9,
+    "tokens": [
+     " Bank",
+     " Power",
+     " Science",
+     " Water",
+     " Land",
+     " Energy",
+     " Wood",
+     " Centre",
+     " Systems"
+    ],
+    "token_ids": [
+     5970,
+     7338,
+     7621,
+     7768,
+     8004,
+     9904,
+     10013,
+     11368,
+     13000
+    ],
+    "counts": [
+     205,
+     195,
+     228,
+     192,
+     110,
+     139,
+     115,
+     173,
+     124
+    ],
+    "gap_ratio": 2.2566451405580685,
+    "rho": 1.0,
+    "order_state": "PASS",
+    "order_detail": "rho 1.0000 in the screen's maximum tie class (1.0000)",
+    "loo_order_state": "NOT ADJUDICABLE",
+    "loo_closure_pass": true,
+    "loo_rho_min": 0.9761904761904762,
+    "loo_gap_max": 2.3905008608554237,
+    "cell_p99_band": [
+     1.0,
+     1.0
+    ],
+    "cell_saturated": true,
+    "verdict": "NOT ADJUDICABLE",
+    "channel3": {
+     "ov_retention": 0.32537331789329754,
+     "per_head": [
+      0.39010036154603356,
+      0.3165621237866144,
+      0.2931722478403969,
+      0.3016585384001454
+     ],
+     "null_p99": 0.3095543656349977,
+     "null_mean": 0.25367112971435374,
+     "above_p99": true,
+     "declared_conjunct": true
+    },
+    "is_strict12": false,
+    "frequency_arm": {
+     "n": 200,
+     "p99": 0.9833333333333333,
+     "median": 0.8,
+     "closure_rate": 0.28,
+     "pass_": true
+    },
+    "permuted_search_mean": 0.0,
+    "p2_saturated_cell": "k",
+    "p2_exact1_rate": 0.015186915887850467,
+    "p2_reason": "eligible",
+    "PASS_P2": true,
+    "R14_PASS": false,
+    "sources": [
+     "B/L6/k9/dedup0.88",
+     "B/L6/k9/dedup0.9",
+     "B/L6/k9/dedup0.92",
+     "B/L6/k9/raw"
+    ]
+   },
+   {
+    "member_hash": "045a6dd71065",
+    "layer": 6,
+    "k": 9,
+    "tokens": [
+     " environment",
+     " security",
+     " safety",
+     " rights",
+     " protection",
+     " behavior",
+     " efficiency",
+     " identity",
+     " privacy"
+    ],
+    "token_ids": [
+     3453,
+     5052,
+     5646,
+     5726,
+     6733,
+     6868,
+     9286,
+     9834,
+     15603
+    ],
+    "counts": [
+     449,
+     446,
+     427,
+     374,
+     234,
+     158,
+     129,
+     140,
+     124
+    ],
+    "gap_ratio": 1.6957314411958258,
+    "rho": 1.0,
+    "order_state": "PASS",
+    "order_detail": "rho 1.0000 in the screen's maximum tie class (1.0000)",
+    "loo_order_state": "NOT ADJUDICABLE",
+    "loo_closure_pass": true,
+    "loo_rho_min": 0.9761904761904762,
+    "loo_gap_max": 2.3816485358132593,
+    "cell_p99_band": [
+     1.0,
+     1.0
+    ],
+    "cell_saturated": true,
+    "verdict": "NOT ADJUDICABLE",
+    "channel3": {
+     "ov_retention": 0.33760993246417725,
+     "per_head": [
+      0.35797071155912064,
+      0.3361023289112994,
+      0.3280476878174626,
+      0.32831900156882654
+     ],
+     "null_p99": 0.3095543656349977,
+     "null_mean": 0.25367112971435374,
+     "above_p99": true,
+     "declared_conjunct": true
+    },
+    "is_strict12": false,
+    "frequency_arm": {
+     "n": 200,
+     "p99": 0.9833333333333333,
+     "median": 0.7833333333333333,
+     "closure_rate": 0.285,
+     "pass_": true
+    },
+    "permuted_search_mean": 0.0,
+    "p2_saturated_cell": "k",
+    "p2_exact1_rate": 0.015186915887850467,
+    "p2_reason": "eligible",
+    "PASS_P2": true,
+    "R14_PASS": false,
+    "sources": [
+     "B/L6/k9/dedup0.88",
+     "B/L6/k9/dedup0.9",
+     "B/L6/k9/dedup0.92",
+     "B/L6/k9/raw"
+    ]
+   },
+   {
+    "member_hash": "719152009d79",
+    "layer": 6,
+    "k": 9,
+    "tokens": [
+     " time",
+     " process",
+     " level",
+     " period",
+     " moment",
+     " months",
+     " situation",
+     " era",
+     " cycle"
+    ],
+    "token_ids": [
+     990,
+     1657,
+     1984,
+     2846,
+     3479,
+     3794,
+     5371,
+     6933,
+     8881
+    ],
+    "counts": [
+     5076,
+     970,
+     728,
+     409,
+     378,
+     802,
+     293,
+     125,
+     122
+    ],
+    "gap_ratio": 1.50874694924423,
+    "rho": 1.0,
+    "order_state": "PASS",
+    "order_detail": "rho 1.0000 in the screen's maximum tie class (1.0000)",
+    "loo_order_state": "NOT ADJUDICABLE",
+    "loo_closure_pass": true,
+    "loo_rho_min": 0.8809523809523809,
+    "loo_gap_max": 2.284765459541707,
+    "cell_p99_band": [
+     1.0,
+     1.0
+    ],
+    "cell_saturated": true,
+    "verdict": "NOT ADJUDICABLE",
+    "channel3": {
+     "ov_retention": 0.3315843189132619,
+     "per_head": [
+      0.33988234741545525,
+      0.33170842906174225,
+      0.316235555103546,
+      0.3385109440723039
+     ],
+     "null_p99": 0.3095543656349977,
+     "null_mean": 0.25367112971435374,
+     "above_p99": true,
+     "declared_conjunct": true
+    },
+    "is_strict12": false,
+    "frequency_arm": {
+     "n": 200,
+     "p99": 0.9833333333333333,
+     "median": 0.7333333333333334,
+     "closure_rate": 0.29,
+     "pass_": true
+    },
+    "permuted_search_mean": 0.0,
+    "p2_saturated_cell": "k",
+    "p2_exact1_rate": 0.015186915887850467,
+    "p2_reason": "eligible",
+    "PASS_P2": true,
+    "R14_PASS": false,
+    "sources": [
+     "B/L6/k11/dedup0.88",
+     "B/L6/k11/dedup0.9",
+     "B/L6/k11/dedup0.92",
+     "B/L6/k11/raw"
+    ]
+   },
+   {
+    "member_hash": "72f66abaf1cd",
+    "layer": 6,
+    "k": 10,
+    "tokens": [
+     " May",
+     " June",
+     " March",
+     " April",
+     " July",
+     " August",
+     " January",
+     " October",
+     " December",
+     " February"
+    ],
+    "token_ids": [
+     3353,
+     5142,
+     5261,
+     5365,
+     5505,
+     5729,
+     6027,
+     6198,
+     6384,
+     7250
+    ],
+    "counts": [
+     777,
+     538,
+     600,
+     537,
+     539,
+     414,
+     422,
+     417,
+     374,
+     385
+    ],
+    "gap_ratio": 1.7015189790941383,
+    "rho": 1.0,
+    "order_state": "PASS",
+    "order_detail": "rho 1.0000 in the screen's maximum tie class (1.0000)",
+    "loo_order_state": "NOT ADJUDICABLE",
+    "loo_closure_pass": true,
+    "loo_rho_min": 1.0,
+    "loo_gap_max": 2.3569178017771386,
+    "cell_p99_band": [
+     1.0,
+     1.0
+    ],
+    "cell_saturated": true,
+    "verdict": "NOT ADJUDICABLE",
+    "channel3": {
+     "ov_retention": 0.38825753757766374,
+     "per_head": [
+      0.44850990609359287,
+      0.4213632028947482,
+      0.3419303057465031,
+      0.34122673557581074
+     ],
+     "null_p99": 0.2957652319886827,
+     "null_mean": 0.2484100159582423,
+     "above_p99": true,
+     "declared_conjunct": true
+    },
+    "is_strict12": false,
+    "frequency_arm": {
+     "n": 200,
+     "p99": 0.9878787878787879,
+     "median": 0.7333333333333334,
+     "closure_rate": 0.16,
+     "pass_": true
+    },
+    "permuted_search_mean": 0.0,
+    "p2_saturated_cell": "k",
+    "p2_exact1_rate": 0.021739130434782608,
+    "p2_reason": "eligible",
+    "PASS_P2": true,
+    "R14_PASS": false,
+    "sources": [
+     "B/L6/k11/dedup0.88",
+     "B/L6/k11/dedup0.9",
+     "B/L6/k11/dedup0.92",
+     "B/L6/k11/raw"
+    ]
+   },
+   {
+    "member_hash": "3b1046409fb6",
+    "layer": 6,
+    "k": 10,
+    "tokens": [
+     " May",
+     " June",
+     " March",
+     " April",
+     " July",
+     " August",
+     " January",
+     " October",
+     " November",
+     " February"
+    ],
+    "token_ids": [
+     3353,
+     5142,
+     5261,
+     5365,
+     5505,
+     5729,
+     6027,
+     6198,
+     6243,
+     7250
+    ],
+    "counts": [
+     777,
+     538,
+     600,
+     537,
+     539,
+     414,
+     422,
+     417,
+     431,
+     385
+    ],
+    "gap_ratio": 1.9615094775248278,
+    "rho": 1.0,
+    "order_state": "PASS",
+    "order_detail": "rho 1.0000 in the screen's maximum tie class (1.0000)",
+    "loo_order_state": "NOT ADJUDICABLE",
+    "loo_closure_pass": true,
+    "loo_rho_min": 1.0,
+    "loo_gap_max": 2.2960505619941096,
+    "cell_p99_band": [
+     1.0,
+     1.0
+    ],
+    "cell_saturated": true,
+    "verdict": "NOT ADJUDICABLE",
+    "channel3": {
+     "ov_retention": 0.38661238129669573,
+     "per_head": [
+      0.45017121916579916,
+      0.4226411285084035,
+      0.33692847555098965,
+      0.3367087019615906
+     ],
+     "null_p99": 0.2957652319886827,
+     "null_mean": 0.2484100159582423,
+     "above_p99": true,
+     "declared_conjunct": true
+    },
+    "is_strict12": false,
+    "frequency_arm": {
+     "n": 200,
+     "p99": 0.9878787878787879,
+     "median": 0.7575757575757576,
+     "closure_rate": 0.165,
+     "pass_": true
+    },
+    "permuted_search_mean": 0.0,
+    "p2_saturated_cell": "k",
+    "p2_exact1_rate": 0.021739130434782608,
+    "p2_reason": "eligible",
+    "PASS_P2": true,
+    "R14_PASS": false,
+    "sources": [
+     "B/L6/k12/dedup0.88",
+     "B/L6/k12/dedup0.9",
+     "B/L6/k12/dedup0.92",
+     "B/L6/k12/raw",
+     "B/L6/k15/dedup0.88",
+     "B/L6/k15/dedup0.9",
+     "B/L6/k15/dedup0.92",
+     "B/L6/k15/raw"
+    ]
+   },
+   {
+    "member_hash": "2e1157b57d26",
+    "layer": 7,
+    "k": 9,
+    "tokens": [
+     " May",
+     " June",
+     " March",
+     " April",
+     " July",
+     " August",
+     " January",
+     " October",
+     " February"
+    ],
+    "token_ids": [
+     3353,
+     5142,
+     5261,
+     5365,
+     5505,
+     5729,
+     6027,
+     6198,
+     7250
+    ],
+    "counts": [
+     777,
+     538,
+     600,
+     537,
+     539,
+     414,
+     422,
+     417,
+     385
+    ],
+    "gap_ratio": 1.7178232483686156,
+    "rho": 1.0,
+    "order_state": "PASS",
+    "order_detail": "rho 1.0000 in the screen's maximum tie class (1.0000)",
+    "loo_order_state": "NOT ADJUDICABLE",
+    "loo_closure_pass": true,
+    "loo_rho_min": 0.9761904761904762,
+    "loo_gap_max": 2.4728376721811722,
+    "cell_p99_band": [
+     1.0,
+     1.0
+    ],
+    "cell_saturated": true,
+    "verdict": "NOT ADJUDICABLE",
+    "channel3": {
+     "ov_retention": 0.4177909395671656,
+     "per_head": [
+      0.37764775636075276,
+      0.40552937761523294,
+      0.45826777548548914,
+      0.42971884880718775
+     ],
+     "null_p99": 0.3144631114300113,
+     "null_mean": 0.25418135865160485,
+     "above_p99": true,
+     "declared_conjunct": true
+    },
+    "is_strict12": false,
+    "frequency_arm": {
+     "n": 200,
+     "p99": 0.9833333333333333,
+     "median": 0.7583333333333333,
+     "closure_rate": 0.24,
+     "pass_": true
+    },
+    "permuted_search_mean": 0.0,
+    "p2_saturated_cell": "k",
+    "p2_exact1_rate": 0.020338983050847456,
+    "p2_reason": "eligible",
+    "PASS_P2": true,
+    "R14_PASS": false,
+    "sources": [
+     "B/L7/k10/dedup0.9",
+     "B/L7/k10/dedup0.92",
+     "B/L7/k10/raw",
+     "B/L7/k11/dedup0.9",
+     "B/L7/k11/dedup0.92",
+     "B/L7/k11/raw",
+     "B/L7/k12/dedup0.9",
+     "B/L7/k12/dedup0.92"
+    ]
+   },
+   {
+    "member_hash": "a104ea310bab",
+    "layer": 7,
+    "k": 9,
+    "tokens": [
+     " May",
+     " June",
+     " March",
+     " April",
+     " July",
+     " August",
+     " September",
+     " January",
+     " February"
+    ],
+    "token_ids": [
+     3353,
+     5142,
+     5261,
+     5365,
+     5505,
+     5729,
+     5857,
+     6027,
+     7250
+    ],
+    "counts": [
+     777,
+     538,
+     600,
+     537,
+     539,
+     414,
+     412,
+     422,
+     385
+    ],
+    "gap_ratio": 2.1793952839287027,
+    "rho": 1.0,
+    "order_state": "PASS",
+    "order_detail": "rho 1.0000 in the screen's maximum tie class (1.0000)",
+    "loo_order_state": "NOT ADJUDICABLE",
+    "loo_closure_pass": true,
+    "loo_rho_min": 0.9761904761904762,
+    "loo_gap_max": 2.4728376721811722,
+    "cell_p99_band": [
+     1.0,
+     1.0
+    ],
+    "cell_saturated": true,
+    "verdict": "NOT ADJUDICABLE",
+    "channel3": {
+     "ov_retention": 0.4338079074410513,
+     "per_head": [
+      0.40501612128050996,
+      0.41251553795245693,
+      0.47467679846048366,
+      0.44302317207075465
+     ],
+     "null_p99": 0.3144631114300113,
+     "null_mean": 0.25418135865160485,
+     "above_p99": true,
+     "declared_conjunct": true
+    },
+    "is_strict12": false,
+    "frequency_arm": {
+     "n": 200,
+     "p99": 0.9833333333333333,
+     "median": 0.7833333333333333,
+     "closure_rate": 0.245,
+     "pass_": true
+    },
+    "permuted_search_mean": 0.0,
+    "p2_saturated_cell": "k",
+    "p2_exact1_rate": 0.020338983050847456,
+    "p2_reason": "eligible",
+    "PASS_P2": true,
+    "R14_PASS": false,
+    "sources": [
+     "B/L7/k9/dedup0.9",
+     "B/L7/k9/dedup0.92",
+     "B/L7/k9/raw"
+    ]
+   },
+   {
+    "member_hash": "bf0c6958bc1f",
+    "layer": 7,
+    "k": 9,
+    "tokens": [
+     " was",
+     " met",
+     " come",
+     " coming",
+     " goes",
+     " brought",
+     " happened",
+     " gone",
+     " arrived"
+    ],
+    "token_ids": [
+     691,
+     1645,
+     2229,
+     4891,
+     5899,
+     6111,
+     8432,
+     8731,
+     12208
+    ],
+    "counts": [
+     13480,
+     322,
+     1347,
+     567,
+     372,
+     314,
+     285,
+     268,
+     170
+    ],
+    "gap_ratio": 2.0592648436527243,
+    "rho": 1.0,
+    "order_state": "PASS",
+    "order_detail": "rho 1.0000 in the screen's maximum tie class (1.0000)",
+    "loo_order_state": "NOT ADJUDICABLE",
+    "loo_closure_pass": true,
+    "loo_rho_min": 0.9761904761904762,
+    "loo_gap_max": 2.411419765887193,
+    "cell_p99_band": [
+     1.0,
+     1.0
+    ],
+    "cell_saturated": true,
+    "verdict": "NOT ADJUDICABLE",
+    "channel3": {
+     "ov_retention": 0.38265053734916554,
+     "per_head": [
+      0.34478707564624145,
+      0.39573241830101075,
+      0.42090924845190547,
+      0.36917340699750467
+     ],
+     "null_p99": 0.3144631114300113,
+     "null_mean": 0.25418135865160485,
+     "above_p99": true,
+     "declared_conjunct": true
+    },
+    "is_strict12": false,
+    "frequency_arm": {
+     "n": 200,
+     "p99": 0.9833333333333333,
+     "median": 0.75,
+     "closure_rate": 0.315,
+     "pass_": true
+    },
+    "permuted_search_mean": 0.0,
+    "p2_saturated_cell": "k",
+    "p2_exact1_rate": 0.020338983050847456,
+    "p2_reason": "eligible",
+    "PASS_P2": true,
+    "R14_PASS": false,
+    "sources": [
+     "B/L7/k12/dedup0.88",
+     "B/L7/k12/dedup0.9",
+     "B/L7/k12/dedup0.92"
+    ]
+   },
+   {
+    "member_hash": "2eff8657fbd3",
+    "layer": 7,
+    "k": 10,
+    "tokens": [
+     " find",
+     " showed",
+     " discover",
+     " identified",
+     " identify",
+     " revealed",
+     " confirmed",
+     " recognized",
+     " realize",
+     " noticed"
+    ],
+    "token_ids": [
+     1586,
+     6418,
+     6878,
+     8385,
+     8701,
+     9937,
+     10778,
+     12659,
+     13808,
+     14275
+    ],
+    "counts": [
+     1742,
+     204,
+     176,
+     139,
+     196,
+     171,
+     156,
+     111,
+     148,
+     138
+    ],
+    "gap_ratio": 2.079493930026796,
+    "rho": 1.0,
+    "order_state": "PASS",
+    "order_detail": "rho 1.0000 in the screen's maximum tie class (1.0000)",
+    "loo_order_state": "NOT ADJUDICABLE",
+    "loo_closure_pass": true,
+    "loo_rho_min": 0.5166666666666666,
+    "loo_gap_max": 2.457235435928407,
+    "cell_p99_band": [
+     1.0,
+     1.0
+    ],
+    "cell_saturated": true,
+    "verdict": "NOT ADJUDICABLE",
+    "channel3": {
+     "ov_retention": 0.36607648981352436,
+     "per_head": [
+      0.329735171711277,
+      0.36220145316659647,
+      0.39564077786391433,
+      0.37672855651230985
+     ],
+     "null_p99": 0.3144410233964515,
+     "null_mean": 0.24882520926745894,
+     "above_p99": true,
+     "declared_conjunct": true
+    },
+    "is_strict12": false,
+    "frequency_arm": {
+     "n": 200,
+     "p99": 0.9878787878787879,
+     "median": 0.7878787878787878,
+     "closure_rate": 0.16,
+     "pass_": true
+    },
+    "permuted_search_mean": 0.0,
+    "p2_saturated_cell": "k",
+    "p2_exact1_rate": 0.023734177215189875,
+    "p2_reason": "eligible",
+    "PASS_P2": true,
+    "R14_PASS": false,
+    "sources": [
+     "B/L7/k16/dedup0.92"
+    ]
+   }
+  ],
+  "n_P2_adjudicated_total": 18,
+  "deviations": [
+   "E1 (memberships not stored). 48 stored memberships only for PASS/MARGINAL candidates (2 rows, both the strict-12). Its screens are deterministic functions of the frozen channels, so the full proposal population is REGENERATED here and verified against 48's stored counts, strict-12 hashes, sources and per-(layer, proposer) tallies before any guard is applied. A mismatch aborts the run.",
+   "E2 (nulls and plants not guarded). P1 says the guard applies identically to proposals, nulls and plants. Here it is applied to PROPOSALS only: the exact cluster-like cells, the frequency-matched arm draws, the channel-3 random-k planes, the permuted searches and the plants are unguarded. Reason: a guarded null draw has variable k, so a fixed-k cell would no longer exist. Direction of bias: duplicate members inflate a set's rho, so an unguarded null is if anything HARDER to beat than a guarded one -- the deviation is conservative against PASS, not permissive.",
+   "E3 (L5 skipped). 49's L5 proposals (64 rows at tau 30/40/45) are NOT re-adjudicated. Channel 2 at L5 is not on disk (results/phase3_lag_action_robust_deltas.npz holds L6/L7 only; results/phase4_lag1_deltas_L*.npz hold L0-L4 and L10) and recomputing it needs 42's cache stream, which R12/R17 forbid while script 47 holds MPS. All 64 stored L5 verdicts were FAIL (closure), and the guard can move closure in either direction, so they are reported as NOT RE-CHECKED.",
+   "E4 (49's ring conjunct carried forward). Prereg 2.2's extra conjunct -- the cluster's shared plane > 60 deg from its own type-mean ring plane -- is a function of the occurrence-plane rows, which are not re-streamed here (same R12/R17 reason as E3). Stored ring_conjunct_pass values are carried forward and flagged: for a guarded subset the shared plane would have to be refitted.",
+   "E5 (49 tier re-implementation). 49 adjudicated with its own null construction (sampled cluster-like cells, 3 seeds, 6000 draws, plus a count-matched-random cell). Here 49's proposals are run through 48's imported tier (exact enumerated cells). To separate the guard's effect from the tier change, 49's proposals are adjudicated BOTH unguarded and guarded under 48's tier, and both are reported."
+  ],
+  "expected_false_P2_total": 0.18
+ }
+}

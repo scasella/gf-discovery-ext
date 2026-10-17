@@ -1,0 +1,25 @@
+{
+ "L6_anchor_strict12": {
+  "gap_new": 1.5424,
+  "gap_stored": 1.5424,
+  "rho_new": 0.993006993006993,
+  "rho_stored": 0.993006993006993
+ },
+ "L6_d_k9": {
+  "gap_new": 1.6957,
+  "gap_stored": 1.6957,
+  "rho_new": 1.0,
+  "rho_stored": 1.0
+ },
+ "L7_i_k10": {
+  "gap_new": 2.0806,
+  "gap_stored": 2.0795,
+  "rho_new": 1.0,
+  "rho_stored": 1.0
+ },
+ "L7_strict12": {
+  "gap_new": 1.5375,
+  "rho_new": 0.993006993006993,
+  "rho_stored_phase4": 0.993
+ }
+}

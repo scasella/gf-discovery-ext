@@ -1,0 +1,7 @@
+e69 sha256 ef1f04dd47dc92437040885ef52bde25d260c0134b5a93fe9303f88caff69bc5
+Loading weights:   0%|          | 0/340 [00:00<?, ?it/s]Loading weights: 100%|██████████| 340/340 [00:00<00:00, 6690.52it/s]
+[177s] D2 re-capture identity {'share_identical': 1.0, 'max_abs_diff': 0.0, 'min_coord_corr': 1.0}
+HASHES += b9990e0799a6d749950ca79c57408de31607e6d6c18d0d0756586bfb07545a59  results/e69_p1_S2_raw_L12_rows.npy (e69 SAE-gap pilot P1: S2 (D2 shuffled) raw L12 kept rows, fp16 (before P2), 2026-10-15T21:53:10)
+[353s] S2 raw L12 kept rows 202866 saved
+/Users/scasella/.local/share/uv/python/cpython-3.13-macos-aarch64-none/lib/python3.13/multiprocessing/resource_tracker.py:301: UserWarning: resource_tracker: There appear to be 1 leaked semaphore objects to clean up at shutdown: {'/loky-21944-f204xoi1'}
+  warnings.warn(

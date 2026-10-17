@@ -1,0 +1,1 @@
+{"source": "corpus", "seq_start": 1000, "n_seq": 1000, "shuffle": true, "layers": "7,12", "tag": "occS2", "bs": 16, "seconds": 198}

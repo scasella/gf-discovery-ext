@@ -1,0 +1,5 @@
+e69 sha256 ef1f04dd47dc92437040885ef52bde25d260c0134b5a93fe9303f88caff69bc5
+[18s] D2 error rows (203328, 1151)
+HASHES += 21746c686825f1d16e194e06859b5c6033602f54175c5a82d6cfbba71c7c33ad  results/e69_p0_units.npz (e69 SAE-gap pilot P0: D2 AMUSE maps, units, filters, patterns (before P1), 2026-10-15T21:47:04)
+HASHES += c32e146916329ce5f8a72e69806927d84339694d3d0418f54b15b31d60349d0d  results/e69_p0.json (e69 SAE-gap pilot P0: D2 reproduction and screens (before P1), 2026-10-15T21:47:04)
+[32s] P0: screened [0, 1, 2] of 32; eig top4 [0.229, 0.214, 0.208, 0.199]; rep [0.94, 0.84, 0.83]; acf1 [0.38, 0.38, 0.36]

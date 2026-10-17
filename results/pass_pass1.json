@@ -1,0 +1,136 @@
+{
+  "tag": "pass1",
+  "started": "2026-10-15T01:45:21",
+  "args": {
+    "tag": "pass1",
+    "cache_layers": "12,14,16,18",
+    "sae_acc": "5,6,7,8,9,12,14,16,18,20,22,24",
+    "raw_acc": "4,5,6,7,8,9,12,14,16,18,20,22,24",
+    "root": "/Users/scasella/Downloads/gf-discovery-ext/cache/sparse_deep",
+    "bs": 16,
+    "reserve": 8000,
+    "max_cache_gb": 10.5,
+    "max_project_gb": 19.5,
+    "min_free_gb": 8.0,
+    "anchor_check_seq": 1000,
+    "reference_tokens": null,
+    "n_seq": 15696,
+    "out_dir": "/Users/scasella/Downloads/gf-discovery-ext/results",
+    "skip_seq": 0,
+    "no_anchor": false
+  },
+  "cache_layers": [
+    12,
+    14,
+    16,
+    18
+  ],
+  "sae_acc": [
+    5,
+    6,
+    7,
+    8,
+    9,
+    12,
+    14,
+    16,
+    18,
+    20,
+    22,
+    24
+  ],
+  "raw_acc": [
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    12,
+    14,
+    16,
+    18,
+    20,
+    22,
+    24
+  ],
+  "finished": "2026-10-15T02:35:03",
+  "seconds_corpus": 2967,
+  "seconds_total": 2982,
+  "cache_meta": {
+    "12": {
+      "suite": "big",
+      "model": "google/gemma-3-1b-pt",
+      "nominal_l0": 120,
+      "writer": "scripts/e01_pass.py (06 path)",
+      "layer": 12,
+      "d_sae": 16384,
+      "n_rows": 4002480,
+      "n_nonzero": 476520003,
+      "bytes_on_disk": 1938099860
+    },
+    "14": {
+      "suite": "big",
+      "model": "google/gemma-3-1b-pt",
+      "nominal_l0": 120,
+      "writer": "scripts/e01_pass.py (06 path)",
+      "layer": 14,
+      "d_sae": 16384,
+      "n_rows": 4002480,
+      "n_nonzero": 487507478,
+      "bytes_on_disk": 1982049760
+    },
+    "16": {
+      "suite": "big",
+      "model": "google/gemma-3-1b-pt",
+      "nominal_l0": 120,
+      "writer": "scripts/e01_pass.py (06 path)",
+      "layer": 16,
+      "d_sae": 16384,
+      "n_rows": 4002480,
+      "n_nonzero": 485142053,
+      "bytes_on_disk": 1972588060
+    },
+    "18": {
+      "suite": "big",
+      "model": "google/gemma-3-1b-pt",
+      "nominal_l0": 120,
+      "writer": "scripts/e01_pass.py (06 path)",
+      "layer": 18,
+      "d_sae": 16384,
+      "n_rows": 4002480,
+      "n_nonzero": 488757686,
+      "bytes_on_disk": 1987050592
+    }
+  },
+  "nnz_per_row": {
+    "12": 119.05618591473286,
+    "14": 121.80135266134997,
+    "16": 121.21036282504846,
+    "18": 122.11371099918051
+  },
+  "nnz_per_row_first50": {
+    "12": 119.17277450980392,
+    "14": 122.07652941176471,
+    "16": 121.18106862745098,
+    "18": 122.03782352941177
+  },
+  "identity": {
+    "anchors_early": {
+      "n_checked": 355,
+      "ok": true,
+      "at_seq": 1008
+    },
+    "anchors_all": {
+      "n": 5152,
+      "ok": true
+    },
+    "pool_reproduced": true,
+    "n_pool_rebuilt": 3795,
+    "n_distinct_types": 83310,
+    "n_rows_covered_by_pool": 3197155,
+    "half_counts_ok": true
+  },
+  "project_gb_end": 14.446600086,
+  "free_gb_end": 24.03733504
+}

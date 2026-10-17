@@ -1,0 +1,4 @@
+Loading weights:   0%|          | 0/340 [00:00<?, ?it/s]Loading weights: 100%|██████████| 340/340 [00:00<00:00, 7320.65it/s]
+[741s] L7 anchor logcosh:12 PASS=False
+[840s] L12 anchor logcosh:33 PASS=False
+HASHES += c5a213e49b87830e02fa01eced2c1ca2d93a5afe4a34a03fa92a5aea4b6c6bb8  results/e64_behaviour.json (e64 behavioural tier, 2026-10-15T13:19:56)

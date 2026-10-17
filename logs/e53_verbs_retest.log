@@ -1,0 +1,26 @@
+Loading weights:   0%|          | 0/340 [00:00<?, ?it/s]Loading weights: 100%|██████████| 340/340 [00:00<00:00, 19094.63it/s]
+[    1.5s] geometry recheck {'L6_anchor_strict12': {'gap_ratio': 1.5423786013999998, 'rho': 0.993006993006993, 'stored_gap': 1.542422222283976, 'stored_rho': 0.993006993006993}, 'L7_i_k10': {'gap_ratio': 2.0805929738362443, 'rho': 1.0, 'stored_gap': 2.079493930026796, 'stored_rho': 1.0}}
+[    2.4s] sibling family: 30 rebuilt, 30/30 match 51's stored set
+[   63.2s] anchor: meanD@0.02 +0.3433 sc [1.0, 1.0, 1.0]
+[  187.7s]   anchor null-iii 10/50
+[  312.4s]   anchor null-iii 20/50
+[  437.1s]   anchor null-iii 30/50
+[  561.5s]   anchor null-iii 40/50
+[  686.0s]   anchor null-iii 50/50
+[  686.0s] anchor: PASS=True d=+0.3433 iii_p99=+0.1914 i_max=+0.0352
+[  727.1s] candidate: meanD@0.02 +0.2619 sc [1.0, 1.0, 1.0]
+[  831.6s]   candidate null-iii 10/100
+[  936.8s]   candidate null-iii 20/100
+[ 1042.1s]   candidate null-iii 30/100
+[ 1147.7s]   candidate null-iii 40/100
+[ 1251.9s]   candidate null-iii 50/100
+[ 1354.2s]   candidate null-iii 60/100
+[ 1456.6s]   candidate null-iii 70/100
+[ 1559.2s]   candidate null-iii 80/100
+[ 1662.9s]   candidate null-iii 90/100
+[ 1766.4s]   candidate null-iii 100/100
+[ 1870.1s]   sibling 10/30
+[ 1971.7s]   sibling 20/30
+[ 2074.1s]   sibling 30/30
+[ 2074.1s] candidate: PASS=False d=+0.2619 iii_p99=+0.2374 i_max=+0.0320 iv_p99=0.2856266212463379 rank_p=0.065
+[ 2074.1s] FAIL -- not confirmed

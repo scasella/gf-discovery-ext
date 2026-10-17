@@ -1,0 +1,6 @@
+[0s] (b) with_source: rule {'key': (4, -2, 1, 7), 'stat': 'S1', 'c': 7, 'anchors_passing': ['logcosh/13', 'skew/16', 'logcosh/33', 'skew/33'], 'n_anchors': 4, 'n_null': 2} informative True dense c None
+[0s] (b) without_source: rule {'key': (4, -2, 1, 6), 'stat': 'S1', 'c': 6, 'anchors_passing': ['logcosh/13', 'skew/16', 'logcosh/33', 'skew/33'], 'n_anchors': 4, 'n_null': 2} informative True dense c None
+HASHES += 86afb1db061f93b9a06b6e5afe98bcb322bf1c83366a0f9fd3b7f16dced70638  results/e71_rank_G12.npz (e71 calib: even-half |r(pre)| top-64 ranking of every L12 score, resid_post_all L12 16k small (a ranking, not a readout), 2026-10-16T09:39:11)
+[9s] ranking done; swap 2.2 GB
+[49s] (c) K_anc None nulls at K_anc None informative False
+HASHES += e94e9e5812f12a95788f674dbd24fe5dc7ef7080ce11f5353e2c21f5dd6d83b2  results/e71_calib.json (e71 calib: (b) sparsity cuts from anchors + joint nulls; (c) anchor/null R^2 and K_anc; before any target cell, 2026-10-16T09:39:50)

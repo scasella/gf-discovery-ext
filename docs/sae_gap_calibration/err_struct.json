@@ -1,0 +1,273 @@
+{
+ "err_big": {
+  "var_frac": {
+   "64": 0.175,
+   "128": 0.285,
+   "256": 0.46,
+   "512": 0.71
+  },
+  "eig_ratio": {
+   "64/65": 1.005,
+   "128/129": 1.003,
+   "256/257": 1.002
+  },
+  "pc_exkurt": {
+   "med_1_64": 0.21,
+   "med_65_256": 0.23,
+   "med_257_512": 0.28,
+   "n_gt3": 0,
+   "n_gt10": 0,
+   "max": 0.8,
+   "argmax": 0
+  },
+  "ica": {
+   "logcosh64": {
+    "repro_med": 0.3,
+    "n_rep08": 2,
+    "n_rep06": 2,
+    "n_screened": 2,
+    "eta2sq_max": 0.058,
+    "exkurt_screened": [
+     1.0,
+     0.9
+    ]
+   },
+   "skew64": {
+    "repro_med": 0.32,
+    "n_rep08": 0,
+    "n_rep06": 1,
+    "n_screened": 0,
+    "eta2sq_max": 0.032,
+    "exkurt_screened": []
+   },
+   "logcosh128": {
+    "repro_med": 0.24,
+    "n_rep08": 0,
+    "n_rep06": 0,
+    "n_screened": 0,
+    "eta2sq_max": 0.045,
+    "exkurt_screened": []
+   },
+   "skew128": {
+    "repro_med": 0.25,
+    "n_rep08": 1,
+    "n_rep06": 2,
+    "n_screened": 1,
+    "eta2sq_max": 0.049,
+    "exkurt_screened": [
+     2.6
+    ]
+   },
+   "logcosh256": {
+    "repro_med": 0.18,
+    "n_rep08": 0,
+    "n_rep06": 0,
+    "n_screened": 0,
+    "eta2sq_max": 0.066,
+    "exkurt_screened": []
+   },
+   "skew256": {
+    "repro_med": 0.0,
+    "n_rep08": 0,
+    "n_rep06": 0,
+    "n_screened": 0,
+    "eta2sq_max": 0.074,
+    "exkurt_screened": []
+   }
+  }
+ },
+ "err_small": {
+  "var_frac": {
+   "64": 0.222,
+   "128": 0.347,
+   "256": 0.529,
+   "512": 0.764
+  },
+  "eig_ratio": {
+   "64/65": 1.005,
+   "128/129": 1.005,
+   "256/257": 1.002
+  },
+  "pc_exkurt": {
+   "med_1_64": 0.21,
+   "med_65_256": 0.26,
+   "med_257_512": 0.3,
+   "n_gt3": 0,
+   "n_gt10": 0,
+   "max": 0.6,
+   "argmax": 0
+  },
+  "ica": {
+   "logcosh64": {
+    "repro_med": 0.32,
+    "n_rep08": 3,
+    "n_rep06": 3,
+    "n_screened": 3,
+    "eta2sq_max": 0.075,
+    "exkurt_screened": [
+     1.4,
+     1.3,
+     0.7
+    ]
+   },
+   "skew64": {
+    "repro_med": 0.35,
+    "n_rep08": 2,
+    "n_rep06": 3,
+    "n_screened": 2,
+    "eta2sq_max": 0.036,
+    "exkurt_screened": [
+     1.2,
+     0.4
+    ]
+   },
+   "logcosh128": {
+    "repro_med": 0.24,
+    "n_rep08": 2,
+    "n_rep06": 2,
+    "n_screened": 2,
+    "eta2sq_max": 0.049,
+    "exkurt_screened": [
+     2.5,
+     1.8
+    ]
+   },
+   "skew128": {
+    "repro_med": 0.25,
+    "n_rep08": 1,
+    "n_rep06": 1,
+    "n_screened": 1,
+    "eta2sq_max": 0.048,
+    "exkurt_screened": [
+     1.3
+    ]
+   },
+   "logcosh256": {
+    "repro_med": 0.18,
+    "n_rep08": 1,
+    "n_rep06": 1,
+    "n_screened": 1,
+    "eta2sq_max": 0.068,
+    "exkurt_screened": [
+     3.9
+    ]
+   },
+   "skew256": {
+    "repro_med": 0.0,
+    "n_rep08": 0,
+    "n_rep06": 0,
+    "n_screened": 0,
+    "eta2sq_max": 0.069,
+    "exkurt_screened": []
+   }
+  }
+ },
+ "dec_big": {
+  "var_frac": {
+   "64": 0.444,
+   "128": 0.579,
+   "256": 0.735,
+   "512": 0.89
+  },
+  "eig_ratio": {
+   "64/65": 1.006,
+   "128/129": 1.008,
+   "256/257": 1.005
+  },
+  "pc_exkurt": {
+   "med_1_64": 0.68,
+   "med_65_256": 0.64,
+   "med_257_512": 0.7,
+   "n_gt3": 1,
+   "n_gt10": 0,
+   "max": 3.3,
+   "argmax": 9
+  },
+  "ica": {
+   "logcosh128": {
+    "repro_med": 0.75,
+    "n_rep08": 54,
+    "n_rep06": 84,
+    "n_screened": 54,
+    "eta2sq_max": 0.199,
+    "exkurt_screened": [
+     100.0,
+     19.6,
+     17.9,
+     16.3,
+     12.0,
+     11.8,
+     11.1,
+     10.5,
+     9.5,
+     9.1,
+     9.0,
+     8.8
+    ]
+   },
+   "skew128": {
+    "repro_med": 0.73,
+    "n_rep08": 50,
+    "n_rep06": 82,
+    "n_screened": 50,
+    "eta2sq_max": 0.144,
+    "exkurt_screened": [
+     95.0,
+     20.8,
+     19.7,
+     18.4,
+     11.5,
+     10.8,
+     10.6,
+     10.5,
+     10.3,
+     10.0,
+     9.4,
+     9.2
+    ]
+   },
+   "logcosh256": {
+    "repro_med": 0.72,
+    "n_rep08": 107,
+    "n_rep06": 145,
+    "n_screened": 107,
+    "eta2sq_max": 0.225,
+    "exkurt_screened": [
+     158.8,
+     64.0,
+     29.2,
+     29.0,
+     26.6,
+     26.1,
+     25.3,
+     22.8,
+     22.4,
+     20.4,
+     17.8,
+     17.8
+    ]
+   },
+   "skew256": {
+    "repro_med": 0.64,
+    "n_rep08": 80,
+    "n_rep06": 142,
+    "n_screened": 80,
+    "eta2sq_max": 0.18,
+    "exkurt_screened": [
+     144.2,
+     68.6,
+     34.1,
+     28.8,
+     28.8,
+     28.4,
+     23.6,
+     22.9,
+     22.5,
+     17.3,
+     17.1,
+     16.9
+    ]
+   }
+  }
+ }
+}

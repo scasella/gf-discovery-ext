@@ -1,0 +1,10 @@
+e72f sha256 825ac723e33c724b7731a62518f06dbea3e366b32802d44d4190bb4193de6014
+Loading weights:   0%|          | 0/340 [00:00<?, ?it/s]Loading weights: 100%|██████████| 340/340 [00:00<00:00, 17423.31it/s]
+[673s] RAND done
+[700s] anchor PASS=True
+[1437s] L_big + bank done
+[2134s] x320 + bank done
+[2821s] R_big + bank done
+[3485s] L_big_near done
+[3672s] descriptive done
+HASHES += df290b6d507faa585bd82bd1cb991a6aabc80397c343fa1a4a5f260ed7586c07  results/e72f_steer.json (e72f steer (block F = corpus 8000-8999; amends nothing), 2026-10-16T19:04:35)

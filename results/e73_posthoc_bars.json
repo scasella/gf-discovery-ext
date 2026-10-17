@@ -1,0 +1,1549 @@
+{
+ "status": "POST HOC, descriptive; amends nothing; not a verdict",
+ "inputs": {
+  "results/e73_calib_l0_big.json": "cf0e570f1b2c31ca97c53da56a6dff7206294e35497c439a8b4fbb376694050d",
+  "results/e73_calib_l0_big.npz": "d576fde4bb513ab77190867dfe9f0c207c9286bf92f7249d1a6e4fe9d8a855e4",
+  "results/e73_calib_l0_small.json": "cf4816034ebf059951f60d222033b611971fb009822a94a7c092fa8e3dba903d",
+  "results/e73_calib_l0_small.npz": "0823a5afa1399656bd3f2e78d3745657802393898a7d812766d8c2e15716b477"
+ },
+ "script_sha256": "3d6deb764b66012a3bbdeb5d83d8287ebe4f387fd44aa53a5b2f1154c27d8179",
+ "variants": [
+  {
+   "adds": "max",
+   "source": "per-condition",
+   "covered": "median",
+   "rule_set_broken": false,
+   "levels": {
+    "l0_big": {
+     "T-ES": "NOT ADMITTED",
+     "T-MG": "NOT ADMITTED",
+     "T-COS": "NOT ADMITTED"
+    },
+    "l0_small": {
+     "T-ES": "NOT ADMITTED",
+     "T-MG": "NOT ADMITTED",
+     "T-COS": "NOT ADMITTED"
+    }
+   },
+   "first_failure": {
+    "l0_big": {
+     "T-ES": "paren, rule2",
+     "T-MG": "paren, rule1",
+     "T-COS": "paren, rule2"
+    },
+    "l0_small": {
+     "T-ES": "paren, rule1",
+     "T-MG": "paren, rule1",
+     "T-COS": "paren, rule2"
+    }
+   },
+   "before_guard": {
+    "l0_big": {
+     "T-ES": null,
+     "T-MG": null,
+     "T-COS": null
+    },
+    "l0_small": {
+     "T-ES": null,
+     "T-MG": null,
+     "T-COS": null
+    }
+   },
+   "mde": {
+    "l0_big": {
+     "T-ES": 2.0,
+     "T-MG": 1.0,
+     "T-COS": null
+    },
+    "l0_small": {
+     "T-ES": 2.0,
+     "T-MG": 1.0,
+     "T-COS": null
+    }
+   },
+   "s_star": {
+    "l0_big": {
+     "T-ES": {
+      "paren": null,
+      "quote": null
+     },
+     "T-MG": {
+      "paren": "s3",
+      "quote": "s10"
+     },
+     "T-COS": {
+      "paren": "s1",
+      "quote": "s1"
+     }
+    },
+    "l0_small": {
+     "T-ES": {
+      "paren": null,
+      "quote": "sND"
+     },
+     "T-MG": {
+      "paren": "s10",
+      "quote": "sND"
+     },
+     "T-COS": {
+      "paren": "s3",
+      "quote": "s1"
+     }
+    }
+   },
+   "rule5_max_adds_moves": {
+    "l0_big": {
+     "T-ES": 0,
+     "T-MG": 1,
+     "T-COS": 0
+    },
+    "l0_small": {
+     "T-ES": 0,
+     "T-MG": 1,
+     "T-COS": 0
+    }
+   },
+   "reproduces_e73": true
+  },
+  {
+   "adds": "max",
+   "source": "per-condition",
+   "covered": "p75",
+   "rule_set_broken": false,
+   "levels": {
+    "l0_big": {
+     "T-ES": "NOT ADMITTED",
+     "T-MG": "NOT ADMITTED",
+     "T-COS": "NOT ADMITTED"
+    },
+    "l0_small": {
+     "T-ES": "NOT ADMITTED",
+     "T-MG": "NOT ADMITTED",
+     "T-COS": "NOT ADMITTED"
+    }
+   },
+   "first_failure": {
+    "l0_big": {
+     "T-ES": "paren, rule2",
+     "T-MG": "paren, rule2",
+     "T-COS": "paren, rule2"
+    },
+    "l0_small": {
+     "T-ES": "paren, rule2",
+     "T-MG": "paren, rule1",
+     "T-COS": "paren, rule2"
+    }
+   },
+   "before_guard": {
+    "l0_big": {
+     "T-ES": null,
+     "T-MG": null,
+     "T-COS": null
+    },
+    "l0_small": {
+     "T-ES": null,
+     "T-MG": null,
+     "T-COS": null
+    }
+   },
+   "mde": {
+    "l0_big": {
+     "T-ES": 2.0,
+     "T-MG": 1.0,
+     "T-COS": null
+    },
+    "l0_small": {
+     "T-ES": 2.0,
+     "T-MG": 1.0,
+     "T-COS": null
+    }
+   },
+   "s_star": {
+    "l0_big": {
+     "T-ES": {
+      "paren": null,
+      "quote": null
+     },
+     "T-MG": {
+      "paren": "s3",
+      "quote": "s10"
+     },
+     "T-COS": {
+      "paren": "s1",
+      "quote": "s1"
+     }
+    },
+    "l0_small": {
+     "T-ES": {
+      "paren": null,
+      "quote": "sND"
+     },
+     "T-MG": {
+      "paren": "s10",
+      "quote": "sND"
+     },
+     "T-COS": {
+      "paren": "s3",
+      "quote": "s1"
+     }
+    }
+   },
+   "rule5_max_adds_moves": {
+    "l0_big": {
+     "T-ES": 0,
+     "T-MG": 1,
+     "T-COS": 0
+    },
+    "l0_small": {
+     "T-ES": 0,
+     "T-MG": 1,
+     "T-COS": 0
+    }
+   }
+  },
+  {
+   "adds": "max",
+   "source": "fixed-s0",
+   "covered": "median",
+   "rule_set_broken": false,
+   "levels": {
+    "l0_big": {
+     "T-ES": "NOT ADMITTED",
+     "T-MG": "NOT ADMITTED",
+     "T-COS": "NOT ADMITTED"
+    },
+    "l0_small": {
+     "T-ES": "NOT ADMITTED",
+     "T-MG": "NOT ADMITTED",
+     "T-COS": "NOT ADMITTED"
+    }
+   },
+   "first_failure": {
+    "l0_big": {
+     "T-ES": "paren, rule4",
+     "T-MG": "paren, rule1",
+     "T-COS": "paren, rule3"
+    },
+    "l0_small": {
+     "T-ES": "paren, rule1",
+     "T-MG": "paren, rule1",
+     "T-COS": "paren, rule3"
+    }
+   },
+   "before_guard": {
+    "l0_big": {
+     "T-ES": null,
+     "T-MG": null,
+     "T-COS": null
+    },
+    "l0_small": {
+     "T-ES": null,
+     "T-MG": null,
+     "T-COS": null
+    }
+   },
+   "mde": {
+    "l0_big": {
+     "T-ES": 2.0,
+     "T-MG": 1.0,
+     "T-COS": null
+    },
+    "l0_small": {
+     "T-ES": 2.0,
+     "T-MG": 1.0,
+     "T-COS": null
+    }
+   },
+   "s_star": {
+    "l0_big": {
+     "T-ES": {
+      "paren": "sND",
+      "quote": "s10"
+     },
+     "T-MG": {
+      "paren": "s3",
+      "quote": "s10"
+     },
+     "T-COS": {
+      "paren": "s1",
+      "quote": "s1"
+     }
+    },
+    "l0_small": {
+     "T-ES": {
+      "paren": "sND",
+      "quote": "sND"
+     },
+     "T-MG": {
+      "paren": "s10",
+      "quote": "sND"
+     },
+     "T-COS": {
+      "paren": "s1",
+      "quote": "s1"
+     }
+    }
+   },
+   "rule5_max_adds_moves": {
+    "l0_big": {
+     "T-ES": 37,
+     "T-MG": 40,
+     "T-COS": 40
+    },
+    "l0_small": {
+     "T-ES": 24,
+     "T-MG": 12,
+     "T-COS": 40
+    }
+   }
+  },
+  {
+   "adds": "max",
+   "source": "fixed-s0",
+   "covered": "p75",
+   "rule_set_broken": false,
+   "levels": {
+    "l0_big": {
+     "T-ES": "NOT ADMITTED",
+     "T-MG": "NOT ADMITTED",
+     "T-COS": "NOT ADMITTED"
+    },
+    "l0_small": {
+     "T-ES": "NOT ADMITTED",
+     "T-MG": "NOT ADMITTED",
+     "T-COS": "NOT ADMITTED"
+    }
+   },
+   "first_failure": {
+    "l0_big": {
+     "T-ES": "paren, rule4",
+     "T-MG": "paren, rule5",
+     "T-COS": "paren, rule3"
+    },
+    "l0_small": {
+     "T-ES": "paren, rule5",
+     "T-MG": "paren, rule1",
+     "T-COS": "paren, rule3"
+    }
+   },
+   "before_guard": {
+    "l0_big": {
+     "T-ES": null,
+     "T-MG": null,
+     "T-COS": null
+    },
+    "l0_small": {
+     "T-ES": null,
+     "T-MG": null,
+     "T-COS": null
+    }
+   },
+   "mde": {
+    "l0_big": {
+     "T-ES": 2.0,
+     "T-MG": 1.0,
+     "T-COS": null
+    },
+    "l0_small": {
+     "T-ES": 2.0,
+     "T-MG": 1.0,
+     "T-COS": null
+    }
+   },
+   "s_star": {
+    "l0_big": {
+     "T-ES": {
+      "paren": "sND",
+      "quote": "s10"
+     },
+     "T-MG": {
+      "paren": "s3",
+      "quote": "s10"
+     },
+     "T-COS": {
+      "paren": "s1",
+      "quote": "s1"
+     }
+    },
+    "l0_small": {
+     "T-ES": {
+      "paren": "sND",
+      "quote": "sND"
+     },
+     "T-MG": {
+      "paren": "s10",
+      "quote": "sND"
+     },
+     "T-COS": {
+      "paren": "s1",
+      "quote": "s1"
+     }
+    }
+   },
+   "rule5_max_adds_moves": {
+    "l0_big": {
+     "T-ES": 37,
+     "T-MG": 40,
+     "T-COS": 40
+    },
+    "l0_small": {
+     "T-ES": 24,
+     "T-MG": 12,
+     "T-COS": 40
+    }
+   }
+  },
+  {
+   "adds": "p99.9",
+   "source": "per-condition",
+   "covered": "median",
+   "rule_set_broken": false,
+   "levels": {
+    "l0_big": {
+     "T-ES": "NOT ADMITTED",
+     "T-MG": "NOT ADMITTED",
+     "T-COS": "NOT ADMITTED"
+    },
+    "l0_small": {
+     "T-ES": "NOT ADMITTED",
+     "T-MG": "NOT ADMITTED",
+     "T-COS": "NOT ADMITTED"
+    }
+   },
+   "first_failure": {
+    "l0_big": {
+     "T-ES": "paren, rule2",
+     "T-MG": "paren, rule1",
+     "T-COS": "paren, rule2"
+    },
+    "l0_small": {
+     "T-ES": "paren, rule1",
+     "T-MG": "paren, rule1",
+     "T-COS": "paren, rule2"
+    }
+   },
+   "before_guard": {
+    "l0_big": {
+     "T-ES": null,
+     "T-MG": null,
+     "T-COS": null
+    },
+    "l0_small": {
+     "T-ES": null,
+     "T-MG": null,
+     "T-COS": null
+    }
+   },
+   "mde": {
+    "l0_big": {
+     "T-ES": 2.0,
+     "T-MG": 1.0,
+     "T-COS": null
+    },
+    "l0_small": {
+     "T-ES": 2.0,
+     "T-MG": 1.0,
+     "T-COS": null
+    }
+   },
+   "s_star": {
+    "l0_big": {
+     "T-ES": {
+      "paren": null,
+      "quote": "sND"
+     },
+     "T-MG": {
+      "paren": "s3",
+      "quote": "s10"
+     },
+     "T-COS": {
+      "paren": "s1",
+      "quote": "s1"
+     }
+    },
+    "l0_small": {
+     "T-ES": {
+      "paren": "sND",
+      "quote": "sND"
+     },
+     "T-MG": {
+      "paren": "s10",
+      "quote": "sND"
+     },
+     "T-COS": {
+      "paren": "s3",
+      "quote": "s1"
+     }
+    }
+   },
+   "rule5_max_adds_moves": {
+    "l0_big": {
+     "T-ES": 0,
+     "T-MG": 1,
+     "T-COS": 0
+    },
+    "l0_small": {
+     "T-ES": 1,
+     "T-MG": 1,
+     "T-COS": 0
+    }
+   }
+  },
+  {
+   "adds": "p99.9",
+   "source": "per-condition",
+   "covered": "p75",
+   "rule_set_broken": false,
+   "levels": {
+    "l0_big": {
+     "T-ES": "NOT ADMITTED",
+     "T-MG": "NOT ADMITTED",
+     "T-COS": "NOT ADMITTED"
+    },
+    "l0_small": {
+     "T-ES": "NOT ADMITTED",
+     "T-MG": "NOT ADMITTED",
+     "T-COS": "NOT ADMITTED"
+    }
+   },
+   "first_failure": {
+    "l0_big": {
+     "T-ES": "paren, rule2",
+     "T-MG": "paren, rule2",
+     "T-COS": "paren, rule2"
+    },
+    "l0_small": {
+     "T-ES": "paren, rule2",
+     "T-MG": "paren, rule1",
+     "T-COS": "paren, rule2"
+    }
+   },
+   "before_guard": {
+    "l0_big": {
+     "T-ES": null,
+     "T-MG": null,
+     "T-COS": null
+    },
+    "l0_small": {
+     "T-ES": null,
+     "T-MG": null,
+     "T-COS": null
+    }
+   },
+   "mde": {
+    "l0_big": {
+     "T-ES": 2.0,
+     "T-MG": 1.0,
+     "T-COS": null
+    },
+    "l0_small": {
+     "T-ES": 2.0,
+     "T-MG": 1.0,
+     "T-COS": null
+    }
+   },
+   "s_star": {
+    "l0_big": {
+     "T-ES": {
+      "paren": null,
+      "quote": "sND"
+     },
+     "T-MG": {
+      "paren": "s3",
+      "quote": "s10"
+     },
+     "T-COS": {
+      "paren": "s1",
+      "quote": "s1"
+     }
+    },
+    "l0_small": {
+     "T-ES": {
+      "paren": "sND",
+      "quote": "sND"
+     },
+     "T-MG": {
+      "paren": "s10",
+      "quote": "sND"
+     },
+     "T-COS": {
+      "paren": "s3",
+      "quote": "s1"
+     }
+    }
+   },
+   "rule5_max_adds_moves": {
+    "l0_big": {
+     "T-ES": 0,
+     "T-MG": 1,
+     "T-COS": 0
+    },
+    "l0_small": {
+     "T-ES": 1,
+     "T-MG": 1,
+     "T-COS": 0
+    }
+   }
+  },
+  {
+   "adds": "p99.9",
+   "source": "fixed-s0",
+   "covered": "median",
+   "rule_set_broken": false,
+   "levels": {
+    "l0_big": {
+     "T-ES": "NOT ADMITTED",
+     "T-MG": "NOT ADMITTED",
+     "T-COS": "NOT ADMITTED"
+    },
+    "l0_small": {
+     "T-ES": "NOT ADMITTED",
+     "T-MG": "NOT ADMITTED",
+     "T-COS": "NOT ADMITTED"
+    }
+   },
+   "first_failure": {
+    "l0_big": {
+     "T-ES": "paren, rule4",
+     "T-MG": "paren, rule1",
+     "T-COS": "paren, rule3"
+    },
+    "l0_small": {
+     "T-ES": "paren, rule1",
+     "T-MG": "paren, rule1",
+     "T-COS": "paren, rule3"
+    }
+   },
+   "before_guard": {
+    "l0_big": {
+     "T-ES": null,
+     "T-MG": null,
+     "T-COS": null
+    },
+    "l0_small": {
+     "T-ES": null,
+     "T-MG": null,
+     "T-COS": null
+    }
+   },
+   "mde": {
+    "l0_big": {
+     "T-ES": 2.0,
+     "T-MG": 1.0,
+     "T-COS": null
+    },
+    "l0_small": {
+     "T-ES": 2.0,
+     "T-MG": 1.0,
+     "T-COS": null
+    }
+   },
+   "s_star": {
+    "l0_big": {
+     "T-ES": {
+      "paren": "sND",
+      "quote": "s10"
+     },
+     "T-MG": {
+      "paren": "s3",
+      "quote": "s10"
+     },
+     "T-COS": {
+      "paren": "s1",
+      "quote": "s1"
+     }
+    },
+    "l0_small": {
+     "T-ES": {
+      "paren": "sND",
+      "quote": "sND"
+     },
+     "T-MG": {
+      "paren": "s10",
+      "quote": "sND"
+     },
+     "T-COS": {
+      "paren": "s1",
+      "quote": "s1"
+     }
+    }
+   },
+   "rule5_max_adds_moves": {
+    "l0_big": {
+     "T-ES": 39,
+     "T-MG": 40,
+     "T-COS": 40
+    },
+    "l0_small": {
+     "T-ES": 29,
+     "T-MG": 12,
+     "T-COS": 40
+    }
+   }
+  },
+  {
+   "adds": "p99.9",
+   "source": "fixed-s0",
+   "covered": "p75",
+   "rule_set_broken": false,
+   "levels": {
+    "l0_big": {
+     "T-ES": "NOT ADMITTED",
+     "T-MG": "NOT ADMITTED",
+     "T-COS": "NOT ADMITTED"
+    },
+    "l0_small": {
+     "T-ES": "NOT ADMITTED",
+     "T-MG": "NOT ADMITTED",
+     "T-COS": "NOT ADMITTED"
+    }
+   },
+   "first_failure": {
+    "l0_big": {
+     "T-ES": "paren, rule4",
+     "T-MG": "paren, rule5",
+     "T-COS": "paren, rule3"
+    },
+    "l0_small": {
+     "T-ES": "paren, rule5",
+     "T-MG": "paren, rule1",
+     "T-COS": "paren, rule3"
+    }
+   },
+   "before_guard": {
+    "l0_big": {
+     "T-ES": null,
+     "T-MG": null,
+     "T-COS": null
+    },
+    "l0_small": {
+     "T-ES": null,
+     "T-MG": null,
+     "T-COS": null
+    }
+   },
+   "mde": {
+    "l0_big": {
+     "T-ES": 2.0,
+     "T-MG": 1.0,
+     "T-COS": null
+    },
+    "l0_small": {
+     "T-ES": 2.0,
+     "T-MG": 1.0,
+     "T-COS": null
+    }
+   },
+   "s_star": {
+    "l0_big": {
+     "T-ES": {
+      "paren": "sND",
+      "quote": "s10"
+     },
+     "T-MG": {
+      "paren": "s3",
+      "quote": "s10"
+     },
+     "T-COS": {
+      "paren": "s1",
+      "quote": "s1"
+     }
+    },
+    "l0_small": {
+     "T-ES": {
+      "paren": "sND",
+      "quote": "sND"
+     },
+     "T-MG": {
+      "paren": "s10",
+      "quote": "sND"
+     },
+     "T-COS": {
+      "paren": "s1",
+      "quote": "s1"
+     }
+    }
+   },
+   "rule5_max_adds_moves": {
+    "l0_big": {
+     "T-ES": 39,
+     "T-MG": 40,
+     "T-COS": 40
+    },
+    "l0_small": {
+     "T-ES": 29,
+     "T-MG": 12,
+     "T-COS": 40
+    }
+   }
+  },
+  {
+   "adds": "p99",
+   "source": "per-condition",
+   "covered": "median",
+   "rule_set_broken": false,
+   "levels": {
+    "l0_big": {
+     "T-ES": "NOT ADMITTED",
+     "T-MG": "NOT ADMITTED",
+     "T-COS": "NOT ADMITTED"
+    },
+    "l0_small": {
+     "T-ES": "NOT ADMITTED",
+     "T-MG": "NOT ADMITTED",
+     "T-COS": "NOT ADMITTED"
+    }
+   },
+   "first_failure": {
+    "l0_big": {
+     "T-ES": "paren, rule2",
+     "T-MG": "paren, rule1",
+     "T-COS": "paren, rule2"
+    },
+    "l0_small": {
+     "T-ES": "paren, rule1",
+     "T-MG": "paren, rule1",
+     "T-COS": "paren, rule2"
+    }
+   },
+   "before_guard": {
+    "l0_big": {
+     "T-ES": null,
+     "T-MG": null,
+     "T-COS": null
+    },
+    "l0_small": {
+     "T-ES": null,
+     "T-MG": null,
+     "T-COS": null
+    }
+   },
+   "mde": {
+    "l0_big": {
+     "T-ES": 1.0,
+     "T-MG": 1.0,
+     "T-COS": null
+    },
+    "l0_small": {
+     "T-ES": 1.0,
+     "T-MG": 1.0,
+     "T-COS": null
+    }
+   },
+   "s_star": {
+    "l0_big": {
+     "T-ES": {
+      "paren": null,
+      "quote": "s10"
+     },
+     "T-MG": {
+      "paren": "s3",
+      "quote": "s10"
+     },
+     "T-COS": {
+      "paren": "s1",
+      "quote": "s1"
+     }
+    },
+    "l0_small": {
+     "T-ES": {
+      "paren": "sND",
+      "quote": "sND"
+     },
+     "T-MG": {
+      "paren": "s10",
+      "quote": "sND"
+     },
+     "T-COS": {
+      "paren": "s3",
+      "quote": "s1"
+     }
+    }
+   },
+   "rule5_max_adds_moves": {
+    "l0_big": {
+     "T-ES": 2,
+     "T-MG": 1,
+     "T-COS": 3
+    },
+    "l0_small": {
+     "T-ES": 3,
+     "T-MG": 2,
+     "T-COS": 2
+    }
+   }
+  },
+  {
+   "adds": "p99",
+   "source": "per-condition",
+   "covered": "p75",
+   "rule_set_broken": false,
+   "levels": {
+    "l0_big": {
+     "T-ES": "NOT ADMITTED",
+     "T-MG": "ADMITTED-GRADED",
+     "T-COS": "NOT ADMITTED"
+    },
+    "l0_small": {
+     "T-ES": "NOT ADMITTED",
+     "T-MG": "NOT ADMITTED",
+     "T-COS": "NOT ADMITTED"
+    }
+   },
+   "first_failure": {
+    "l0_big": {
+     "T-ES": "paren, rule2",
+     "T-MG": null,
+     "T-COS": "paren, rule2"
+    },
+    "l0_small": {
+     "T-ES": "paren, rule2",
+     "T-MG": "paren, rule1",
+     "T-COS": "paren, rule2"
+    }
+   },
+   "before_guard": {
+    "l0_big": {
+     "T-ES": null,
+     "T-MG": null,
+     "T-COS": null
+    },
+    "l0_small": {
+     "T-ES": null,
+     "T-MG": null,
+     "T-COS": null
+    }
+   },
+   "mde": {
+    "l0_big": {
+     "T-ES": 1.0,
+     "T-MG": 1.0,
+     "T-COS": null
+    },
+    "l0_small": {
+     "T-ES": 1.0,
+     "T-MG": 1.0,
+     "T-COS": null
+    }
+   },
+   "s_star": {
+    "l0_big": {
+     "T-ES": {
+      "paren": null,
+      "quote": "s10"
+     },
+     "T-MG": {
+      "paren": "s3",
+      "quote": "s10"
+     },
+     "T-COS": {
+      "paren": "s1",
+      "quote": "s1"
+     }
+    },
+    "l0_small": {
+     "T-ES": {
+      "paren": "sND",
+      "quote": "sND"
+     },
+     "T-MG": {
+      "paren": "s10",
+      "quote": "sND"
+     },
+     "T-COS": {
+      "paren": "s3",
+      "quote": "s1"
+     }
+    }
+   },
+   "rule5_max_adds_moves": {
+    "l0_big": {
+     "T-ES": 2,
+     "T-MG": 1,
+     "T-COS": 3
+    },
+    "l0_small": {
+     "T-ES": 3,
+     "T-MG": 2,
+     "T-COS": 2
+    }
+   }
+  },
+  {
+   "adds": "p99",
+   "source": "fixed-s0",
+   "covered": "median",
+   "rule_set_broken": false,
+   "levels": {
+    "l0_big": {
+     "T-ES": "NOT ADMITTED",
+     "T-MG": "NOT ADMITTED",
+     "T-COS": "NOT ADMITTED"
+    },
+    "l0_small": {
+     "T-ES": "NOT ADMITTED",
+     "T-MG": "NOT ADMITTED",
+     "T-COS": "NOT ADMITTED"
+    }
+   },
+   "first_failure": {
+    "l0_big": {
+     "T-ES": "paren, rule4",
+     "T-MG": "paren, rule1",
+     "T-COS": "paren, rule3"
+    },
+    "l0_small": {
+     "T-ES": "paren, rule1",
+     "T-MG": "paren, rule1",
+     "T-COS": "paren, rule3"
+    }
+   },
+   "before_guard": {
+    "l0_big": {
+     "T-ES": null,
+     "T-MG": null,
+     "T-COS": null
+    },
+    "l0_small": {
+     "T-ES": null,
+     "T-MG": null,
+     "T-COS": null
+    }
+   },
+   "mde": {
+    "l0_big": {
+     "T-ES": 1.0,
+     "T-MG": 1.0,
+     "T-COS": null
+    },
+    "l0_small": {
+     "T-ES": 1.0,
+     "T-MG": 1.0,
+     "T-COS": null
+    }
+   },
+   "s_star": {
+    "l0_big": {
+     "T-ES": {
+      "paren": "sND",
+      "quote": "s10"
+     },
+     "T-MG": {
+      "paren": "s3",
+      "quote": "s3"
+     },
+     "T-COS": {
+      "paren": "s1",
+      "quote": "s1"
+     }
+    },
+    "l0_small": {
+     "T-ES": {
+      "paren": "sND",
+      "quote": "sND"
+     },
+     "T-MG": {
+      "paren": "s10",
+      "quote": "sND"
+     },
+     "T-COS": {
+      "paren": "s1",
+      "quote": "s1"
+     }
+    }
+   },
+   "rule5_max_adds_moves": {
+    "l0_big": {
+     "T-ES": 39,
+     "T-MG": 40,
+     "T-COS": 40
+    },
+    "l0_small": {
+     "T-ES": 36,
+     "T-MG": 16,
+     "T-COS": 40
+    }
+   }
+  },
+  {
+   "adds": "p99",
+   "source": "fixed-s0",
+   "covered": "p75",
+   "rule_set_broken": false,
+   "levels": {
+    "l0_big": {
+     "T-ES": "NOT ADMITTED",
+     "T-MG": "NOT ADMITTED",
+     "T-COS": "NOT ADMITTED"
+    },
+    "l0_small": {
+     "T-ES": "NOT ADMITTED",
+     "T-MG": "NOT ADMITTED",
+     "T-COS": "NOT ADMITTED"
+    }
+   },
+   "first_failure": {
+    "l0_big": {
+     "T-ES": "paren, rule4",
+     "T-MG": "paren, rule5",
+     "T-COS": "paren, rule3"
+    },
+    "l0_small": {
+     "T-ES": "paren, rule5",
+     "T-MG": "paren, rule1",
+     "T-COS": "paren, rule3"
+    }
+   },
+   "before_guard": {
+    "l0_big": {
+     "T-ES": null,
+     "T-MG": null,
+     "T-COS": null
+    },
+    "l0_small": {
+     "T-ES": null,
+     "T-MG": null,
+     "T-COS": null
+    }
+   },
+   "mde": {
+    "l0_big": {
+     "T-ES": 1.0,
+     "T-MG": 1.0,
+     "T-COS": null
+    },
+    "l0_small": {
+     "T-ES": 1.0,
+     "T-MG": 1.0,
+     "T-COS": null
+    }
+   },
+   "s_star": {
+    "l0_big": {
+     "T-ES": {
+      "paren": "sND",
+      "quote": "s10"
+     },
+     "T-MG": {
+      "paren": "s3",
+      "quote": "s3"
+     },
+     "T-COS": {
+      "paren": "s1",
+      "quote": "s1"
+     }
+    },
+    "l0_small": {
+     "T-ES": {
+      "paren": "sND",
+      "quote": "sND"
+     },
+     "T-MG": {
+      "paren": "s10",
+      "quote": "sND"
+     },
+     "T-COS": {
+      "paren": "s1",
+      "quote": "s1"
+     }
+    }
+   },
+   "rule5_max_adds_moves": {
+    "l0_big": {
+     "T-ES": 39,
+     "T-MG": 40,
+     "T-COS": 40
+    },
+    "l0_small": {
+     "T-ES": 36,
+     "T-MG": 16,
+     "T-COS": 40
+    }
+   }
+  },
+  {
+   "adds": "p95",
+   "source": "per-condition",
+   "covered": "median",
+   "rule_set_broken": false,
+   "levels": {
+    "l0_big": {
+     "T-ES": "NOT ADMITTED",
+     "T-MG": "NOT ADMITTED",
+     "T-COS": "NOT ADMITTED"
+    },
+    "l0_small": {
+     "T-ES": "NOT ADMITTED",
+     "T-MG": "NOT ADMITTED",
+     "T-COS": "NOT ADMITTED"
+    }
+   },
+   "first_failure": {
+    "l0_big": {
+     "T-ES": "paren, rule2",
+     "T-MG": "paren, rule1",
+     "T-COS": "paren, rule2"
+    },
+    "l0_small": {
+     "T-ES": "paren, rule1",
+     "T-MG": "paren, rule1",
+     "T-COS": "paren, rule2"
+    }
+   },
+   "before_guard": {
+    "l0_big": {
+     "T-ES": null,
+     "T-MG": null,
+     "T-COS": null
+    },
+    "l0_small": {
+     "T-ES": null,
+     "T-MG": null,
+     "T-COS": null
+    }
+   },
+   "mde": {
+    "l0_big": {
+     "T-ES": 1.0,
+     "T-MG": 1.0,
+     "T-COS": null
+    },
+    "l0_small": {
+     "T-ES": 1.0,
+     "T-MG": 1.0,
+     "T-COS": null
+    }
+   },
+   "s_star": {
+    "l0_big": {
+     "T-ES": {
+      "paren": null,
+      "quote": "s10"
+     },
+     "T-MG": {
+      "paren": "s3",
+      "quote": "s3"
+     },
+     "T-COS": {
+      "paren": "s1",
+      "quote": "s1"
+     }
+    },
+    "l0_small": {
+     "T-ES": {
+      "paren": "sND",
+      "quote": "sND"
+     },
+     "T-MG": {
+      "paren": "s1",
+      "quote": "sND"
+     },
+     "T-COS": {
+      "paren": "s3",
+      "quote": "s1"
+     }
+    }
+   },
+   "rule5_max_adds_moves": {
+    "l0_big": {
+     "T-ES": 8,
+     "T-MG": 5,
+     "T-COS": 5
+    },
+    "l0_small": {
+     "T-ES": 6,
+     "T-MG": 4,
+     "T-COS": 5
+    }
+   }
+  },
+  {
+   "adds": "p95",
+   "source": "per-condition",
+   "covered": "p75",
+   "rule_set_broken": false,
+   "levels": {
+    "l0_big": {
+     "T-ES": "NOT ADMITTED",
+     "T-MG": "NOT ADMITTED",
+     "T-COS": "NOT ADMITTED"
+    },
+    "l0_small": {
+     "T-ES": "NOT ADMITTED",
+     "T-MG": "NOT ADMITTED",
+     "T-COS": "NOT ADMITTED"
+    }
+   },
+   "first_failure": {
+    "l0_big": {
+     "T-ES": "paren, rule2",
+     "T-MG": "paren, rule5",
+     "T-COS": "paren, rule2"
+    },
+    "l0_small": {
+     "T-ES": "paren, rule5",
+     "T-MG": "paren, rule1",
+     "T-COS": "paren, rule2"
+    }
+   },
+   "before_guard": {
+    "l0_big": {
+     "T-ES": null,
+     "T-MG": null,
+     "T-COS": null
+    },
+    "l0_small": {
+     "T-ES": null,
+     "T-MG": null,
+     "T-COS": null
+    }
+   },
+   "mde": {
+    "l0_big": {
+     "T-ES": 1.0,
+     "T-MG": 1.0,
+     "T-COS": null
+    },
+    "l0_small": {
+     "T-ES": 1.0,
+     "T-MG": 1.0,
+     "T-COS": null
+    }
+   },
+   "s_star": {
+    "l0_big": {
+     "T-ES": {
+      "paren": null,
+      "quote": "s10"
+     },
+     "T-MG": {
+      "paren": "s3",
+      "quote": "s3"
+     },
+     "T-COS": {
+      "paren": "s1",
+      "quote": "s1"
+     }
+    },
+    "l0_small": {
+     "T-ES": {
+      "paren": "sND",
+      "quote": "sND"
+     },
+     "T-MG": {
+      "paren": "s1",
+      "quote": "sND"
+     },
+     "T-COS": {
+      "paren": "s3",
+      "quote": "s1"
+     }
+    }
+   },
+   "rule5_max_adds_moves": {
+    "l0_big": {
+     "T-ES": 8,
+     "T-MG": 5,
+     "T-COS": 5
+    },
+    "l0_small": {
+     "T-ES": 6,
+     "T-MG": 4,
+     "T-COS": 5
+    }
+   }
+  },
+  {
+   "adds": "p95",
+   "source": "fixed-s0",
+   "covered": "median",
+   "rule_set_broken": false,
+   "levels": {
+    "l0_big": {
+     "T-ES": "NOT ADMITTED",
+     "T-MG": "NOT ADMITTED",
+     "T-COS": "NOT ADMITTED"
+    },
+    "l0_small": {
+     "T-ES": "NOT ADMITTED",
+     "T-MG": "NOT ADMITTED",
+     "T-COS": "NOT ADMITTED"
+    }
+   },
+   "first_failure": {
+    "l0_big": {
+     "T-ES": "paren, rule5",
+     "T-MG": "paren, rule1",
+     "T-COS": "paren, rule3"
+    },
+    "l0_small": {
+     "T-ES": "paren, rule1",
+     "T-MG": "paren, rule1",
+     "T-COS": "paren, rule3"
+    }
+   },
+   "before_guard": {
+    "l0_big": {
+     "T-ES": null,
+     "T-MG": null,
+     "T-COS": null
+    },
+    "l0_small": {
+     "T-ES": null,
+     "T-MG": null,
+     "T-COS": null
+    }
+   },
+   "mde": {
+    "l0_big": {
+     "T-ES": 1.0,
+     "T-MG": 1.0,
+     "T-COS": null
+    },
+    "l0_small": {
+     "T-ES": 1.0,
+     "T-MG": 1.0,
+     "T-COS": null
+    }
+   },
+   "s_star": {
+    "l0_big": {
+     "T-ES": {
+      "paren": "s10",
+      "quote": "s10"
+     },
+     "T-MG": {
+      "paren": "s3",
+      "quote": "s3"
+     },
+     "T-COS": {
+      "paren": "s1",
+      "quote": "s1"
+     }
+    },
+    "l0_small": {
+     "T-ES": {
+      "paren": "sND",
+      "quote": "sND"
+     },
+     "T-MG": {
+      "paren": "s1",
+      "quote": "sND"
+     },
+     "T-COS": {
+      "paren": "s1",
+      "quote": "s1"
+     }
+    }
+   },
+   "rule5_max_adds_moves": {
+    "l0_big": {
+     "T-ES": 38,
+     "T-MG": 38,
+     "T-COS": 40
+    },
+    "l0_small": {
+     "T-ES": 37,
+     "T-MG": 26,
+     "T-COS": 40
+    }
+   }
+  },
+  {
+   "adds": "p95",
+   "source": "fixed-s0",
+   "covered": "p75",
+   "rule_set_broken": false,
+   "levels": {
+    "l0_big": {
+     "T-ES": "NOT ADMITTED",
+     "T-MG": "NOT ADMITTED",
+     "T-COS": "NOT ADMITTED"
+    },
+    "l0_small": {
+     "T-ES": "NOT ADMITTED",
+     "T-MG": "NOT ADMITTED",
+     "T-COS": "NOT ADMITTED"
+    }
+   },
+   "first_failure": {
+    "l0_big": {
+     "T-ES": "paren, rule5",
+     "T-MG": "paren, rule5",
+     "T-COS": "paren, rule3"
+    },
+    "l0_small": {
+     "T-ES": "paren, rule4",
+     "T-MG": "paren, rule1",
+     "T-COS": "paren, rule3"
+    }
+   },
+   "before_guard": {
+    "l0_big": {
+     "T-ES": null,
+     "T-MG": null,
+     "T-COS": null
+    },
+    "l0_small": {
+     "T-ES": null,
+     "T-MG": null,
+     "T-COS": null
+    }
+   },
+   "mde": {
+    "l0_big": {
+     "T-ES": 1.0,
+     "T-MG": 1.0,
+     "T-COS": null
+    },
+    "l0_small": {
+     "T-ES": 1.0,
+     "T-MG": 1.0,
+     "T-COS": null
+    }
+   },
+   "s_star": {
+    "l0_big": {
+     "T-ES": {
+      "paren": "s10",
+      "quote": "s10"
+     },
+     "T-MG": {
+      "paren": "s3",
+      "quote": "s3"
+     },
+     "T-COS": {
+      "paren": "s1",
+      "quote": "s1"
+     }
+    },
+    "l0_small": {
+     "T-ES": {
+      "paren": "sND",
+      "quote": "sND"
+     },
+     "T-MG": {
+      "paren": "s1",
+      "quote": "sND"
+     },
+     "T-COS": {
+      "paren": "s1",
+      "quote": "s1"
+     }
+    }
+   },
+   "rule5_max_adds_moves": {
+    "l0_big": {
+     "T-ES": 38,
+     "T-MG": 38,
+     "T-COS": 40
+    },
+    "l0_small": {
+     "T-ES": 37,
+     "T-MG": 26,
+     "T-COS": 40
+    }
+   }
+  }
+ ]
+}

@@ -1,0 +1,461 @@
+{
+ "instructions": "For each battery-UNNAMED unit read its contexts in e64_labels.json. Set reading to a short construction name if the contexts of one tail show one consistent named construction, else to 'none'; set tail to 'hi' or 'lo' (or null for 'none'). A reading can only move a unit from UNNAMED to NAMED_BY_CONTEXT. Do not look at any S2, R2 or behavioural output before sealing.",
+ "units": {
+  "L7/logcosh/0": {
+   "reading": "none",
+   "tail": null,
+   "evidence": "no construction shared by >= 8/12 of either tail"
+  },
+  "L7/logcosh/3": {
+   "reading": "none",
+   "tail": null,
+   "evidence": "no construction shared by >= 8/12 of either tail"
+  },
+  "L7/logcosh/5": {
+   "reading": "none",
+   "tail": null,
+   "evidence": "no construction shared by >= 8/12 of either tail"
+  },
+  "L7/logcosh/6": {
+   "reading": "none",
+   "tail": null,
+   "evidence": "no construction shared by >= 8/12 of either tail"
+  },
+  "L7/logcosh/8": {
+   "reading": "none",
+   "tail": null,
+   "evidence": "no construction shared by >= 8/12 of either tail"
+  },
+  "L7/logcosh/14": {
+   "reading": "none",
+   "tail": null,
+   "evidence": "no construction shared by >= 8/12 of either tail"
+  },
+  "L7/logcosh/16": {
+   "reading": "none",
+   "tail": null,
+   "evidence": "no construction shared by >= 8/12 of either tail"
+  },
+  "L7/logcosh/18": {
+   "reading": "none",
+   "tail": null,
+   "evidence": "no construction shared by >= 8/12 of either tail"
+  },
+  "L7/logcosh/23": {
+   "reading": "none",
+   "tail": null,
+   "evidence": "no construction shared by >= 8/12 of either tail"
+  },
+  "L7/logcosh/28": {
+   "reading": "none",
+   "tail": null,
+   "evidence": "no construction shared by >= 8/12 of either tail"
+  },
+  "L7/logcosh/31": {
+   "reading": "none",
+   "tail": null,
+   "evidence": "no construction shared by >= 8/12 of either tail"
+  },
+  "L7/logcosh/33": {
+   "reading": "none",
+   "tail": null,
+   "evidence": "no construction shared by >= 8/12 of either tail"
+  },
+  "L7/logcosh/36": {
+   "reading": "none",
+   "tail": null,
+   "evidence": "partial: ~6/12 hi are the verb right after a long subject NP"
+  },
+  "L7/logcosh/37": {
+   "reading": "token right after a coordinating conjunction (and/or/but)",
+   "tail": "hi",
+   "evidence": "12/12 hi; twin skew #37 11/12"
+  },
+  "L7/logcosh/41": {
+   "reading": "none",
+   "tail": null,
+   "evidence": "no construction shared by >= 8/12 of either tail"
+  },
+  "L7/logcosh/49": {
+   "reading": "none",
+   "tail": null,
+   "evidence": "no construction shared by >= 8/12 of either tail"
+  },
+  "L7/logcosh/50": {
+   "reading": "inside a temporal subordinate clause (when/while/before/after/during)",
+   "tail": "lo",
+   "evidence": "7/12 lo; family reading via twin skew #38 (9/12)"
+  },
+  "L7/logcosh/52": {
+   "reading": "none",
+   "tail": null,
+   "evidence": "partial: ~7/12 hi are the complement onset of a complement-taking predicate"
+  },
+  "L7/logcosh/53": {
+   "reading": "none",
+   "tail": null,
+   "evidence": "no construction shared by >= 8/12 of either tail"
+  },
+  "L7/logcosh/55": {
+   "reading": "token right after a preposition (mostly 'in', also 'at')",
+   "tail": "hi",
+   "evidence": "5/12 hi; family reading via twin skew #49 (8/12)"
+  },
+  "L7/logcosh/57": {
+   "reading": "none",
+   "tail": null,
+   "evidence": "partial: ~6/12 hi follow a quantifier"
+  },
+  "L7/logcosh/60": {
+   "reading": "none",
+   "tail": null,
+   "evidence": "no construction shared by >= 8/12 of either tail"
+  },
+  "L7/skew/0": {
+   "reading": "none",
+   "tail": null,
+   "evidence": "no construction shared by >= 8/12 of either tail"
+  },
+  "L7/skew/8": {
+   "reading": "none",
+   "tail": null,
+   "evidence": "no construction shared by >= 8/12 of either tail"
+  },
+  "L7/skew/16": {
+   "reading": "none",
+   "tail": null,
+   "evidence": "no construction shared by >= 8/12 of either tail"
+  },
+  "L7/skew/18": {
+   "reading": "none",
+   "tail": null,
+   "evidence": "no construction shared by >= 8/12 of either tail"
+  },
+  "L7/skew/23": {
+   "reading": "none",
+   "tail": null,
+   "evidence": "no construction shared by >= 8/12 of either tail"
+  },
+  "L7/skew/25": {
+   "reading": "none",
+   "tail": null,
+   "evidence": "no construction shared by >= 8/12 of either tail"
+  },
+  "L7/skew/31": {
+   "reading": "none",
+   "tail": null,
+   "evidence": "no construction shared by >= 8/12 of either tail"
+  },
+  "L7/skew/33": {
+   "reading": "none",
+   "tail": null,
+   "evidence": "no construction shared by >= 8/12 of either tail"
+  },
+  "L7/skew/35": {
+   "reading": "none",
+   "tail": null,
+   "evidence": "no construction shared by >= 8/12 of either tail"
+  },
+  "L7/skew/36": {
+   "reading": "none",
+   "tail": null,
+   "evidence": "no construction shared by >= 8/12 of either tail"
+  },
+  "L7/skew/37": {
+   "reading": "token right after a coordinating conjunction (and/or/but)",
+   "tail": "hi",
+   "evidence": "11/12 hi; twin logcosh #37 12/12"
+  },
+  "L7/skew/38": {
+   "reading": "inside a temporal subordinate clause (when/while/before/after/during)",
+   "tail": "hi",
+   "evidence": "9/12 hi; twin logcosh #50 lo 7/12"
+  },
+  "L7/skew/41": {
+   "reading": "none",
+   "tail": null,
+   "evidence": "no construction shared by >= 8/12 of either tail"
+  },
+  "L7/skew/49": {
+   "reading": "token right after a preposition (mostly 'in', also 'at')",
+   "tail": "hi",
+   "evidence": "8/12 hi; twin logcosh #55 hi 5/12"
+  },
+  "L7/skew/51": {
+   "reading": "none",
+   "tail": null,
+   "evidence": "no construction shared by >= 8/12 of either tail"
+  },
+  "L7/skew/57": {
+   "reading": "none",
+   "tail": null,
+   "evidence": "no construction shared by >= 8/12 of either tail"
+  },
+  "L7/skew/58": {
+   "reading": "none",
+   "tail": null,
+   "evidence": "no construction shared by >= 8/12 of either tail"
+  },
+  "L7/skew/59": {
+   "reading": "none",
+   "tail": null,
+   "evidence": "no construction shared by >= 8/12 of either tail"
+  },
+  "L12/logcosh/0": {
+   "reading": "none",
+   "tail": null,
+   "evidence": "partial: conjunct/clause onset 6/12 (twin skew #0 7/12; pooled 13/24 < 16)"
+  },
+  "L12/logcosh/1": {
+   "reading": "none",
+   "tail": null,
+   "evidence": "no construction shared by >= 8/12 of either tail"
+  },
+  "L12/logcosh/2": {
+   "reading": "inside a partitive/superlative NP ('one of the ...', 'the best/first/only ...', 'X% of all ...')",
+   "tail": "lo",
+   "evidence": "8/12 lo; twin skew #2 10/12"
+  },
+  "L12/logcosh/6": {
+   "reading": "none",
+   "tail": null,
+   "evidence": "no construction shared by >= 8/12 of either tail"
+  },
+  "L12/logcosh/9": {
+   "reading": "inside the second conjunct of an 'X and Y' coordination",
+   "tail": "lo",
+   "evidence": "5-6/12 lo; family reading via twin skew #52 (9/12)"
+  },
+  "L12/logcosh/10": {
+   "reading": "inside the subject noun phrase, before its main verb",
+   "tail": "lo",
+   "evidence": "11/12 lo; twin skew #15 11/12; both tail-TDI > 3"
+  },
+  "L12/logcosh/13": {
+   "reading": "none",
+   "tail": null,
+   "evidence": "no construction shared by >= 8/12 of either tail"
+  },
+  "L12/logcosh/24": {
+   "reading": "inside a fronted (sentence-initial) adverbial phrase or clause",
+   "tail": "hi",
+   "evidence": "9/12 hi; twin skew #24 10/12"
+  },
+  "L12/logcosh/27": {
+   "reading": "none",
+   "tail": null,
+   "evidence": "no construction shared by >= 8/12 of either tail"
+  },
+  "L12/logcosh/29": {
+   "reading": "none",
+   "tail": null,
+   "evidence": "no construction shared by >= 8/12 of either tail"
+  },
+  "L12/logcosh/32": {
+   "reading": "none",
+   "tail": null,
+   "evidence": "no construction shared by >= 8/12 of either tail"
+  },
+  "L12/logcosh/37": {
+   "reading": "onset of the next item in a coordinated series/list",
+   "tail": "hi",
+   "evidence": "3/12 hi; family reading via twin skew #37 (8/12)"
+  },
+  "L12/logcosh/40": {
+   "reading": "first clause of a line (within about five tokens after a newline)",
+   "tail": "hi",
+   "evidence": "10/12 hi; no twin"
+  },
+  "L12/logcosh/44": {
+   "reading": "inside the scope of a negation (not/no/never/don't/cannot)",
+   "tail": "lo",
+   "evidence": "9/12 lo; twin skew #39 10/12"
+  },
+  "L12/logcosh/45": {
+   "reading": "none",
+   "tail": null,
+   "evidence": "no construction shared by >= 8/12 of either tail"
+  },
+  "L12/logcosh/46": {
+   "reading": "inside the predicate complement of a copula (is/are/was/become ...)",
+   "tail": "hi",
+   "evidence": "4-5/12 hi; family reading via twin skew #34 (10/12)"
+  },
+  "L12/logcosh/48": {
+   "reading": "inside an enumeration/list of items or a numeric range",
+   "tail": "hi",
+   "evidence": "8/12 hi (6 lists of >=3 items + 2 ranges); no twin"
+  },
+  "L12/logcosh/54": {
+   "reading": "none",
+   "tail": null,
+   "evidence": "no construction shared by >= 8/12 of either tail"
+  },
+  "L12/logcosh/56": {
+   "reading": "inside or right after a temporal expression (dates, durations, before/after)",
+   "tail": "hi",
+   "evidence": "9/12 hi; twin skew #12 5-6/12"
+  },
+  "L12/logcosh/57": {
+   "reading": "none",
+   "tail": null,
+   "evidence": "no construction shared by >= 8/12 of either tail"
+  },
+  "L12/logcosh/60": {
+   "reading": "token right after the definite article 'the'",
+   "tail": "hi",
+   "evidence": "9/12 hi; twin skew #28 7/12"
+  },
+  "L12/logcosh/63": {
+   "reading": "none",
+   "tail": null,
+   "evidence": "partial: inside a wh-clause 6/12 lo (twin skew #7 4/12; pooled 10/24)"
+  },
+  "L12/skew/0": {
+   "reading": "none",
+   "tail": null,
+   "evidence": "partial: clause/conjunct onset 7/12 (twin logcosh #0 6/12)"
+  },
+  "L12/skew/1": {
+   "reading": "none",
+   "tail": null,
+   "evidence": "no construction shared by >= 8/12 of either tail"
+  },
+  "L12/skew/2": {
+   "reading": "inside a partitive/superlative NP ('one of the ...', 'the best/first/only ...', 'X% of all ...')",
+   "tail": "hi",
+   "evidence": "10/12 hi; twin logcosh #2 lo 8/12"
+  },
+  "L12/skew/5": {
+   "reading": "none",
+   "tail": null,
+   "evidence": "no construction shared by >= 8/12 of either tail"
+  },
+  "L12/skew/6": {
+   "reading": "none",
+   "tail": null,
+   "evidence": "no construction shared by >= 8/12 of either tail"
+  },
+  "L12/skew/7": {
+   "reading": "none",
+   "tail": null,
+   "evidence": "partial: questions/wh 4-5/12 (twin logcosh #63 6/12)"
+  },
+  "L12/skew/8": {
+   "reading": "none",
+   "tail": null,
+   "evidence": "partial: right after a preposition 6/12 hi"
+  },
+  "L12/skew/12": {
+   "reading": "inside or right after a temporal expression (dates, durations, before/after)",
+   "tail": "hi",
+   "evidence": "5-6/12 hi; family reading via twin logcosh #56 (9/12)"
+  },
+  "L12/skew/15": {
+   "reading": "inside the subject noun phrase, before its main verb",
+   "tail": "hi",
+   "evidence": "11/12 hi; twin logcosh #10 11/12"
+  },
+  "L12/skew/16": {
+   "reading": "none",
+   "tail": null,
+   "evidence": "no construction shared by >= 8/12 of either tail"
+  },
+  "L12/skew/20": {
+   "reading": "none",
+   "tail": null,
+   "evidence": "no construction shared by >= 8/12 of either tail"
+  },
+  "L12/skew/24": {
+   "reading": "inside a fronted (sentence-initial) adverbial phrase or clause",
+   "tail": "hi",
+   "evidence": "10/12 hi; twin logcosh #24 9/12"
+  },
+  "L12/skew/25": {
+   "reading": "none",
+   "tail": null,
+   "evidence": "partial: inside a (reduced/zero) relative clause 7/12 hi"
+  },
+  "L12/skew/26": {
+   "reading": "none",
+   "tail": null,
+   "evidence": "no construction shared by >= 8/12 of either tail"
+  },
+  "L12/skew/28": {
+   "reading": "token right after the definite article 'the'",
+   "tail": "hi",
+   "evidence": "7/12 hi; family reading via twin logcosh #60 (9/12)"
+  },
+  "L12/skew/31": {
+   "reading": "none",
+   "tail": null,
+   "evidence": "no construction shared by >= 8/12 of either tail"
+  },
+  "L12/skew/32": {
+   "reading": "none",
+   "tail": null,
+   "evidence": "no construction shared by >= 8/12 of either tail"
+  },
+  "L12/skew/34": {
+   "reading": "inside the predicate complement of a copula (is/are/was/become ...)",
+   "tail": "hi",
+   "evidence": "10/12 hi; twin logcosh #46 hi 4-5/12"
+  },
+  "L12/skew/37": {
+   "reading": "onset of the next item in a coordinated series/list",
+   "tail": "hi",
+   "evidence": "8/12 hi; twin logcosh #37 hi 3/12"
+  },
+  "L12/skew/39": {
+   "reading": "inside the scope of a negation (not/no/never/don't/cannot)",
+   "tail": "hi",
+   "evidence": "10/12 hi; twin logcosh #44 9/12"
+  },
+  "L12/skew/41": {
+   "reading": "none",
+   "tail": null,
+   "evidence": "no construction shared by >= 8/12 of either tail"
+  },
+  "L12/skew/42": {
+   "reading": "none",
+   "tail": null,
+   "evidence": "no construction shared by >= 8/12 of either tail"
+  },
+  "L12/skew/44": {
+   "reading": "none",
+   "tail": null,
+   "evidence": "partial: questions/wh-clauses 6/12 hi"
+  },
+  "L12/skew/49": {
+   "reading": "none",
+   "tail": null,
+   "evidence": "no construction shared by >= 8/12 of either tail"
+  },
+  "L12/skew/51": {
+   "reading": "none",
+   "tail": null,
+   "evidence": "partial: place names/addresses 6/12 hi"
+  },
+  "L12/skew/52": {
+   "reading": "inside the second conjunct of an 'X and Y' coordination",
+   "tail": "hi",
+   "evidence": "9/12 hi; twin logcosh #9 lo 5-6/12"
+  },
+  "L12/skew/54": {
+   "reading": "none",
+   "tail": null,
+   "evidence": "no construction shared by >= 8/12 of either tail"
+  },
+  "L12/skew/57": {
+   "reading": "none",
+   "tail": null,
+   "evidence": "no construction shared by >= 8/12 of either tail"
+  },
+  "L12/skew/63": {
+   "reading": "none",
+   "tail": null,
+   "evidence": "no construction shared by >= 8/12 of either tail"
+  }
+ },
+ "reading_standard": "Read by the analyst (Claude) on 2026-10-15, after the label phase and before any S2, R2 or behavioural number. A unit is NAMED_BY_CONTEXT when >= 8 of the 12 contexts of one tail share one specific construction that a mechanical rule could be written for. Broad, high-base-rate categories ('a subordinate clause', 'a clause onset', 'a noun phrase') do not count. Twins (section 5) are read as one family: if either member meets the standard on its own, or the pooled matching tails reach >= 16/24, both members get the reading (the conservative direction). The 'evidence' field gives the counts; for 'none' it records any partial pattern seen."
+}

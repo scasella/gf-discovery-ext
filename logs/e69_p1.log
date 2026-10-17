@@ -1,0 +1,6 @@
+e69 sha256 ef1f04dd47dc92437040885ef52bde25d260c0134b5a93fe9303f88caff69bc5
+Loading weights:   0%|          | 0/340 [00:00<?, ?it/s]Loading weights: 100%|██████████| 340/340 [00:00<00:00, 7570.50it/s]
+[129s] D2 re-capture identity {'share_identical': 1.0, 'max_abs_diff': 0.0, 'min_coord_corr': 1.0}
+[129s] S2 rows already saved and hashed; skipping
+HASHES += b567cc1f8cf8532045b6dd88f6c116fc9254ad69ecc0508cd906ed6f8cfb04b2  results/e69_p1_d2_pred.npz (e69 SAE-gap pilot P1: D2 next-token entropy and log p; D2 re-capture identity (before P2), 2026-10-15T22:03:39)
+[298s] P1 done; mean entropy 2.33; swap 6.1 GB

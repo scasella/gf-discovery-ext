@@ -1,0 +1,153 @@
+{
+ "tag": "pass1",
+ "started": "2026-10-15T01:45:21",
+ "args": {
+  "tag": "pass1",
+  "cache_layers": "12,14,16,18",
+  "sae_acc": "5,6,7,8,9,12,14,16,18,20,22,24",
+  "raw_acc": "4,5,6,7,8,9,12,14,16,18,20,22,24",
+  "root": "/Users/scasella/Downloads/gf-discovery-ext/cache/sparse_deep",
+  "bs": 16,
+  "reserve": 8000,
+  "max_cache_gb": 10.5,
+  "max_project_gb": 19.5,
+  "min_free_gb": 8.0,
+  "anchor_check_seq": 1000,
+  "reference_tokens": null,
+  "n_seq": 15696,
+  "out_dir": "/Users/scasella/Downloads/gf-discovery-ext/results",
+  "skip_seq": 0,
+  "no_anchor": false
+ },
+ "cache_layers": [
+  12,
+  14,
+  16,
+  18
+ ],
+ "sae_acc": [
+  5,
+  6,
+  7,
+  8,
+  9,
+  12,
+  14,
+  16,
+  18,
+  20,
+  22,
+  24
+ ],
+ "raw_acc": [
+  4,
+  5,
+  6,
+  7,
+  8,
+  9,
+  12,
+  14,
+  16,
+  18,
+  20,
+  22,
+  24
+ ]
+}
+Loading weights:   0%|          | 0/340 [00:00<?, ?it/s]Loading weights: 100%|██████████| 340/340 [00:00<00:00, 7150.23it/s]
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+  layer 5: nominal l0=94
+  layer 6: nominal l0=101
+  layer 7: nominal l0=108
+  layer 8: nominal l0=115
+  layer 9: nominal l0=120
+  layer 12: nominal l0=120
+  layer 14: nominal l0=120
+  layer 16: nominal l0=120
+  layer 18: nominal l0=120
+  layer 20: nominal l0=120
+  layer 22: nominal l0=120
+  layer 24: nominal l0=120
+  seq 320/15696 | 1,161 tok/s | cache 0.16 GB | project 5.10 GB | free 33.4 GB | eta 56 min | prof {'data': 0.5, 'forward': 1.48, 'acc_raw': 0.05, 'csr': 0.8, 'acc_sae': 0.68} s/batch
+  seq 640/15696 | 1,253 tok/s | cache 0.32 GB | project 5.26 GB | free 33.2 GB | eta 51 min | prof {'data': 0.26, 'forward': 1.46, 'acc_raw': 0.05, 'csr': 0.8, 'acc_sae': 0.68} s/batch
+  [NNZ/ROW first 50 batches] {12: 119.17277450980392, 14: 122.07652941176471, 16: 121.18106862745098, 18: 122.03782352941177}
+  seq 960/15696 | 1,287 tok/s | cache 0.49 GB | project 5.42 GB | free 33.1 GB | eta 49 min | prof {'data': 0.18, 'forward': 1.46, 'acc_raw': 0.05, 'csr': 0.8, 'acc_sae': 0.68} s/batch
+  [ANCHOR EARLY] {'n_checked': 355, 'ok': True, 'at_seq': 1008}
+  seq 1280/15696 | 1,304 tok/s | cache 0.65 GB | project 5.58 GB | free 32.9 GB | eta 47 min | prof {'data': 0.14, 'forward': 1.46, 'acc_raw': 0.05, 'csr': 0.8, 'acc_sae': 0.68} s/batch
+  seq 1600/15696 | 1,315 tok/s | cache 0.81 GB | project 5.74 GB | free 32.7 GB | eta 46 min | prof {'data': 0.11, 'forward': 1.45, 'acc_raw': 0.05, 'csr': 0.8, 'acc_sae': 0.68} s/batch
+  seq 1920/15696 | 1,323 tok/s | cache 0.97 GB | project 5.90 GB | free 32.5 GB | eta 44 min | prof {'data': 0.1, 'forward': 1.45, 'acc_raw': 0.05, 'csr': 0.8, 'acc_sae': 0.68} s/batch
+  seq 2240/15696 | 1,328 tok/s | cache 1.13 GB | project 6.05 GB | free 32.3 GB | eta 43 min | prof {'data': 0.08, 'forward': 1.45, 'acc_raw': 0.05, 'csr': 0.8, 'acc_sae': 0.68} s/batch
+  seq 2560/15696 | 1,331 tok/s | cache 1.30 GB | project 6.21 GB | free 32.2 GB | eta 42 min | prof {'data': 0.08, 'forward': 1.45, 'acc_raw': 0.05, 'csr': 0.8, 'acc_sae': 0.68} s/batch
+  seq 2880/15696 | 1,334 tok/s | cache 1.46 GB | project 6.37 GB | free 32.1 GB | eta 41 min | prof {'data': 0.07, 'forward': 1.45, 'acc_raw': 0.05, 'csr': 0.8, 'acc_sae': 0.68} s/batch
+  seq 3200/15696 | 1,337 tok/s | cache 1.62 GB | project 6.53 GB | free 31.9 GB | eta 40 min | prof {'data': 0.06, 'forward': 1.45, 'acc_raw': 0.05, 'csr': 0.8, 'acc_sae': 0.68} s/batch
+  seq 3520/15696 | 1,339 tok/s | cache 1.78 GB | project 6.69 GB | free 31.8 GB | eta 39 min | prof {'data': 0.06, 'forward': 1.45, 'acc_raw': 0.05, 'csr': 0.8, 'acc_sae': 0.68} s/batch
+  seq 3840/15696 | 1,340 tok/s | cache 1.94 GB | project 6.85 GB | free 31.6 GB | eta 38 min | prof {'data': 0.06, 'forward': 1.45, 'acc_raw': 0.05, 'csr': 0.8, 'acc_sae': 0.68} s/batch
+  seq 4160/15696 | 1,341 tok/s | cache 2.10 GB | project 7.01 GB | free 31.4 GB | eta 37 min | prof {'data': 0.05, 'forward': 1.45, 'acc_raw': 0.05, 'csr': 0.8, 'acc_sae': 0.68} s/batch
+  seq 4480/15696 | 1,342 tok/s | cache 2.27 GB | project 7.17 GB | free 31.3 GB | eta 36 min | prof {'data': 0.05, 'forward': 1.45, 'acc_raw': 0.05, 'csr': 0.8, 'acc_sae': 0.68} s/batch
+  seq 4800/15696 | 1,344 tok/s | cache 2.43 GB | project 7.33 GB | free 31.1 GB | eta 34 min | prof {'data': 0.05, 'forward': 1.45, 'acc_raw': 0.05, 'csr': 0.8, 'acc_sae': 0.68} s/batch
+  seq 5120/15696 | 1,345 tok/s | cache 2.59 GB | project 7.49 GB | free 31.0 GB | eta 33 min | prof {'data': 0.05, 'forward': 1.45, 'acc_raw': 0.05, 'csr': 0.8, 'acc_sae': 0.68} s/batch
+  seq 5440/15696 | 1,346 tok/s | cache 2.75 GB | project 7.65 GB | free 30.8 GB | eta 32 min | prof {'data': 0.04, 'forward': 1.45, 'acc_raw': 0.05, 'csr': 0.8, 'acc_sae': 0.68} s/batch
+  seq 5760/15696 | 1,346 tok/s | cache 2.92 GB | project 7.81 GB | free 30.6 GB | eta 31 min | prof {'data': 0.04, 'forward': 1.45, 'acc_raw': 0.05, 'csr': 0.8, 'acc_sae': 0.68} s/batch
+  seq 6080/15696 | 1,347 tok/s | cache 3.08 GB | project 7.97 GB | free 30.5 GB | eta 30 min | prof {'data': 0.04, 'forward': 1.45, 'acc_raw': 0.05, 'csr': 0.8, 'acc_sae': 0.68} s/batch
+  seq 6400/15696 | 1,347 tok/s | cache 3.24 GB | project 8.13 GB | free 30.3 GB | eta 29 min | prof {'data': 0.04, 'forward': 1.45, 'acc_raw': 0.05, 'csr': 0.8, 'acc_sae': 0.68} s/batch
+  seq 6720/15696 | 1,348 tok/s | cache 3.40 GB | project 8.29 GB | free 30.2 GB | eta 28 min | prof {'data': 0.04, 'forward': 1.45, 'acc_raw': 0.05, 'csr': 0.8, 'acc_sae': 0.68} s/batch
+  seq 7040/15696 | 1,349 tok/s | cache 3.56 GB | project 8.44 GB | free 30.0 GB | eta 27 min | prof {'data': 0.04, 'forward': 1.45, 'acc_raw': 0.05, 'csr': 0.8, 'acc_sae': 0.68} s/batch
+  seq 7360/15696 | 1,349 tok/s | cache 3.73 GB | project 8.60 GB | free 29.9 GB | eta 26 min | prof {'data': 0.04, 'forward': 1.45, 'acc_raw': 0.05, 'csr': 0.8, 'acc_sae': 0.68} s/batch
+  seq 7680/15696 | 1,350 tok/s | cache 3.89 GB | project 8.76 GB | free 29.7 GB | eta 25 min | prof {'data': 0.04, 'forward': 1.45, 'acc_raw': 0.05, 'csr': 0.8, 'acc_sae': 0.68} s/batch
+  seq 8000/15696 | 1,350 tok/s | cache 4.05 GB | project 8.92 GB | free 29.6 GB | eta 24 min | prof {'data': 0.03, 'forward': 1.45, 'acc_raw': 0.05, 'csr': 0.8, 'acc_sae': 0.68} s/batch
+  seq 8320/15696 | 1,350 tok/s | cache 4.21 GB | project 9.08 GB | free 29.4 GB | eta 23 min | prof {'data': 0.03, 'forward': 1.45, 'acc_raw': 0.05, 'csr': 0.8, 'acc_sae': 0.68} s/batch
+  seq 8640/15696 | 1,350 tok/s | cache 4.37 GB | project 9.24 GB | free 29.3 GB | eta 22 min | prof {'data': 0.03, 'forward': 1.45, 'acc_raw': 0.05, 'csr': 0.8, 'acc_sae': 0.68} s/batch
+  seq 8960/15696 | 1,350 tok/s | cache 4.53 GB | project 9.40 GB | free 29.1 GB | eta 21 min | prof {'data': 0.03, 'forward': 1.45, 'acc_raw': 0.05, 'csr': 0.8, 'acc_sae': 0.68} s/batch
+  seq 9280/15696 | 1,350 tok/s | cache 4.70 GB | project 9.56 GB | free 28.9 GB | eta 20 min | prof {'data': 0.03, 'forward': 1.45, 'acc_raw': 0.05, 'csr': 0.8, 'acc_sae': 0.68} s/batch
+  seq 9600/15696 | 1,350 tok/s | cache 4.86 GB | project 9.72 GB | free 28.8 GB | eta 19 min | prof {'data': 0.03, 'forward': 1.45, 'acc_raw': 0.05, 'csr': 0.8, 'acc_sae': 0.68} s/batch
+  seq 9920/15696 | 1,350 tok/s | cache 5.02 GB | project 9.88 GB | free 28.6 GB | eta 18 min | prof {'data': 0.03, 'forward': 1.45, 'acc_raw': 0.05, 'csr': 0.8, 'acc_sae': 0.68} s/batch
+  seq 10240/15696 | 1,350 tok/s | cache 5.18 GB | project 10.04 GB | free 28.5 GB | eta 17 min | prof {'data': 0.03, 'forward': 1.45, 'acc_raw': 0.05, 'csr': 0.8, 'acc_sae': 0.68} s/batch
+  seq 10560/15696 | 1,350 tok/s | cache 5.35 GB | project 10.20 GB | free 28.3 GB | eta 16 min | prof {'data': 0.03, 'forward': 1.45, 'acc_raw': 0.05, 'csr': 0.8, 'acc_sae': 0.68} s/batch
+  seq 10880/15696 | 1,350 tok/s | cache 5.51 GB | project 10.36 GB | free 28.1 GB | eta 15 min | prof {'data': 0.03, 'forward': 1.45, 'acc_raw': 0.05, 'csr': 0.8, 'acc_sae': 0.68} s/batch
+  seq 11200/15696 | 1,349 tok/s | cache 5.67 GB | project 10.52 GB | free 28.0 GB | eta 14 min | prof {'data': 0.03, 'forward': 1.45, 'acc_raw': 0.05, 'csr': 0.8, 'acc_sae': 0.68} s/batch
+  seq 11520/15696 | 1,350 tok/s | cache 5.83 GB | project 10.68 GB | free 27.8 GB | eta 13 min | prof {'data': 0.03, 'forward': 1.45, 'acc_raw': 0.05, 'csr': 0.8, 'acc_sae': 0.68} s/batch
+  seq 11840/15696 | 1,350 tok/s | cache 5.99 GB | project 10.84 GB | free 27.7 GB | eta 12 min | prof {'data': 0.03, 'forward': 1.45, 'acc_raw': 0.05, 'csr': 0.8, 'acc_sae': 0.68} s/batch
+  seq 12160/15696 | 1,350 tok/s | cache 6.16 GB | project 11.00 GB | free 27.5 GB | eta 11 min | prof {'data': 0.03, 'forward': 1.45, 'acc_raw': 0.05, 'csr': 0.8, 'acc_sae': 0.68} s/batch
+  seq 12480/15696 | 1,350 tok/s | cache 6.32 GB | project 11.15 GB | free 27.3 GB | eta 10 min | prof {'data': 0.03, 'forward': 1.45, 'acc_raw': 0.05, 'csr': 0.8, 'acc_sae': 0.68} s/batch
+  seq 12800/15696 | 1,350 tok/s | cache 6.48 GB | project 11.31 GB | free 27.2 GB | eta 9 min | prof {'data': 0.03, 'forward': 1.45, 'acc_raw': 0.05, 'csr': 0.8, 'acc_sae': 0.68} s/batch
+  seq 13120/15696 | 1,350 tok/s | cache 6.64 GB | project 11.47 GB | free 27.0 GB | eta 8 min | prof {'data': 0.03, 'forward': 1.45, 'acc_raw': 0.05, 'csr': 0.8, 'acc_sae': 0.68} s/batch
+  seq 13440/15696 | 1,350 tok/s | cache 6.80 GB | project 11.63 GB | free 26.9 GB | eta 7 min | prof {'data': 0.03, 'forward': 1.45, 'acc_raw': 0.05, 'csr': 0.8, 'acc_sae': 0.68} s/batch
+  seq 13760/15696 | 1,350 tok/s | cache 6.97 GB | project 11.79 GB | free 26.7 GB | eta 6 min | prof {'data': 0.03, 'forward': 1.45, 'acc_raw': 0.05, 'csr': 0.8, 'acc_sae': 0.68} s/batch
+  seq 14080/15696 | 1,350 tok/s | cache 7.13 GB | project 11.95 GB | free 26.6 GB | eta 5 min | prof {'data': 0.03, 'forward': 1.45, 'acc_raw': 0.05, 'csr': 0.8, 'acc_sae': 0.68} s/batch
+  seq 14400/15696 | 1,350 tok/s | cache 7.29 GB | project 12.11 GB | free 27.4 GB | eta 4 min | prof {'data': 0.03, 'forward': 1.45, 'acc_raw': 0.05, 'csr': 0.8, 'acc_sae': 0.68} s/batch
+  seq 14720/15696 | 1,350 tok/s | cache 7.45 GB | project 12.27 GB | free 27.3 GB | eta 3 min | prof {'data': 0.03, 'forward': 1.45, 'acc_raw': 0.05, 'csr': 0.8, 'acc_sae': 0.68} s/batch
+  seq 15040/15696 | 1,350 tok/s | cache 7.61 GB | project 12.43 GB | free 27.2 GB | eta 2 min | prof {'data': 0.03, 'forward': 1.45, 'acc_raw': 0.05, 'csr': 0.8, 'acc_sae': 0.68} s/batch
+  seq 15360/15696 | 1,349 tok/s | cache 7.77 GB | project 12.59 GB | free 27.0 GB | eta 1 min | prof {'data': 0.03, 'forward': 1.45, 'acc_raw': 0.05, 'csr': 0.8, 'acc_sae': 0.68} s/batch
+  seq 15680/15696 | 1,349 tok/s | cache 7.94 GB | project 12.75 GB | free 26.8 GB | eta 0 min | prof {'data': 0.03, 'forward': 1.45, 'acc_raw': 0.05, 'csr': 0.8, 'acc_sae': 0.68} s/batch
+  seq 15696/15696 | 1,349 tok/s | cache 7.94 GB | project 12.76 GB | free 26.8 GB | eta 0 min | prof {'data': 0.03, 'forward': 1.45, 'acc_raw': 0.05, 'csr': 0.8, 'acc_sae': 0.68} s/batch
+  [IDENTITY] {'anchors_early': {'n_checked': 355, 'ok': True, 'at_seq': 1008}, 'anchors_all': {'n': 5152, 'ok': True}, 'pool_reproduced': True, 'n_pool_rebuilt': 3795, 'n_distinct_types': 83310, 'n_rows_covered_by_pool': 3197155, 'half_counts_ok': True}
+  reserve: 8000 sequences x 256 written
+{
+ "nnz_per_row": {
+  "12": 119.05618591473286,
+  "14": 121.80135266134997,
+  "16": 121.21036282504846,
+  "18": 122.11371099918051
+ },
+ "identity": {
+  "anchors_early": {
+   "n_checked": 355,
+   "ok": true,
+   "at_seq": 1008
+  },
+  "anchors_all": {
+   "n": 5152,
+   "ok": true
+  },
+  "pool_reproduced": true,
+  "n_pool_rebuilt": 3795,
+  "n_distinct_types": 83310,
+  "n_rows_covered_by_pool": 3197155,
+  "half_counts_ok": true
+ },
+ "project_gb_end": 14.446600086,
+ "seconds_corpus": 2967
+}
+/Users/scasella/.local/share/uv/python/cpython-3.13-macos-aarch64-none/lib/python3.13/multiprocessing/resource_tracker.py:301: UserWarning: resource_tracker: There appear to be 1 leaked semaphore objects to clean up at shutdown: {'/loky-36809-q_ghz059'}
+  warnings.warn(

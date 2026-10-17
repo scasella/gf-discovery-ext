@@ -1,0 +1,4165 @@
+{
+ "models": [
+  "en_core_web_trf",
+  "en_core_web_sm"
+ ],
+ "layers": {
+  "7": {
+   "per_rule": {
+    "A": {
+     "en_core_web_trf": {
+      "median_abs_auroc": 0.5129534092352639,
+      "top5": [
+       {
+        "unit": "skew/37",
+        "abs_auroc": 0.956,
+        "status": "context:A",
+        "would_name": true
+       },
+       {
+        "unit": "logcosh/37",
+        "abs_auroc": 0.955,
+        "status": "context:A",
+        "would_name": true
+       },
+       {
+        "unit": "logcosh/5",
+        "abs_auroc": 0.589,
+        "status": "none",
+        "would_name": true
+       },
+       {
+        "unit": "skew/48",
+        "abs_auroc": 0.587,
+        "status": "battery-named",
+        "would_name": false
+       },
+       {
+        "unit": "logcosh/42",
+        "abs_auroc": 0.577,
+        "status": "battery-named",
+        "would_name": false
+       }
+      ],
+      "would_name": [
+       {
+        "unit": "skew/37",
+        "abs_auroc": 0.956,
+        "status": "context:A"
+       },
+       {
+        "unit": "logcosh/37",
+        "abs_auroc": 0.955,
+        "status": "context:A"
+       },
+       {
+        "unit": "logcosh/5",
+        "abs_auroc": 0.589,
+        "status": "none"
+       }
+      ]
+     },
+     "en_core_web_sm": {
+      "median_abs_auroc": 0.5129534092352639,
+      "top5": [
+       {
+        "unit": "skew/37",
+        "abs_auroc": 0.956,
+        "status": "context:A",
+        "would_name": true
+       },
+       {
+        "unit": "logcosh/37",
+        "abs_auroc": 0.955,
+        "status": "context:A",
+        "would_name": true
+       },
+       {
+        "unit": "logcosh/5",
+        "abs_auroc": 0.589,
+        "status": "none",
+        "would_name": true
+       },
+       {
+        "unit": "skew/48",
+        "abs_auroc": 0.587,
+        "status": "battery-named",
+        "would_name": false
+       },
+       {
+        "unit": "logcosh/42",
+        "abs_auroc": 0.577,
+        "status": "battery-named",
+        "would_name": false
+       }
+      ],
+      "would_name": [
+       {
+        "unit": "skew/37",
+        "abs_auroc": 0.956,
+        "status": "context:A"
+       },
+       {
+        "unit": "logcosh/37",
+        "abs_auroc": 0.955,
+        "status": "context:A"
+       },
+       {
+        "unit": "logcosh/5",
+        "abs_auroc": 0.589,
+        "status": "none"
+       }
+      ]
+     }
+    },
+    "B": {
+     "en_core_web_trf": {
+      "median_abs_auroc": 0.5192026674818253,
+      "top5": [
+       {
+        "unit": "skew/38",
+        "abs_auroc": 0.681,
+        "status": "context:B",
+        "would_name": true
+       },
+       {
+        "unit": "logcosh/50",
+        "abs_auroc": 0.672,
+        "status": "context:B",
+        "would_name": true
+       },
+       {
+        "unit": "logcosh/42",
+        "abs_auroc": 0.574,
+        "status": "battery-named",
+        "would_name": false
+       },
+       {
+        "unit": "logcosh/52",
+        "abs_auroc": 0.571,
+        "status": "none",
+        "would_name": false
+       },
+       {
+        "unit": "logcosh/12",
+        "abs_auroc": 0.57,
+        "status": "battery-named",
+        "would_name": false
+       }
+      ],
+      "would_name": [
+       {
+        "unit": "skew/38",
+        "abs_auroc": 0.681,
+        "status": "context:B"
+       },
+       {
+        "unit": "logcosh/50",
+        "abs_auroc": 0.672,
+        "status": "context:B"
+       }
+      ]
+     },
+     "en_core_web_sm": {
+      "median_abs_auroc": 0.5162098760303566,
+      "top5": [
+       {
+        "unit": "skew/38",
+        "abs_auroc": 0.666,
+        "status": "context:B",
+        "would_name": true
+       },
+       {
+        "unit": "logcosh/50",
+        "abs_auroc": 0.659,
+        "status": "context:B",
+        "would_name": true
+       },
+       {
+        "unit": "logcosh/42",
+        "abs_auroc": 0.57,
+        "status": "battery-named",
+        "would_name": false
+       },
+       {
+        "unit": "logcosh/52",
+        "abs_auroc": 0.569,
+        "status": "none",
+        "would_name": false
+       },
+       {
+        "unit": "skew/3",
+        "abs_auroc": 0.568,
+        "status": "battery-named",
+        "would_name": false
+       }
+      ],
+      "would_name": [
+       {
+        "unit": "skew/38",
+        "abs_auroc": 0.666,
+        "status": "context:B"
+       },
+       {
+        "unit": "logcosh/50",
+        "abs_auroc": 0.659,
+        "status": "context:B"
+       }
+      ]
+     }
+    },
+    "C": {
+     "en_core_web_trf": {
+      "median_abs_auroc": 0.5230630270721301,
+      "top5": [
+       {
+        "unit": "skew/49",
+        "abs_auroc": 0.626,
+        "status": "context:C",
+        "would_name": true
+       },
+       {
+        "unit": "logcosh/55",
+        "abs_auroc": 0.598,
+        "status": "context:C",
+        "would_name": true
+       },
+       {
+        "unit": "skew/59",
+        "abs_auroc": 0.596,
+        "status": "none",
+        "would_name": false
+       },
+       {
+        "unit": "logcosh/36",
+        "abs_auroc": 0.58,
+        "status": "none",
+        "would_name": false
+       },
+       {
+        "unit": "skew/18",
+        "abs_auroc": 0.573,
+        "status": "none",
+        "would_name": false
+       }
+      ],
+      "would_name": [
+       {
+        "unit": "skew/49",
+        "abs_auroc": 0.626,
+        "status": "context:C"
+       },
+       {
+        "unit": "logcosh/55",
+        "abs_auroc": 0.598,
+        "status": "context:C"
+       }
+      ]
+     },
+     "en_core_web_sm": {
+      "median_abs_auroc": 0.5231848191165845,
+      "top5": [
+       {
+        "unit": "skew/49",
+        "abs_auroc": 0.626,
+        "status": "context:C",
+        "would_name": true
+       },
+       {
+        "unit": "logcosh/55",
+        "abs_auroc": 0.598,
+        "status": "context:C",
+        "would_name": true
+       },
+       {
+        "unit": "skew/59",
+        "abs_auroc": 0.595,
+        "status": "none",
+        "would_name": false
+       },
+       {
+        "unit": "logcosh/36",
+        "abs_auroc": 0.579,
+        "status": "none",
+        "would_name": false
+       },
+       {
+        "unit": "skew/18",
+        "abs_auroc": 0.572,
+        "status": "none",
+        "would_name": false
+       }
+      ],
+      "would_name": [
+       {
+        "unit": "skew/49",
+        "abs_auroc": 0.626,
+        "status": "context:C"
+       },
+       {
+        "unit": "logcosh/55",
+        "abs_auroc": 0.598,
+        "status": "context:C"
+       }
+      ]
+     }
+    },
+    "C_inat": {
+     "en_core_web_trf": {
+      "median_abs_auroc": 0.5264756527972836,
+      "top5": [
+       {
+        "unit": "skew/49",
+        "abs_auroc": 0.847,
+        "status": "context:C",
+        "would_name": true
+       },
+       {
+        "unit": "logcosh/55",
+        "abs_auroc": 0.83,
+        "status": "context:C",
+        "would_name": true
+       },
+       {
+        "unit": "skew/39",
+        "abs_auroc": 0.586,
+        "status": "battery-named",
+        "would_name": false
+       },
+       {
+        "unit": "skew/35",
+        "abs_auroc": 0.584,
+        "status": "none",
+        "would_name": false
+       },
+       {
+        "unit": "logcosh/14",
+        "abs_auroc": 0.581,
+        "status": "none",
+        "would_name": false
+       }
+      ],
+      "would_name": [
+       {
+        "unit": "skew/49",
+        "abs_auroc": 0.847,
+        "status": "context:C"
+       },
+       {
+        "unit": "logcosh/55",
+        "abs_auroc": 0.83,
+        "status": "context:C"
+       },
+       {
+        "unit": "logcosh/33",
+        "abs_auroc": 0.554,
+        "status": "none"
+       }
+      ]
+     },
+     "en_core_web_sm": {
+      "median_abs_auroc": 0.5264756527972836,
+      "top5": [
+       {
+        "unit": "skew/49",
+        "abs_auroc": 0.847,
+        "status": "context:C",
+        "would_name": true
+       },
+       {
+        "unit": "logcosh/55",
+        "abs_auroc": 0.83,
+        "status": "context:C",
+        "would_name": true
+       },
+       {
+        "unit": "skew/39",
+        "abs_auroc": 0.586,
+        "status": "battery-named",
+        "would_name": false
+       },
+       {
+        "unit": "skew/35",
+        "abs_auroc": 0.584,
+        "status": "none",
+        "would_name": false
+       },
+       {
+        "unit": "logcosh/14",
+        "abs_auroc": 0.581,
+        "status": "none",
+        "would_name": false
+       }
+      ],
+      "would_name": [
+       {
+        "unit": "skew/49",
+        "abs_auroc": 0.847,
+        "status": "context:C"
+       },
+       {
+        "unit": "logcosh/55",
+        "abs_auroc": 0.83,
+        "status": "context:C"
+       },
+       {
+        "unit": "logcosh/33",
+        "abs_auroc": 0.554,
+        "status": "none"
+       }
+      ]
+     }
+    },
+    "D": {
+     "en_core_web_trf": {
+      "median_abs_auroc": 0.5202499070423274,
+      "top5": [
+       {
+        "unit": "logcosh/49",
+        "abs_auroc": 0.559,
+        "status": "none",
+        "would_name": false
+       },
+       {
+        "unit": "logcosh/3",
+        "abs_auroc": 0.558,
+        "status": "none",
+        "would_name": true
+       },
+       {
+        "unit": "skew/33",
+        "abs_auroc": 0.556,
+        "status": "none",
+        "would_name": true
+       },
+       {
+        "unit": "skew/58",
+        "abs_auroc": 0.555,
+        "status": "none",
+        "would_name": true
+       },
+       {
+        "unit": "logcosh/33",
+        "abs_auroc": 0.555,
+        "status": "none",
+        "would_name": false
+       }
+      ],
+      "would_name": [
+       {
+        "unit": "logcosh/3",
+        "abs_auroc": 0.558,
+        "status": "none"
+       },
+       {
+        "unit": "skew/33",
+        "abs_auroc": 0.556,
+        "status": "none"
+       },
+       {
+        "unit": "skew/58",
+        "abs_auroc": 0.555,
+        "status": "none"
+       },
+       {
+        "unit": "logcosh/57",
+        "abs_auroc": 0.55,
+        "status": "none"
+       }
+      ]
+     },
+     "en_core_web_sm": {
+      "median_abs_auroc": 0.5213837554578942,
+      "top5": [
+       {
+        "unit": "skew/33",
+        "abs_auroc": 0.558,
+        "status": "none",
+        "would_name": true
+       },
+       {
+        "unit": "logcosh/3",
+        "abs_auroc": 0.555,
+        "status": "none",
+        "would_name": true
+       },
+       {
+        "unit": "logcosh/49",
+        "abs_auroc": 0.555,
+        "status": "none",
+        "would_name": false
+       },
+       {
+        "unit": "logcosh/33",
+        "abs_auroc": 0.555,
+        "status": "none",
+        "would_name": false
+       },
+       {
+        "unit": "logcosh/57",
+        "abs_auroc": 0.554,
+        "status": "none",
+        "would_name": true
+       }
+      ],
+      "would_name": [
+       {
+        "unit": "skew/33",
+        "abs_auroc": 0.558,
+        "status": "none"
+       },
+       {
+        "unit": "logcosh/3",
+        "abs_auroc": 0.555,
+        "status": "none"
+       },
+       {
+        "unit": "logcosh/57",
+        "abs_auroc": 0.554,
+        "status": "none"
+       },
+       {
+        "unit": "skew/58",
+        "abs_auroc": 0.554,
+        "status": "none"
+       }
+      ]
+     }
+    },
+    "E": {
+     "en_core_web_trf": {
+      "median_abs_auroc": 0.5107530579849114,
+      "top5": [
+       {
+        "unit": "skew/37",
+        "abs_auroc": 0.666,
+        "status": "context:A",
+        "would_name": true
+       },
+       {
+        "unit": "logcosh/37",
+        "abs_auroc": 0.665,
+        "status": "context:A",
+        "would_name": true
+       },
+       {
+        "unit": "skew/3",
+        "abs_auroc": 0.633,
+        "status": "battery-named",
+        "would_name": false
+       },
+       {
+        "unit": "logcosh/53",
+        "abs_auroc": 0.62,
+        "status": "none",
+        "would_name": false
+       },
+       {
+        "unit": "skew/48",
+        "abs_auroc": 0.55,
+        "status": "battery-named",
+        "would_name": false
+       }
+      ],
+      "would_name": [
+       {
+        "unit": "skew/37",
+        "abs_auroc": 0.666,
+        "status": "context:A"
+       },
+       {
+        "unit": "logcosh/37",
+        "abs_auroc": 0.665,
+        "status": "context:A"
+       }
+      ]
+     },
+     "en_core_web_sm": {
+      "median_abs_auroc": 0.5094212720107701,
+      "top5": [
+       {
+        "unit": "skew/37",
+        "abs_auroc": 0.661,
+        "status": "context:A",
+        "would_name": true
+       },
+       {
+        "unit": "logcosh/37",
+        "abs_auroc": 0.66,
+        "status": "context:A",
+        "would_name": true
+       },
+       {
+        "unit": "skew/3",
+        "abs_auroc": 0.628,
+        "status": "battery-named",
+        "would_name": false
+       },
+       {
+        "unit": "logcosh/53",
+        "abs_auroc": 0.619,
+        "status": "none",
+        "would_name": false
+       },
+       {
+        "unit": "skew/48",
+        "abs_auroc": 0.549,
+        "status": "battery-named",
+        "would_name": false
+       }
+      ],
+      "would_name": [
+       {
+        "unit": "skew/37",
+        "abs_auroc": 0.661,
+        "status": "context:A"
+       },
+       {
+        "unit": "logcosh/37",
+        "abs_auroc": 0.66,
+        "status": "context:A"
+       }
+      ]
+     }
+    },
+    "F": {
+     "en_core_web_trf": {
+      "median_abs_auroc": 0.5188745186608777,
+      "top5": [
+       {
+        "unit": "skew/59",
+        "abs_auroc": 0.635,
+        "status": "none",
+        "would_name": true
+       },
+       {
+        "unit": "skew/3",
+        "abs_auroc": 0.582,
+        "status": "battery-named",
+        "would_name": false
+       },
+       {
+        "unit": "logcosh/31",
+        "abs_auroc": 0.569,
+        "status": "none",
+        "would_name": false
+       },
+       {
+        "unit": "logcosh/35",
+        "abs_auroc": 0.552,
+        "status": "battery-named",
+        "would_name": false
+       },
+       {
+        "unit": "skew/35",
+        "abs_auroc": 0.551,
+        "status": "none",
+        "would_name": false
+       }
+      ],
+      "would_name": [
+       {
+        "unit": "skew/59",
+        "abs_auroc": 0.635,
+        "status": "none"
+       }
+      ]
+     },
+     "en_core_web_sm": {
+      "median_abs_auroc": 0.5161532600572455,
+      "top5": [
+       {
+        "unit": "skew/59",
+        "abs_auroc": 0.616,
+        "status": "none",
+        "would_name": true
+       },
+       {
+        "unit": "skew/3",
+        "abs_auroc": 0.59,
+        "status": "battery-named",
+        "would_name": false
+       },
+       {
+        "unit": "logcosh/31",
+        "abs_auroc": 0.559,
+        "status": "none",
+        "would_name": false
+       },
+       {
+        "unit": "logcosh/35",
+        "abs_auroc": 0.548,
+        "status": "battery-named",
+        "would_name": false
+       },
+       {
+        "unit": "skew/49",
+        "abs_auroc": 0.54,
+        "status": "context:C",
+        "would_name": false
+       }
+      ],
+      "would_name": [
+       {
+        "unit": "skew/59",
+        "abs_auroc": 0.616,
+        "status": "none"
+       }
+      ]
+     }
+    },
+    "F_multi": {
+     "en_core_web_trf": {
+      "median_abs_auroc": 0.5235472532395786,
+      "top5": [
+       {
+        "unit": "skew/59",
+        "abs_auroc": 0.659,
+        "status": "none",
+        "would_name": true
+       },
+       {
+        "unit": "skew/3",
+        "abs_auroc": 0.606,
+        "status": "battery-named",
+        "would_name": false
+       },
+       {
+        "unit": "logcosh/31",
+        "abs_auroc": 0.579,
+        "status": "none",
+        "would_name": true
+       },
+       {
+        "unit": "skew/35",
+        "abs_auroc": 0.563,
+        "status": "none",
+        "would_name": false
+       },
+       {
+        "unit": "logcosh/35",
+        "abs_auroc": 0.557,
+        "status": "battery-named",
+        "would_name": false
+       }
+      ],
+      "would_name": [
+       {
+        "unit": "skew/59",
+        "abs_auroc": 0.659,
+        "status": "none"
+       },
+       {
+        "unit": "logcosh/31",
+        "abs_auroc": 0.579,
+        "status": "none"
+       }
+      ]
+     },
+     "en_core_web_sm": {
+      "median_abs_auroc": 0.518629027780594,
+      "top5": [
+       {
+        "unit": "skew/59",
+        "abs_auroc": 0.631,
+        "status": "none",
+        "would_name": true
+       },
+       {
+        "unit": "skew/3",
+        "abs_auroc": 0.613,
+        "status": "battery-named",
+        "would_name": false
+       },
+       {
+        "unit": "logcosh/31",
+        "abs_auroc": 0.567,
+        "status": "none",
+        "would_name": true
+       },
+       {
+        "unit": "logcosh/35",
+        "abs_auroc": 0.552,
+        "status": "battery-named",
+        "would_name": false
+       },
+       {
+        "unit": "skew/35",
+        "abs_auroc": 0.548,
+        "status": "none",
+        "would_name": false
+       }
+      ],
+      "would_name": [
+       {
+        "unit": "skew/59",
+        "abs_auroc": 0.631,
+        "status": "none"
+       },
+       {
+        "unit": "logcosh/31",
+        "abs_auroc": 0.567,
+        "status": "none"
+       }
+      ]
+     }
+    },
+    "G": {
+     "en_core_web_trf": {
+      "median_abs_auroc": 0.5144292774194898,
+      "top5": [
+       {
+        "unit": "skew/3",
+        "abs_auroc": 0.649,
+        "status": "battery-named",
+        "would_name": true
+       },
+       {
+        "unit": "skew/59",
+        "abs_auroc": 0.583,
+        "status": "none",
+        "would_name": false
+       },
+       {
+        "unit": "skew/49",
+        "abs_auroc": 0.582,
+        "status": "context:C",
+        "would_name": false
+       },
+       {
+        "unit": "skew/38",
+        "abs_auroc": 0.581,
+        "status": "context:B",
+        "would_name": false
+       },
+       {
+        "unit": "skew/23",
+        "abs_auroc": 0.577,
+        "status": "none",
+        "would_name": false
+       }
+      ],
+      "would_name": [
+       {
+        "unit": "skew/3",
+        "abs_auroc": 0.649,
+        "status": "battery-named"
+       }
+      ]
+     },
+     "en_core_web_sm": {
+      "median_abs_auroc": 0.5136165997524624,
+      "top5": [
+       {
+        "unit": "skew/3",
+        "abs_auroc": 0.648,
+        "status": "battery-named",
+        "would_name": true
+       },
+       {
+        "unit": "skew/59",
+        "abs_auroc": 0.587,
+        "status": "none",
+        "would_name": false
+       },
+       {
+        "unit": "skew/23",
+        "abs_auroc": 0.576,
+        "status": "none",
+        "would_name": false
+       },
+       {
+        "unit": "skew/49",
+        "abs_auroc": 0.573,
+        "status": "context:C",
+        "would_name": false
+       },
+       {
+        "unit": "skew/38",
+        "abs_auroc": 0.569,
+        "status": "context:B",
+        "would_name": false
+       }
+      ],
+      "would_name": [
+       {
+        "unit": "skew/3",
+        "abs_auroc": 0.648,
+        "status": "battery-named"
+       }
+      ]
+     }
+    },
+    "H": {
+     "en_core_web_trf": {
+      "median_abs_auroc": 0.5096489252659728,
+      "top5": [
+       {
+        "unit": "logcosh/37",
+        "abs_auroc": 0.72,
+        "status": "context:A",
+        "would_name": true
+       },
+       {
+        "unit": "skew/37",
+        "abs_auroc": 0.717,
+        "status": "context:A",
+        "would_name": true
+       },
+       {
+        "unit": "logcosh/42",
+        "abs_auroc": 0.551,
+        "status": "battery-named",
+        "would_name": false
+       },
+       {
+        "unit": "skew/48",
+        "abs_auroc": 0.547,
+        "status": "battery-named",
+        "would_name": false
+       },
+       {
+        "unit": "skew/51",
+        "abs_auroc": 0.536,
+        "status": "none",
+        "would_name": false
+       }
+      ],
+      "would_name": [
+       {
+        "unit": "logcosh/37",
+        "abs_auroc": 0.72,
+        "status": "context:A"
+       },
+       {
+        "unit": "skew/37",
+        "abs_auroc": 0.717,
+        "status": "context:A"
+       }
+      ]
+     },
+     "en_core_web_sm": {
+      "median_abs_auroc": 0.5088240385491505,
+      "top5": [
+       {
+        "unit": "logcosh/37",
+        "abs_auroc": 0.717,
+        "status": "context:A",
+        "would_name": true
+       },
+       {
+        "unit": "skew/37",
+        "abs_auroc": 0.715,
+        "status": "context:A",
+        "would_name": true
+       },
+       {
+        "unit": "logcosh/42",
+        "abs_auroc": 0.552,
+        "status": "battery-named",
+        "would_name": false
+       },
+       {
+        "unit": "skew/48",
+        "abs_auroc": 0.546,
+        "status": "battery-named",
+        "would_name": false
+       },
+       {
+        "unit": "logcosh/5",
+        "abs_auroc": 0.537,
+        "status": "none",
+        "would_name": false
+       }
+      ],
+      "would_name": [
+       {
+        "unit": "logcosh/37",
+        "abs_auroc": 0.717,
+        "status": "context:A"
+       },
+       {
+        "unit": "skew/37",
+        "abs_auroc": 0.715,
+        "status": "context:A"
+       }
+      ]
+     }
+    },
+    "I": {
+     "en_core_web_trf": {
+      "median_abs_auroc": 0.5144642133804056,
+      "top5": [
+       {
+        "unit": "skew/3",
+        "abs_auroc": 0.839,
+        "status": "battery-named",
+        "would_name": true
+       },
+       {
+        "unit": "logcosh/53",
+        "abs_auroc": 0.66,
+        "status": "none",
+        "would_name": false
+       },
+       {
+        "unit": "logcosh/12",
+        "abs_auroc": 0.609,
+        "status": "battery-named",
+        "would_name": false
+       },
+       {
+        "unit": "logcosh/42",
+        "abs_auroc": 0.561,
+        "status": "battery-named",
+        "would_name": false
+       },
+       {
+        "unit": "logcosh/35",
+        "abs_auroc": 0.56,
+        "status": "battery-named",
+        "would_name": false
+       }
+      ],
+      "would_name": [
+       {
+        "unit": "skew/3",
+        "abs_auroc": 0.839,
+        "status": "battery-named"
+       }
+      ]
+     },
+     "en_core_web_sm": {
+      "median_abs_auroc": 0.5144642133804056,
+      "top5": [
+       {
+        "unit": "skew/3",
+        "abs_auroc": 0.839,
+        "status": "battery-named",
+        "would_name": true
+       },
+       {
+        "unit": "logcosh/53",
+        "abs_auroc": 0.66,
+        "status": "none",
+        "would_name": false
+       },
+       {
+        "unit": "logcosh/12",
+        "abs_auroc": 0.609,
+        "status": "battery-named",
+        "would_name": false
+       },
+       {
+        "unit": "logcosh/42",
+        "abs_auroc": 0.561,
+        "status": "battery-named",
+        "would_name": false
+       },
+       {
+        "unit": "logcosh/35",
+        "abs_auroc": 0.56,
+        "status": "battery-named",
+        "would_name": false
+       }
+      ],
+      "would_name": [
+       {
+        "unit": "skew/3",
+        "abs_auroc": 0.839,
+        "status": "battery-named"
+       }
+      ]
+     }
+    },
+    "J": {
+     "en_core_web_trf": {
+      "median_abs_auroc": 0.515452012354531,
+      "top5": [
+       {
+        "unit": "logcosh/41",
+        "abs_auroc": 0.682,
+        "status": "none",
+        "would_name": true
+       },
+       {
+        "unit": "skew/41",
+        "abs_auroc": 0.674,
+        "status": "none",
+        "would_name": true
+       },
+       {
+        "unit": "skew/3",
+        "abs_auroc": 0.569,
+        "status": "battery-named",
+        "would_name": false
+       },
+       {
+        "unit": "logcosh/0",
+        "abs_auroc": 0.555,
+        "status": "none",
+        "would_name": false
+       },
+       {
+        "unit": "logcosh/53",
+        "abs_auroc": 0.551,
+        "status": "none",
+        "would_name": false
+       }
+      ],
+      "would_name": [
+       {
+        "unit": "logcosh/41",
+        "abs_auroc": 0.682,
+        "status": "none"
+       },
+       {
+        "unit": "skew/41",
+        "abs_auroc": 0.674,
+        "status": "none"
+       }
+      ]
+     },
+     "en_core_web_sm": {
+      "median_abs_auroc": 0.5151842486874338,
+      "top5": [
+       {
+        "unit": "logcosh/41",
+        "abs_auroc": 0.675,
+        "status": "none",
+        "would_name": true
+       },
+       {
+        "unit": "skew/41",
+        "abs_auroc": 0.667,
+        "status": "none",
+        "would_name": true
+       },
+       {
+        "unit": "skew/3",
+        "abs_auroc": 0.558,
+        "status": "battery-named",
+        "would_name": false
+       },
+       {
+        "unit": "skew/16",
+        "abs_auroc": 0.548,
+        "status": "none",
+        "would_name": false
+       },
+       {
+        "unit": "logcosh/0",
+        "abs_auroc": 0.548,
+        "status": "none",
+        "would_name": false
+       }
+      ],
+      "would_name": [
+       {
+        "unit": "logcosh/41",
+        "abs_auroc": 0.675,
+        "status": "none"
+       },
+       {
+        "unit": "skew/41",
+        "abs_auroc": 0.667,
+        "status": "none"
+       }
+      ]
+     }
+    },
+    "K": {
+     "en_core_web_trf": {
+      "median_abs_auroc": 0.510660990354311,
+      "top5": [
+       {
+        "unit": "skew/23",
+        "abs_auroc": 0.603,
+        "status": "none",
+        "would_name": true
+       },
+       {
+        "unit": "logcosh/23",
+        "abs_auroc": 0.585,
+        "status": "none",
+        "would_name": true
+       },
+       {
+        "unit": "skew/3",
+        "abs_auroc": 0.562,
+        "status": "battery-named",
+        "would_name": false
+       },
+       {
+        "unit": "skew/59",
+        "abs_auroc": 0.556,
+        "status": "none",
+        "would_name": false
+       },
+       {
+        "unit": "skew/32",
+        "abs_auroc": 0.544,
+        "status": "battery-named",
+        "would_name": false
+       }
+      ],
+      "would_name": [
+       {
+        "unit": "skew/23",
+        "abs_auroc": 0.603,
+        "status": "none"
+       },
+       {
+        "unit": "logcosh/23",
+        "abs_auroc": 0.585,
+        "status": "none"
+       }
+      ]
+     },
+     "en_core_web_sm": {
+      "median_abs_auroc": 0.5111159224898285,
+      "top5": [
+       {
+        "unit": "skew/23",
+        "abs_auroc": 0.604,
+        "status": "none",
+        "would_name": true
+       },
+       {
+        "unit": "logcosh/23",
+        "abs_auroc": 0.587,
+        "status": "none",
+        "would_name": true
+       },
+       {
+        "unit": "skew/59",
+        "abs_auroc": 0.561,
+        "status": "none",
+        "would_name": false
+       },
+       {
+        "unit": "skew/3",
+        "abs_auroc": 0.553,
+        "status": "battery-named",
+        "would_name": false
+       },
+       {
+        "unit": "skew/32",
+        "abs_auroc": 0.541,
+        "status": "battery-named",
+        "would_name": false
+       }
+      ],
+      "would_name": [
+       {
+        "unit": "skew/23",
+        "abs_auroc": 0.604,
+        "status": "none"
+       },
+       {
+        "unit": "logcosh/23",
+        "abs_auroc": 0.587,
+        "status": "none"
+       }
+      ]
+     }
+    },
+    "L": {
+     "en_core_web_trf": {
+      "median_abs_auroc": 0.5151519826844728,
+      "top5": [
+       {
+        "unit": "logcosh/37",
+        "abs_auroc": 0.593,
+        "status": "context:A",
+        "would_name": false
+       },
+       {
+        "unit": "skew/37",
+        "abs_auroc": 0.59,
+        "status": "context:A",
+        "would_name": false
+       },
+       {
+        "unit": "skew/3",
+        "abs_auroc": 0.571,
+        "status": "battery-named",
+        "would_name": false
+       },
+       {
+        "unit": "skew/51",
+        "abs_auroc": 0.569,
+        "status": "none",
+        "would_name": false
+       },
+       {
+        "unit": "logcosh/28",
+        "abs_auroc": 0.562,
+        "status": "none",
+        "would_name": false
+       }
+      ],
+      "would_name": []
+     },
+     "en_core_web_sm": {
+      "median_abs_auroc": 0.5127316515379728,
+      "top5": [
+       {
+        "unit": "logcosh/37",
+        "abs_auroc": 0.583,
+        "status": "context:A",
+        "would_name": false
+       },
+       {
+        "unit": "skew/37",
+        "abs_auroc": 0.581,
+        "status": "context:A",
+        "would_name": false
+       },
+       {
+        "unit": "logcosh/53",
+        "abs_auroc": 0.556,
+        "status": "none",
+        "would_name": false
+       },
+       {
+        "unit": "skew/51",
+        "abs_auroc": 0.556,
+        "status": "none",
+        "would_name": false
+       },
+       {
+        "unit": "logcosh/54",
+        "abs_auroc": 0.554,
+        "status": "battery-named",
+        "would_name": false
+       }
+      ],
+      "would_name": []
+     }
+    },
+    "M": {
+     "en_core_web_trf": {
+      "median_abs_auroc": 0.5122897844962275,
+      "top5": [
+       {
+        "unit": "logcosh/27",
+        "abs_auroc": 0.619,
+        "status": "battery-named",
+        "would_name": true
+       },
+       {
+        "unit": "skew/27",
+        "abs_auroc": 0.61,
+        "status": "battery-named",
+        "would_name": true
+       },
+       {
+        "unit": "skew/38",
+        "abs_auroc": 0.554,
+        "status": "context:B",
+        "would_name": false
+       },
+       {
+        "unit": "logcosh/50",
+        "abs_auroc": 0.549,
+        "status": "context:B",
+        "would_name": false
+       },
+       {
+        "unit": "skew/34",
+        "abs_auroc": 0.545,
+        "status": "battery-named",
+        "would_name": true
+       }
+      ],
+      "would_name": [
+       {
+        "unit": "logcosh/27",
+        "abs_auroc": 0.619,
+        "status": "battery-named"
+       },
+       {
+        "unit": "skew/27",
+        "abs_auroc": 0.61,
+        "status": "battery-named"
+       },
+       {
+        "unit": "skew/34",
+        "abs_auroc": 0.545,
+        "status": "battery-named"
+       },
+       {
+        "unit": "logcosh/34",
+        "abs_auroc": 0.544,
+        "status": "battery-named"
+       },
+       {
+        "unit": "logcosh/38",
+        "abs_auroc": 0.54,
+        "status": "battery-named"
+       },
+       {
+        "unit": "logcosh/15",
+        "abs_auroc": 0.515,
+        "status": "battery-named"
+       }
+      ]
+     },
+     "en_core_web_sm": {
+      "median_abs_auroc": 0.5124245767882428,
+      "top5": [
+       {
+        "unit": "logcosh/27",
+        "abs_auroc": 0.603,
+        "status": "battery-named",
+        "would_name": true
+       },
+       {
+        "unit": "skew/27",
+        "abs_auroc": 0.596,
+        "status": "battery-named",
+        "would_name": true
+       },
+       {
+        "unit": "skew/38",
+        "abs_auroc": 0.553,
+        "status": "context:B",
+        "would_name": false
+       },
+       {
+        "unit": "logcosh/50",
+        "abs_auroc": 0.548,
+        "status": "context:B",
+        "would_name": false
+       },
+       {
+        "unit": "skew/34",
+        "abs_auroc": 0.54,
+        "status": "battery-named",
+        "would_name": true
+       }
+      ],
+      "would_name": [
+       {
+        "unit": "logcosh/27",
+        "abs_auroc": 0.603,
+        "status": "battery-named"
+       },
+       {
+        "unit": "skew/27",
+        "abs_auroc": 0.596,
+        "status": "battery-named"
+       },
+       {
+        "unit": "skew/34",
+        "abs_auroc": 0.54,
+        "status": "battery-named"
+       },
+       {
+        "unit": "logcosh/34",
+        "abs_auroc": 0.538,
+        "status": "battery-named"
+       },
+       {
+        "unit": "logcosh/38",
+        "abs_auroc": 0.538,
+        "status": "battery-named"
+       },
+       {
+        "unit": "logcosh/15",
+        "abs_auroc": 0.512,
+        "status": "battery-named"
+       }
+      ]
+     }
+    },
+    "N": {
+     "en_core_web_trf": {
+      "median_abs_auroc": 0.5250744257820188,
+      "top5": [
+       {
+        "unit": "logcosh/31",
+        "abs_auroc": 0.867,
+        "status": "none",
+        "would_name": true
+       },
+       {
+        "unit": "skew/35",
+        "abs_auroc": 0.851,
+        "status": "none",
+        "would_name": true
+       },
+       {
+        "unit": "skew/18",
+        "abs_auroc": 0.632,
+        "status": "none",
+        "would_name": false
+       },
+       {
+        "unit": "skew/46",
+        "abs_auroc": 0.587,
+        "status": "battery-named",
+        "would_name": false
+       },
+       {
+        "unit": "logcosh/42",
+        "abs_auroc": 0.565,
+        "status": "battery-named",
+        "would_name": false
+       }
+      ],
+      "would_name": [
+       {
+        "unit": "logcosh/31",
+        "abs_auroc": 0.867,
+        "status": "none"
+       },
+       {
+        "unit": "skew/35",
+        "abs_auroc": 0.851,
+        "status": "none"
+       }
+      ]
+     },
+     "en_core_web_sm": {
+      "median_abs_auroc": 0.5250744257820188,
+      "top5": [
+       {
+        "unit": "logcosh/31",
+        "abs_auroc": 0.867,
+        "status": "none",
+        "would_name": true
+       },
+       {
+        "unit": "skew/35",
+        "abs_auroc": 0.851,
+        "status": "none",
+        "would_name": true
+       },
+       {
+        "unit": "skew/18",
+        "abs_auroc": 0.632,
+        "status": "none",
+        "would_name": false
+       },
+       {
+        "unit": "skew/46",
+        "abs_auroc": 0.587,
+        "status": "battery-named",
+        "would_name": false
+       },
+       {
+        "unit": "logcosh/42",
+        "abs_auroc": 0.565,
+        "status": "battery-named",
+        "would_name": false
+       }
+      ],
+      "would_name": [
+       {
+        "unit": "logcosh/31",
+        "abs_auroc": 0.867,
+        "status": "none"
+       },
+       {
+        "unit": "skew/35",
+        "abs_auroc": 0.851,
+        "status": "none"
+       }
+      ]
+     }
+    }
+   }
+  },
+  "12": {
+   "per_rule": {
+    "A": {
+     "en_core_web_trf": {
+      "median_abs_auroc": 0.5287124585516385,
+      "top5": [
+       {
+        "unit": "logcosh/9",
+        "abs_auroc": 0.825,
+        "status": "context:E",
+        "would_name": true
+       },
+       {
+        "unit": "skew/52",
+        "abs_auroc": 0.784,
+        "status": "context:E",
+        "would_name": true
+       },
+       {
+        "unit": "skew/23",
+        "abs_auroc": 0.726,
+        "status": "battery-named",
+        "would_name": true
+       },
+       {
+        "unit": "skew/0",
+        "abs_auroc": 0.712,
+        "status": "none",
+        "would_name": true
+       },
+       {
+        "unit": "logcosh/0",
+        "abs_auroc": 0.703,
+        "status": "none",
+        "would_name": true
+       }
+      ],
+      "would_name": [
+       {
+        "unit": "logcosh/9",
+        "abs_auroc": 0.825,
+        "status": "context:E"
+       },
+       {
+        "unit": "skew/52",
+        "abs_auroc": 0.784,
+        "status": "context:E"
+       },
+       {
+        "unit": "skew/23",
+        "abs_auroc": 0.726,
+        "status": "battery-named"
+       },
+       {
+        "unit": "skew/0",
+        "abs_auroc": 0.712,
+        "status": "none"
+       },
+       {
+        "unit": "logcosh/0",
+        "abs_auroc": 0.703,
+        "status": "none"
+       },
+       {
+        "unit": "logcosh/37",
+        "abs_auroc": 0.611,
+        "status": "context:H"
+       },
+       {
+        "unit": "skew/37",
+        "abs_auroc": 0.585,
+        "status": "context:H"
+       }
+      ]
+     },
+     "en_core_web_sm": {
+      "median_abs_auroc": 0.5287124585516385,
+      "top5": [
+       {
+        "unit": "logcosh/9",
+        "abs_auroc": 0.825,
+        "status": "context:E",
+        "would_name": true
+       },
+       {
+        "unit": "skew/52",
+        "abs_auroc": 0.784,
+        "status": "context:E",
+        "would_name": true
+       },
+       {
+        "unit": "skew/23",
+        "abs_auroc": 0.726,
+        "status": "battery-named",
+        "would_name": true
+       },
+       {
+        "unit": "skew/0",
+        "abs_auroc": 0.712,
+        "status": "none",
+        "would_name": true
+       },
+       {
+        "unit": "logcosh/0",
+        "abs_auroc": 0.703,
+        "status": "none",
+        "would_name": true
+       }
+      ],
+      "would_name": [
+       {
+        "unit": "logcosh/9",
+        "abs_auroc": 0.825,
+        "status": "context:E"
+       },
+       {
+        "unit": "skew/52",
+        "abs_auroc": 0.784,
+        "status": "context:E"
+       },
+       {
+        "unit": "skew/23",
+        "abs_auroc": 0.726,
+        "status": "battery-named"
+       },
+       {
+        "unit": "skew/0",
+        "abs_auroc": 0.712,
+        "status": "none"
+       },
+       {
+        "unit": "logcosh/0",
+        "abs_auroc": 0.703,
+        "status": "none"
+       },
+       {
+        "unit": "logcosh/37",
+        "abs_auroc": 0.611,
+        "status": "context:H"
+       },
+       {
+        "unit": "skew/37",
+        "abs_auroc": 0.585,
+        "status": "context:H"
+       }
+      ]
+     }
+    },
+    "B": {
+     "en_core_web_trf": {
+      "median_abs_auroc": 0.523139404536642,
+      "top5": [
+       {
+        "unit": "logcosh/24",
+        "abs_auroc": 0.618,
+        "status": "context:G",
+        "would_name": true
+       },
+       {
+        "unit": "skew/24",
+        "abs_auroc": 0.614,
+        "status": "context:G",
+        "would_name": true
+       },
+       {
+        "unit": "skew/25",
+        "abs_auroc": 0.6,
+        "status": "none",
+        "would_name": false
+       },
+       {
+        "unit": "skew/7",
+        "abs_auroc": 0.59,
+        "status": "none",
+        "would_name": false
+       },
+       {
+        "unit": "logcosh/63",
+        "abs_auroc": 0.58,
+        "status": "none",
+        "would_name": false
+       }
+      ],
+      "would_name": [
+       {
+        "unit": "logcosh/24",
+        "abs_auroc": 0.618,
+        "status": "context:G"
+       },
+       {
+        "unit": "skew/24",
+        "abs_auroc": 0.614,
+        "status": "context:G"
+       }
+      ]
+     },
+     "en_core_web_sm": {
+      "median_abs_auroc": 0.5191788466024827,
+      "top5": [
+       {
+        "unit": "skew/25",
+        "abs_auroc": 0.601,
+        "status": "none",
+        "would_name": false
+       },
+       {
+        "unit": "logcosh/24",
+        "abs_auroc": 0.598,
+        "status": "context:G",
+        "would_name": true
+       },
+       {
+        "unit": "skew/24",
+        "abs_auroc": 0.595,
+        "status": "context:G",
+        "would_name": true
+       },
+       {
+        "unit": "skew/7",
+        "abs_auroc": 0.582,
+        "status": "none",
+        "would_name": false
+       },
+       {
+        "unit": "skew/34",
+        "abs_auroc": 0.577,
+        "status": "context:K",
+        "would_name": false
+       }
+      ],
+      "would_name": [
+       {
+        "unit": "logcosh/24",
+        "abs_auroc": 0.598,
+        "status": "context:G"
+       },
+       {
+        "unit": "skew/24",
+        "abs_auroc": 0.595,
+        "status": "context:G"
+       }
+      ]
+     }
+    },
+    "C": {
+     "en_core_web_trf": {
+      "median_abs_auroc": 0.5156327097141911,
+      "top5": [
+       {
+        "unit": "skew/8",
+        "abs_auroc": 0.633,
+        "status": "none",
+        "would_name": true
+       },
+       {
+        "unit": "logcosh/46",
+        "abs_auroc": 0.558,
+        "status": "context:K",
+        "would_name": false
+       },
+       {
+        "unit": "logcosh/29",
+        "abs_auroc": 0.554,
+        "status": "none",
+        "would_name": false
+       },
+       {
+        "unit": "logcosh/26",
+        "abs_auroc": 0.552,
+        "status": "battery-named",
+        "would_name": false
+       },
+       {
+        "unit": "logcosh/13",
+        "abs_auroc": 0.551,
+        "status": "none",
+        "would_name": false
+       }
+      ],
+      "would_name": [
+       {
+        "unit": "skew/8",
+        "abs_auroc": 0.633,
+        "status": "none"
+       }
+      ]
+     },
+     "en_core_web_sm": {
+      "median_abs_auroc": 0.5148548845983788,
+      "top5": [
+       {
+        "unit": "skew/8",
+        "abs_auroc": 0.632,
+        "status": "none",
+        "would_name": true
+       },
+       {
+        "unit": "logcosh/46",
+        "abs_auroc": 0.558,
+        "status": "context:K",
+        "would_name": false
+       },
+       {
+        "unit": "logcosh/29",
+        "abs_auroc": 0.554,
+        "status": "none",
+        "would_name": false
+       },
+       {
+        "unit": "logcosh/26",
+        "abs_auroc": 0.552,
+        "status": "battery-named",
+        "would_name": false
+       },
+       {
+        "unit": "logcosh/13",
+        "abs_auroc": 0.551,
+        "status": "none",
+        "would_name": false
+       }
+      ],
+      "would_name": [
+       {
+        "unit": "skew/8",
+        "abs_auroc": 0.632,
+        "status": "none"
+       }
+      ]
+     }
+    },
+    "C_inat": {
+     "en_core_web_trf": {
+      "median_abs_auroc": 0.5266143641368343,
+      "top5": [
+       {
+        "unit": "skew/8",
+        "abs_auroc": 0.794,
+        "status": "none",
+        "would_name": true
+       },
+       {
+        "unit": "logcosh/45",
+        "abs_auroc": 0.632,
+        "status": "none",
+        "would_name": false
+       },
+       {
+        "unit": "logcosh/9",
+        "abs_auroc": 0.599,
+        "status": "context:E",
+        "would_name": false
+       },
+       {
+        "unit": "skew/52",
+        "abs_auroc": 0.58,
+        "status": "context:E",
+        "would_name": false
+       },
+       {
+        "unit": "logcosh/23",
+        "abs_auroc": 0.575,
+        "status": "battery-named",
+        "would_name": false
+       }
+      ],
+      "would_name": [
+       {
+        "unit": "skew/8",
+        "abs_auroc": 0.794,
+        "status": "none"
+       }
+      ]
+     },
+     "en_core_web_sm": {
+      "median_abs_auroc": 0.5266143641368343,
+      "top5": [
+       {
+        "unit": "skew/8",
+        "abs_auroc": 0.794,
+        "status": "none",
+        "would_name": true
+       },
+       {
+        "unit": "logcosh/45",
+        "abs_auroc": 0.632,
+        "status": "none",
+        "would_name": false
+       },
+       {
+        "unit": "logcosh/9",
+        "abs_auroc": 0.599,
+        "status": "context:E",
+        "would_name": false
+       },
+       {
+        "unit": "skew/52",
+        "abs_auroc": 0.58,
+        "status": "context:E",
+        "would_name": false
+       },
+       {
+        "unit": "logcosh/23",
+        "abs_auroc": 0.575,
+        "status": "battery-named",
+        "would_name": false
+       }
+      ],
+      "would_name": [
+       {
+        "unit": "skew/8",
+        "abs_auroc": 0.794,
+        "status": "none"
+       }
+      ]
+     }
+    },
+    "D": {
+     "en_core_web_trf": {
+      "median_abs_auroc": 0.5123991387814,
+      "top5": [
+       {
+        "unit": "skew/2",
+        "abs_auroc": 0.638,
+        "status": "context:D",
+        "would_name": true
+       },
+       {
+        "unit": "logcosh/2",
+        "abs_auroc": 0.633,
+        "status": "context:D",
+        "would_name": true
+       },
+       {
+        "unit": "skew/25",
+        "abs_auroc": 0.557,
+        "status": "none",
+        "would_name": false
+       },
+       {
+        "unit": "skew/11",
+        "abs_auroc": 0.556,
+        "status": "battery-named",
+        "would_name": true
+       },
+       {
+        "unit": "logcosh/63",
+        "abs_auroc": 0.543,
+        "status": "none",
+        "would_name": false
+       }
+      ],
+      "would_name": [
+       {
+        "unit": "skew/2",
+        "abs_auroc": 0.638,
+        "status": "context:D"
+       },
+       {
+        "unit": "logcosh/2",
+        "abs_auroc": 0.633,
+        "status": "context:D"
+       },
+       {
+        "unit": "skew/11",
+        "abs_auroc": 0.556,
+        "status": "battery-named"
+       }
+      ]
+     },
+     "en_core_web_sm": {
+      "median_abs_auroc": 0.5116732302423557,
+      "top5": [
+       {
+        "unit": "skew/2",
+        "abs_auroc": 0.633,
+        "status": "context:D",
+        "would_name": true
+       },
+       {
+        "unit": "logcosh/2",
+        "abs_auroc": 0.627,
+        "status": "context:D",
+        "would_name": true
+       },
+       {
+        "unit": "skew/11",
+        "abs_auroc": 0.56,
+        "status": "battery-named",
+        "would_name": true
+       },
+       {
+        "unit": "skew/25",
+        "abs_auroc": 0.544,
+        "status": "none",
+        "would_name": false
+       },
+       {
+        "unit": "logcosh/63",
+        "abs_auroc": 0.542,
+        "status": "none",
+        "would_name": false
+       }
+      ],
+      "would_name": [
+       {
+        "unit": "skew/2",
+        "abs_auroc": 0.633,
+        "status": "context:D"
+       },
+       {
+        "unit": "logcosh/2",
+        "abs_auroc": 0.627,
+        "status": "context:D"
+       },
+       {
+        "unit": "skew/11",
+        "abs_auroc": 0.56,
+        "status": "battery-named"
+       }
+      ]
+     }
+    },
+    "E": {
+     "en_core_web_trf": {
+      "median_abs_auroc": 0.5156297890929921,
+      "top5": [
+       {
+        "unit": "logcosh/9",
+        "abs_auroc": 0.64,
+        "status": "context:E",
+        "would_name": true
+       },
+       {
+        "unit": "skew/52",
+        "abs_auroc": 0.619,
+        "status": "context:E",
+        "would_name": true
+       },
+       {
+        "unit": "skew/23",
+        "abs_auroc": 0.592,
+        "status": "battery-named",
+        "would_name": false
+       },
+       {
+        "unit": "skew/0",
+        "abs_auroc": 0.581,
+        "status": "none",
+        "would_name": false
+       },
+       {
+        "unit": "logcosh/0",
+        "abs_auroc": 0.577,
+        "status": "none",
+        "would_name": false
+       }
+      ],
+      "would_name": [
+       {
+        "unit": "logcosh/9",
+        "abs_auroc": 0.64,
+        "status": "context:E"
+       },
+       {
+        "unit": "skew/52",
+        "abs_auroc": 0.619,
+        "status": "context:E"
+       }
+      ]
+     },
+     "en_core_web_sm": {
+      "median_abs_auroc": 0.5153633799154691,
+      "top5": [
+       {
+        "unit": "logcosh/9",
+        "abs_auroc": 0.636,
+        "status": "context:E",
+        "would_name": true
+       },
+       {
+        "unit": "skew/52",
+        "abs_auroc": 0.618,
+        "status": "context:E",
+        "would_name": true
+       },
+       {
+        "unit": "skew/23",
+        "abs_auroc": 0.581,
+        "status": "battery-named",
+        "would_name": false
+       },
+       {
+        "unit": "skew/0",
+        "abs_auroc": 0.58,
+        "status": "none",
+        "would_name": false
+       },
+       {
+        "unit": "logcosh/0",
+        "abs_auroc": 0.575,
+        "status": "none",
+        "would_name": false
+       }
+      ],
+      "would_name": [
+       {
+        "unit": "logcosh/9",
+        "abs_auroc": 0.636,
+        "status": "context:E"
+       },
+       {
+        "unit": "skew/52",
+        "abs_auroc": 0.618,
+        "status": "context:E"
+       }
+      ]
+     }
+    },
+    "F": {
+     "en_core_web_trf": {
+      "median_abs_auroc": 0.5159409425505581,
+      "top5": [
+       {
+        "unit": "logcosh/10",
+        "abs_auroc": 0.682,
+        "status": "context:F",
+        "would_name": true
+       },
+       {
+        "unit": "skew/15",
+        "abs_auroc": 0.677,
+        "status": "context:F",
+        "would_name": true
+       },
+       {
+        "unit": "logcosh/24",
+        "abs_auroc": 0.556,
+        "status": "context:G",
+        "would_name": false
+       },
+       {
+        "unit": "skew/26",
+        "abs_auroc": 0.551,
+        "status": "none",
+        "would_name": false
+       },
+       {
+        "unit": "skew/61",
+        "abs_auroc": 0.551,
+        "status": "battery-named",
+        "would_name": false
+       }
+      ],
+      "would_name": [
+       {
+        "unit": "logcosh/10",
+        "abs_auroc": 0.682,
+        "status": "context:F"
+       },
+       {
+        "unit": "skew/15",
+        "abs_auroc": 0.677,
+        "status": "context:F"
+       }
+      ]
+     },
+     "en_core_web_sm": {
+      "median_abs_auroc": 0.5136542916447155,
+      "top5": [
+       {
+        "unit": "logcosh/10",
+        "abs_auroc": 0.662,
+        "status": "context:F",
+        "would_name": true
+       },
+       {
+        "unit": "skew/15",
+        "abs_auroc": 0.656,
+        "status": "context:F",
+        "would_name": true
+       },
+       {
+        "unit": "logcosh/24",
+        "abs_auroc": 0.552,
+        "status": "context:G",
+        "would_name": false
+       },
+       {
+        "unit": "skew/26",
+        "abs_auroc": 0.546,
+        "status": "none",
+        "would_name": false
+       },
+       {
+        "unit": "skew/24",
+        "abs_auroc": 0.545,
+        "status": "context:G",
+        "would_name": false
+       }
+      ],
+      "would_name": [
+       {
+        "unit": "logcosh/10",
+        "abs_auroc": 0.662,
+        "status": "context:F"
+       },
+       {
+        "unit": "skew/15",
+        "abs_auroc": 0.656,
+        "status": "context:F"
+       }
+      ]
+     }
+    },
+    "F_multi": {
+     "en_core_web_trf": {
+      "median_abs_auroc": 0.5209051486099863,
+      "top5": [
+       {
+        "unit": "logcosh/10",
+        "abs_auroc": 0.703,
+        "status": "context:F",
+        "would_name": true
+       },
+       {
+        "unit": "skew/15",
+        "abs_auroc": 0.699,
+        "status": "context:F",
+        "would_name": true
+       },
+       {
+        "unit": "logcosh/24",
+        "abs_auroc": 0.579,
+        "status": "context:G",
+        "would_name": false
+       },
+       {
+        "unit": "skew/24",
+        "abs_auroc": 0.57,
+        "status": "context:G",
+        "would_name": false
+       },
+       {
+        "unit": "skew/26",
+        "abs_auroc": 0.568,
+        "status": "none",
+        "would_name": false
+       }
+      ],
+      "would_name": [
+       {
+        "unit": "logcosh/10",
+        "abs_auroc": 0.703,
+        "status": "context:F"
+       },
+       {
+        "unit": "skew/15",
+        "abs_auroc": 0.699,
+        "status": "context:F"
+       }
+      ]
+     },
+     "en_core_web_sm": {
+      "median_abs_auroc": 0.5184970226795999,
+      "top5": [
+       {
+        "unit": "logcosh/10",
+        "abs_auroc": 0.674,
+        "status": "context:F",
+        "would_name": true
+       },
+       {
+        "unit": "skew/15",
+        "abs_auroc": 0.669,
+        "status": "context:F",
+        "would_name": true
+       },
+       {
+        "unit": "logcosh/24",
+        "abs_auroc": 0.571,
+        "status": "context:G",
+        "would_name": false
+       },
+       {
+        "unit": "skew/24",
+        "abs_auroc": 0.563,
+        "status": "context:G",
+        "would_name": false
+       },
+       {
+        "unit": "skew/26",
+        "abs_auroc": 0.56,
+        "status": "none",
+        "would_name": false
+       }
+      ],
+      "would_name": [
+       {
+        "unit": "logcosh/10",
+        "abs_auroc": 0.674,
+        "status": "context:F"
+       },
+       {
+        "unit": "skew/15",
+        "abs_auroc": 0.669,
+        "status": "context:F"
+       }
+      ]
+     }
+    },
+    "G": {
+     "en_core_web_trf": {
+      "median_abs_auroc": 0.5139281000900295,
+      "top5": [
+       {
+        "unit": "logcosh/24",
+        "abs_auroc": 0.759,
+        "status": "context:G",
+        "would_name": true
+       },
+       {
+        "unit": "skew/24",
+        "abs_auroc": 0.749,
+        "status": "context:G",
+        "would_name": true
+       },
+       {
+        "unit": "logcosh/23",
+        "abs_auroc": 0.583,
+        "status": "battery-named",
+        "would_name": false
+       },
+       {
+        "unit": "skew/38",
+        "abs_auroc": 0.574,
+        "status": "battery-named",
+        "would_name": false
+       },
+       {
+        "unit": "skew/61",
+        "abs_auroc": 0.553,
+        "status": "battery-named",
+        "would_name": false
+       }
+      ],
+      "would_name": [
+       {
+        "unit": "logcosh/24",
+        "abs_auroc": 0.759,
+        "status": "context:G"
+       },
+       {
+        "unit": "skew/24",
+        "abs_auroc": 0.749,
+        "status": "context:G"
+       },
+       {
+        "unit": "skew/49",
+        "abs_auroc": 0.552,
+        "status": "none"
+       }
+      ]
+     },
+     "en_core_web_sm": {
+      "median_abs_auroc": 0.5111898012270454,
+      "top5": [
+       {
+        "unit": "logcosh/24",
+        "abs_auroc": 0.733,
+        "status": "context:G",
+        "would_name": true
+       },
+       {
+        "unit": "skew/24",
+        "abs_auroc": 0.725,
+        "status": "context:G",
+        "would_name": true
+       },
+       {
+        "unit": "logcosh/23",
+        "abs_auroc": 0.573,
+        "status": "battery-named",
+        "would_name": false
+       },
+       {
+        "unit": "skew/38",
+        "abs_auroc": 0.564,
+        "status": "battery-named",
+        "would_name": false
+       },
+       {
+        "unit": "skew/34",
+        "abs_auroc": 0.554,
+        "status": "context:K",
+        "would_name": false
+       }
+      ],
+      "would_name": [
+       {
+        "unit": "logcosh/24",
+        "abs_auroc": 0.733,
+        "status": "context:G"
+       },
+       {
+        "unit": "skew/24",
+        "abs_auroc": 0.725,
+        "status": "context:G"
+       },
+       {
+        "unit": "skew/49",
+        "abs_auroc": 0.549,
+        "status": "none"
+       }
+      ]
+     }
+    },
+    "H": {
+     "en_core_web_trf": {
+      "median_abs_auroc": 0.5127951949468337,
+      "top5": [
+       {
+        "unit": "logcosh/9",
+        "abs_auroc": 0.644,
+        "status": "context:E",
+        "would_name": true
+       },
+       {
+        "unit": "skew/52",
+        "abs_auroc": 0.627,
+        "status": "context:E",
+        "would_name": true
+       },
+       {
+        "unit": "skew/0",
+        "abs_auroc": 0.609,
+        "status": "none",
+        "would_name": true
+       },
+       {
+        "unit": "logcosh/0",
+        "abs_auroc": 0.607,
+        "status": "none",
+        "would_name": true
+       },
+       {
+        "unit": "skew/23",
+        "abs_auroc": 0.605,
+        "status": "battery-named",
+        "would_name": false
+       }
+      ],
+      "would_name": [
+       {
+        "unit": "logcosh/9",
+        "abs_auroc": 0.644,
+        "status": "context:E"
+       },
+       {
+        "unit": "skew/52",
+        "abs_auroc": 0.627,
+        "status": "context:E"
+       },
+       {
+        "unit": "skew/0",
+        "abs_auroc": 0.609,
+        "status": "none"
+       },
+       {
+        "unit": "logcosh/0",
+        "abs_auroc": 0.607,
+        "status": "none"
+       },
+       {
+        "unit": "skew/38",
+        "abs_auroc": 0.513,
+        "status": "battery-named"
+       },
+       {
+        "unit": "logcosh/23",
+        "abs_auroc": 0.509,
+        "status": "battery-named"
+       },
+       {
+        "unit": "logcosh/48",
+        "abs_auroc": 0.504,
+        "status": "context:L"
+       }
+      ]
+     },
+     "en_core_web_sm": {
+      "median_abs_auroc": 0.5118740980629617,
+      "top5": [
+       {
+        "unit": "logcosh/9",
+        "abs_auroc": 0.649,
+        "status": "context:E",
+        "would_name": true
+       },
+       {
+        "unit": "skew/52",
+        "abs_auroc": 0.632,
+        "status": "context:E",
+        "would_name": true
+       },
+       {
+        "unit": "skew/23",
+        "abs_auroc": 0.604,
+        "status": "battery-named",
+        "would_name": false
+       },
+       {
+        "unit": "skew/0",
+        "abs_auroc": 0.602,
+        "status": "none",
+        "would_name": true
+       },
+       {
+        "unit": "logcosh/0",
+        "abs_auroc": 0.6,
+        "status": "none",
+        "would_name": true
+       }
+      ],
+      "would_name": [
+       {
+        "unit": "logcosh/9",
+        "abs_auroc": 0.649,
+        "status": "context:E"
+       },
+       {
+        "unit": "skew/52",
+        "abs_auroc": 0.632,
+        "status": "context:E"
+       },
+       {
+        "unit": "skew/0",
+        "abs_auroc": 0.602,
+        "status": "none"
+       },
+       {
+        "unit": "logcosh/0",
+        "abs_auroc": 0.6,
+        "status": "none"
+       },
+       {
+        "unit": "skew/38",
+        "abs_auroc": 0.513,
+        "status": "battery-named"
+       },
+       {
+        "unit": "logcosh/23",
+        "abs_auroc": 0.51,
+        "status": "battery-named"
+       }
+      ]
+     }
+    },
+    "I": {
+     "en_core_web_trf": {
+      "median_abs_auroc": 0.5226981037999227,
+      "top5": [
+       {
+        "unit": "logcosh/40",
+        "abs_auroc": 0.626,
+        "status": "context:I",
+        "would_name": true
+       },
+       {
+        "unit": "logcosh/24",
+        "abs_auroc": 0.608,
+        "status": "context:G",
+        "would_name": false
+       },
+       {
+        "unit": "skew/42",
+        "abs_auroc": 0.604,
+        "status": "none",
+        "would_name": false
+       },
+       {
+        "unit": "skew/15",
+        "abs_auroc": 0.595,
+        "status": "context:F",
+        "would_name": false
+       },
+       {
+        "unit": "logcosh/55",
+        "abs_auroc": 0.591,
+        "status": "battery-named",
+        "would_name": false
+       }
+      ],
+      "would_name": [
+       {
+        "unit": "logcosh/40",
+        "abs_auroc": 0.626,
+        "status": "context:I"
+       }
+      ]
+     },
+     "en_core_web_sm": {
+      "median_abs_auroc": 0.5226981037999227,
+      "top5": [
+       {
+        "unit": "logcosh/40",
+        "abs_auroc": 0.626,
+        "status": "context:I",
+        "would_name": true
+       },
+       {
+        "unit": "logcosh/24",
+        "abs_auroc": 0.608,
+        "status": "context:G",
+        "would_name": false
+       },
+       {
+        "unit": "skew/42",
+        "abs_auroc": 0.604,
+        "status": "none",
+        "would_name": false
+       },
+       {
+        "unit": "skew/15",
+        "abs_auroc": 0.595,
+        "status": "context:F",
+        "would_name": false
+       },
+       {
+        "unit": "logcosh/55",
+        "abs_auroc": 0.591,
+        "status": "battery-named",
+        "would_name": false
+       }
+      ],
+      "would_name": [
+       {
+        "unit": "logcosh/40",
+        "abs_auroc": 0.626,
+        "status": "context:I"
+       }
+      ]
+     }
+    },
+    "J": {
+     "en_core_web_trf": {
+      "median_abs_auroc": 0.5116658798767716,
+      "top5": [
+       {
+        "unit": "skew/39",
+        "abs_auroc": 0.713,
+        "status": "context:J",
+        "would_name": true
+       },
+       {
+        "unit": "logcosh/44",
+        "abs_auroc": 0.712,
+        "status": "context:J",
+        "would_name": true
+       },
+       {
+        "unit": "logcosh/16",
+        "abs_auroc": 0.559,
+        "status": "battery-named",
+        "would_name": false
+       },
+       {
+        "unit": "skew/61",
+        "abs_auroc": 0.554,
+        "status": "battery-named",
+        "would_name": false
+       },
+       {
+        "unit": "skew/25",
+        "abs_auroc": 0.545,
+        "status": "none",
+        "would_name": false
+       }
+      ],
+      "would_name": [
+       {
+        "unit": "skew/39",
+        "abs_auroc": 0.713,
+        "status": "context:J"
+       },
+       {
+        "unit": "logcosh/44",
+        "abs_auroc": 0.712,
+        "status": "context:J"
+       }
+      ]
+     },
+     "en_core_web_sm": {
+      "median_abs_auroc": 0.5101767359206144,
+      "top5": [
+       {
+        "unit": "skew/39",
+        "abs_auroc": 0.709,
+        "status": "context:J",
+        "would_name": true
+       },
+       {
+        "unit": "logcosh/44",
+        "abs_auroc": 0.708,
+        "status": "context:J",
+        "would_name": true
+       },
+       {
+        "unit": "logcosh/16",
+        "abs_auroc": 0.557,
+        "status": "battery-named",
+        "would_name": false
+       },
+       {
+        "unit": "skew/61",
+        "abs_auroc": 0.551,
+        "status": "battery-named",
+        "would_name": false
+       },
+       {
+        "unit": "skew/25",
+        "abs_auroc": 0.539,
+        "status": "none",
+        "would_name": false
+       }
+      ],
+      "would_name": [
+       {
+        "unit": "skew/39",
+        "abs_auroc": 0.709,
+        "status": "context:J"
+       },
+       {
+        "unit": "logcosh/44",
+        "abs_auroc": 0.708,
+        "status": "context:J"
+       }
+      ]
+     }
+    },
+    "K": {
+     "en_core_web_trf": {
+      "median_abs_auroc": 0.5120057788153102,
+      "top5": [
+       {
+        "unit": "skew/34",
+        "abs_auroc": 0.609,
+        "status": "context:K",
+        "would_name": true
+       },
+       {
+        "unit": "logcosh/46",
+        "abs_auroc": 0.591,
+        "status": "context:K",
+        "would_name": true
+       },
+       {
+        "unit": "logcosh/2",
+        "abs_auroc": 0.577,
+        "status": "context:D",
+        "would_name": true
+       },
+       {
+        "unit": "skew/2",
+        "abs_auroc": 0.567,
+        "status": "context:D",
+        "would_name": true
+       },
+       {
+        "unit": "logcosh/10",
+        "abs_auroc": 0.56,
+        "status": "context:F",
+        "would_name": false
+       }
+      ],
+      "would_name": [
+       {
+        "unit": "skew/34",
+        "abs_auroc": 0.609,
+        "status": "context:K"
+       },
+       {
+        "unit": "logcosh/46",
+        "abs_auroc": 0.591,
+        "status": "context:K"
+       },
+       {
+        "unit": "logcosh/2",
+        "abs_auroc": 0.577,
+        "status": "context:D"
+       },
+       {
+        "unit": "skew/2",
+        "abs_auroc": 0.567,
+        "status": "context:D"
+       }
+      ]
+     },
+     "en_core_web_sm": {
+      "median_abs_auroc": 0.5105387393740357,
+      "top5": [
+       {
+        "unit": "skew/34",
+        "abs_auroc": 0.61,
+        "status": "context:K",
+        "would_name": true
+       },
+       {
+        "unit": "logcosh/46",
+        "abs_auroc": 0.592,
+        "status": "context:K",
+        "would_name": true
+       },
+       {
+        "unit": "logcosh/2",
+        "abs_auroc": 0.576,
+        "status": "context:D",
+        "would_name": true
+       },
+       {
+        "unit": "skew/2",
+        "abs_auroc": 0.568,
+        "status": "context:D",
+        "would_name": true
+       },
+       {
+        "unit": "logcosh/10",
+        "abs_auroc": 0.559,
+        "status": "context:F",
+        "would_name": false
+       }
+      ],
+      "would_name": [
+       {
+        "unit": "skew/34",
+        "abs_auroc": 0.61,
+        "status": "context:K"
+       },
+       {
+        "unit": "logcosh/46",
+        "abs_auroc": 0.592,
+        "status": "context:K"
+       },
+       {
+        "unit": "logcosh/2",
+        "abs_auroc": 0.576,
+        "status": "context:D"
+       },
+       {
+        "unit": "skew/2",
+        "abs_auroc": 0.568,
+        "status": "context:D"
+       }
+      ]
+     }
+    },
+    "L": {
+     "en_core_web_trf": {
+      "median_abs_auroc": 0.5124872030086948,
+      "top5": [
+       {
+        "unit": "logcosh/23",
+        "abs_auroc": 0.586,
+        "status": "battery-named",
+        "would_name": true
+       },
+       {
+        "unit": "skew/38",
+        "abs_auroc": 0.578,
+        "status": "battery-named",
+        "would_name": true
+       },
+       {
+        "unit": "skew/0",
+        "abs_auroc": 0.572,
+        "status": "none",
+        "would_name": true
+       },
+       {
+        "unit": "logcosh/0",
+        "abs_auroc": 0.571,
+        "status": "none",
+        "would_name": true
+       },
+       {
+        "unit": "logcosh/48",
+        "abs_auroc": 0.549,
+        "status": "context:L",
+        "would_name": true
+       }
+      ],
+      "would_name": [
+       {
+        "unit": "logcosh/23",
+        "abs_auroc": 0.586,
+        "status": "battery-named"
+       },
+       {
+        "unit": "skew/38",
+        "abs_auroc": 0.578,
+        "status": "battery-named"
+       },
+       {
+        "unit": "skew/0",
+        "abs_auroc": 0.572,
+        "status": "none"
+       },
+       {
+        "unit": "logcosh/0",
+        "abs_auroc": 0.571,
+        "status": "none"
+       },
+       {
+        "unit": "logcosh/48",
+        "abs_auroc": 0.549,
+        "status": "context:L"
+       },
+       {
+        "unit": "skew/52",
+        "abs_auroc": 0.548,
+        "status": "context:E"
+       },
+       {
+        "unit": "logcosh/9",
+        "abs_auroc": 0.545,
+        "status": "context:E"
+       }
+      ]
+     },
+     "en_core_web_sm": {
+      "median_abs_auroc": 0.5116759540709228,
+      "top5": [
+       {
+        "unit": "logcosh/23",
+        "abs_auroc": 0.575,
+        "status": "battery-named",
+        "would_name": true
+       },
+       {
+        "unit": "skew/38",
+        "abs_auroc": 0.567,
+        "status": "battery-named",
+        "would_name": true
+       },
+       {
+        "unit": "skew/0",
+        "abs_auroc": 0.559,
+        "status": "none",
+        "would_name": false
+       },
+       {
+        "unit": "logcosh/0",
+        "abs_auroc": 0.558,
+        "status": "none",
+        "would_name": false
+       },
+       {
+        "unit": "skew/52",
+        "abs_auroc": 0.555,
+        "status": "context:E",
+        "would_name": true
+       }
+      ],
+      "would_name": [
+       {
+        "unit": "logcosh/23",
+        "abs_auroc": 0.575,
+        "status": "battery-named"
+       },
+       {
+        "unit": "skew/38",
+        "abs_auroc": 0.567,
+        "status": "battery-named"
+       },
+       {
+        "unit": "skew/52",
+        "abs_auroc": 0.555,
+        "status": "context:E"
+       },
+       {
+        "unit": "logcosh/9",
+        "abs_auroc": 0.552,
+        "status": "context:E"
+       },
+       {
+        "unit": "logcosh/48",
+        "abs_auroc": 0.545,
+        "status": "context:L"
+       }
+      ]
+     }
+    },
+    "M": {
+     "en_core_web_trf": {
+      "median_abs_auroc": 0.511460063558038,
+      "top5": [
+       {
+        "unit": "skew/14",
+        "abs_auroc": 0.598,
+        "status": "battery-named",
+        "would_name": true
+       },
+       {
+        "unit": "logcosh/50",
+        "abs_auroc": 0.586,
+        "status": "battery-named",
+        "would_name": true
+       },
+       {
+        "unit": "logcosh/22",
+        "abs_auroc": 0.561,
+        "status": "battery-named",
+        "would_name": true
+       },
+       {
+        "unit": "skew/12",
+        "abs_auroc": 0.556,
+        "status": "context:M",
+        "would_name": true
+       },
+       {
+        "unit": "logcosh/59",
+        "abs_auroc": 0.555,
+        "status": "battery-named",
+        "would_name": true
+       }
+      ],
+      "would_name": [
+       {
+        "unit": "skew/14",
+        "abs_auroc": 0.598,
+        "status": "battery-named"
+       },
+       {
+        "unit": "logcosh/50",
+        "abs_auroc": 0.586,
+        "status": "battery-named"
+       },
+       {
+        "unit": "logcosh/22",
+        "abs_auroc": 0.561,
+        "status": "battery-named"
+       },
+       {
+        "unit": "skew/12",
+        "abs_auroc": 0.556,
+        "status": "context:M"
+       },
+       {
+        "unit": "logcosh/59",
+        "abs_auroc": 0.555,
+        "status": "battery-named"
+       },
+       {
+        "unit": "logcosh/56",
+        "abs_auroc": 0.555,
+        "status": "context:M"
+       },
+       {
+        "unit": "logcosh/55",
+        "abs_auroc": 0.51,
+        "status": "battery-named"
+       }
+      ]
+     },
+     "en_core_web_sm": {
+      "median_abs_auroc": 0.510869398293046,
+      "top5": [
+       {
+        "unit": "skew/14",
+        "abs_auroc": 0.589,
+        "status": "battery-named",
+        "would_name": true
+       },
+       {
+        "unit": "logcosh/50",
+        "abs_auroc": 0.574,
+        "status": "battery-named",
+        "would_name": true
+       },
+       {
+        "unit": "logcosh/22",
+        "abs_auroc": 0.555,
+        "status": "battery-named",
+        "would_name": true
+       },
+       {
+        "unit": "logcosh/59",
+        "abs_auroc": 0.554,
+        "status": "battery-named",
+        "would_name": true
+       },
+       {
+        "unit": "skew/12",
+        "abs_auroc": 0.553,
+        "status": "context:M",
+        "would_name": true
+       }
+      ],
+      "would_name": [
+       {
+        "unit": "skew/14",
+        "abs_auroc": 0.589,
+        "status": "battery-named"
+       },
+       {
+        "unit": "logcosh/50",
+        "abs_auroc": 0.574,
+        "status": "battery-named"
+       },
+       {
+        "unit": "logcosh/22",
+        "abs_auroc": 0.555,
+        "status": "battery-named"
+       },
+       {
+        "unit": "logcosh/59",
+        "abs_auroc": 0.554,
+        "status": "battery-named"
+       },
+       {
+        "unit": "skew/12",
+        "abs_auroc": 0.553,
+        "status": "context:M"
+       },
+       {
+        "unit": "logcosh/56",
+        "abs_auroc": 0.552,
+        "status": "context:M"
+       },
+       {
+        "unit": "logcosh/55",
+        "abs_auroc": 0.503,
+        "status": "battery-named"
+       }
+      ]
+     }
+    },
+    "N": {
+     "en_core_web_trf": {
+      "median_abs_auroc": 0.5219817063940828,
+      "top5": [
+       {
+        "unit": "logcosh/60",
+        "abs_auroc": 0.835,
+        "status": "context:N",
+        "would_name": true
+       },
+       {
+        "unit": "skew/28",
+        "abs_auroc": 0.816,
+        "status": "context:N",
+        "would_name": true
+       },
+       {
+        "unit": "skew/7",
+        "abs_auroc": 0.576,
+        "status": "none",
+        "would_name": false
+       },
+       {
+        "unit": "skew/38",
+        "abs_auroc": 0.556,
+        "status": "battery-named",
+        "would_name": false
+       },
+       {
+        "unit": "skew/25",
+        "abs_auroc": 0.556,
+        "status": "none",
+        "would_name": false
+       }
+      ],
+      "would_name": [
+       {
+        "unit": "logcosh/60",
+        "abs_auroc": 0.835,
+        "status": "context:N"
+       },
+       {
+        "unit": "skew/28",
+        "abs_auroc": 0.816,
+        "status": "context:N"
+       },
+       {
+        "unit": "logcosh/10",
+        "abs_auroc": 0.536,
+        "status": "context:F"
+       },
+       {
+        "unit": "skew/15",
+        "abs_auroc": 0.519,
+        "status": "context:F"
+       }
+      ]
+     },
+     "en_core_web_sm": {
+      "median_abs_auroc": 0.5219817063940828,
+      "top5": [
+       {
+        "unit": "logcosh/60",
+        "abs_auroc": 0.835,
+        "status": "context:N",
+        "would_name": true
+       },
+       {
+        "unit": "skew/28",
+        "abs_auroc": 0.816,
+        "status": "context:N",
+        "would_name": true
+       },
+       {
+        "unit": "skew/7",
+        "abs_auroc": 0.576,
+        "status": "none",
+        "would_name": false
+       },
+       {
+        "unit": "skew/38",
+        "abs_auroc": 0.556,
+        "status": "battery-named",
+        "would_name": false
+       },
+       {
+        "unit": "skew/25",
+        "abs_auroc": 0.556,
+        "status": "none",
+        "would_name": false
+       }
+      ],
+      "would_name": [
+       {
+        "unit": "logcosh/60",
+        "abs_auroc": 0.835,
+        "status": "context:N"
+       },
+       {
+        "unit": "skew/28",
+        "abs_auroc": 0.816,
+        "status": "context:N"
+       },
+       {
+        "unit": "logcosh/10",
+        "abs_auroc": 0.536,
+        "status": "context:F"
+       },
+       {
+        "unit": "skew/15",
+        "abs_auroc": 0.519,
+        "status": "context:F"
+       }
+      ]
+     }
+    }
+   }
+  }
+ },
+ "named_units": [
+  {
+   "layer": 7,
+   "unit": "logcosh/37",
+   "reading": "token right after a coordinating conjunction (and/or/but)",
+   "rule": "A",
+   "tail": "hi",
+   "evidence": "12/12 hi; twin skew #37 11/12",
+   "en_core_web_trf": {
+    "auroc_oriented": 0.955,
+    "base": 0.0246,
+    "read_tail_rate": 0.727,
+    "enrichment": 29.59,
+    "other_tail_rate": 0.0,
+    "would_name": true,
+    "rank_in_layer": 2,
+    "n_units": 65,
+    "best_rule": "A",
+    "best_rule_abs_auroc": 0.955
+   },
+   "en_core_web_sm": {
+    "auroc_oriented": 0.955,
+    "base": 0.0246,
+    "read_tail_rate": 0.727,
+    "enrichment": 29.59,
+    "other_tail_rate": 0.0,
+    "would_name": true,
+    "rank_in_layer": 2,
+    "n_units": 65,
+    "best_rule": "A",
+    "best_rule_abs_auroc": 0.955
+   }
+  },
+  {
+   "layer": 7,
+   "unit": "logcosh/50",
+   "reading": "inside a temporal subordinate clause (when/while/before/after/during)",
+   "rule": "B",
+   "tail": "lo",
+   "evidence": "7/12 lo; family reading via twin skew #38 (9/12)",
+   "en_core_web_trf": {
+    "auroc_oriented": 0.672,
+    "base": 0.0291,
+    "read_tail_rate": 0.314,
+    "enrichment": 10.81,
+    "other_tail_rate": 0.016,
+    "would_name": true,
+    "rank_in_layer": 2,
+    "n_units": 65,
+    "best_rule": "B",
+    "best_rule_abs_auroc": 0.672
+   },
+   "en_core_web_sm": {
+    "auroc_oriented": 0.659,
+    "base": 0.0323,
+    "read_tail_rate": 0.311,
+    "enrichment": 9.63,
+    "other_tail_rate": 0.015,
+    "would_name": true,
+    "rank_in_layer": 2,
+    "n_units": 65,
+    "best_rule": "B",
+    "best_rule_abs_auroc": 0.659
+   }
+  },
+  {
+   "layer": 7,
+   "unit": "logcosh/55",
+   "reading": "token right after a preposition (mostly 'in', also 'at')",
+   "rule": "C",
+   "tail": "hi",
+   "evidence": "5/12 hi; family reading via twin skew #49 (8/12)",
+   "en_core_web_trf": {
+    "auroc_oriented": 0.598,
+    "base": 0.0863,
+    "read_tail_rate": 0.514,
+    "enrichment": 5.95,
+    "other_tail_rate": 0.02,
+    "would_name": true,
+    "rank_in_layer": 2,
+    "n_units": 65,
+    "best_rule": "C_inat",
+    "best_rule_abs_auroc": 0.83
+   },
+   "en_core_web_sm": {
+    "auroc_oriented": 0.598,
+    "base": 0.0865,
+    "read_tail_rate": 0.515,
+    "enrichment": 5.95,
+    "other_tail_rate": 0.021,
+    "would_name": true,
+    "rank_in_layer": 2,
+    "n_units": 65,
+    "best_rule": "C_inat",
+    "best_rule_abs_auroc": 0.83
+   }
+  },
+  {
+   "layer": 7,
+   "unit": "skew/37",
+   "reading": "token right after a coordinating conjunction (and/or/but)",
+   "rule": "A",
+   "tail": "hi",
+   "evidence": "11/12 hi; twin logcosh #37 12/12",
+   "en_core_web_trf": {
+    "auroc_oriented": 0.956,
+    "base": 0.0246,
+    "read_tail_rate": 0.719,
+    "enrichment": 29.27,
+    "other_tail_rate": 0.0,
+    "would_name": true,
+    "rank_in_layer": 1,
+    "n_units": 65,
+    "best_rule": "A",
+    "best_rule_abs_auroc": 0.956
+   },
+   "en_core_web_sm": {
+    "auroc_oriented": 0.956,
+    "base": 0.0246,
+    "read_tail_rate": 0.719,
+    "enrichment": 29.27,
+    "other_tail_rate": 0.0,
+    "would_name": true,
+    "rank_in_layer": 1,
+    "n_units": 65,
+    "best_rule": "A",
+    "best_rule_abs_auroc": 0.956
+   }
+  },
+  {
+   "layer": 7,
+   "unit": "skew/38",
+   "reading": "inside a temporal subordinate clause (when/while/before/after/during)",
+   "rule": "B",
+   "tail": "hi",
+   "evidence": "9/12 hi; twin logcosh #50 lo 7/12",
+   "en_core_web_trf": {
+    "auroc_oriented": 0.681,
+    "base": 0.0291,
+    "read_tail_rate": 0.356,
+    "enrichment": 12.24,
+    "other_tail_rate": 0.013,
+    "would_name": true,
+    "rank_in_layer": 1,
+    "n_units": 65,
+    "best_rule": "B",
+    "best_rule_abs_auroc": 0.681
+   },
+   "en_core_web_sm": {
+    "auroc_oriented": 0.666,
+    "base": 0.0323,
+    "read_tail_rate": 0.353,
+    "enrichment": 10.94,
+    "other_tail_rate": 0.016,
+    "would_name": true,
+    "rank_in_layer": 1,
+    "n_units": 65,
+    "best_rule": "B",
+    "best_rule_abs_auroc": 0.666
+   }
+  },
+  {
+   "layer": 7,
+   "unit": "skew/49",
+   "reading": "token right after a preposition (mostly 'in', also 'at')",
+   "rule": "C",
+   "tail": "hi",
+   "evidence": "8/12 hi; twin logcosh #55 hi 5/12",
+   "en_core_web_trf": {
+    "auroc_oriented": 0.626,
+    "base": 0.0863,
+    "read_tail_rate": 0.433,
+    "enrichment": 5.01,
+    "other_tail_rate": 0.019,
+    "would_name": true,
+    "rank_in_layer": 1,
+    "n_units": 65,
+    "best_rule": "C_inat",
+    "best_rule_abs_auroc": 0.847
+   },
+   "en_core_web_sm": {
+    "auroc_oriented": 0.626,
+    "base": 0.0865,
+    "read_tail_rate": 0.432,
+    "enrichment": 4.99,
+    "other_tail_rate": 0.021,
+    "would_name": true,
+    "rank_in_layer": 1,
+    "n_units": 65,
+    "best_rule": "C_inat",
+    "best_rule_abs_auroc": 0.847
+   }
+  },
+  {
+   "layer": 12,
+   "unit": "logcosh/2",
+   "reading": "inside a partitive/superlative NP ('one of the ...', 'the best/first/only ...', 'X% of all ...')",
+   "rule": "D",
+   "tail": "lo",
+   "evidence": "8/12 lo; twin skew #2 10/12",
+   "en_core_web_trf": {
+    "auroc_oriented": 0.633,
+    "base": 0.0404,
+    "read_tail_rate": 0.398,
+    "enrichment": 9.85,
+    "other_tail_rate": 0.029,
+    "would_name": true,
+    "rank_in_layer": 2,
+    "n_units": 78,
+    "best_rule": "D",
+    "best_rule_abs_auroc": 0.633
+   },
+   "en_core_web_sm": {
+    "auroc_oriented": 0.627,
+    "base": 0.0401,
+    "read_tail_rate": 0.378,
+    "enrichment": 9.44,
+    "other_tail_rate": 0.029,
+    "would_name": true,
+    "rank_in_layer": 2,
+    "n_units": 78,
+    "best_rule": "D",
+    "best_rule_abs_auroc": 0.627
+   }
+  },
+  {
+   "layer": 12,
+   "unit": "logcosh/9",
+   "reading": "inside the second conjunct of an 'X and Y' coordination",
+   "rule": "E",
+   "tail": "lo",
+   "evidence": "5-6/12 lo; family reading via twin skew #52 (9/12)",
+   "en_core_web_trf": {
+    "auroc_oriented": 0.64,
+    "base": 0.0896,
+    "read_tail_rate": 0.493,
+    "enrichment": 5.5,
+    "other_tail_rate": 0.054,
+    "would_name": true,
+    "rank_in_layer": 1,
+    "n_units": 78,
+    "best_rule": "A",
+    "best_rule_abs_auroc": 0.825
+   },
+   "en_core_web_sm": {
+    "auroc_oriented": 0.636,
+    "base": 0.0872,
+    "read_tail_rate": 0.482,
+    "enrichment": 5.53,
+    "other_tail_rate": 0.054,
+    "would_name": true,
+    "rank_in_layer": 1,
+    "n_units": 78,
+    "best_rule": "A",
+    "best_rule_abs_auroc": 0.825
+   }
+  },
+  {
+   "layer": 12,
+   "unit": "logcosh/10",
+   "reading": "inside the subject noun phrase, before its main verb",
+   "rule": "F",
+   "tail": "lo",
+   "evidence": "11/12 lo; twin skew #15 11/12; both tail-TDI > 3",
+   "en_core_web_trf": {
+    "auroc_oriented": 0.682,
+    "base": 0.1588,
+    "read_tail_rate": 0.876,
+    "enrichment": 5.52,
+    "other_tail_rate": 0.077,
+    "would_name": true,
+    "rank_in_layer": 1,
+    "n_units": 78,
+    "best_rule": "F_multi",
+    "best_rule_abs_auroc": 0.703
+   },
+   "en_core_web_sm": {
+    "auroc_oriented": 0.662,
+    "base": 0.174,
+    "read_tail_rate": 0.852,
+    "enrichment": 4.9,
+    "other_tail_rate": 0.094,
+    "would_name": true,
+    "rank_in_layer": 1,
+    "n_units": 78,
+    "best_rule": "F_multi",
+    "best_rule_abs_auroc": 0.674
+   }
+  },
+  {
+   "layer": 12,
+   "unit": "logcosh/24",
+   "reading": "inside a fronted (sentence-initial) adverbial phrase or clause",
+   "rule": "G",
+   "tail": "hi",
+   "evidence": "9/12 hi; twin skew #24 10/12",
+   "en_core_web_trf": {
+    "auroc_oriented": 0.759,
+    "base": 0.0535,
+    "read_tail_rate": 0.593,
+    "enrichment": 11.09,
+    "other_tail_rate": 0.014,
+    "would_name": true,
+    "rank_in_layer": 1,
+    "n_units": 78,
+    "best_rule": "G",
+    "best_rule_abs_auroc": 0.759
+   },
+   "en_core_web_sm": {
+    "auroc_oriented": 0.733,
+    "base": 0.0532,
+    "read_tail_rate": 0.558,
+    "enrichment": 10.49,
+    "other_tail_rate": 0.018,
+    "would_name": true,
+    "rank_in_layer": 1,
+    "n_units": 78,
+    "best_rule": "G",
+    "best_rule_abs_auroc": 0.733
+   }
+  },
+  {
+   "layer": 12,
+   "unit": "logcosh/37",
+   "reading": "onset of the next item in a coordinated series/list",
+   "rule": "H",
+   "tail": "hi",
+   "evidence": "3/12 hi; family reading via twin skew #37 (8/12)",
+   "en_core_web_trf": {
+    "auroc_oriented": 0.539,
+    "base": 0.0629,
+    "read_tail_rate": 0.169,
+    "enrichment": 2.69,
+    "other_tail_rate": 0.061,
+    "would_name": false,
+    "rank_in_layer": 10,
+    "n_units": 78,
+    "best_rule": "A",
+    "best_rule_abs_auroc": 0.611
+   },
+   "en_core_web_sm": {
+    "auroc_oriented": 0.535,
+    "base": 0.0629,
+    "read_tail_rate": 0.151,
+    "enrichment": 2.41,
+    "other_tail_rate": 0.063,
+    "would_name": false,
+    "rank_in_layer": 10,
+    "n_units": 78,
+    "best_rule": "A",
+    "best_rule_abs_auroc": 0.611
+   }
+  },
+  {
+   "layer": 12,
+   "unit": "logcosh/40",
+   "reading": "first clause of a line (within about five tokens after a newline)",
+   "rule": "I",
+   "tail": "hi",
+   "evidence": "10/12 hi; no twin",
+   "en_core_web_trf": {
+    "auroc_oriented": 0.626,
+    "base": 0.1241,
+    "read_tail_rate": 0.4,
+    "enrichment": 3.22,
+    "other_tail_rate": 0.071,
+    "would_name": true,
+    "rank_in_layer": 1,
+    "n_units": 78,
+    "best_rule": "I",
+    "best_rule_abs_auroc": 0.626
+   },
+   "en_core_web_sm": {
+    "auroc_oriented": 0.626,
+    "base": 0.1241,
+    "read_tail_rate": 0.4,
+    "enrichment": 3.22,
+    "other_tail_rate": 0.071,
+    "would_name": true,
+    "rank_in_layer": 1,
+    "n_units": 78,
+    "best_rule": "I",
+    "best_rule_abs_auroc": 0.626
+   }
+  },
+  {
+   "layer": 12,
+   "unit": "logcosh/44",
+   "reading": "inside the scope of a negation (not/no/never/don't/cannot)",
+   "rule": "J",
+   "tail": "lo",
+   "evidence": "9/12 lo; twin skew #39 10/12",
+   "en_core_web_trf": {
+    "auroc_oriented": 0.712,
+    "base": 0.0502,
+    "read_tail_rate": 0.705,
+    "enrichment": 14.03,
+    "other_tail_rate": 0.031,
+    "would_name": true,
+    "rank_in_layer": 2,
+    "n_units": 78,
+    "best_rule": "J",
+    "best_rule_abs_auroc": 0.712
+   },
+   "en_core_web_sm": {
+    "auroc_oriented": 0.708,
+    "base": 0.0511,
+    "read_tail_rate": 0.7,
+    "enrichment": 13.68,
+    "other_tail_rate": 0.029,
+    "would_name": true,
+    "rank_in_layer": 2,
+    "n_units": 78,
+    "best_rule": "J",
+    "best_rule_abs_auroc": 0.708
+   }
+  },
+  {
+   "layer": 12,
+   "unit": "logcosh/46",
+   "reading": "inside the predicate complement of a copula (is/are/was/become ...)",
+   "rule": "K",
+   "tail": "hi",
+   "evidence": "4-5/12 hi; family reading via twin skew #34 (10/12)",
+   "en_core_web_trf": {
+    "auroc_oriented": 0.591,
+    "base": 0.0999,
+    "read_tail_rate": 0.507,
+    "enrichment": 5.07,
+    "other_tail_rate": 0.072,
+    "would_name": true,
+    "rank_in_layer": 2,
+    "n_units": 78,
+    "best_rule": "K",
+    "best_rule_abs_auroc": 0.591
+   },
+   "en_core_web_sm": {
+    "auroc_oriented": 0.592,
+    "base": 0.0991,
+    "read_tail_rate": 0.49,
+    "enrichment": 4.95,
+    "other_tail_rate": 0.071,
+    "would_name": true,
+    "rank_in_layer": 2,
+    "n_units": 78,
+    "best_rule": "K",
+    "best_rule_abs_auroc": 0.592
+   }
+  },
+  {
+   "layer": 12,
+   "unit": "logcosh/48",
+   "reading": "inside an enumeration/list of items or a numeric range",
+   "rule": "L",
+   "tail": "hi",
+   "evidence": "8/12 hi (6 lists of >=3 items + 2 ranges); no twin",
+   "en_core_web_trf": {
+    "auroc_oriented": 0.549,
+    "base": 0.0896,
+    "read_tail_rate": 0.342,
+    "enrichment": 3.81,
+    "other_tail_rate": 0.086,
+    "would_name": true,
+    "rank_in_layer": 5,
+    "n_units": 78,
+    "best_rule": "L",
+    "best_rule_abs_auroc": 0.549
+   },
+   "en_core_web_sm": {
+    "auroc_oriented": 0.545,
+    "base": 0.0922,
+    "read_tail_rate": 0.356,
+    "enrichment": 3.86,
+    "other_tail_rate": 0.112,
+    "would_name": true,
+    "rank_in_layer": 7,
+    "n_units": 78,
+    "best_rule": "L",
+    "best_rule_abs_auroc": 0.545
+   }
+  },
+  {
+   "layer": 12,
+   "unit": "logcosh/56",
+   "reading": "inside or right after a temporal expression (dates, durations, before/after)",
+   "rule": "M",
+   "tail": "hi",
+   "evidence": "9/12 hi; twin skew #12 5-6/12",
+   "en_core_web_trf": {
+    "auroc_oriented": 0.555,
+    "base": 0.0693,
+    "read_tail_rate": 0.263,
+    "enrichment": 3.8,
+    "other_tail_rate": 0.069,
+    "would_name": true,
+    "rank_in_layer": 6,
+    "n_units": 78,
+    "best_rule": "B",
+    "best_rule_abs_auroc": 0.558
+   },
+   "en_core_web_sm": {
+    "auroc_oriented": 0.552,
+    "base": 0.0658,
+    "read_tail_rate": 0.251,
+    "enrichment": 3.81,
+    "other_tail_rate": 0.066,
+    "would_name": true,
+    "rank_in_layer": 6,
+    "n_units": 78,
+    "best_rule": "B",
+    "best_rule_abs_auroc": 0.555
+   }
+  },
+  {
+   "layer": 12,
+   "unit": "logcosh/60",
+   "reading": "token right after the definite article 'the'",
+   "rule": "N",
+   "tail": "hi",
+   "evidence": "9/12 hi; twin skew #28 7/12",
+   "en_core_web_trf": {
+    "auroc_oriented": 0.835,
+    "base": 0.0323,
+    "read_tail_rate": 0.501,
+    "enrichment": 15.52,
+    "other_tail_rate": 0.004,
+    "would_name": true,
+    "rank_in_layer": 1,
+    "n_units": 78,
+    "best_rule": "N",
+    "best_rule_abs_auroc": 0.835
+   },
+   "en_core_web_sm": {
+    "auroc_oriented": 0.835,
+    "base": 0.0323,
+    "read_tail_rate": 0.501,
+    "enrichment": 15.52,
+    "other_tail_rate": 0.004,
+    "would_name": true,
+    "rank_in_layer": 1,
+    "n_units": 78,
+    "best_rule": "N",
+    "best_rule_abs_auroc": 0.835
+   }
+  },
+  {
+   "layer": 12,
+   "unit": "skew/2",
+   "reading": "inside a partitive/superlative NP ('one of the ...', 'the best/first/only ...', 'X% of all ...')",
+   "rule": "D",
+   "tail": "hi",
+   "evidence": "10/12 hi; twin logcosh #2 lo 8/12",
+   "en_core_web_trf": {
+    "auroc_oriented": 0.638,
+    "base": 0.0404,
+    "read_tail_rate": 0.384,
+    "enrichment": 9.51,
+    "other_tail_rate": 0.026,
+    "would_name": true,
+    "rank_in_layer": 1,
+    "n_units": 78,
+    "best_rule": "D",
+    "best_rule_abs_auroc": 0.638
+   },
+   "en_core_web_sm": {
+    "auroc_oriented": 0.633,
+    "base": 0.0401,
+    "read_tail_rate": 0.368,
+    "enrichment": 9.19,
+    "other_tail_rate": 0.026,
+    "would_name": true,
+    "rank_in_layer": 1,
+    "n_units": 78,
+    "best_rule": "D",
+    "best_rule_abs_auroc": 0.633
+   }
+  },
+  {
+   "layer": 12,
+   "unit": "skew/12",
+   "reading": "inside or right after a temporal expression (dates, durations, before/after)",
+   "rule": "M",
+   "tail": "hi",
+   "evidence": "5-6/12 hi; family reading via twin logcosh #56 (9/12)",
+   "en_core_web_trf": {
+    "auroc_oriented": 0.556,
+    "base": 0.0693,
+    "read_tail_rate": 0.265,
+    "enrichment": 3.83,
+    "other_tail_rate": 0.064,
+    "would_name": true,
+    "rank_in_layer": 4,
+    "n_units": 78,
+    "best_rule": "B",
+    "best_rule_abs_auroc": 0.56
+   },
+   "en_core_web_sm": {
+    "auroc_oriented": 0.553,
+    "base": 0.0658,
+    "read_tail_rate": 0.256,
+    "enrichment": 3.89,
+    "other_tail_rate": 0.063,
+    "would_name": true,
+    "rank_in_layer": 5,
+    "n_units": 78,
+    "best_rule": "B",
+    "best_rule_abs_auroc": 0.557
+   }
+  },
+  {
+   "layer": 12,
+   "unit": "skew/15",
+   "reading": "inside the subject noun phrase, before its main verb",
+   "rule": "F",
+   "tail": "hi",
+   "evidence": "11/12 hi; twin logcosh #10 11/12",
+   "en_core_web_trf": {
+    "auroc_oriented": 0.677,
+    "base": 0.1588,
+    "read_tail_rate": 0.856,
+    "enrichment": 5.39,
+    "other_tail_rate": 0.084,
+    "would_name": true,
+    "rank_in_layer": 2,
+    "n_units": 78,
+    "best_rule": "F_multi",
+    "best_rule_abs_auroc": 0.699
+   },
+   "en_core_web_sm": {
+    "auroc_oriented": 0.656,
+    "base": 0.174,
+    "read_tail_rate": 0.835,
+    "enrichment": 4.8,
+    "other_tail_rate": 0.108,
+    "would_name": true,
+    "rank_in_layer": 2,
+    "n_units": 78,
+    "best_rule": "F_multi",
+    "best_rule_abs_auroc": 0.669
+   }
+  },
+  {
+   "layer": 12,
+   "unit": "skew/24",
+   "reading": "inside a fronted (sentence-initial) adverbial phrase or clause",
+   "rule": "G",
+   "tail": "hi",
+   "evidence": "10/12 hi; twin logcosh #24 9/12",
+   "en_core_web_trf": {
+    "auroc_oriented": 0.749,
+    "base": 0.0535,
+    "read_tail_rate": 0.574,
+    "enrichment": 10.72,
+    "other_tail_rate": 0.014,
+    "would_name": true,
+    "rank_in_layer": 2,
+    "n_units": 78,
+    "best_rule": "G",
+    "best_rule_abs_auroc": 0.749
+   },
+   "en_core_web_sm": {
+    "auroc_oriented": 0.725,
+    "base": 0.0532,
+    "read_tail_rate": 0.538,
+    "enrichment": 10.12,
+    "other_tail_rate": 0.02,
+    "would_name": true,
+    "rank_in_layer": 2,
+    "n_units": 78,
+    "best_rule": "G",
+    "best_rule_abs_auroc": 0.725
+   }
+  },
+  {
+   "layer": 12,
+   "unit": "skew/28",
+   "reading": "token right after the definite article 'the'",
+   "rule": "N",
+   "tail": "hi",
+   "evidence": "7/12 hi; family reading via twin logcosh #60 (9/12)",
+   "en_core_web_trf": {
+    "auroc_oriented": 0.816,
+    "base": 0.0323,
+    "read_tail_rate": 0.411,
+    "enrichment": 12.73,
+    "other_tail_rate": 0.006,
+    "would_name": true,
+    "rank_in_layer": 2,
+    "n_units": 78,
+    "best_rule": "N",
+    "best_rule_abs_auroc": 0.816
+   },
+   "en_core_web_sm": {
+    "auroc_oriented": 0.816,
+    "base": 0.0323,
+    "read_tail_rate": 0.411,
+    "enrichment": 12.73,
+    "other_tail_rate": 0.006,
+    "would_name": true,
+    "rank_in_layer": 2,
+    "n_units": 78,
+    "best_rule": "N",
+    "best_rule_abs_auroc": 0.816
+   }
+  },
+  {
+   "layer": 12,
+   "unit": "skew/34",
+   "reading": "inside the predicate complement of a copula (is/are/was/become ...)",
+   "rule": "K",
+   "tail": "hi",
+   "evidence": "10/12 hi; twin logcosh #46 hi 4-5/12",
+   "en_core_web_trf": {
+    "auroc_oriented": 0.609,
+    "base": 0.0999,
+    "read_tail_rate": 0.555,
+    "enrichment": 5.55,
+    "other_tail_rate": 0.065,
+    "would_name": true,
+    "rank_in_layer": 1,
+    "n_units": 78,
+    "best_rule": "K",
+    "best_rule_abs_auroc": 0.609
+   },
+   "en_core_web_sm": {
+    "auroc_oriented": 0.61,
+    "base": 0.0991,
+    "read_tail_rate": 0.546,
+    "enrichment": 5.51,
+    "other_tail_rate": 0.065,
+    "would_name": true,
+    "rank_in_layer": 1,
+    "n_units": 78,
+    "best_rule": "K",
+    "best_rule_abs_auroc": 0.61
+   }
+  },
+  {
+   "layer": 12,
+   "unit": "skew/37",
+   "reading": "onset of the next item in a coordinated series/list",
+   "rule": "H",
+   "tail": "hi",
+   "evidence": "8/12 hi; twin logcosh #37 hi 3/12",
+   "en_core_web_trf": {
+    "auroc_oriented": 0.525,
+    "base": 0.0629,
+    "read_tail_rate": 0.155,
+    "enrichment": 2.47,
+    "other_tail_rate": 0.071,
+    "would_name": false,
+    "rank_in_layer": 20,
+    "n_units": 78,
+    "best_rule": "A",
+    "best_rule_abs_auroc": 0.585
+   },
+   "en_core_web_sm": {
+    "auroc_oriented": 0.522,
+    "base": 0.0629,
+    "read_tail_rate": 0.139,
+    "enrichment": 2.21,
+    "other_tail_rate": 0.072,
+    "would_name": false,
+    "rank_in_layer": 20,
+    "n_units": 78,
+    "best_rule": "A",
+    "best_rule_abs_auroc": 0.585
+   }
+  },
+  {
+   "layer": 12,
+   "unit": "skew/39",
+   "reading": "inside the scope of a negation (not/no/never/don't/cannot)",
+   "rule": "J",
+   "tail": "hi",
+   "evidence": "10/12 hi; twin logcosh #44 9/12",
+   "en_core_web_trf": {
+    "auroc_oriented": 0.713,
+    "base": 0.0502,
+    "read_tail_rate": 0.706,
+    "enrichment": 14.06,
+    "other_tail_rate": 0.034,
+    "would_name": true,
+    "rank_in_layer": 1,
+    "n_units": 78,
+    "best_rule": "J",
+    "best_rule_abs_auroc": 0.713
+   },
+   "en_core_web_sm": {
+    "auroc_oriented": 0.709,
+    "base": 0.0511,
+    "read_tail_rate": 0.701,
+    "enrichment": 13.71,
+    "other_tail_rate": 0.032,
+    "would_name": true,
+    "rank_in_layer": 1,
+    "n_units": 78,
+    "best_rule": "J",
+    "best_rule_abs_auroc": 0.709
+   }
+  },
+  {
+   "layer": 12,
+   "unit": "skew/52",
+   "reading": "inside the second conjunct of an 'X and Y' coordination",
+   "rule": "E",
+   "tail": "hi",
+   "evidence": "9/12 hi; twin logcosh #9 lo 5-6/12",
+   "en_core_web_trf": {
+    "auroc_oriented": 0.619,
+    "base": 0.0896,
+    "read_tail_rate": 0.442,
+    "enrichment": 4.93,
+    "other_tail_rate": 0.051,
+    "would_name": true,
+    "rank_in_layer": 2,
+    "n_units": 78,
+    "best_rule": "A",
+    "best_rule_abs_auroc": 0.784
+   },
+   "en_core_web_sm": {
+    "auroc_oriented": 0.618,
+    "base": 0.0872,
+    "read_tail_rate": 0.437,
+    "enrichment": 5.01,
+    "other_tail_rate": 0.048,
+    "would_name": true,
+    "rank_in_layer": 2,
+    "n_units": 78,
+    "best_rule": "A",
+    "best_rule_abs_auroc": 0.784
+   }
+  }
+ ]
+}

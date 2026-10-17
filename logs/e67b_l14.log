@@ -1,0 +1,6 @@
+e67b sha256 cee829d391c2e13b2dd27882affaf29af6e2a8b42332de7434bee2a04a64e64f
+Loading weights:   0%|          | 0/340 [00:00<?, ?it/s]Loading weights: 100%|██████████| 340/340 [00:00<00:00, 7157.44it/s]
+[156s] L14 residual captured (float32); max |x| 67072 at coord 1038
+[166s] resid_post_all/L14_16k_big L0 116 non-finite r 0 best r {'Y:logcosh/13': (282, 0.226), 'Y:skew/16': (282, 0.272), 'hd:logcosh/13': (282, 0.465), 'hd:skew/16': (282, 0.466)} covered hits []
+[173s] resid_post_all/L14_16k_small L0 21 non-finite r 0 best r {'Y:logcosh/13': (156, 0.236), 'Y:skew/16': (156, 0.242), 'hd:logcosh/13': (156, 0.211), 'hd:skew/16': (156, 0.202)} covered hits []
+HASHES += fb2e5d75a6c210f50f15156f2173db9078e61af0c2acfadabd29ab6ab485a8c2  results/e67b_acts_L14_fp32.json (e67b supplement: L14 activation correlations recomputed in float32 (e67's L14 cells were void), 2026-10-15T18:17:53)

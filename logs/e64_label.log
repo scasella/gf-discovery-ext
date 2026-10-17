@@ -1,0 +1,3 @@
+L7 label: screened {'logcosh': 35, 'skew': 30} battery-UNNAMED {'logcosh': 22, 'skew': 18} twins 24 control-not-named []
+L12 label: screened {'logcosh': 36, 'skew': 42} battery-UNNAMED {'logcosh': 22, 'skew': 29} twins 31 control-not-named []
+HASHES += c86d651922a8929f2c9b8d17b1258e3082d14c6528a5b5a24ceb073e5bdf1336  results/e64_labels.json (e64 label: D2 battery verdicts, before any reading, S2, R2 or behaviour, 2026-10-15T12:34:50)

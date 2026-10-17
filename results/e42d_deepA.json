@@ -1,0 +1,1684 @@
+{
+ "status": "COMPLETE",
+ "script": "scripts/e42d_two_channel_deep.py",
+ "declared_at": "2026-10-15T04:24:25",
+ "layers": [
+  12,
+  14,
+  16,
+  18
+ ],
+ "flags_source": "results/token_type_geometry_deepA.json",
+ "flags_md5": "632d4409d90fc47f607ad8aa53eeee83",
+ "n_flags": 27,
+ "n_flags_k_ge_9": 2,
+ "rules": "e42d -- the Phase-4 two-channel adjudication (scripts/42) on the DEEP-layer closure flags.\n\nEvery statistic, null and stream is IMPORTED from scripts/42_two_channel_readjudicate.py\n(stream_deltas, outlier_drop_rule, cell_stats, NullCache, adjudicate, all_partitions,\npair_index, plane_angles, resolve_blocks, member_hash) and from scripts/22 (build_pool).\nWhat lives here is the deep-layer driver, because 42's main() hard-codes L0-L10:\n  * R10_DROP covers L0-L10 only. At deep layers the drop set is COMPUTED by the frozen\n    Addendum-H rule itself (drop coordinates with > 25% pool-wide split-half noise share in\n    the lag+1 successor deltas), declared here before any stream, and applied to channel 1,\n    channel 2 and lag+2 alike. Whatever set the rule returns (empty, one, several) is used.\n  * The positive control is strict-12 months (Addendum K1) evaluated at EVERY deep layer,\n    label-known. The 13/14-member flag-set anchors of 42 exist only at L6/L7.\n  * Amendments in force (docs/phase4_addendum_K/L/M):\n      K2  conditional null 20,000 draws per (layer, k) cell;\n      L1  saturated cell (p99 == 1.0): order conjunct passes iff rho == 1.0 AND the cell's\n          exact-1.0 rate < 0.01, else NOT ADJUDICABLE (reported under closure & LOO);\n      L2  every cell's p99 under 3 seeds; rho between min and max seed p99 -> MARGINAL;\n      L4/M1 closure is evaluated post-drop and FIRST: closure failure -> FAIL;\n      R8  k < 9 -> NOT ADJUDICABLE;\n      R11 more than one non-calendar PASS -> first reading is tier leakage.\n  * Calibration per layer: ordinal one..ten (must not pass), 200 frequency-pseudo sets around\n    strict-12 (0 passes allowed), 200 class-block permutations of channel 2 with strict-12\n    (<= 2 allowed), and a clean planted-ring power curve at the strict-12 radii.\n\nDECLARED READING (written before the run): the tier is VALIDATED at a deep layer iff strict-12\nPASSES or is MARGINAL there. At a layer where strict-12 FAILS, blind verdicts are reported as\nUNCALIBRATED: a FAIL there carries no information and a PASS still needs every null.\n",
+ "n_clusterlike": 20000,
+ "seeds_L2": [
+  0,
+  1,
+  2
+ ],
+ "layers_detail": {
+  "12": {
+   "drop_lag1": [
+    1038
+   ],
+   "drop_lag1_shares": [
+    0.8800294353181273
+   ],
+   "drop_lag2": [
+    1038
+   ],
+   "strict12": {
+    "k": 12,
+    "gap_ratio": 1.8324740524048615,
+    "two_channel_rho": 0.5384615384615384,
+    "threshold_p99": 0.986013986013986,
+    "threshold_p99_loo": 0.990909090909091,
+    "adjudicable": true,
+    "closure_pass": true,
+    "rho_pass": false,
+    "loo_closure_pass": false,
+    "loo_rho_pass": false,
+    "loo_gap_ratios": [
+     2.0241,
+     2.1605,
+     1.8035,
+     1.6613,
+     1.9308,
+     1.6134,
+     1.7417,
+     2.5834,
+     2.1025,
+     1.7214,
+     2.0041,
+     2.128
+    ],
+    "loo_rhos": [
+     0.8091,
+     0.4909,
+     0.7273,
+     0.4,
+     0.5,
+     0.5364,
+     0.5091,
+     0.6273,
+     0.8545,
+     0.5545,
+     0.5545,
+     0.4818
+    ],
+    "n_loo_closure_fail": 1,
+    "threshold_saturated": false,
+    "threshold_loo_saturated": false,
+    "verdict": "FAIL",
+    "PASS_noLOO": false,
+    "PASS_LOO_rho_only": false,
+    "order_state": "FAIL",
+    "thresholds_3seeds": [
+     0.986013986013986,
+     0.986013986013986,
+     0.986013986013986
+    ],
+    "threshold_km1_seed0": 0.990909090909091,
+    "exact1_rate": 0.0,
+    "loo_rho_ok_amended": false,
+    "verdict_amended": "FAIL (order)"
+   },
+   "tier_validated": false,
+   "negative_controls": {
+    "ordinal": {
+     "k": 10,
+     "gap_ratio": 4.816735909655332,
+     "two_channel_rho": 0.8666666666666667,
+     "threshold_p99": 0.9878787878787879,
+     "threshold_p99_loo": 1.0,
+     "adjudicable": true,
+     "closure_pass": false,
+     "rho_pass": false,
+     "loo_closure_pass": false,
+     "loo_rho_pass": false,
+     "loo_gap_ratios": [
+      4.0405,
+      4.2432,
+      4.3064,
+      4.3159,
+      4.288,
+      4.5032,
+      4.3503,
+      4.2918,
+      4.3258,
+      4.2614
+     ],
+     "loo_rhos": [
+      0.7833,
+      0.5167,
+      0.6333,
+      0.8333,
+      0.8333,
+      0.9833,
+      0.8833,
+      0.8833,
+      0.8833,
+      0.9833
+     ],
+     "n_loo_closure_fail": 10,
+     "threshold_saturated": false,
+     "threshold_loo_saturated": true,
+     "verdict": "FAIL",
+     "PASS_noLOO": false,
+     "PASS_LOO_rho_only": false,
+     "verdict_amended": "FAIL (closure)"
+    },
+    "freq_pseudo": {
+     "n": 107,
+     "closed": 4,
+     "passed": 0,
+     "marginal": 0
+    },
+    "class_perm": {
+     "n": 200,
+     "passed_noLOO": 0,
+     "passed_frozen": 0,
+     "rho_median": 0.548951048951049
+    }
+   },
+   "planted_clean": [
+    {
+     "rho": 0.05,
+     "recall_joint": 1.0
+    },
+    {
+     "rho": 0.1,
+     "recall_joint": 1.0
+    },
+    {
+     "rho": 0.15,
+     "recall_joint": 0.97
+    },
+    {
+     "rho": 0.2,
+     "recall_joint": 0.74
+    },
+    {
+     "rho": 0.3,
+     "recall_joint": 0.21
+    }
+   ],
+   "r1": 161.82002668556646,
+   "r2": 50.07509273393296,
+   "flags": [
+    {
+     "layer": 12,
+     "arm": "centred_leiden",
+     "k": 6,
+     "member_hash": "4a440a2ef3c4",
+     "stored_gap_ratio": 1.4945337726420251,
+     "p_bg": 0.005988023952095809,
+     "bh_pass": false,
+     "gap_ratio_predrop_reproduces": true,
+     "calendar": false,
+     "tokens": [
+      " buy",
+      " purchase",
+      " bought",
+      " buying",
+      " purchased",
+      " purchasing"
+     ],
+     "gap_ratio": 1.403097820204739,
+     "two_channel_rho": 1.0,
+     "verdict_amended": "NOT ADJUDICABLE (k<9)",
+     "n_loo_closure_fail": 0,
+     "tier_validated_at_layer": false
+    },
+    {
+     "layer": 12,
+     "arm": "centred_leiden",
+     "k": 5,
+     "member_hash": "c7366aed765f",
+     "stored_gap_ratio": 1.2740258500022072,
+     "p_bg": 0.001996007984031936,
+     "bh_pass": false,
+     "gap_ratio_predrop_reproduces": true,
+     "calendar": false,
+     "tokens": [
+      " what",
+      " how",
+      " How",
+      " What",
+      "What"
+     ],
+     "gap_ratio": 1.5207893771804937,
+     "two_channel_rho": 1.0,
+     "verdict_amended": "NOT ADJUDICABLE (k<9)",
+     "n_loo_closure_fail": 0,
+     "tier_validated_at_layer": false
+    },
+    {
+     "layer": 12,
+     "arm": "centred_refined",
+     "k": 5,
+     "member_hash": "81785981adbc",
+     "stored_gap_ratio": 1.344796605697832,
+     "p_bg": 0.00998003992015968,
+     "bh_pass": false,
+     "gap_ratio_predrop_reproduces": true,
+     "calendar": false,
+     "tokens": [
+      "nd",
+      " x",
+      "x",
+      "+",
+      "\u00b0"
+     ],
+     "gap_ratio": 1.6997886284530037,
+     "two_channel_rho": 1.0,
+     "verdict_amended": "NOT ADJUDICABLE (k<9)",
+     "n_loo_closure_fail": 0,
+     "tier_validated_at_layer": false
+    },
+    {
+     "layer": 12,
+     "arm": "raw_leiden",
+     "k": 5,
+     "member_hash": "2dddd3785cc7",
+     "stored_gap_ratio": 1.4921837079560363,
+     "p_bg": 0.027944111776447105,
+     "bh_pass": false,
+     "gap_ratio_predrop_reproduces": true,
+     "calendar": false,
+     "tokens": [
+      " visit",
+      " attend",
+      " visited",
+      " attended",
+      " visiting"
+     ],
+     "gap_ratio": 1.722818113737834,
+     "two_channel_rho": 0.6,
+     "verdict_amended": "NOT ADJUDICABLE (k<9)",
+     "n_loo_closure_fail": 0,
+     "tier_validated_at_layer": false
+    },
+    {
+     "layer": 12,
+     "arm": "raw_refined",
+     "k": 8,
+     "member_hash": "90c474ecf7d8",
+     "stored_gap_ratio": 1.7031146946626812,
+     "p_bg": 0.003992015968063872,
+     "bh_pass": false,
+     "gap_ratio_predrop_reproduces": true,
+     "calendar": false,
+     "tokens": [
+      " bus",
+      " video",
+      " TV",
+      " movie",
+      " PC",
+      " television",
+      " tablet",
+      " DVD"
+     ],
+     "gap_ratio": 2.052035640436622,
+     "two_channel_rho": 0.9047619047619048,
+     "verdict_amended": "NOT ADJUDICABLE (k<9)",
+     "n_loo_closure_fail": 0,
+     "tier_validated_at_layer": false
+    },
+    {
+     "layer": 12,
+     "arm": "raw_refined",
+     "k": 9,
+     "member_hash": "8142f1437ee0",
+     "stored_gap_ratio": 1.5604527640375876,
+     "p_bg": 0.003992015968063872,
+     "bh_pass": false,
+     "gap_ratio_predrop_reproduces": true,
+     "calendar": false,
+     "tokens": [
+      "ors",
+      "men",
+      " star",
+      " president",
+      " manager",
+      " coach",
+      " Manager",
+      " minister",
+      " Officer"
+     ],
+     "gap_ratio": 3.521247390669913,
+     "two_channel_rho": 0.8166666666666667,
+     "verdict_amended": "FAIL (closure)",
+     "n_loo_closure_fail": 9,
+     "lag2_rho": 0.9,
+     "lag2_clears": false,
+     "tier_validated_at_layer": false
+    }
+   ],
+   "null_cells": [
+    {
+     "layer": 12,
+     "k": 12,
+     "kind": "clusterlike",
+     "n_draws": 20000,
+     "seed": 7012012,
+     "n_conditional": 1701,
+     "threshold_p99_conditional": 0.986013986013986,
+     "exact1_rate": 0.0,
+     "closure_rate": 0.08505,
+     "saturated": false
+    },
+    {
+     "layer": 12,
+     "k": 11,
+     "kind": "clusterlike",
+     "n_draws": 20000,
+     "seed": 7012011,
+     "n_conditional": 2599,
+     "threshold_p99_conditional": 0.990909090909091,
+     "exact1_rate": 0.0,
+     "closure_rate": 0.12995,
+     "saturated": false
+    },
+    {
+     "layer": 12,
+     "k": 10,
+     "kind": "clusterlike",
+     "n_draws": 20000,
+     "seed": 7012010,
+     "n_conditional": 3659,
+     "threshold_p99_conditional": 0.9878787878787879,
+     "exact1_rate": 0.0038261820169445205,
+     "closure_rate": 0.18295,
+     "saturated": false
+    },
+    {
+     "layer": 12,
+     "k": 9,
+     "kind": "clusterlike",
+     "n_draws": 20000,
+     "seed": 7012009,
+     "n_conditional": 4710,
+     "threshold_p99_conditional": 1.0,
+     "exact1_rate": 0.015711252653927813,
+     "closure_rate": 0.2355,
+     "saturated": true
+    },
+    {
+     "layer": 12,
+     "k": 8,
+     "kind": "clusterlike",
+     "n_draws": 20000,
+     "seed": 7012008,
+     "n_conditional": 7232,
+     "threshold_p99_conditional": 1.0,
+     "exact1_rate": 0.036642699115044246,
+     "closure_rate": 0.3616,
+     "saturated": true
+    },
+    {
+     "layer": 12,
+     "k": 12,
+     "kind": "clusterlike",
+     "n_draws": 20000,
+     "seed": 17012012,
+     "n_conditional": 1775,
+     "threshold_p99_conditional": 0.986013986013986,
+     "exact1_rate": 0.0,
+     "closure_rate": 0.08875,
+     "saturated": false
+    },
+    {
+     "layer": 12,
+     "k": 11,
+     "kind": "clusterlike",
+     "n_draws": 20000,
+     "seed": 17012011,
+     "n_conditional": 2627,
+     "threshold_p99_conditional": 0.990909090909091,
+     "exact1_rate": 0.0,
+     "closure_rate": 0.13135,
+     "saturated": false
+    },
+    {
+     "layer": 12,
+     "k": 12,
+     "kind": "clusterlike",
+     "n_draws": 20000,
+     "seed": 27012012,
+     "n_conditional": 1792,
+     "threshold_p99_conditional": 0.986013986013986,
+     "exact1_rate": 0.0,
+     "closure_rate": 0.0896,
+     "saturated": false
+    },
+    {
+     "layer": 12,
+     "k": 11,
+     "kind": "clusterlike",
+     "n_draws": 20000,
+     "seed": 27012011,
+     "n_conditional": 2532,
+     "threshold_p99_conditional": 0.990909090909091,
+     "exact1_rate": 0.0,
+     "closure_rate": 0.1266,
+     "saturated": false
+    }
+   ],
+   "seconds": 793.6
+  },
+  "14": {
+   "drop_lag1": [
+    1038
+   ],
+   "drop_lag1_shares": [
+    0.7707796132571126
+   ],
+   "drop_lag2": [
+    1038
+   ],
+   "strict12": {
+    "k": 12,
+    "gap_ratio": 2.3764048021457618,
+    "two_channel_rho": 1.0,
+    "threshold_p99": 0.993006993006993,
+    "threshold_p99_loo": 0.990909090909091,
+    "adjudicable": true,
+    "closure_pass": true,
+    "rho_pass": true,
+    "loo_closure_pass": false,
+    "loo_rho_pass": false,
+    "loo_gap_ratios": [
+     2.3676,
+     2.1532,
+     2.3765,
+     2.2781,
+     2.3078,
+     2.2299,
+     2.2371,
+     3.1054,
+     2.0818,
+     1.9802,
+     2.6604,
+     2.0833
+    ],
+    "loo_rhos": [
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     0.5636,
+     1.0,
+     1.0,
+     1.0,
+     1.0
+    ],
+    "n_loo_closure_fail": 2,
+    "threshold_saturated": false,
+    "threshold_loo_saturated": false,
+    "verdict": "FAIL",
+    "PASS_noLOO": true,
+    "PASS_LOO_rho_only": false,
+    "order_state": "PASS",
+    "thresholds_3seeds": [
+     0.993006993006993,
+     0.986013986013986,
+     0.993006993006993
+    ],
+    "threshold_km1_seed0": 0.990909090909091,
+    "exact1_rate": 0.007104795737122558,
+    "loo_rho_ok_amended": false,
+    "verdict_amended": "FAIL (LOO closure)"
+   },
+   "tier_validated": false,
+   "negative_controls": {
+    "ordinal": {
+     "k": 10,
+     "gap_ratio": 4.810328185231539,
+     "two_channel_rho": 0.9272727272727272,
+     "threshold_p99": 1.0,
+     "threshold_p99_loo": 1.0,
+     "adjudicable": true,
+     "closure_pass": false,
+     "rho_pass": false,
+     "loo_closure_pass": false,
+     "loo_rho_pass": false,
+     "loo_gap_ratios": [
+      3.6982,
+      4.0464,
+      4.2858,
+      4.3,
+      4.307,
+      4.3758,
+      4.3424,
+      4.1889,
+      4.2789,
+      4.1786
+     ],
+     "loo_rhos": [
+      0.95,
+      0.5167,
+      0.65,
+      0.8333,
+      0.8333,
+      1.0,
+      0.95,
+      0.9,
+      0.9,
+      1.0
+     ],
+     "n_loo_closure_fail": 10,
+     "threshold_saturated": true,
+     "threshold_loo_saturated": true,
+     "verdict": "FAIL",
+     "PASS_noLOO": false,
+     "PASS_LOO_rho_only": false,
+     "verdict_amended": "FAIL (closure)"
+    },
+    "freq_pseudo": {
+     "n": 105,
+     "closed": 2,
+     "passed": 0,
+     "marginal": 0
+    },
+    "class_perm": {
+     "n": 200,
+     "passed_noLOO": 0,
+     "passed_frozen": 0,
+     "rho_median": 0.5454545454545454
+    }
+   },
+   "planted_clean": [
+    {
+     "rho": 0.05,
+     "recall_joint": 1.0
+    },
+    {
+     "rho": 0.1,
+     "recall_joint": 1.0
+    },
+    {
+     "rho": 0.15,
+     "recall_joint": 0.86
+    },
+    {
+     "rho": 0.2,
+     "recall_joint": 0.34
+    },
+    {
+     "rho": 0.3,
+     "recall_joint": 0.02
+    }
+   ],
+   "r1": 289.73997336174784,
+   "r2": 89.70191760166128,
+   "flags": [
+    {
+     "layer": 14,
+     "arm": "centred_leiden",
+     "k": 8,
+     "member_hash": "9bd75584c45c",
+     "stored_gap_ratio": 1.643481927898263,
+     "p_bg": 0.003992015968063872,
+     "bh_pass": false,
+     "gap_ratio_predrop_reproduces": true,
+     "calendar": false,
+     "tokens": [
+      " probably",
+      " likely",
+      " maybe",
+      " perhaps",
+      " guess",
+      " possibly",
+      " Maybe",
+      " apparently"
+     ],
+     "gap_ratio": 2.5303780563416884,
+     "two_channel_rho": 0.8095238095238095,
+     "verdict_amended": "FAIL (closure)",
+     "n_loo_closure_fail": 2,
+     "tier_validated_at_layer": false
+    },
+    {
+     "layer": 14,
+     "arm": "centred_leiden",
+     "k": 5,
+     "member_hash": "57ce23c65d47",
+     "stored_gap_ratio": 1.2915702857129152,
+     "p_bg": 0.005988023952095809,
+     "bh_pass": false,
+     "gap_ratio_predrop_reproduces": true,
+     "calendar": false,
+     "tokens": [
+      " woman",
+      " girl",
+      " boy",
+      " girls",
+      " boys"
+     ],
+     "gap_ratio": 1.3391339077684528,
+     "two_channel_rho": 1.0,
+     "verdict_amended": "NOT ADJUDICABLE (k<9)",
+     "n_loo_closure_fail": 0,
+     "tier_validated_at_layer": false
+    },
+    {
+     "layer": 14,
+     "arm": "centred_refined",
+     "k": 5,
+     "member_hash": "a4d88c0c17e2",
+     "stored_gap_ratio": 1.4547152176650815,
+     "p_bg": 0.013972055888223553,
+     "bh_pass": false,
+     "gap_ratio_predrop_reproduces": true,
+     "calendar": false,
+     "tokens": [
+      " A",
+      " An",
+      "An",
+      "a",
+      "A"
+     ],
+     "gap_ratio": 1.661633264353282,
+     "two_channel_rho": 0.6,
+     "verdict_amended": "NOT ADJUDICABLE (k<9)",
+     "n_loo_closure_fail": 0,
+     "tier_validated_at_layer": false
+    },
+    {
+     "layer": 14,
+     "arm": "centred_refined",
+     "k": 5,
+     "member_hash": "1d4141d71189",
+     "stored_gap_ratio": 1.4583565039331785,
+     "p_bg": 0.013972055888223553,
+     "bh_pass": false,
+     "gap_ratio_predrop_reproduces": true,
+     "calendar": false,
+     "tokens": [
+      "AC",
+      " State",
+      " Department",
+      " District",
+      " Division"
+     ],
+     "gap_ratio": 1.2674586995323036,
+     "two_channel_rho": 0.7,
+     "verdict_amended": "NOT ADJUDICABLE (k<9)",
+     "n_loo_closure_fail": 0,
+     "tier_validated_at_layer": false
+    },
+    {
+     "layer": 14,
+     "arm": "raw_leiden",
+     "k": 6,
+     "member_hash": "7c2485e5c91f",
+     "stored_gap_ratio": 1.4526069664183971,
+     "p_bg": 0.003992015968063872,
+     "bh_pass": false,
+     "gap_ratio_predrop_reproduces": true,
+     "calendar": false,
+     "tokens": [
+      " image",
+      " photo",
+      " images",
+      " picture",
+      " photos",
+      " pictures"
+     ],
+     "gap_ratio": 1.7918160536169945,
+     "two_channel_rho": 0.48571428571428577,
+     "verdict_amended": "NOT ADJUDICABLE (k<9)",
+     "n_loo_closure_fail": 0,
+     "tier_validated_at_layer": false
+    }
+   ],
+   "null_cells": [
+    {
+     "layer": 14,
+     "k": 12,
+     "kind": "clusterlike",
+     "n_draws": 20000,
+     "seed": 7014012,
+     "n_conditional": 1689,
+     "threshold_p99_conditional": 0.993006993006993,
+     "exact1_rate": 0.007104795737122558,
+     "closure_rate": 0.08445,
+     "saturated": false
+    },
+    {
+     "layer": 14,
+     "k": 11,
+     "kind": "clusterlike",
+     "n_draws": 20000,
+     "seed": 7014011,
+     "n_conditional": 2367,
+     "threshold_p99_conditional": 0.990909090909091,
+     "exact1_rate": 0.008449514152936205,
+     "closure_rate": 0.11835,
+     "saturated": false
+    },
+    {
+     "layer": 14,
+     "k": 10,
+     "kind": "clusterlike",
+     "n_draws": 20000,
+     "seed": 7014010,
+     "n_conditional": 3042,
+     "threshold_p99_conditional": 1.0,
+     "exact1_rate": 0.012491781722550954,
+     "closure_rate": 0.1521,
+     "saturated": true
+    },
+    {
+     "layer": 14,
+     "k": 9,
+     "kind": "clusterlike",
+     "n_draws": 20000,
+     "seed": 7014009,
+     "n_conditional": 4227,
+     "threshold_p99_conditional": 1.0,
+     "exact1_rate": 0.028152353915306363,
+     "closure_rate": 0.21135,
+     "saturated": true
+    },
+    {
+     "layer": 14,
+     "k": 12,
+     "kind": "clusterlike",
+     "n_draws": 20000,
+     "seed": 17014012,
+     "n_conditional": 1673,
+     "threshold_p99_conditional": 0.986013986013986,
+     "exact1_rate": 0.005379557680812911,
+     "closure_rate": 0.08365,
+     "saturated": false
+    },
+    {
+     "layer": 14,
+     "k": 11,
+     "kind": "clusterlike",
+     "n_draws": 20000,
+     "seed": 17014011,
+     "n_conditional": 2316,
+     "threshold_p99_conditional": 0.990909090909091,
+     "exact1_rate": 0.0051813471502590676,
+     "closure_rate": 0.1158,
+     "saturated": false
+    },
+    {
+     "layer": 14,
+     "k": 12,
+     "kind": "clusterlike",
+     "n_draws": 20000,
+     "seed": 27014012,
+     "n_conditional": 1712,
+     "threshold_p99_conditional": 0.993006993006993,
+     "exact1_rate": 0.007593457943925234,
+     "closure_rate": 0.0856,
+     "saturated": false
+    },
+    {
+     "layer": 14,
+     "k": 11,
+     "kind": "clusterlike",
+     "n_draws": 20000,
+     "seed": 27014011,
+     "n_conditional": 2319,
+     "threshold_p99_conditional": 0.990909090909091,
+     "exact1_rate": 0.00603708495040966,
+     "closure_rate": 0.11595,
+     "saturated": false
+    }
+   ],
+   "seconds": 724.6
+  },
+  "16": {
+   "drop_lag1": [
+    1038
+   ],
+   "drop_lag1_shares": [
+    0.555245902933883
+   ],
+   "drop_lag2": [
+    1038
+   ],
+   "strict12": {
+    "k": 12,
+    "gap_ratio": 1.8680072195474569,
+    "two_channel_rho": 0.7902097902097902,
+    "threshold_p99": 0.993006993006993,
+    "threshold_p99_loo": 0.990909090909091,
+    "adjudicable": true,
+    "closure_pass": true,
+    "rho_pass": false,
+    "loo_closure_pass": true,
+    "loo_rho_pass": false,
+    "loo_gap_ratios": [
+     2.1112,
+     1.6596,
+     1.9799,
+     2.1235,
+     1.6867,
+     1.6574,
+     1.5824,
+     1.7244,
+     1.6253,
+     2.0821,
+     2.4778,
+     1.7105
+    ],
+    "loo_rhos": [
+     0.8182,
+     0.6364,
+     0.5636,
+     0.7909,
+     0.5727,
+     0.8182,
+     0.8182,
+     0.9273,
+     0.8182,
+     0.8182,
+     0.8182,
+     0.7636
+    ],
+    "n_loo_closure_fail": 0,
+    "threshold_saturated": false,
+    "threshold_loo_saturated": false,
+    "verdict": "FAIL",
+    "PASS_noLOO": false,
+    "PASS_LOO_rho_only": false,
+    "order_state": "FAIL",
+    "thresholds_3seeds": [
+     0.993006993006993,
+     0.993006993006993,
+     0.993006993006993
+    ],
+    "threshold_km1_seed0": 0.990909090909091,
+    "exact1_rate": 0.0,
+    "loo_rho_ok_amended": false,
+    "verdict_amended": "FAIL (order)"
+   },
+   "tier_validated": false,
+   "negative_controls": {
+    "ordinal": {
+     "k": 10,
+     "gap_ratio": 4.102424660406231,
+     "two_channel_rho": 0.8787878787878788,
+     "threshold_p99": 1.0,
+     "threshold_p99_loo": 1.0,
+     "adjudicable": true,
+     "closure_pass": false,
+     "rho_pass": false,
+     "loo_closure_pass": false,
+     "loo_rho_pass": false,
+     "loo_gap_ratios": [
+      3.8356,
+      3.8141,
+      3.6845,
+      3.6511,
+      3.6824,
+      3.7793,
+      3.6972,
+      3.6495,
+      3.6837,
+      3.6354
+     ],
+     "loo_rhos": [
+      1.0,
+      0.8333,
+      0.75,
+      0.8333,
+      0.8333,
+      1.0,
+      0.9,
+      0.9,
+      0.95,
+      1.0
+     ],
+     "n_loo_closure_fail": 10,
+     "threshold_saturated": true,
+     "threshold_loo_saturated": true,
+     "verdict": "FAIL",
+     "PASS_noLOO": false,
+     "PASS_LOO_rho_only": false,
+     "verdict_amended": "FAIL (closure)"
+    },
+    "freq_pseudo": {
+     "n": 97,
+     "closed": 5,
+     "passed": 0,
+     "marginal": 0
+    },
+    "class_perm": {
+     "n": 200,
+     "passed_noLOO": 0,
+     "passed_frozen": 0,
+     "rho_median": 0.5454545454545454
+    }
+   },
+   "planted_clean": [
+    {
+     "rho": 0.05,
+     "recall_joint": 1.0
+    },
+    {
+     "rho": 0.1,
+     "recall_joint": 1.0
+    },
+    {
+     "rho": 0.15,
+     "recall_joint": 0.85
+    },
+    {
+     "rho": 0.2,
+     "recall_joint": 0.33
+    },
+    {
+     "rho": 0.3,
+     "recall_joint": 0.06
+    }
+   ],
+   "r1": 469.9027079968855,
+   "r2": 149.78753779992996,
+   "flags": [
+    {
+     "layer": 16,
+     "arm": "centred_leiden",
+     "k": 6,
+     "member_hash": "bc7f6f974d05",
+     "stored_gap_ratio": 1.4046586326825832,
+     "p_bg": 0.003992015968063872,
+     "bh_pass": false,
+     "gap_ratio_predrop_reproduces": true,
+     "calendar": false,
+     "tokens": [
+      " release",
+      " released",
+      " introduced",
+      " launch",
+      " issued",
+      " launched"
+     ],
+     "gap_ratio": 1.3556437217079418,
+     "two_channel_rho": 0.9428571428571428,
+     "verdict_amended": "NOT ADJUDICABLE (k<9)",
+     "n_loo_closure_fail": 0,
+     "tier_validated_at_layer": false
+    },
+    {
+     "layer": 16,
+     "arm": "centred_leiden",
+     "k": 5,
+     "member_hash": "aac1a4d107c9",
+     "stored_gap_ratio": 1.4255020723768745,
+     "p_bg": 0.011976047904191617,
+     "bh_pass": false,
+     "gap_ratio_predrop_reproduces": true,
+     "calendar": false,
+     "tokens": [
+      " summer",
+      " spring",
+      " winter",
+      " Spring",
+      " Summer"
+     ],
+     "gap_ratio": 1.3598036619931837,
+     "two_channel_rho": 1.0,
+     "verdict_amended": "NOT ADJUDICABLE (k<9)",
+     "n_loo_closure_fail": 0,
+     "tier_validated_at_layer": false
+    },
+    {
+     "layer": 16,
+     "arm": "centred_leiden",
+     "k": 5,
+     "member_hash": "af95f516771f",
+     "stored_gap_ratio": 1.459753879584914,
+     "p_bg": 0.013972055888223553,
+     "bh_pass": false,
+     "gap_ratio_predrop_reproduces": true,
+     "calendar": false,
+     "tokens": [
+      " into",
+      " upon",
+      " towards",
+      " toward",
+      " onto"
+     ],
+     "gap_ratio": 1.5450529816963758,
+     "two_channel_rho": 0.9,
+     "verdict_amended": "NOT ADJUDICABLE (k<9)",
+     "n_loo_closure_fail": 0,
+     "tier_validated_at_layer": false
+    },
+    {
+     "layer": 16,
+     "arm": "centred_leiden",
+     "k": 5,
+     "member_hash": "86f839f56e3b",
+     "stored_gap_ratio": 1.4556998106543992,
+     "p_bg": 0.013972055888223553,
+     "bh_pass": false,
+     "gap_ratio_predrop_reproduces": true,
+     "calendar": false,
+     "tokens": [
+      " perform",
+      " conduct",
+      " performed",
+      " conducted",
+      " performing"
+     ],
+     "gap_ratio": 1.4688435003298244,
+     "two_channel_rho": 1.0,
+     "verdict_amended": "NOT ADJUDICABLE (k<9)",
+     "n_loo_closure_fail": 0,
+     "tier_validated_at_layer": false
+    },
+    {
+     "layer": 16,
+     "arm": "centred_refined",
+     "k": 8,
+     "member_hash": "47187a5bc5ce",
+     "stored_gap_ratio": 1.7580668451788861,
+     "p_bg": 0.003992015968063872,
+     "bh_pass": false,
+     "gap_ratio_predrop_reproduces": true,
+     "calendar": false,
+     "tokens": [
+      " Park",
+      " League",
+      " Cup",
+      " division",
+      " Division",
+      " league",
+      " Championship",
+      " Bowl"
+     ],
+     "gap_ratio": 2.175234781138154,
+     "two_channel_rho": 1.0,
+     "verdict_amended": "NOT ADJUDICABLE (k<9)",
+     "n_loo_closure_fail": 2,
+     "tier_validated_at_layer": false
+    },
+    {
+     "layer": 16,
+     "arm": "raw_leiden",
+     "k": 11,
+     "member_hash": "dfa30db1975d",
+     "stored_gap_ratio": 1.9097556331409846,
+     "p_bg": 0.003992015968063872,
+     "bh_pass": false,
+     "gap_ratio_predrop_reproduces": true,
+     "calendar": false,
+     "tokens": [
+      " child",
+      " children",
+      " women",
+      " woman",
+      " girl",
+      " kids",
+      " boy",
+      " baby",
+      " girls",
+      " kid",
+      " boys"
+     ],
+     "gap_ratio": 1.84435327891738,
+     "two_channel_rho": 0.9818181818181818,
+     "verdict_amended": "FAIL (order)",
+     "n_loo_closure_fail": 2,
+     "thresholds_3seeds": [
+      0.990909090909091,
+      0.990909090909091,
+      0.990909090909091
+     ],
+     "exact1_rate": 0.004833836858006042,
+     "order_state": "FAIL",
+     "lag2_rho": 0.9818181818181818,
+     "lag2_clears": false,
+     "tier_validated_at_layer": false
+    },
+    {
+     "layer": 16,
+     "arm": "raw_leiden",
+     "k": 5,
+     "member_hash": "bb4aad58c14f",
+     "stored_gap_ratio": 1.3632642122139336,
+     "p_bg": 0.003992015968063872,
+     "bh_pass": false,
+     "gap_ratio_predrop_reproduces": true,
+     "calendar": false,
+     "tokens": [
+      " d",
+      " de",
+      " D",
+      " De",
+      "D"
+     ],
+     "gap_ratio": 1.5297280056300453,
+     "two_channel_rho": 0.7,
+     "verdict_amended": "NOT ADJUDICABLE (k<9)",
+     "n_loo_closure_fail": 0,
+     "tier_validated_at_layer": false
+    },
+    {
+     "layer": 16,
+     "arm": "raw_leiden",
+     "k": 5,
+     "member_hash": "8ce423cd4049",
+     "stored_gap_ratio": 1.4552668524456531,
+     "p_bg": 0.013972055888223553,
+     "bh_pass": false,
+     "gap_ratio_predrop_reproduces": true,
+     "calendar": false,
+     "tokens": [
+      " plant",
+      " tree",
+      " plants",
+      " trees",
+      " flowers"
+     ],
+     "gap_ratio": 1.4609405870416798,
+     "two_channel_rho": 0.8,
+     "verdict_amended": "NOT ADJUDICABLE (k<9)",
+     "n_loo_closure_fail": 0,
+     "tier_validated_at_layer": false
+    }
+   ],
+   "null_cells": [
+    {
+     "layer": 16,
+     "k": 12,
+     "kind": "clusterlike",
+     "n_draws": 20000,
+     "seed": 7016012,
+     "n_conditional": 1347,
+     "threshold_p99_conditional": 0.993006993006993,
+     "exact1_rate": 0.0,
+     "closure_rate": 0.06735,
+     "saturated": false
+    },
+    {
+     "layer": 16,
+     "k": 11,
+     "kind": "clusterlike",
+     "n_draws": 20000,
+     "seed": 7016011,
+     "n_conditional": 1655,
+     "threshold_p99_conditional": 0.990909090909091,
+     "exact1_rate": 0.004833836858006042,
+     "closure_rate": 0.08275,
+     "saturated": false
+    },
+    {
+     "layer": 16,
+     "k": 10,
+     "kind": "clusterlike",
+     "n_draws": 20000,
+     "seed": 7016010,
+     "n_conditional": 2298,
+     "threshold_p99_conditional": 1.0,
+     "exact1_rate": 0.011314186248912098,
+     "closure_rate": 0.1149,
+     "saturated": true
+    },
+    {
+     "layer": 16,
+     "k": 9,
+     "kind": "clusterlike",
+     "n_draws": 20000,
+     "seed": 7016009,
+     "n_conditional": 3219,
+     "threshold_p99_conditional": 1.0,
+     "exact1_rate": 0.03945324634979808,
+     "closure_rate": 0.16095,
+     "saturated": true
+    },
+    {
+     "layer": 16,
+     "k": 12,
+     "kind": "clusterlike",
+     "n_draws": 20000,
+     "seed": 17016012,
+     "n_conditional": 1298,
+     "threshold_p99_conditional": 0.993006993006993,
+     "exact1_rate": 0.0,
+     "closure_rate": 0.0649,
+     "saturated": false
+    },
+    {
+     "layer": 16,
+     "k": 11,
+     "kind": "clusterlike",
+     "n_draws": 20000,
+     "seed": 17016011,
+     "n_conditional": 1620,
+     "threshold_p99_conditional": 0.990909090909091,
+     "exact1_rate": 0.004320987654320987,
+     "closure_rate": 0.081,
+     "saturated": false
+    },
+    {
+     "layer": 16,
+     "k": 10,
+     "kind": "clusterlike",
+     "n_draws": 20000,
+     "seed": 17016010,
+     "n_conditional": 2279,
+     "threshold_p99_conditional": 1.0,
+     "exact1_rate": 0.01491882404563405,
+     "closure_rate": 0.11395,
+     "saturated": true
+    },
+    {
+     "layer": 16,
+     "k": 12,
+     "kind": "clusterlike",
+     "n_draws": 20000,
+     "seed": 27016012,
+     "n_conditional": 1370,
+     "threshold_p99_conditional": 0.993006993006993,
+     "exact1_rate": 0.0,
+     "closure_rate": 0.0685,
+     "saturated": false
+    },
+    {
+     "layer": 16,
+     "k": 11,
+     "kind": "clusterlike",
+     "n_draws": 20000,
+     "seed": 27016011,
+     "n_conditional": 1645,
+     "threshold_p99_conditional": 0.990909090909091,
+     "exact1_rate": 0.0024316109422492403,
+     "closure_rate": 0.08225,
+     "saturated": false
+    },
+    {
+     "layer": 16,
+     "k": 10,
+     "kind": "clusterlike",
+     "n_draws": 20000,
+     "seed": 27016010,
+     "n_conditional": 2252,
+     "threshold_p99_conditional": 1.0,
+     "exact1_rate": 0.013765541740674956,
+     "closure_rate": 0.1126,
+     "saturated": true
+    }
+   ],
+   "seconds": 1349.7
+  },
+  "18": {
+   "drop_lag1": [
+    1038
+   ],
+   "drop_lag1_shares": [
+    0.43986212542824515
+   ],
+   "drop_lag2": [
+    1038
+   ],
+   "strict12": {
+    "k": 12,
+    "gap_ratio": 2.6999296470428895,
+    "two_channel_rho": 0.6083916083916083,
+    "threshold_p99": 0.986013986013986,
+    "threshold_p99_loo": 0.990909090909091,
+    "adjudicable": true,
+    "closure_pass": false,
+    "rho_pass": false,
+    "loo_closure_pass": false,
+    "loo_rho_pass": false,
+    "loo_gap_ratios": [
+     1.9839,
+     2.4991,
+     4.6312,
+     3.8623,
+     2.484,
+     2.6738,
+     2.8517,
+     2.6321,
+     2.7898,
+     2.9318,
+     3.3526,
+     2.5227
+    ],
+    "loo_rhos": [
+     0.9909,
+     0.5818,
+     0.6545,
+     0.9455,
+     0.5909,
+     0.5636,
+     0.5455,
+     0.5727,
+     0.5545,
+     0.5636,
+     0.8091,
+     0.5818
+    ],
+    "n_loo_closure_fail": 9,
+    "threshold_saturated": false,
+    "threshold_loo_saturated": false,
+    "verdict": "FAIL",
+    "PASS_noLOO": false,
+    "PASS_LOO_rho_only": false,
+    "verdict_amended": "FAIL (closure)"
+   },
+   "tier_validated": false,
+   "negative_controls": {
+    "ordinal": {
+     "k": 10,
+     "gap_ratio": 4.300968898343356,
+     "two_channel_rho": 0.8181818181818181,
+     "threshold_p99": 1.0,
+     "threshold_p99_loo": 1.0,
+     "adjudicable": true,
+     "closure_pass": false,
+     "rho_pass": false,
+     "loo_closure_pass": false,
+     "loo_rho_pass": false,
+     "loo_gap_ratios": [
+      4.2566,
+      4.1806,
+      3.9438,
+      3.8446,
+      3.8671,
+      4.0276,
+      3.8862,
+      3.9098,
+      3.8935,
+      3.9443
+     ],
+     "loo_rhos": [
+      1.0,
+      0.7167,
+      0.6333,
+      0.7333,
+      0.8333,
+      1.0,
+      0.8333,
+      0.75,
+      0.8333,
+      1.0
+     ],
+     "n_loo_closure_fail": 10,
+     "threshold_saturated": true,
+     "threshold_loo_saturated": true,
+     "verdict": "FAIL",
+     "PASS_noLOO": false,
+     "PASS_LOO_rho_only": false,
+     "verdict_amended": "FAIL (closure)"
+    },
+    "freq_pseudo": {
+     "n": 103,
+     "closed": 0,
+     "passed": 0,
+     "marginal": 0
+    },
+    "class_perm": {
+     "n": 200,
+     "passed_noLOO": 0,
+     "passed_frozen": 0,
+     "rho_median": 0.5454545454545454
+    }
+   },
+   "planted_clean": [
+    {
+     "rho": 0.05,
+     "recall_joint": 1.0
+    },
+    {
+     "rho": 0.1,
+     "recall_joint": 1.0
+    },
+    {
+     "rho": 0.15,
+     "recall_joint": 0.99
+    },
+    {
+     "rho": 0.2,
+     "recall_joint": 0.69
+    },
+    {
+     "rho": 0.3,
+     "recall_joint": 0.14
+    }
+   ],
+   "r1": 531.084187474669,
+   "r2": 288.55207106552933,
+   "flags": [
+    {
+     "layer": 18,
+     "arm": "centred_leiden",
+     "k": 6,
+     "member_hash": "a4e512c8a9a5",
+     "stored_gap_ratio": 1.4814777644906514,
+     "p_bg": 0.001996007984031936,
+     "bh_pass": false,
+     "gap_ratio_predrop_reproduces": true,
+     "calendar": false,
+     "tokens": [
+      " local",
+      " global",
+      " national",
+      " international",
+      " regional",
+      " domestic"
+     ],
+     "gap_ratio": 1.6189163653146526,
+     "two_channel_rho": 1.0,
+     "verdict_amended": "NOT ADJUDICABLE (k<9)",
+     "n_loo_closure_fail": 0,
+     "tier_validated_at_layer": false
+    },
+    {
+     "layer": 18,
+     "arm": "centred_leiden",
+     "k": 6,
+     "member_hash": "519149a2e43d",
+     "stored_gap_ratio": 1.4880602197278374,
+     "p_bg": 0.001996007984031936,
+     "bh_pass": false,
+     "gap_ratio_predrop_reproduces": true,
+     "calendar": false,
+     "tokens": [
+      "ed",
+      "ated",
+      "led",
+      "ized",
+      "ised",
+      "ged"
+     ],
+     "gap_ratio": 2.7488054172130294,
+     "two_channel_rho": 1.0,
+     "verdict_amended": "FAIL (closure)",
+     "n_loo_closure_fail": 0,
+     "tier_validated_at_layer": false
+    },
+    {
+     "layer": 18,
+     "arm": "centred_refined",
+     "k": 6,
+     "member_hash": "a8e918d6be3d",
+     "stored_gap_ratio": 1.4562605677277578,
+     "p_bg": 0.001996007984031936,
+     "bh_pass": false,
+     "gap_ratio_predrop_reproduces": true,
+     "calendar": false,
+     "tokens": [
+      " board",
+      " Commission",
+      " Board",
+      " Council",
+      " Committee",
+      " committee"
+     ],
+     "gap_ratio": 1.5161581426515478,
+     "two_channel_rho": 1.0,
+     "verdict_amended": "NOT ADJUDICABLE (k<9)",
+     "n_loo_closure_fail": 0,
+     "tier_validated_at_layer": false
+    },
+    {
+     "layer": 18,
+     "arm": "raw_leiden",
+     "k": 7,
+     "member_hash": "286fab65fc7e",
+     "stored_gap_ratio": 1.5666983447323723,
+     "p_bg": 0.005988023952095809,
+     "bh_pass": false,
+     "gap_ratio_predrop_reproduces": true,
+     "calendar": false,
+     "tokens": [
+      " change",
+      " changes",
+      " switch",
+      " changed",
+      " transition",
+      " shift",
+      " changing"
+     ],
+     "gap_ratio": 2.0271430701199593,
+     "two_channel_rho": 0.9642857142857143,
+     "verdict_amended": "NOT ADJUDICABLE (k<9)",
+     "n_loo_closure_fail": 0,
+     "tier_validated_at_layer": false
+    },
+    {
+     "layer": 18,
+     "arm": "raw_leiden",
+     "k": 5,
+     "member_hash": "1d3ff87d666c",
+     "stored_gap_ratio": 1.4371504497745127,
+     "p_bg": 0.005988023952095809,
+     "bh_pass": false,
+     "gap_ratio_predrop_reproduces": true,
+     "calendar": false,
+     "tokens": [
+      " easy",
+      " difficult",
+      " easier",
+      " impossible",
+      " tough"
+     ],
+     "gap_ratio": 1.5655981868059472,
+     "two_channel_rho": 0.9,
+     "verdict_amended": "NOT ADJUDICABLE (k<9)",
+     "n_loo_closure_fail": 0,
+     "tier_validated_at_layer": false
+    },
+    {
+     "layer": 18,
+     "arm": "raw_refined",
+     "k": 5,
+     "member_hash": "cb1f2e6eac16",
+     "stored_gap_ratio": 1.4679258689773502,
+     "p_bg": 0.011976047904191617,
+     "bh_pass": false,
+     "gap_ratio_predrop_reproduces": true,
+     "calendar": false,
+     "tokens": [
+      " leading",
+      "known",
+      " famous",
+      " experienced",
+      " fellow"
+     ],
+     "gap_ratio": 1.467253932918698,
+     "two_channel_rho": 0.8,
+     "verdict_amended": "NOT ADJUDICABLE (k<9)",
+     "n_loo_closure_fail": 0,
+     "tier_validated_at_layer": false
+    },
+    {
+     "layer": 18,
+     "arm": "raw_refined",
+     "k": 6,
+     "member_hash": "45ac969122cb",
+     "stored_gap_ratio": 1.5268520685376736,
+     "p_bg": 0.005988023952095809,
+     "bh_pass": false,
+     "gap_ratio_predrop_reproduces": true,
+     "calendar": false,
+     "tokens": [
+      " especially",
+      " particularly",
+      " mostly",
+      " specifically",
+      " mainly",
+      " primarily"
+     ],
+     "gap_ratio": 2.0177972276592286,
+     "two_channel_rho": 1.0,
+     "verdict_amended": "NOT ADJUDICABLE (k<9)",
+     "n_loo_closure_fail": 0,
+     "tier_validated_at_layer": false
+    },
+    {
+     "layer": 18,
+     "arm": "hdbscan",
+     "k": 8,
+     "member_hash": "35b7e9076090",
+     "stored_gap_ratio": 1.6869567596405857,
+     "p_bg": 0.001996007984031936,
+     "bh_pass": false,
+     "gap_ratio_predrop_reproduces": true,
+     "calendar": false,
+     "tokens": [
+      " son",
+      " mother",
+      " father",
+      " wife",
+      " husband",
+      " daughter",
+      " brother",
+      " sister"
+     ],
+     "gap_ratio": 1.5498339540832506,
+     "two_channel_rho": 0.9047619047619048,
+     "verdict_amended": "NOT ADJUDICABLE (k<9)",
+     "n_loo_closure_fail": 0,
+     "tier_validated_at_layer": false
+    }
+   ],
+   "null_cells": [
+    {
+     "layer": 18,
+     "k": 12,
+     "kind": "clusterlike",
+     "n_draws": 20000,
+     "seed": 7018012,
+     "n_conditional": 913,
+     "threshold_p99_conditional": 0.986013986013986,
+     "exact1_rate": 0.007667031763417305,
+     "closure_rate": 0.04565,
+     "saturated": false
+    },
+    {
+     "layer": 18,
+     "k": 11,
+     "kind": "clusterlike",
+     "n_draws": 20000,
+     "seed": 7018011,
+     "n_conditional": 1125,
+     "threshold_p99_conditional": 0.990909090909091,
+     "exact1_rate": 0.0026666666666666666,
+     "closure_rate": 0.05625,
+     "saturated": false
+    },
+    {
+     "layer": 18,
+     "k": 10,
+     "kind": "clusterlike",
+     "n_draws": 20000,
+     "seed": 7018010,
+     "n_conditional": 1755,
+     "threshold_p99_conditional": 1.0,
+     "exact1_rate": 0.05014245014245014,
+     "closure_rate": 0.08775,
+     "saturated": true
+    },
+    {
+     "layer": 18,
+     "k": 9,
+     "kind": "clusterlike",
+     "n_draws": 20000,
+     "seed": 7018009,
+     "n_conditional": 2814,
+     "threshold_p99_conditional": 1.0,
+     "exact1_rate": 0.05472636815920398,
+     "closure_rate": 0.1407,
+     "saturated": true
+    }
+   ],
+   "seconds": 1669.4
+  }
+ },
+ "summary": {
+  "n_flags": 27,
+  "n_k_ge_9": 2,
+  "verdict_counts": {
+   "FAIL (closure)": 3,
+   "FAIL (order)": 1,
+   "NOT ADJUDICABLE (k<9)": 23
+  },
+  "passers": [],
+  "strict12_by_layer": {
+   "12": "FAIL (order)",
+   "14": "FAIL (LOO closure)",
+   "16": "FAIL (order)",
+   "18": "FAIL (closure)"
+  },
+  "expected_false_passers": 0.01
+ },
+ "runtime_seconds": 4544.4
+}

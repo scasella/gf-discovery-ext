@@ -1,0 +1,9 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+ok resid_post_all/layer_6_width_16k_l0_small 12 s
+ok resid_post_all/layer_7_width_16k_l0_small 12 s
+ok resid_post_all/layer_8_width_16k_l0_small 12 s
+ok resid_post/layer_7_width_16k_l0_medium 10 s
+ok resid_post/layer_7_width_65k_l0_medium 34 s
+ok resid_post/layer_7_width_262k_l0_medium 119 s
+ok resid_post/layer_13_width_262k_l0_medium 122 s
+ALL DONE

@@ -1,0 +1,6 @@
+Loading weights:   0%|          | 0/340 [00:00<?, ?it/s]Loading weights: 100%|██████████| 340/340 [00:00<00:00, 6428.92it/s]
+  16/1000 seq  4s
+  336/1000 seq  66s
+  656/1000 seq  129s
+  976/1000 seq  184s
+done occD in 189s

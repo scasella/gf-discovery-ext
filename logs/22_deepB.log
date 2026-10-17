@@ -1,0 +1,106 @@
+=== DECLARED RULES (frozen, written to disk before any result) ===
+{
+  "representation": "per token type t: mean over ALL cache rows whose tokens.i32 == t of the sparse SAE code vector, then projected mean_code @ W_dec -> 1152-d. b_dec is NOT added (the task text says 'W_dec projection'); it is a constant offset that PCA removes exactly and that cancels exactly in the centred cosine arm.",
+  "count_floor": 100,
+  "count_floor_extended": 30,
+  "extended_pool_use": "floor-30 pool is used ONLY for the supervised colour sensitivity arm and its matched background; it never enters discovery, clustering or the main background",
+  "accumulator_dtype": "float64, divided by count, cast to float32 before the W_dec matmul",
+  "clustering_arms": {
+    "centred_leiden": "cosine on pool-mean-centred means; edges where cos >= tau, weights = cos; Leiden RBConfigurationVertexPartition, resolution 1.0, seed 0, n_iterations=-1. PRIMARY ARM (declared primary a priori: the pool-mean direction is common-mode and carries no type-distinguishing information)",
+    "raw_leiden": "identical but cosine on the uncentred means. SECONDARY ARM",
+    "refined": "declared refinement of each Leiden arm's selected partition: any cluster larger than 60 is re-partitioned by Leiden on its induced subgraph at resolutions [2, 4, 8, 16, 32, 64] in turn, taking the first partition whose max sub-cluster size <= 60; if none achieves it, the last resolution's partition is used and only sub-clusters in the screening band are kept. Clusters already in the band pass through unchanged. Fully label-blind",
+    "hdbscan": "HDBSCAN on L2-normalised pool-mean-centred means, metric euclidean, min_cluster_size 5, min_samples 5, cluster_selection_method eom. SECONDARY ARM"
+  },
+  "threshold_grids": {
+    "centred": [
+      0.1,
+      0.15,
+      0.2,
+      0.25,
+      0.3,
+      0.35,
+      0.4,
+      0.45,
+      0.5,
+      0.55,
+      0.6,
+      0.65,
+      0.7,
+      0.75,
+      0.8,
+      0.85,
+      0.9
+    ],
+    "raw": [
+      0.5,
+      0.55,
+      0.6,
+      0.65,
+      0.7,
+      0.75,
+      0.8,
+      0.85,
+      0.9,
+      0.95
+    ],
+    "edge_budget": 2000000
+  },
+  "threshold_selection_rule": "sweep the whole declared grid and record it. A threshold is VALID iff its graph is within the edge budget AND the number of clusters of size >= 5 lies in [10, 300] AND the largest cluster holds <= 10% of the pool. Select the SMALLEST valid threshold. Fallback 1 if none is valid: the smallest threshold whose largest cluster holds <= 10% of the pool. Fallback 2: the largest threshold in the grid.",
+  "screening": "every cluster with 5 <= size <= 60: PCA top-2 of the member means (fits.pca_2d), Kasa circle fit, fits.circularity -> gap_ratio, max_gap_deg, radius_ratio; p_closed = uniform-angle gap null at 20000 permutations (identical to scripts/13_rerun_gate.gap_pvalue, with the null draws cached per (k, n_perm, seed) -- the same numbers, computed once)",
+  "background": "for every cluster size represented, 500 random same-size token-type subsets drawn WITHOUT replacement from the identical >= 100-count pool, through the identical screening at 2000 permutations. p_bg for an observed cluster = (1 + #{background draws with max_gap_deg <= observed}) / (1 + n_draws), computed on max_gap_deg rather than p_closed so the two permutation counts never have to be reconciled (at fixed k the gap p-value is monotone in the gap). A secondary occurrence-count-decile-matched background is drawn for flagged and label-bearing clusters only.",
+  "flag_rule": "FLAGGED iff p_closed < 0.05 AND p_bg <= 0.05. BH-FDR over p_closed within (layer, arm) and globally is reported alongside but does not change the flag.",
+  "label_stage": "runs only after every partition and every screening number is frozen. A label counts as PRESENT in a cluster if any of its qualifying token-type variants is a member; when several variants are present the highest-cache-count variant is the one scored. A cluster is label-scored if it is flagged, or if it holds >= ceil(2/3 * full_k) labels of a s
+
+pool: 3795 token types with >= 100 occurrences (3197155 of 4002480 cache rows); extended pool 10808 types at floor 30
+
+label availability (post-freeze bookkeeping only):
+  months                 12/12 in pool; missing []
+  weekdays               7/7 in pool; missing []
+  colors_hue6            4/6 in pool; missing ['orange', 'purple']
+  colors_hue7_pink       5/7 in pool; missing ['orange', 'purple']
+  colors_hue6_violet     4/6 in pool; missing ['orange', 'violet']
+  numbers_one_to_ten     10/10 in pool; missing []
+  digits_0_9             10/10 in pool; missing []
+
+================ layer 20 ================
+  means built: (3795, 1152) from 3563161 cache rows (42.7s)
+  [centred_leiden] tau=0.8 (primary: smallest valid threshold) -> 2107 clusters, refined -> 2277
+  [raw_leiden] tau=0.9 (primary: smallest valid threshold) -> 2281 clusters, refined -> 2382
+  [hdbscan] 23 clusters, 2583 noise points
+  background: 27 sizes x 500 draws (24.3s)
+  [centred_leiden] screened 43 clusters in band, 1 FLAGGED
+  [centred_refined] screened 100 clusters in band, 2 FLAGGED
+  [raw_leiden] screened 37 clusters in band, 0 FLAGGED
+  [raw_refined] screened 101 clusters in band, 0 FLAGGED
+  [hdbscan] screened 21 clusters in band, 0 FLAGGED
+  layer 20 done in 153.4s: 3 flagged clusters, 22 label-scored clusters
+
+================ layer 22 ================
+  means built: (3795, 1152) from 3563161 cache rows (36.5s)
+  [centred_leiden] tau=0.75 (primary: smallest valid threshold) -> 1731 clusters, refined -> 1970
+  [raw_leiden] tau=0.9 (primary: smallest valid threshold) -> 2211 clusters, refined -> 2300
+  [hdbscan] 27 clusters, 2755 noise points
+  background: 27 sizes x 500 draws (23.1s)
+  [centred_leiden] screened 36 clusters in band, 2 FLAGGED
+  [centred_refined] screened 134 clusters in band, 2 FLAGGED
+  [raw_leiden] screened 35 clusters in band, 0 FLAGGED
+  [raw_refined] screened 106 clusters in band, 2 FLAGGED
+  [hdbscan] screened 24 clusters in band, 0 FLAGGED
+  layer 22 done in 140.9s: 6 flagged clusters, 27 label-scored clusters
+
+================ layer 24 ================
+  means built: (3795, 1152) from 3563161 cache rows (36.7s)
+  [centred_leiden] tau=0.65 (primary: smallest valid threshold) -> 1016 clusters, refined -> 1264
+  [raw_leiden] tau=0.9 (primary: smallest valid threshold) -> 2564 clusters, refined -> 2612
+  [hdbscan] 36 clusters, 2865 noise points
+  background: 34 sizes x 500 draws (31.3s)
+  [centred_leiden] screened 44 clusters in band, 3 FLAGGED
+  [centred_refined] screened 179 clusters in band, 5 FLAGGED
+  [raw_leiden] screened 45 clusters in band, 2 FLAGGED
+  [raw_refined] screened 82 clusters in band, 5 FLAGGED
+  [hdbscan] screened 34 clusters in band, 1 FLAGGED
+  layer 24 done in 158.5s: 16 flagged clusters, 39 label-scored clusters
+
+months_recovered=False weekdays_recovered=False colors_recovered=None
+16 distinct flagged rings out of 1021 screened clusters
+wrote results/token_type_geometry_deepB.json  (459.4s)

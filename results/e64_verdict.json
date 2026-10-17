@@ -1,0 +1,5864 @@
+{
+ "layers": {
+  "7": {
+   "units": [
+    {
+     "kind": "logcosh",
+     "id": 0,
+     "tier": "geometric candidate",
+     "reading": "none",
+     "twin": [],
+     "identity": {
+      "tail_tdi": 1.1795233247187198,
+      "tail_n_types": 428,
+      "tail_max_type_share": 0.08702064896755163,
+      "tail_top_types": [
+       [
+        ",",
+        177
+       ],
+       [
+        " the",
+        125
+       ],
+       [
+        ".",
+        118
+       ],
+       [
+        " to",
+        88
+       ],
+       [
+        " a",
+        77
+       ],
+       [
+        " and",
+        62
+       ],
+       [
+        " of",
+        58
+       ],
+       [
+        " in",
+        53
+       ]
+      ],
+      "identity_suspect": false
+     },
+     "context_generic": false,
+     "s2_cos": 0.2830771464247427,
+     "behaviour_pass": null,
+     "r2_cos": 0.9108337310561553,
+     "r2_replicated": false
+    },
+    {
+     "kind": "logcosh",
+     "id": 3,
+     "tier": "replicated geometric",
+     "reading": "none",
+     "twin": [
+      [
+       "skew",
+       58,
+       0.8721950650215149
+      ]
+     ],
+     "identity": {
+      "tail_tdi": 1.670991376684853,
+      "tail_n_types": 264,
+      "tail_max_type_share": 0.09587020648967552,
+      "tail_top_types": [
+       [
+        " of",
+        195
+       ],
+       [
+        " the",
+        170
+       ],
+       [
+        ",",
+        138
+       ],
+       [
+        " to",
+        78
+       ],
+       [
+        ".",
+        73
+       ],
+       [
+        " and",
+        71
+       ],
+       [
+        " a",
+        67
+       ],
+       [
+        "\n",
+        62
+       ]
+      ],
+      "identity_suspect": false
+     },
+     "context_generic": false,
+     "s2_cos": 0.3095031282551024,
+     "behaviour_pass": null,
+     "r2_cos": 0.8914510084870134,
+     "r2_replicated": true
+    },
+    {
+     "kind": "logcosh",
+     "id": 5,
+     "tier": "geometric candidate",
+     "reading": "none",
+     "twin": [],
+     "identity": {
+      "tail_tdi": 1.1795233247187198,
+      "tail_n_types": 387,
+      "tail_max_type_share": 0.08603736479842675,
+      "tail_top_types": [
+       [
+        ",",
+        175
+       ],
+       [
+        ".",
+        153
+       ],
+       [
+        " the",
+        111
+       ],
+       [
+        " to",
+        83
+       ],
+       [
+        " of",
+        64
+       ],
+       [
+        " I",
+        61
+       ],
+       [
+        "\n",
+        60
+       ],
+       [
+        " in",
+        46
+       ]
+      ],
+      "identity_suspect": false
+     },
+     "context_generic": false,
+     "s2_cos": 0.30931723999029204,
+     "behaviour_pass": null,
+     "r2_cos": 0.8035746153167391,
+     "r2_replicated": false
+    },
+    {
+     "kind": "logcosh",
+     "id": 6,
+     "tier": "geometric candidate",
+     "reading": "none",
+     "twin": [],
+     "identity": {
+      "tail_tdi": 1.5726977662916266,
+      "tail_n_types": 366,
+      "tail_max_type_share": 0.084070796460177,
+      "tail_top_types": [
+       [
+        ",",
+        171
+       ],
+       [
+        " the",
+        131
+       ],
+       [
+        ".",
+        121
+       ],
+       [
+        " to",
+        81
+       ],
+       [
+        " a",
+        74
+       ],
+       [
+        " and",
+        63
+       ],
+       [
+        " of",
+        63
+       ],
+       [
+        " in",
+        45
+       ]
+      ],
+      "identity_suspect": false
+     },
+     "context_generic": false,
+     "s2_cos": 0.28790907330064086,
+     "behaviour_pass": null,
+     "r2_cos": 0.931399954339502,
+     "r2_replicated": false
+    },
+    {
+     "kind": "logcosh",
+     "id": 8,
+     "tier": "geometric candidate",
+     "reading": "none",
+     "twin": [],
+     "identity": {
+      "tail_tdi": 1.7692849870780798,
+      "tail_n_types": 381,
+      "tail_max_type_share": 0.1096361848574238,
+      "tail_top_types": [
+       [
+        ",",
+        223
+       ],
+       [
+        ".",
+        175
+       ],
+       [
+        " the",
+        143
+       ],
+       [
+        " of",
+        96
+       ],
+       [
+        "\n",
+        87
+       ],
+       [
+        " and",
+        72
+       ],
+       [
+        " a",
+        65
+       ],
+       [
+        "-",
+        56
+       ]
+      ],
+      "identity_suspect": false
+     },
+     "context_generic": false,
+     "s2_cos": 0.39045724504311985,
+     "behaviour_pass": null,
+     "r2_cos": 0.4061986816927171,
+     "r2_replicated": false
+    },
+    {
+     "kind": "logcosh",
+     "id": 14,
+     "tier": "geometric candidate",
+     "reading": "none",
+     "twin": [
+      [
+       "skew",
+       31,
+       0.8829583525657654
+      ]
+     ],
+     "identity": {
+      "tail_tdi": 1.965872207864533,
+      "tail_n_types": 518,
+      "tail_max_type_share": 0.07571288102261553,
+      "tail_top_types": [
+       [
+        ",",
+        154
+       ],
+       [
+        ".",
+        122
+       ],
+       [
+        " the",
+        112
+       ],
+       [
+        " of",
+        102
+       ],
+       [
+        " and",
+        77
+       ],
+       [
+        " in",
+        58
+       ],
+       [
+        "\n",
+        56
+       ],
+       [
+        " ",
+        54
+       ]
+      ],
+      "identity_suspect": false
+     },
+     "context_generic": false,
+     "s2_cos": 0.30778373171312834,
+     "behaviour_pass": null,
+     "r2_cos": 0.8469412504042172,
+     "r2_replicated": false
+    },
+    {
+     "kind": "logcosh",
+     "id": 16,
+     "tier": "replicated geometric",
+     "reading": "none",
+     "twin": [
+      [
+       "skew",
+       16,
+       0.9559716582298279
+      ]
+     ],
+     "identity": {
+      "tail_tdi": 2.9488083117967996,
+      "tail_n_types": 194,
+      "tail_max_type_share": 0.0791543756145526,
+      "tail_top_types": [
+       [
+        ",",
+        161
+       ],
+       [
+        "\u2019",
+        150
+       ],
+       [
+        "'",
+        138
+       ],
+       [
+        " the",
+        128
+       ],
+       [
+        "\n",
+        104
+       ],
+       [
+        " to",
+        101
+       ],
+       [
+        " and",
+        74
+       ],
+       [
+        " of",
+        73
+       ]
+      ],
+      "identity_suspect": false
+     },
+     "context_generic": false,
+     "s2_cos": 0.4255671281122864,
+     "behaviour_pass": null,
+     "r2_cos": 0.9741682104795869,
+     "r2_replicated": true
+    },
+    {
+     "kind": "logcosh",
+     "id": 18,
+     "tier": "replicated geometric",
+     "reading": "none",
+     "twin": [
+      [
+       "skew",
+       36,
+       0.8714578151702881
+      ]
+     ],
+     "identity": {
+      "tail_tdi": 2.113312623454373,
+      "tail_n_types": 325,
+      "tail_max_type_share": 0.07718780727630285,
+      "tail_top_types": [
+       [
+        ",",
+        157
+       ],
+       [
+        " the",
+        155
+       ],
+       [
+        "\n",
+        105
+       ],
+       [
+        " to",
+        90
+       ],
+       [
+        " and",
+        81
+       ],
+       [
+        " a",
+        73
+       ],
+       [
+        " of",
+        69
+       ],
+       [
+        " in",
+        56
+       ]
+      ],
+      "identity_suspect": false
+     },
+     "context_generic": false,
+     "s2_cos": 0.3592295943916627,
+     "behaviour_pass": null,
+     "r2_cos": 0.8980084962892216,
+     "r2_replicated": true
+    },
+    {
+     "kind": "logcosh",
+     "id": 23,
+     "tier": "geometric candidate",
+     "reading": "none",
+     "twin": [
+      [
+       "skew",
+       23,
+       0.8635377883911133
+      ]
+     ],
+     "identity": {
+      "tail_tdi": 1.9167254026679197,
+      "tail_n_types": 319,
+      "tail_max_type_share": 0.13274336283185842,
+      "tail_top_types": [
+       [
+        " the",
+        270
+       ],
+       [
+        ",",
+        115
+       ],
+       [
+        " and",
+        101
+       ],
+       [
+        ".",
+        99
+       ],
+       [
+        " of",
+        85
+       ],
+       [
+        " to",
+        83
+       ],
+       [
+        " ",
+        73
+       ],
+       [
+        " a",
+        68
+       ]
+      ],
+      "identity_suspect": false
+     },
+     "context_generic": false,
+     "s2_cos": 0.5323798848893257,
+     "behaviour_pass": null,
+     "r2_cos": 0.8777928811721497,
+     "r2_replicated": false
+    },
+    {
+     "kind": "logcosh",
+     "id": 28,
+     "tier": "replicated geometric",
+     "reading": "none",
+     "twin": [
+      [
+       "skew",
+       51,
+       0.9701484441757202
+      ]
+     ],
+     "identity": {
+      "tail_tdi": 1.1303765195221065,
+      "tail_n_types": 785,
+      "tail_max_type_share": 0.05260570304818092,
+      "tail_top_types": [
+       [
+        ".",
+        107
+       ],
+       [
+        " the",
+        88
+       ],
+       [
+        " to",
+        54
+       ],
+       [
+        ",",
+        42
+       ],
+       [
+        " a",
+        41
+       ],
+       [
+        " of",
+        40
+       ],
+       [
+        " ",
+        37
+       ],
+       [
+        " and",
+        36
+       ]
+      ],
+      "identity_suspect": false
+     },
+     "context_generic": false,
+     "s2_cos": 0.7723941080667791,
+     "behaviour_pass": null,
+     "r2_cos": 0.9918705875668135,
+     "r2_replicated": true
+    },
+    {
+     "kind": "logcosh",
+     "id": 31,
+     "tier": "replicated geometric",
+     "reading": "none",
+     "twin": [
+      [
+       "skew",
+       35,
+       0.905678391456604
+      ]
+     ],
+     "identity": {
+      "tail_tdi": 2.113312623454373,
+      "tail_n_types": 914,
+      "tail_max_type_share": 0.04031465093411996,
+      "tail_top_types": [
+       [
+        ",",
+        82
+       ],
+       [
+        ".",
+        80
+       ],
+       [
+        " and",
+        72
+       ],
+       [
+        " ",
+        64
+       ],
+       [
+        " in",
+        37
+       ],
+       [
+        " to",
+        35
+       ],
+       [
+        "0",
+        30
+       ],
+       [
+        "-",
+        28
+       ]
+      ],
+      "identity_suspect": false
+     },
+     "context_generic": false,
+     "s2_cos": 0.42791435170001696,
+     "behaviour_pass": null,
+     "r2_cos": 0.9722415505999689,
+     "r2_replicated": true
+    },
+    {
+     "kind": "logcosh",
+     "id": 33,
+     "tier": "replicated geometric",
+     "reading": "none",
+     "twin": [],
+     "identity": {
+      "tail_tdi": 1.32696374030856,
+      "tail_n_types": 418,
+      "tail_max_type_share": 0.1071779744346116,
+      "tail_top_types": [
+       [
+        " the",
+        218
+       ],
+       [
+        ",",
+        123
+       ],
+       [
+        ".",
+        92
+       ],
+       [
+        " a",
+        72
+       ],
+       [
+        " of",
+        68
+       ],
+       [
+        " and",
+        60
+       ],
+       [
+        " ",
+        51
+       ],
+       [
+        "\n",
+        50
+       ]
+      ],
+      "identity_suspect": false
+     },
+     "context_generic": false,
+     "s2_cos": 0.42496687859204507,
+     "behaviour_pass": null,
+     "r2_cos": 0.9105298781058344,
+     "r2_replicated": true
+    },
+    {
+     "kind": "logcosh",
+     "id": 36,
+     "tier": "replicated geometric",
+     "reading": "none",
+     "twin": [
+      [
+       "skew",
+       18,
+       0.8129875659942627
+      ]
+     ],
+     "identity": {
+      "tail_tdi": 1.4744041558983998,
+      "tail_n_types": 489,
+      "tail_max_type_share": 0.061946902654867256,
+      "tail_top_types": [
+       [
+        "\n",
+        126
+       ],
+       [
+        " the",
+        110
+       ],
+       [
+        " ",
+        85
+       ],
+       [
+        " a",
+        62
+       ],
+       [
+        ".",
+        58
+       ],
+       [
+        " to",
+        54
+       ],
+       [
+        ",",
+        48
+       ],
+       [
+        " of",
+        44
+       ]
+      ],
+      "identity_suspect": false
+     },
+     "context_generic": false,
+     "s2_cos": 0.553869947845961,
+     "behaviour_pass": null,
+     "r2_cos": 0.9681416997905415,
+     "r2_replicated": true
+    },
+    {
+     "kind": "logcosh",
+     "id": 37,
+     "tier": "NAMED_BY_CONTEXT",
+     "reading": "token right after a coordinating conjunction (and/or/but)",
+     "twin": [
+      [
+       "skew",
+       37,
+       0.9934026002883911
+      ]
+     ],
+     "identity": {
+      "tail_tdi": 1.6218445714882397,
+      "tail_n_types": 831,
+      "tail_max_type_share": 0.07423795476892822,
+      "tail_top_types": [
+       [
+        " the",
+        151
+       ],
+       [
+        " a",
+        83
+       ],
+       [
+        " of",
+        49
+       ],
+       [
+        ",",
+        48
+       ],
+       [
+        " ",
+        44
+       ],
+       [
+        " to",
+        43
+       ],
+       [
+        ".",
+        42
+       ],
+       [
+        " in",
+        36
+       ]
+      ],
+      "identity_suspect": false
+     },
+     "context_generic": true,
+     "s2_cos": 0.8265799394104727,
+     "behaviour_pass": null,
+     "r2_cos": 0.9980251365964021,
+     "r2_replicated": true
+    },
+    {
+     "kind": "logcosh",
+     "id": 41,
+     "tier": "replicated geometric",
+     "reading": "none",
+     "twin": [
+      [
+       "skew",
+       41,
+       0.9683449268341064
+      ]
+     ],
+     "identity": {
+      "tail_tdi": 1.7201381818814665,
+      "tail_n_types": 552,
+      "tail_max_type_share": 0.05555555555555555,
+      "tail_top_types": [
+       [
+        " the",
+        113
+       ],
+       [
+        ",",
+        109
+       ],
+       [
+        " to",
+        106
+       ],
+       [
+        ".",
+        100
+       ],
+       [
+        " a",
+        81
+       ],
+       [
+        " of",
+        66
+       ],
+       [
+        " in",
+        55
+       ],
+       [
+        " and",
+        39
+       ]
+      ],
+      "identity_suspect": false
+     },
+     "context_generic": false,
+     "s2_cos": 0.4269061489305498,
+     "behaviour_pass": null,
+     "r2_cos": 0.9884297068647162,
+     "r2_replicated": true
+    },
+    {
+     "kind": "logcosh",
+     "id": 49,
+     "tier": "replicated geometric",
+     "reading": "none",
+     "twin": [
+      [
+       "skew",
+       8,
+       0.9429290294647217
+      ]
+     ],
+     "identity": {
+      "tail_tdi": 1.03208290912888,
+      "tail_n_types": 405,
+      "tail_max_type_share": 0.058997050147492625,
+      "tail_top_types": [
+       [
+        ",",
+        120
+       ],
+       [
+        ".",
+        109
+       ],
+       [
+        " to",
+        94
+       ],
+       [
+        " the",
+        86
+       ],
+       [
+        " and",
+        73
+       ],
+       [
+        " I",
+        49
+       ],
+       [
+        " is",
+        47
+       ],
+       [
+        " you",
+        46
+       ]
+      ],
+      "identity_suspect": false
+     },
+     "context_generic": false,
+     "s2_cos": 0.3267955976053274,
+     "behaviour_pass": null,
+     "r2_cos": 0.9160205114279322,
+     "r2_replicated": true
+    },
+    {
+     "kind": "logcosh",
+     "id": 50,
+     "tier": "NAMED_BY_CONTEXT",
+     "reading": "inside a temporal subordinate clause (when/while/before/after/during)",
+     "twin": [
+      [
+       "skew",
+       38,
+       0.848694920539856
+      ]
+     ],
+     "identity": {
+      "tail_tdi": 1.2286701299153333,
+      "tail_n_types": 463,
+      "tail_max_type_share": 0.07669616519174041,
+      "tail_top_types": [
+       [
+        " the",
+        156
+       ],
+       [
+        ".",
+        104
+       ],
+       [
+        ",",
+        98
+       ],
+       [
+        " of",
+        92
+       ],
+       [
+        " to",
+        79
+       ],
+       [
+        " a",
+        72
+       ],
+       [
+        " and",
+        59
+       ],
+       [
+        " ",
+        47
+       ]
+      ],
+      "identity_suspect": false
+     },
+     "context_generic": false,
+     "s2_cos": 0.33056145467017706,
+     "behaviour_pass": null,
+     "r2_cos": 0.9056482051290139,
+     "r2_replicated": true
+    },
+    {
+     "kind": "logcosh",
+     "id": 52,
+     "tier": "replicated geometric",
+     "reading": "none",
+     "twin": [],
+     "identity": {
+      "tail_tdi": 1.2286701299153333,
+      "tail_n_types": 384,
+      "tail_max_type_share": 0.07571288102261553,
+      "tail_top_types": [
+       [
+        " the",
+        154
+       ],
+       [
+        ",",
+        151
+       ],
+       [
+        ".",
+        136
+       ],
+       [
+        " to",
+        109
+       ],
+       [
+        " of",
+        75
+       ],
+       [
+        " and",
+        67
+       ],
+       [
+        " in",
+        59
+       ],
+       [
+        " a",
+        51
+       ]
+      ],
+      "identity_suspect": false
+     },
+     "context_generic": false,
+     "s2_cos": 0.2798623385787352,
+     "behaviour_pass": null,
+     "r2_cos": 0.9462887256518726,
+     "r2_replicated": true
+    },
+    {
+     "kind": "logcosh",
+     "id": 53,
+     "tier": "geometric candidate",
+     "reading": "none",
+     "twin": [],
+     "identity": {
+      "tail_tdi": 1.523550961095013,
+      "tail_n_types": 644,
+      "tail_max_type_share": 0.07423795476892822,
+      "tail_top_types": [
+       [
+        ".",
+        151
+       ],
+       [
+        "\n",
+        119
+       ],
+       [
+        " the",
+        102
+       ],
+       [
+        ",",
+        99
+       ],
+       [
+        " to",
+        65
+       ],
+       [
+        " of",
+        54
+       ],
+       [
+        " and",
+        49
+       ],
+       [
+        " in",
+        34
+       ]
+      ],
+      "identity_suspect": false
+     },
+     "context_generic": false,
+     "s2_cos": 0.5225520572239244,
+     "behaviour_pass": null,
+     "r2_cos": 0.9699276978084529,
+     "r2_replicated": false
+    },
+    {
+     "kind": "logcosh",
+     "id": 55,
+     "tier": "NAMED_BY_CONTEXT",
+     "reading": "token right after a preposition (mostly 'in', also 'at')",
+     "twin": [
+      [
+       "skew",
+       49,
+       0.936840295791626
+      ]
+     ],
+     "identity": {
+      "tail_tdi": 2.113312623454373,
+      "tail_n_types": 260,
+      "tail_max_type_share": 0.17895771878072764,
+      "tail_top_types": [
+       [
+        " the",
+        364
+       ],
+       [
+        " a",
+        162
+       ],
+       [
+        ",",
+        132
+       ],
+       [
+        ".",
+        92
+       ],
+       [
+        " ",
+        77
+       ],
+       [
+        " of",
+        67
+       ],
+       [
+        " and",
+        59
+       ],
+       [
+        " to",
+        46
+       ]
+      ],
+      "identity_suspect": false
+     },
+     "context_generic": false,
+     "s2_cos": 0.49090580159984193,
+     "behaviour_pass": null,
+     "r2_cos": 0.9679165031803241,
+     "r2_replicated": true
+    },
+    {
+     "kind": "logcosh",
+     "id": 57,
+     "tier": "replicated geometric",
+     "reading": "none",
+     "twin": [
+      [
+       "skew",
+       33,
+       0.8990164995193481
+      ]
+     ],
+     "identity": {
+      "tail_tdi": 1.4252573507017865,
+      "tail_n_types": 353,
+      "tail_max_type_share": 0.10324483775811209,
+      "tail_top_types": [
+       [
+        " the",
+        210
+       ],
+       [
+        ".",
+        129
+       ],
+       [
+        ",",
+        98
+       ],
+       [
+        " of",
+        97
+       ],
+       [
+        " and",
+        59
+       ],
+       [
+        " in",
+        57
+       ],
+       [
+        " to",
+        54
+       ],
+       [
+        " a",
+        52
+       ]
+      ],
+      "identity_suspect": false
+     },
+     "context_generic": false,
+     "s2_cos": 0.2864099643596326,
+     "behaviour_pass": null,
+     "r2_cos": 0.9299356662164544,
+     "r2_replicated": true
+    },
+    {
+     "kind": "logcosh",
+     "id": 60,
+     "tier": "geometric candidate",
+     "reading": "none",
+     "twin": [
+      [
+       "skew",
+       25,
+       0.9140394330024719
+      ]
+     ],
+     "identity": {
+      "tail_tdi": 1.523550961095013,
+      "tail_n_types": 778,
+      "tail_max_type_share": 0.06489675516224189,
+      "tail_top_types": [
+       [
+        ",",
+        132
+       ],
+       [
+        " and",
+        80
+       ],
+       [
+        " ",
+        74
+       ],
+       [
+        ".",
+        65
+       ],
+       [
+        " the",
+        51
+       ],
+       [
+        "1",
+        41
+       ],
+       [
+        "0",
+        40
+       ],
+       [
+        " to",
+        39
+       ]
+      ],
+      "identity_suspect": false
+     },
+     "context_generic": false,
+     "s2_cos": 0.3991199518421755,
+     "behaviour_pass": null,
+     "r2_cos": 0.6327053416939107,
+     "r2_replicated": false
+    },
+    {
+     "kind": "skew",
+     "id": 0,
+     "tier": "replicated geometric",
+     "reading": "none",
+     "twin": [],
+     "identity": {
+      "tail_tdi": 1.9167254026679197,
+      "tail_n_types": 491,
+      "tail_max_type_share": 0.084070796460177,
+      "tail_top_types": [
+       [
+        ",",
+        171
+       ],
+       [
+        ".",
+        123
+       ],
+       [
+        " the",
+        99
+       ],
+       [
+        "\n",
+        89
+       ],
+       [
+        " and",
+        69
+       ],
+       [
+        " to",
+        68
+       ],
+       [
+        " a",
+        47
+       ],
+       [
+        " ",
+        43
+       ]
+      ],
+      "identity_suspect": false
+     },
+     "context_generic": false,
+     "s2_cos": 0.4606675800090023,
+     "behaviour_pass": null,
+     "r2_cos": 0.9281600466564863,
+     "r2_replicated": true
+    },
+    {
+     "kind": "skew",
+     "id": 8,
+     "tier": "replicated geometric",
+     "reading": "none",
+     "twin": [
+      [
+       "logcosh",
+       49,
+       0.9429290294647217
+      ]
+     ],
+     "identity": {
+      "tail_tdi": 1.03208290912888,
+      "tail_n_types": 382,
+      "tail_max_type_share": 0.06735496558505408,
+      "tail_top_types": [
+       [
+        ".",
+        137
+       ],
+       [
+        ",",
+        126
+       ],
+       [
+        " to",
+        108
+       ],
+       [
+        " the",
+        90
+       ],
+       [
+        " and",
+        75
+       ],
+       [
+        "\n",
+        57
+       ],
+       [
+        " I",
+        48
+       ],
+       [
+        " you",
+        47
+       ]
+      ],
+      "identity_suspect": false
+     },
+     "context_generic": false,
+     "s2_cos": 0.3739535071188582,
+     "behaviour_pass": null,
+     "r2_cos": 0.9159805216410271,
+     "r2_replicated": true
+    },
+    {
+     "kind": "skew",
+     "id": 16,
+     "tier": "replicated geometric",
+     "reading": "none",
+     "twin": [
+      [
+       "logcosh",
+       16,
+       0.9559716582298279
+      ]
+     ],
+     "identity": {
+      "tail_tdi": 2.7030742858137327,
+      "tail_n_types": 207,
+      "tail_max_type_share": 0.0727630285152409,
+      "tail_top_types": [
+       [
+        ",",
+        148
+       ],
+       [
+        "\u2019",
+        141
+       ],
+       [
+        " the",
+        138
+       ],
+       [
+        "'",
+        120
+       ],
+       [
+        "\n",
+        109
+       ],
+       [
+        " to",
+        87
+       ],
+       [
+        " and",
+        69
+       ],
+       [
+        ".",
+        69
+       ]
+      ],
+      "identity_suspect": false
+     },
+     "context_generic": true,
+     "s2_cos": 0.8548048957727562,
+     "behaviour_pass": null,
+     "r2_cos": 0.9779454869439821,
+     "r2_replicated": true
+    },
+    {
+     "kind": "skew",
+     "id": 18,
+     "tier": "geometric candidate",
+     "reading": "none",
+     "twin": [
+      [
+       "logcosh",
+       36,
+       0.8129875659942627
+      ]
+     ],
+     "identity": {
+      "tail_tdi": 1.4744041558983998,
+      "tail_n_types": 580,
+      "tail_max_type_share": 0.07079646017699115,
+      "tail_top_types": [
+       [
+        " the",
+        144
+       ],
+       [
+        ".",
+        113
+       ],
+       [
+        "\n",
+        96
+       ],
+       [
+        " a",
+        73
+       ],
+       [
+        " ",
+        68
+       ],
+       [
+        ",",
+        65
+       ],
+       [
+        " of",
+        40
+       ],
+       [
+        " and",
+        37
+       ]
+      ],
+      "identity_suspect": false
+     },
+     "context_generic": false,
+     "s2_cos": 0.46994533971573454,
+     "behaviour_pass": null,
+     "r2_cos": 0.8490163116995605,
+     "r2_replicated": false
+    },
+    {
+     "kind": "skew",
+     "id": 23,
+     "tier": "geometric candidate",
+     "reading": "none",
+     "twin": [
+      [
+       "logcosh",
+       23,
+       0.8635377883911133
+      ]
+     ],
+     "identity": {
+      "tail_tdi": 2.113312623454373,
+      "tail_n_types": 390,
+      "tail_max_type_share": 0.1415929203539823,
+      "tail_top_types": [
+       [
+        " the",
+        288
+       ],
+       [
+        ",",
+        118
+       ],
+       [
+        ".",
+        97
+       ],
+       [
+        " and",
+        83
+       ],
+       [
+        " of",
+        72
+       ],
+       [
+        " in",
+        68
+       ],
+       [
+        " ",
+        63
+       ],
+       [
+        " a",
+        59
+       ]
+      ],
+      "identity_suspect": false
+     },
+     "context_generic": false,
+     "s2_cos": 0.3241116989902777,
+     "behaviour_pass": null,
+     "r2_cos": 0.8843800089431425,
+     "r2_replicated": false
+    },
+    {
+     "kind": "skew",
+     "id": 25,
+     "tier": "geometric candidate",
+     "reading": "none",
+     "twin": [
+      [
+       "logcosh",
+       60,
+       0.9140394330024719
+      ]
+     ],
+     "identity": {
+      "tail_tdi": 1.670991376684853,
+      "tail_n_types": 706,
+      "tail_max_type_share": 0.07374631268436578,
+      "tail_top_types": [
+       [
+        ",",
+        150
+       ],
+       [
+        " and",
+        80
+       ],
+       [
+        ".",
+        78
+       ],
+       [
+        " ",
+        77
+       ],
+       [
+        " the",
+        62
+       ],
+       [
+        " in",
+        50
+       ],
+       [
+        " of",
+        48
+       ],
+       [
+        "1",
+        47
+       ]
+      ],
+      "identity_suspect": false
+     },
+     "context_generic": false,
+     "s2_cos": 0.3301206477490895,
+     "behaviour_pass": null,
+     "r2_cos": 0.8443762072701936,
+     "r2_replicated": false
+    },
+    {
+     "kind": "skew",
+     "id": 31,
+     "tier": "geometric candidate",
+     "reading": "none",
+     "twin": [
+      [
+       "logcosh",
+       14,
+       0.8829583525657654
+      ]
+     ],
+     "identity": {
+      "tail_tdi": 2.113312623454373,
+      "tail_n_types": 479,
+      "tail_max_type_share": 0.08308751229105212,
+      "tail_top_types": [
+       [
+        ",",
+        169
+       ],
+       [
+        ".",
+        142
+       ],
+       [
+        " the",
+        111
+       ],
+       [
+        " of",
+        94
+       ],
+       [
+        " and",
+        76
+       ],
+       [
+        "\n",
+        57
+       ],
+       [
+        " to",
+        56
+       ],
+       [
+        " in",
+        55
+       ]
+      ],
+      "identity_suspect": false
+     },
+     "context_generic": false,
+     "s2_cos": 0.35921845210386105,
+     "behaviour_pass": null,
+     "r2_cos": 0.5066202412605203,
+     "r2_replicated": false
+    },
+    {
+     "kind": "skew",
+     "id": 33,
+     "tier": "geometric candidate",
+     "reading": "none",
+     "twin": [
+      [
+       "logcosh",
+       57,
+       0.8990164995193481
+      ]
+     ],
+     "identity": {
+      "tail_tdi": 1.1303765195221065,
+      "tail_n_types": 357,
+      "tail_max_type_share": 0.09390363815142576,
+      "tail_top_types": [
+       [
+        " the",
+        191
+       ],
+       [
+        ".",
+        119
+       ],
+       [
+        ",",
+        112
+       ],
+       [
+        " of",
+        97
+       ],
+       [
+        " and",
+        63
+       ],
+       [
+        " in",
+        59
+       ],
+       [
+        " to",
+        57
+       ],
+       [
+        " a",
+        52
+       ]
+      ],
+      "identity_suspect": false
+     },
+     "context_generic": false,
+     "s2_cos": 0.3009200573742462,
+     "behaviour_pass": null,
+     "r2_cos": 0.7944549750437095,
+     "r2_replicated": false
+    },
+    {
+     "kind": "skew",
+     "id": 35,
+     "tier": "replicated geometric",
+     "reading": "none",
+     "twin": [
+      [
+       "logcosh",
+       31,
+       0.905678391456604
+      ]
+     ],
+     "identity": {
+      "tail_tdi": 1.8184317922746929,
+      "tail_n_types": 845,
+      "tail_max_type_share": 0.04523107177974434,
+      "tail_top_types": [
+       [
+        ",",
+        92
+       ],
+       [
+        ".",
+        82
+       ],
+       [
+        " and",
+        82
+       ],
+       [
+        " ",
+        54
+       ],
+       [
+        " to",
+        45
+       ],
+       [
+        " the",
+        43
+       ],
+       [
+        "0",
+        43
+       ],
+       [
+        " in",
+        34
+       ]
+      ],
+      "identity_suspect": false
+     },
+     "context_generic": false,
+     "s2_cos": 0.49715831595932475,
+     "behaviour_pass": null,
+     "r2_cos": 0.8905863443750406,
+     "r2_replicated": true
+    },
+    {
+     "kind": "skew",
+     "id": 36,
+     "tier": "geometric candidate",
+     "reading": "none",
+     "twin": [
+      [
+       "logcosh",
+       18,
+       0.8714578151702881
+      ]
+     ],
+     "identity": {
+      "tail_tdi": 2.3590466494374396,
+      "tail_n_types": 271,
+      "tail_max_type_share": 0.10619469026548672,
+      "tail_top_types": [
+       [
+        ",",
+        216
+       ],
+       [
+        ".",
+        160
+       ],
+       [
+        "1",
+        115
+       ],
+       [
+        "0",
+        106
+       ],
+       [
+        " the",
+        87
+       ],
+       [
+        " and",
+        83
+       ],
+       [
+        " ",
+        76
+       ],
+       [
+        " to",
+        67
+       ]
+      ],
+      "identity_suspect": false
+     },
+     "context_generic": false,
+     "s2_cos": 0.3389439511505944,
+     "behaviour_pass": null,
+     "r2_cos": 0.7997372433716647,
+     "r2_replicated": false
+    },
+    {
+     "kind": "skew",
+     "id": 37,
+     "tier": "NAMED_BY_CONTEXT",
+     "reading": "token right after a coordinating conjunction (and/or/but)",
+     "twin": [
+      [
+       "logcosh",
+       37,
+       0.9934026002883911
+      ]
+     ],
+     "identity": {
+      "tail_tdi": 1.7201381818814665,
+      "tail_n_types": 848,
+      "tail_max_type_share": 0.07030481809242871,
+      "tail_top_types": [
+       [
+        " the",
+        143
+       ],
+       [
+        " a",
+        80
+       ],
+       [
+        ",",
+        49
+       ],
+       [
+        " of",
+        47
+       ],
+       [
+        " to",
+        44
+       ],
+       [
+        ".",
+        44
+       ],
+       [
+        " ",
+        42
+       ],
+       [
+        " in",
+        37
+       ]
+      ],
+      "identity_suspect": false
+     },
+     "context_generic": false,
+     "s2_cos": 0.737763482540571,
+     "behaviour_pass": null,
+     "r2_cos": 0.9940692869901951,
+     "r2_replicated": true
+    },
+    {
+     "kind": "skew",
+     "id": 38,
+     "tier": "NAMED_BY_CONTEXT",
+     "reading": "inside a temporal subordinate clause (when/while/before/after/during)",
+     "twin": [
+      [
+       "logcosh",
+       50,
+       0.848694920539856
+      ]
+     ],
+     "identity": {
+      "tail_tdi": 1.8675785974713066,
+      "tail_n_types": 438,
+      "tail_max_type_share": 0.08161258603736479,
+      "tail_top_types": [
+       [
+        " the",
+        166
+       ],
+       [
+        ",",
+        91
+       ],
+       [
+        ".",
+        88
+       ],
+       [
+        " a",
+        69
+       ],
+       [
+        " and",
+        66
+       ],
+       [
+        " to",
+        60
+       ],
+       [
+        " of",
+        59
+       ],
+       [
+        " ",
+        48
+       ]
+      ],
+      "identity_suspect": false
+     },
+     "context_generic": false,
+     "s2_cos": 0.3635826145504994,
+     "behaviour_pass": null,
+     "r2_cos": 0.9446554103713762,
+     "r2_replicated": true
+    },
+    {
+     "kind": "skew",
+     "id": 41,
+     "tier": "replicated geometric",
+     "reading": "none",
+     "twin": [
+      [
+       "logcosh",
+       41,
+       0.9683449268341064
+      ]
+     ],
+     "identity": {
+      "tail_tdi": 2.1624594286509864,
+      "tail_n_types": 538,
+      "tail_max_type_share": 0.059488692232055065,
+      "tail_top_types": [
+       [
+        " the",
+        121
+       ],
+       [
+        " to",
+        107
+       ],
+       [
+        ",",
+        104
+       ],
+       [
+        ".",
+        97
+       ],
+       [
+        " a",
+        81
+       ],
+       [
+        " of",
+        69
+       ],
+       [
+        " in",
+        60
+       ],
+       [
+        " and",
+        43
+       ]
+      ],
+      "identity_suspect": false
+     },
+     "context_generic": false,
+     "s2_cos": 0.3466885730226918,
+     "behaviour_pass": null,
+     "r2_cos": 0.9594576887343504,
+     "r2_replicated": true
+    },
+    {
+     "kind": "skew",
+     "id": 49,
+     "tier": "NAMED_BY_CONTEXT",
+     "reading": "token right after a preposition (mostly 'in', also 'at')",
+     "twin": [
+      [
+       "logcosh",
+       55,
+       0.936840295791626
+      ]
+     ],
+     "identity": {
+      "tail_tdi": 1.8675785974713066,
+      "tail_n_types": 289,
+      "tail_max_type_share": 0.09931170108161258,
+      "tail_top_types": [
+       [
+        " the",
+        202
+       ],
+       [
+        ",",
+        147
+       ],
+       [
+        " a",
+        142
+       ],
+       [
+        ".",
+        115
+       ],
+       [
+        " ",
+        77
+       ],
+       [
+        " of",
+        77
+       ],
+       [
+        " and",
+        73
+       ],
+       [
+        "\n",
+        51
+       ]
+      ],
+      "identity_suspect": false
+     },
+     "context_generic": false,
+     "s2_cos": 0.4477119545753615,
+     "behaviour_pass": null,
+     "r2_cos": 0.9085084703561839,
+     "r2_replicated": true
+    },
+    {
+     "kind": "skew",
+     "id": 51,
+     "tier": "replicated geometric",
+     "reading": "none",
+     "twin": [
+      [
+       "logcosh",
+       28,
+       0.9701484441757202
+      ]
+     ],
+     "identity": {
+      "tail_tdi": 0.9829361039322665,
+      "tail_n_types": 768,
+      "tail_max_type_share": 0.05211406096361849,
+      "tail_top_types": [
+       [
+        ".",
+        106
+       ],
+       [
+        " the",
+        90
+       ],
+       [
+        " to",
+        48
+       ],
+       [
+        ",",
+        47
+       ],
+       [
+        " a",
+        46
+       ],
+       [
+        " ",
+        45
+       ],
+       [
+        " of",
+        45
+       ],
+       [
+        " and",
+        39
+       ]
+      ],
+      "identity_suspect": false
+     },
+     "context_generic": false,
+     "s2_cos": 0.7496035981431406,
+     "behaviour_pass": null,
+     "r2_cos": 0.976540090458593,
+     "r2_replicated": true
+    },
+    {
+     "kind": "skew",
+     "id": 57,
+     "tier": "geometric candidate",
+     "reading": "none",
+     "twin": [],
+     "identity": {
+      "tail_tdi": 2.113312623454373,
+      "tail_n_types": 607,
+      "tail_max_type_share": 0.06293018682399214,
+      "tail_top_types": [
+       [
+        " the",
+        128
+       ],
+       [
+        ",",
+        111
+       ],
+       [
+        ".",
+        87
+       ],
+       [
+        " of",
+        71
+       ],
+       [
+        " and",
+        58
+       ],
+       [
+        " in",
+        55
+       ],
+       [
+        " to",
+        50
+       ],
+       [
+        " a",
+        48
+       ]
+      ],
+      "identity_suspect": false
+     },
+     "context_generic": false,
+     "s2_cos": 0.37725878402707774,
+     "behaviour_pass": null,
+     "r2_cos": 0.8559321339471788,
+     "r2_replicated": false
+    },
+    {
+     "kind": "skew",
+     "id": 58,
+     "tier": "geometric candidate",
+     "reading": "none",
+     "twin": [
+      [
+       "logcosh",
+       3,
+       0.8721950650215149
+      ]
+     ],
+     "identity": {
+      "tail_tdi": 1.670991376684853,
+      "tail_n_types": 342,
+      "tail_max_type_share": 0.0880039331366765,
+      "tail_top_types": [
+       [
+        " of",
+        179
+       ],
+       [
+        " the",
+        159
+       ],
+       [
+        ",",
+        154
+       ],
+       [
+        " and",
+        82
+       ],
+       [
+        ".",
+        67
+       ],
+       [
+        "\n",
+        65
+       ],
+       [
+        " to",
+        64
+       ],
+       [
+        " a",
+        63
+       ]
+      ],
+      "identity_suspect": false
+     },
+     "context_generic": false,
+     "s2_cos": 0.40456769705228623,
+     "behaviour_pass": null,
+     "r2_cos": 0.7986310564589615,
+     "r2_replicated": false
+    },
+    {
+     "kind": "skew",
+     "id": 59,
+     "tier": "geometric candidate",
+     "reading": "none",
+     "twin": [],
+     "identity": {
+      "tail_tdi": 1.2286701299153333,
+      "tail_n_types": 611,
+      "tail_max_type_share": 0.084070796460177,
+      "tail_top_types": [
+       [
+        ",",
+        171
+       ],
+       [
+        ".",
+        141
+       ],
+       [
+        " and",
+        104
+       ],
+       [
+        " the",
+        70
+       ],
+       [
+        " a",
+        60
+       ],
+       [
+        " ",
+        60
+       ],
+       [
+        "0",
+        53
+       ],
+       [
+        " to",
+        49
+       ]
+      ],
+      "identity_suspect": false
+     },
+     "context_generic": false,
+     "s2_cos": 0.3663646868276407,
+     "behaviour_pass": null,
+     "r2_cos": 0.6121087822752648,
+     "r2_replicated": false
+    }
+   ],
+   "families": [
+    {
+     "members": [
+      [
+       "logcosh",
+       0
+      ]
+     ],
+     "discovery": false
+    },
+    {
+     "members": [
+      [
+       "logcosh",
+       3
+      ],
+      [
+       "skew",
+       58
+      ]
+     ],
+     "discovery": false
+    },
+    {
+     "members": [
+      [
+       "logcosh",
+       5
+      ]
+     ],
+     "discovery": false
+    },
+    {
+     "members": [
+      [
+       "logcosh",
+       6
+      ]
+     ],
+     "discovery": false
+    },
+    {
+     "members": [
+      [
+       "logcosh",
+       8
+      ]
+     ],
+     "discovery": false
+    },
+    {
+     "members": [
+      [
+       "logcosh",
+       14
+      ],
+      [
+       "skew",
+       31
+      ]
+     ],
+     "discovery": false
+    },
+    {
+     "members": [
+      [
+       "logcosh",
+       16
+      ],
+      [
+       "skew",
+       16
+      ]
+     ],
+     "discovery": false
+    },
+    {
+     "members": [
+      [
+       "logcosh",
+       18
+      ],
+      [
+       "skew",
+       36
+      ]
+     ],
+     "discovery": false
+    },
+    {
+     "members": [
+      [
+       "logcosh",
+       23
+      ],
+      [
+       "skew",
+       23
+      ]
+     ],
+     "discovery": false
+    },
+    {
+     "members": [
+      [
+       "logcosh",
+       28
+      ],
+      [
+       "skew",
+       51
+      ]
+     ],
+     "discovery": false
+    },
+    {
+     "members": [
+      [
+       "logcosh",
+       31
+      ],
+      [
+       "skew",
+       35
+      ]
+     ],
+     "discovery": false
+    },
+    {
+     "members": [
+      [
+       "logcosh",
+       33
+      ]
+     ],
+     "discovery": false
+    },
+    {
+     "members": [
+      [
+       "logcosh",
+       36
+      ],
+      [
+       "skew",
+       18
+      ]
+     ],
+     "discovery": false
+    },
+    {
+     "members": [
+      [
+       "logcosh",
+       37
+      ],
+      [
+       "skew",
+       37
+      ]
+     ],
+     "discovery": false
+    },
+    {
+     "members": [
+      [
+       "logcosh",
+       41
+      ],
+      [
+       "skew",
+       41
+      ]
+     ],
+     "discovery": false
+    },
+    {
+     "members": [
+      [
+       "logcosh",
+       49
+      ],
+      [
+       "skew",
+       8
+      ]
+     ],
+     "discovery": false
+    },
+    {
+     "members": [
+      [
+       "logcosh",
+       50
+      ],
+      [
+       "skew",
+       38
+      ]
+     ],
+     "discovery": false
+    },
+    {
+     "members": [
+      [
+       "logcosh",
+       52
+      ]
+     ],
+     "discovery": false
+    },
+    {
+     "members": [
+      [
+       "logcosh",
+       53
+      ]
+     ],
+     "discovery": false
+    },
+    {
+     "members": [
+      [
+       "logcosh",
+       55
+      ],
+      [
+       "skew",
+       49
+      ]
+     ],
+     "discovery": false
+    },
+    {
+     "members": [
+      [
+       "logcosh",
+       57
+      ],
+      [
+       "skew",
+       33
+      ]
+     ],
+     "discovery": false
+    },
+    {
+     "members": [
+      [
+       "logcosh",
+       60
+      ],
+      [
+       "skew",
+       25
+      ]
+     ],
+     "discovery": false
+    },
+    {
+     "members": [
+      [
+       "skew",
+       0
+      ]
+     ],
+     "discovery": false
+    },
+    {
+     "members": [
+      [
+       "skew",
+       57
+      ]
+     ],
+     "discovery": false
+    },
+    {
+     "members": [
+      [
+       "skew",
+       59
+      ]
+     ],
+     "discovery": false
+    }
+   ],
+   "n_families": 25,
+   "n_discovery_families": 0,
+   "anchor_pass": false,
+   "behaviour_excess": null,
+   "expected_false_behavioural_passes": null,
+   "replication_informative": true,
+   "s2_yield": {
+    "logcosh": {
+     "n_screened": 27,
+     "n_screened_battery_unnamed": 15,
+     "fit_failed": false
+    },
+    "skew": {
+     "n_screened": 25,
+     "n_screened_battery_unnamed": 19,
+     "fit_failed": false
+    }
+   },
+   "kir": {
+    "D2": 14.746323127271296,
+    "S2": 25.92902583141475,
+    "R2": 16.61924403774378
+   }
+  },
+  "12": {
+   "units": [
+    {
+     "kind": "logcosh",
+     "id": 0,
+     "tier": "replicated geometric",
+     "reading": "none",
+     "twin": [
+      [
+       "skew",
+       0,
+       0.9880121946334839
+      ]
+     ],
+     "identity": {
+      "tail_tdi": 1.8675785974713066,
+      "tail_n_types": 381,
+      "tail_max_type_share": 0.08308751229105212,
+      "tail_top_types": [
+       [
+        " the",
+        169
+       ],
+       [
+        ",",
+        128
+       ],
+       [
+        " to",
+        103
+       ],
+       [
+        ".",
+        101
+       ],
+       [
+        " a",
+        95
+       ],
+       [
+        "\n",
+        67
+       ],
+       [
+        " of",
+        62
+       ],
+       [
+        " in",
+        47
+       ]
+      ],
+      "identity_suspect": false
+     },
+     "context_generic": false,
+     "s2_cos": 0.3207681592173222,
+     "behaviour_pass": null,
+     "r2_cos": 0.9844239428850271,
+     "r2_replicated": true
+    },
+    {
+     "kind": "logcosh",
+     "id": 1,
+     "tier": "replicated geometric",
+     "reading": "none",
+     "twin": [
+      [
+       "skew",
+       31,
+       0.9234506487846375
+      ]
+     ],
+     "identity": {
+      "tail_tdi": 3.6368635845493857,
+      "tail_n_types": 237,
+      "tail_max_type_share": 0.07620452310717797,
+      "tail_top_types": [
+       [
+        ",",
+        155
+       ],
+       [
+        ".",
+        145
+       ],
+       [
+        "0",
+        127
+       ],
+       [
+        " the",
+        126
+       ],
+       [
+        "1",
+        119
+       ],
+       [
+        "\n",
+        87
+       ],
+       [
+        " and",
+        80
+       ],
+       [
+        " to",
+        74
+       ]
+      ],
+      "identity_suspect": true
+     },
+     "context_generic": false,
+     "s2_cos": 0.405833732747674,
+     "behaviour_pass": null,
+     "r2_cos": 0.9841608318604774,
+     "r2_replicated": true
+    },
+    {
+     "kind": "logcosh",
+     "id": 2,
+     "tier": "NAMED_BY_CONTEXT",
+     "reading": "inside a partitive/superlative NP ('one of the ...', 'the best/first/only ...', 'X% of all ...')",
+     "twin": [
+      [
+       "skew",
+       2,
+       0.9639086127281189
+      ]
+     ],
+     "identity": {
+      "tail_tdi": 1.6218445714882397,
+      "tail_n_types": 736,
+      "tail_max_type_share": 0.07227138643067847,
+      "tail_top_types": [
+       [
+        " the",
+        147
+       ],
+       [
+        " in",
+        85
+       ],
+       [
+        " of",
+        79
+       ],
+       [
+        ",",
+        68
+       ],
+       [
+        " to",
+        68
+       ],
+       [
+        ".",
+        64
+       ],
+       [
+        " a",
+        37
+       ],
+       [
+        "s",
+        34
+       ]
+      ],
+      "identity_suspect": false
+     },
+     "context_generic": false,
+     "s2_cos": 0.3240342723614189,
+     "behaviour_pass": null,
+     "r2_cos": 0.9572443507579815,
+     "r2_replicated": true
+    },
+    {
+     "kind": "logcosh",
+     "id": 6,
+     "tier": "replicated geometric",
+     "reading": "none",
+     "twin": [
+      [
+       "skew",
+       6,
+       0.98501056432724
+      ]
+     ],
+     "identity": {
+      "tail_tdi": 2.7522210910103464,
+      "tail_n_types": 769,
+      "tail_max_type_share": 0.045722713864306784,
+      "tail_top_types": [
+       [
+        ".",
+        93
+       ],
+       [
+        ",",
+        80
+       ],
+       [
+        " the",
+        74
+       ],
+       [
+        " and",
+        72
+       ],
+       [
+        " of",
+        56
+       ],
+       [
+        " ",
+        51
+       ],
+       [
+        " to",
+        43
+       ],
+       [
+        "0",
+        39
+       ]
+      ],
+      "identity_suspect": false
+     },
+     "context_generic": false,
+     "s2_cos": 0.692428013345724,
+     "behaviour_pass": null,
+     "r2_cos": 0.9752438693830294,
+     "r2_replicated": true
+    },
+    {
+     "kind": "logcosh",
+     "id": 9,
+     "tier": "NAMED_BY_CONTEXT",
+     "reading": "inside the second conjunct of an 'X and Y' coordination",
+     "twin": [
+      [
+       "skew",
+       52,
+       0.9567427039146423
+      ]
+     ],
+     "identity": {
+      "tail_tdi": 2.4573402598306666,
+      "tail_n_types": 1110,
+      "tail_max_type_share": 0.035889872173058016,
+      "tail_top_types": [
+       [
+        ",",
+        73
+       ],
+       [
+        ".",
+        52
+       ],
+       [
+        " the",
+        43
+       ],
+       [
+        "0",
+        37
+       ],
+       [
+        "-",
+        28
+       ],
+       [
+        " of",
+        25
+       ],
+       [
+        "2",
+        25
+       ],
+       [
+        " in",
+        23
+       ]
+      ],
+      "identity_suspect": false
+     },
+     "context_generic": false,
+     "s2_cos": 0.553997163124715,
+     "behaviour_pass": null,
+     "r2_cos": 0.989937173141414,
+     "r2_replicated": true
+    },
+    {
+     "kind": "logcosh",
+     "id": 10,
+     "tier": "NAMED_BY_CONTEXT",
+     "reading": "inside the subject noun phrase, before its main verb",
+     "twin": [
+      [
+       "skew",
+       15,
+       0.9721267223358154
+      ]
+     ],
+     "identity": {
+      "tail_tdi": 3.489423168959546,
+      "tail_n_types": 1061,
+      "tail_max_type_share": 0.07128810226155359,
+      "tail_top_types": [
+       [
+        ",",
+        145
+       ],
+       [
+        ".",
+        38
+       ],
+       [
+        " the",
+        27
+       ],
+       [
+        "0",
+        23
+       ],
+       [
+        "1",
+        21
+       ],
+       [
+        "\n",
+        16
+       ],
+       [
+        " to",
+        14
+       ],
+       [
+        "2",
+        13
+       ]
+      ],
+      "identity_suspect": true
+     },
+     "context_generic": false,
+     "s2_cos": 0.34326409679617986,
+     "behaviour_pass": null,
+     "r2_cos": 0.9796605068335293,
+     "r2_replicated": true
+    },
+    {
+     "kind": "logcosh",
+     "id": 13,
+     "tier": "replicated geometric",
+     "reading": "none",
+     "twin": [
+      [
+       "skew",
+       16,
+       0.9454145431518555
+      ]
+     ],
+     "identity": {
+      "tail_tdi": 1.965872207864533,
+      "tail_n_types": 1006,
+      "tail_max_type_share": 0.03687315634218289,
+      "tail_top_types": [
+       [
+        ",",
+        75
+       ],
+       [
+        " the",
+        49
+       ],
+       [
+        ".",
+        46
+       ],
+       [
+        " a",
+        33
+       ],
+       [
+        " in",
+        33
+       ],
+       [
+        "1",
+        28
+       ],
+       [
+        "0",
+        27
+       ],
+       [
+        " and",
+        27
+       ]
+      ],
+      "identity_suspect": false
+     },
+     "context_generic": false,
+     "s2_cos": 0.35976850732958576,
+     "behaviour_pass": null,
+     "r2_cos": 0.9716035107613881,
+     "r2_replicated": true
+    },
+    {
+     "kind": "logcosh",
+     "id": 24,
+     "tier": "NAMED_BY_CONTEXT",
+     "reading": "inside a fronted (sentence-initial) adverbial phrase or clause",
+     "twin": [
+      [
+       "skew",
+       24,
+       0.9657835960388184
+      ]
+     ],
+     "identity": {
+      "tail_tdi": 1.4252573507017865,
+      "tail_n_types": 814,
+      "tail_max_type_share": 0.05260570304818092,
+      "tail_top_types": [
+       [
+        " the",
+        107
+       ],
+       [
+        " to",
+        76
+       ],
+       [
+        " and",
+        67
+       ],
+       [
+        " of",
+        62
+       ],
+       [
+        " a",
+        53
+       ],
+       [
+        ",",
+        48
+       ],
+       [
+        " in",
+        36
+       ],
+       [
+        " is",
+        32
+       ]
+      ],
+      "identity_suspect": false
+     },
+     "context_generic": false,
+     "s2_cos": 0.2796369662497624,
+     "behaviour_pass": null,
+     "r2_cos": 0.9802333325552386,
+     "r2_replicated": true
+    },
+    {
+     "kind": "logcosh",
+     "id": 27,
+     "tier": "replicated geometric",
+     "reading": "none",
+     "twin": [
+      [
+       "skew",
+       20,
+       0.9276424646377563
+      ]
+     ],
+     "identity": {
+      "tail_tdi": 1.2286701299153333,
+      "tail_n_types": 546,
+      "tail_max_type_share": 0.07128810226155359,
+      "tail_top_types": [
+       [
+        ",",
+        145
+       ],
+       [
+        ".",
+        143
+       ],
+       [
+        " the",
+        83
+       ],
+       [
+        "\n",
+        82
+       ],
+       [
+        " and",
+        81
+       ],
+       [
+        " to",
+        79
+       ],
+       [
+        " a",
+        47
+       ],
+       [
+        " in",
+        40
+       ]
+      ],
+      "identity_suspect": false
+     },
+     "context_generic": true,
+     "s2_cos": 0.8096144937446423,
+     "behaviour_pass": null,
+     "r2_cos": 0.9459234438591451,
+     "r2_replicated": true
+    },
+    {
+     "kind": "logcosh",
+     "id": 29,
+     "tier": "geometric candidate",
+     "reading": "none",
+     "twin": [],
+     "identity": {
+      "tail_tdi": 1.5726977662916266,
+      "tail_n_types": 474,
+      "tail_max_type_share": 0.09390363815142576,
+      "tail_top_types": [
+       [
+        " the",
+        191
+       ],
+       [
+        ",",
+        113
+       ],
+       [
+        ".",
+        105
+       ],
+       [
+        " a",
+        84
+       ],
+       [
+        " in",
+        76
+       ],
+       [
+        " of",
+        75
+       ],
+       [
+        " and",
+        62
+       ],
+       [
+        " to",
+        51
+       ]
+      ],
+      "identity_suspect": false
+     },
+     "context_generic": false,
+     "s2_cos": 0.41408204114761615,
+     "behaviour_pass": null,
+     "r2_cos": 0.8258715665813018,
+     "r2_replicated": false
+    },
+    {
+     "kind": "logcosh",
+     "id": 32,
+     "tier": "replicated geometric",
+     "reading": "none",
+     "twin": [
+      [
+       "skew",
+       51,
+       0.9642022848129272
+      ]
+     ],
+     "identity": {
+      "tail_tdi": 2.113312623454373,
+      "tail_n_types": 517,
+      "tail_max_type_share": 0.09292035398230089,
+      "tail_top_types": [
+       [
+        ",",
+        189
+       ],
+       [
+        " the",
+        138
+       ],
+       [
+        " of",
+        102
+       ],
+       [
+        ".",
+        102
+       ],
+       [
+        " to",
+        79
+       ],
+       [
+        " in",
+        62
+       ],
+       [
+        " and",
+        59
+       ],
+       [
+        "\n",
+        55
+       ]
+      ],
+      "identity_suspect": false
+     },
+     "context_generic": false,
+     "s2_cos": 0.363099198733851,
+     "behaviour_pass": null,
+     "r2_cos": 0.9825123681966971,
+     "r2_replicated": true
+    },
+    {
+     "kind": "logcosh",
+     "id": 37,
+     "tier": "NAMED_BY_CONTEXT",
+     "reading": "onset of the next item in a coordinated series/list",
+     "twin": [
+      [
+       "skew",
+       37,
+       0.9587845206260681
+      ]
+     ],
+     "identity": {
+      "tail_tdi": 1.2286701299153333,
+      "tail_n_types": 418,
+      "tail_max_type_share": 0.0727630285152409,
+      "tail_top_types": [
+       [
+        " the",
+        148
+       ],
+       [
+        ",",
+        140
+       ],
+       [
+        ".",
+        133
+       ],
+       [
+        " to",
+        95
+       ],
+       [
+        "\n",
+        85
+       ],
+       [
+        " and",
+        83
+       ],
+       [
+        " of",
+        63
+       ],
+       [
+        " a",
+        62
+       ]
+      ],
+      "identity_suspect": false
+     },
+     "context_generic": false,
+     "s2_cos": 0.36429078553582867,
+     "behaviour_pass": null,
+     "r2_cos": 0.9453958284517282,
+     "r2_replicated": false
+    },
+    {
+     "kind": "logcosh",
+     "id": 40,
+     "tier": "NAMED_BY_CONTEXT",
+     "reading": "first clause of a line (within about five tokens after a newline)",
+     "twin": [],
+     "identity": {
+      "tail_tdi": 1.5726977662916266,
+      "tail_n_types": 489,
+      "tail_max_type_share": 0.07177974434611603,
+      "tail_top_types": [
+       [
+        ",",
+        146
+       ],
+       [
+        " the",
+        122
+       ],
+       [
+        ".",
+        105
+       ],
+       [
+        "\n",
+        96
+       ],
+       [
+        " to",
+        89
+       ],
+       [
+        " of",
+        77
+       ],
+       [
+        " and",
+        59
+       ],
+       [
+        " a",
+        57
+       ]
+      ],
+      "identity_suspect": false
+     },
+     "context_generic": false,
+     "s2_cos": 0.5688674468931446,
+     "behaviour_pass": null,
+     "r2_cos": 0.8562534654902242,
+     "r2_replicated": false
+    },
+    {
+     "kind": "logcosh",
+     "id": 44,
+     "tier": "NAMED_BY_CONTEXT",
+     "reading": "inside the scope of a negation (not/no/never/don't/cannot)",
+     "twin": [
+      [
+       "skew",
+       39,
+       0.9850751757621765
+      ]
+     ],
+     "identity": {
+      "tail_tdi": 1.7201381818814665,
+      "tail_n_types": 712,
+      "tail_max_type_share": 0.0599803343166175,
+      "tail_top_types": [
+       [
+        ",",
+        122
+       ],
+       [
+        " the",
+        98
+       ],
+       [
+        " to",
+        90
+       ],
+       [
+        " a",
+        74
+       ],
+       [
+        " in",
+        54
+       ],
+       [
+        " of",
+        52
+       ],
+       [
+        ".",
+        44
+       ],
+       [
+        " for",
+        41
+       ]
+      ],
+      "identity_suspect": false
+     },
+     "context_generic": false,
+     "s2_cos": 0.34902346765365694,
+     "behaviour_pass": null,
+     "r2_cos": 0.9921867150862423,
+     "r2_replicated": true
+    },
+    {
+     "kind": "logcosh",
+     "id": 45,
+     "tier": "replicated geometric",
+     "reading": "none",
+     "twin": [
+      [
+       "skew",
+       5,
+       0.9120309352874756
+      ]
+     ],
+     "identity": {
+      "tail_tdi": 1.2286701299153333,
+      "tail_n_types": 490,
+      "tail_max_type_share": 0.08898721730580138,
+      "tail_top_types": [
+       [
+        ".",
+        181
+       ],
+       [
+        ",",
+        145
+       ],
+       [
+        " the",
+        86
+       ],
+       [
+        "\n",
+        77
+       ],
+       [
+        " to",
+        73
+       ],
+       [
+        " and",
+        64
+       ],
+       [
+        " a",
+        55
+       ],
+       [
+        " of",
+        47
+       ]
+      ],
+      "identity_suspect": false
+     },
+     "context_generic": false,
+     "s2_cos": 0.42305161626125265,
+     "behaviour_pass": null,
+     "r2_cos": 0.9278501867688229,
+     "r2_replicated": true
+    },
+    {
+     "kind": "logcosh",
+     "id": 46,
+     "tier": "NAMED_BY_CONTEXT",
+     "reading": "inside the predicate complement of a copula (is/are/was/become ...)",
+     "twin": [
+      [
+       "skew",
+       34,
+       0.9433746337890625
+      ]
+     ],
+     "identity": {
+      "tail_tdi": 2.06416581825776,
+      "tail_n_types": 570,
+      "tail_max_type_share": 0.11012782694198624,
+      "tail_top_types": [
+       [
+        " the",
+        224
+       ],
+       [
+        " a",
+        102
+       ],
+       [
+        " of",
+        91
+       ],
+       [
+        ",",
+        82
+       ],
+       [
+        " to",
+        72
+       ],
+       [
+        ".",
+        50
+       ],
+       [
+        " in",
+        49
+       ],
+       [
+        " and",
+        36
+       ]
+      ],
+      "identity_suspect": false
+     },
+     "context_generic": false,
+     "s2_cos": 0.40610915930686803,
+     "behaviour_pass": null,
+     "r2_cos": 0.9572466344918104,
+     "r2_replicated": true
+    },
+    {
+     "kind": "logcosh",
+     "id": 48,
+     "tier": "NAMED_BY_CONTEXT",
+     "reading": "inside an enumeration/list of items or a numeric range",
+     "twin": [],
+     "identity": {
+      "tail_tdi": 2.408193454634053,
+      "tail_n_types": 231,
+      "tail_max_type_share": 0.16568338249754178,
+      "tail_top_types": [
+       [
+        ",",
+        337
+       ],
+       [
+        " the",
+        118
+       ],
+       [
+        " and",
+        117
+       ],
+       [
+        "\n",
+        106
+       ],
+       [
+        ".",
+        106
+       ],
+       [
+        " to",
+        75
+       ],
+       [
+        "-",
+        73
+       ],
+       [
+        " ",
+        60
+       ]
+      ],
+      "identity_suspect": false
+     },
+     "context_generic": false,
+     "s2_cos": 0.41270501083634226,
+     "behaviour_pass": null,
+     "r2_cos": 0.7095674539211939,
+     "r2_replicated": false
+    },
+    {
+     "kind": "logcosh",
+     "id": 54,
+     "tier": "geometric candidate",
+     "reading": "none",
+     "twin": [
+      [
+       "skew",
+       54,
+       0.8704915046691895
+      ]
+     ],
+     "identity": {
+      "tail_tdi": 1.4252573507017865,
+      "tail_n_types": 472,
+      "tail_max_type_share": 0.10521140609636184,
+      "tail_top_types": [
+       [
+        ",",
+        214
+       ],
+       [
+        ".",
+        167
+       ],
+       [
+        " and",
+        138
+       ],
+       [
+        "\n",
+        106
+       ],
+       [
+        " of",
+        74
+       ],
+       [
+        " the",
+        68
+       ],
+       [
+        "-",
+        56
+       ],
+       [
+        " in",
+        51
+       ]
+      ],
+      "identity_suspect": false
+     },
+     "context_generic": false,
+     "s2_cos": 0.3218144896127586,
+     "behaviour_pass": null,
+     "r2_cos": 0.8973781704959598,
+     "r2_replicated": false
+    },
+    {
+     "kind": "logcosh",
+     "id": 56,
+     "tier": "NAMED_BY_CONTEXT",
+     "reading": "inside or right after a temporal expression (dates, durations, before/after)",
+     "twin": [
+      [
+       "skew",
+       12,
+       0.9581472873687744
+      ]
+     ],
+     "identity": {
+      "tail_tdi": 1.4252573507017865,
+      "tail_n_types": 501,
+      "tail_max_type_share": 0.07669616519174041,
+      "tail_top_types": [
+       [
+        ",",
+        156
+       ],
+       [
+        ".",
+        111
+       ],
+       [
+        " the",
+        103
+       ],
+       [
+        " and",
+        80
+       ],
+       [
+        " of",
+        70
+       ],
+       [
+        " to",
+        67
+       ],
+       [
+        " a",
+        60
+       ],
+       [
+        " in",
+        56
+       ]
+      ],
+      "identity_suspect": false
+     },
+     "context_generic": false,
+     "s2_cos": 0.3188344258168074,
+     "behaviour_pass": null,
+     "r2_cos": 0.9543610750335395,
+     "r2_replicated": true
+    },
+    {
+     "kind": "logcosh",
+     "id": 57,
+     "tier": "geometric candidate",
+     "reading": "none",
+     "twin": [
+      [
+       "skew",
+       57,
+       0.9231866002082825
+      ]
+     ],
+     "identity": {
+      "tail_tdi": 1.7201381818814665,
+      "tail_n_types": 495,
+      "tail_max_type_share": 0.07374631268436578,
+      "tail_top_types": [
+       [
+        ",",
+        150
+       ],
+       [
+        ".",
+        148
+       ],
+       [
+        "\n",
+        117
+       ],
+       [
+        " the",
+        109
+       ],
+       [
+        " to",
+        77
+       ],
+       [
+        " a",
+        50
+       ],
+       [
+        " of",
+        49
+       ],
+       [
+        " in",
+        40
+       ]
+      ],
+      "identity_suspect": false
+     },
+     "context_generic": false,
+     "s2_cos": 0.30386519201897483,
+     "behaviour_pass": null,
+     "r2_cos": 0.9139745707590535,
+     "r2_replicated": false
+    },
+    {
+     "kind": "logcosh",
+     "id": 60,
+     "tier": "NAMED_BY_CONTEXT",
+     "reading": "token right after the definite article 'the'",
+     "twin": [
+      [
+       "skew",
+       28,
+       0.9457258582115173
+      ]
+     ],
+     "identity": {
+      "tail_tdi": 2.408193454634053,
+      "tail_n_types": 1030,
+      "tail_max_type_share": 0.02753195673549656,
+      "tail_top_types": [
+       [
+        ",",
+        56
+       ],
+       [
+        " ",
+        50
+       ],
+       [
+        ".",
+        46
+       ],
+       [
+        " and",
+        43
+       ],
+       [
+        "0",
+        33
+       ],
+       [
+        "1",
+        32
+       ],
+       [
+        "\n",
+        29
+       ],
+       [
+        " to",
+        24
+       ]
+      ],
+      "identity_suspect": false
+     },
+     "context_generic": false,
+     "s2_cos": 0.3140432613084299,
+     "behaviour_pass": null,
+     "r2_cos": 0.9424920277407383,
+     "r2_replicated": true
+    },
+    {
+     "kind": "logcosh",
+     "id": 63,
+     "tier": "geometric candidate",
+     "reading": "none",
+     "twin": [
+      [
+       "skew",
+       7,
+       0.9334234595298767
+      ]
+     ],
+     "identity": {
+      "tail_tdi": 1.6218445714882397,
+      "tail_n_types": 591,
+      "tail_max_type_share": 0.061455260570304815,
+      "tail_top_types": [
+       [
+        " the",
+        125
+       ],
+       [
+        " to",
+        103
+       ],
+       [
+        ",",
+        85
+       ],
+       [
+        " and",
+        65
+       ],
+       [
+        ".",
+        52
+       ],
+       [
+        " of",
+        52
+       ],
+       [
+        " is",
+        47
+       ],
+       [
+        " in",
+        40
+       ]
+      ],
+      "identity_suspect": false
+     },
+     "context_generic": false,
+     "s2_cos": 0.32259341721717116,
+     "behaviour_pass": null,
+     "r2_cos": 0.7789916212604281,
+     "r2_replicated": false
+    },
+    {
+     "kind": "skew",
+     "id": 0,
+     "tier": "replicated geometric",
+     "reading": "none",
+     "twin": [
+      [
+       "logcosh",
+       0,
+       0.9880121946334839
+      ]
+     ],
+     "identity": {
+      "tail_tdi": 1.7692849870780798,
+      "tail_n_types": 384,
+      "tail_max_type_share": 0.08112094395280237,
+      "tail_top_types": [
+       [
+        " the",
+        165
+       ],
+       [
+        ",",
+        117
+       ],
+       [
+        ".",
+        108
+       ],
+       [
+        " to",
+        99
+       ],
+       [
+        " a",
+        91
+       ],
+       [
+        "\n",
+        69
+       ],
+       [
+        " of",
+        64
+       ],
+       [
+        "-",
+        47
+       ]
+      ],
+      "identity_suspect": false
+     },
+     "context_generic": false,
+     "s2_cos": 0.5009949217360335,
+     "behaviour_pass": null,
+     "r2_cos": 0.9341010332631123,
+     "r2_replicated": true
+    },
+    {
+     "kind": "skew",
+     "id": 1,
+     "tier": "replicated geometric",
+     "reading": "none",
+     "twin": [],
+     "identity": {
+      "tail_tdi": 1.0812297143254932,
+      "tail_n_types": 457,
+      "tail_max_type_share": 0.08062930186823992,
+      "tail_top_types": [
+       [
+        " the",
+        164
+       ],
+       [
+        ",",
+        143
+       ],
+       [
+        ".",
+        131
+       ],
+       [
+        " to",
+        111
+       ],
+       [
+        "\n",
+        89
+       ],
+       [
+        " of",
+        85
+       ],
+       [
+        " and",
+        83
+       ],
+       [
+        " a",
+        58
+       ]
+      ],
+      "identity_suspect": false
+     },
+     "context_generic": false,
+     "s2_cos": 0.48152710359308126,
+     "behaviour_pass": null,
+     "r2_cos": 0.9201494441017777,
+     "r2_replicated": true
+    },
+    {
+     "kind": "skew",
+     "id": 2,
+     "tier": "NAMED_BY_CONTEXT",
+     "reading": "inside a partitive/superlative NP ('one of the ...', 'the best/first/only ...', 'X% of all ...')",
+     "twin": [
+      [
+       "logcosh",
+       2,
+       0.9639086127281189
+      ]
+     ],
+     "identity": {
+      "tail_tdi": 1.4252573507017865,
+      "tail_n_types": 715,
+      "tail_max_type_share": 0.06932153392330384,
+      "tail_top_types": [
+       [
+        " the",
+        141
+       ],
+       [
+        " in",
+        82
+       ],
+       [
+        ",",
+        75
+       ],
+       [
+        " of",
+        70
+       ],
+       [
+        ".",
+        67
+       ],
+       [
+        " to",
+        62
+       ],
+       [
+        " a",
+        37
+       ],
+       [
+        " and",
+        35
+       ]
+      ],
+      "identity_suspect": false
+     },
+     "context_generic": false,
+     "s2_cos": 0.39933588396974584,
+     "behaviour_pass": null,
+     "r2_cos": 0.9655787056666099,
+     "r2_replicated": true
+    },
+    {
+     "kind": "skew",
+     "id": 5,
+     "tier": "geometric candidate",
+     "reading": "none",
+     "twin": [
+      [
+       "logcosh",
+       45,
+       0.9120309352874756
+      ]
+     ],
+     "identity": {
+      "tail_tdi": 1.4252573507017865,
+      "tail_n_types": 513,
+      "tail_max_type_share": 0.07817109144542773,
+      "tail_top_types": [
+       [
+        ".",
+        159
+       ],
+       [
+        ",",
+        149
+       ],
+       [
+        " the",
+        90
+       ],
+       [
+        " to",
+        78
+       ],
+       [
+        "\n",
+        71
+       ],
+       [
+        " and",
+        62
+       ],
+       [
+        " of",
+        54
+       ],
+       [
+        " a",
+        51
+       ]
+      ],
+      "identity_suspect": false
+     },
+     "context_generic": false,
+     "s2_cos": 0.225383604636059,
+     "behaviour_pass": null,
+     "r2_cos": 0.9185376432805105,
+     "r2_replicated": false
+    },
+    {
+     "kind": "skew",
+     "id": 6,
+     "tier": "replicated geometric",
+     "reading": "none",
+     "twin": [
+      [
+       "logcosh",
+       6,
+       0.98501056432724
+      ]
+     ],
+     "identity": {
+      "tail_tdi": 2.3590466494374396,
+      "tail_n_types": 751,
+      "tail_max_type_share": 0.046214355948869225,
+      "tail_top_types": [
+       [
+        ".",
+        94
+       ],
+       [
+        ",",
+        89
+       ],
+       [
+        " the",
+        77
+       ],
+       [
+        " and",
+        76
+       ],
+       [
+        " of",
+        58
+       ],
+       [
+        " ",
+        53
+       ],
+       [
+        " to",
+        44
+       ],
+       [
+        "0",
+        39
+       ]
+      ],
+      "identity_suspect": false
+     },
+     "context_generic": false,
+     "s2_cos": 0.7130246240643784,
+     "behaviour_pass": null,
+     "r2_cos": 0.9396076653353154,
+     "r2_replicated": true
+    },
+    {
+     "kind": "skew",
+     "id": 7,
+     "tier": "geometric candidate",
+     "reading": "none",
+     "twin": [
+      [
+       "logcosh",
+       63,
+       0.9334234595298767
+      ]
+     ],
+     "identity": {
+      "tail_tdi": 1.5726977662916266,
+      "tail_n_types": 631,
+      "tail_max_type_share": 0.058505408062930184,
+      "tail_top_types": [
+       [
+        " the",
+        119
+       ],
+       [
+        ",",
+        86
+       ],
+       [
+        " to",
+        84
+       ],
+       [
+        " of",
+        64
+       ],
+       [
+        " and",
+        60
+       ],
+       [
+        ".",
+        53
+       ],
+       [
+        " a",
+        42
+       ],
+       [
+        " is",
+        41
+       ]
+      ],
+      "identity_suspect": false
+     },
+     "context_generic": false,
+     "s2_cos": 0.37934616587071446,
+     "behaviour_pass": null,
+     "r2_cos": 0.7676922774656095,
+     "r2_replicated": false
+    },
+    {
+     "kind": "skew",
+     "id": 8,
+     "tier": "replicated geometric",
+     "reading": "none",
+     "twin": [],
+     "identity": {
+      "tail_tdi": 1.3761105455051732,
+      "tail_n_types": 609,
+      "tail_max_type_share": 0.04768928220255654,
+      "tail_top_types": [
+       [
+        ",",
+        97
+       ],
+       [
+        " a",
+        96
+       ],
+       [
+        " the",
+        82
+       ],
+       [
+        " of",
+        67
+       ],
+       [
+        ".",
+        58
+       ],
+       [
+        " ",
+        55
+       ],
+       [
+        "\n",
+        53
+       ],
+       [
+        " and",
+        51
+       ]
+      ],
+      "identity_suspect": false
+     },
+     "context_generic": false,
+     "s2_cos": 0.7215898677495992,
+     "behaviour_pass": null,
+     "r2_cos": 0.9677810460311367,
+     "r2_replicated": true
+    },
+    {
+     "kind": "skew",
+     "id": 12,
+     "tier": "NAMED_BY_CONTEXT",
+     "reading": "inside or right after a temporal expression (dates, durations, before/after)",
+     "twin": [
+      [
+       "logcosh",
+       56,
+       0.9581472873687744
+      ]
+     ],
+     "identity": {
+      "tail_tdi": 1.6218445714882397,
+      "tail_n_types": 493,
+      "tail_max_type_share": 0.07669616519174041,
+      "tail_top_types": [
+       [
+        ",",
+        156
+       ],
+       [
+        ".",
+        128
+       ],
+       [
+        " the",
+        96
+       ],
+       [
+        " and",
+        78
+       ],
+       [
+        " of",
+        65
+       ],
+       [
+        " a",
+        63
+       ],
+       [
+        " to",
+        60
+       ],
+       [
+        " in",
+        52
+       ]
+      ],
+      "identity_suspect": false
+     },
+     "context_generic": false,
+     "s2_cos": 0.6255503224395988,
+     "behaviour_pass": null,
+     "r2_cos": 0.9557010701553984,
+     "r2_replicated": true
+    },
+    {
+     "kind": "skew",
+     "id": 15,
+     "tier": "NAMED_BY_CONTEXT",
+     "reading": "inside the subject noun phrase, before its main verb",
+     "twin": [
+      [
+       "logcosh",
+       10,
+       0.9721267223358154
+      ]
+     ],
+     "identity": {
+      "tail_tdi": 3.3911295585663197,
+      "tail_n_types": 1063,
+      "tail_max_type_share": 0.06342182890855458,
+      "tail_top_types": [
+       [
+        ",",
+        129
+       ],
+       [
+        ".",
+        40
+       ],
+       [
+        "0",
+        26
+       ],
+       [
+        " to",
+        26
+       ],
+       [
+        " the",
+        24
+       ],
+       [
+        "1",
+        22
+       ],
+       [
+        "\n",
+        18
+       ],
+       [
+        "2",
+        16
+       ]
+      ],
+      "identity_suspect": true
+     },
+     "context_generic": false,
+     "s2_cos": 0.5387195392568659,
+     "behaviour_pass": null,
+     "r2_cos": 0.9815377855989519,
+     "r2_replicated": true
+    },
+    {
+     "kind": "skew",
+     "id": 16,
+     "tier": "replicated geometric",
+     "reading": "none",
+     "twin": [
+      [
+       "logcosh",
+       13,
+       0.9454145431518555
+      ]
+     ],
+     "identity": {
+      "tail_tdi": 1.8184317922746929,
+      "tail_n_types": 982,
+      "tail_max_type_share": 0.035398230088495575,
+      "tail_top_types": [
+       [
+        ",",
+        72
+       ],
+       [
+        " the",
+        53
+       ],
+       [
+        ".",
+        53
+       ],
+       [
+        " in",
+        37
+       ],
+       [
+        " a",
+        34
+       ],
+       [
+        "0",
+        31
+       ],
+       [
+        " to",
+        29
+       ],
+       [
+        "1",
+        29
+       ]
+      ],
+      "identity_suspect": false
+     },
+     "context_generic": false,
+     "s2_cos": 0.37993448319739065,
+     "behaviour_pass": null,
+     "r2_cos": 0.9712147991346496,
+     "r2_replicated": true
+    },
+    {
+     "kind": "skew",
+     "id": 20,
+     "tier": "replicated geometric",
+     "reading": "none",
+     "twin": [
+      [
+       "logcosh",
+       27,
+       0.9276424646377563
+      ]
+     ],
+     "identity": {
+      "tail_tdi": 1.1795233247187198,
+      "tail_n_types": 520,
+      "tail_max_type_share": 0.08357915437561456,
+      "tail_top_types": [
+       [
+        ",",
+        170
+       ],
+       [
+        ".",
+        135
+       ],
+       [
+        " the",
+        90
+       ],
+       [
+        " to",
+        81
+       ],
+       [
+        " and",
+        77
+       ],
+       [
+        "\n",
+        77
+       ],
+       [
+        " a",
+        45
+       ],
+       [
+        " of",
+        39
+       ]
+      ],
+      "identity_suspect": false
+     },
+     "context_generic": false,
+     "s2_cos": 0.6364431374875574,
+     "behaviour_pass": null,
+     "r2_cos": 0.9484364786280188,
+     "r2_replicated": true
+    },
+    {
+     "kind": "skew",
+     "id": 24,
+     "tier": "NAMED_BY_CONTEXT",
+     "reading": "inside a fronted (sentence-initial) adverbial phrase or clause",
+     "twin": [
+      [
+       "logcosh",
+       24,
+       0.9657835960388184
+      ]
+     ],
+     "identity": {
+      "tail_tdi": 1.4252573507017865,
+      "tail_n_types": 763,
+      "tail_max_type_share": 0.0535889872173058,
+      "tail_top_types": [
+       [
+        " the",
+        109
+       ],
+       [
+        " to",
+        78
+       ],
+       [
+        " and",
+        72
+       ],
+       [
+        " of",
+        61
+       ],
+       [
+        " a",
+        51
+       ],
+       [
+        ",",
+        45
+       ],
+       [
+        " in",
+        40
+       ],
+       [
+        " is",
+        32
+       ]
+      ],
+      "identity_suspect": false
+     },
+     "context_generic": false,
+     "s2_cos": 0.3884317649203264,
+     "behaviour_pass": null,
+     "r2_cos": 0.9655292303906569,
+     "r2_replicated": true
+    },
+    {
+     "kind": "skew",
+     "id": 25,
+     "tier": "geometric candidate",
+     "reading": "none",
+     "twin": [],
+     "identity": {
+      "tail_tdi": 1.5726977662916266,
+      "tail_n_types": 635,
+      "tail_max_type_share": 0.05408062930186824,
+      "tail_top_types": [
+       [
+        " to",
+        110
+       ],
+       [
+        " the",
+        91
+       ],
+       [
+        ",",
+        73
+       ],
+       [
+        ".",
+        58
+       ],
+       [
+        " of",
+        57
+       ],
+       [
+        " a",
+        46
+       ],
+       [
+        " and",
+        46
+       ],
+       [
+        " I",
+        41
+       ]
+      ],
+      "identity_suspect": false
+     },
+     "context_generic": false,
+     "s2_cos": 0.34323155944476996,
+     "behaviour_pass": null,
+     "r2_cos": 0.8613626993684346,
+     "r2_replicated": false
+    },
+    {
+     "kind": "skew",
+     "id": 26,
+     "tier": "replicated geometric",
+     "reading": "none",
+     "twin": [
+      [
+       "logcosh",
+       26,
+       0.9438091516494751
+      ]
+     ],
+     "identity": {
+      "tail_tdi": 1.8184317922746929,
+      "tail_n_types": 439,
+      "tail_max_type_share": 0.11897738446411013,
+      "tail_top_types": [
+       [
+        ",",
+        242
+       ],
+       [
+        ".",
+        122
+       ],
+       [
+        " the",
+        122
+       ],
+       [
+        " and",
+        102
+       ],
+       [
+        "\n",
+        70
+       ],
+       [
+        " of",
+        67
+       ],
+       [
+        " a",
+        62
+       ],
+       [
+        " ",
+        53
+       ]
+      ],
+      "identity_suspect": false
+     },
+     "context_generic": false,
+     "s2_cos": 0.46407960880654986,
+     "behaviour_pass": null,
+     "r2_cos": 0.8259912581716682,
+     "r2_replicated": true
+    },
+    {
+     "kind": "skew",
+     "id": 28,
+     "tier": "NAMED_BY_CONTEXT",
+     "reading": "token right after the definite article 'the'",
+     "twin": [
+      [
+       "logcosh",
+       60,
+       0.9457258582115173
+      ]
+     ],
+     "identity": {
+      "tail_tdi": 2.2116062338475997,
+      "tail_n_types": 996,
+      "tail_max_type_share": 0.02999016715830875,
+      "tail_top_types": [
+       [
+        ".",
+        61
+       ],
+       [
+        ",",
+        55
+       ],
+       [
+        " and",
+        54
+       ],
+       [
+        " ",
+        41
+       ],
+       [
+        "\n",
+        33
+       ],
+       [
+        "1",
+        32
+       ],
+       [
+        "0",
+        32
+       ],
+       [
+        " to",
+        31
+       ]
+      ],
+      "identity_suspect": false
+     },
+     "context_generic": false,
+     "s2_cos": 0.6865620482734766,
+     "behaviour_pass": null,
+     "r2_cos": 0.9601673583126772,
+     "r2_replicated": true
+    },
+    {
+     "kind": "skew",
+     "id": 31,
+     "tier": "replicated geometric",
+     "reading": "none",
+     "twin": [
+      [
+       "logcosh",
+       1,
+       0.9234506487846375
+      ]
+     ],
+     "identity": {
+      "tail_tdi": 3.047101922190026,
+      "tail_n_types": 299,
+      "tail_max_type_share": 0.07227138643067847,
+      "tail_top_types": [
+       [
+        ",",
+        147
+       ],
+       [
+        ".",
+        144
+       ],
+       [
+        " the",
+        128
+       ],
+       [
+        "0",
+        126
+       ],
+       [
+        "1",
+        116
+       ],
+       [
+        " and",
+        83
+       ],
+       [
+        " to",
+        62
+       ],
+       [
+        " a",
+        61
+       ]
+      ],
+      "identity_suspect": true
+     },
+     "context_generic": false,
+     "s2_cos": 0.5383951709712929,
+     "behaviour_pass": null,
+     "r2_cos": 0.9669892911977853,
+     "r2_replicated": true
+    },
+    {
+     "kind": "skew",
+     "id": 32,
+     "tier": "geometric candidate",
+     "reading": "none",
+     "twin": [],
+     "identity": {
+      "tail_tdi": 1.4744041558983998,
+      "tail_n_types": 446,
+      "tail_max_type_share": 0.08013765978367748,
+      "tail_top_types": [
+       [
+        ".",
+        163
+       ],
+       [
+        ",",
+        148
+       ],
+       [
+        " the",
+        110
+       ],
+       [
+        "\n",
+        101
+       ],
+       [
+        " to",
+        92
+       ],
+       [
+        " and",
+        69
+       ],
+       [
+        " of",
+        57
+       ],
+       [
+        " is",
+        51
+       ]
+      ],
+      "identity_suspect": false
+     },
+     "context_generic": false,
+     "s2_cos": 0.2816042871944797,
+     "behaviour_pass": null,
+     "r2_cos": 0.760738387000387,
+     "r2_replicated": false
+    },
+    {
+     "kind": "skew",
+     "id": 34,
+     "tier": "NAMED_BY_CONTEXT",
+     "reading": "inside the predicate complement of a copula (is/are/was/become ...)",
+     "twin": [
+      [
+       "logcosh",
+       46,
+       0.9433746337890625
+      ]
+     ],
+     "identity": {
+      "tail_tdi": 2.260753039044213,
+      "tail_n_types": 581,
+      "tail_max_type_share": 0.127826941986234,
+      "tail_top_types": [
+       [
+        " the",
+        260
+       ],
+       [
+        " a",
+        90
+       ],
+       [
+        " of",
+        88
+       ],
+       [
+        ",",
+        73
+       ],
+       [
+        " to",
+        64
+       ],
+       [
+        ".",
+        51
+       ],
+       [
+        " in",
+        45
+       ],
+       [
+        "-",
+        36
+       ]
+      ],
+      "identity_suspect": false
+     },
+     "context_generic": false,
+     "s2_cos": 0.3368206991269603,
+     "behaviour_pass": null,
+     "r2_cos": 0.9718792166581465,
+     "r2_replicated": true
+    },
+    {
+     "kind": "skew",
+     "id": 37,
+     "tier": "NAMED_BY_CONTEXT",
+     "reading": "onset of the next item in a coordinated series/list",
+     "twin": [
+      [
+       "logcosh",
+       37,
+       0.9587845206260681
+      ]
+     ],
+     "identity": {
+      "tail_tdi": 0.8846424935390399,
+      "tail_n_types": 405,
+      "tail_max_type_share": 0.07620452310717797,
+      "tail_top_types": [
+       [
+        ",",
+        155
+       ],
+       [
+        " the",
+        141
+       ],
+       [
+        ".",
+        119
+       ],
+       [
+        " to",
+        91
+       ],
+       [
+        " and",
+        88
+       ],
+       [
+        "\n",
+        78
+       ],
+       [
+        " ",
+        69
+       ],
+       [
+        " of",
+        69
+       ]
+      ],
+      "identity_suspect": false
+     },
+     "context_generic": false,
+     "s2_cos": 0.3463219959746364,
+     "behaviour_pass": null,
+     "r2_cos": 0.6986222541737667,
+     "r2_replicated": false
+    },
+    {
+     "kind": "skew",
+     "id": 39,
+     "tier": "NAMED_BY_CONTEXT",
+     "reading": "inside the scope of a negation (not/no/never/don't/cannot)",
+     "twin": [
+      [
+       "logcosh",
+       44,
+       0.9850751757621765
+      ]
+     ],
+     "identity": {
+      "tail_tdi": 1.6218445714882397,
+      "tail_n_types": 716,
+      "tail_max_type_share": 0.06096361848574238,
+      "tail_top_types": [
+       [
+        ",",
+        124
+       ],
+       [
+        " the",
+        95
+       ],
+       [
+        " to",
+        93
+       ],
+       [
+        " a",
+        76
+       ],
+       [
+        ".",
+        54
+       ],
+       [
+        " in",
+        54
+       ],
+       [
+        " of",
+        54
+       ],
+       [
+        " for",
+        38
+       ]
+      ],
+      "identity_suspect": false
+     },
+     "context_generic": false,
+     "s2_cos": 0.4234770316523105,
+     "behaviour_pass": null,
+     "r2_cos": 0.9851917758887065,
+     "r2_replicated": true
+    },
+    {
+     "kind": "skew",
+     "id": 41,
+     "tier": "geometric candidate",
+     "reading": "none",
+     "twin": [],
+     "identity": {
+      "tail_tdi": 1.2778169351119464,
+      "tail_n_types": 576,
+      "tail_max_type_share": 0.06588003933136677,
+      "tail_top_types": [
+       [
+        ",",
+        134
+       ],
+       [
+        " the",
+        119
+       ],
+       [
+        ".",
+        85
+       ],
+       [
+        " and",
+        76
+       ],
+       [
+        " of",
+        75
+       ],
+       [
+        " to",
+        69
+       ],
+       [
+        "\n",
+        64
+       ],
+       [
+        " a",
+        55
+       ]
+      ],
+      "identity_suspect": false
+     },
+     "context_generic": false,
+     "s2_cos": 0.3632860093153202,
+     "behaviour_pass": null,
+     "r2_cos": 0.9162726378136927,
+     "r2_replicated": false
+    },
+    {
+     "kind": "skew",
+     "id": 42,
+     "tier": "geometric candidate",
+     "reading": "none",
+     "twin": [],
+     "identity": {
+      "tail_tdi": 1.6218445714882397,
+      "tail_n_types": 413,
+      "tail_max_type_share": 0.09144542772861357,
+      "tail_top_types": [
+       [
+        ",",
+        186
+       ],
+       [
+        ".",
+        132
+       ],
+       [
+        " the",
+        118
+       ],
+       [
+        " and",
+        97
+       ],
+       [
+        " to",
+        77
+       ],
+       [
+        "\n",
+        75
+       ],
+       [
+        " a",
+        60
+       ],
+       [
+        " of",
+        49
+       ]
+      ],
+      "identity_suspect": false
+     },
+     "context_generic": false,
+     "s2_cos": 0.3812191175368578,
+     "behaviour_pass": null,
+     "r2_cos": 0.9076025624991424,
+     "r2_replicated": false
+    },
+    {
+     "kind": "skew",
+     "id": 44,
+     "tier": "geometric candidate",
+     "reading": "none",
+     "twin": [],
+     "identity": {
+      "tail_tdi": 1.2286701299153333,
+      "tail_n_types": 500,
+      "tail_max_type_share": 0.06489675516224189,
+      "tail_top_types": [
+       [
+        ",",
+        132
+       ],
+       [
+        " the",
+        131
+       ],
+       [
+        " to",
+        78
+       ],
+       [
+        ".",
+        77
+       ],
+       [
+        " a",
+        69
+       ],
+       [
+        " of",
+        66
+       ],
+       [
+        " and",
+        56
+       ],
+       [
+        " in",
+        49
+       ]
+      ],
+      "identity_suspect": false
+     },
+     "context_generic": false,
+     "s2_cos": 0.32498256957001903,
+     "behaviour_pass": null,
+     "r2_cos": 0.6146853115617714,
+     "r2_replicated": false
+    },
+    {
+     "kind": "skew",
+     "id": 49,
+     "tier": "geometric candidate",
+     "reading": "none",
+     "twin": [],
+     "identity": {
+      "tail_tdi": 1.5726977662916266,
+      "tail_n_types": 481,
+      "tail_max_type_share": 0.10324483775811209,
+      "tail_top_types": [
+       [
+        ",",
+        210
+       ],
+       [
+        " the",
+        112
+       ],
+       [
+        ".",
+        94
+       ],
+       [
+        "\n",
+        73
+       ],
+       [
+        " and",
+        69
+       ],
+       [
+        " of",
+        57
+       ],
+       [
+        "-",
+        45
+       ],
+       [
+        " to",
+        42
+       ]
+      ],
+      "identity_suspect": false
+     },
+     "context_generic": false,
+     "s2_cos": 0.29974506922181743,
+     "behaviour_pass": null,
+     "r2_cos": 0.9390449043448719,
+     "r2_replicated": false
+    },
+    {
+     "kind": "skew",
+     "id": 51,
+     "tier": "replicated geometric",
+     "reading": "none",
+     "twin": [
+      [
+       "logcosh",
+       32,
+       0.9642022848129272
+      ]
+     ],
+     "identity": {
+      "tail_tdi": 1.9167254026679197,
+      "tail_n_types": 536,
+      "tail_max_type_share": 0.09734513274336283,
+      "tail_top_types": [
+       [
+        ",",
+        198
+       ],
+       [
+        " the",
+        131
+       ],
+       [
+        ".",
+        109
+       ],
+       [
+        " of",
+        90
+       ],
+       [
+        " to",
+        71
+       ],
+       [
+        " and",
+        63
+       ],
+       [
+        " in",
+        63
+       ],
+       [
+        "\n",
+        54
+       ]
+      ],
+      "identity_suspect": false
+     },
+     "context_generic": false,
+     "s2_cos": 0.4305138432619461,
+     "behaviour_pass": null,
+     "r2_cos": 0.952766437258516,
+     "r2_replicated": true
+    },
+    {
+     "kind": "skew",
+     "id": 52,
+     "tier": "NAMED_BY_CONTEXT",
+     "reading": "inside the second conjunct of an 'X and Y' coordination",
+     "twin": [
+      [
+       "logcosh",
+       9,
+       0.9567427039146423
+      ]
+     ],
+     "identity": {
+      "tail_tdi": 2.06416581825776,
+      "tail_n_types": 1073,
+      "tail_max_type_share": 0.04129793510324484,
+      "tail_top_types": [
+       [
+        ",",
+        84
+       ],
+       [
+        ".",
+        66
+       ],
+       [
+        " the",
+        44
+       ],
+       [
+        "0",
+        40
+       ],
+       [
+        " in",
+        28
+       ],
+       [
+        " of",
+        24
+       ],
+       [
+        "-",
+        23
+       ],
+       [
+        "s",
+        21
+       ]
+      ],
+      "identity_suspect": false
+     },
+     "context_generic": false,
+     "s2_cos": 0.5961862114622045,
+     "behaviour_pass": null,
+     "r2_cos": 0.9853513038017812,
+     "r2_replicated": true
+    },
+    {
+     "kind": "skew",
+     "id": 54,
+     "tier": "replicated geometric",
+     "reading": "none",
+     "twin": [
+      [
+       "logcosh",
+       54,
+       0.8704915046691895
+      ]
+     ],
+     "identity": {
+      "tail_tdi": 1.8184317922746929,
+      "tail_n_types": 550,
+      "tail_max_type_share": 0.09390363815142576,
+      "tail_top_types": [
+       [
+        ",",
+        191
+       ],
+       [
+        ".",
+        149
+       ],
+       [
+        " and",
+        86
+       ],
+       [
+        "\n",
+        83
+       ],
+       [
+        " of",
+        78
+       ],
+       [
+        " the",
+        78
+       ],
+       [
+        "-",
+        50
+       ],
+       [
+        " in",
+        48
+       ]
+      ],
+      "identity_suspect": false
+     },
+     "context_generic": false,
+     "s2_cos": 0.28085500426652826,
+     "behaviour_pass": null,
+     "r2_cos": 0.9545248934375944,
+     "r2_replicated": true
+    },
+    {
+     "kind": "skew",
+     "id": 57,
+     "tier": "geometric candidate",
+     "reading": "none",
+     "twin": [
+      [
+       "logcosh",
+       57,
+       0.9231866002082825
+      ]
+     ],
+     "identity": {
+      "tail_tdi": 1.4744041558983998,
+      "tail_n_types": 475,
+      "tail_max_type_share": 0.07620452310717797,
+      "tail_top_types": [
+       [
+        ",",
+        155
+       ],
+       [
+        ".",
+        153
+       ],
+       [
+        " the",
+        114
+       ],
+       [
+        "\n",
+        114
+       ],
+       [
+        " to",
+        77
+       ],
+       [
+        " a",
+        65
+       ],
+       [
+        " of",
+        60
+       ],
+       [
+        " and",
+        46
+       ]
+      ],
+      "identity_suspect": false
+     },
+     "context_generic": false,
+     "s2_cos": 0.46059538920698867,
+     "behaviour_pass": null,
+     "r2_cos": 0.7745226242081968,
+     "r2_replicated": false
+    },
+    {
+     "kind": "skew",
+     "id": 63,
+     "tier": "geometric candidate",
+     "reading": "none",
+     "twin": [
+      [
+       "logcosh",
+       61,
+       0.9103536009788513
+      ]
+     ],
+     "identity": {
+      "tail_tdi": 1.965872207864533,
+      "tail_n_types": 294,
+      "tail_max_type_share": 0.07866273352999016,
+      "tail_top_types": [
+       [
+        " the",
+        160
+       ],
+       [
+        ".",
+        133
+       ],
+       [
+        ",",
+        104
+       ],
+       [
+        "\n",
+        78
+       ],
+       [
+        " to",
+        75
+       ],
+       [
+        " a",
+        69
+       ],
+       [
+        " of",
+        68
+       ],
+       [
+        " and",
+        57
+       ]
+      ],
+      "identity_suspect": false
+     },
+     "context_generic": false,
+     "s2_cos": 0.2888623450279756,
+     "behaviour_pass": null,
+     "r2_cos": 0.9238729404832533,
+     "r2_replicated": false
+    }
+   ],
+   "families": [
+    {
+     "members": [
+      [
+       "logcosh",
+       0
+      ],
+      [
+       "skew",
+       0
+      ]
+     ],
+     "discovery": false
+    },
+    {
+     "members": [
+      [
+       "logcosh",
+       1
+      ],
+      [
+       "skew",
+       31
+      ]
+     ],
+     "discovery": false
+    },
+    {
+     "members": [
+      [
+       "logcosh",
+       2
+      ],
+      [
+       "skew",
+       2
+      ]
+     ],
+     "discovery": false
+    },
+    {
+     "members": [
+      [
+       "logcosh",
+       6
+      ],
+      [
+       "skew",
+       6
+      ]
+     ],
+     "discovery": false
+    },
+    {
+     "members": [
+      [
+       "logcosh",
+       9
+      ],
+      [
+       "skew",
+       52
+      ]
+     ],
+     "discovery": false
+    },
+    {
+     "members": [
+      [
+       "logcosh",
+       10
+      ],
+      [
+       "skew",
+       15
+      ]
+     ],
+     "discovery": false
+    },
+    {
+     "members": [
+      [
+       "logcosh",
+       13
+      ],
+      [
+       "skew",
+       16
+      ]
+     ],
+     "discovery": false
+    },
+    {
+     "members": [
+      [
+       "logcosh",
+       24
+      ],
+      [
+       "skew",
+       24
+      ]
+     ],
+     "discovery": false
+    },
+    {
+     "members": [
+      [
+       "logcosh",
+       27
+      ],
+      [
+       "skew",
+       20
+      ]
+     ],
+     "discovery": false
+    },
+    {
+     "members": [
+      [
+       "logcosh",
+       29
+      ]
+     ],
+     "discovery": false
+    },
+    {
+     "members": [
+      [
+       "logcosh",
+       32
+      ],
+      [
+       "skew",
+       51
+      ]
+     ],
+     "discovery": false
+    },
+    {
+     "members": [
+      [
+       "logcosh",
+       37
+      ],
+      [
+       "skew",
+       37
+      ]
+     ],
+     "discovery": false
+    },
+    {
+     "members": [
+      [
+       "logcosh",
+       40
+      ]
+     ],
+     "discovery": false
+    },
+    {
+     "members": [
+      [
+       "logcosh",
+       44
+      ],
+      [
+       "skew",
+       39
+      ]
+     ],
+     "discovery": false
+    },
+    {
+     "members": [
+      [
+       "logcosh",
+       45
+      ],
+      [
+       "skew",
+       5
+      ]
+     ],
+     "discovery": false
+    },
+    {
+     "members": [
+      [
+       "logcosh",
+       46
+      ],
+      [
+       "skew",
+       34
+      ]
+     ],
+     "discovery": false
+    },
+    {
+     "members": [
+      [
+       "logcosh",
+       48
+      ]
+     ],
+     "discovery": false
+    },
+    {
+     "members": [
+      [
+       "logcosh",
+       54
+      ],
+      [
+       "skew",
+       54
+      ]
+     ],
+     "discovery": false
+    },
+    {
+     "members": [
+      [
+       "logcosh",
+       56
+      ],
+      [
+       "skew",
+       12
+      ]
+     ],
+     "discovery": false
+    },
+    {
+     "members": [
+      [
+       "logcosh",
+       57
+      ],
+      [
+       "skew",
+       57
+      ]
+     ],
+     "discovery": false
+    },
+    {
+     "members": [
+      [
+       "logcosh",
+       60
+      ],
+      [
+       "skew",
+       28
+      ]
+     ],
+     "discovery": false
+    },
+    {
+     "members": [
+      [
+       "logcosh",
+       63
+      ],
+      [
+       "skew",
+       7
+      ]
+     ],
+     "discovery": false
+    },
+    {
+     "members": [
+      [
+       "skew",
+       1
+      ]
+     ],
+     "discovery": false
+    },
+    {
+     "members": [
+      [
+       "skew",
+       8
+      ]
+     ],
+     "discovery": false
+    },
+    {
+     "members": [
+      [
+       "skew",
+       25
+      ]
+     ],
+     "discovery": false
+    },
+    {
+     "members": [
+      [
+       "skew",
+       26
+      ]
+     ],
+     "discovery": false
+    },
+    {
+     "members": [
+      [
+       "skew",
+       32
+      ]
+     ],
+     "discovery": false
+    },
+    {
+     "members": [
+      [
+       "skew",
+       41
+      ]
+     ],
+     "discovery": false
+    },
+    {
+     "members": [
+      [
+       "skew",
+       42
+      ]
+     ],
+     "discovery": false
+    },
+    {
+     "members": [
+      [
+       "skew",
+       44
+      ]
+     ],
+     "discovery": false
+    },
+    {
+     "members": [
+      [
+       "skew",
+       49
+      ]
+     ],
+     "discovery": false
+    },
+    {
+     "members": [
+      [
+       "skew",
+       63
+      ]
+     ],
+     "discovery": false
+    }
+   ],
+   "n_families": 32,
+   "n_discovery_families": 0,
+   "anchor_pass": false,
+   "behaviour_excess": null,
+   "expected_false_behavioural_passes": null,
+   "replication_informative": true,
+   "s2_yield": {
+    "logcosh": {
+     "n_screened": 15,
+     "n_screened_battery_unnamed": 11,
+     "fit_failed": false
+    },
+    "skew": {
+     "n_screened": 18,
+     "n_screened_battery_unnamed": 16,
+     "fit_failed": false
+    }
+   },
+   "kir": {
+    "D2": 9.328977566230025,
+    "S2": 17.757482532967803,
+    "R2": 11.796106314581095
+   }
+  }
+ },
+ "discoveries": []
+}

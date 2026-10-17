@@ -1,0 +1,8 @@
+e72f sha256 825ac723e33c724b7731a62518f06dbea3e366b32802d44d4190bb4193de6014
+[74s] 16k big: rows, R_big cos 0.8072, alive 16270
+262k skipped: after fetch: AssertionError: R_262: only 64 share-matched 262k rows
+[81s] banks and covariates done: L_big void=False, x320 void=False, R_big void=False, L_big_near void=False
+HASHES += 71aaafc159ee4208011a7648ba154815ee2e6994dc4158f4621ae6f88886720d  results/e72f_dirs.npz (e72f freeze: directions, RAND bank and share-matched banks, before any forward, 2026-10-16T12:41:21)
+HASHES += 82d3ea75b06944fb082eeac46dd7c9a4e57188001c2baa633e31178969fd565d  results/e72f_frozen.json (e72f freeze: block-F sites, class and reference ids, covariates, before any forward, 2026-10-16T12:41:21)
+[81s] freeze done
+exit 0

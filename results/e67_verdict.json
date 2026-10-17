@@ -1,0 +1,36 @@
+{
+ "verdict": "COVERED",
+ "covered_hits": [
+  {
+   "dict": "resid_post_all/L12_16k_big",
+   "unit": "logcosh/13",
+   "latent": 11562,
+   "via": "decoder_cos",
+   "value": -0.735395073890686
+  },
+  {
+   "dict": "resid_post_all/L12_16k_big",
+   "unit": "skew/16",
+   "latent": 11562,
+   "via": "decoder_cos",
+   "value": -0.7221214175224304
+  },
+  {
+   "dict": "resid_post_all/L12_262k_small",
+   "unit": "skew/16",
+   "latent": 2084,
+   "via": "decoder_cos",
+   "value": 0.705958366394043
+  },
+  {
+   "dict": "resid_post/L13_16k_medium",
+   "unit": "skew/16",
+   "latent": 183,
+   "via": "decoder_cos",
+   "value": 0.7091090679168701
+  }
+ ],
+ "partial_candidates": [],
+ "probe_cos_logcosh13": 0.6706213675127601,
+ "probe_relation": "distinct from it"
+}

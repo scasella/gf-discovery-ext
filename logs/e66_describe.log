@@ -1,0 +1,8 @@
+e66 sha256 21d47ae38b05c701c63f604ccc435ec5b60ac9f2b3c22f6ebd31b3034f2b3174
+Loading weights:   0%|          | 0/340 [00:00<?, ?it/s]Loading weights: 100%|██████████| 340/340 [00:00<00:00, 8727.38it/s]
+[16s] D output shift c=-2.0 done
+[21s] D output shift c=2.0 done
+[26s] D output shift c=4.0 done
+[148s] D continuations done
+HASHES += 7c760cceebd9f42badaefa68ee163635127e4250277c5f48fec6d6e50effcbe3  results/e66_describe.json (e66 describe (block D, reserve 7000-7999, and D2; descriptive only), 2026-10-15T17:21:21)
+describe done

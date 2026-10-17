@@ -1,0 +1,5 @@
+L7 freeze: 65 signatures, control check [{'unit': 'logcosh/12', 'T_match': True, 'R_match': True}, {'unit': 'skew/62', 'T_match': True, 'R_match': True}]
+L12 freeze: 78 signatures, control check [{'unit': 'logcosh/33', 'T_match': True, 'R_match': True}, {'unit': 'logcosh/11', 'T_match': True, 'R_match': True}, {'unit': 'skew/23', 'T_match': True, 'R_match': True}, {'unit': 'skew/33', 'T_match': True, 'R_match': True}]
+HASHES += 8bec07c100465de855ff74985642fa3dbbd4e07b3b63b01fd00de573f963d265  results/e65_rand_L7.npz (e65 freeze: RAND banks for B3 and B4, before any forward, 2026-10-15T15:36:55)
+HASHES += 597a0546eb3442126588cd225253f60758795175130014f9be18fad1d51646cc  results/e65_rand_L12.npz (e65 freeze: RAND banks for B3 and B4, before any forward, 2026-10-15T15:36:55)
+HASHES += bd856844dae5db63d19518063d65eedf25ff8aaeee66565b09743f2da2fb2be9  results/e65_frozen.json (e65 freeze: signatures, control check, B3/B4 sites, before any forward, 2026-10-15T15:36:55)

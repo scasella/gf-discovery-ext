@@ -1,0 +1,18 @@
+# Secrets: never commit a token.
+.env
+*.token
+hf_token*
+
+# Weights and environments (fetched or rebuilt; see README.md)
+hf_home/
+.venv/
+.venv-parse/
+__pycache__/
+*.pyc
+
+# Large regenerable artifacts (see RELEASE_EXCLUDED.txt)
+*.npy
+*.i32
+cache/sparse*/
+
+.DS_Store

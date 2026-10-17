@@ -1,0 +1,25 @@
+[watchdog] start 22:06:28 swap 0.31 GB limit 12.0 GB cmd .venv/bin/python -u scripts/e72b_shuffle_null.py --phase capture
+e72b sha256 55c4c3fa19d6d1a39bf76b9157428f195c91e2775297101d399d8e60f2911e02 
+[1s] swap 0.3 GB
+[2s] shuffles built and checked: per-sequence permutations of D2; no sequence equal to D2, S2 or another
+Loading weights:   0%|          | 0/340 [00:00<?, ?it/s]Loading weights: 100%|██████████| 340/340 [00:00<00:00, 6745.36it/s]
+[15s] D2 drift check {'n_seq': 32, 'n_rows': 6555, 'share_identical': 1.0, 'max_abs_diff': 0.0, 'min_coord_corr': 1.0}
+HASHES += 8f1b4b80c45a29182b002754006f30762990d96c37cc4187fb9ff2fee433a9a2  cache/occ/occS2b1_meta.npz (e72b capture: occS2b1 meta (D2 shuffled within sequences, seeds 711000-711999), before any forward pass, 2026-10-16T22:06:43)
+HASHES += de81b9f037c9280ed37e75caa381d0e19f817e5a36c4be20c00a626aa764e003  results/e72b_S2b1_raw_L12_rows.npy (e72b capture: occS2b1 raw L12 kept rows, fp16, 2026-10-16T22:08:14)
+[106s] occS2b1: 202843 kept rows; swap 0.3 GB
+HASHES += 4d934643d1fe8e25daefffa195088f858376b68833c0a5796ac392a7b491e957  cache/occ/occS2b2_meta.npz (e72b capture: occS2b2 meta (D2 shuffled within sequences, seeds 721000-721999), before any forward pass, 2026-10-16T22:08:14)
+HASHES += 3618b8acd46dd2ef9b28d2d56afba26fd3274c64289b7a5b5f455f7f1599b695  results/e72b_S2b2_raw_L12_rows.npy (e72b capture: occS2b2 raw L12 kept rows, fp16, 2026-10-16T22:09:46)
+[198s] occS2b2: 202815 kept rows; swap 0.3 GB
+HASHES += 3277c7043a7eab8b2731608ecac79f7f291e49d8525944f23148e455098452f9  cache/occ/occS2b3_meta.npz (e72b capture: occS2b3 meta (D2 shuffled within sequences, seeds 731000-731999), before any forward pass, 2026-10-16T22:09:46)
+HASHES += 66c2d7c5eba224c26fcb131043f24fd9a5ed0e6f3748b1d4dc4b8fa1a6df10dd  results/e72b_S2b3_raw_L12_rows.npy (e72b capture: occS2b3 raw L12 kept rows, fp16, 2026-10-16T22:11:18)
+[290s] occS2b3: 202839 kept rows; swap 0.3 GB
+HASHES += 41fbb8556cd274348f1472d2c89428d7036aedd7db663d1c24743fb9568e2809  cache/occ/occS2b4_meta.npz (e72b capture: occS2b4 meta (D2 shuffled within sequences, seeds 741000-741999), before any forward pass, 2026-10-16T22:11:18)
+HASHES += 424e450d05ab5cad042d7d869bca65e75aa090c6b8438c089d900eb4d47708cd  results/e72b_S2b4_raw_L12_rows.npy (e72b capture: occS2b4 raw L12 kept rows, fp16, 2026-10-16T22:12:49)
+[381s] occS2b4: 202818 kept rows; swap 0.3 GB
+HASHES += 7ab513111e171a7bf11877e5d3bf8b092bec8714b723763abb180992b18a7442  cache/occ/occS2b5_meta.npz (e72b capture: occS2b5 meta (D2 shuffled within sequences, seeds 751000-751999), before any forward pass, 2026-10-16T22:12:49)
+HASHES += 5c6f0acc3a55965cd61a7bebf6c747014e7af936356357e9c633e3dc438afaa6  results/e72b_S2b5_raw_L12_rows.npy (e72b capture: occS2b5 raw L12 kept rows, fp16, 2026-10-16T22:14:20)
+[472s] occS2b5: 202870 kept rows; swap 0.3 GB
+HASHES += d818c99515a9481e599fc457b0ddb6c7840010ec53195014bb08f0fff01dd614  results/e72b_capture.json (e72b capture: drift check, seeds, row counts, 2026-10-16T22:14:20)
+[472s] CAPTURE done
+
+[watchdog] exit 0 at 22:14:23; peak swap 0.31 GB

@@ -1,0 +1,6 @@
+Loading weights:   0%|          | 0/340 [00:00<?, ?it/s]Loading weights: 100%|██████████| 340/340 [00:00<00:00, 7331.87it/s]
+  16/1000 seq  3s
+  336/1000 seq  53s
+  656/1000 seq  104s
+  976/1000 seq  154s
+done occP2 in 158s

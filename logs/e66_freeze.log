@@ -1,0 +1,4 @@
+e66 sha256 21d47ae38b05c701c63f604ccc435ec5b60ac9f2b3c22f6ebd31b3034f2b3174
+HASHES += beaaeeab2dee5dab3b1a6e6791d2f0b04cd0e283460e255e323046df3fc53943  results/e66_rand_L12.npz (e66 freeze: block-C RAND bank, before any forward, 2026-10-15T17:02:08)
+HASHES += eaa573e1032503d8a8186e5e7a54e152f36b696d5a9a8748fa28cf374ccf8217  results/e66_frozen.json (e66 freeze: block C and D sites, before any forward, 2026-10-15T17:02:08)
+freeze done

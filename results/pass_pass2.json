@@ -1,0 +1,95 @@
+{
+  "tag": "pass2",
+  "started": "2026-10-15T07:09:44",
+  "args": {
+    "tag": "pass2",
+    "cache_layers": "20,22,24",
+    "sae_acc": "",
+    "raw_acc": "",
+    "root": "/Users/scasella/Downloads/gf-discovery-ext/cache/sparse_deep",
+    "bs": 16,
+    "reserve": 0,
+    "max_cache_gb": 8.0,
+    "max_project_gb": 19.5,
+    "min_free_gb": 8.0,
+    "anchor_check_seq": 1000,
+    "reference_tokens": "results/corpus_tokens_pass1.i32",
+    "n_seq": 15696,
+    "out_dir": "/Users/scasella/Downloads/gf-discovery-ext/results",
+    "skip_seq": 0,
+    "no_anchor": false
+  },
+  "cache_layers": [
+    20,
+    22,
+    24
+  ],
+  "sae_acc": [],
+  "raw_acc": [],
+  "finished": "2026-10-15T07:45:16",
+  "seconds_corpus": 2126,
+  "seconds_total": 2132,
+  "cache_meta": {
+    "20": {
+      "suite": "big",
+      "model": "google/gemma-3-1b-pt",
+      "nominal_l0": 120,
+      "writer": "scripts/e01_pass.py (06 path)",
+      "layer": 20,
+      "d_sae": 16384,
+      "n_rows": 4002480,
+      "n_nonzero": 497239192,
+      "bytes_on_disk": 2020976616
+    },
+    "22": {
+      "suite": "big",
+      "model": "google/gemma-3-1b-pt",
+      "nominal_l0": 120,
+      "writer": "scripts/e01_pass.py (06 path)",
+      "layer": 22,
+      "d_sae": 16384,
+      "n_rows": 4002480,
+      "n_nonzero": 498283063,
+      "bytes_on_disk": 2025152100
+    },
+    "24": {
+      "suite": "big",
+      "model": "google/gemma-3-1b-pt",
+      "nominal_l0": 120,
+      "writer": "scripts/e01_pass.py (06 path)",
+      "layer": 24,
+      "d_sae": 16384,
+      "n_rows": 4002480,
+      "n_nonzero": 502822728,
+      "bytes_on_disk": 2043310760
+    }
+  },
+  "nnz_per_row": {
+    "20": 124.2327736803182,
+    "22": 124.49357973056705,
+    "24": 125.62779276848354
+  },
+  "nnz_per_row_first50": {
+    "20": 124.2388725490196,
+    "22": 124.57689705882353,
+    "24": 125.60746078431373
+  },
+  "identity": {
+    "anchors_early": {
+      "n_checked": 355,
+      "ok": true,
+      "at_seq": 1008
+    },
+    "anchors_all": {
+      "n": 5152,
+      "ok": true
+    },
+    "pool_reproduced": true,
+    "n_pool_rebuilt": 3795,
+    "n_distinct_types": 83310,
+    "n_rows_covered_by_pool": 3197155,
+    "half_counts_ok": true
+  },
+  "project_gb_end": 12.806172886,
+  "free_gb_end": 38.527107072
+}

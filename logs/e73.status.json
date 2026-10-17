@@ -1,0 +1,90 @@
+{
+ "run": "e73",
+ "runner_pid": 77541,
+ "start": "2026-10-17T11:17:14",
+ "heartbeat": "2026-10-17T11:39:17",
+ "end": "2026-10-17T11:39:17",
+ "exit_code": 0,
+ "swap_limit_gb": 12.0,
+ "peak_swap_gb": 6.421689453125,
+ "phases": [
+  {
+   "phase": "calibrate_l0_big",
+   "cmd": [
+    "/Users/scasella/Downloads/gf-discovery-ext/.venv/bin/python",
+    "scripts/e73_coverage_admission.py",
+    "--phase",
+    "calibrate_l0_big"
+   ],
+   "pid": 77543,
+   "pgid": 77543,
+   "start": "2026-10-17T11:17:14",
+   "end": "2026-10-17T11:28:26",
+   "exit_code": 0,
+   "peak_swap_gb": 6.140380859375,
+   "peak_rss_gb": 5.4407958984375,
+   "killed": null
+  },
+  {
+   "phase": "calibrate_l0_small",
+   "cmd": [
+    "/Users/scasella/Downloads/gf-discovery-ext/.venv/bin/python",
+    "scripts/e73_coverage_admission.py",
+    "--phase",
+    "calibrate_l0_small"
+   ],
+   "pid": 81687,
+   "pgid": 81687,
+   "start": "2026-10-17T11:28:26",
+   "end": "2026-10-17T11:39:07",
+   "exit_code": 0,
+   "peak_swap_gb": 6.421689453125,
+   "peak_rss_gb": 5.02410888671875,
+   "killed": null
+  },
+  {
+   "phase": "verdict",
+   "cmd": [
+    "/Users/scasella/Downloads/gf-discovery-ext/.venv/bin/python",
+    "scripts/e73_coverage_admission.py",
+    "--phase",
+    "verdict"
+   ],
+   "pid": 84419,
+   "pgid": 84419,
+   "start": "2026-10-17T11:39:07",
+   "end": "2026-10-17T11:39:17",
+   "exit_code": 0,
+   "peak_swap_gb": 6.382626953125,
+   "peak_rss_gb": 0.0014190673828125,
+   "killed": null
+  }
+ ],
+ "hashes_appended": [
+  "d576fde4bb513ab77190867dfe9f0c207c9286bf92f7249d1a6e4fe9d8a855e4  results/e73_calib_l0_big.npz (e73 calibrate l0_big: bank, S40 and target values per condition, 2026-10-17T11:28:20)",
+  "cf0e570f1b2c31ca97c53da56a6dff7206294e35497c439a8b4fbb376694050d  results/e73_calib_l0_big.json (e73 calibrate l0_big: coverage-admission calibration numbers (verdict not yet applied), 2026-10-17T11:28:20)",
+  "0823a5afa1399656bd3f2e78d3745657802393898a7d812766d8c2e15716b477  results/e73_calib_l0_small.npz (e73 calibrate l0_small: bank, S40 and target values per condition, 2026-10-17T11:38:58)",
+  "cf4816034ebf059951f60d222033b611971fb009822a94a7c092fa8e3dba903d  results/e73_calib_l0_small.json (e73 calibrate l0_small: coverage-admission calibration numbers (verdict not yet applied), 2026-10-17T11:38:58)",
+  "91c5a8802ca8d19e378ac744f2ba37843bdca2660724df6455b39fcc8478c6ac  results/e73_coverage_admission.json (e73 verdict: levels {\"l0_big\": {\"T-ES\": \"NOT ADMITTED\", \"T-MG\": \"NOT ADMITTED\", \"T-COS\": \"NOT ADMITTED\"}, \"l0_small\": {\"T-ES\": \"NOT ADMITTED\", \"T-MG\": \"NOT ADMITTED\", \"T-COS\": \"NOT ADMITTED\"}}; rule set broken False, 2026-10-17T11:39:09)"
+ ],
+ "session": "local_8d2f2d59",
+ "expected_s": 3600,
+ "script": "scripts/e73_coverage_admission.py",
+ "script_sha256": "236e5c13fe8c55865d82096e4599ef37af9ee7d3ce7e8917e104b49a7c2f0046",
+ "required_hashed": {
+  "NOTE_coverage_admission_L12.md": "2f74f277e7eb24e3ab7ade2ea1a1e5f968e28667b4fdad532f33dcec4fa4c1b2",
+  "scripts/e73_coverage_admission.py": "236e5c13fe8c55865d82096e4599ef37af9ee7d3ce7e8917e104b49a7c2f0046",
+  "docs/e73_smoke_synthetic.py": "2823bafe7cb52eaa19993e9378c176495324e2f209ba90424b464cd005b19307"
+ },
+ "preflight": {
+  "swap_gb": 3.76,
+  "free_disk_gb": 64.9,
+  "folder_gb": 15.29
+ },
+ "preflight_notes": [],
+ "env": {
+  "HF_HOME": "/Users/scasella/Downloads/gf-discovery-ext/hf_home",
+  "HF_HUB_OFFLINE": "1"
+ },
+ "launched": "2026-10-17T11:17:14"
+}

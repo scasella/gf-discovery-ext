@@ -1,0 +1,35 @@
+e68 sha256 6c1c806de17abd3e209cfb4c5a82ed9b1bfc5dff6e0525fdd48addfb2f911233
+Loading weights:   0%|          | 0/340 [00:00<?, ?it/s]Loading weights: 100%|██████████| 340/340 [00:00<00:00, 8771.67it/s]
+[97s] G7: kept-row residuals (float32) at [5, 6, 7, 8, 9]; model freed
+G7: alignment R^2 {'logcosh/12': 0.9999999999999679, 'logcosh/37': 0.9999999999999649}
+HASHES += f6b1b8f05c7f58dbd054476751bfca8116011344ee2343a2789d3354cd3275ab  results/e68_prep_G7_nullscores.npy (e68 census prep G7: joint-null scores, 2026-10-15T21:25:50)
+HASHES += 4c0ef43f470722415bb31d3e6ad93ea1669e290a43c1f25c1297e90ff2185c04  results/e68_prep_G7.json (e68 census prep G7: alignment gate, signatures, joint-null directions, testability; before any latent number, 2026-10-15T21:25:50)
+[123s] G7: prep ready; candidates with a testable signature 25/34
+[140s] G7 decoder resid_post_all/L5_16k_big: null p99.9 0.864 recon-null k08 p1 signed 1 nonneg 2 (16s)
+[157s] G7 decoder resid_post_all/L5_16k_small: null p99.9 0.850 recon-null k08 p1 signed 1 nonneg 1 (17s)
+[173s] G7 decoder resid_post_all/L6_16k_big: null p99.9 0.858 recon-null k08 p1 signed 1 nonneg 1 (17s)
+[190s] G7 decoder resid_post_all/L6_16k_small: null p99.9 0.864 recon-null k08 p1 signed 1 nonneg 1 (17s)
+[207s] G7 decoder resid_post_all/L7_16k_big: null p99.9 0.858 recon-null k08 p1 signed 1 nonneg 1 (17s)
+[224s] G7 decoder resid_post_all/L7_16k_small: null p99.9 0.864 recon-null k08 p1 signed 1 nonneg 1 (17s)
+[241s] G7 decoder resid_post_all/L8_16k_big: null p99.9 0.851 recon-null k08 p1 signed 1 nonneg 1 (17s)
+[258s] G7 decoder resid_post_all/L8_16k_small: null p99.9 0.862 recon-null k08 p1 signed 1 nonneg 1 (17s)
+[275s] G7 decoder resid_post_all/L9_16k_big: null p99.9 0.828 recon-null k08 p1 signed 2 nonneg 2 (17s)
+[291s] G7 decoder resid_post_all/L9_16k_small: null p99.9 0.853 recon-null k08 p1 signed 1 nonneg 1 (17s)
+[308s] G7 decoder resid_post/L7_16k_medium: null p99.9 0.864 recon-null k08 p1 signed 1 nonneg 1 (17s)
+[346s] G7 decoder resid_post/L7_65k_medium: null p99.9 0.891 recon-null k08 p1 signed 1 nonneg 1 (38s)
+[403s] G7 decoder resid_post/L7_262k_medium: null p99.9 0.895 recon-null k08 p1 signed 1 nonneg 1 (57s)
+HASHES += 9c5c4218d353d1d9093f9f64b4b0f372bb8f0dc4ac9ca4084bfded1e88e1a476  results/e68_decoder_G7.json (e68 census decoder G7, 2026-10-15T21:30:33)
+[418s] G7 acts resid_post_all/L5_16k_big (13s; null latents 500/14926 eligible; swap 2.6 GB)
+[424s] G7 acts resid_post_all/L5_16k_small (5s; null latents 500/5653 eligible; swap 2.6 GB)
+[430s] G7 acts resid_post_all/L6_16k_big (6s; null latents 500/15065 eligible; swap 2.6 GB)
+[435s] G7 acts resid_post_all/L6_16k_small (5s; null latents 500/6571 eligible; swap 2.6 GB)
+[441s] G7 acts resid_post_all/L7_16k_big (6s; null latents 500/15306 eligible; swap 2.6 GB)
+[447s] G7 acts resid_post_all/L7_16k_small (5s; null latents 500/7030 eligible; swap 2.5 GB)
+[453s] G7 acts resid_post_all/L8_16k_big (6s; null latents 500/15357 eligible; swap 2.5 GB)
+[460s] G7 acts resid_post_all/L8_16k_small (6s; null latents 500/6730 eligible; swap 2.5 GB)
+[467s] G7 acts resid_post_all/L9_16k_big (7s; null latents 500/15631 eligible; swap 2.8 GB)
+[474s] G7 acts resid_post_all/L9_16k_small (7s; null latents 500/7199 eligible; swap 2.8 GB)
+[480s] G7 acts resid_post/L7_16k_medium (6s; null latents 500/8652 eligible; swap 3.0 GB)
+[499s] G7 acts resid_post/L7_65k_medium (18s; null latents 500/12737 eligible; swap 5.2 GB)
+[565s] G7 acts resid_post/L7_262k_medium (66s; null latents 500/16130 eligible; swap 7.5 GB)
+HASHES += 62e57a011865870a765d1e4c34eb2fe2891796716ae08af648d6ca72d65bd769  results/e68_acts_G7.json (e68 census acts G7, 2026-10-15T21:33:16)

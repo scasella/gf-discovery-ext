@@ -1,0 +1,66 @@
+stub written; 16 flags, 7 with k>=9
+
+================ layer 20 ================
+    stream L20 200000/4002480 rows 4s
+    stream L20 1200000/4002480 rows 28s
+    stream L20 2200000/4002480 rows 51s
+    stream L20 3200000/4002480 rows 71s
+    stream L20 4002480/4002480 rows 87s
+  [DROP L20] lag1 rule -> [1038] shares [0.314]; lag2 rule -> []
+  [STRICT-12 L20] gap 5.709 rho 0.7412587412587412 -> FAIL (closure)
+  [NEG L20] ordinal FAIL (closure); freq-pseudo {'n': 115, 'closed': 1, 'passed': 0, 'marginal': 0}; class-perm noLOO 0/200
+  [PLANT L20] [{'rho': 0.05, 'recall_joint': 1.0}, {'rho': 0.1, 'recall_joint': 1.0}, {'rho': 0.15, 'recall_joint': 0.81}, {'rho': 0.2, 'recall_joint': 0.42}, {'rho': 0.3, 'recall_joint': 0.08}]
+  flag k=8   cal=False gap 1.8615146059010588 rho 0.9761904761904762 -> NOT ADJUDICABLE (k<9)
+  flag k=9   cal=False gap 1.9340315884971764 rho 0.5333333333333333 -> FAIL (order)
+
+================ layer 22 ================
+    stream L22 200000/4002480 rows 4s
+    stream L22 1200000/4002480 rows 26s
+    stream L22 2200000/4002480 rows 47s
+    stream L22 3200000/4002480 rows 72s
+    stream L22 4002480/4002480 rows 89s
+  [DROP L22] lag1 rule -> [] shares []; lag2 rule -> []
+  [STRICT-12 L22] gap 6.330 rho 0.7622377622377623 -> FAIL (closure)
+  [NEG L22] ordinal FAIL (closure); freq-pseudo {'n': 119, 'closed': 3, 'passed': 0, 'marginal': 0}; class-perm noLOO 0/200
+  [PLANT L22] [{'rho': 0.05, 'recall_joint': 1.0}, {'rho': 0.1, 'recall_joint': 1.0}, {'rho': 0.15, 'recall_joint': 0.77}, {'rho': 0.2, 'recall_joint': 0.52}, {'rho': 0.3, 'recall_joint': 0.04}]
+  flag k=5   cal=False gap 1.4416547160651632 rho 1.0 -> NOT ADJUDICABLE (k<9)
+  flag k=5   cal=False gap 1.3012508668668674 rho 0.9 -> NOT ADJUDICABLE (k<9)
+  flag k=15  cal=False gap 2.0963121846132373 rho 0.6928571428571428 -> FAIL (order)
+
+================ layer 24 ================
+    stream L24 200000/4002480 rows 4s
+    stream L24 1200000/4002480 rows 26s
+    stream L24 2200000/4002480 rows 49s
+    stream L24 3200000/4002480 rows 72s
+    stream L24 4002480/4002480 rows 90s
+  [DROP L24] lag1 rule -> [] shares []; lag2 rule -> []
+  [STRICT-12 L24] gap 6.100 rho 0.7902097902097902 -> FAIL (closure)
+  [NEG L24] ordinal FAIL (closure); freq-pseudo {'n': 109, 'closed': 0, 'passed': 0, 'marginal': 0}; class-perm noLOO 0/200
+  [PLANT L24] [{'rho': 0.05, 'recall_joint': 1.0}, {'rho': 0.1, 'recall_joint': 0.99}, {'rho': 0.15, 'recall_joint': 0.73}, {'rho': 0.2, 'recall_joint': 0.43}, {'rho': 0.3, 'recall_joint': 0.03}]
+  flag k=12  cal=False gap 1.7678892402922897 rho 0.5734265734265734 -> FAIL (order)
+  flag k=10  cal=False gap 1.7220451721030332 rho 1.0 -> NOT ADJUDICABLE (saturated cell)
+  flag k=6   cal=False gap 1.3415987173784503 rho 1.0 -> NOT ADJUDICABLE (k<9)
+  flag k=5   cal=False gap 1.4587746266894117 rho 1.0 -> NOT ADJUDICABLE (k<9)
+  flag k=6   cal=False gap 1.4575794936230055 rho 0.6 -> NOT ADJUDICABLE (k<9)
+  flag k=8   cal=False gap 1.6306763919996363 rho 1.0 -> NOT ADJUDICABLE (k<9)
+  flag k=6   cal=False gap 1.558818837056269 rho 0.6 -> NOT ADJUDICABLE (k<9)
+  flag k=26  cal=False gap 2.4142744891565453 rho 0.5466666666666666 -> FAIL (order)
+  flag k=6   cal=False gap 1.4749216497657467 rho 1.0 -> NOT ADJUDICABLE (k<9)
+  flag k=9   cal=False gap 1.7432119132516233 rho 0.5 -> FAIL (order)
+  flag k=11  cal=False gap 1.9120911174851272 rho 0.5181818181818182 -> FAIL (order)
+{
+ "n_flags": 16,
+ "n_k_ge_9": 7,
+ "verdict_counts": {
+  "FAIL (order)": 6,
+  "NOT ADJUDICABLE (k<9)": 9,
+  "NOT ADJUDICABLE (saturated cell)": 1
+ },
+ "passers": [],
+ "strict12_by_layer": {
+  "20": "FAIL (closure)",
+  "22": "FAIL (closure)",
+  "24": "FAIL (closure)"
+ },
+ "expected_false_passers": 0.07
+}

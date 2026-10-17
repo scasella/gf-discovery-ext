@@ -1,0 +1,109 @@
+
+===== 2026-10-17T11:17:14 phase calibrate_l0_big: /Users/scasella/Downloads/gf-discovery-ext/.venv/bin/python scripts/e73_coverage_admission.py --phase calibrate_l0_big
+e73 sha256 236e5c13fe8c55865d82096e4599ef37af9ee7d3ce7e8917e104b49a7c2f0046 
+[1s rss 1.04 peak 1.04GB] swap 3.8 GB
+[7s rss 2.49 peak 2.49GB] context: n 203328, labels paren 0.0309 quote 0.0599, plant rate 0.0641, sigma {'wspan': 55.17238998413086, 'full_rank': 22.706390380859375}
+[23s rss 3.30 peak 5.08GB] [l0_big] error: FVU raw 0.190
+/Users/scasella/Downloads/gf-discovery-ext/scripts/e73_coverage_admission.py:308: UserWarning: Sparse CSR tensor support is in beta state. If you miss a functionality in the sparse tensor support, please submit a feature request to https://github.com/pytorch/pytorch/issues. (Triggered internally at /Users/runner/work/pytorch/pytorch/aten/src/ATen/SparseCsrTensorImpl.cpp:51.)
+  zc = z.to_sparse_csr()                            # per-batch CSR block, no COO copy
+[30s rss 3.25 peak 5.08GB] [l0_big] encoded: L0 110.3, nnz 22433802
+[30s rss 3.36 peak 5.08GB] [l0_big] knockout identity on 4096 rows: max |d| 5.87e-04
+[32s rss 3.50 peak 5.08GB] [l0_big] ladder sizes {'paren': {'s0': 0, 's1': 1, 's3': 3, 's10': 10, 'sND': 1015, 's30': 1015, 's100': 1016, 's256': 1026}, 'quote': {'s0': 0, 's1': 1, 's3': 3, 's10': 10, 'sND': 736, 's30': 736, 's100': 742, 's256': 787}} ND {'paren': 1005, 'quote': 726}
+[40s rss 3.80 peak 5.08GB] [l0_big] fast-path check: max |d| 2.50e-06 (rms 1.71e-01)
+[42s rss 3.44 peak 5.08GB] [l0_big] k=0 reproduction of e72's ES: ok
+[42s rss 3.37 peak 5.08GB] [l0_big] rule-6 pre-activations: 326 columns
+[50s rss 3.03 peak 5.08GB] [l0_big] paren s0: |K| 0; skew/45:C,U,C; r8 0.756/0.523 r6 0.749/0.520
+[57s rss 2.67 peak 5.08GB] [l0_big] paren s1: |K| 1; skew/45:C,U,A; r8 0.743/0.523 r6 0.733/0.520
+[63s rss 2.95 peak 5.08GB] [l0_big] paren s3: |K| 3; skew/45:C,A,A; r8 0.728/0.523 r6 0.734/0.518
+[70s rss 3.06 peak 5.08GB] [l0_big] paren s10: |K| 10; skew/45:U,U,U; r8 0.710/0.524 r6 0.716/0.518
+[77s rss 3.05 peak 5.08GB] [l0_big] paren sND: |K| 1015; skew/45:U,A,U; r8 0.664/0.518 r6 0.710/0.516
+[85s rss 2.04 peak 5.08GB] [l0_big] paren s30: |K| 1015; skew/45:U,A,U; r8 0.664/0.518 r6 0.710/0.516
+[94s rss 1.21 peak 5.08GB] [l0_big] paren s100: |K| 1016; skew/45:U,A,U; r8 0.664/0.518 r6 0.710/0.516
+[101s rss 1.85 peak 5.08GB] [l0_big] paren s256: |K| 1026; skew/45:U,A,U; r8 0.663/0.518 r6 0.709/0.516
+[106s rss 1.71 peak 5.08GB] [l0_big] quote s0: |K| 0; logcosh/29:C,C,C skew/29:C,C,C; r8 0.756/0.519 r6 0.762/0.518
+[112s rss 2.01 peak 5.08GB] [l0_big] quote s1: |K| 1; logcosh/29:C,C,A skew/29:C,C,A; r8 0.746/0.519 r6 0.743/0.518
+[119s rss 1.55 peak 5.08GB] [l0_big] quote s3: |K| 3; logcosh/29:C,U,A skew/29:C,U,A; r8 0.742/0.519 r6 0.733/0.517
+[127s rss 1.09 peak 5.08GB] [l0_big] quote s10: |K| 10; logcosh/29:U,A,A skew/29:U,A,A; r8 0.729/0.518 r6 0.714/0.518
+[135s rss 1.49 peak 5.08GB] [l0_big] quote sND: |K| 736; logcosh/29:U,A,U skew/29:U,A,U; r8 0.641/0.518 r6 0.697/0.518
+[143s rss 0.83 peak 5.08GB] [l0_big] quote s30: |K| 736; logcosh/29:U,A,U skew/29:U,A,U; r8 0.641/0.518 r6 0.697/0.518
+[152s rss 1.10 peak 5.08GB] [l0_big] quote s100: |K| 742; logcosh/29:U,A,U skew/29:U,A,U; r8 0.641/0.518 r6 0.697/0.518
+[160s rss 2.17 peak 5.08GB] [l0_big] quote s256: |K| 787; logcosh/29:U,A,U skew/29:U,A,U; r8 0.641/0.518 r6 0.696/0.518
+[209s rss 1.86 peak 5.08GB] [l0_big] matched paren: control ADDS on 0 of 20 (T-ES)
+[257s rss 1.86 peak 5.08GB] [l0_big] matched quote: control ADDS on 0 of 20 (T-ES)
+[305s rss 1.86 peak 5.08GB] [l0_big] size-matched paren sND (|K| 1015): control ADDS on 0 of 20 (T-ES)
+[354s rss 1.75 peak 5.08GB] [l0_big] size-matched paren s100 (|K| 1016): control ADDS on 0 of 20 (T-ES)
+[402s rss 1.75 peak 5.08GB] [l0_big] size-matched paren s256 (|K| 1026): control ADDS on 0 of 20 (T-ES)
+[450s rss 1.81 peak 5.08GB] [l0_big] size-matched quote sND (|K| 736): control ADDS on 0 of 20 (T-ES)
+[499s rss 1.62 peak 5.08GB] [l0_big] size-matched quote s100 (|K| 742): control ADDS on 0 of 20 (T-ES)
+[548s rss 1.83 peak 5.08GB] [l0_big] size-matched quote s256 (|K| 787): control ADDS on 0 of 20 (T-ES)
+[568s rss 2.43 peak 5.08GB] [l0_big] plant wspan kappa 1: T-ES U T-MG A T-COS C
+[591s rss 3.23 peak 5.08GB] [l0_big] plant wspan kappa 2: T-ES A T-MG A T-COS C
+[609s rss 4.94 peak 5.44GB] [l0_big] plant wspan kappa 4: T-ES A T-MG A T-COS C
+[628s rss 2.19 peak 5.44GB] [l0_big] plant full_rank kappa 1: T-ES U T-MG U T-COS C
+[646s rss 4.10 peak 5.44GB] [l0_big] plant full_rank kappa 2: T-ES U T-MG U T-COS C
+[665s rss 3.21 peak 5.67GB] [l0_big] plant full_rank kappa 4: T-ES U T-MG A T-COS C
+HASHES += d576fde4bb513ab77190867dfe9f0c207c9286bf92f7249d1a6e4fe9d8a855e4  results/e73_calib_l0_big.npz (e73 calibrate l0_big: bank, S40 and target values per condition, 2026-10-17T11:28:20)
+HASHES += cf0e570f1b2c31ca97c53da56a6dff7206294e35497c439a8b4fbb376694050d  results/e73_calib_l0_big.json (e73 calibrate l0_big: coverage-admission calibration numbers (verdict not yet applied), 2026-10-17T11:28:20)
+[665s rss 3.18 peak 5.67GB] [l0_big] done in 658 s
+===== 2026-10-17T11:28:26 phase calibrate_l0_big exit 0; peak swap 6.14 GB; peak RSS 5.44 GB
+
+===== 2026-10-17T11:28:26 phase calibrate_l0_small: /Users/scasella/Downloads/gf-discovery-ext/.venv/bin/python scripts/e73_coverage_admission.py --phase calibrate_l0_small
+e73 sha256 236e5c13fe8c55865d82096e4599ef37af9ee7d3ce7e8917e104b49a7c2f0046 
+[1s rss 1.04 peak 1.04GB] swap 5.9 GB
+[7s rss 2.57 peak 2.57GB] context: n 203328, labels paren 0.0309 quote 0.0599, plant rate 0.0641, sigma {'wspan': 55.17238998413086, 'full_rank': 22.706390380859375}
+[22s rss 4.43 peak 5.81GB] [l0_small] error: FVU raw 0.278
+/Users/scasella/Downloads/gf-discovery-ext/scripts/e73_coverage_admission.py:308: UserWarning: Sparse CSR tensor support is in beta state. If you miss a functionality in the sparse tensor support, please submit a feature request to https://github.com/pytorch/pytorch/issues. (Triggered internally at /Users/runner/work/pytorch/pytorch/aten/src/ATen/SparseCsrTensorImpl.cpp:51.)
+  zc = z.to_sparse_csr()                            # per-batch CSR block, no COO copy
+[28s rss 3.59 peak 5.81GB] [l0_small] encoded: L0 18.8, nnz 3817653
+[29s rss 3.56 peak 5.81GB] [l0_small] knockout identity on 4096 rows: max |d| 1.37e-04
+[29s rss 3.71 peak 5.81GB] [l0_small] ladder sizes {'paren': {'s0': 0, 's1': 1, 's3': 3, 's10': 10, 'sND': 315, 's30': 315, 's100': 327, 's256': 448}, 'quote': {'s0': 0, 's1': 1, 's3': 3, 's10': 10, 'sND': 253, 's30': 253, 's100': 268, 's256': 396}} ND {'paren': 305, 'quote': 243}
+[37s rss 3.14 peak 5.81GB] [l0_small] fast-path check: max |d| 4.17e-07 (rms 3.40e-02)
+[39s rss 4.43 peak 5.81GB] [l0_small] rule-6 pre-activations: 383 columns
+[46s rss 4.52 peak 5.81GB] [l0_small] paren s0: |K| 0; skew/45:U,U,C; r8 0.735/0.520 r6 0.771/0.520
+[53s rss 4.83 peak 5.81GB] [l0_small] paren s1: |K| 1; skew/45:U,U,U; r8 0.735/0.520 r6 0.772/0.520
+[59s rss 3.09 peak 5.81GB] [l0_small] paren s3: |K| 3; skew/45:U,U,A; r8 0.719/0.520 r6 0.763/0.520
+[66s rss 2.74 peak 5.81GB] [l0_small] paren s10: |K| 10; skew/45:U,A,U; r8 0.688/0.520 r6 0.748/0.519
+[73s rss 2.61 peak 5.81GB] [l0_small] paren sND: |K| 315; skew/45:U,A,U; r8 0.594/0.520 r6 0.740/0.516
+[80s rss 3.14 peak 5.81GB] [l0_small] paren s30: |K| 315; skew/45:U,A,U; r8 0.594/0.520 r6 0.740/0.516
+[87s rss 3.14 peak 5.81GB] [l0_small] paren s100: |K| 327; skew/45:U,A,U; r8 0.595/0.520 r6 0.740/0.516
+[95s rss 3.14 peak 5.81GB] [l0_small] paren s256: |K| 448; skew/45:U,A,U; r8 0.599/0.520 r6 0.738/0.516
+[99s rss 3.19 peak 5.81GB] [l0_small] quote s0: |K| 0; logcosh/29:C,C,C skew/29:C,C,C; r8 0.729/0.514 r6 0.778/0.515
+[105s rss 3.23 peak 5.81GB] [l0_small] quote s1: |K| 1; logcosh/29:C,C,A skew/29:C,C,A; r8 0.728/0.514 r6 0.777/0.515
+[111s rss 3.26 peak 5.81GB] [l0_small] quote s3: |K| 3; logcosh/29:C,C,A skew/29:C,C,A; r8 0.728/0.514 r6 0.777/0.515
+[118s rss 3.19 peak 5.81GB] [l0_small] quote s10: |K| 10; logcosh/29:U,U,A skew/29:U,C,A; r8 0.717/0.514 r6 0.781/0.517
+[125s rss 3.32 peak 5.81GB] [l0_small] quote sND: |K| 253; logcosh/29:A,A,U skew/29:A,A,U; r8 0.618/0.517 r6 0.776/0.512
+[132s rss 3.25 peak 5.81GB] [l0_small] quote s30: |K| 253; logcosh/29:A,A,U skew/29:A,A,U; r8 0.618/0.517 r6 0.776/0.512
+[140s rss 3.21 peak 5.81GB] [l0_small] quote s100: |K| 268; logcosh/29:A,A,U skew/29:A,A,U; r8 0.619/0.517 r6 0.776/0.512
+[147s rss 3.20 peak 5.81GB] [l0_small] quote s256: |K| 396; logcosh/29:A,A,U skew/29:U,A,U; r8 0.613/0.516 r6 0.777/0.512
+[194s rss 1.81 peak 5.81GB] [l0_small] matched paren: control ADDS on 0 of 20 (T-ES)
+[240s rss 1.68 peak 5.81GB] [l0_small] matched quote: control ADDS on 0 of 20 (T-ES)
+[288s rss 1.72 peak 5.81GB] [l0_small] size-matched paren sND (|K| 315): control ADDS on 0 of 20 (T-ES)
+[336s rss 1.54 peak 5.81GB] [l0_small] size-matched paren s100 (|K| 327): control ADDS on 0 of 20 (T-ES)
+[383s rss 1.60 peak 5.81GB] [l0_small] size-matched paren s256 (|K| 448): control ADDS on 0 of 20 (T-ES)
+[430s rss 1.62 peak 5.81GB] [l0_small] size-matched quote sND (|K| 253): control ADDS on 0 of 20 (T-ES)
+[478s rss 1.60 peak 5.81GB] [l0_small] size-matched quote s100 (|K| 268): control ADDS on 0 of 20 (T-ES)
+[524s rss 1.61 peak 5.81GB] [l0_small] size-matched quote s256 (|K| 396): control ADDS on 0 of 20 (T-ES)
+[542s rss 3.76 peak 5.81GB] [l0_small] plant wspan kappa 1: T-ES U T-MG A T-COS C
+[561s rss 3.31 peak 5.81GB] [l0_small] plant wspan kappa 2: T-ES A T-MG A T-COS C
+[578s rss 4.40 peak 5.81GB] [l0_small] plant wspan kappa 4: T-ES A T-MG A T-COS C
+[596s rss 3.48 peak 5.81GB] [l0_small] plant full_rank kappa 1: T-ES U T-MG U T-COS C
+[613s rss 4.17 peak 5.81GB] [l0_small] plant full_rank kappa 2: T-ES U T-MG A T-COS C
+[632s rss 3.81 peak 5.81GB] [l0_small] plant full_rank kappa 4: T-ES U T-MG A T-COS C
+HASHES += 0823a5afa1399656bd3f2e78d3745657802393898a7d812766d8c2e15716b477  results/e73_calib_l0_small.npz (e73 calibrate l0_small: bank, S40 and target values per condition, 2026-10-17T11:38:58)
+HASHES += cf4816034ebf059951f60d222033b611971fb009822a94a7c092fa8e3dba903d  results/e73_calib_l0_small.json (e73 calibrate l0_small: coverage-admission calibration numbers (verdict not yet applied), 2026-10-17T11:38:58)
+[632s rss 3.83 peak 5.81GB] [l0_small] done in 625 s
+===== 2026-10-17T11:39:07 phase calibrate_l0_small exit 0; peak swap 6.42 GB; peak RSS 5.02 GB
+
+===== 2026-10-17T11:39:07 phase verdict: /Users/scasella/Downloads/gf-discovery-ext/.venv/bin/python scripts/e73_coverage_admission.py --phase verdict
+e73 sha256 236e5c13fe8c55865d82096e4599ef37af9ee7d3ce7e8917e104b49a7c2f0046 
+[1s rss 1.04 peak 1.04GB] swap 6.4 GB
+HASHES += 91c5a8802ca8d19e378ac744f2ba37843bdca2660724df6455b39fcc8478c6ac  results/e73_coverage_admission.json (e73 verdict: levels {"l0_big": {"T-ES": "NOT ADMITTED", "T-MG": "NOT ADMITTED", "T-COS": "NOT ADMITTED"}, "l0_small": {"T-ES": "NOT ADMITTED", "T-MG": "NOT ADMITTED", "T-COS": "NOT ADMITTED"}}; rule set broken False, 2026-10-17T11:39:09)
+[1s rss 1.05 peak 1.05GB] VERDICT {"l0_big": {"T-ES": "NOT ADMITTED", "T-MG": "NOT ADMITTED", "T-COS": "NOT ADMITTED"}, "l0_small": {"T-ES": "NOT ADMITTED", "T-MG": "NOT ADMITTED", "T-COS": "NOT ADMITTED"}} best {'l0_big': None, 'l0_small': None} broken False
+   T-ES is not admitted at L12 16k l0_big; first failure: paren, rule2.
+   T-MG is not admitted at L12 16k l0_big; first failure: paren, rule1.
+   T-COS is not admitted at L12 16k l0_big; first failure: paren, rule2.
+   T-ES is not admitted at L12 16k l0_small; first failure: paren, rule1.
+   T-MG is not admitted at L12 16k l0_small; first failure: paren, rule1.
+   T-COS is not admitted at L12 16k l0_small; first failure: paren, rule2.
+===== 2026-10-17T11:39:17 phase verdict exit 0; peak swap 6.38 GB; peak RSS 0.00 GB
+===== 2026-10-17T11:39:17 run e73 end; exit 0; peak swap 6.42 GB

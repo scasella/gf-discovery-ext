@@ -1,0 +1,6414 @@
+{
+ "prereg_sha256": "edf7575075663cf4477ed3fdcec5e8eaa85ae89ac9e4c0e924bcc93a370035ba",
+ "choice": {
+  "units": {
+   "K": 16,
+   "N_logcosh": 64,
+   "N_skew": 64,
+   "tdi_cap": 3.0,
+   "cluster_repro": 0.8,
+   "ica_repro": 0.8,
+   "bimodality": false
+  },
+  "n_layers_recovered_on_P2": 2,
+  "note": null,
+  "whitening": {
+   "7": {
+    "setting": "tw_N32_n16",
+    "N_MIN": 32,
+    "n0": 16,
+    "probe_paren": 0.7528033251716196,
+    "auc_floor": 0.7,
+    "guard": 0.7446839395604136
+   },
+   "12": {
+    "setting": "tw_N32_n16",
+    "N_MIN": 32,
+    "n0": 16,
+    "probe_paren": 0.7336484231602363,
+    "auc_floor": 0.7,
+    "guard": 0.7212257361708304
+   },
+   "24": {
+    "setting": "tw_N32_n16",
+    "N_MIN": 32,
+    "n0": 16,
+    "probe_paren": 0.6527288320748261,
+    "auc_floor": 0.7,
+    "guard": 0.640961963279755
+   }
+  }
+ },
+ "layers": {
+  "7": {
+   "frozen": {
+    "layer": 7,
+    "whitening": {
+     "setting": "tw_N32_n16",
+     "N_MIN": 32,
+     "n0": 16,
+     "probe_paren": 0.7528033251716196,
+     "auc_floor": 0.7,
+     "guard": 0.7446839395604136
+    },
+    "n_rows": 203328,
+    "units": [
+     {
+      "kind": "cluster",
+      "id": 0,
+      "size": 11806,
+      "n_types": 1919,
+      "max_type_share": 0.04878875148229714,
+      "n_docs": 1000,
+      "repro": 0.4303900107569277,
+      "tdi": 1.0692902471025667,
+      "tdi_self_incl": 1.2749790940895542,
+      "screened": false
+     },
+     {
+      "kind": "cluster",
+      "id": 1,
+      "size": 8707,
+      "n_types": 1397,
+      "max_type_share": 0.058229011140461695,
+      "n_docs": 1000,
+      "repro": 0.22097716154293928,
+      "tdi": 1.0111170880425302,
+      "tdi_self_incl": 1.2551798334321065,
+      "screened": false
+     },
+     {
+      "kind": "cluster",
+      "id": 2,
+      "size": 15882,
+      "n_types": 2494,
+      "max_type_share": 0.06604961591739075,
+      "n_docs": 1000,
+      "repro": 0.1805207340211349,
+      "tdi": 1.0156810519896287,
+      "tdi_self_incl": 1.199470956635371,
+      "screened": false
+     },
+     {
+      "kind": "cluster",
+      "id": 3,
+      "size": 17594,
+      "n_types": 2846,
+      "max_type_share": 0.04637944753893373,
+      "n_docs": 1000,
+      "repro": 0.21862249091941405,
+      "tdi": 0.9859359574526069,
+      "tdi_self_incl": 1.1764232510310586,
+      "screened": false
+     },
+     {
+      "kind": "cluster",
+      "id": 4,
+      "size": 10909,
+      "n_types": 2335,
+      "max_type_share": 0.04280869007241727,
+      "n_docs": 999,
+      "repro": 0.7050460906762921,
+      "tdi": 0.9824153735213353,
+      "tdi_self_incl": 1.3582960381729767,
+      "screened": false
+     },
+     {
+      "kind": "cluster",
+      "id": 5,
+      "size": 12417,
+      "n_types": 2289,
+      "max_type_share": 0.0520254489812354,
+      "n_docs": 1000,
+      "repro": 0.5046543478883216,
+      "tdi": 0.9626905012170398,
+      "tdi_self_incl": 1.2290788316907961,
+      "screened": false
+     },
+     {
+      "kind": "cluster",
+      "id": 6,
+      "size": 14461,
+      "n_types": 2280,
+      "max_type_share": 0.045225088168176476,
+      "n_docs": 1000,
+      "repro": 0.1591513900927437,
+      "tdi": 0.987857370535147,
+      "tdi_self_incl": 1.1939850895838195,
+      "screened": false
+     },
+     {
+      "kind": "cluster",
+      "id": 7,
+      "size": 15110,
+      "n_types": 2437,
+      "max_type_share": 0.04923891462607545,
+      "n_docs": 1000,
+      "repro": 0.3122746070929449,
+      "tdi": 1.001891708761822,
+      "tdi_self_incl": 1.2325494443789882,
+      "screened": false
+     },
+     {
+      "kind": "cluster",
+      "id": 8,
+      "size": 9291,
+      "n_types": 1450,
+      "max_type_share": 0.05790549994618448,
+      "n_docs": 1000,
+      "repro": 0.2634700966347126,
+      "tdi": 1.045815896288022,
+      "tdi_self_incl": 1.2954926643207478,
+      "screened": false
+     },
+     {
+      "kind": "cluster",
+      "id": 9,
+      "size": 11414,
+      "n_types": 2379,
+      "max_type_share": 0.05090240056071491,
+      "n_docs": 1000,
+      "repro": 0.2793084140629398,
+      "tdi": 0.9613956761052224,
+      "tdi_self_incl": 1.2922656165829938,
+      "screened": false
+     },
+     {
+      "kind": "cluster",
+      "id": 10,
+      "size": 15624,
+      "n_types": 2814,
+      "max_type_share": 0.048899129544290834,
+      "n_docs": 999,
+      "repro": 0.3756892241971286,
+      "tdi": 1.136960507407958,
+      "tdi_self_incl": 1.3726819898962013,
+      "screened": false
+     },
+     {
+      "kind": "cluster",
+      "id": 11,
+      "size": 16613,
+      "n_types": 2711,
+      "max_type_share": 0.0467706013363029,
+      "n_docs": 1000,
+      "repro": 0.15170723044976603,
+      "tdi": 0.9054259585545827,
+      "tdi_self_incl": 1.097709258133709,
+      "screened": false
+     },
+     {
+      "kind": "cluster",
+      "id": 12,
+      "size": 7837,
+      "n_types": 1731,
+      "max_type_share": 0.052953936455276254,
+      "n_docs": 997,
+      "repro": 0.34929567777805154,
+      "tdi": 1.0461274016332096,
+      "tdi_self_incl": 1.502980507409738,
+      "screened": false
+     },
+     {
+      "kind": "cluster",
+      "id": 13,
+      "size": 19947,
+      "n_types": 2917,
+      "max_type_share": 0.041459868651927606,
+      "n_docs": 1000,
+      "repro": 0.19329638181617734,
+      "tdi": 1.0031417668009879,
+      "tdi_self_incl": 1.2106178530573306,
+      "screened": false
+     },
+     {
+      "kind": "cluster",
+      "id": 14,
+      "size": 6453,
+      "n_types": 986,
+      "max_type_share": 0.10677204401053773,
+      "n_docs": 999,
+      "repro": 0.16770213848135698,
+      "tdi": 1.38673091840345,
+      "tdi_self_incl": 1.6113422643420368,
+      "screened": false
+     },
+     {
+      "kind": "cluster",
+      "id": 15,
+      "size": 9263,
+      "n_types": 1979,
+      "max_type_share": 0.046421245816690056,
+      "n_docs": 999,
+      "repro": 0.1974430392795561,
+      "tdi": 1.0900632353101083,
+      "tdi_self_incl": 1.5047612052650408,
+      "screened": false
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 0,
+      "bimodality": 0.2611793875694275,
+      "eta2_token": 3.640335177845024e-16,
+      "eta2_token_sq": 0.038947833752646155,
+      "eta2_token_abs": 0.05051692070449084,
+      "repro": 0.9338340759277344,
+      "skew": -0.6284360289573669,
+      "ex_kurtosis": 2.423469066619873,
+      "screened": true
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 1,
+      "bimodality": 0.2246672511100769,
+      "eta2_token": 3.8209804502766954e-16,
+      "eta2_token_sq": 0.03271220636468563,
+      "eta2_token_abs": 0.04355644262713336,
+      "repro": 0.4219816327095032,
+      "skew": -0.3608589768409729,
+      "ex_kurtosis": 1.8918547630310059,
+      "screened": false
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 2,
+      "bimodality": 0.20892202854156494,
+      "eta2_token": 3.304235843189096e-16,
+      "eta2_token_sq": 0.03020108631633444,
+      "eta2_token_abs": 0.04670881492265233,
+      "repro": 0.522027313709259,
+      "skew": -0.39282557368278503,
+      "ex_kurtosis": 2.3124027252197266,
+      "screened": false
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 3,
+      "bimodality": 0.16415935754776,
+      "eta2_token": 1.52345700112101e-16,
+      "eta2_token_sq": 0.031888631568453056,
+      "eta2_token_abs": 0.06860791202470601,
+      "repro": 0.9460341334342957,
+      "skew": -0.5028384923934937,
+      "ex_kurtosis": 4.856983661651611,
+      "screened": true
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 4,
+      "bimodality": 0.1985780894756317,
+      "eta2_token": 2.742695258823524e-16,
+      "eta2_token_sq": 0.03123394619816552,
+      "eta2_token_abs": 0.04785375881942206,
+      "repro": 0.5529881119728088,
+      "skew": -0.2228216677904129,
+      "ex_kurtosis": 2.2916464805603027,
+      "screened": false
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 5,
+      "bimodality": 0.200029194355011,
+      "eta2_token": 3.893162972433876e-16,
+      "eta2_token_sq": 0.0323242905653381,
+      "eta2_token_abs": 0.04458501121851142,
+      "repro": 0.8820071220397949,
+      "skew": 0.22709427773952484,
+      "ex_kurtosis": 2.1988682746887207,
+      "screened": true
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 6,
+      "bimodality": 0.21846714615821838,
+      "eta2_token": 3.026841628078272e-16,
+      "eta2_token_sq": 0.030685315378338934,
+      "eta2_token_abs": 0.0479685345025402,
+      "repro": 0.8919637799263,
+      "skew": 0.5448265671730042,
+      "ex_kurtosis": 2.8089542388916016,
+      "screened": true
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 7,
+      "bimodality": 0.19772875308990479,
+      "eta2_token": 4.728025618187516e-16,
+      "eta2_token_sq": 0.05057650142198035,
+      "eta2_token_abs": 0.0684922701415884,
+      "repro": 0.5948932766914368,
+      "skew": 0.2025560736656189,
+      "ex_kurtosis": 2.5128979682922363,
+      "screened": false
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 8,
+      "bimodality": 0.2146446853876114,
+      "eta2_token": 3.3366713354424405e-16,
+      "eta2_token_sq": 0.03716737857776708,
+      "eta2_token_abs": 0.049539363367724916,
+      "repro": 0.807411789894104,
+      "skew": 0.27669382095336914,
+      "ex_kurtosis": 2.043884754180908,
+      "screened": true
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 9,
+      "bimodality": 0.23528839647769928,
+      "eta2_token": 3.4701876076261525e-16,
+      "eta2_token_sq": 0.04527297322309614,
+      "eta2_token_abs": 0.05820196739743113,
+      "repro": 0.6524380445480347,
+      "skew": 0.7324192523956299,
+      "ex_kurtosis": 3.8413562774658203,
+      "screened": false
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 10,
+      "bimodality": 0.21201930940151215,
+      "eta2_token": 4.663881080897056e-16,
+      "eta2_token_sq": 0.05017976894216969,
+      "eta2_token_abs": 0.056524336903841434,
+      "repro": 0.6592459082603455,
+      "skew": 0.24692599475383759,
+      "ex_kurtosis": 1.8652424812316895,
+      "screened": false
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 11,
+      "bimodality": 0.12813858687877655,
+      "eta2_token": 1.3397240831202814e-16,
+      "eta2_token_sq": 0.019921728847145215,
+      "eta2_token_abs": 0.06626671028726232,
+      "repro": 0.8137346506118774,
+      "skew": 0.6643656492233276,
+      "ex_kurtosis": 8.588330268859863,
+      "screened": true
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 12,
+      "bimodality": 0.2488347589969635,
+      "eta2_token": 5.914187306678563e-16,
+      "eta2_token_sq": 0.03131342466208614,
+      "eta2_token_abs": 0.041101290751187895,
+      "repro": 0.9203980565071106,
+      "skew": -0.8158654570579529,
+      "ex_kurtosis": 3.6781578063964844,
+      "screened": true
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 13,
+      "bimodality": 0.1826498955488205,
+      "eta2_token": 8.189538204856191e-16,
+      "eta2_token_sq": 0.11830554261333505,
+      "eta2_token_abs": 0.1068851136784341,
+      "repro": 0.8530980944633484,
+      "skew": 0.027800913900136948,
+      "ex_kurtosis": 2.5674729347229004,
+      "screened": true
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 14,
+      "bimodality": 0.2125946432352066,
+      "eta2_token": 4.663694502628593e-16,
+      "eta2_token_sq": 0.050098007650148546,
+      "eta2_token_abs": 0.05906902842128917,
+      "repro": 0.8721264004707336,
+      "skew": 0.4072553813457489,
+      "ex_kurtosis": 2.7423782348632812,
+      "screened": true
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 15,
+      "bimodality": 0.15903957188129425,
+      "eta2_token": 6.584942026244211e-17,
+      "eta2_token_sq": 0.05376025138287159,
+      "eta2_token_abs": 0.10798532136313689,
+      "repro": 0.9482294321060181,
+      "skew": -0.1216573417186737,
+      "ex_kurtosis": 3.3254570960998535,
+      "screened": true
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 16,
+      "bimodality": 0.10981819033622742,
+      "eta2_token": 1.3539868945689982e-16,
+      "eta2_token_sq": 0.005900896074138183,
+      "eta2_token_abs": 0.07074052530568267,
+      "repro": 0.9679275155067444,
+      "skew": 1.4017897844314575,
+      "ex_kurtosis": 30.179302215576172,
+      "screened": true
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 17,
+      "bimodality": 0.18102861940860748,
+      "eta2_token": 2.406222665466652e-16,
+      "eta2_token_sq": 0.04228921450374034,
+      "eta2_token_abs": 0.05963711910475143,
+      "repro": 0.5448845624923706,
+      "skew": 0.204888716340065,
+      "ex_kurtosis": 2.300426483154297,
+      "screened": false
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 18,
+      "bimodality": 0.1480787694454193,
+      "eta2_token": 2.0405890839233072e-16,
+      "eta2_token_sq": 0.027258718383576328,
+      "eta2_token_abs": 0.061945111490969366,
+      "repro": 0.914404034614563,
+      "skew": -0.4132559299468994,
+      "ex_kurtosis": 5.010550498962402,
+      "screened": true
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 19,
+      "bimodality": 0.17866770923137665,
+      "eta2_token": 2.2213270456714668e-16,
+      "eta2_token_sq": 0.03126199676378911,
+      "eta2_token_abs": 0.053170561491474005,
+      "repro": 0.6118483543395996,
+      "skew": -0.06449777632951736,
+      "ex_kurtosis": 2.6072468757629395,
+      "screened": false
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 20,
+      "bimodality": 0.1487397849559784,
+      "eta2_token": 8.380873464743435e-16,
+      "eta2_token_sq": 0.1518354382781964,
+      "eta2_token_abs": 0.1408078952654604,
+      "repro": 0.6515700817108154,
+      "skew": 0.03279024735093117,
+      "ex_kurtosis": 3.4007439613342285,
+      "screened": false
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 21,
+      "bimodality": 0.18084880709648132,
+      "eta2_token": 7.174768531838202e-16,
+      "eta2_token_sq": 0.15948873895656895,
+      "eta2_token_abs": 0.12820730373737613,
+      "repro": 0.7636424899101257,
+      "skew": 0.3540298044681549,
+      "ex_kurtosis": 3.4020156860351562,
+      "screened": false
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 22,
+      "bimodality": 0.24786801636219025,
+      "eta2_token": 3.7572422985756243e-16,
+      "eta2_token_sq": 0.036251632198856666,
+      "eta2_token_abs": 0.04448506838126164,
+      "repro": 0.5958459377288818,
+      "skew": -0.27776166796684265,
+      "ex_kurtosis": 1.3284358978271484,
+      "screened": false
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 23,
+      "bimodality": 0.22599829733371735,
+      "eta2_token": 1.9499515815474518e-16,
+      "eta2_token_sq": 0.03276022064998456,
+      "eta2_token_abs": 0.06741503218069735,
+      "repro": 0.9332631230354309,
+      "skew": 0.7412270903587341,
+      "ex_kurtosis": 3.9098401069641113,
+      "screened": true
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 24,
+      "bimodality": 0.1597050577402115,
+      "eta2_token": 2.191955125387031e-16,
+      "eta2_token_sq": 0.03038629148713556,
+      "eta2_token_abs": 0.05664982583342304,
+      "repro": 0.79536372423172,
+      "skew": -0.29720744490623474,
+      "ex_kurtosis": 3.492706298828125,
+      "screened": false
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 25,
+      "bimodality": 0.24749374389648438,
+      "eta2_token": 5.498440152591518e-16,
+      "eta2_token_sq": 0.05706148265109831,
+      "eta2_token_abs": 0.0574840918268758,
+      "repro": 0.4356157183647156,
+      "skew": 0.39441928267478943,
+      "ex_kurtosis": 1.7373995780944824,
+      "screened": false
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 26,
+      "bimodality": 0.242590069770813,
+      "eta2_token": 4.4054216459004443e-16,
+      "eta2_token_sq": 0.041721417309943234,
+      "eta2_token_abs": 0.04932477409228933,
+      "repro": 0.4564979374408722,
+      "skew": -0.3503849506378174,
+      "ex_kurtosis": 1.667154312133789,
+      "screened": false
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 27,
+      "bimodality": 0.20065823197364807,
+      "eta2_token": 1.2368097581480136e-16,
+      "eta2_token_sq": 0.024989799800033803,
+      "eta2_token_abs": 0.06575208390742596,
+      "repro": 0.9674603939056396,
+      "skew": 1.255028486251831,
+      "ex_kurtosis": 9.709053993225098,
+      "screened": true
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 28,
+      "bimodality": 0.3155560791492462,
+      "eta2_token": 7.220303042446848e-16,
+      "eta2_token_sq": 0.03258118851540928,
+      "eta2_token_abs": 0.04882895124441933,
+      "repro": 0.9902860522270203,
+      "skew": -1.0989538431167603,
+      "ex_kurtosis": 4.194987773895264,
+      "screened": true
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 29,
+      "bimodality": 0.2731117308139801,
+      "eta2_token": 4.582839199954176e-16,
+      "eta2_token_sq": 0.04268738990554042,
+      "eta2_token_abs": 0.07220980851049724,
+      "repro": 0.9783113598823547,
+      "skew": 1.3014129400253296,
+      "ex_kurtosis": 7.097874641418457,
+      "screened": true
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 30,
+      "bimodality": 0.193460613489151,
+      "eta2_token": 2.48973906947806e-16,
+      "eta2_token_sq": 0.027988838255351194,
+      "eta2_token_abs": 0.05019658662433445,
+      "repro": 0.9564507603645325,
+      "skew": -0.478262722492218,
+      "ex_kurtosis": 3.54030179977417,
+      "screened": true
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 31,
+      "bimodality": 0.22967641055583954,
+      "eta2_token": 8.980540004471387e-16,
+      "eta2_token_sq": 0.08188611701030762,
+      "eta2_token_abs": 0.08934864806536359,
+      "repro": 0.971393883228302,
+      "skew": -0.40549659729003906,
+      "ex_kurtosis": 2.168283462524414,
+      "screened": true
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 32,
+      "bimodality": 0.2319730967283249,
+      "eta2_token": 3.238718158477458e-16,
+      "eta2_token_sq": 0.042505773052810704,
+      "eta2_token_abs": 0.05499474275731156,
+      "repro": 0.6403602361679077,
+      "skew": -0.2905008792877197,
+      "ex_kurtosis": 1.700291633605957,
+      "screened": false
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 33,
+      "bimodality": 0.18423223495483398,
+      "eta2_token": 3.496804890265333e-16,
+      "eta2_token_sq": 0.034571462948025294,
+      "eta2_token_abs": 0.051203111879816646,
+      "repro": 0.9117895364761353,
+      "skew": 0.19359669089317322,
+      "ex_kurtosis": 2.7360925674438477,
+      "screened": true
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 34,
+      "bimodality": 0.27563104033470154,
+      "eta2_token": 5.099560208074572e-16,
+      "eta2_token_sq": 0.02415026197061741,
+      "eta2_token_abs": 0.029329716285259023,
+      "repro": 0.97962486743927,
+      "skew": -0.5224802494049072,
+      "ex_kurtosis": 1.6431078910827637,
+      "screened": true
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 35,
+      "bimodality": 0.2742670476436615,
+      "eta2_token": 8.375541034053079e-16,
+      "eta2_token_sq": 0.07330687286012762,
+      "eta2_token_abs": 0.09845260757039866,
+      "repro": 0.9104821085929871,
+      "skew": 1.1022554636001587,
+      "ex_kurtosis": 5.200987815856934,
+      "screened": true
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 36,
+      "bimodality": 0.20923657715320587,
+      "eta2_token": 2.7875913029396894e-16,
+      "eta2_token_sq": 0.032267438272856955,
+      "eta2_token_abs": 0.05905152741780329,
+      "repro": 0.9197542667388916,
+      "skew": 0.3963000178337097,
+      "ex_kurtosis": 2.4100875854492188,
+      "screened": true
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 37,
+      "bimodality": 0.41665300726890564,
+      "eta2_token": 7.180994491314326e-16,
+      "eta2_token_sq": 0.0322492047126446,
+      "eta2_token_abs": 0.05907349976171203,
+      "repro": 0.9971336722373962,
+      "skew": 1.828844428062439,
+      "ex_kurtosis": 7.532601356506348,
+      "screened": true
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 38,
+      "bimodality": 0.16941063106060028,
+      "eta2_token": 9.849986394990507e-17,
+      "eta2_token_sq": 0.03982210608036021,
+      "eta2_token_abs": 0.08023385064734777,
+      "repro": 0.9005885720252991,
+      "skew": -0.4444510042667389,
+      "ex_kurtosis": 3.8202805519104004,
+      "screened": true
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 39,
+      "bimodality": 0.15867303311824799,
+      "eta2_token": 5.739058109797747e-17,
+      "eta2_token_sq": 0.04318091081170109,
+      "eta2_token_abs": 0.09750747893420939,
+      "repro": 0.4740462899208069,
+      "skew": 0.2763810157775879,
+      "ex_kurtosis": 4.098273277282715,
+      "screened": false
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 40,
+      "bimodality": 0.24808025360107422,
+      "eta2_token": 3.628816668176295e-16,
+      "eta2_token_sq": 0.03112745971545613,
+      "eta2_token_abs": 0.039932499380969926,
+      "repro": 0.4956273138523102,
+      "skew": -0.23660147190093994,
+      "ex_kurtosis": 1.270918369293213,
+      "screened": false
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 41,
+      "bimodality": 0.2572628855705261,
+      "eta2_token": 3.785015964234938e-16,
+      "eta2_token_sq": 0.02960301311907911,
+      "eta2_token_abs": 0.04649314877679351,
+      "repro": 0.9811012148857117,
+      "skew": -1.0009430646896362,
+      "ex_kurtosis": 4.6586833000183105,
+      "screened": true
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 42,
+      "bimodality": 0.21706216037273407,
+      "eta2_token": 3.4823006294562474e-16,
+      "eta2_token_sq": 0.026909745595378568,
+      "eta2_token_abs": 0.04478343071066422,
+      "repro": 0.918655514717102,
+      "skew": -0.42269018292427063,
+      "ex_kurtosis": 2.417473316192627,
+      "screened": true
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 43,
+      "bimodality": 0.25213369727134705,
+      "eta2_token": 4.092751403013205e-16,
+      "eta2_token_sq": 0.041005845473853914,
+      "eta2_token_abs": 0.046435564207276604,
+      "repro": 0.43760403990745544,
+      "skew": -0.24019359052181244,
+      "ex_kurtosis": 1.167198657989502,
+      "screened": false
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 44,
+      "bimodality": 0.2318081259727478,
+      "eta2_token": 6.786034409021774e-16,
+      "eta2_token_sq": 0.0520522106334812,
+      "eta2_token_abs": 0.050756666949596546,
+      "repro": 0.7364329695701599,
+      "skew": 0.21557186543941498,
+      "ex_kurtosis": 1.5008573532104492,
+      "screened": false
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 45,
+      "bimodality": 0.2291010469198227,
+      "eta2_token": 4.641238080333125e-16,
+      "eta2_token_sq": 0.04233257629201503,
+      "eta2_token_abs": 0.05160238669140153,
+      "repro": 0.6884798407554626,
+      "skew": -0.24524691700935364,
+      "ex_kurtosis": 1.534952163696289,
+      "screened": false
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 46,
+      "bimodality": 0.24216675758361816,
+      "eta2_token": 2.933186069272803e-16,
+      "eta2_token_sq": 0.0403050899231053,
+      "eta2_token_abs": 0.05212121372694992,
+      "repro": 0.5134779810905457,
+      "skew": -0.22659704089164734,
+      "ex_kurtosis": 1.4057374000549316,
+      "screened": false
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 47,
+      "bimodality": 0.26182425022125244,
+      "eta2_token": 4.617348377913724e-16,
+      "eta2_token_sq": 0.026168402404545883,
+      "eta2_token_abs": 0.03658277925275832,
+      "repro": 0.7707971334457397,
+      "skew": -0.5636073350906372,
+      "ex_kurtosis": 1.9257564544677734,
+      "screened": false
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 48,
+      "bimodality": 0.24267560243606567,
+      "eta2_token": 3.951492078935371e-16,
+      "eta2_token_sq": 0.029533179791037638,
+      "eta2_token_abs": 0.04323017984071718,
+      "repro": 0.5821948647499084,
+      "skew": -0.6464829444885254,
+      "ex_kurtosis": 3.081867218017578,
+      "screened": false
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 49,
+      "bimodality": 0.19925586879253387,
+      "eta2_token": 2.8342243258252963e-16,
+      "eta2_token_sq": 0.02765939914686306,
+      "eta2_token_abs": 0.05157087063726709,
+      "repro": 0.93437260389328,
+      "skew": -0.6702109575271606,
+      "ex_kurtosis": 4.408271312713623,
+      "screened": true
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 50,
+      "bimodality": 0.22966349124908447,
+      "eta2_token": 3.7959390123988834e-16,
+      "eta2_token_sq": 0.030175199754929403,
+      "eta2_token_abs": 0.043401290966679856,
+      "repro": 0.8989144563674927,
+      "skew": -0.45306697487831116,
+      "ex_kurtosis": 2.108142852783203,
+      "screened": true
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 51,
+      "bimodality": 0.2508804500102997,
+      "eta2_token": 4.4382755700940706e-16,
+      "eta2_token_sq": 0.03395796160988749,
+      "eta2_token_abs": 0.041748119528751536,
+      "repro": 0.40944987535476685,
+      "skew": 0.20512092113494873,
+      "ex_kurtosis": 1.12184476852417,
+      "screened": false
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 52,
+      "bimodality": 0.22105731070041656,
+      "eta2_token": 3.255836786663937e-16,
+      "eta2_token_sq": 0.04012930114050706,
+      "eta2_token_abs": 0.049279892733058585,
+      "repro": 0.930756688117981,
+      "skew": 0.48827463388442993,
+      "ex_kurtosis": 2.5322275161743164,
+      "screened": true
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 53,
+      "bimodality": 0.2878938913345337,
+      "eta2_token": 5.861879980052734e-16,
+      "eta2_token_sq": 0.023706079765541097,
+      "eta2_token_abs": 0.02488511089522583,
+      "repro": 0.9116150140762329,
+      "skew": -0.028724148869514465,
+      "ex_kurtosis": 0.5335392951965332,
+      "screened": true
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 54,
+      "bimodality": 0.17889530956745148,
+      "eta2_token": 5.59970300447729e-16,
+      "eta2_token_sq": 0.10533503957654056,
+      "eta2_token_abs": 0.10778085754211758,
+      "repro": 0.9181281924247742,
+      "skew": 0.679271936416626,
+      "ex_kurtosis": 5.553174018859863,
+      "screened": true
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 55,
+      "bimodality": 0.19964267313480377,
+      "eta2_token": 1.9455992273844368e-16,
+      "eta2_token_sq": 0.0269857747440504,
+      "eta2_token_abs": 0.06102056439692604,
+      "repro": 0.970110297203064,
+      "skew": 0.5607651472091675,
+      "ex_kurtosis": 4.121699810028076,
+      "screened": true
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 56,
+      "bimodality": 0.15553100407123566,
+      "eta2_token": 7.32791430419978e-17,
+      "eta2_token_sq": 0.020624571278514272,
+      "eta2_token_abs": 0.08518339214047915,
+      "repro": 0.9671039581298828,
+      "skew": 1.1358118057250977,
+      "ex_kurtosis": 11.173746109008789,
+      "screened": true
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 57,
+      "bimodality": 0.20155319571495056,
+      "eta2_token": 2.3004494231778835e-16,
+      "eta2_token_sq": 0.03133681852606278,
+      "eta2_token_abs": 0.05568448181415221,
+      "repro": 0.907454252243042,
+      "skew": 0.5735228061676025,
+      "ex_kurtosis": 3.5029072761535645,
+      "screened": true
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 58,
+      "bimodality": 0.17686471343040466,
+      "eta2_token": 2.5268441314664273e-16,
+      "eta2_token_sq": 0.04381580449440855,
+      "eta2_token_abs": 0.060594646523100225,
+      "repro": 0.7808911800384521,
+      "skew": -0.283663272857666,
+      "ex_kurtosis": 2.880122184753418,
+      "screened": false
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 59,
+      "bimodality": 0.24372200667858124,
+      "eta2_token": 5.539811379949073e-16,
+      "eta2_token_sq": 0.0434643887137851,
+      "eta2_token_abs": 0.04511356512196483,
+      "repro": 0.47219911217689514,
+      "skew": -0.0437970869243145,
+      "ex_kurtosis": 1.1173553466796875,
+      "screened": false
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 60,
+      "bimodality": 0.22485654056072235,
+      "eta2_token": 7.012469619717434e-16,
+      "eta2_token_sq": 0.05171538657625004,
+      "eta2_token_abs": 0.05988103698990306,
+      "repro": 0.9380658864974976,
+      "skew": -0.32890671491622925,
+      "ex_kurtosis": 1.9201302528381348,
+      "screened": true
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 61,
+      "bimodality": 0.1907467395067215,
+      "eta2_token": 2.5761389186705834e-16,
+      "eta2_token_sq": 0.030144567481954397,
+      "eta2_token_abs": 0.051658030871057185,
+      "repro": 0.696789026260376,
+      "skew": 0.24953259527683258,
+      "ex_kurtosis": 2.5919389724731445,
+      "screened": false
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 62,
+      "bimodality": 0.21114321053028107,
+      "eta2_token": 5.406911778808369e-16,
+      "eta2_token_sq": 0.04384490936563829,
+      "eta2_token_abs": 0.05255818631704987,
+      "repro": 0.38429057598114014,
+      "skew": 0.0577060841023922,
+      "ex_kurtosis": 1.6295394897460938,
+      "screened": false
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 63,
+      "bimodality": 0.21921826899051666,
+      "eta2_token": 3.9718676244994144e-16,
+      "eta2_token_sq": 0.036236384044096986,
+      "eta2_token_abs": 0.04454270872988469,
+      "repro": 0.41643399000167847,
+      "skew": 0.14259347319602966,
+      "ex_kurtosis": 1.458505630493164,
+      "screened": false
+     },
+     {
+      "kind": "ica_skew",
+      "id": 0,
+      "bimodality": 0.24236653745174408,
+      "eta2_token": 4.531549754611207e-16,
+      "eta2_token_sq": 0.034285889192728514,
+      "eta2_token_abs": 0.04791311259063769,
+      "repro": 0.8367346525192261,
+      "skew": 0.6015162467956543,
+      "ex_kurtosis": 2.798895835876465,
+      "screened": true
+     },
+     {
+      "kind": "ica_skew",
+      "id": 1,
+      "bimodality": 0.23964563012123108,
+      "eta2_token": 3.572721146563044e-16,
+      "eta2_token_sq": 0.03655147989249856,
+      "eta2_token_abs": 0.05007258522583419,
+      "repro": 0.47266384959220886,
+      "skew": 0.4633081555366516,
+      "ex_kurtosis": 2.0229969024658203,
+      "screened": false
+     },
+     {
+      "kind": "ica_skew",
+      "id": 2,
+      "bimodality": 0.21282479166984558,
+      "eta2_token": 6.858179482206058e-16,
+      "eta2_token_sq": 0.08924667237224321,
+      "eta2_token_abs": 0.09226074173541919,
+      "repro": 0.7223048806190491,
+      "skew": 0.46267715096473694,
+      "ex_kurtosis": 2.572312831878662,
+      "screened": false
+     },
+     {
+      "kind": "ica_skew",
+      "id": 3,
+      "bimodality": 0.3197026550769806,
+      "eta2_token": 5.659764575015467e-16,
+      "eta2_token_sq": 0.02588876016218769,
+      "eta2_token_abs": 0.03150409158348407,
+      "repro": 0.9627835154533386,
+      "skew": 0.6351731419563293,
+      "ex_kurtosis": 1.393843650817871,
+      "screened": true
+     },
+     {
+      "kind": "ica_skew",
+      "id": 4,
+      "bimodality": 0.24489343166351318,
+      "eta2_token": 3.5039776333584343e-16,
+      "eta2_token_sq": 0.02898026320271002,
+      "eta2_token_abs": 0.04350619378493308,
+      "repro": 0.5150094628334045,
+      "skew": 0.46947428584098816,
+      "ex_kurtosis": 1.946094036102295,
+      "screened": false
+     },
+     {
+      "kind": "ica_skew",
+      "id": 5,
+      "bimodality": 0.26552215218544006,
+      "eta2_token": 3.52388022226058e-16,
+      "eta2_token_sq": 0.033796591644651514,
+      "eta2_token_abs": 0.04297024603620497,
+      "repro": 0.6132194399833679,
+      "skew": 0.26843827962875366,
+      "ex_kurtosis": 1.0435571670532227,
+      "screened": false
+     },
+     {
+      "kind": "ica_skew",
+      "id": 6,
+      "bimodality": 0.24547752737998962,
+      "eta2_token": 4.602185306128856e-16,
+      "eta2_token_sq": 0.03948160434086912,
+      "eta2_token_abs": 0.04887038919499235,
+      "repro": 0.47488322854042053,
+      "skew": 0.27670466899871826,
+      "ex_kurtosis": 1.4069938659667969,
+      "screened": false
+     },
+     {
+      "kind": "ica_skew",
+      "id": 7,
+      "bimodality": 0.25496700406074524,
+      "eta2_token": 5.228292678865206e-16,
+      "eta2_token_sq": 0.059096828766241505,
+      "eta2_token_abs": 0.06046721798028227,
+      "repro": 0.7225673794746399,
+      "skew": 0.28407785296440125,
+      "ex_kurtosis": 1.208775520324707,
+      "screened": false
+     },
+     {
+      "kind": "ica_skew",
+      "id": 8,
+      "bimodality": 0.21122944355010986,
+      "eta2_token": 2.8424917997672617e-16,
+      "eta2_token_sq": 0.026532934895834234,
+      "eta2_token_abs": 0.05047226765717771,
+      "repro": 0.9179037809371948,
+      "skew": 0.7062402963638306,
+      "ex_kurtosis": 4.235023021697998,
+      "screened": true
+     },
+     {
+      "kind": "ica_skew",
+      "id": 9,
+      "bimodality": 0.23433223366737366,
+      "eta2_token": 3.7873783869760993e-16,
+      "eta2_token_sq": 0.03911042276506402,
+      "eta2_token_abs": 0.05025982002151181,
+      "repro": 0.6790065169334412,
+      "skew": 0.5368288159370422,
+      "ex_kurtosis": 2.634852409362793,
+      "screened": false
+     },
+     {
+      "kind": "ica_skew",
+      "id": 10,
+      "bimodality": 0.24126538634300232,
+      "eta2_token": 4.342401173138296e-16,
+      "eta2_token_sq": 0.03957829923081049,
+      "eta2_token_abs": 0.05258549708263787,
+      "repro": 0.4382973909378052,
+      "skew": 0.353120893239975,
+      "ex_kurtosis": 1.7973194122314453,
+      "screened": false
+     },
+     {
+      "kind": "ica_skew",
+      "id": 11,
+      "bimodality": 0.253185898065567,
+      "eta2_token": 3.4003889207837347e-16,
+      "eta2_token_sq": 0.03754973477576426,
+      "eta2_token_abs": 0.04863671233106991,
+      "repro": 0.7253566980361938,
+      "skew": 0.3761274814605713,
+      "ex_kurtosis": 1.4498867988586426,
+      "screened": false
+     },
+     {
+      "kind": "ica_skew",
+      "id": 12,
+      "bimodality": 0.23855888843536377,
+      "eta2_token": 3.4807909368714134e-16,
+      "eta2_token_sq": 0.03874807319261608,
+      "eta2_token_abs": 0.04965437784206393,
+      "repro": 0.6703701615333557,
+      "skew": 0.4979037940502167,
+      "ex_kurtosis": 2.129012107849121,
+      "screened": false
+     },
+     {
+      "kind": "ica_skew",
+      "id": 13,
+      "bimodality": 0.2478981763124466,
+      "eta2_token": 3.407523561850451e-16,
+      "eta2_token_sq": 0.03379600238513308,
+      "eta2_token_abs": 0.045904337504653454,
+      "repro": 0.3020935654640198,
+      "skew": 0.3640948235988617,
+      "ex_kurtosis": 1.5991134643554688,
+      "screened": false
+     },
+     {
+      "kind": "ica_skew",
+      "id": 14,
+      "bimodality": 0.259294718503952,
+      "eta2_token": 3.578621905229415e-16,
+      "eta2_token_sq": 0.03450349064912564,
+      "eta2_token_abs": 0.04663235679189171,
+      "repro": 0.44174090027809143,
+      "skew": 0.3409985303878784,
+      "ex_kurtosis": 1.3849754333496094,
+      "screened": false
+     },
+     {
+      "kind": "ica_skew",
+      "id": 15,
+      "bimodality": 0.18855640292167664,
+      "eta2_token": 2.986840013373093e-16,
+      "eta2_token_sq": 0.02643284893081378,
+      "eta2_token_abs": 0.049724445737039866,
+      "repro": 0.6800855994224548,
+      "skew": 0.49194619059562683,
+      "ex_kurtosis": 3.0049328804016113,
+      "screened": false
+     },
+     {
+      "kind": "ica_skew",
+      "id": 16,
+      "bimodality": 0.12531638145446777,
+      "eta2_token": 1.5101596462176964e-16,
+      "eta2_token_sq": 0.005928398897357632,
+      "eta2_token_abs": 0.06776407352834998,
+      "repro": 0.9676892161369324,
+      "skew": 1.4725738763809204,
+      "ex_kurtosis": 28.60127067565918,
+      "screened": true
+     },
+     {
+      "kind": "ica_skew",
+      "id": 17,
+      "bimodality": 0.24630148708820343,
+      "eta2_token": 4.472057368858049e-16,
+      "eta2_token_sq": 0.04948357499325516,
+      "eta2_token_abs": 0.05534841206781031,
+      "repro": 0.5181820392608643,
+      "skew": 0.45233893394470215,
+      "ex_kurtosis": 1.8033032417297363,
+      "screened": false
+     },
+     {
+      "kind": "ica_skew",
+      "id": 18,
+      "bimodality": 0.25946298241615295,
+      "eta2_token": 4.2463915310232275e-16,
+      "eta2_token_sq": 0.03050307147689174,
+      "eta2_token_abs": 0.048906904534416956,
+      "repro": 0.896933913230896,
+      "skew": 0.49129658937454224,
+      "ex_kurtosis": 1.7660136222839355,
+      "screened": true
+     },
+     {
+      "kind": "ica_skew",
+      "id": 19,
+      "bimodality": 0.22229160368442535,
+      "eta2_token": 2.747099525892573e-16,
+      "eta2_token_sq": 0.0369992322409761,
+      "eta2_token_abs": 0.0544555078377199,
+      "repro": 0.7990790605545044,
+      "skew": 0.442118763923645,
+      "ex_kurtosis": 2.339172840118408,
+      "screened": false
+     },
+     {
+      "kind": "ica_skew",
+      "id": 20,
+      "bimodality": 0.2177601307630539,
+      "eta2_token": 3.1459481149777216e-16,
+      "eta2_token_sq": 0.027553620614364036,
+      "eta2_token_abs": 0.04783341479830635,
+      "repro": 0.6771658062934875,
+      "skew": 0.5285767316818237,
+      "ex_kurtosis": 2.5605955123901367,
+      "screened": false
+     },
+     {
+      "kind": "ica_skew",
+      "id": 21,
+      "bimodality": 0.23438012599945068,
+      "eta2_token": 6.194767349071267e-16,
+      "eta2_token_sq": 0.09285573453341034,
+      "eta2_token_abs": 0.10465789418747448,
+      "repro": 0.963620662689209,
+      "skew": 0.9938432574272156,
+      "ex_kurtosis": 5.8910932540893555,
+      "screened": true
+     },
+     {
+      "kind": "ica_skew",
+      "id": 22,
+      "bimodality": 0.2473618984222412,
+      "eta2_token": 3.891896856203517e-16,
+      "eta2_token_sq": 0.04226692817507116,
+      "eta2_token_abs": 0.05316935275253041,
+      "repro": 0.671819269657135,
+      "skew": 0.5970537662506104,
+      "ex_kurtosis": 2.476497173309326,
+      "screened": false
+     },
+     {
+      "kind": "ica_skew",
+      "id": 23,
+      "bimodality": 0.2524268627166748,
+      "eta2_token": 3.0118235190699276e-16,
+      "eta2_token_sq": 0.029893302680441665,
+      "eta2_token_abs": 0.05473472824397855,
+      "repro": 0.915163516998291,
+      "skew": 0.7365328669548035,
+      "ex_kurtosis": 3.1319193840026855,
+      "screened": true
+     },
+     {
+      "kind": "ica_skew",
+      "id": 24,
+      "bimodality": 0.16613173484802246,
+      "eta2_token": 7.706442934631394e-17,
+      "eta2_token_sq": 0.020718638040973677,
+      "eta2_token_abs": 0.08514853504986779,
+      "repro": 0.9291586875915527,
+      "skew": 1.1640697717666626,
+      "ex_kurtosis": 10.752681732177734,
+      "screened": true
+     },
+     {
+      "kind": "ica_skew",
+      "id": 25,
+      "bimodality": 0.25142067670822144,
+      "eta2_token": 6.10624091089823e-16,
+      "eta2_token_sq": 0.04412199935784174,
+      "eta2_token_abs": 0.05711024117560274,
+      "repro": 0.8067745566368103,
+      "skew": 0.5038630366325378,
+      "ex_kurtosis": 1.9872288703918457,
+      "screened": true
+     },
+     {
+      "kind": "ica_skew",
+      "id": 26,
+      "bimodality": 0.1658659428358078,
+      "eta2_token": 2.152369072351488e-16,
+      "eta2_token_sq": 0.02471808349803021,
+      "eta2_token_abs": 0.06146310342269458,
+      "repro": 0.594362735748291,
+      "skew": 0.5035848617553711,
+      "ex_kurtosis": 4.720792770385742,
+      "screened": false
+     },
+     {
+      "kind": "ica_skew",
+      "id": 27,
+      "bimodality": 0.19967280328273773,
+      "eta2_token": 1.4944007596475222e-16,
+      "eta2_token_sq": 0.023167908309076026,
+      "eta2_token_abs": 0.061318913488594425,
+      "repro": 0.9052247405052185,
+      "skew": 1.2090424299240112,
+      "ex_kurtosis": 9.206416130065918,
+      "screened": true
+     },
+     {
+      "kind": "ica_skew",
+      "id": 28,
+      "bimodality": 0.2608461380004883,
+      "eta2_token": 6.896696370962505e-16,
+      "eta2_token_sq": 0.06569677680869856,
+      "eta2_token_abs": 0.08698279070499737,
+      "repro": 0.912342369556427,
+      "skew": 1.0326193571090698,
+      "ex_kurtosis": 5.118127822875977,
+      "screened": true
+     },
+     {
+      "kind": "ica_skew",
+      "id": 29,
+      "bimodality": 0.24387115240097046,
+      "eta2_token": 4.549291817305673e-16,
+      "eta2_token_sq": 0.04350131710674972,
+      "eta2_token_abs": 0.07066070732708016,
+      "repro": 0.9688354134559631,
+      "skew": 1.1271730661392212,
+      "ex_kurtosis": 6.518423080444336,
+      "screened": true
+     },
+     {
+      "kind": "ica_skew",
+      "id": 30,
+      "bimodality": 0.21128231287002563,
+      "eta2_token": 2.773795728454228e-16,
+      "eta2_token_sq": 0.030742723954168282,
+      "eta2_token_abs": 0.05245809672925491,
+      "repro": 0.4742080569267273,
+      "skew": 0.5302165746688843,
+      "ex_kurtosis": 3.2316222190856934,
+      "screened": false
+     },
+     {
+      "kind": "ica_skew",
+      "id": 31,
+      "bimodality": 0.2356569766998291,
+      "eta2_token": 4.455173649331212e-16,
+      "eta2_token_sq": 0.04463170768465429,
+      "eta2_token_abs": 0.05711414385232168,
+      "repro": 0.9150731563568115,
+      "skew": 0.5601978302001953,
+      "ex_kurtosis": 2.6999921798706055,
+      "screened": true
+     },
+     {
+      "kind": "ica_skew",
+      "id": 32,
+      "bimodality": 0.21545055508613586,
+      "eta2_token": 4.969084692005258e-16,
+      "eta2_token_sq": 0.0403186241581678,
+      "eta2_token_abs": 0.0643566915188562,
+      "repro": 0.8679060339927673,
+      "skew": 0.5307220816612244,
+      "ex_kurtosis": 2.8149566650390625,
+      "screened": true
+     },
+     {
+      "kind": "ica_skew",
+      "id": 33,
+      "bimodality": 0.21015223860740662,
+      "eta2_token": 2.6380614750453634e-16,
+      "eta2_token_sq": 0.0257496601939327,
+      "eta2_token_abs": 0.0532166676324449,
+      "repro": 0.9212205410003662,
+      "skew": 0.7357473373413086,
+      "ex_kurtosis": 4.175904273986816,
+      "screened": true
+     },
+     {
+      "kind": "ica_skew",
+      "id": 34,
+      "bimodality": 0.28489094972610474,
+      "eta2_token": 4.72660428072239e-16,
+      "eta2_token_sq": 0.023388738010728542,
+      "eta2_token_abs": 0.029907871417874928,
+      "repro": 0.9492074847221375,
+      "skew": 0.6302900314331055,
+      "ex_kurtosis": 1.9005308151245117,
+      "screened": true
+     },
+     {
+      "kind": "ica_skew",
+      "id": 35,
+      "bimodality": 0.26742124557495117,
+      "eta2_token": 7.542268744939723e-16,
+      "eta2_token_sq": 0.06374942258672986,
+      "eta2_token_abs": 0.07346205314593214,
+      "repro": 0.9387351274490356,
+      "skew": 0.49867451190948486,
+      "ex_kurtosis": 1.7291226387023926,
+      "screened": true
+     },
+     {
+      "kind": "ica_skew",
+      "id": 36,
+      "bimodality": 0.17971698939800262,
+      "eta2_token": 2.4230239938063155e-16,
+      "eta2_token_sq": 0.025374195249658667,
+      "eta2_token_abs": 0.062412604650717185,
+      "repro": 0.961819589138031,
+      "skew": 0.6589940190315247,
+      "ex_kurtosis": 5.001605987548828,
+      "screened": true
+     },
+     {
+      "kind": "ica_skew",
+      "id": 37,
+      "bimodality": 0.41635042428970337,
+      "eta2_token": 6.780544304825647e-16,
+      "eta2_token_sq": 0.03343387771979849,
+      "eta2_token_abs": 0.059764759385275784,
+      "repro": 0.9924386739730835,
+      "skew": 1.8144410848617554,
+      "ex_kurtosis": 7.4250383377075195,
+      "screened": true
+     },
+     {
+      "kind": "ica_skew",
+      "id": 38,
+      "bimodality": 0.25040653347969055,
+      "eta2_token": 3.6129261107150816e-16,
+      "eta2_token_sq": 0.031068589402320983,
+      "eta2_token_abs": 0.04597341964583875,
+      "repro": 0.8983976244926453,
+      "skew": 0.5791507959365845,
+      "ex_kurtosis": 2.1864943504333496,
+      "screened": true
+     },
+     {
+      "kind": "ica_skew",
+      "id": 39,
+      "bimodality": 0.1460275501012802,
+      "eta2_token": 1.32053881949704e-16,
+      "eta2_token_sq": 0.018482772671156146,
+      "eta2_token_abs": 0.07734425319811805,
+      "repro": 0.9292045831680298,
+      "skew": 0.9904930591583252,
+      "ex_kurtosis": 10.634979248046875,
+      "screened": true
+     },
+     {
+      "kind": "ica_skew",
+      "id": 40,
+      "bimodality": 0.22479858994483948,
+      "eta2_token": 1.9473791302433833e-16,
+      "eta2_token_sq": 0.038933185193656045,
+      "eta2_token_abs": 0.06137589056288717,
+      "repro": 0.6150701642036438,
+      "skew": 0.4763029217720032,
+      "ex_kurtosis": 2.5708651542663574,
+      "screened": false
+     },
+     {
+      "kind": "ica_skew",
+      "id": 41,
+      "bimodality": 0.2627280354499817,
+      "eta2_token": 3.824684732075831e-16,
+      "eta2_token_sq": 0.02901932100435703,
+      "eta2_token_abs": 0.04629064281753061,
+      "repro": 0.9722334742546082,
+      "skew": 1.0144346952438354,
+      "ex_kurtosis": 4.556927680969238,
+      "screened": true
+     },
+     {
+      "kind": "ica_skew",
+      "id": 42,
+      "bimodality": 0.19739511609077454,
+      "eta2_token": 4.18538901472055e-16,
+      "eta2_token_sq": 0.03587990880420598,
+      "eta2_token_abs": 0.05772623716955567,
+      "repro": 0.7253252863883972,
+      "skew": 0.4093804955482483,
+      "ex_kurtosis": 2.900190830230713,
+      "screened": false
+     },
+     {
+      "kind": "ica_skew",
+      "id": 43,
+      "bimodality": 0.2588839828968048,
+      "eta2_token": 5.410030138610532e-16,
+      "eta2_token_sq": 0.052757800130844926,
+      "eta2_token_abs": 0.054981001674954184,
+      "repro": 0.7973373532295227,
+      "skew": 0.3571523427963257,
+      "ex_kurtosis": 1.3927397727966309,
+      "screened": false
+     },
+     {
+      "kind": "ica_skew",
+      "id": 44,
+      "bimodality": 0.23973838984966278,
+      "eta2_token": 3.6750292485168515e-16,
+      "eta2_token_sq": 0.03703249862772635,
+      "eta2_token_abs": 0.04919187154659078,
+      "repro": 0.5051597356796265,
+      "skew": 0.3794856071472168,
+      "ex_kurtosis": 1.6560273170471191,
+      "screened": false
+     },
+     {
+      "kind": "ica_skew",
+      "id": 45,
+      "bimodality": 0.23443147540092468,
+      "eta2_token": 3.1499027606340813e-16,
+      "eta2_token_sq": 0.043193077818786375,
+      "eta2_token_abs": 0.06102272318256373,
+      "repro": 0.6600570678710938,
+      "skew": 0.4223203957080841,
+      "ex_kurtosis": 1.955803394317627,
+      "screened": false
+     },
+     {
+      "kind": "ica_skew",
+      "id": 46,
+      "bimodality": 0.2114105522632599,
+      "eta2_token": 7.321765724273537e-16,
+      "eta2_token_sq": 0.0889777428500972,
+      "eta2_token_abs": 0.09011538602672886,
+      "repro": 0.9005311727523804,
+      "skew": 0.49128541350364685,
+      "ex_kurtosis": 2.97658109664917,
+      "screened": true
+     },
+     {
+      "kind": "ica_skew",
+      "id": 47,
+      "bimodality": 0.1619340181350708,
+      "eta2_token": 2.710439093070978e-16,
+      "eta2_token_sq": 0.0228510150218541,
+      "eta2_token_abs": 0.06057126747582855,
+      "repro": 0.4804477393627167,
+      "skew": 0.4648020267486572,
+      "ex_kurtosis": 4.846261978149414,
+      "screened": false
+     },
+     {
+      "kind": "ica_skew",
+      "id": 48,
+      "bimodality": 0.24648848176002502,
+      "eta2_token": 3.3977473705440327e-16,
+      "eta2_token_sq": 0.03071970161271742,
+      "eta2_token_abs": 0.04943132220039185,
+      "repro": 0.8947104215621948,
+      "skew": 0.5806143879890442,
+      "ex_kurtosis": 2.4755473136901855,
+      "screened": true
+     },
+     {
+      "kind": "ica_skew",
+      "id": 49,
+      "bimodality": 0.2310391217470169,
+      "eta2_token": 1.8167868737510295e-16,
+      "eta2_token_sq": 0.026631396381688478,
+      "eta2_token_abs": 0.060729880346245706,
+      "repro": 0.9286975860595703,
+      "skew": 0.6963469982147217,
+      "ex_kurtosis": 3.9107813835144043,
+      "screened": true
+     },
+     {
+      "kind": "ica_skew",
+      "id": 50,
+      "bimodality": 0.25660035014152527,
+      "eta2_token": 4.749841048582681e-16,
+      "eta2_token_sq": 0.04464064813726063,
+      "eta2_token_abs": 0.0491035546045811,
+      "repro": 0.42699357867240906,
+      "skew": 0.23383744060993195,
+      "ex_kurtosis": 1.1202960014343262,
+      "screened": false
+     },
+     {
+      "kind": "ica_skew",
+      "id": 51,
+      "bimodality": 0.3101772665977478,
+      "eta2_token": 6.565969941222823e-16,
+      "eta2_token_sq": 0.03013938197589285,
+      "eta2_token_abs": 0.04513890994203158,
+      "repro": 0.9747342467308044,
+      "skew": 1.0619041919708252,
+      "ex_kurtosis": 3.9941720962524414,
+      "screened": true
+     },
+     {
+      "kind": "ica_skew",
+      "id": 52,
+      "bimodality": 0.25881683826446533,
+      "eta2_token": 4.769577759101921e-16,
+      "eta2_token_sq": 0.044122499133173565,
+      "eta2_token_abs": 0.04925945873606881,
+      "repro": 0.6720554232597351,
+      "skew": 0.2861679196357727,
+      "ex_kurtosis": 1.168992519378662,
+      "screened": false
+     },
+     {
+      "kind": "ica_skew",
+      "id": 53,
+      "bimodality": 0.2102067917585373,
+      "eta2_token": 1.5328161698946128e-16,
+      "eta2_token_sq": 0.03704896610324338,
+      "eta2_token_abs": 0.06885373523888884,
+      "repro": 0.3700181245803833,
+      "skew": 0.5398054122924805,
+      "ex_kurtosis": 3.052464008331299,
+      "screened": false
+     },
+     {
+      "kind": "ica_skew",
+      "id": 54,
+      "bimodality": 0.2337401658296585,
+      "eta2_token": 3.1961147478054157e-16,
+      "eta2_token_sq": 0.03257075424123995,
+      "eta2_token_abs": 0.04769099758096929,
+      "repro": 0.5559619665145874,
+      "skew": 0.4563203752040863,
+      "ex_kurtosis": 1.9846868515014648,
+      "screened": false
+     },
+     {
+      "kind": "ica_skew",
+      "id": 55,
+      "bimodality": 0.14219191670417786,
+      "eta2_token": 4.026048871810717e-16,
+      "eta2_token_sq": 0.020080913462484515,
+      "eta2_token_abs": 0.05464493722817698,
+      "repro": 0.41311925649642944,
+      "skew": 0.4827176630496979,
+      "ex_kurtosis": 5.151551246643066,
+      "screened": false
+     },
+     {
+      "kind": "ica_skew",
+      "id": 56,
+      "bimodality": 0.23863771557807922,
+      "eta2_token": 3.543985144491826e-16,
+      "eta2_token_sq": 0.03597352425915373,
+      "eta2_token_abs": 0.0522083349179957,
+      "repro": 0.6184478998184204,
+      "skew": 0.40478625893592834,
+      "ex_kurtosis": 2.033205986022949,
+      "screened": false
+     },
+     {
+      "kind": "ica_skew",
+      "id": 57,
+      "bimodality": 0.2493349015712738,
+      "eta2_token": 5.436879644789352e-16,
+      "eta2_token_sq": 0.058064361703167484,
+      "eta2_token_abs": 0.059099743715354994,
+      "repro": 0.8837653994560242,
+      "skew": 0.4214619994163513,
+      "ex_kurtosis": 1.7568278312683105,
+      "screened": true
+     },
+     {
+      "kind": "ica_skew",
+      "id": 58,
+      "bimodality": 0.1972327083349228,
+      "eta2_token": 2.570416292349087e-16,
+      "eta2_token_sq": 0.033907297651453734,
+      "eta2_token_abs": 0.06616368199680635,
+      "repro": 0.8631855249404907,
+      "skew": 0.5964146256446838,
+      "ex_kurtosis": 3.9609827995300293,
+      "screened": true
+     },
+     {
+      "kind": "ica_skew",
+      "id": 59,
+      "bimodality": 0.27335986495018005,
+      "eta2_token": 5.08498253113469e-16,
+      "eta2_token_sq": 0.03690545756699016,
+      "eta2_token_abs": 0.043417465783851555,
+      "repro": 0.8988681435585022,
+      "skew": 0.4750283658504486,
+      "ex_kurtosis": 1.4357166290283203,
+      "screened": true
+     },
+     {
+      "kind": "ica_skew",
+      "id": 60,
+      "bimodality": 0.16956891119480133,
+      "eta2_token": 1.380472283699345e-16,
+      "eta2_token_sq": 0.023679254858683472,
+      "eta2_token_abs": 0.06668800853802603,
+      "repro": 0.7658067345619202,
+      "skew": 0.7256215810775757,
+      "ex_kurtosis": 5.761080741882324,
+      "screened": false
+     },
+     {
+      "kind": "ica_skew",
+      "id": 61,
+      "bimodality": 0.266583114862442,
+      "eta2_token": 4.1755410966001515e-16,
+      "eta2_token_sq": 0.036431264243702265,
+      "eta2_token_abs": 0.04744075581231903,
+      "repro": 0.6785856485366821,
+      "skew": 0.48178327083587646,
+      "ex_kurtosis": 1.6193852424621582,
+      "screened": false
+     },
+     {
+      "kind": "ica_skew",
+      "id": 62,
+      "bimodality": 0.25542667508125305,
+      "eta2_token": 5.59488453165218e-16,
+      "eta2_token_sq": 0.02865396057799258,
+      "eta2_token_abs": 0.040621998597098696,
+      "repro": 0.9626277685165405,
+      "skew": 0.8228025436401367,
+      "ex_kurtosis": 3.5782723426818848,
+      "screened": true
+     },
+     {
+      "kind": "ica_skew",
+      "id": 63,
+      "bimodality": 0.22283297777175903,
+      "eta2_token": 3.949730843059263e-16,
+      "eta2_token_sq": 0.0433035123085371,
+      "eta2_token_abs": 0.051472875360191905,
+      "repro": 0.5977813005447388,
+      "skew": 0.34496644139289856,
+      "ex_kurtosis": 1.9833884239196777,
+      "screened": false
+     }
+    ],
+    "tdi_med": 1.007129427421759,
+    "tdi_self_incl_med": 1.2650794637608302,
+    "kir": 14.746323127271296,
+    "screen_counts": {
+     "cluster": {
+      "n": 16,
+      "tdi_med": 1.007129427421759,
+      "tdi_q90": 1.1135118713590333,
+      "tdi_le3": 16,
+      "tdi_le5": 16,
+      "repro_ge08": 0,
+      "fixed_pass": 16
+     },
+     "logcosh": {
+      "n": 64,
+      "eta2_le03": 64,
+      "eta2sq_le03": 64,
+      "eta2sq_max": 0.15948873895656895,
+      "repro_ge08": 35,
+      "repro_ge05": 54,
+      "repro_med": 0.862612247467041,
+      "bimod_gt": 0
+     },
+     "skew": {
+      "n": 64,
+      "eta2_le03": 64,
+      "eta2sq_le03": 64,
+      "eta2sq_max": 0.09285573453341034,
+      "repro_ge08": 30,
+      "repro_ge05": 54,
+      "repro_med": 0.7815720438957214,
+      "bimod_gt": 0
+     }
+    },
+    "n_screened": {
+     "cluster": 0,
+     "logcosh": 35,
+     "skew": 30
+    },
+    "units_npz_sha256": "a8cf7ab2f874855840e760e1f5663e76032eabe1b1220929cf1dc2007f11e457",
+    "frozen_at": "2026-10-15T11:32:13",
+    "freeze_md5": "b93c1e46b5b96e6f4891be5d5d0a2fa5"
+   },
+   "seconds_freeze": 30.3,
+   "positive_control": {
+    "paren_inside": {
+     "cluster": {
+      "stat": 0.0,
+      "null_p999": 0.0,
+      "best": null,
+      "n_units": 0,
+      "floor": 0.5,
+      "recovered": false,
+      "margin": -1.0
+     },
+     "logcosh": {
+      "stat": 0.7786148190498352,
+      "null_p999": 0.5193530917167664,
+      "best": 12,
+      "n_units": 35,
+      "floor": 0.7,
+      "recovered": true,
+      "margin": 0.07861481904983525,
+      "specificity": {
+       "top_association": "paren_inside",
+       "associations": {
+        "paren_inside": {
+         "auroc": 0.7786148198673344,
+         "base_rate": 0.030876219272613525,
+         "top1pct_rate": 0.6887905597686768
+        },
+        "in_url": {
+         "auroc": 0.6720739629391802,
+         "base_rate": 0.0007229697657749057,
+         "top1pct_rate": 0.0004916421021334827
+        },
+        "after_newline": {
+         "auroc": 0.6273488879933211,
+         "base_rate": 0.017808664590120316,
+         "top1pct_rate": 0.0
+        },
+        "quote_inside": {
+         "auroc": 0.6211451693502876,
+         "base_rate": 0.05985403060913086,
+         "top1pct_rate": 0.15732546150684357
+        },
+        "after_colon": {
+         "auroc": 0.5801372876667945,
+         "base_rate": 0.003909938503056765,
+         "top1pct_rate": 0.0044247787445783615
+        },
+        "bracket_inside": {
+         "auroc": 0.5384345289354069,
+         "base_rate": 0.0023705540224909782,
+         "top1pct_rate": 0.01819075644016266
+        },
+        "code_markup": {
+         "auroc": 0.5374065730870591,
+         "base_rate": 0.006998544093221426,
+         "top1pct_rate": 0.011799409985542297
+        },
+        "in_caps_run": {
+         "auroc": 0.534060362104762,
+         "base_rate": 0.004790289793163538,
+         "top1pct_rate": 0.0044247787445783615
+        },
+        "word_continuation": {
+         "auroc": 0.5334364709311689,
+         "base_rate": 0.04036827012896538,
+         "top1pct_rate": 0.10914454609155655
+        },
+        "list_item": {
+         "auroc": 0.5273083718174412,
+         "base_rate": 0.05927860364317894,
+         "top1pct_rate": 0.08652900904417038
+        },
+        "next_continuation": {
+         "auroc": 0.5160171232880708,
+         "base_rate": 0.07632003724575043,
+         "top1pct_rate": 0.062438543885946274
+        },
+        "prev_punct": {
+         "auroc": 0.5158216476766507,
+         "base_rate": 0.12398193776607513,
+         "top1pct_rate": 0.19960668683052063
+        },
+        "next_newline": {
+         "auroc": 0.5148504371914266,
+         "base_rate": 0.024098992347717285,
+         "top1pct_rate": 0.0049164206720888615
+        },
+        "prev_capitalised": {
+         "auroc": 0.5111922576679289,
+         "base_rate": 0.12960831820964813,
+         "top1pct_rate": 0.14405113458633423
+        },
+        "next_punct": {
+         "auroc": 0.506053888730523,
+         "base_rate": 0.10769298672676086,
+         "top1pct_rate": 0.1588003933429718
+        },
+        "after_digit": {
+         "auroc": 0.5048864614624164,
+         "base_rate": 0.05565883591771126,
+         "top1pct_rate": 0.10127826780080795
+        },
+        "line_pos": {
+         "abs_spearman": 0.09765719097720069
+        },
+        "sent_pos": {
+         "abs_spearman": 0.08233009206964646
+        }
+       },
+       "top1pct_n": 2034,
+       "contexts": [
+        " release - 10/9/2013[[\n]]Published 1",
+        " thrilling, brutal, emotionally vibrant new places. (Fun fact[[:]] it\u2019s",
+        "1\u00bd cups chopped carrots\n1 lb smoked sausage (I[[ use]] Hillshire Farms",
+        " Golden Eagles (28-5, 16-[[1]]) earned a",
+        " of us, plus my dad (he's a Pats[[ fan]] - boo!",
+        " Army Corp)? Serve as in the WAVES (Women Accepted[[ for]] Volunteer Emergency Service",
+        " grocery list signed by \"the people who ate all your shit[[ while]] you were passed",
+        " smooth earnings growth, with none of the short-term fluctuations[[ you]] might have expected",
+        " land with wheels up, it was too rough,\" Leonard recalls[[.]] \"The plane",
+        "iness with crap like underwire (a torture device if there[[ ever]] was one)",
+        " donuts out of a glove (10 fingers \u2013 1[[0]] tiny donuts).",
+        " real estate and infrastructure finance (the Chicago-style TIF[[ comes]] to mind)"
+       ]
+      }
+     },
+     "skew": {
+      "stat": 0.7769551873207092,
+      "null_p999": 0.5176101326942444,
+      "best": 62,
+      "n_units": 30,
+      "floor": 0.7,
+      "recovered": true,
+      "margin": 0.07695518732070927,
+      "specificity": {
+       "top_association": "paren_inside",
+       "associations": {
+        "paren_inside": {
+         "auroc": 0.7769563061367337,
+         "base_rate": 0.030876219272613525,
+         "top1pct_rate": 0.6391347050666809
+        },
+        "in_url": {
+         "auroc": 0.6797834858346703,
+         "base_rate": 0.0007229697657749057,
+         "top1pct_rate": 0.0009832842042669654
+        },
+        "quote_inside": {
+         "auroc": 0.6544480954519436,
+         "base_rate": 0.05985403060913086,
+         "top1pct_rate": 0.23598819971084595
+        },
+        "after_newline": {
+         "auroc": 0.6187513077274058,
+         "base_rate": 0.017808664590120316,
+         "top1pct_rate": 0.0004916421021334827
+        },
+        "after_colon": {
+         "auroc": 0.561841627982855,
+         "base_rate": 0.003909938503056765,
+         "top1pct_rate": 0.0049164206720888615
+        },
+        "code_markup": {
+         "auroc": 0.5513488223546337,
+         "base_rate": 0.006998544093221426,
+         "top1pct_rate": 0.014257620088756084
+        },
+        "bracket_inside": {
+         "auroc": 0.5472978693686763,
+         "base_rate": 0.0023705540224909782,
+         "top1pct_rate": 0.017207473516464233
+        },
+        "list_item": {
+         "auroc": 0.5438078675801925,
+         "base_rate": 0.05927860364317894,
+         "top1pct_rate": 0.07817108929157257
+        },
+        "word_continuation": {
+         "auroc": 0.5353780520779136,
+         "base_rate": 0.04036827012896538,
+         "top1pct_rate": 0.0993117019534111
+        },
+        "prev_capitalised": {
+         "auroc": 0.5295262643670586,
+         "base_rate": 0.12960831820964813,
+         "top1pct_rate": 0.18485742807388306
+        },
+        "next_newline": {
+         "auroc": 0.5282932759654146,
+         "base_rate": 0.024098992347717285,
+         "top1pct_rate": 0.006391346920281649
+        },
+        "in_caps_run": {
+         "auroc": 0.5250931317652016,
+         "base_rate": 0.004790289793163538,
+         "top1pct_rate": 0.0049164206720888615
+        },
+        "after_digit": {
+         "auroc": 0.5231209062084644,
+         "base_rate": 0.05565883591771126,
+         "top1pct_rate": 0.10275319218635559
+        },
+        "next_continuation": {
+         "auroc": 0.5135477382896897,
+         "base_rate": 0.07632003724575043,
+         "top1pct_rate": 0.06538839638233185
+        },
+        "prev_punct": {
+         "auroc": 0.5134051932918096,
+         "base_rate": 0.12398193776607513,
+         "top1pct_rate": 0.1907571256160736
+        },
+        "next_punct": {
+         "auroc": 0.5056256584371668,
+         "base_rate": 0.10769298672676086,
+         "top1pct_rate": 0.14896754920482635
+        },
+        "sent_pos": {
+         "abs_spearman": 0.059355797667937714
+        },
+        "line_pos": {
+         "abs_spearman": 0.05427369159158507
+        }
+       },
+       "top1pct_n": 2034,
+       "contexts": [
+        "s Chicago Business piece, confusingly titled \u201cEmanuel\u2019[[s]] Infrastructure Trust Looks",
+        " the short-term fluctuations you might have expected (fluctuations[[ that]] reappeared under",
+        " not the best, and my summaries are not to be trusted[[.]] Please forgive any",
+        " HIGHBROW/LOWBROW - \"Dr. Franz Joseph Gall[[ (]]175",
+        " \u00d7 2k (3840 \u00d7 2[[1]]60 at",
+        " you like a Miley Cyrus Wrecking Ball (minus the[[ odd]] irrelevant naked woman",
+        " and Paul Montgomery (Wormwood: A Serialized Mystery[[,]] Panels.net",
+        " my appalling dark undereye circles (lack of sleep -[[ ]]2 toddlers),",
+        " the shooting, Shick contacted UPMC doctors -- including some[[ through]] its Resolve Crisis",
+        "4 coming in the last 6-months\u2014an average[[ of]] one per week",
+        " continental (after I casually mentioned how cool schwinns are[[,]] my mom exclaimed",
+        ", computers/laptops/tablets, Gaming systems,[[ and]] DVD players),"
+       ]
+      }
+     },
+     "unscreened": {
+      "cluster": {
+       "stat": 0.10595001105950011,
+       "null_p999": 0.051886517243568166,
+       "best": 0,
+       "n_units": 16,
+       "floor": 0.5,
+       "recovered": false,
+       "margin": -0.3940499889404999
+      },
+      "logcosh": {
+       "stat": 0.7786148190498352,
+       "null_p999": 0.5193530917167664,
+       "best": 12,
+       "n_units": 64,
+       "floor": 0.7,
+       "recovered": true,
+       "margin": 0.07861481904983525
+      },
+      "skew": {
+       "stat": 0.7769551873207092,
+       "null_p999": 0.5176101326942444,
+       "best": 62,
+       "n_units": 64,
+       "floor": 0.7,
+       "recovered": true,
+       "margin": 0.07695518732070927
+      }
+     },
+     "recovered": true,
+     "probe_auroc_context": 0.7868564178466081
+    },
+    "quote_inside": {
+     "cluster": {
+      "stat": 0.0,
+      "null_p999": 0.0,
+      "best": null,
+      "n_units": 0,
+      "floor": 0.5,
+      "recovered": false,
+      "margin": -1.0
+     },
+     "logcosh": {
+      "stat": 0.6211443543434143,
+      "null_p999": 0.5120276808738708,
+      "best": 12,
+      "n_units": 35,
+      "floor": 0.7,
+      "recovered": false,
+      "margin": -0.07885564565658565
+     },
+     "skew": {
+      "stat": 0.654447615146637,
+      "null_p999": 0.5115340352058411,
+      "best": 62,
+      "n_units": 30,
+      "floor": 0.7,
+      "recovered": false,
+      "margin": -0.04555238485336299
+     },
+     "unscreened": {
+      "cluster": {
+       "stat": 0.10818438381937912,
+       "null_p999": 0.0818888439144379,
+       "best": 3,
+       "n_units": 16,
+       "floor": 0.5,
+       "recovered": false,
+       "margin": -0.3918156161806209
+      },
+      "logcosh": {
+       "stat": 0.6799987554550171,
+       "null_p999": 0.5120276808738708,
+       "best": 40,
+       "n_units": 64,
+       "floor": 0.7,
+       "recovered": false,
+       "margin": -0.020001244544982866
+      },
+      "skew": {
+       "stat": 0.654447615146637,
+       "null_p999": 0.5117188096046448,
+       "best": 62,
+       "n_units": 64,
+       "floor": 0.7,
+       "recovered": false,
+       "margin": -0.04555238485336299
+      }
+     },
+     "recovered": false,
+     "probe_auroc_context": 0.7231893333510268
+    },
+    "PASS": true
+   },
+   "seconds_control": 86.6
+  },
+  "12": {
+   "frozen": {
+    "layer": 12,
+    "whitening": {
+     "setting": "tw_N32_n16",
+     "N_MIN": 32,
+     "n0": 16,
+     "probe_paren": 0.7336484231602363,
+     "auc_floor": 0.7,
+     "guard": 0.7212257361708304
+    },
+    "n_rows": 203328,
+    "units": [
+     {
+      "kind": "cluster",
+      "id": 0,
+      "size": 13525,
+      "n_types": 2150,
+      "max_type_share": 0.05582255083179297,
+      "n_docs": 1000,
+      "repro": 0.15922773470247978,
+      "tdi": 1.0159418178836344,
+      "tdi_self_incl": 1.242694696273417,
+      "screened": false
+     },
+     {
+      "kind": "cluster",
+      "id": 1,
+      "size": 14419,
+      "n_types": 2529,
+      "max_type_share": 0.043484291559747555,
+      "n_docs": 1000,
+      "repro": 0.3494509314574288,
+      "tdi": 1.0747924266207904,
+      "tdi_self_incl": 1.3231975916450678,
+      "screened": false
+     },
+     {
+      "kind": "cluster",
+      "id": 2,
+      "size": 16557,
+      "n_types": 2603,
+      "max_type_share": 0.04366733103823156,
+      "n_docs": 1000,
+      "repro": 0.16797805181986722,
+      "tdi": 0.9924074244367765,
+      "tdi_self_incl": 1.1563252426733444,
+      "screened": false
+     },
+     {
+      "kind": "cluster",
+      "id": 3,
+      "size": 16924,
+      "n_types": 2592,
+      "max_type_share": 0.04585204443393997,
+      "n_docs": 999,
+      "repro": 0.14805304441380127,
+      "tdi": 1.0406989725529807,
+      "tdi_self_incl": 1.2401781071282794,
+      "screened": false
+     },
+     {
+      "kind": "cluster",
+      "id": 4,
+      "size": 8064,
+      "n_types": 1857,
+      "max_type_share": 0.04241071428571429,
+      "n_docs": 993,
+      "repro": 0.2110257703380931,
+      "tdi": 1.3288779053287982,
+      "tdi_self_incl": 1.8041471797052153,
+      "screened": false
+     },
+     {
+      "kind": "cluster",
+      "id": 5,
+      "size": 7673,
+      "n_types": 1170,
+      "max_type_share": 0.08458230157695816,
+      "n_docs": 995,
+      "repro": 0.24749213464022923,
+      "tdi": 1.0982315409671237,
+      "tdi_self_incl": 1.3088985975677354,
+      "screened": false
+     },
+     {
+      "kind": "cluster",
+      "id": 6,
+      "size": 9261,
+      "n_types": 2182,
+      "max_type_share": 0.052046215311521433,
+      "n_docs": 1000,
+      "repro": 0.3914170660620122,
+      "tdi": 1.026524494444607,
+      "tdi_self_incl": 1.4058407048629376,
+      "screened": false
+     },
+     {
+      "kind": "cluster",
+      "id": 7,
+      "size": 15443,
+      "n_types": 2602,
+      "max_type_share": 0.04455092922359645,
+      "n_docs": 1000,
+      "repro": 0.11817318364153022,
+      "tdi": 0.956591908156516,
+      "tdi_self_incl": 1.20298679359077,
+      "screened": false
+     },
+     {
+      "kind": "cluster",
+      "id": 8,
+      "size": 7460,
+      "n_types": 1676,
+      "max_type_share": 0.0435656836461126,
+      "n_docs": 902,
+      "repro": 0.8638527058907337,
+      "tdi": 1.0047366113463043,
+      "tdi_self_incl": 1.4066312558848262,
+      "screened": true
+     },
+     {
+      "kind": "cluster",
+      "id": 9,
+      "size": 9487,
+      "n_types": 1739,
+      "max_type_share": 0.07663117950880152,
+      "n_docs": 999,
+      "repro": 0.8253037861733106,
+      "tdi": 1.0437136496827129,
+      "tdi_self_incl": 1.3645087541306464,
+      "screened": true
+     },
+     {
+      "kind": "cluster",
+      "id": 10,
+      "size": 12586,
+      "n_types": 2070,
+      "max_type_share": 0.060225647544891146,
+      "n_docs": 1000,
+      "repro": 0.16601982585642783,
+      "tdi": 0.9806523932758796,
+      "tdi_self_incl": 1.1937260808201153,
+      "screened": false
+     },
+     {
+      "kind": "cluster",
+      "id": 11,
+      "size": 11386,
+      "n_types": 2509,
+      "max_type_share": 0.039346565958194274,
+      "n_docs": 998,
+      "repro": 0.19523767429409752,
+      "tdi": 0.9943610121600732,
+      "tdi_self_incl": 1.3786172392566314,
+      "screened": false
+     },
+     {
+      "kind": "cluster",
+      "id": 12,
+      "size": 13563,
+      "n_types": 2352,
+      "max_type_share": 0.046892280468922805,
+      "n_docs": 1000,
+      "repro": 0.4487442153448396,
+      "tdi": 0.9439381439052076,
+      "tdi_self_incl": 1.1926337907186404,
+      "screened": false
+     },
+     {
+      "kind": "cluster",
+      "id": 13,
+      "size": 13517,
+      "n_types": 2261,
+      "max_type_share": 0.049493230746467415,
+      "n_docs": 1000,
+      "repro": 0.24575296094396795,
+      "tdi": 0.9681793463713823,
+      "tdi_self_incl": 1.1874107615842127,
+      "screened": false
+     },
+     {
+      "kind": "cluster",
+      "id": 14,
+      "size": 19502,
+      "n_types": 2870,
+      "max_type_share": 0.04122654086760332,
+      "n_docs": 1000,
+      "repro": 0.2041911995701107,
+      "tdi": 1.0195055108274385,
+      "tdi_self_incl": 1.1825622390929698,
+      "screened": false
+     },
+     {
+      "kind": "cluster",
+      "id": 15,
+      "size": 13961,
+      "n_types": 2441,
+      "max_type_share": 0.04483919490007879,
+      "n_docs": 1000,
+      "repro": 0.17992929847655686,
+      "tdi": 0.9712114986932834,
+      "tdi_self_incl": 1.257046032143294,
+      "screened": false
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 0,
+      "bimodality": 0.31297749280929565,
+      "eta2_token": 1.9760136210611332e-16,
+      "eta2_token_sq": 0.020203082126346462,
+      "eta2_token_abs": 0.04218109499861192,
+      "repro": 0.976071834564209,
+      "skew": 1.2467280626296997,
+      "ex_kurtosis": 5.237614631652832,
+      "screened": true
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 1,
+      "bimodality": 0.1437244862318039,
+      "eta2_token": 1.3084352887321095e-16,
+      "eta2_token_sq": 0.03314044973243787,
+      "eta2_token_abs": 0.07093057596598587,
+      "repro": 0.9674069285392761,
+      "skew": -0.6256659626960754,
+      "ex_kurtosis": 7.020216941833496,
+      "screened": true
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 2,
+      "bimodality": 0.2286367118358612,
+      "eta2_token": 5.292618197787874e-16,
+      "eta2_token_sq": 0.04584626484072722,
+      "eta2_token_abs": 0.05034314086751029,
+      "repro": 0.9521063566207886,
+      "skew": -0.7233816981315613,
+      "ex_kurtosis": 3.5920472145080566,
+      "screened": true
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 3,
+      "bimodality": 0.24526457488536835,
+      "eta2_token": 4.3592678639065834e-16,
+      "eta2_token_sq": 0.033150949812232225,
+      "eta2_token_abs": 0.03763494385786779,
+      "repro": 0.5162160992622375,
+      "skew": -0.19025221467018127,
+      "ex_kurtosis": 1.2446341514587402,
+      "screened": false
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 4,
+      "bimodality": 0.25451159477233887,
+      "eta2_token": 3.643253902638042e-16,
+      "eta2_token_sq": 0.029892069665942638,
+      "eta2_token_abs": 0.034868420814430465,
+      "repro": 0.7850471138954163,
+      "skew": 0.14534272253513336,
+      "ex_kurtosis": 0.9284007549285889,
+      "screened": false
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 5,
+      "bimodality": 0.2612459361553192,
+      "eta2_token": 3.4061076123320154e-16,
+      "eta2_token_sq": 0.03680151949742231,
+      "eta2_token_abs": 0.04410333138150711,
+      "repro": 0.45730337500572205,
+      "skew": -0.46304163336753845,
+      "ex_kurtosis": 1.6003174781799316,
+      "screened": false
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 6,
+      "bimodality": 0.28422340750694275,
+      "eta2_token": 7.714314419578151e-16,
+      "eta2_token_sq": 0.061784665562412085,
+      "eta2_token_abs": 0.0882720498135771,
+      "repro": 0.9913679361343384,
+      "skew": -1.310867190361023,
+      "ex_kurtosis": 6.39907169342041,
+      "screened": true
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 7,
+      "bimodality": 0.24970492720603943,
+      "eta2_token": 6.00691044888745e-16,
+      "eta2_token_sq": 0.06707613906466015,
+      "eta2_token_abs": 0.06533046608348744,
+      "repro": 0.6356234550476074,
+      "skew": 0.3176349401473999,
+      "ex_kurtosis": 1.3692526817321777,
+      "screened": false
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 8,
+      "bimodality": 0.2765943109989166,
+      "eta2_token": 4.433141041009562e-16,
+      "eta2_token_sq": 0.03205297034130282,
+      "eta2_token_abs": 0.034616613389389685,
+      "repro": 0.5475701093673706,
+      "skew": -0.15271495282649994,
+      "ex_kurtosis": 0.7461183071136475,
+      "screened": false
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 9,
+      "bimodality": 0.2523578703403473,
+      "eta2_token": 8.411970362065211e-16,
+      "eta2_token_sq": 0.07744470120117633,
+      "eta2_token_abs": 0.08353097974160491,
+      "repro": 0.9816457033157349,
+      "skew": -1.0886635780334473,
+      "ex_kurtosis": 5.454764366149902,
+      "screened": true
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 10,
+      "bimodality": 0.29650357365608215,
+      "eta2_token": 1.0307199766798981e-15,
+      "eta2_token_sq": 0.1025062021987872,
+      "eta2_token_abs": 0.14743231226665027,
+      "repro": 0.972683846950531,
+      "skew": -1.3012512922286987,
+      "ex_kurtosis": 6.166060447692871,
+      "screened": true
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 11,
+      "bimodality": 0.2377282679080963,
+      "eta2_token": 5.205516215644017e-16,
+      "eta2_token_sq": 0.02844564921362669,
+      "eta2_token_abs": 0.03403958707481067,
+      "repro": 0.8882138133049011,
+      "skew": -0.465288370847702,
+      "ex_kurtosis": 1.9814181327819824,
+      "screened": true
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 12,
+      "bimodality": 0.07560352981090546,
+      "eta2_token": 6.209546553207215e-17,
+      "eta2_token_sq": 0.00504330863220306,
+      "eta2_token_abs": 0.09284832286458958,
+      "repro": 0.9843741655349731,
+      "skew": -2.2655630111694336,
+      "ex_kurtosis": 60.58456802368164,
+      "screened": true
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 13,
+      "bimodality": 0.24502480030059814,
+      "eta2_token": 7.826114599177605e-16,
+      "eta2_token_sq": 0.07494352317009191,
+      "eta2_token_abs": 0.09199020428764525,
+      "repro": 0.9233212471008301,
+      "skew": 0.740788996219635,
+      "ex_kurtosis": 3.4272704124450684,
+      "screened": true
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 14,
+      "bimodality": 0.25717222690582275,
+      "eta2_token": 3.4257957547705315e-16,
+      "eta2_token_sq": 0.029161216923079374,
+      "eta2_token_abs": 0.034285714538984886,
+      "repro": 0.7579751014709473,
+      "skew": 0.1262727975845337,
+      "ex_kurtosis": 0.9038982391357422,
+      "screened": false
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 15,
+      "bimodality": 0.2581590712070465,
+      "eta2_token": 2.8071297330123304e-16,
+      "eta2_token_sq": 0.029776538737777514,
+      "eta2_token_abs": 0.04538486832223993,
+      "repro": 0.6586390137672424,
+      "skew": -0.6307694315910339,
+      "ex_kurtosis": 2.2937803268432617,
+      "screened": false
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 16,
+      "bimodality": 0.25369706749916077,
+      "eta2_token": 7.488048302250816e-16,
+      "eta2_token_sq": 0.05411712996843229,
+      "eta2_token_abs": 0.09414314167305216,
+      "repro": 0.9482986330986023,
+      "skew": -0.9922685027122498,
+      "ex_kurtosis": 4.815455913543701,
+      "screened": true
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 17,
+      "bimodality": 0.21660660207271576,
+      "eta2_token": 4.104739430240692e-16,
+      "eta2_token_sq": 0.04718340010552341,
+      "eta2_token_abs": 0.07514768870629981,
+      "repro": 0.9645082950592041,
+      "skew": 0.841230034828186,
+      "ex_kurtosis": 4.784254550933838,
+      "screened": true
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 18,
+      "bimodality": 0.25924015045166016,
+      "eta2_token": 3.59911033646464e-16,
+      "eta2_token_sq": 0.032252856808755996,
+      "eta2_token_abs": 0.036609366003317295,
+      "repro": 0.5123886466026306,
+      "skew": -0.024617556482553482,
+      "ex_kurtosis": 0.8382441997528076,
+      "screened": false
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 19,
+      "bimodality": 0.21069955825805664,
+      "eta2_token": 1.378562889803469e-16,
+      "eta2_token_sq": 0.056498025874467735,
+      "eta2_token_abs": 0.08550627854397531,
+      "repro": 0.4963344931602478,
+      "skew": -0.1913733035326004,
+      "ex_kurtosis": 1.975722312927246,
+      "screened": false
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 20,
+      "bimodality": 0.2610366940498352,
+      "eta2_token": 2.576718653895095e-16,
+      "eta2_token_sq": 0.02797825631546757,
+      "eta2_token_abs": 0.03926226584743425,
+      "repro": 0.37786489725112915,
+      "skew": -0.4628783166408539,
+      "ex_kurtosis": 1.6311182975769043,
+      "screened": false
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 21,
+      "bimodality": 0.21289967000484467,
+      "eta2_token": 7.537929454263442e-16,
+      "eta2_token_sq": 0.07340374704874052,
+      "eta2_token_abs": 0.08536885403834887,
+      "repro": 0.9375348687171936,
+      "skew": 0.42292970418930054,
+      "ex_kurtosis": 2.620131015777588,
+      "screened": true
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 22,
+      "bimodality": 0.21694785356521606,
+      "eta2_token": 1.43065685179603e-16,
+      "eta2_token_sq": 0.026899727854274864,
+      "eta2_token_abs": 0.060873962442961414,
+      "repro": 0.8699245452880859,
+      "skew": -1.0546954870224,
+      "ex_kurtosis": 6.603864669799805,
+      "screened": true
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 23,
+      "bimodality": 0.2370370477437973,
+      "eta2_token": 7.852189957199971e-16,
+      "eta2_token_sq": 0.07994055628818024,
+      "eta2_token_abs": 0.09049077173721008,
+      "repro": 0.9800631403923035,
+      "skew": -1.335823893547058,
+      "ex_kurtosis": 8.904570579528809,
+      "screened": true
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 24,
+      "bimodality": 0.29450568556785583,
+      "eta2_token": 5.512941209885676e-16,
+      "eta2_token_sq": 0.04004145173386061,
+      "eta2_token_abs": 0.04586857754696488,
+      "repro": 0.9778095483779907,
+      "skew": 0.8775140047073364,
+      "ex_kurtosis": 3.039151191711426,
+      "screened": true
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 25,
+      "bimodality": 0.18465647101402283,
+      "eta2_token": 7.277349962252832e-16,
+      "eta2_token_sq": 0.1435523962488713,
+      "eta2_token_abs": 0.11739079284682073,
+      "repro": 0.4097500741481781,
+      "skew": 0.08187269419431686,
+      "ex_kurtosis": 2.380309581756592,
+      "screened": false
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 26,
+      "bimodality": 0.24187107384204865,
+      "eta2_token": 3.7613639956471414e-16,
+      "eta2_token_sq": 0.04541005535678095,
+      "eta2_token_abs": 0.04959363782992157,
+      "repro": 0.868032693862915,
+      "skew": -0.507748007774353,
+      "ex_kurtosis": 2.131437301635742,
+      "screened": true
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 27,
+      "bimodality": 0.2458009123802185,
+      "eta2_token": 4.700482105780315e-16,
+      "eta2_token_sq": 0.03581591516609833,
+      "eta2_token_abs": 0.041340439383861234,
+      "repro": 0.8620824217796326,
+      "skew": -0.5392357110977173,
+      "ex_kurtosis": 2.2687244415283203,
+      "screened": true
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 28,
+      "bimodality": 0.21904323995113373,
+      "eta2_token": 5.997677202697069e-16,
+      "eta2_token_sq": 0.06621848996230302,
+      "eta2_token_abs": 0.07634493996928406,
+      "repro": 0.639714241027832,
+      "skew": -0.41735345125198364,
+      "ex_kurtosis": 2.3308629989624023,
+      "screened": false
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 29,
+      "bimodality": 0.2399059236049652,
+      "eta2_token": 2.7416750561825793e-16,
+      "eta2_token_sq": 0.028828670594732885,
+      "eta2_token_abs": 0.04122142301025007,
+      "repro": 0.8252775073051453,
+      "skew": 0.39206114411354065,
+      "ex_kurtosis": 1.7257800102233887,
+      "screened": true
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 30,
+      "bimodality": 0.2348558008670807,
+      "eta2_token": 2.4951897031044556e-16,
+      "eta2_token_sq": 0.037784542738753174,
+      "eta2_token_abs": 0.05024598940506747,
+      "repro": 0.6069531440734863,
+      "skew": 0.4021507203578949,
+      "ex_kurtosis": 1.940037727355957,
+      "screened": false
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 31,
+      "bimodality": 0.2635810673236847,
+      "eta2_token": 4.1213356895275205e-16,
+      "eta2_token_sq": 0.030841872553937565,
+      "eta2_token_abs": 0.03661989120294088,
+      "repro": 0.418903648853302,
+      "skew": 0.20859304070472717,
+      "ex_kurtosis": 1.0088224411010742,
+      "screened": false
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 32,
+      "bimodality": 0.24400107562541962,
+      "eta2_token": 4.483460604296004e-16,
+      "eta2_token_sq": 0.04596049856654182,
+      "eta2_token_abs": 0.05266172785492105,
+      "repro": 0.9572522044181824,
+      "skew": -0.6072704195976257,
+      "ex_kurtosis": 2.540501117706299,
+      "screened": true
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 33,
+      "bimodality": 0.22199396789073944,
+      "eta2_token": 4.372090229279705e-16,
+      "eta2_token_sq": 0.020510068359529027,
+      "eta2_token_abs": 0.030393905907388545,
+      "repro": 0.9894188642501831,
+      "skew": -0.8163714408874512,
+      "ex_kurtosis": 4.614333629608154,
+      "screened": true
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 34,
+      "bimodality": 0.2714976966381073,
+      "eta2_token": 3.9032044896565166e-16,
+      "eta2_token_sq": 0.034699539681135004,
+      "eta2_token_abs": 0.04333583248065756,
+      "repro": 0.4106122553348541,
+      "skew": -0.3929453492164612,
+      "ex_kurtosis": 1.232886791229248,
+      "screened": false
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 35,
+      "bimodality": 0.2560742199420929,
+      "eta2_token": 2.4842437260269515e-16,
+      "eta2_token_sq": 0.032901728718661975,
+      "eta2_token_abs": 0.04111623604521648,
+      "repro": 0.4783554971218109,
+      "skew": 0.034279897809028625,
+      "ex_kurtosis": 0.8947021961212158,
+      "screened": false
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 36,
+      "bimodality": 0.2268945872783661,
+      "eta2_token": 2.1212364165122673e-16,
+      "eta2_token_sq": 0.031662167133327306,
+      "eta2_token_abs": 0.04585729446815099,
+      "repro": 0.6898870468139648,
+      "skew": -0.37951841950416565,
+      "ex_kurtosis": 1.9829740524291992,
+      "screened": false
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 37,
+      "bimodality": 0.2888730466365814,
+      "eta2_token": 2.7119924182940856e-16,
+      "eta2_token_sq": 0.016192664941911596,
+      "eta2_token_abs": 0.031225542922718064,
+      "repro": 0.9515800476074219,
+      "skew": 1.0400711297988892,
+      "ex_kurtosis": 4.279142379760742,
+      "screened": true
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 38,
+      "bimodality": 0.22594349086284637,
+      "eta2_token": 7.977035341993308e-16,
+      "eta2_token_sq": 0.07205837257722127,
+      "eta2_token_abs": 0.07464437640977838,
+      "repro": 0.7521085143089294,
+      "skew": -0.4750475585460663,
+      "ex_kurtosis": 2.5453405380249023,
+      "screened": false
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 39,
+      "bimodality": 0.2787778973579407,
+      "eta2_token": 3.7195915566437667e-16,
+      "eta2_token_sq": 0.026037213264897212,
+      "eta2_token_abs": 0.030711262043991425,
+      "repro": 0.42740702629089355,
+      "skew": 0.014540674164891243,
+      "ex_kurtosis": 0.6205124855041504,
+      "screened": false
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 40,
+      "bimodality": 0.2648286819458008,
+      "eta2_token": 3.5324429982177124e-16,
+      "eta2_token_sq": 0.026784842160009485,
+      "eta2_token_abs": 0.03266433870534248,
+      "repro": 0.8741224408149719,
+      "skew": 0.4321541488170624,
+      "ex_kurtosis": 1.4444308280944824,
+      "screened": true
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 41,
+      "bimodality": 0.20393221080303192,
+      "eta2_token": 9.555644737592126e-17,
+      "eta2_token_sq": 0.04232645340633435,
+      "eta2_token_abs": 0.07139852213270086,
+      "repro": 0.42351412773132324,
+      "skew": -0.23859161138534546,
+      "ex_kurtosis": 2.0541653633117676,
+      "screened": false
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 42,
+      "bimodality": 0.19100676476955414,
+      "eta2_token": 5.464937784009808e-16,
+      "eta2_token_sq": 0.03905141516403609,
+      "eta2_token_abs": 0.045168187637188884,
+      "repro": 0.5212777256965637,
+      "skew": -0.21873344480991364,
+      "ex_kurtosis": 2.3891239166259766,
+      "screened": false
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 43,
+      "bimodality": 0.24386002123355865,
+      "eta2_token": 4.385557185438249e-16,
+      "eta2_token_sq": 0.03437087392216055,
+      "eta2_token_abs": 0.03853826504545565,
+      "repro": 0.7957800626754761,
+      "skew": 0.24258621037006378,
+      "ex_kurtosis": 1.3172698020935059,
+      "screened": false
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 44,
+      "bimodality": 0.2832411825656891,
+      "eta2_token": 4.112291800748591e-16,
+      "eta2_token_sq": 0.034752516749270705,
+      "eta2_token_abs": 0.04538035848689506,
+      "repro": 0.985234797000885,
+      "skew": -0.9633837342262268,
+      "ex_kurtosis": 3.7936253547668457,
+      "screened": true
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 45,
+      "bimodality": 0.2478923350572586,
+      "eta2_token": 3.4240113611946334e-16,
+      "eta2_token_sq": 0.028383846063968383,
+      "eta2_token_abs": 0.03521129485330141,
+      "repro": 0.9476051926612854,
+      "skew": 0.5226237177848816,
+      "ex_kurtosis": 1.999375820159912,
+      "screened": true
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 46,
+      "bimodality": 0.2661711573600769,
+      "eta2_token": 2.4472949260300436e-16,
+      "eta2_token_sq": 0.035902799097414353,
+      "eta2_token_abs": 0.05992635590829489,
+      "repro": 0.8945887684822083,
+      "skew": 0.8145796060562134,
+      "ex_kurtosis": 3.4748940467834473,
+      "screened": true
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 47,
+      "bimodality": 0.2539183497428894,
+      "eta2_token": 4.1658550434128847e-16,
+      "eta2_token_sq": 0.03178395826295438,
+      "eta2_token_abs": 0.03621775777925239,
+      "repro": 0.35425376892089844,
+      "skew": -0.23385129868984222,
+      "ex_kurtosis": 1.099409580230713,
+      "screened": false
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 48,
+      "bimodality": 0.18614695966243744,
+      "eta2_token": 1.4287271792792055e-16,
+      "eta2_token_sq": 0.022624544622713034,
+      "eta2_token_abs": 0.04823479299303751,
+      "repro": 0.8782012462615967,
+      "skew": 0.6284915804862976,
+      "ex_kurtosis": 4.188445568084717,
+      "screened": true
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 49,
+      "bimodality": 0.25716274976730347,
+      "eta2_token": 3.47621086203318e-16,
+      "eta2_token_sq": 0.03186622144146566,
+      "eta2_token_abs": 0.04227147605433785,
+      "repro": 0.435971200466156,
+      "skew": 0.5253350734710693,
+      "ex_kurtosis": 1.8584203720092773,
+      "screened": false
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 50,
+      "bimodality": 0.1647210270166397,
+      "eta2_token": 1.3233968624199869e-16,
+      "eta2_token_sq": 0.03670211971954784,
+      "eta2_token_abs": 0.06241554593477362,
+      "repro": 0.897991955280304,
+      "skew": -0.6803863644599915,
+      "ex_kurtosis": 5.579935073852539,
+      "screened": true
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 51,
+      "bimodality": 0.2732841372489929,
+      "eta2_token": 4.451680811408798e-16,
+      "eta2_token_sq": 0.03536596698488943,
+      "eta2_token_abs": 0.0376852179233973,
+      "repro": 0.40770024061203003,
+      "skew": -0.02070903405547142,
+      "ex_kurtosis": 0.7114782333374023,
+      "screened": false
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 52,
+      "bimodality": 0.2141517698764801,
+      "eta2_token": 8.328222747785769e-16,
+      "eta2_token_sq": 0.09885362422985952,
+      "eta2_token_abs": 0.0899712860204735,
+      "repro": 0.6972986459732056,
+      "skew": 0.07617147266864777,
+      "ex_kurtosis": 1.501542568206787,
+      "screened": false
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 53,
+      "bimodality": 0.14353413879871368,
+      "eta2_token": 7.196509442428882e-17,
+      "eta2_token_sq": 0.019852863167144397,
+      "eta2_token_abs": 0.06715650903868425,
+      "repro": 0.9622659683227539,
+      "skew": 0.8697121143341064,
+      "ex_kurtosis": 8.471366882324219,
+      "screened": true
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 54,
+      "bimodality": 0.23907111585140228,
+      "eta2_token": 3.2488236855579086e-16,
+      "eta2_token_sq": 0.028643689749037096,
+      "eta2_token_abs": 0.03971373562501687,
+      "repro": 0.8331490755081177,
+      "skew": -0.3149661123752594,
+      "ex_kurtosis": 1.5554356575012207,
+      "screened": true
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 55,
+      "bimodality": 0.16229647397994995,
+      "eta2_token": 2.319842600019474e-16,
+      "eta2_token_sq": 0.044887339305422234,
+      "eta2_token_abs": 0.055941110756875384,
+      "repro": 0.9364827871322632,
+      "skew": -0.5551446080207825,
+      "ex_kurtosis": 5.064450263977051,
+      "screened": true
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 56,
+      "bimodality": 0.2620241641998291,
+      "eta2_token": 3.8768050240170505e-16,
+      "eta2_token_sq": 0.03207778155958103,
+      "eta2_token_abs": 0.03853938575129101,
+      "repro": 0.9290530681610107,
+      "skew": 0.5914405584335327,
+      "ex_kurtosis": 2.0968308448791504,
+      "screened": true
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 57,
+      "bimodality": 0.2632559835910797,
+      "eta2_token": 3.7161526272018876e-16,
+      "eta2_token_sq": 0.034518051349927054,
+      "eta2_token_abs": 0.037572826349719736,
+      "repro": 0.9097326993942261,
+      "skew": -0.3823997676372528,
+      "ex_kurtosis": 1.4650907516479492,
+      "screened": true
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 58,
+      "bimodality": 0.25837522745132446,
+      "eta2_token": 3.1153169377036493e-16,
+      "eta2_token_sq": 0.03156602767130819,
+      "eta2_token_abs": 0.03841813063612739,
+      "repro": 0.5385988354682922,
+      "skew": 0.11350437253713608,
+      "ex_kurtosis": 0.9299943447113037,
+      "screened": false
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 59,
+      "bimodality": 0.2441755086183548,
+      "eta2_token": 3.117456362476819e-16,
+      "eta2_token_sq": 0.030741733573216187,
+      "eta2_token_abs": 0.04253999749120975,
+      "repro": 0.9480183124542236,
+      "skew": -0.5887746810913086,
+      "ex_kurtosis": 2.6403579711914062,
+      "screened": true
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 60,
+      "bimodality": 0.2526319622993469,
+      "eta2_token": 8.703331572952093e-16,
+      "eta2_token_sq": 0.101659069742476,
+      "eta2_token_abs": 0.09601846005911048,
+      "repro": 0.9559565782546997,
+      "skew": 0.5072430372238159,
+      "ex_kurtosis": 2.006382942199707,
+      "screened": true
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 61,
+      "bimodality": 0.22405880689620972,
+      "eta2_token": 1.675090355289629e-16,
+      "eta2_token_sq": 0.03155087506751826,
+      "eta2_token_abs": 0.05520186730130984,
+      "repro": 0.8419661521911621,
+      "skew": -0.45620423555374146,
+      "ex_kurtosis": 2.338707447052002,
+      "screened": true
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 62,
+      "bimodality": 0.23214371502399445,
+      "eta2_token": 4.557973837221496e-16,
+      "eta2_token_sq": 0.03611912717032205,
+      "eta2_token_abs": 0.04395380957540279,
+      "repro": 0.31435492634773254,
+      "skew": 0.328439325094223,
+      "ex_kurtosis": 1.7942185401916504,
+      "screened": false
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 63,
+      "bimodality": 0.24844804406166077,
+      "eta2_token": 4.306724408691967e-16,
+      "eta2_token_sq": 0.03580070861152438,
+      "eta2_token_abs": 0.044896373344460574,
+      "repro": 0.8761439919471741,
+      "skew": -0.6882079243659973,
+      "ex_kurtosis": 2.7911109924316406,
+      "screened": true
+     },
+     {
+      "kind": "ica_skew",
+      "id": 0,
+      "bimodality": 0.3155369758605957,
+      "eta2_token": 2.0753768480231837e-16,
+      "eta2_token_sq": 0.019697402689842814,
+      "eta2_token_abs": 0.04145016127878693,
+      "repro": 0.9601795077323914,
+      "skew": 1.2485640048980713,
+      "ex_kurtosis": 5.173098564147949,
+      "screened": true
+     },
+     {
+      "kind": "ica_skew",
+      "id": 1,
+      "bimodality": 0.2709728181362152,
+      "eta2_token": 3.1194600789210765e-16,
+      "eta2_token_sq": 0.029865860191976484,
+      "eta2_token_abs": 0.044922022944663596,
+      "repro": 0.9184918403625488,
+      "skew": 0.6450183987617493,
+      "ex_kurtosis": 2.1323509216308594,
+      "screened": true
+     },
+     {
+      "kind": "ica_skew",
+      "id": 2,
+      "bimodality": 0.2380073368549347,
+      "eta2_token": 5.249259464113543e-16,
+      "eta2_token_sq": 0.04537192032066711,
+      "eta2_token_abs": 0.05000883645594939,
+      "repro": 0.9676039218902588,
+      "skew": 0.7497545480728149,
+      "ex_kurtosis": 3.518825054168701,
+      "screened": true
+     },
+     {
+      "kind": "ica_skew",
+      "id": 3,
+      "bimodality": 0.28850364685058594,
+      "eta2_token": 3.91323095181834e-16,
+      "eta2_token_sq": 0.029427651322760554,
+      "eta2_token_abs": 0.03427792399975261,
+      "repro": 0.7035145163536072,
+      "skew": 0.24808818101882935,
+      "ex_kurtosis": 0.6937768459320068,
+      "screened": false
+     },
+     {
+      "kind": "ica_skew",
+      "id": 4,
+      "bimodality": 0.2792450785636902,
+      "eta2_token": 4.2004194062576565e-16,
+      "eta2_token_sq": 0.03312715217627437,
+      "eta2_token_abs": 0.03739285169291207,
+      "repro": 0.48535919189453125,
+      "skew": 0.252225399017334,
+      "ex_kurtosis": 0.801283597946167,
+      "screened": false
+     },
+     {
+      "kind": "ica_skew",
+      "id": 5,
+      "bimodality": 0.2610907256603241,
+      "eta2_token": 3.4765379149764444e-16,
+      "eta2_token_sq": 0.02804161971696838,
+      "eta2_token_abs": 0.03398999095227356,
+      "repro": 0.96177077293396,
+      "skew": 0.484659343957901,
+      "ex_kurtosis": 1.6572866439819336,
+      "screened": true
+     },
+     {
+      "kind": "ica_skew",
+      "id": 6,
+      "bimodality": 0.28490930795669556,
+      "eta2_token": 7.716927795459133e-16,
+      "eta2_token_sq": 0.0542725395060679,
+      "eta2_token_abs": 0.08042473653996998,
+      "repro": 0.9874953627586365,
+      "skew": 1.2881741523742676,
+      "ex_kurtosis": 6.197169303894043,
+      "screened": true
+     },
+     {
+      "kind": "ica_skew",
+      "id": 7,
+      "bimodality": 0.2506684362888336,
+      "eta2_token": 5.193989910202638e-16,
+      "eta2_token_sq": 0.03751347521955275,
+      "eta2_token_abs": 0.046077928037443545,
+      "repro": 0.9378167986869812,
+      "skew": 0.7052949070930481,
+      "ex_kurtosis": 2.877467632293701,
+      "screened": true
+     },
+     {
+      "kind": "ica_skew",
+      "id": 8,
+      "bimodality": 0.2566838562488556,
+      "eta2_token": 3.647036691893746e-16,
+      "eta2_token_sq": 0.03080097446859429,
+      "eta2_token_abs": 0.043568578081315035,
+      "repro": 0.9360968470573425,
+      "skew": 0.5516934990882874,
+      "ex_kurtosis": 1.9554972648620605,
+      "screened": true
+     },
+     {
+      "kind": "ica_skew",
+      "id": 9,
+      "bimodality": 0.2738659977912903,
+      "eta2_token": 4.2396360181774293e-16,
+      "eta2_token_sq": 0.03577167193634452,
+      "eta2_token_abs": 0.04045422271422296,
+      "repro": 0.6569804549217224,
+      "skew": 0.39995449781417847,
+      "ex_kurtosis": 1.2216787338256836,
+      "screened": false
+     },
+     {
+      "kind": "ica_skew",
+      "id": 10,
+      "bimodality": 0.2865649163722992,
+      "eta2_token": 4.091025564138125e-16,
+      "eta2_token_sq": 0.03461930187592955,
+      "eta2_token_abs": 0.037639025713085875,
+      "repro": 0.5084182620048523,
+      "skew": 0.3145076334476471,
+      "ex_kurtosis": 0.8523144721984863,
+      "screened": false
+     },
+     {
+      "kind": "ica_skew",
+      "id": 11,
+      "bimodality": 0.26315999031066895,
+      "eta2_token": 3.5278479845923756e-16,
+      "eta2_token_sq": 0.035288409040374336,
+      "eta2_token_abs": 0.04343169752007414,
+      "repro": 0.9259399771690369,
+      "skew": 0.46672752499580383,
+      "ex_kurtosis": 1.5580787658691406,
+      "screened": true
+     },
+     {
+      "kind": "ica_skew",
+      "id": 12,
+      "bimodality": 0.27216824889183044,
+      "eta2_token": 4.3694309149702986e-16,
+      "eta2_token_sq": 0.032611032707562444,
+      "eta2_token_abs": 0.03988778343725188,
+      "repro": 0.9265375137329102,
+      "skew": 0.6076627373695374,
+      "ex_kurtosis": 1.9936861991882324,
+      "screened": true
+     },
+     {
+      "kind": "ica_skew",
+      "id": 13,
+      "bimodality": 0.2813231348991394,
+      "eta2_token": 3.315000167698281e-16,
+      "eta2_token_sq": 0.030265195799765457,
+      "eta2_token_abs": 0.0362817636448317,
+      "repro": 0.5170007944107056,
+      "skew": 0.25319305062294006,
+      "ex_kurtosis": 0.7424609661102295,
+      "screened": false
+     },
+     {
+      "kind": "ica_skew",
+      "id": 14,
+      "bimodality": 0.21322724223136902,
+      "eta2_token": 1.3211229374034737e-16,
+      "eta2_token_sq": 0.020031402471285882,
+      "eta2_token_abs": 0.06642754666308748,
+      "repro": 0.9714431166648865,
+      "skew": 1.3793697357177734,
+      "ex_kurtosis": 10.385610580444336,
+      "screened": true
+     },
+     {
+      "kind": "ica_skew",
+      "id": 15,
+      "bimodality": 0.2956659197807312,
+      "eta2_token": 1.0567269876818552e-15,
+      "eta2_token_sq": 0.09427946489844033,
+      "eta2_token_abs": 0.134903538931379,
+      "repro": 0.9833516478538513,
+      "skew": 1.253833532333374,
+      "ex_kurtosis": 5.793814659118652,
+      "screened": true
+     },
+     {
+      "kind": "ica_skew",
+      "id": 16,
+      "bimodality": 0.26295900344848633,
+      "eta2_token": 7.705691380909362e-16,
+      "eta2_token_sq": 0.0654994203943499,
+      "eta2_token_abs": 0.09237230810820062,
+      "repro": 0.9665958285331726,
+      "skew": 0.870290219783783,
+      "ex_kurtosis": 3.7713818550109863,
+      "screened": true
+     },
+     {
+      "kind": "ica_skew",
+      "id": 17,
+      "bimodality": 0.19361723959445953,
+      "eta2_token": 1.9132807776207712e-16,
+      "eta2_token_sq": 0.040647062432783404,
+      "eta2_token_abs": 0.058217387391922275,
+      "repro": 0.6221367120742798,
+      "skew": 0.527298629283905,
+      "ex_kurtosis": 3.397672653198242,
+      "screened": false
+     },
+     {
+      "kind": "ica_skew",
+      "id": 18,
+      "bimodality": 0.08212672173976898,
+      "eta2_token": 6.378101471050942e-17,
+      "eta2_token_sq": 0.004816409172555276,
+      "eta2_token_abs": 0.09034826035625365,
+      "repro": 0.9814098477363586,
+      "skew": 2.3523080348968506,
+      "ex_kurtosis": 60.921241760253906,
+      "screened": true
+     },
+     {
+      "kind": "ica_skew",
+      "id": 19,
+      "bimodality": 0.25310495495796204,
+      "eta2_token": 1.6018843651075162e-16,
+      "eta2_token_sq": 0.05232503910473865,
+      "eta2_token_abs": 0.07367536879823718,
+      "repro": 0.7717738747596741,
+      "skew": 0.328145831823349,
+      "ex_kurtosis": 1.3193731307983398,
+      "screened": false
+     },
+     {
+      "kind": "ica_skew",
+      "id": 20,
+      "bimodality": 0.25636693835258484,
+      "eta2_token": 3.9096186955533844e-16,
+      "eta2_token_sq": 0.034306328482015105,
+      "eta2_token_abs": 0.042155649370260964,
+      "repro": 0.9337981343269348,
+      "skew": 0.6353222131729126,
+      "ex_kurtosis": 2.4950456619262695,
+      "screened": true
+     },
+     {
+      "kind": "ica_skew",
+      "id": 21,
+      "bimodality": 0.24475210905075073,
+      "eta2_token": 6.256027177645537e-16,
+      "eta2_token_sq": 0.05031551852663158,
+      "eta2_token_abs": 0.06375001795977012,
+      "repro": 0.9269489645957947,
+      "skew": 0.5458764433860779,
+      "ex_kurtosis": 2.407714366912842,
+      "screened": true
+     },
+     {
+      "kind": "ica_skew",
+      "id": 22,
+      "bimodality": 0.2851194441318512,
+      "eta2_token": 3.9506438133259985e-16,
+      "eta2_token_sq": 0.030899154563155607,
+      "eta2_token_abs": 0.038929062739755146,
+      "repro": 0.5927579998970032,
+      "skew": 0.40429356694221497,
+      "ex_kurtosis": 1.0562586784362793,
+      "screened": false
+     },
+     {
+      "kind": "ica_skew",
+      "id": 23,
+      "bimodality": 0.2532094120979309,
+      "eta2_token": 5.527530732538347e-16,
+      "eta2_token_sq": 0.02931872965823159,
+      "eta2_token_abs": 0.035578434847415415,
+      "repro": 0.9493111371994019,
+      "skew": 0.5393677949905396,
+      "ex_kurtosis": 1.9795160293579102,
+      "screened": true
+     },
+     {
+      "kind": "ica_skew",
+      "id": 24,
+      "bimodality": 0.2916824221611023,
+      "eta2_token": 4.744801188463608e-16,
+      "eta2_token_sq": 0.034791857710286325,
+      "eta2_token_abs": 0.04223853596909951,
+      "repro": 0.9333133101463318,
+      "skew": 0.820972204208374,
+      "ex_kurtosis": 2.7626466751098633,
+      "screened": true
+     },
+     {
+      "kind": "ica_skew",
+      "id": 25,
+      "bimodality": 0.25959479808807373,
+      "eta2_token": 4.02274035854228e-16,
+      "eta2_token_sq": 0.03690315534994503,
+      "eta2_token_abs": 0.04389168126655617,
+      "repro": 0.8435955047607422,
+      "skew": 0.5618457794189453,
+      "ex_kurtosis": 2.102971076965332,
+      "screened": true
+     },
+     {
+      "kind": "ica_skew",
+      "id": 26,
+      "bimodality": 0.2516554892063141,
+      "eta2_token": 3.5283034935709384e-16,
+      "eta2_token_sq": 0.038452746214689255,
+      "eta2_token_abs": 0.04654102242235254,
+      "repro": 0.8949487209320068,
+      "skew": 0.6054084897041321,
+      "ex_kurtosis": 2.405372142791748,
+      "screened": true
+     },
+     {
+      "kind": "ica_skew",
+      "id": 27,
+      "bimodality": 0.2856554388999939,
+      "eta2_token": 4.094831666058305e-16,
+      "eta2_token_sq": 0.0494450391666589,
+      "eta2_token_abs": 0.05021191321121219,
+      "repro": 0.7148904800415039,
+      "skew": 0.3198543190956116,
+      "ex_kurtosis": 0.8728606700897217,
+      "screened": false
+     },
+     {
+      "kind": "ica_skew",
+      "id": 28,
+      "bimodality": 0.27977728843688965,
+      "eta2_token": 7.685825727120927e-16,
+      "eta2_token_sq": 0.08461636800832298,
+      "eta2_token_abs": 0.08459962450291936,
+      "repro": 0.9621855020523071,
+      "skew": 0.582630455493927,
+      "ex_kurtosis": 1.859548568725586,
+      "screened": true
+     },
+     {
+      "kind": "ica_skew",
+      "id": 29,
+      "bimodality": 0.24465446174144745,
+      "eta2_token": 6.378392837189853e-16,
+      "eta2_token_sq": 0.056690980359769105,
+      "eta2_token_abs": 0.07489205315441588,
+      "repro": 0.7224570512771606,
+      "skew": 0.5950543284416199,
+      "ex_kurtosis": 2.515007972717285,
+      "screened": false
+     },
+     {
+      "kind": "ica_skew",
+      "id": 30,
+      "bimodality": 0.2633817791938782,
+      "eta2_token": 2.9597039962583024e-16,
+      "eta2_token_sq": 0.03815260456107889,
+      "eta2_token_abs": 0.04603334425715221,
+      "repro": 0.7346696257591248,
+      "skew": 0.40297311544418335,
+      "ex_kurtosis": 1.4287195205688477,
+      "screened": false
+     },
+     {
+      "kind": "ica_skew",
+      "id": 31,
+      "bimodality": 0.174198716878891,
+      "eta2_token": 1.8251944977621116e-16,
+      "eta2_token_sq": 0.03250988424813931,
+      "eta2_token_abs": 0.06462891836322143,
+      "repro": 0.9574865698814392,
+      "skew": 0.711625874042511,
+      "ex_kurtosis": 6.12541389465332,
+      "screened": true
+     },
+     {
+      "kind": "ica_skew",
+      "id": 32,
+      "bimodality": 0.26751285791397095,
+      "eta2_token": 3.0744242619641473e-16,
+      "eta2_token_sq": 0.028351096213132754,
+      "eta2_token_abs": 0.036491162936273684,
+      "repro": 0.8082718253135681,
+      "skew": 0.457387775182724,
+      "ex_kurtosis": 1.4678502082824707,
+      "screened": true
+     },
+     {
+      "kind": "ica_skew",
+      "id": 33,
+      "bimodality": 0.23417097330093384,
+      "eta2_token": 4.763264170748453e-16,
+      "eta2_token_sq": 0.02019678722519902,
+      "eta2_token_abs": 0.029905146707090147,
+      "repro": 0.9851298928260803,
+      "skew": 0.8367518186569214,
+      "ex_kurtosis": 4.322717666625977,
+      "screened": true
+     },
+     {
+      "kind": "ica_skew",
+      "id": 34,
+      "bimodality": 0.26898622512817383,
+      "eta2_token": 2.8004770139574255e-16,
+      "eta2_token_sq": 0.03320489464500034,
+      "eta2_token_abs": 0.058040537680742056,
+      "repro": 0.9601144194602966,
+      "skew": 0.8632355332374573,
+      "ex_kurtosis": 3.6738386154174805,
+      "screened": true
+     },
+     {
+      "kind": "ica_skew",
+      "id": 35,
+      "bimodality": 0.21521511673927307,
+      "eta2_token": 4.0480213607933384e-16,
+      "eta2_token_sq": 0.04278889417844554,
+      "eta2_token_abs": 0.0687862039410765,
+      "repro": 0.916519045829773,
+      "skew": 0.8174490332603455,
+      "ex_kurtosis": 4.609984397888184,
+      "screened": true
+     },
+     {
+      "kind": "ica_skew",
+      "id": 36,
+      "bimodality": 0.27222490310668945,
+      "eta2_token": 5.064441509594155e-16,
+      "eta2_token_sq": 0.05305662629518169,
+      "eta2_token_abs": 0.05401785480036169,
+      "repro": 0.41622939705848694,
+      "skew": 0.3614175021648407,
+      "ex_kurtosis": 1.181941032409668,
+      "screened": false
+     },
+     {
+      "kind": "ica_skew",
+      "id": 37,
+      "bimodality": 0.27506986260414124,
+      "eta2_token": 2.7487298034220695e-16,
+      "eta2_token_sq": 0.018003854498890904,
+      "eta2_token_abs": 0.032510880325817,
+      "repro": 0.9564982652664185,
+      "skew": 0.8625112771987915,
+      "ex_kurtosis": 3.425107955932617,
+      "screened": true
+     },
+     {
+      "kind": "ica_skew",
+      "id": 38,
+      "bimodality": 0.2437356561422348,
+      "eta2_token": 8.153174082094936e-16,
+      "eta2_token_sq": 0.07482228799134388,
+      "eta2_token_abs": 0.08857370512875223,
+      "repro": 0.9838740825653076,
+      "skew": 1.4040215015411377,
+      "ex_kurtosis": 9.348278045654297,
+      "screened": true
+     },
+     {
+      "kind": "ica_skew",
+      "id": 39,
+      "bimodality": 0.28695154190063477,
+      "eta2_token": 4.2412421029252324e-16,
+      "eta2_token_sq": 0.03485489298949301,
+      "eta2_token_abs": 0.04477773456293649,
+      "repro": 0.987342119216919,
+      "skew": 0.9610132575035095,
+      "ex_kurtosis": 3.698214054107666,
+      "screened": true
+     },
+     {
+      "kind": "ica_skew",
+      "id": 40,
+      "bimodality": 0.2589200735092163,
+      "eta2_token": 2.707837450309591e-16,
+      "eta2_token_sq": 0.03358871615580457,
+      "eta2_token_abs": 0.04742515980302343,
+      "repro": 0.8293004035949707,
+      "skew": 0.30357202887535095,
+      "ex_kurtosis": 1.1596179008483887,
+      "screened": true
+     },
+     {
+      "kind": "ica_skew",
+      "id": 41,
+      "bimodality": 0.27130162715911865,
+      "eta2_token": 4.564849370382634e-16,
+      "eta2_token_sq": 0.03880965680419887,
+      "eta2_token_abs": 0.04335466839624028,
+      "repro": 0.8905339241027832,
+      "skew": 0.40633153915405273,
+      "ex_kurtosis": 1.2393841743469238,
+      "screened": true
+     },
+     {
+      "kind": "ica_skew",
+      "id": 42,
+      "bimodality": 0.2839960753917694,
+      "eta2_token": 3.091570331289248e-16,
+      "eta2_token_sq": 0.028639482757031865,
+      "eta2_token_abs": 0.036838085929475996,
+      "repro": 0.9009222388267517,
+      "skew": 0.40439659357070923,
+      "ex_kurtosis": 1.119250774383545,
+      "screened": true
+     },
+     {
+      "kind": "ica_skew",
+      "id": 43,
+      "bimodality": 0.2766898274421692,
+      "eta2_token": 4.349069425225104e-16,
+      "eta2_token_sq": 0.03230406960057059,
+      "eta2_token_abs": 0.03920876644099864,
+      "repro": 0.6960623860359192,
+      "skew": 0.33729103207588196,
+      "ex_kurtosis": 0.9904630184173584,
+      "screened": false
+     },
+     {
+      "kind": "ica_skew",
+      "id": 44,
+      "bimodality": 0.279549241065979,
+      "eta2_token": 3.0935041169719683e-16,
+      "eta2_token_sq": 0.027875300173122605,
+      "eta2_token_abs": 0.035144062313704726,
+      "repro": 0.8030005693435669,
+      "skew": 0.337284654378891,
+      "ex_kurtosis": 0.9933629035949707,
+      "screened": true
+     },
+     {
+      "kind": "ica_skew",
+      "id": 45,
+      "bimodality": 0.2516196370124817,
+      "eta2_token": 7.24175241459829e-16,
+      "eta2_token_sq": 0.08661162145106163,
+      "eta2_token_abs": 0.08304357125244552,
+      "repro": 0.7427106499671936,
+      "skew": 0.4394500255584717,
+      "ex_kurtosis": 1.625363826751709,
+      "screened": false
+     },
+     {
+      "kind": "ica_skew",
+      "id": 46,
+      "bimodality": 0.2633347809314728,
+      "eta2_token": 3.7985219455706017e-16,
+      "eta2_token_sq": 0.032777818416905434,
+      "eta2_token_abs": 0.04296315482117684,
+      "repro": 0.7482256293296814,
+      "skew": 0.4090331494808197,
+      "ex_kurtosis": 1.3674521446228027,
+      "screened": false
+     },
+     {
+      "kind": "ica_skew",
+      "id": 47,
+      "bimodality": 0.2702276110649109,
+      "eta2_token": 3.6291311210521613e-16,
+      "eta2_token_sq": 0.029602261655736456,
+      "eta2_token_abs": 0.038131048327640756,
+      "repro": 0.7578620314598083,
+      "skew": 0.46192729473114014,
+      "ex_kurtosis": 1.441126823425293,
+      "screened": false
+     },
+     {
+      "kind": "ica_skew",
+      "id": 48,
+      "bimodality": 0.20693902671337128,
+      "eta2_token": 1.5382712399560105e-16,
+      "eta2_token_sq": 0.020349826271882775,
+      "eta2_token_abs": 0.04621997316075363,
+      "repro": 0.792993426322937,
+      "skew": 0.7873159646987915,
+      "ex_kurtosis": 4.617576599121094,
+      "screened": false
+     },
+     {
+      "kind": "ica_skew",
+      "id": 49,
+      "bimodality": 0.23065942525863647,
+      "eta2_token": 2.3174175423971733e-16,
+      "eta2_token_sq": 0.031235259617247012,
+      "eta2_token_abs": 0.04950166920956106,
+      "repro": 0.9024529457092285,
+      "skew": 0.6347569227218628,
+      "ex_kurtosis": 2.9585585594177246,
+      "screened": true
+     },
+     {
+      "kind": "ica_skew",
+      "id": 50,
+      "bimodality": 0.28260838985443115,
+      "eta2_token": 4.3000585062141953e-16,
+      "eta2_token_sq": 0.03746936327446182,
+      "eta2_token_abs": 0.040680956740222374,
+      "repro": 0.6264264583587646,
+      "skew": 0.2542027235031128,
+      "ex_kurtosis": 0.8137679100036621,
+      "screened": false
+     },
+     {
+      "kind": "ica_skew",
+      "id": 51,
+      "bimodality": 0.25258344411849976,
+      "eta2_token": 4.702968359626835e-16,
+      "eta2_token_sq": 0.047335768861592985,
+      "eta2_token_abs": 0.05259972450901832,
+      "repro": 0.9627900123596191,
+      "skew": 0.6074786186218262,
+      "ex_kurtosis": 2.319349765777588,
+      "screened": true
+     },
+     {
+      "kind": "ica_skew",
+      "id": 52,
+      "bimodality": 0.27695876359939575,
+      "eta2_token": 7.929212142969152e-16,
+      "eta2_token_sq": 0.07301470935997278,
+      "eta2_token_abs": 0.08096035243373732,
+      "repro": 0.9873890280723572,
+      "skew": 1.184680700302124,
+      "ex_kurtosis": 5.550522804260254,
+      "screened": true
+     },
+     {
+      "kind": "ica_skew",
+      "id": 53,
+      "bimodality": 0.1542164385318756,
+      "eta2_token": 1.0107239713488232e-16,
+      "eta2_token_sq": 0.01898329345192536,
+      "eta2_token_abs": 0.06237981848522406,
+      "repro": 0.9088459610939026,
+      "skew": 0.8843273520469666,
+      "ex_kurtosis": 7.879543304443359,
+      "screened": true
+     },
+     {
+      "kind": "ica_skew",
+      "id": 54,
+      "bimodality": 0.26309648156166077,
+      "eta2_token": 3.69678944017336e-16,
+      "eta2_token_sq": 0.04038562052869542,
+      "eta2_token_abs": 0.049951754356502766,
+      "repro": 0.9512454867362976,
+      "skew": 0.48054561018943787,
+      "ex_kurtosis": 1.6225104331970215,
+      "screened": true
+     },
+     {
+      "kind": "ica_skew",
+      "id": 55,
+      "bimodality": 0.18454180657863617,
+      "eta2_token": 2.270479253060186e-16,
+      "eta2_token_sq": 0.0417535911800569,
+      "eta2_token_abs": 0.053682351178884424,
+      "repro": 0.7630428075790405,
+      "skew": 0.6095696687698364,
+      "ex_kurtosis": 4.471951961517334,
+      "screened": false
+     },
+     {
+      "kind": "ica_skew",
+      "id": 56,
+      "bimodality": 0.2412233054637909,
+      "eta2_token": 6.226529494986556e-16,
+      "eta2_token_sq": 0.051963874555815755,
+      "eta2_token_abs": 0.05961104823139043,
+      "repro": 0.5052816867828369,
+      "skew": 0.6548922061920166,
+      "ex_kurtosis": 3.09810733795166,
+      "screened": false
+     },
+     {
+      "kind": "ica_skew",
+      "id": 57,
+      "bimodality": 0.2726418077945709,
+      "eta2_token": 3.745636546592528e-16,
+      "eta2_token_sq": 0.03469752734170739,
+      "eta2_token_abs": 0.03846114473251089,
+      "repro": 0.8482815027236938,
+      "skew": 0.39916369318962097,
+      "ex_kurtosis": 1.3078246116638184,
+      "screened": true
+     },
+     {
+      "kind": "ica_skew",
+      "id": 58,
+      "bimodality": 0.26005247235298157,
+      "eta2_token": 3.1153414324942506e-16,
+      "eta2_token_sq": 0.029989599328835596,
+      "eta2_token_abs": 0.03663307947977859,
+      "repro": 0.6827512383460999,
+      "skew": 0.4432080388069153,
+      "ex_kurtosis": 1.5312938690185547,
+      "screened": false
+     },
+     {
+      "kind": "ica_skew",
+      "id": 59,
+      "bimodality": 0.25169655680656433,
+      "eta2_token": 3.135124321879356e-16,
+      "eta2_token_sq": 0.03058325177125403,
+      "eta2_token_abs": 0.040983158612962416,
+      "repro": 0.950147807598114,
+      "skew": 0.610950231552124,
+      "ex_kurtosis": 2.5679211616516113,
+      "screened": true
+     },
+     {
+      "kind": "ica_skew",
+      "id": 60,
+      "bimodality": 0.2450326532125473,
+      "eta2_token": 6.741852360173165e-16,
+      "eta2_token_sq": 0.07115581715911774,
+      "eta2_token_abs": 0.07980505957796673,
+      "repro": 0.5084255933761597,
+      "skew": 0.45571210980415344,
+      "ex_kurtosis": 1.8273100852966309,
+      "screened": false
+     },
+     {
+      "kind": "ica_skew",
+      "id": 61,
+      "bimodality": 0.25565439462661743,
+      "eta2_token": 6.987715027470893e-16,
+      "eta2_token_sq": 0.04921082871226977,
+      "eta2_token_abs": 0.08846434978882084,
+      "repro": 0.9663887619972229,
+      "skew": 0.9825947880744934,
+      "ex_kurtosis": 4.6129961013793945,
+      "screened": true
+     },
+     {
+      "kind": "ica_skew",
+      "id": 62,
+      "bimodality": 0.21630394458770752,
+      "eta2_token": 5.011260053597926e-16,
+      "eta2_token_sq": 0.03187887925174189,
+      "eta2_token_abs": 0.039392781786720364,
+      "repro": 0.8949148058891296,
+      "skew": 0.3396877646446228,
+      "ex_kurtosis": 2.200655937194824,
+      "screened": true
+     },
+     {
+      "kind": "ica_skew",
+      "id": 63,
+      "bimodality": 0.23730699717998505,
+      "eta2_token": 1.5580151794359134e-16,
+      "eta2_token_sq": 0.03385670566935343,
+      "eta2_token_abs": 0.06004310884250582,
+      "repro": 0.9365520477294922,
+      "skew": 0.5575734376907349,
+      "ex_kurtosis": 2.457695960998535,
+      "screened": true
+     }
+    ],
+    "tdi_med": 1.0103392146149694,
+    "tdi_self_incl_med": 1.2498703642083555,
+    "kir": 9.328977566230025,
+    "screen_counts": {
+     "cluster": {
+      "n": 16,
+      "tdi_med": 1.0103392146149694,
+      "tdi_q90": 1.0865119837939572,
+      "tdi_le3": 16,
+      "tdi_le5": 16,
+      "repro_ge08": 2,
+      "fixed_pass": 16
+     },
+     "logcosh": {
+      "n": 64,
+      "eta2_le03": 64,
+      "eta2sq_le03": 64,
+      "eta2sq_max": 0.1435523962488713,
+      "repro_ge08": 36,
+      "repro_ge05": 51,
+      "repro_med": 0.8650575578212738,
+      "bimod_gt": 0
+     },
+     "skew": {
+      "n": 64,
+      "eta2_le03": 64,
+      "eta2sq_le03": 64,
+      "eta2sq_max": 0.09427946489844033,
+      "repro_ge08": 42,
+      "repro_ge05": 62,
+      "repro_med": 0.9056494534015656,
+      "bimod_gt": 0
+     }
+    },
+    "n_screened": {
+     "cluster": 2,
+     "logcosh": 36,
+     "skew": 42
+    },
+    "units_npz_sha256": "b84a7b13d52bd54acdc665175c7972b4e9418659a3e6b56d47bdc3bb895b5d5b",
+    "frozen_at": "2026-10-15T11:32:43",
+    "freeze_md5": "b0bd57235e5ecf65b0793952c23c11d4"
+   },
+   "seconds_freeze": 29.9,
+   "positive_control": {
+    "paren_inside": {
+     "cluster": {
+      "stat": 0.03437995559784333,
+      "null_p999": 0.04148633047890916,
+      "best": 9,
+      "n_units": 2,
+      "floor": 0.5,
+      "recovered": false,
+      "margin": -0.46562004440215665
+     },
+     "logcosh": {
+      "stat": 0.7357990145683289,
+      "null_p999": 0.5203850269317627,
+      "best": 11,
+      "n_units": 36,
+      "floor": 0.7,
+      "recovered": true,
+      "margin": 0.0357990145683289,
+      "specificity": {
+       "top_association": "paren_inside",
+       "associations": {
+        "paren_inside": {
+         "auroc": 0.7357989201020888,
+         "base_rate": 0.030876219272613525,
+         "top1pct_rate": 0.5068829655647278
+        },
+        "after_newline": {
+         "auroc": 0.5819979971293128,
+         "base_rate": 0.017808664590120316,
+         "top1pct_rate": 0.0004916421021334827
+        },
+        "after_colon": {
+         "auroc": 0.5635248104765721,
+         "base_rate": 0.003909938503056765,
+         "top1pct_rate": 0.003441494656726718
+        },
+        "in_caps_run": {
+         "auroc": 0.5626495704084485,
+         "base_rate": 0.004790289793163538,
+         "top1pct_rate": 0.006882989313453436
+        },
+        "code_markup": {
+         "auroc": 0.5387235753725457,
+         "base_rate": 0.006998544093221426,
+         "top1pct_rate": 0.011799409985542297
+        },
+        "prev_capitalised": {
+         "auroc": 0.5308054417833802,
+         "base_rate": 0.12960831820964813,
+         "top1pct_rate": 0.10963618755340576
+        },
+        "quote_inside": {
+         "auroc": 0.5287227626721653,
+         "base_rate": 0.05985403060913086,
+         "top1pct_rate": 0.06293018907308578
+        },
+        "list_item": {
+         "auroc": 0.528175389220851,
+         "base_rate": 0.05927860364317894,
+         "top1pct_rate": 0.08062930405139923
+        },
+        "bracket_inside": {
+         "auroc": 0.5261530495734494,
+         "base_rate": 0.0023705540224909782,
+         "top1pct_rate": 0.01130776759237051
+        },
+        "next_punct": {
+         "auroc": 0.5240103936739964,
+         "base_rate": 0.10769298672676086,
+         "top1pct_rate": 0.2861357033252716
+        },
+        "next_newline": {
+         "auroc": 0.5209287052353951,
+         "base_rate": 0.024098992347717285,
+         "top1pct_rate": 0.012782693840563297
+        },
+        "after_digit": {
+         "auroc": 0.5165101963101196,
+         "base_rate": 0.05565883591771126,
+         "top1pct_rate": 0.10619468986988068
+        },
+        "next_continuation": {
+         "auroc": 0.5150991045408525,
+         "base_rate": 0.07632003724575043,
+         "top1pct_rate": 0.05506391450762749
+        },
+        "word_continuation": {
+         "auroc": 0.5126076245152681,
+         "base_rate": 0.04036827012896538,
+         "top1pct_rate": 0.08161258697509766
+        },
+        "prev_punct": {
+         "auroc": 0.5042549985610658,
+         "base_rate": 0.12398193776607513,
+         "top1pct_rate": 0.1352015733718872
+        },
+        "in_url": {
+         "auroc": 0.5011500586571933,
+         "base_rate": 0.0007229697657749057,
+         "top1pct_rate": 0.0019665684085339308
+        },
+        "line_pos": {
+         "abs_spearman": 0.04421487984091984
+        },
+        "sent_pos": {
+         "abs_spearman": 0.029330004460453373
+        }
+       },
+       "top1pct_n": 2034,
+       "contexts": [
+        " don\u2019t have a timetable for Kesler\u2019s return[[.]] They won\u2019",
+        " consider the Part B deductible which, in 202[[1]], was $",
+        " UK government (and so, using Scottish Labour's and[[ the]] SNP's",
+        ".\nWe meet against the backdrop of a recovering, yet[[ still]] fragile, global",
+        " (new, midseason)\nNew Girl (new,[[ mid]]season)\n",
+        " all started back in 2007... (Story[[ time]]!)\nThe",
+        " this lovely frame finally--\nMy framer (who has[[ a]] love-hate",
+        " commercial I heard was for Citizen's watches: \"the[[ official]] timekeeper of",
+        "MINNEAPOLIS-- Sophie Pilh\u00f6fer (Sr./[[In]]ver Grove Heights",
+        " until the next morning? Put out baskets of flip-flops[[ (]]in your wedding",
+        "By Mike Lehman, TTU Sports[[ Information]]\nMURRAY",
+        " people and back-up quarterback Tim Tebow (who is[[ currently]] without a contract"
+       ]
+      }
+     },
+     "skew": {
+      "stat": 0.731607973575592,
+      "null_p999": 0.5172188878059387,
+      "best": 23,
+      "n_units": 42,
+      "floor": 0.7,
+      "recovered": true,
+      "margin": 0.031607973575592085,
+      "specificity": {
+       "top_association": "paren_inside",
+       "associations": {
+        "paren_inside": {
+         "auroc": 0.7316058413041874,
+         "base_rate": 0.030876219272613525,
+         "top1pct_rate": 0.4921337366104126
+        },
+        "after_newline": {
+         "auroc": 0.5700932638201184,
+         "base_rate": 0.017808664590120316,
+         "top1pct_rate": 0.0014749262481927872
+        },
+        "in_caps_run": {
+         "auroc": 0.5670011881103965,
+         "base_rate": 0.004790289793163538,
+         "top1pct_rate": 0.005408063065260649
+        },
+        "in_url": {
+         "auroc": 0.5557634898570883,
+         "base_rate": 0.0007229697657749057,
+         "top1pct_rate": 0.0029498524963855743
+        },
+        "code_markup": {
+         "auroc": 0.5454939261510222,
+         "base_rate": 0.006998544093221426,
+         "top1pct_rate": 0.011799409985542297
+        },
+        "prev_capitalised": {
+         "auroc": 0.5333017288550458,
+         "base_rate": 0.12960831820964813,
+         "top1pct_rate": 0.10373648256063461
+        },
+        "after_colon": {
+         "auroc": 0.5330584654781159,
+         "base_rate": 0.003909938503056765,
+         "top1pct_rate": 0.0039331368170678616
+        },
+        "list_item": {
+         "auroc": 0.5262207086652521,
+         "base_rate": 0.05927860364317894,
+         "top1pct_rate": 0.071288101375103
+        },
+        "next_continuation": {
+         "auroc": 0.5231831387743352,
+         "base_rate": 0.07632003724575043,
+         "top1pct_rate": 0.062438543885946274
+        },
+        "bracket_inside": {
+         "auroc": 0.521338679429887,
+         "base_rate": 0.0023705540224909782,
+         "top1pct_rate": 0.00934119988232851
+        },
+        "after_digit": {
+         "auroc": 0.518616245204248,
+         "base_rate": 0.05565883591771126,
+         "top1pct_rate": 0.10373648256063461
+        },
+        "prev_punct": {
+         "auroc": 0.5176288286749947,
+         "base_rate": 0.12398193776607513,
+         "top1pct_rate": 0.14110127091407776
+        },
+        "next_punct": {
+         "auroc": 0.5158664862484797,
+         "base_rate": 0.10769298672676086,
+         "top1pct_rate": 0.2581121027469635
+        },
+        "word_continuation": {
+         "auroc": 0.5100755057791198,
+         "base_rate": 0.04036827012896538,
+         "top1pct_rate": 0.07669616490602493
+        },
+        "quote_inside": {
+         "auroc": 0.5070152794399481,
+         "base_rate": 0.05985403060913086,
+         "top1pct_rate": 0.05604719743132591
+        },
+        "next_newline": {
+         "auroc": 0.5024414402304151,
+         "base_rate": 0.024098992347717285,
+         "top1pct_rate": 0.01032448373734951
+        },
+        "line_pos": {
+         "abs_spearman": 0.05873447558644437
+        },
+        "sent_pos": {
+         "abs_spearman": 0.04036106635614817
+        }
+       },
+       "top1pct_n": 2034,
+       "contexts": [
+        "-Caribbean Women's Literature (Deadline May 31[[,]] 20",
+        " Facebook. The Winklevoss twins, or Winklevi as[[ they]] are so amusing",
+        ". The build is going to take a while (a month[[?]] two?). I",
+        " 60 (although it can happen in younger individuals as[[ well]]). Other risk",
+        ")\nCloth, glass beads, leather\nMuseum purchase,[[ funds]] provided by the",
+        "segor (which he named Chasquitambo, after a[[ town]] in northern Peru",
+        "Mare Sheppard of Metanet Software, David Kanaga (Dy[[ad]]\u2019s composer",
+        " restructuring expat compensation packages and, in some parts of the[[ world]], filling positions",
+        " villa in Hossegor (which he named Chasquitambo[[,]] after a town",
+        "'t enough, as the Sacramento River Cats (the Oakland[[ A]]'s AAA",
+        "Patented on January 6, 1863[[ and]] June 2",
+        " commonly make (although there are plenty of other actions to avoid[[,]] including stabbing and"
+       ]
+      }
+     },
+     "unscreened": {
+      "cluster": {
+       "stat": 0.07081929610780589,
+       "null_p999": 0.05239178675014963,
+       "best": 5,
+       "n_units": 16,
+       "floor": 0.5,
+       "recovered": false,
+       "margin": -0.4291807038921941
+      },
+      "logcosh": {
+       "stat": 0.7357990145683289,
+       "null_p999": 0.5203850269317627,
+       "best": 11,
+       "n_units": 64,
+       "floor": 0.7,
+       "recovered": true,
+       "margin": 0.0357990145683289
+      },
+      "skew": {
+       "stat": 0.731607973575592,
+       "null_p999": 0.518486499786377,
+       "best": 23,
+       "n_units": 64,
+       "floor": 0.7,
+       "recovered": true,
+       "margin": 0.031607973575592085
+      }
+     },
+     "recovered": true,
+     "probe_auroc_context": 0.7612835140666027
+    },
+    "quote_inside": {
+     "cluster": {
+      "stat": 0.41253183902190527,
+      "null_p999": 0.061436576668364745,
+      "best": 8,
+      "n_units": 2,
+      "floor": 0.5,
+      "recovered": false,
+      "margin": -0.08746816097809473
+     },
+     "logcosh": {
+      "stat": 0.7474971413612366,
+      "null_p999": 0.5145221948623657,
+      "best": 33,
+      "n_units": 36,
+      "floor": 0.7,
+      "recovered": true,
+      "margin": 0.04749714136123662,
+      "specificity": {
+       "top_association": "quote_inside",
+       "associations": {
+        "quote_inside": {
+         "auroc": 0.7474969066488624,
+         "base_rate": 0.05985403060913086,
+         "top1pct_rate": 0.9115044474601746
+        },
+        "in_url": {
+         "auroc": 0.5611796418775699,
+         "base_rate": 0.0007229697657749057,
+         "top1pct_rate": 0.0
+        },
+        "next_newline": {
+         "auroc": 0.5518631782545502,
+         "base_rate": 0.024098992347717285,
+         "top1pct_rate": 0.007866273634135723
+        },
+        "after_newline": {
+         "auroc": 0.5445623205297612,
+         "base_rate": 0.017808664590120316,
+         "top1pct_rate": 0.0024582103360444307
+        },
+        "next_punct": {
+         "auroc": 0.5258694220735485,
+         "base_rate": 0.10769298672676086,
+         "top1pct_rate": 0.11356931924819946
+        },
+        "paren_inside": {
+         "auroc": 0.5239368059411522,
+         "base_rate": 0.030876219272613525,
+         "top1pct_rate": 0.008357915095984936
+        },
+        "bracket_inside": {
+         "auroc": 0.5211750227867405,
+         "base_rate": 0.0023705540224909782,
+         "top1pct_rate": 0.0009832842042669654
+        },
+        "after_digit": {
+         "auroc": 0.514233614759138,
+         "base_rate": 0.05565883591771126,
+         "top1pct_rate": 0.025073746219277382
+        },
+        "in_caps_run": {
+         "auroc": 0.5131167376609747,
+         "base_rate": 0.004790289793163538,
+         "top1pct_rate": 0.0019665684085339308
+        },
+        "after_colon": {
+         "auroc": 0.5125289839404074,
+         "base_rate": 0.003909938503056765,
+         "top1pct_rate": 0.0014749262481927872
+        },
+        "word_continuation": {
+         "auroc": 0.5111170753520401,
+         "base_rate": 0.04036827012896538,
+         "top1pct_rate": 0.062438543885946274
+        },
+        "next_continuation": {
+         "auroc": 0.5108521594085123,
+         "base_rate": 0.07632003724575043,
+         "top1pct_rate": 0.012782693840563297
+        },
+        "code_markup": {
+         "auroc": 0.5041390627777099,
+         "base_rate": 0.006998544093221426,
+         "top1pct_rate": 0.0024582103360444307
+        },
+        "prev_punct": {
+         "auroc": 0.5031571782087478,
+         "base_rate": 0.12398193776607513,
+         "top1pct_rate": 0.12831857800483704
+        },
+        "list_item": {
+         "auroc": 0.5018654371936313,
+         "base_rate": 0.05927860364317894,
+         "top1pct_rate": 0.01032448373734951
+        },
+        "prev_capitalised": {
+         "auroc": 0.5015610304653179,
+         "base_rate": 0.12960831820964813,
+         "top1pct_rate": 0.11356931924819946
+        },
+        "line_pos": {
+         "abs_spearman": 0.050264848760588884
+        },
+        "sent_pos": {
+         "abs_spearman": 0.009868806792751412
+        }
+       },
+       "top1pct_n": 2034,
+       "contexts": [
+        " czar\u2026. again!\n\u201cI\u2019m gonna turn[[ it]] over to the",
+        "s claims of \"creating the biggest economy we have ever had[[ in]] our country'",
+        "\u2019s directed at me [and] directed at the president[[.]] You know,",
+        " putting league, we are playing together each week. If the[[ weather]] is nice,",
+        " in general, getting started for the [road building] season[[ this]] week and it",
+        " White House spokesman Robert Gibbs said: \u201cI don't[[ know]] if the President",
+        " they were like, \u2018He can\u2019t really walk,[[ you]] have to teach",
+        " forces in Ukraine. Our forces are not going to Europe to[[ fight]] in Ukraine,",
+        "That promotes the splitting in the abs, and afterward it can[[ lead]] to hernias",
+        " choosing a quartet-based music score.\n\u201cWe decided[[ to]] take a very",
+        " Public Schools Superintendent Jeanice Swift said.\n\u201cWe feel[[ very]] strongly that the",
+        "'s what makes him good, and sometimes he struggles with[[ that]] approach.\"\n"
+       ]
+      }
+     },
+     "skew": {
+      "stat": 0.744713306427002,
+      "null_p999": 0.5134298205375671,
+      "best": 33,
+      "n_units": 42,
+      "floor": 0.7,
+      "recovered": true,
+      "margin": 0.044713306427002,
+      "specificity": {
+       "top_association": "quote_inside",
+       "associations": {
+        "quote_inside": {
+         "auroc": 0.7447141911362297,
+         "base_rate": 0.05985403060913086,
+         "top1pct_rate": 0.8982300758361816
+        },
+        "in_url": {
+         "auroc": 0.5960002754823981,
+         "base_rate": 0.0007229697657749057,
+         "top1pct_rate": 0.0
+        },
+        "next_newline": {
+         "auroc": 0.5494850124015579,
+         "base_rate": 0.024098992347717285,
+         "top1pct_rate": 0.006391346920281649
+        },
+        "after_newline": {
+         "auroc": 0.5459430978562549,
+         "base_rate": 0.017808664590120316,
+         "top1pct_rate": 0.0014749262481927872
+        },
+        "paren_inside": {
+         "auroc": 0.5365073003772836,
+         "base_rate": 0.030876219272613525,
+         "top1pct_rate": 0.01032448373734951
+        },
+        "after_colon": {
+         "auroc": 0.5268150291650585,
+         "base_rate": 0.003909938503056765,
+         "top1pct_rate": 0.0014749262481927872
+        },
+        "next_punct": {
+         "auroc": 0.5259949858263588,
+         "base_rate": 0.10769298672676086,
+         "top1pct_rate": 0.1150442510843277
+        },
+        "in_caps_run": {
+         "auroc": 0.516563088891387,
+         "base_rate": 0.004790289793163538,
+         "top1pct_rate": 0.0014749262481927872
+        },
+        "after_digit": {
+         "auroc": 0.5141176677573442,
+         "base_rate": 0.05565883591771126,
+         "top1pct_rate": 0.025073746219277382
+        },
+        "word_continuation": {
+         "auroc": 0.5117795659636055,
+         "base_rate": 0.04036827012896538,
+         "top1pct_rate": 0.06145526096224785
+        },
+        "bracket_inside": {
+         "auroc": 0.5108555872343196,
+         "base_rate": 0.0023705540224909782,
+         "top1pct_rate": 0.0009832842042669654
+        },
+        "next_continuation": {
+         "auroc": 0.5094647943805297,
+         "base_rate": 0.07632003724575043,
+         "top1pct_rate": 0.015240904875099659
+        },
+        "code_markup": {
+         "auroc": 0.5074382041622763,
+         "base_rate": 0.006998544093221426,
+         "top1pct_rate": 0.0024582103360444307
+        },
+        "prev_capitalised": {
+         "auroc": 0.5017161256796846,
+         "base_rate": 0.12960831820964813,
+         "top1pct_rate": 0.11307767778635025
+        },
+        "list_item": {
+         "auroc": 0.5013499595624488,
+         "base_rate": 0.05927860364317894,
+         "top1pct_rate": 0.00934119988232851
+        },
+        "prev_punct": {
+         "auroc": 0.5011410034887493,
+         "base_rate": 0.12398193776607513,
+         "top1pct_rate": 0.12979350984096527
+        },
+        "line_pos": {
+         "abs_spearman": 0.046949854942031424
+        },
+        "sent_pos": {
+         "abs_spearman": 0.012936335381506205
+        }
+       },
+       "top1pct_n": 2034,
+       "contexts": [
+        "Pucks are bouncing our way and we are taking care in[[ our]] own end and",
+        ". \"To come through in a game like that was special[[.]] Both teams were",
+        " made sense to offer delivery. Basically, the way we work[[ is]] that we take",
+        " is \"even more fragile\" than expected and that \"the[[ path]] ahead is treacherous",
+        " of the California ANG.\n\u201c(Gen. Witham)[[ is]] very dynamic,\u201d",
+        "\n\"It's not unusual for us to close at[[ this]] time of year",
+        " a game of momentum, and they took it and took it[[ early]],\u201d said Dartmouth",
+        " behalf of the current Purdue players regarding what the new stadium means[[ to]] them. Director",
+        " have put exactly what I wanted in there for the farm bill[[ and]] I still would",
+        " Ryder told fans in July that this is an \"era of[[ turning]] the negatives into",
+        " the single-center trial.\n\"Drug therapy hasn'[[t]] been shown to",
+        " really feel this is a prime example of what a group of[[ people]] and organizations can"
+       ]
+      }
+     },
+     "unscreened": {
+      "cluster": {
+       "stat": 0.41253183902190527,
+       "null_p999": 0.07988153574134885,
+       "best": 8,
+       "n_units": 16,
+       "floor": 0.5,
+       "recovered": false,
+       "margin": -0.08746816097809473
+      },
+      "logcosh": {
+       "stat": 0.7474971413612366,
+       "null_p999": 0.5145221948623657,
+       "best": 33,
+       "n_units": 64,
+       "floor": 0.7,
+       "recovered": true,
+       "margin": 0.04749714136123662
+      },
+      "skew": {
+       "stat": 0.744713306427002,
+       "null_p999": 0.5134298205375671,
+       "best": 33,
+       "n_units": 64,
+       "floor": 0.7,
+       "recovered": true,
+       "margin": 0.044713306427002
+      }
+     },
+     "recovered": true,
+     "probe_auroc_context": 0.7648130418609906
+    },
+    "PASS": true
+   },
+   "seconds_control": 86.7
+  },
+  "24": {
+   "frozen": {
+    "layer": 24,
+    "whitening": {
+     "setting": "tw_N32_n16",
+     "N_MIN": 32,
+     "n0": 16,
+     "probe_paren": 0.6527288320748261,
+     "auc_floor": 0.7,
+     "guard": 0.640961963279755
+    },
+    "n_rows": 203328,
+    "units": [
+     {
+      "kind": "cluster",
+      "id": 0,
+      "size": 8898,
+      "n_types": 2375,
+      "max_type_share": 0.04574061586873455,
+      "n_docs": 994,
+      "repro": 0.5966075185205342,
+      "tdi": 1.6230409009457145,
+      "tdi_self_incl": 2.3292691410724102,
+      "screened": false
+     },
+     {
+      "kind": "cluster",
+      "id": 1,
+      "size": 14020,
+      "n_types": 2356,
+      "max_type_share": 0.044721825962910126,
+      "n_docs": 999,
+      "repro": 0.20627779443059185,
+      "tdi": 1.0075349460013308,
+      "tdi_self_incl": 1.2702801988599943,
+      "screened": false
+     },
+     {
+      "kind": "cluster",
+      "id": 2,
+      "size": 9687,
+      "n_types": 1455,
+      "max_type_share": 0.06462269020336533,
+      "n_docs": 994,
+      "repro": 0.29476437751601764,
+      "tdi": 1.1505701705884108,
+      "tdi_self_incl": 1.3412484662791455,
+      "screened": false
+     },
+     {
+      "kind": "cluster",
+      "id": 3,
+      "size": 12719,
+      "n_types": 2059,
+      "max_type_share": 0.05102602405849516,
+      "n_docs": 999,
+      "repro": 0.1290365874929835,
+      "tdi": 1.0834241700008198,
+      "tdi_self_incl": 1.2656706951169672,
+      "screened": false
+     },
+     {
+      "kind": "cluster",
+      "id": 4,
+      "size": 7252,
+      "n_types": 1155,
+      "max_type_share": 0.05239933811362383,
+      "n_docs": 988,
+      "repro": 0.3104305808644202,
+      "tdi": 1.275838013683731,
+      "tdi_self_incl": 1.5078085616262276,
+      "screened": false
+     },
+     {
+      "kind": "cluster",
+      "id": 5,
+      "size": 14513,
+      "n_types": 2560,
+      "max_type_share": 0.04389168331840419,
+      "n_docs": 1000,
+      "repro": 0.2971277559447196,
+      "tdi": 1.0860137421302947,
+      "tdi_self_incl": 1.3437610035958845,
+      "screened": false
+     },
+     {
+      "kind": "cluster",
+      "id": 6,
+      "size": 7803,
+      "n_types": 1383,
+      "max_type_share": 0.05100602332436242,
+      "n_docs": 996,
+      "repro": 0.14691366453265575,
+      "tdi": 1.0686216122772996,
+      "tdi_self_incl": 1.452657504189454,
+      "screened": false
+     },
+     {
+      "kind": "cluster",
+      "id": 7,
+      "size": 26883,
+      "n_types": 3136,
+      "max_type_share": 0.04519584867760294,
+      "n_docs": 1000,
+      "repro": 0.3666836904468006,
+      "tdi": 1.0277592564966858,
+      "tdi_self_incl": 1.1394538704658026,
+      "screened": false
+     },
+     {
+      "kind": "cluster",
+      "id": 8,
+      "size": 19476,
+      "n_types": 2702,
+      "max_type_share": 0.04831587594988704,
+      "n_docs": 1000,
+      "repro": 0.23627916319829997,
+      "tdi": 1.013652710250713,
+      "tdi_self_incl": 1.2028750300383921,
+      "screened": false
+     },
+     {
+      "kind": "cluster",
+      "id": 9,
+      "size": 5559,
+      "n_types": 1485,
+      "max_type_share": 0.0476704443245188,
+      "n_docs": 915,
+      "repro": 0.20920877670731733,
+      "tdi": 1.8291471160519441,
+      "tdi_self_incl": 2.6121273563763374,
+      "screened": false
+     },
+     {
+      "kind": "cluster",
+      "id": 10,
+      "size": 9275,
+      "n_types": 1587,
+      "max_type_share": 0.06210242587601078,
+      "n_docs": 993,
+      "repro": 0.5479117483569459,
+      "tdi": 1.153424505779528,
+      "tdi_self_incl": 1.4370534826105592,
+      "screened": false
+     },
+     {
+      "kind": "cluster",
+      "id": 11,
+      "size": 15054,
+      "n_types": 2475,
+      "max_type_share": 0.048824232762056594,
+      "n_docs": 1000,
+      "repro": 0.25077447043769346,
+      "tdi": 0.9887237352466156,
+      "tdi_self_incl": 1.2112314361006633,
+      "screened": false
+     },
+     {
+      "kind": "cluster",
+      "id": 12,
+      "size": 7451,
+      "n_types": 1148,
+      "max_type_share": 0.06227352033284123,
+      "n_docs": 979,
+      "repro": 0.1219387833876839,
+      "tdi": 1.2342352985868341,
+      "tdi_self_incl": 1.4393307784706997,
+      "screened": false
+     },
+     {
+      "kind": "cluster",
+      "id": 13,
+      "size": 8986,
+      "n_types": 1237,
+      "max_type_share": 0.05475183618962831,
+      "n_docs": 992,
+      "repro": 0.5500489588177271,
+      "tdi": 1.2942777322232686,
+      "tdi_self_incl": 1.4982397873012545,
+      "screened": false
+     },
+     {
+      "kind": "cluster",
+      "id": 14,
+      "size": 20710,
+      "n_types": 2969,
+      "max_type_share": 0.04693384838242395,
+      "n_docs": 1000,
+      "repro": 0.3034453764813047,
+      "tdi": 1.0277707860568364,
+      "tdi_self_incl": 1.2373070810001583,
+      "screened": false
+     },
+     {
+      "kind": "cluster",
+      "id": 15,
+      "size": 15042,
+      "n_types": 2360,
+      "max_type_share": 0.04733413109958782,
+      "n_docs": 1000,
+      "repro": 0.26415861168486415,
+      "tdi": 0.9516603609613864,
+      "tdi_self_incl": 1.1592463320492807,
+      "screened": false
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 0,
+      "bimodality": 0.18075449764728546,
+      "eta2_token": 4.6483159880446716e-17,
+      "eta2_token_sq": 0.027907879171009033,
+      "eta2_token_abs": 0.09049533169053828,
+      "repro": 0.9810804724693298,
+      "skew": 0.8589037656784058,
+      "ex_kurtosis": 6.629860877990723,
+      "screened": true
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 1,
+      "bimodality": 0.19619445502758026,
+      "eta2_token": 1.9997355892267034e-16,
+      "eta2_token_sq": 0.05530350701985143,
+      "eta2_token_abs": 0.08448484863162617,
+      "repro": 0.9737939834594727,
+      "skew": 1.1703778505325317,
+      "ex_kurtosis": 8.723747253417969,
+      "screened": true
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 2,
+      "bimodality": 0.28522229194641113,
+      "eta2_token": 3.065248581856361e-16,
+      "eta2_token_sq": 0.03509758087126223,
+      "eta2_token_abs": 0.053387905191791984,
+      "repro": 0.9600403308868408,
+      "skew": 1.089930772781372,
+      "ex_kurtosis": 4.908442497253418,
+      "screened": true
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 3,
+      "bimodality": 0.20916558802127838,
+      "eta2_token": 2.0922196021969085e-16,
+      "eta2_token_sq": 0.025488503226073437,
+      "eta2_token_abs": 0.04716138970405178,
+      "repro": 0.9660041332244873,
+      "skew": -0.7981867790222168,
+      "ex_kurtosis": 4.551406383514404,
+      "screened": true
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 4,
+      "bimodality": 0.18604794144630432,
+      "eta2_token": 2.9639072329532092e-16,
+      "eta2_token_sq": 0.0355526552532083,
+      "eta2_token_abs": 0.05714128178504133,
+      "repro": 0.7832743525505066,
+      "skew": 0.8371939659118652,
+      "ex_kurtosis": 5.928380966186523,
+      "screened": false
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 5,
+      "bimodality": 0.23599915206432343,
+      "eta2_token": 2.3830030692536013e-16,
+      "eta2_token_sq": 0.03651659765545086,
+      "eta2_token_abs": 0.04883337297046652,
+      "repro": 0.8705737590789795,
+      "skew": 0.2653833329677582,
+      "ex_kurtosis": 1.486928939819336,
+      "screened": true
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 6,
+      "bimodality": 0.23867730796337128,
+      "eta2_token": 3.9879823321659717e-16,
+      "eta2_token_sq": 0.03231210524423766,
+      "eta2_token_abs": 0.04569082740611604,
+      "repro": 0.7404115796089172,
+      "skew": 0.6993134021759033,
+      "ex_kurtosis": 3.4334168434143066,
+      "screened": false
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 7,
+      "bimodality": 0.23599998652935028,
+      "eta2_token": 5.687250388063122e-16,
+      "eta2_token_sq": 0.03559554731494079,
+      "eta2_token_abs": 0.06717381512227281,
+      "repro": 0.9876928329467773,
+      "skew": -1.3655860424041748,
+      "ex_kurtosis": 8.972735404968262,
+      "screened": true
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 8,
+      "bimodality": 0.30904507637023926,
+      "eta2_token": 8.552840779392028e-16,
+      "eta2_token_sq": 0.05161290388684727,
+      "eta2_token_abs": 0.11295576628839615,
+      "repro": 0.9807254672050476,
+      "skew": -2.0952045917510986,
+      "ex_kurtosis": 15.307363510131836,
+      "screened": true
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 9,
+      "bimodality": 0.24567444622516632,
+      "eta2_token": 5.268826723050843e-16,
+      "eta2_token_sq": 0.04322083445317766,
+      "eta2_token_abs": 0.051120756483292965,
+      "repro": 0.8853844404220581,
+      "skew": 0.3989794850349426,
+      "ex_kurtosis": 1.7590985298156738,
+      "screened": true
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 10,
+      "bimodality": 0.19093818962574005,
+      "eta2_token": 3.503985642284401e-16,
+      "eta2_token_sq": 0.02475354128505612,
+      "eta2_token_abs": 0.04076790279178479,
+      "repro": 0.6916733980178833,
+      "skew": 0.5866621136665344,
+      "ex_kurtosis": 4.2546281814575195,
+      "screened": false
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 11,
+      "bimodality": 0.23637238144874573,
+      "eta2_token": 8.215377565502036e-16,
+      "eta2_token_sq": 0.05196362821219361,
+      "eta2_token_abs": 0.09757154537363874,
+      "repro": 0.9413508772850037,
+      "skew": 0.8609557151794434,
+      "ex_kurtosis": 4.289761543273926,
+      "screened": true
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 12,
+      "bimodality": 0.20931527018547058,
+      "eta2_token": 6.109261943390474e-16,
+      "eta2_token_sq": 0.08159862856771886,
+      "eta2_token_abs": 0.11482615102301097,
+      "repro": 0.843757152557373,
+      "skew": 1.1895527839660645,
+      "ex_kurtosis": 8.087447166442871,
+      "screened": true
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 13,
+      "bimodality": 0.23910006880760193,
+      "eta2_token": 3.9823558708518695e-16,
+      "eta2_token_sq": 0.043861422876540504,
+      "eta2_token_abs": 0.056627206718884424,
+      "repro": 0.987092912197113,
+      "skew": 1.2633020877838135,
+      "ex_kurtosis": 7.89066219329834,
+      "screened": true
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 14,
+      "bimodality": 0.3204617500305176,
+      "eta2_token": 2.1527141008744712e-16,
+      "eta2_token_sq": 0.036307840572265764,
+      "eta2_token_abs": 0.07123336026734396,
+      "repro": 0.9919141530990601,
+      "skew": 1.7036159038543701,
+      "ex_kurtosis": 9.524029731750488,
+      "screened": true
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 15,
+      "bimodality": 0.27088144421577454,
+      "eta2_token": 4.3283704521892743e-16,
+      "eta2_token_sq": 0.03707188977699997,
+      "eta2_token_abs": 0.04191790503912753,
+      "repro": 0.5326995253562927,
+      "skew": 0.029149672016501427,
+      "ex_kurtosis": 0.6606173515319824,
+      "screened": false
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 16,
+      "bimodality": 0.23533211648464203,
+      "eta2_token": 6.241372422310788e-16,
+      "eta2_token_sq": 0.06163798293632377,
+      "eta2_token_abs": 0.06682572667473201,
+      "repro": 0.9634589552879333,
+      "skew": 0.5564321279525757,
+      "ex_kurtosis": 2.473198413848877,
+      "screened": true
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 17,
+      "bimodality": 0.19632156193256378,
+      "eta2_token": 1.4425834702538798e-16,
+      "eta2_token_sq": 0.02695392917252943,
+      "eta2_token_abs": 0.05725338668493393,
+      "repro": 0.8907577395439148,
+      "skew": 0.44188976287841797,
+      "ex_kurtosis": 3.315964698791504,
+      "screened": true
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 18,
+      "bimodality": 0.24463684856891632,
+      "eta2_token": 1.7131012767262929e-16,
+      "eta2_token_sq": 0.05528857971005739,
+      "eta2_token_abs": 0.07470673638822099,
+      "repro": 0.6822376847267151,
+      "skew": -1.0905001163482666,
+      "ex_kurtosis": 6.439443588256836,
+      "screened": false
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 19,
+      "bimodality": 0.16888126730918884,
+      "eta2_token": 3.0662778161389534e-16,
+      "eta2_token_sq": 0.023192999663933452,
+      "eta2_token_abs": 0.03714092088152037,
+      "repro": 0.6468983292579651,
+      "skew": 0.6320787668228149,
+      "ex_kurtosis": 5.214853286743164,
+      "screened": false
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 20,
+      "bimodality": 0.23487696051597595,
+      "eta2_token": 2.594681275410997e-16,
+      "eta2_token_sq": 0.026197988302077615,
+      "eta2_token_abs": 0.041962117832040416,
+      "repro": 0.9435856938362122,
+      "skew": -0.8796505331993103,
+      "ex_kurtosis": 4.543787479400635,
+      "screened": true
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 21,
+      "bimodality": 0.2447531372308731,
+      "eta2_token": 3.223464145481516e-16,
+      "eta2_token_sq": 0.030958531958648748,
+      "eta2_token_abs": 0.04271349436684403,
+      "repro": 0.8522875308990479,
+      "skew": 0.41932612657546997,
+      "ex_kurtosis": 1.8461284637451172,
+      "screened": true
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 22,
+      "bimodality": 0.23963965475559235,
+      "eta2_token": 3.223769117916256e-16,
+      "eta2_token_sq": 0.0347015972941495,
+      "eta2_token_abs": 0.047467032924419846,
+      "repro": 0.8416227102279663,
+      "skew": 0.4298652410507202,
+      "ex_kurtosis": 1.9154949188232422,
+      "screened": true
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 23,
+      "bimodality": 0.19925948977470398,
+      "eta2_token": 3.989442404812077e-16,
+      "eta2_token_sq": 0.03373576310066515,
+      "eta2_token_abs": 0.04635669110353434,
+      "repro": 0.9505954384803772,
+      "skew": 0.6454026699066162,
+      "ex_kurtosis": 3.980689525604248,
+      "screened": true
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 24,
+      "bimodality": 0.23322948813438416,
+      "eta2_token": 2.377803111612055e-16,
+      "eta2_token_sq": 0.019740696797901504,
+      "eta2_token_abs": 0.0418756940106153,
+      "repro": 0.9806036949157715,
+      "skew": -1.150352954864502,
+      "ex_kurtosis": 6.989745140075684,
+      "screened": true
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 25,
+      "bimodality": 0.18692602217197418,
+      "eta2_token": 3.2915147129430797e-16,
+      "eta2_token_sq": 0.04240951922003346,
+      "eta2_token_abs": 0.058417254572341495,
+      "repro": 0.5398685932159424,
+      "skew": 0.3340929448604584,
+      "ex_kurtosis": 3.0130600929260254,
+      "screened": false
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 26,
+      "bimodality": 0.23339524865150452,
+      "eta2_token": 3.934642813669049e-16,
+      "eta2_token_sq": 0.023823097301799028,
+      "eta2_token_abs": 0.03456522651587754,
+      "repro": 0.7137326598167419,
+      "skew": 0.39240437746047974,
+      "ex_kurtosis": 2.0010480880737305,
+      "screened": false
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 27,
+      "bimodality": 0.2251834273338318,
+      "eta2_token": 2.729761171477321e-16,
+      "eta2_token_sq": 0.02902105232766683,
+      "eta2_token_abs": 0.03939882759011451,
+      "repro": 0.3663094937801361,
+      "skew": -0.06712465733289719,
+      "ex_kurtosis": 1.4204282760620117,
+      "screened": false
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 28,
+      "bimodality": 0.22976301610469818,
+      "eta2_token": 3.6571327080445115e-16,
+      "eta2_token_sq": 0.031955557104945194,
+      "eta2_token_abs": 0.05174904953973315,
+      "repro": 0.9768057465553284,
+      "skew": -1.0958232879638672,
+      "ex_kurtosis": 6.344535827636719,
+      "screened": true
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 29,
+      "bimodality": 0.22741858661174774,
+      "eta2_token": 3.8590878052832743e-16,
+      "eta2_token_sq": 0.030024761557754624,
+      "eta2_token_abs": 0.03756582227775033,
+      "repro": 0.45504021644592285,
+      "skew": 0.08107543736696243,
+      "ex_kurtosis": 1.2716445922851562,
+      "screened": false
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 30,
+      "bimodality": 0.2369515746831894,
+      "eta2_token": 2.840325566148067e-16,
+      "eta2_token_sq": 0.03295868912720658,
+      "eta2_token_abs": 0.04294851705184956,
+      "repro": 0.4957188367843628,
+      "skew": 0.11853565275669098,
+      "ex_kurtosis": 1.3665904998779297,
+      "screened": false
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 31,
+      "bimodality": 0.2050463706254959,
+      "eta2_token": 3.412080937622675e-16,
+      "eta2_token_sq": 0.02938604167792043,
+      "eta2_token_abs": 0.043397860150769255,
+      "repro": 0.9133238196372986,
+      "skew": -0.6339465975761414,
+      "ex_kurtosis": 3.9542412757873535,
+      "screened": true
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 32,
+      "bimodality": 0.2832583487033844,
+      "eta2_token": 3.255959901621058e-16,
+      "eta2_token_sq": 0.02985913220803115,
+      "eta2_token_abs": 0.052734172590657005,
+      "repro": 0.986292839050293,
+      "skew": -1.23100745677948,
+      "ex_kurtosis": 5.672746658325195,
+      "screened": true
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 33,
+      "bimodality": 0.23578161001205444,
+      "eta2_token": 2.9080519100208105e-16,
+      "eta2_token_sq": 0.032890160962499505,
+      "eta2_token_abs": 0.04621644487159778,
+      "repro": 0.7995085716247559,
+      "skew": 0.5910724997520447,
+      "ex_kurtosis": 2.7449421882629395,
+      "screened": false
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 34,
+      "bimodality": 0.2401825189590454,
+      "eta2_token": 4.0302152019821684e-16,
+      "eta2_token_sq": 0.033059906565097184,
+      "eta2_token_abs": 0.04476722265126601,
+      "repro": 0.823271632194519,
+      "skew": 0.5789090394973755,
+      "ex_kurtosis": 2.8950886726379395,
+      "screened": true
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 35,
+      "bimodality": 0.2615004777908325,
+      "eta2_token": 6.521793881697099e-16,
+      "eta2_token_sq": 0.06900528712106142,
+      "eta2_token_abs": 0.07549820792655328,
+      "repro": 0.7318308353424072,
+      "skew": 0.6655871272087097,
+      "ex_kurtosis": 2.6961522102355957,
+      "screened": false
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 36,
+      "bimodality": 0.25126710534095764,
+      "eta2_token": 5.091803617501864e-16,
+      "eta2_token_sq": 0.0416013164062795,
+      "eta2_token_abs": 0.045301532582468086,
+      "repro": 0.4466344118118286,
+      "skew": -0.17046375572681427,
+      "ex_kurtosis": 1.0928192138671875,
+      "screened": false
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 37,
+      "bimodality": 0.22972802817821503,
+      "eta2_token": 3.551689002152807e-16,
+      "eta2_token_sq": 0.03338193938656852,
+      "eta2_token_abs": 0.04117038137900093,
+      "repro": 0.45643115043640137,
+      "skew": 0.297628253698349,
+      "ex_kurtosis": 1.8668532371520996,
+      "screened": false
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 38,
+      "bimodality": 0.2171245664358139,
+      "eta2_token": 2.1477193076488948e-16,
+      "eta2_token_sq": 0.02530027005339606,
+      "eta2_token_abs": 0.04410277072227749,
+      "repro": 0.6356412172317505,
+      "skew": -0.44442063570022583,
+      "ex_kurtosis": 2.635714054107666,
+      "screened": false
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 39,
+      "bimodality": 0.26702505350112915,
+      "eta2_token": 3.7392791277694863e-16,
+      "eta2_token_sq": 0.029221293975302143,
+      "eta2_token_abs": 0.03966453259020264,
+      "repro": 0.4783330261707306,
+      "skew": -0.4772636592388153,
+      "ex_kurtosis": 1.6831045150756836,
+      "screened": false
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 40,
+      "bimodality": 0.24700301885604858,
+      "eta2_token": 2.8858769534500565e-16,
+      "eta2_token_sq": 0.028847125683095977,
+      "eta2_token_abs": 0.039093810337415776,
+      "repro": 0.7848363518714905,
+      "skew": 0.16734613478183746,
+      "ex_kurtosis": 1.0895204544067383,
+      "screened": false
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 41,
+      "bimodality": 0.18447263538837433,
+      "eta2_token": 1.4757441563544017e-16,
+      "eta2_token_sq": 0.02227547028811663,
+      "eta2_token_abs": 0.049528300972747616,
+      "repro": 0.8254476189613342,
+      "skew": 0.5098216533660889,
+      "ex_kurtosis": 3.971984386444092,
+      "screened": true
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 42,
+      "bimodality": 0.2147580236196518,
+      "eta2_token": 4.4079672458956635e-16,
+      "eta2_token_sq": 0.033582955809754476,
+      "eta2_token_abs": 0.05278033276730387,
+      "repro": 0.937063992023468,
+      "skew": -0.9888770580291748,
+      "ex_kurtosis": 5.992769241333008,
+      "screened": true
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 43,
+      "bimodality": 0.21743617951869965,
+      "eta2_token": 1.8565000503073823e-16,
+      "eta2_token_sq": 0.03448393392137206,
+      "eta2_token_abs": 0.056304029819281794,
+      "repro": 0.9069597125053406,
+      "skew": -0.6681552529335022,
+      "ex_kurtosis": 3.6338858604431152,
+      "screened": true
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 44,
+      "bimodality": 0.2325119972229004,
+      "eta2_token": 2.0006515608410009e-16,
+      "eta2_token_sq": 0.03289881188459657,
+      "eta2_token_abs": 0.046333009201804165,
+      "repro": 0.4395374059677124,
+      "skew": -0.15436381101608276,
+      "ex_kurtosis": 1.3130779266357422,
+      "screened": false
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 45,
+      "bimodality": 0.2254031002521515,
+      "eta2_token": 3.509614780356707e-16,
+      "eta2_token_sq": 0.02545666713205777,
+      "eta2_token_abs": 0.037164500756724866,
+      "repro": 0.5384799242019653,
+      "skew": 0.4362960457801819,
+      "ex_kurtosis": 2.2068586349487305,
+      "screened": false
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 46,
+      "bimodality": 0.2421019971370697,
+      "eta2_token": 6.366988006921548e-16,
+      "eta2_token_sq": 0.07156958167307674,
+      "eta2_token_abs": 0.08236765556802322,
+      "repro": 0.6456549763679504,
+      "skew": 0.6131400465965271,
+      "ex_kurtosis": 2.701930046081543,
+      "screened": false
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 47,
+      "bimodality": 0.210248664021492,
+      "eta2_token": 2.4618478398096434e-16,
+      "eta2_token_sq": 0.023304112493512674,
+      "eta2_token_abs": 0.039490430828525165,
+      "repro": 0.8909225463867188,
+      "skew": 0.5804067254066467,
+      "ex_kurtosis": 3.4692959785461426,
+      "screened": true
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 48,
+      "bimodality": 0.1619270145893097,
+      "eta2_token": 3.162193447143818e-16,
+      "eta2_token_sq": 0.021693245889072257,
+      "eta2_token_abs": 0.04045364460417704,
+      "repro": 0.9636538028717041,
+      "skew": -0.7760651707649231,
+      "ex_kurtosis": 7.041772842407227,
+      "screened": true
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 49,
+      "bimodality": 0.19069702923297882,
+      "eta2_token": 2.9801167064380776e-16,
+      "eta2_token_sq": 0.03175645732433196,
+      "eta2_token_abs": 0.04327520539185854,
+      "repro": 0.5618642568588257,
+      "skew": -0.3906167149543762,
+      "ex_kurtosis": 2.9528212547302246,
+      "screened": false
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 50,
+      "bimodality": 0.20519989728927612,
+      "eta2_token": 3.676516688540242e-16,
+      "eta2_token_sq": 0.031176823096963256,
+      "eta2_token_abs": 0.044047033339910106,
+      "repro": 0.9105967283248901,
+      "skew": -0.6540622115135193,
+      "ex_kurtosis": 3.968883514404297,
+      "screened": true
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 51,
+      "bimodality": 0.20925337076187134,
+      "eta2_token": 2.544697356121147e-16,
+      "eta2_token_sq": 0.04537710866803406,
+      "eta2_token_abs": 0.05751337773324034,
+      "repro": 0.4611437916755676,
+      "skew": -0.5308870077133179,
+      "ex_kurtosis": 3.069005012512207,
+      "screened": false
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 52,
+      "bimodality": 0.24535797536373138,
+      "eta2_token": 3.553932733622275e-16,
+      "eta2_token_sq": 0.026417129559002914,
+      "eta2_token_abs": 0.035212374819996686,
+      "repro": 0.7517934441566467,
+      "skew": -0.31996285915374756,
+      "ex_kurtosis": 1.5077295303344727,
+      "screened": false
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 53,
+      "bimodality": 0.26398420333862305,
+      "eta2_token": 4.14967120888101e-16,
+      "eta2_token_sq": 0.049388619096711134,
+      "eta2_token_abs": 0.1019108288950373,
+      "repro": 0.982125461101532,
+      "skew": 1.8074983358383179,
+      "ex_kurtosis": 12.55007266998291,
+      "screened": true
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 54,
+      "bimodality": 0.212012380361557,
+      "eta2_token": 3.67585100033249e-16,
+      "eta2_token_sq": 0.03232766412336012,
+      "eta2_token_abs": 0.04414900923884347,
+      "repro": 0.9419888257980347,
+      "skew": 0.6202394366264343,
+      "ex_kurtosis": 3.5259246826171875,
+      "screened": true
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 55,
+      "bimodality": 0.2325594127178192,
+      "eta2_token": 4.032247292397265e-16,
+      "eta2_token_sq": 0.030299778891639293,
+      "eta2_token_abs": 0.03941063887560463,
+      "repro": 0.7810120582580566,
+      "skew": 0.004445545841008425,
+      "ex_kurtosis": 1.132300853729248,
+      "screened": false
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 56,
+      "bimodality": 0.21065625548362732,
+      "eta2_token": 3.105901486984049e-16,
+      "eta2_token_sq": 0.025187508728713025,
+      "eta2_token_abs": 0.036578970829950284,
+      "repro": 0.7476422786712646,
+      "skew": -0.03556309640407562,
+      "ex_kurtosis": 1.7592406272888184,
+      "screened": false
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 57,
+      "bimodality": 0.16847003996372223,
+      "eta2_token": 3.677909782224956e-16,
+      "eta2_token_sq": 0.02353988562704903,
+      "eta2_token_abs": 0.03539045748652199,
+      "repro": 0.8676649928092957,
+      "skew": -0.3448905646800995,
+      "ex_kurtosis": 3.5554909706115723,
+      "screened": true
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 58,
+      "bimodality": 0.21377919614315033,
+      "eta2_token": 3.4899037491471492e-16,
+      "eta2_token_sq": 0.024251429506091823,
+      "eta2_token_abs": 0.03909071569638173,
+      "repro": 0.9675471186637878,
+      "skew": 0.6422651410102844,
+      "ex_kurtosis": 3.629044532775879,
+      "screened": true
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 59,
+      "bimodality": 0.23230554163455963,
+      "eta2_token": 1.051596398754091e-16,
+      "eta2_token_sq": 0.026381749906836054,
+      "eta2_token_abs": 0.08430545608829823,
+      "repro": 0.6841350197792053,
+      "skew": -1.509669303894043,
+      "ex_kurtosis": 11.181295394897461,
+      "screened": false
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 60,
+      "bimodality": 0.2295484095811844,
+      "eta2_token": 3.073289185488738e-16,
+      "eta2_token_sq": 0.03586126707479557,
+      "eta2_token_abs": 0.04959514421648726,
+      "repro": 0.5200934410095215,
+      "skew": 0.5469847917556763,
+      "ex_kurtosis": 2.420865535736084,
+      "screened": false
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 61,
+      "bimodality": 0.15035487711429596,
+      "eta2_token": 3.595499793353646e-16,
+      "eta2_token_sq": 0.019556748159942634,
+      "eta2_token_abs": 0.03550927947852745,
+      "repro": 0.9512742161750793,
+      "skew": 0.26632124185562134,
+      "ex_kurtosis": 4.242427349090576,
+      "screened": true
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 62,
+      "bimodality": 0.2504808008670807,
+      "eta2_token": 2.937466945875336e-16,
+      "eta2_token_sq": 0.029516154910528804,
+      "eta2_token_abs": 0.03895799674631255,
+      "repro": 0.36678946018218994,
+      "skew": -0.1136469915509224,
+      "ex_kurtosis": 1.1207504272460938,
+      "screened": false
+     },
+     {
+      "kind": "ica_logcosh",
+      "id": 63,
+      "bimodality": 0.25424930453300476,
+      "eta2_token": 2.964698448289429e-16,
+      "eta2_token_sq": 0.0395762935870339,
+      "eta2_token_abs": 0.06445381960972055,
+      "repro": 0.869620144367218,
+      "skew": 0.9964503049850464,
+      "ex_kurtosis": 5.036147117614746,
+      "screened": true
+     },
+     {
+      "kind": "ica_skew",
+      "id": 0,
+      "bimodality": 0.24681232869625092,
+      "eta2_token": 2.1738586120799099e-16,
+      "eta2_token_sq": 0.029477140956961592,
+      "eta2_token_abs": 0.045336750850735914,
+      "repro": 0.685843825340271,
+      "skew": 0.4326950013637543,
+      "ex_kurtosis": 1.678396224975586,
+      "screened": false
+     },
+     {
+      "kind": "ica_skew",
+      "id": 1,
+      "bimodality": 0.2005184292793274,
+      "eta2_token": 2.0425072393713946e-16,
+      "eta2_token_sq": 0.05358457253536168,
+      "eta2_token_abs": 0.08312747151467802,
+      "repro": 0.9737555980682373,
+      "skew": 1.2077975273132324,
+      "ex_kurtosis": 8.929648399353027,
+      "screened": true
+     },
+     {
+      "kind": "ica_skew",
+      "id": 2,
+      "bimodality": 0.27885952591896057,
+      "eta2_token": 3.2729939916031335e-16,
+      "eta2_token_sq": 0.03366105220590561,
+      "eta2_token_abs": 0.048584236365189847,
+      "repro": 0.9698740839958191,
+      "skew": 1.0131745338439941,
+      "ex_kurtosis": 4.439765930175781,
+      "screened": true
+     },
+     {
+      "kind": "ica_skew",
+      "id": 3,
+      "bimodality": 0.2254674732685089,
+      "eta2_token": 2.0947457310310107e-16,
+      "eta2_token_sq": 0.024530720506409615,
+      "eta2_token_abs": 0.04762935379306093,
+      "repro": 0.9686198234558105,
+      "skew": 0.8883823156356812,
+      "ex_kurtosis": 4.733331203460693,
+      "screened": true
+     },
+     {
+      "kind": "ica_skew",
+      "id": 4,
+      "bimodality": 0.25764888525009155,
+      "eta2_token": 2.4086695172064365e-16,
+      "eta2_token_sq": 0.03636931081352381,
+      "eta2_token_abs": 0.048162279168298974,
+      "repro": 0.8415835499763489,
+      "skew": 0.305826872587204,
+      "ex_kurtosis": 1.1727585792541504,
+      "screened": true
+     },
+     {
+      "kind": "ica_skew",
+      "id": 5,
+      "bimodality": 0.25283282995224,
+      "eta2_token": 7.890166895967145e-16,
+      "eta2_token_sq": 0.04505122413898064,
+      "eta2_token_abs": 0.07807920166235158,
+      "repro": 0.9744989275932312,
+      "skew": 0.7864508032798767,
+      "ex_kurtosis": 3.3187594413757324,
+      "screened": true
+     },
+     {
+      "kind": "ica_skew",
+      "id": 6,
+      "bimodality": 0.2695048451423645,
+      "eta2_token": 3.6735555394603546e-16,
+      "eta2_token_sq": 0.03135701352135335,
+      "eta2_token_abs": 0.03830344662192917,
+      "repro": 0.5285367965698242,
+      "skew": 0.2832428216934204,
+      "ex_kurtosis": 0.9922993183135986,
+      "screened": false
+     },
+     {
+      "kind": "ica_skew",
+      "id": 7,
+      "bimodality": 0.23256219923496246,
+      "eta2_token": 6.198027115337789e-16,
+      "eta2_token_sq": 0.034957725006561524,
+      "eta2_token_abs": 0.06625612777603948,
+      "repro": 0.9811362028121948,
+      "skew": 1.356415033340454,
+      "ex_kurtosis": 9.0975341796875,
+      "screened": true
+     },
+     {
+      "kind": "ica_skew",
+      "id": 8,
+      "bimodality": 0.3043023943901062,
+      "eta2_token": 7.748017309271927e-16,
+      "eta2_token_sq": 0.050418771877967845,
+      "eta2_token_abs": 0.10861016127704272,
+      "repro": 0.95728999376297,
+      "skew": 2.0707075595855713,
+      "ex_kurtosis": 15.36802864074707,
+      "screened": true
+     },
+     {
+      "kind": "ica_skew",
+      "id": 9,
+      "bimodality": 0.2800196409225464,
+      "eta2_token": 4.595631740365848e-16,
+      "eta2_token_sq": 0.028638986586224317,
+      "eta2_token_abs": 0.04200178154470254,
+      "repro": 0.9446300268173218,
+      "skew": 0.6775110363960266,
+      "ex_kurtosis": 2.2846016883850098,
+      "screened": true
+     },
+     {
+      "kind": "ica_skew",
+      "id": 10,
+      "bimodality": 0.21971705555915833,
+      "eta2_token": 2.63020874218371e-16,
+      "eta2_token_sq": 0.025680518164333786,
+      "eta2_token_abs": 0.04337645060482016,
+      "repro": 0.6763608455657959,
+      "skew": 0.5072009563446045,
+      "ex_kurtosis": 2.9609670639038086,
+      "screened": false
+     },
+     {
+      "kind": "ica_skew",
+      "id": 11,
+      "bimodality": 0.20410890877246857,
+      "eta2_token": 2.9658428702741576e-16,
+      "eta2_token_sq": 0.02364586350793284,
+      "eta2_token_abs": 0.04228530848075272,
+      "repro": 0.8052456974983215,
+      "skew": 0.9831750392913818,
+      "ex_kurtosis": 6.761013031005859,
+      "screened": true
+     },
+     {
+      "kind": "ica_skew",
+      "id": 12,
+      "bimodality": 0.2107158750295639,
+      "eta2_token": 5.578911652185113e-16,
+      "eta2_token_sq": 0.08195280899741504,
+      "eta2_token_abs": 0.11373803958435383,
+      "repro": 0.6139932870864868,
+      "skew": 1.1722311973571777,
+      "ex_kurtosis": 7.688080787658691,
+      "screened": false
+     },
+     {
+      "kind": "ica_skew",
+      "id": 13,
+      "bimodality": 0.24012286961078644,
+      "eta2_token": 3.7115173799012427e-16,
+      "eta2_token_sq": 0.04447057902211574,
+      "eta2_token_abs": 0.05677225242412248,
+      "repro": 0.9875921010971069,
+      "skew": 1.2873634099960327,
+      "ex_kurtosis": 8.141840934753418,
+      "screened": true
+     },
+     {
+      "kind": "ica_skew",
+      "id": 14,
+      "bimodality": 0.32283276319503784,
+      "eta2_token": 2.203045672989861e-16,
+      "eta2_token_sq": 0.03674205810097309,
+      "eta2_token_abs": 0.07157616522440745,
+      "repro": 0.9738978743553162,
+      "skew": 1.6971116065979004,
+      "ex_kurtosis": 9.384368896484375,
+      "screened": true
+     },
+     {
+      "kind": "ica_skew",
+      "id": 15,
+      "bimodality": 0.24107615649700165,
+      "eta2_token": 3.919589754935452e-16,
+      "eta2_token_sq": 0.033775663308212536,
+      "eta2_token_abs": 0.04597926895899247,
+      "repro": 0.6507313847541809,
+      "skew": 0.6125245690345764,
+      "ex_kurtosis": 2.8606839179992676,
+      "screened": false
+     },
+     {
+      "kind": "ica_skew",
+      "id": 16,
+      "bimodality": 0.2412988394498825,
+      "eta2_token": 2.6160276563944665e-16,
+      "eta2_token_sq": 0.03135061133932627,
+      "eta2_token_abs": 0.047520858148373556,
+      "repro": 0.9320298433303833,
+      "skew": 0.7115387320518494,
+      "ex_kurtosis": 3.293208599090576,
+      "screened": true
+     },
+     {
+      "kind": "ica_skew",
+      "id": 17,
+      "bimodality": 0.25463399291038513,
+      "eta2_token": 3.417608598034148e-16,
+      "eta2_token_sq": 0.03249380725398641,
+      "eta2_token_abs": 0.04277024929783103,
+      "repro": 0.44445502758026123,
+      "skew": 0.33654409646987915,
+      "ex_kurtosis": 1.3689656257629395,
+      "screened": false
+     },
+     {
+      "kind": "ica_skew",
+      "id": 18,
+      "bimodality": 0.23887714743614197,
+      "eta2_token": 3.528967313616241e-16,
+      "eta2_token_sq": 0.026646248893531826,
+      "eta2_token_abs": 0.04280873933392602,
+      "repro": 0.5472694635391235,
+      "skew": 0.7862733006477356,
+      "ex_kurtosis": 3.6754941940307617,
+      "screened": false
+     },
+     {
+      "kind": "ica_skew",
+      "id": 19,
+      "bimodality": 0.22523683309555054,
+      "eta2_token": 2.053780222565126e-16,
+      "eta2_token_sq": 0.05624640778700342,
+      "eta2_token_abs": 0.06613543875195116,
+      "repro": 0.7853591442108154,
+      "skew": 0.7595500946044922,
+      "ex_kurtosis": 4.438043594360352,
+      "screened": false
+     },
+     {
+      "kind": "ica_skew",
+      "id": 20,
+      "bimodality": 0.2243136465549469,
+      "eta2_token": 3.151022855902731e-16,
+      "eta2_token_sq": 0.025007380827435345,
+      "eta2_token_abs": 0.03778809873878131,
+      "repro": 0.7759801149368286,
+      "skew": 0.534347653388977,
+      "ex_kurtosis": 2.743114471435547,
+      "screened": false
+     },
+     {
+      "kind": "ica_skew",
+      "id": 21,
+      "bimodality": 0.2420264184474945,
+      "eta2_token": 2.3472245098218734e-16,
+      "eta2_token_sq": 0.030019525286656867,
+      "eta2_token_abs": 0.050173956611543634,
+      "repro": 0.828515350818634,
+      "skew": 1.0040194988250732,
+      "ex_kurtosis": 5.59745979309082,
+      "screened": true
+     },
+     {
+      "kind": "ica_skew",
+      "id": 22,
+      "bimodality": 0.22690820693969727,
+      "eta2_token": 2.3283929551619807e-16,
+      "eta2_token_sq": 0.02326185135589807,
+      "eta2_token_abs": 0.043098591865639864,
+      "repro": 0.9630889892578125,
+      "skew": 0.8122079968452454,
+      "ex_kurtosis": 4.44486141204834,
+      "screened": true
+     },
+     {
+      "kind": "ica_skew",
+      "id": 23,
+      "bimodality": 0.24168801307678223,
+      "eta2_token": 3.723736040936485e-16,
+      "eta2_token_sq": 0.031205527510683836,
+      "eta2_token_abs": 0.048315469568461195,
+      "repro": 0.9026691913604736,
+      "skew": 0.7546368837356567,
+      "ex_kurtosis": 4.086230278015137,
+      "screened": true
+     },
+     {
+      "kind": "ica_skew",
+      "id": 24,
+      "bimodality": 0.23096336424350739,
+      "eta2_token": 2.322944652712689e-16,
+      "eta2_token_sq": 0.018780250221862062,
+      "eta2_token_abs": 0.0405111051236234,
+      "repro": 0.8877855539321899,
+      "skew": 1.115199327468872,
+      "ex_kurtosis": 6.626131057739258,
+      "screened": true
+     },
+     {
+      "kind": "ica_skew",
+      "id": 25,
+      "bimodality": 0.1861739307641983,
+      "eta2_token": 4.452494465876423e-16,
+      "eta2_token_sq": 0.03634329438442503,
+      "eta2_token_abs": 0.05611926795204292,
+      "repro": 0.4095757305622101,
+      "skew": 0.7401022911071777,
+      "ex_kurtosis": 5.455530166625977,
+      "screened": false
+     },
+     {
+      "kind": "ica_skew",
+      "id": 26,
+      "bimodality": 0.27939727902412415,
+      "eta2_token": 4.92029004347722e-16,
+      "eta2_token_sq": 0.045336403479582864,
+      "eta2_token_abs": 0.05184465780986748,
+      "repro": 0.8432826995849609,
+      "skew": 0.23850618302822113,
+      "ex_kurtosis": 0.8270971775054932,
+      "screened": true
+     },
+     {
+      "kind": "ica_skew",
+      "id": 27,
+      "bimodality": 0.2568152844905853,
+      "eta2_token": 3.3281891641843945e-16,
+      "eta2_token_sq": 0.02840512697785391,
+      "eta2_token_abs": 0.03779769160231418,
+      "repro": 0.5089772343635559,
+      "skew": 0.2730427086353302,
+      "ex_kurtosis": 1.1552109718322754,
+      "screened": false
+     },
+     {
+      "kind": "ica_skew",
+      "id": 28,
+      "bimodality": 0.23914219439029694,
+      "eta2_token": 3.868631071802332e-16,
+      "eta2_token_sq": 0.032055424285247686,
+      "eta2_token_abs": 0.05180799947808532,
+      "repro": 0.9725543260574341,
+      "skew": 1.1299347877502441,
+      "ex_kurtosis": 6.30552864074707,
+      "screened": true
+     },
+     {
+      "kind": "ica_skew",
+      "id": 29,
+      "bimodality": 0.24600845575332642,
+      "eta2_token": 3.5305018061614963e-16,
+      "eta2_token_sq": 0.031420740103826776,
+      "eta2_token_abs": 0.03905758040155251,
+      "repro": 0.46602147817611694,
+      "skew": 0.3911118507385254,
+      "ex_kurtosis": 1.6704645156860352,
+      "screened": false
+     },
+     {
+      "kind": "ica_skew",
+      "id": 30,
+      "bimodality": 0.24849183857440948,
+      "eta2_token": 3.3669674379559357e-16,
+      "eta2_token_sq": 0.03453103421484992,
+      "eta2_token_abs": 0.04687181527743562,
+      "repro": 0.9011450409889221,
+      "skew": 0.48761090636253357,
+      "ex_kurtosis": 1.9442715644836426,
+      "screened": true
+     },
+     {
+      "kind": "ica_skew",
+      "id": 31,
+      "bimodality": 0.2611466348171234,
+      "eta2_token": 2.630564107903944e-16,
+      "eta2_token_sq": 0.030022026424987858,
+      "eta2_token_abs": 0.042977929623813006,
+      "repro": 0.374257355928421,
+      "skew": 0.2993760108947754,
+      "ex_kurtosis": 1.2460041046142578,
+      "screened": false
+     },
+     {
+      "kind": "ica_skew",
+      "id": 32,
+      "bimodality": 0.28783050179481506,
+      "eta2_token": 3.5306821084076304e-16,
+      "eta2_token_sq": 0.03032582357359372,
+      "eta2_token_abs": 0.052850369985863364,
+      "repro": 0.9879526495933533,
+      "skew": 1.231567144393921,
+      "ex_kurtosis": 5.540139198303223,
+      "screened": true
+     },
+     {
+      "kind": "ica_skew",
+      "id": 33,
+      "bimodality": 0.24569375813007355,
+      "eta2_token": 7.038073362732264e-16,
+      "eta2_token_sq": 0.06113079119173281,
+      "eta2_token_abs": 0.06280615585869866,
+      "repro": 0.9435871839523315,
+      "skew": 0.4305082857608795,
+      "ex_kurtosis": 1.719374179840088,
+      "screened": true
+     },
+     {
+      "kind": "ica_skew",
+      "id": 34,
+      "bimodality": 0.18218371272087097,
+      "eta2_token": 5.683173031826857e-17,
+      "eta2_token_sq": 0.027613050842290255,
+      "eta2_token_abs": 0.0869488363312657,
+      "repro": 0.964181125164032,
+      "skew": 0.8293384909629822,
+      "ex_kurtosis": 6.274054527282715,
+      "screened": true
+     },
+     {
+      "kind": "ica_skew",
+      "id": 35,
+      "bimodality": 0.20439627766609192,
+      "eta2_token": 1.5489484811106677e-16,
+      "eta2_token_sq": 0.02623099548886369,
+      "eta2_token_abs": 0.055272816739986054,
+      "repro": 0.8403942584991455,
+      "skew": 0.48299193382263184,
+      "ex_kurtosis": 3.032546043395996,
+      "screened": true
+     },
+     {
+      "kind": "ica_skew",
+      "id": 36,
+      "bimodality": 0.22805963456630707,
+      "eta2_token": 1.4851075594652975e-16,
+      "eta2_token_sq": 0.031010261962321924,
+      "eta2_token_abs": 0.05248681443132091,
+      "repro": 0.412372350692749,
+      "skew": 0.4498085379600525,
+      "ex_kurtosis": 2.257807731628418,
+      "screened": false
+     },
+     {
+      "kind": "ica_skew",
+      "id": 37,
+      "bimodality": 0.2703421413898468,
+      "eta2_token": 3.000661746844378e-16,
+      "eta2_token_sq": 0.029083871579461185,
+      "eta2_token_abs": 0.038430690482546576,
+      "repro": 0.620866596698761,
+      "skew": 0.30059564113616943,
+      "ex_kurtosis": 1.0654268264770508,
+      "screened": false
+     },
+     {
+      "kind": "ica_skew",
+      "id": 38,
+      "bimodality": 0.20609226822853088,
+      "eta2_token": 3.6258266073048636e-16,
+      "eta2_token_sq": 0.026117176102758047,
+      "eta2_token_abs": 0.03792243857480639,
+      "repro": 0.6204237937927246,
+      "skew": 0.49446728825569153,
+      "ex_kurtosis": 3.0157899856567383,
+      "screened": false
+     },
+     {
+      "kind": "ica_skew",
+      "id": 39,
+      "bimodality": 0.24379095435142517,
+      "eta2_token": 3.3088294107052835e-16,
+      "eta2_token_sq": 0.032805392656705186,
+      "eta2_token_abs": 0.04604150828353034,
+      "repro": 0.9359575510025024,
+      "skew": 0.7481839656829834,
+      "ex_kurtosis": 3.346334457397461,
+      "screened": true
+     },
+     {
+      "kind": "ica_skew",
+      "id": 40,
+      "bimodality": 0.1827339231967926,
+      "eta2_token": 1.2171945647498706e-16,
+      "eta2_token_sq": 0.020191687074097187,
+      "eta2_token_abs": 0.052442759808696185,
+      "repro": 0.8909794688224792,
+      "skew": 0.6230288147926331,
+      "ex_kurtosis": 4.802511215209961,
+      "screened": true
+     },
+     {
+      "kind": "ica_skew",
+      "id": 41,
+      "bimodality": 0.2586819529533386,
+      "eta2_token": 3.3363058565498554e-16,
+      "eta2_token_sq": 0.030430363597401464,
+      "eta2_token_abs": 0.04150330584870748,
+      "repro": 0.892321765422821,
+      "skew": 0.47275200486183167,
+      "ex_kurtosis": 1.7468485832214355,
+      "screened": true
+     },
+     {
+      "kind": "ica_skew",
+      "id": 42,
+      "bimodality": 0.2045309990644455,
+      "eta2_token": 3.450442145391593e-16,
+      "eta2_token_sq": 0.028642071541200208,
+      "eta2_token_abs": 0.05487097040088028,
+      "repro": 0.9601607322692871,
+      "skew": 1.1074632406234741,
+      "ex_kurtosis": 7.428774833679199,
+      "screened": true
+     },
+     {
+      "kind": "ica_skew",
+      "id": 43,
+      "bimodality": 0.2576385736465454,
+      "eta2_token": 5.665492868860464e-16,
+      "eta2_token_sq": 0.052441965184195534,
+      "eta2_token_abs": 0.057583418217203974,
+      "repro": 0.8653104901313782,
+      "skew": 0.5768952965736389,
+      "ex_kurtosis": 2.171534538269043,
+      "screened": true
+     },
+     {
+      "kind": "ica_skew",
+      "id": 44,
+      "bimodality": 0.27150243520736694,
+      "eta2_token": 3.2283761929074194e-16,
+      "eta2_token_sq": 0.03304450589346802,
+      "eta2_token_abs": 0.04272464177799969,
+      "repro": 0.6385910511016846,
+      "skew": 0.3165378272533417,
+      "ex_kurtosis": 0.965733528137207,
+      "screened": false
+     },
+     {
+      "kind": "ica_skew",
+      "id": 45,
+      "bimodality": 0.24789349734783173,
+      "eta2_token": 4.0023739172255657e-16,
+      "eta2_token_sq": 0.02668448071189335,
+      "eta2_token_abs": 0.03375114889876103,
+      "repro": 0.45558974146842957,
+      "skew": 0.3064333200454712,
+      "ex_kurtosis": 1.3768229484558105,
+      "screened": false
+     },
+     {
+      "kind": "ica_skew",
+      "id": 46,
+      "bimodality": 0.2569299340248108,
+      "eta2_token": 6.301188575561032e-16,
+      "eta2_token_sq": 0.07299387819923392,
+      "eta2_token_abs": 0.08176392613040516,
+      "repro": 0.8776789307594299,
+      "skew": 0.6483802199363708,
+      "ex_kurtosis": 2.5861711502075195,
+      "screened": true
+     },
+     {
+      "kind": "ica_skew",
+      "id": 47,
+      "bimodality": 0.21958138048648834,
+      "eta2_token": 3.36237350601572e-16,
+      "eta2_token_sq": 0.03401701374042403,
+      "eta2_token_abs": 0.047873806220143415,
+      "repro": 0.8112990856170654,
+      "skew": 0.6397243738174438,
+      "ex_kurtosis": 3.286773204803467,
+      "screened": true
+     },
+     {
+      "kind": "ica_skew",
+      "id": 48,
+      "bimodality": 0.21287891268730164,
+      "eta2_token": 3.594405598803655e-16,
+      "eta2_token_sq": 0.03898204196306116,
+      "eta2_token_abs": 0.06727966314856429,
+      "repro": 0.8625791072845459,
+      "skew": 1.2667382955551147,
+      "ex_kurtosis": 8.776275634765625,
+      "screened": true
+     },
+     {
+      "kind": "ica_skew",
+      "id": 49,
+      "bimodality": 0.18389081954956055,
+      "eta2_token": 2.697487202893936e-16,
+      "eta2_token_sq": 0.022094125295711198,
+      "eta2_token_abs": 0.041348658701332634,
+      "repro": 0.8735603094100952,
+      "skew": 0.4393494725227356,
+      "ex_kurtosis": 3.438570976257324,
+      "screened": true
+     },
+     {
+      "kind": "ica_skew",
+      "id": 50,
+      "bimodality": 0.2218463122844696,
+      "eta2_token": 3.796042175965056e-16,
+      "eta2_token_sq": 0.030285068325660688,
+      "eta2_token_abs": 0.04567258866947128,
+      "repro": 0.9340526461601257,
+      "skew": 0.8277487754821777,
+      "ex_kurtosis": 4.579978942871094,
+      "screened": true
+     },
+     {
+      "kind": "ica_skew",
+      "id": 51,
+      "bimodality": 0.22831027209758759,
+      "eta2_token": 2.6662257126121347e-16,
+      "eta2_token_sq": 0.039627084924308484,
+      "eta2_token_abs": 0.052696545279537974,
+      "repro": 0.680968165397644,
+      "skew": 0.5955191254615784,
+      "ex_kurtosis": 2.8845996856689453,
+      "screened": false
+     },
+     {
+      "kind": "ica_skew",
+      "id": 52,
+      "bimodality": 0.22039099037647247,
+      "eta2_token": 3.6929949544420757e-16,
+      "eta2_token_sq": 0.032804917103821996,
+      "eta2_token_abs": 0.04528575813093715,
+      "repro": 0.9455742835998535,
+      "skew": 0.7427543997764587,
+      "ex_kurtosis": 4.118065357208252,
+      "screened": true
+     },
+     {
+      "kind": "ica_skew",
+      "id": 53,
+      "bimodality": 0.2474706768989563,
+      "eta2_token": 3.450200234414409e-16,
+      "eta2_token_sq": 0.047804316286714506,
+      "eta2_token_abs": 0.09562817273117315,
+      "repro": 0.9611631035804749,
+      "skew": 1.6324411630630493,
+      "ex_kurtosis": 11.1402006149292,
+      "screened": true
+     },
+     {
+      "kind": "ica_skew",
+      "id": 54,
+      "bimodality": 0.2470717430114746,
+      "eta2_token": 3.1441371250864013e-16,
+      "eta2_token_sq": 0.02419010545680198,
+      "eta2_token_abs": 0.03491853436815964,
+      "repro": 0.6975226998329163,
+      "skew": 0.4089917838573456,
+      "ex_kurtosis": 1.659898281097412,
+      "screened": false
+     },
+     {
+      "kind": "ica_skew",
+      "id": 55,
+      "bimodality": 0.17830656468868256,
+      "eta2_token": 3.084163925838535e-16,
+      "eta2_token_sq": 0.022967820762256758,
+      "eta2_token_abs": 0.042199879067071,
+      "repro": 0.5356035828590393,
+      "skew": 0.8097679615020752,
+      "ex_kurtosis": 6.379763603210449,
+      "screened": false
+     },
+     {
+      "kind": "ica_skew",
+      "id": 56,
+      "bimodality": 0.20168301463127136,
+      "eta2_token": 2.0533292368419765e-16,
+      "eta2_token_sq": 0.028927434276459357,
+      "eta2_token_abs": 0.05478861042848034,
+      "repro": 0.5755616426467896,
+      "skew": 0.7499660849571228,
+      "ex_kurtosis": 4.572434902191162,
+      "screened": false
+     },
+     {
+      "kind": "ica_skew",
+      "id": 57,
+      "bimodality": 0.27256178855895996,
+      "eta2_token": 6.164771858067916e-16,
+      "eta2_token_sq": 0.061900879490731496,
+      "eta2_token_abs": 0.06863168535386581,
+      "repro": 0.9216555953025818,
+      "skew": 0.6693931221961975,
+      "ex_kurtosis": 2.447047233581543,
+      "screened": true
+     },
+     {
+      "kind": "ica_skew",
+      "id": 58,
+      "bimodality": 0.2286856323480606,
+      "eta2_token": 3.3400264550718685e-16,
+      "eta2_token_sq": 0.021716559131605438,
+      "eta2_token_abs": 0.03804047811993453,
+      "repro": 0.8930678367614746,
+      "skew": 0.7358402013778687,
+      "ex_kurtosis": 3.8007616996765137,
+      "screened": true
+     },
+     {
+      "kind": "ica_skew",
+      "id": 59,
+      "bimodality": 0.18193618953227997,
+      "eta2_token": 2.2577966132528953e-16,
+      "eta2_token_sq": 0.018190754242715317,
+      "eta2_token_abs": 0.04549282456338679,
+      "repro": 0.8413265347480774,
+      "skew": 0.846705973148346,
+      "ex_kurtosis": 6.246199607849121,
+      "screened": true
+     },
+     {
+      "kind": "ica_skew",
+      "id": 60,
+      "bimodality": 0.22981521487236023,
+      "eta2_token": 3.14745270011078e-16,
+      "eta2_token_sq": 0.03799604985212684,
+      "eta2_token_abs": 0.05103180608000835,
+      "repro": 0.8224707245826721,
+      "skew": 0.523154616355896,
+      "ex_kurtosis": 2.273418426513672,
+      "screened": true
+     },
+     {
+      "kind": "ica_skew",
+      "id": 61,
+      "bimodality": 0.2580419182777405,
+      "eta2_token": 2.9201052630398263e-16,
+      "eta2_token_sq": 0.039004981513852156,
+      "eta2_token_abs": 0.062487106258845355,
+      "repro": 0.939746081829071,
+      "skew": 1.0194588899612427,
+      "ex_kurtosis": 5.062813758850098,
+      "screened": true
+     },
+     {
+      "kind": "ica_skew",
+      "id": 62,
+      "bimodality": 0.23631663620471954,
+      "eta2_token": 2.7088459349932854e-16,
+      "eta2_token_sq": 0.025446932563067133,
+      "eta2_token_abs": 0.04161051340365801,
+      "repro": 0.831345796585083,
+      "skew": 0.9136060476303101,
+      "ex_kurtosis": 4.705898284912109,
+      "screened": true
+     },
+     {
+      "kind": "ica_skew",
+      "id": 63,
+      "bimodality": 0.26868557929992676,
+      "eta2_token": 3.8545239723344473e-16,
+      "eta2_token_sq": 0.031024324314564523,
+      "eta2_token_abs": 0.037992246844388775,
+      "repro": 0.3868846595287323,
+      "skew": 0.28738218545913696,
+      "ex_kurtosis": 1.0263018608093262,
+      "screened": false
+     }
+    ],
+    "tdi_med": 1.0847189560655572,
+    "tdi_self_incl_med": 1.342504734937515,
+    "kir": 9.568418254010853,
+    "screen_counts": {
+     "cluster": {
+      "n": 16,
+      "tdi_med": 1.0847189560655572,
+      "tdi_q90": 1.4586593165844914,
+      "tdi_le3": 16,
+      "tdi_le5": 16,
+      "repro_ge08": 0,
+      "fixed_pass": 16
+     },
+     "logcosh": {
+      "n": 64,
+      "eta2_le03": 64,
+      "eta2sq_le03": 64,
+      "eta2sq_max": 0.08159862856771886,
+      "repro_ge08": 35,
+      "repro_ge05": 55,
+      "repro_med": 0.8426899313926697,
+      "bimod_gt": 0
+     },
+     "skew": {
+      "n": 64,
+      "eta2_le03": 64,
+      "eta2sq_le03": 64,
+      "eta2sq_max": 0.08195280899741504,
+      "repro_ge08": 41,
+      "repro_ge05": 57,
+      "repro_med": 0.8529309034347534,
+      "bimod_gt": 0
+     }
+    },
+    "n_screened": {
+     "cluster": 0,
+     "logcosh": 35,
+     "skew": 41
+    },
+    "units_npz_sha256": "ebc69ab14a41c849c3774049d1039c989490d44d095dafcbea8fa1b2c03760cf",
+    "frozen_at": "2026-10-15T11:33:12",
+    "freeze_md5": "474f5a9dae757ad21b8863eb0d9d3c6b"
+   },
+   "seconds_freeze": 29.9,
+   "positive_control": {
+    "paren_inside": {
+     "cluster": {
+      "stat": 0.0,
+      "null_p999": 0.0,
+      "best": null,
+      "n_units": 0,
+      "floor": 0.5,
+      "recovered": false,
+      "margin": -1.0
+     },
+     "logcosh": {
+      "stat": 0.5579043626785278,
+      "null_p999": 0.5161025524139404,
+      "best": 57,
+      "n_units": 35,
+      "floor": 0.7,
+      "recovered": false,
+      "margin": -0.14209563732147212
+     },
+     "skew": {
+      "stat": 0.5524454712867737,
+      "null_p999": 0.5157432556152344,
+      "best": 52,
+      "n_units": 41,
+      "floor": 0.7,
+      "recovered": false,
+      "margin": -0.14755452871322627
+     },
+     "unscreened": {
+      "cluster": {
+       "stat": 0.05028051984944251,
+       "null_p999": 0.054642923916649114,
+       "best": 6,
+       "n_units": 16,
+       "floor": 0.5,
+       "recovered": false,
+       "margin": -0.4497194801505575
+      },
+      "logcosh": {
+       "stat": 0.5601381659507751,
+       "null_p999": 0.5161025524139404,
+       "best": 39,
+       "n_units": 64,
+       "floor": 0.7,
+       "recovered": false,
+       "margin": -0.1398618340492248
+      },
+      "skew": {
+       "stat": 0.5678851008415222,
+       "null_p999": 0.5157432556152344,
+       "best": 17,
+       "n_units": 64,
+       "floor": 0.7,
+       "recovered": false,
+       "margin": -0.13211489915847774
+      }
+     },
+     "recovered": false,
+     "probe_auroc_context": 0.6359005855456734
+    },
+    "quote_inside": {
+     "cluster": {
+      "stat": 0.0,
+      "null_p999": 0.0,
+      "best": null,
+      "n_units": 0,
+      "floor": 0.5,
+      "recovered": false,
+      "margin": -1.0
+     },
+     "logcosh": {
+      "stat": 0.5874416828155518,
+      "null_p999": 0.5119795799255371,
+      "best": 61,
+      "n_units": 35,
+      "floor": 0.7,
+      "recovered": false,
+      "margin": -0.1125583171844482
+     },
+     "skew": {
+      "stat": 0.5678834319114685,
+      "null_p999": 0.5116792321205139,
+      "best": 26,
+      "n_units": 41,
+      "floor": 0.7,
+      "recovered": false,
+      "margin": -0.13211656808853145
+     },
+     "unscreened": {
+      "cluster": {
+       "stat": 0.09300486618004866,
+       "null_p999": 0.08829032340665251,
+       "best": 14,
+       "n_units": 16,
+       "floor": 0.5,
+       "recovered": false,
+       "margin": -0.40699513381995134
+      },
+      "logcosh": {
+       "stat": 0.5874416828155518,
+       "null_p999": 0.5119795799255371,
+       "best": 61,
+       "n_units": 64,
+       "floor": 0.7,
+       "recovered": false,
+       "margin": -0.1125583171844482
+      },
+      "skew": {
+       "stat": 0.5890202522277832,
+       "null_p999": 0.5116792321205139,
+       "best": 27,
+       "n_units": 64,
+       "floor": 0.7,
+       "recovered": false,
+       "margin": -0.11097974777221675
+      }
+     },
+     "recovered": false,
+     "probe_auroc_context": 0.6911244212096559
+    },
+    "PASS": false
+   },
+   "seconds_control": 86.4
+  }
+ },
+ "PASS": true
+}

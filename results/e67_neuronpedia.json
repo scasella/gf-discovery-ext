@@ -1,0 +1,504 @@
+[
+ {
+  "dict": "resid_post/L13_16k_medium",
+  "source": "13-gemmascope-2-res-16k",
+  "latent": 183,
+  "hfFolderId": "resid_post/layer_13_width_16k_l0_medium",
+  "explanations": [],
+  "pos_str": [
+   " sooner",
+   " everytime",
+   " inconsist",
+   " without",
+   " before",
+   " anytime",
+   " BEFORE",
+   " quicker",
+   " diligently",
+   " faster"
+  ],
+  "neg_str": [
+   " hadir",
+   " \u09a8\u09bf\u09b0\u09cd\u09ae\u09bf\u09a4",
+   " \ub098\ud0c0",
+   "angkat",
+   " \u0432\u043a\u043b\u044e\u0447\u0430",
+   " edilen"
+  ],
+  "frac_nonzero": 0.1003166550289706
+ },
+ {
+  "dict": "resid_post/L13_16k_medium",
+  "source": "13-gemmascope-2-res-16k",
+  "latent": 9200,
+  "hfFolderId": "resid_post/layer_13_width_16k_l0_medium",
+  "explanations": [
+   "adjusting models and responses"
+  ],
+  "pos_str": [
+   "\u0e2a\u0e32\u0e21\u0e32\u0e23\u0e16",
+   " pourra",
+   " apoio",
+   " po\u015bred",
+   " realizzazione",
+   " \u03bc\u03c0\u03bf\u03c1\u03b5\u03af",
+   " pode",
+   " tervez",
+   " mo\u017cli",
+   " prawdopod"
+  ],
+  "neg_str": [
+   " without",
+   " by",
+   " because",
+   " before",
+   " with",
+   " when"
+  ],
+  "frac_nonzero": 0.0002907733411106724
+ },
+ {
+  "dict": "resid_post/L13_16k_medium",
+  "source": "13-gemmascope-2-res-16k",
+  "latent": 10949,
+  "hfFolderId": "resid_post/layer_13_width_16k_l0_medium",
+  "explanations": [
+   "events and states"
+  ],
+  "pos_str": [
+   " zwr\u00f3",
+   " wyst\u0119p",
+   " present\u00f3",
+   " t\u1ea1o",
+   " \u0443\u043a\u0430\u0437\u044b\u0432\u0430\u0435\u0442",
+   " escolher",
+   " escolha",
+   " k\u00f6rnyez",
+   "yecci\u00f3n",
+   " aveva"
+  ],
+  "neg_str": [
+   " by",
+   " in",
+   " for",
+   " throughout",
+   " from",
+   " within"
+  ],
+  "frac_nonzero": 0.001089972495032505
+ },
+ {
+  "dict": "resid_post/L13_16k_medium",
+  "source": "13-gemmascope-2-res-16k",
+  "latent": 559,
+  "hfFolderId": "resid_post/layer_13_width_16k_l0_medium",
+  "explanations": [
+   "describes actions or states"
+  ],
+  "pos_str": [
+   " by",
+   " with",
+   " through",
+   "\u0e94\u0ec9\u0ea7\u0e8d",
+   "\u0e14\u0e49\u0e27\u0e22",
+   " printr",
+   " \u043f\u043e\u0441\u0440\u0435\u0434\u0441\u0442\u0432\u043e\u043c",
+   " into",
+   " via",
+   " b\u1eb1ng"
+  ],
+  "neg_str": [
+   "\u6709\u540d\u306a",
+   "\u3067\u3059\u3088\u306d",
+   "\u304c\u3042\u308a\u307e\u3059\u304c",
+   "\u304c\u591a\u304f",
+   "\u304c\u767a\u751f",
+   "\u306a\u306e\u3067\u3059\u304c"
+  ],
+  "frac_nonzero": 0.02409722767419558
+ },
+ {
+  "dict": "resid_post/L13_16k_medium",
+  "source": "13-gemmascope-2-res-16k",
+  "latent": 136,
+  "hfFolderId": "resid_post/layer_13_width_16k_l0_medium",
+  "explanations": [],
+  "pos_str": [
+   " during",
+   " when",
+   "during",
+   " \u0431\u043b\u0430\u0433\u043e\u0434\u0430\u0440\u044f",
+   "\u1780\u17d2\u1793\u17bb\u1784\u1780\u17b6\u179a",
+   " amidst",
+   " throughout",
+   " through",
+   " DURING",
+   " amid"
+  ],
+  "neg_str": [
+   "\u521a\u597d",
+   " wymien",
+   " biztos",
+   " origen",
+   " \u0437\u0430\u043f\u0440\u0435",
+   " y\u00fczden"
+  ],
+  "frac_nonzero": 0.06244076202830884
+ },
+ {
+  "dict": "resid_post/L13_65k_medium",
+  "source": "13-gemmascope-2-res-65k",
+  "latent": 877,
+  "hfFolderId": "resid_post/layer_13_width_65k_l0_medium",
+  "explanations": [],
+  "pos_str": [
+   " before",
+   " BEFORE",
+   " whenever",
+   " after",
+   " when",
+   " everytime",
+   " voordat",
+   " shortly",
+   " sooner",
+   " AFTER"
+  ],
+  "neg_str": [
+   "\u3002",
+   "\u0964",
+   "\u3002)",
+   " \u043d\u0438\u0445",
+   "\u06d4",
+   " \u043e\u0431\u043b\u0430\u0434\u0430\u0435\u0442"
+  ],
+  "frac_nonzero": 0.08228071524667575
+ },
+ {
+  "dict": "resid_post/L13_65k_medium",
+  "source": "13-gemmascope-2-res-65k",
+  "latent": 28990,
+  "hfFolderId": "resid_post/layer_13_width_65k_l0_medium",
+  "explanations": [
+   "adaptable to interests or needs"
+  ],
+  "pos_str": [
+   " escolher",
+   " nast\u0119pnie",
+   " zwr\u00f3",
+   " oferece",
+   " zp\u016f",
+   " t\u1ea1o",
+   " zawiera",
+   " umo\u017e\u0148uje",
+   " dever\u00e1",
+   " \u0432\u0438\u043a\u043e\u0440\u0438\u0441\u0442\u043e\u0432\u0443"
+  ],
+  "neg_str": [
+   " with",
+   " for",
+   " throughout",
+   " in",
+   " from",
+   " on"
+  ],
+  "frac_nonzero": 0.001866978558546034
+ },
+ {
+  "dict": "resid_post/L13_65k_medium",
+  "source": "13-gemmascope-2-res-65k",
+  "latent": 5125,
+  "hfFolderId": "resid_post/layer_13_width_65k_l0_medium",
+  "explanations": [
+   "IMPORT DE"
+  ],
+  "pos_str": [
+   " B",
+   "ocs\u00e1t",
+   " S",
+   " J",
+   " L",
+   " H",
+   " \u090f\u091c\u0941",
+   " T",
+   " N",
+   " O"
+  ],
+  "neg_str": [
+   " infinitely",
+   " frivolous",
+   " extraneous",
+   " baffling",
+   " finiteness",
+   " warping"
+  ],
+  "frac_nonzero": 1.999998939231514e-07
+ },
+ {
+  "dict": "resid_post/L13_65k_medium",
+  "source": "13-gemmascope-2-res-65k",
+  "latent": 263,
+  "hfFolderId": "resid_post/layer_13_width_65k_l0_medium",
+  "explanations": [],
+  "pos_str": [
+   " during",
+   " without",
+   " autonomously",
+   " freely",
+   " anonymously",
+   " collaboratively",
+   " throughout",
+   " legitimately",
+   "during",
+   " voluntarily"
+  ],
+  "neg_str": [
+   " conferma",
+   "querdo",
+   " encontra",
+   " esquerda",
+   " Gill",
+   " b\u1ed9"
+  ],
+  "frac_nonzero": 0.04925222134508846
+ },
+ {
+  "dict": "resid_post/L13_65k_medium",
+  "source": "13-gemmascope-2-res-65k",
+  "latent": 648,
+  "hfFolderId": "resid_post/layer_13_width_65k_l0_medium",
+  "explanations": [
+   "explaining comments and code"
+  ],
+  "pos_str": [
+   ",",
+   " because",
+   " whereas",
+   " although",
+   "because",
+   " but",
+   "\uff0c",
+   ";",
+   "although",
+   "\u060c"
+  ],
+  "neg_str": [
+   " eventuali",
+   " verbo",
+   " connexes",
+   " futuras",
+   " sebagainya",
+   " editar"
+  ],
+  "frac_nonzero": 0.123181556538566
+ },
+ {
+  "dict": "resid_post/L13_262k_medium",
+  "source": "13-gemmascope-2-res-262k",
+  "latent": 2795,
+  "hfFolderId": "resid_post/layer_13_width_262k_l0_medium",
+  "explanations": [
+   "creating or by means of"
+  ],
+  "pos_str": [
+   " for",
+   " from",
+   " toward",
+   " towards",
+   " into",
+   " against",
+   " to",
+   " with",
+   " in",
+   " on"
+  ],
+  "neg_str": [
+   " valamint",
+   " obecnie",
+   " wymien",
+   " memutuskan",
+   " disebutkan",
+   " posiada"
+  ],
+  "frac_nonzero": 0.04517872802080648
+ },
+ {
+  "dict": "resid_post/L13_262k_medium",
+  "source": "13-gemmascope-2-res-262k",
+  "latent": 5017,
+  "hfFolderId": "resid_post/layer_13_width_262k_l0_medium",
+  "explanations": [
+   "management by"
+  ],
+  "pos_str": [
+   " by",
+   " solely",
+   "by",
+   " oleh",
+   " anew",
+   "bym",
+   " entirely",
+   " in",
+   " differently",
+   " afresh"
+  ],
+  "neg_str": [
+   " marqu\u00e9es",
+   " realiz\u00f3",
+   " svolge",
+   " mantuvo",
+   " come\u00e7",
+   " realiza\u00e7\u00e3o"
+  ],
+  "frac_nonzero": 0.01319419167507601
+ },
+ {
+  "dict": "resid_post/L13_262k_medium",
+  "source": "13-gemmascope-2-res-262k",
+  "latent": 2236,
+  "hfFolderId": "resid_post/layer_13_width_262k_l0_medium",
+  "explanations": [
+   "conjunctions and connectors"
+  ],
+  "pos_str": [
+   " albeit",
+   "\u3068\u3044\u3046\u304b",
+   "\u800c\u4e14",
+   "\u5e76\u4e14",
+   " cramping",
+   " but",
+   " admittedly",
+   " quite",
+   " maybe",
+   " \u0a05\u0a24\u0a47"
+  ],
+  "neg_str": [
+   ")\u060c",
+   "\u0e04\u0e13\u0e30",
+   " N",
+   "inal",
+   "\u2019",
+   ")"
+  ],
+  "frac_nonzero": 0.01351961291180949
+ },
+ {
+  "dict": "resid_post/L13_262k_medium",
+  "source": "13-gemmascope-2-res-262k",
+  "latent": 7055,
+  "hfFolderId": "resid_post/layer_13_width_262k_l0_medium",
+  "explanations": [
+   "when during before"
+  ],
+  "pos_str": [
+   " shortly",
+   " during",
+   " before",
+   "during",
+   " BEFORE",
+   " sejak",
+   " d\u00e8s",
+   " DURING",
+   " after",
+   " selama"
+  ],
+  "neg_str": [
+   "\u0964",
+   " \u0432\u043e\u0437\u043c\u043e\u0436\u043d\u044b\u0445",
+   "\u17d4",
+   " \u03bc\u03c0\u03bf\u03c1\u03b5\u03af",
+   " encontra",
+   "\u06d4"
+  ],
+  "frac_nonzero": 0.04053709731926847
+ },
+ {
+  "dict": "resid_post/L13_262k_medium",
+  "source": "13-gemmascope-2-res-262k",
+  "latent": 8184,
+  "hfFolderId": "resid_post/layer_13_width_262k_l0_medium",
+  "explanations": [
+   "handling data"
+  ],
+  "pos_str": [
+   " into",
+   " onto",
+   " squarely",
+   " INTO",
+   " toe",
+   " naar",
+   "\u1791\u17c5",
+   " sideways",
+   " carefully",
+   " \u0625\u0644\u0649"
+  ],
+  "neg_str": [
+   "\u3002",
+   " \u06a9\u06cc\u0627\u06d4",
+   "\u0964",
+   " mantiene",
+   " \u0441\u043c\u043e\u0436\u0435\u0442",
+   ")\uff0c"
+  ],
+  "frac_nonzero": 0.01662270636834311
+ },
+ {
+  "dict": "resid_post/L13_262k_medium",
+  "source": "13-gemmascope-2-res-262k",
+  "latent": 43548,
+  "hfFolderId": "resid_post/layer_13_width_262k_l0_medium",
+  "explanations": [
+   "MarketWatch links and analysis"
+  ],
+  "pos_str": [
+   "owlapi",
+   "nomenclature",
+   "wpilibj",
+   "sigmaf",
+   "variation",
+   "notlocked",
+   "zigzag",
+   "classteacher",
+   "homotopic",
+   "<unused298>"
+  ],
+  "neg_str": [
+   " S",
+   " \u30b7\u30eb\u30d0\u30fc",
+   " \u30e1\u30f3\u30ba",
+   " \u30d6\u30e9\u30c3\u30af",
+   " \u30cd\u30a4\u30d3\u30fc",
+   " Inggris"
+  ],
+  "frac_nonzero": 4.079997918173546e-06
+ },
+ {
+  "dict": "resid_post/L13_262k_medium",
+  "source": "13-gemmascope-2-res-262k",
+  "latent": 5019,
+  "hfFolderId": "resid_post/layer_13_width_262k_l0_medium",
+  "explanations": [
+   "code, name, key, copy"
+  ],
+  "pos_str": [
+   ",",
+   ";",
+   "\u060c",
+   "\uff0c",
+   " because",
+   "\u200b,",
+   ";,",
+   "although",
+   ".,",
+   "because"
+  ],
+  "neg_str": [
+   " titulo",
+   " puedan",
+   " obtuvo",
+   " parametros",
+   " sebagainya",
+   " \u0928\u093f\u091a\u0947"
+  ],
+  "frac_nonzero": 0.1153916891351044
+ }
+]

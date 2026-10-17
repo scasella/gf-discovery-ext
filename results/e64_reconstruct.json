@@ -1,0 +1,47 @@
+{
+ "layers": {
+  "7": {
+   "consistency": {
+    "fit_vs_e63": 0.0,
+    "apply_vs_fit": 0.0
+   },
+   "kinds": {
+    "logcosh": {
+     "min_r2_screened": 0.9999999999999634,
+     "min_r2_all": 0.9999999999999634,
+     "n_screened": 35
+    },
+    "skew": {
+     "min_r2_screened": 0.9999999999999669,
+     "min_r2_all": 0.9999999999999669,
+     "n_screened": 30
+    }
+   },
+   "accepted": true,
+   "maps_sha256": "1b0c38ab872bb55f8c1af5127267ef3123dc4d743bd7d6c51db23db49e0b4faf",
+   "seconds": 10
+  },
+  "12": {
+   "consistency": {
+    "fit_vs_e63": 0.0,
+    "apply_vs_fit": 0.0
+   },
+   "kinds": {
+    "logcosh": {
+     "min_r2_screened": 0.9999999999999611,
+     "min_r2_all": 0.9999999999999611,
+     "n_screened": 36
+    },
+    "skew": {
+     "min_r2_screened": 0.9999999999999619,
+     "min_r2_all": 0.9999999999999619,
+     "n_screened": 42
+    }
+   },
+   "accepted": true,
+   "maps_sha256": "ac1b55b2eee03594b2d9f512632db2e9980e2446d051560d950ade8726200237",
+   "seconds": 9
+  }
+ },
+ "accepted": true
+}

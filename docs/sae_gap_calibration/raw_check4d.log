@@ -1,0 +1,51 @@
+bf16 noise/eigenvalue at PC {64: 5.327584588177943e-06, 256: 7.753947556118178e-06, 512: 1.1989696582081033e-05, 768: 2.1551330459149164e-05, 1024: 3.919898015309849e-05}
+random ES p50/p99/p99.9 [0.50478265 0.52948797 0.53883833]
+rep 27.862300157546997
+ica 167.2483513355255 n_iter 325
+/Users/scasella/Downloads/gf-discovery-ext/.venv/lib/python3.13/site-packages/sklearn/decomposition/_fastica.py:132: ConvergenceWarning: FastICA did not converge. Consider increasing tolerance or the maximum number of iterations.
+  warnings.warn(
+/Users/scasella/Downloads/gf-discovery-ext/.venv/lib/python3.13/site-packages/sklearn/decomposition/_fastica.py:132: ConvergenceWarning: FastICA did not converge. Consider increasing tolerance or the maximum number of iterations.
+  warnings.warn(
+halves 384.329466342926 [400, 400]
+{
+ "repro_median": 0.5383429527282715,
+ "n_repro_ge_0p8": 283,
+ "n_ES_thr_repro": 11,
+ "n_ES_thr_repro_screens": 11,
+ "paren_best_repro": 0.7355645895004272,
+ "quote_best_repro": 0.9544386863708496,
+ "screened_paren": 0.5374206152731121,
+ "screened_quote": 0.7465482691517545,
+ "K": 1024,
+ "rand_es_p999": 0.538838325870237,
+ "n_ES_ge_thr": 337,
+ "n_ES_ge_thr_and_eta": 334,
+ "n_iter": 325,
+ "ES_quantiles": {
+  "10": 0.3884498804253237,
+  "50": 0.49959469467924794,
+  "90": 0.6249326076736329,
+  "99": 0.6468513359083029
+ },
+ "n_ES_ge_0p5": 509,
+ "paren_best": {
+  "auroc": 0.807200880880855,
+  "ES": 0.3131364557112517
+ },
+ "quote_best": {
+  "auroc": 0.7465482691517545,
+  "ES": 0.2395129917335993
+ },
+ "eta2sq_max": 0.7569369911795106,
+ "n_eta2sq_gt_0p3": 20,
+ "among_ES_ge_0p5": {
+  "n": 509,
+  "n_absy_L0_r_gt_0p3": 0,
+  "n_absy_errnorm_r_gt_0p3": 0,
+  "median_exkurt": 7.159101486206055,
+  "max_paren": 0.5750882614776944,
+  "max_quote": 0.5557686464873349
+ },
+ "all_median_exkurt": 12.975481033325195,
+ "seconds": 431
+}

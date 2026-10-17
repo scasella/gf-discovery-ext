@@ -1,0 +1,14 @@
+e69 sha256 ef1f04dd47dc92437040885ef52bde25d260c0134b5a93fe9303f88caff69bc5
+[54s] S2: screened [0, 1, 2, 5, 6, 7]; eig top4 [0.492, 0.45, 0.423, 0.38] vs D2 [0.229, 0.214, 0.208, 0.199]
+[56s] predictability {0: 0.04, 1: 0.035, 2: 0.024}
+[79s] bag W=8 {0: {'ridge': 0.00971292255905376, 'mlp': -0.0633168422936019}, 1: {'ridge': 0.0073092606138031035, 'mlp': -0.10444115884006622}, 2: {'ridge': 0.009019447272105019, 'mlp': -0.021565558427619314}}
+[99s] bag W=16 {0: {'ridge': 0.022896522553608634, 'mlp': -0.12023607339555964}, 1: {'ridge': 0.0055795198474959395, 'mlp': -0.14470715002397805}, 2: {'ridge': 0.015064881754142445, 'mlp': -0.12091734239813401}}
+[120s] bag W=32 {0: {'ridge': 0.03970069745050675, 'mlp': -0.18494784466429137}, 1: {'ridge': 0.0026259852290844155, 'mlp': -0.16894938088759548}, 2: {'ridge': 0.01151886582384376, 'mlp': -0.1510170986145949}}
+[145s] bag W=64 {0: {'ridge': 0.03122624776543681, 'mlp': -0.19388137187669807}, 1: {'ridge': -0.003218085330896736, 'mlp': -0.32249476435226754}, 2: {'ridge': 0.005208181878528784, 'mlp': -0.13360890145089033}}
+[174s] sub-threshold big {'unit/0': (0.105, 0.011), 'unit/1': (0.103, 0.039), 'unit/2': (0.093, 0.044)}
+[199s] sub-threshold small {'unit/0': (0.166, 0.078), 'unit/1': (0.118, 0.098), 'unit/2': (0.123, 0.079)}
+HASHES += 05dcc30f7bd5009e149649e64fbebdc24f404744e92e60ea8783d7d424d66530  results/e69_pilot.json (e69 SAE-gap pilot P2/P3: decision GO, 2026-10-15T22:07:11)
+unit 0: generic_a cos 0.233 | generic_b ratio 0.51 | predictability max|rho| 0.040 | bag max R2 0.040 | removed by ['generic_b']
+unit 1: generic_a cos 0.155 | generic_b ratio 0.46 | predictability max|rho| 0.035 | bag max R2 0.007 | removed by []
+unit 2: generic_a cos 0.158 | generic_b ratio 0.46 | predictability max|rho| 0.024 | bag max R2 0.015 | removed by []
+[204s] DECISION GO; survivors [1, 2]

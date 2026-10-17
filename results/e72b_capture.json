@@ -1,0 +1,92 @@
+{
+ "note_sha256": "1e6a5903d48d1fd18745f0687bc54e54df12f02704c3979d3a4cef8e18f5f17a",
+ "script_sha256": "55c4c3fa19d6d1a39bf76b9157428f195c91e2775297101d399d8e60f2911e02",
+ "synthetic": false,
+ "drift": {
+  "n_seq": 32,
+  "n_rows": 6555,
+  "share_identical": 1.0,
+  "max_abs_diff": 0.0,
+  "min_coord_corr": 1.0
+ },
+ "same_sequence_counts": {
+  "S2b1_vs_D2": 0,
+  "S2b1_vs_S2": 0,
+  "S2b2_vs_D2": 0,
+  "S2b2_vs_S2": 0,
+  "S2b2_vs_S2b1": 0,
+  "S2b3_vs_D2": 0,
+  "S2b3_vs_S2": 0,
+  "S2b3_vs_S2b1": 0,
+  "S2b3_vs_S2b2": 0,
+  "S2b4_vs_D2": 0,
+  "S2b4_vs_S2": 0,
+  "S2b4_vs_S2b1": 0,
+  "S2b4_vs_S2b2": 0,
+  "S2b4_vs_S2b3": 0,
+  "S2b5_vs_D2": 0,
+  "S2b5_vs_S2": 0,
+  "S2b5_vs_S2b1": 0,
+  "S2b5_vs_S2b2": 0,
+  "S2b5_vs_S2b3": 0,
+  "S2b5_vs_S2b4": 0
+ },
+ "shuffles": {
+  "occS2b1": {
+   "k": 1,
+   "seed_first": 711000,
+   "seed_last": 711999,
+   "seed_rand": 7211,
+   "n_rows": 202843,
+   "meta": "cache/occ/occS2b1_meta.npz",
+   "meta_sha256": "8f1b4b80c45a29182b002754006f30762990d96c37cc4187fb9ff2fee433a9a2",
+   "rows": "results/e72b_S2b1_raw_L12_rows.npy",
+   "rows_sha256": "de81b9f037c9280ed37e75caa381d0e19f817e5a36c4be20c00a626aa764e003"
+  },
+  "occS2b2": {
+   "k": 2,
+   "seed_first": 721000,
+   "seed_last": 721999,
+   "seed_rand": 7212,
+   "n_rows": 202815,
+   "meta": "cache/occ/occS2b2_meta.npz",
+   "meta_sha256": "4d934643d1fe8e25daefffa195088f858376b68833c0a5796ac392a7b491e957",
+   "rows": "results/e72b_S2b2_raw_L12_rows.npy",
+   "rows_sha256": "3618b8acd46dd2ef9b28d2d56afba26fd3274c64289b7a5b5f455f7f1599b695"
+  },
+  "occS2b3": {
+   "k": 3,
+   "seed_first": 731000,
+   "seed_last": 731999,
+   "seed_rand": 7213,
+   "n_rows": 202839,
+   "meta": "cache/occ/occS2b3_meta.npz",
+   "meta_sha256": "3277c7043a7eab8b2731608ecac79f7f291e49d8525944f23148e455098452f9",
+   "rows": "results/e72b_S2b3_raw_L12_rows.npy",
+   "rows_sha256": "66c2d7c5eba224c26fcb131043f24fd9a5ed0e6f3748b1d4dc4b8fa1a6df10dd"
+  },
+  "occS2b4": {
+   "k": 4,
+   "seed_first": 741000,
+   "seed_last": 741999,
+   "seed_rand": 7214,
+   "n_rows": 202818,
+   "meta": "cache/occ/occS2b4_meta.npz",
+   "meta_sha256": "41fbb8556cd274348f1472d2c89428d7036aedd7db663d1c24743fb9568e2809",
+   "rows": "results/e72b_S2b4_raw_L12_rows.npy",
+   "rows_sha256": "424e450d05ab5cad042d7d869bca65e75aa090c6b8438c089d900eb4d47708cd"
+  },
+  "occS2b5": {
+   "k": 5,
+   "seed_first": 751000,
+   "seed_last": 751999,
+   "seed_rand": 7215,
+   "n_rows": 202870,
+   "meta": "cache/occ/occS2b5_meta.npz",
+   "meta_sha256": "7ab513111e171a7bf11877e5d3bf8b092bec8714b723763abb180992b18a7442",
+   "rows": "results/e72b_S2b5_raw_L12_rows.npy",
+   "rows_sha256": "5c6f0acc3a55965cd61a7bebf6c747014e7af936356357e9c633e3dc438afaa6"
+  }
+ },
+ "seconds": 472
+}

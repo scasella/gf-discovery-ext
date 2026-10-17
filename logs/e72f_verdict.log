@@ -1,0 +1,4 @@
+e72f sha256 825ac723e33c724b7731a62518f06dbea3e366b32802d44d4190bb4193de6014
+HASHES += ce84974593852e0c9a19903a0b7588e8869dce96f6766f7507d2bd9ce4d8f661  results/e72f_verdict.json (e72f verdict (prereg sections 8-9; amends nothing), 2026-10-16T22:06:31)
+HEADLINE INCONCLUSIVE
+exit 0

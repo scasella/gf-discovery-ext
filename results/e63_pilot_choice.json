@@ -1,0 +1,39 @@
+{
+ "units": {
+  "K": 16,
+  "N_logcosh": 64,
+  "N_skew": 64,
+  "tdi_cap": 3.0,
+  "cluster_repro": 0.8,
+  "ica_repro": 0.8,
+  "bimodality": false
+ },
+ "n_layers_recovered_on_P2": 2,
+ "note": null,
+ "whitening": {
+  "7": {
+   "setting": "tw_N32_n16",
+   "N_MIN": 32,
+   "n0": 16,
+   "probe_paren": 0.7528033251716196,
+   "auc_floor": 0.7,
+   "guard": 0.7446839395604136
+  },
+  "12": {
+   "setting": "tw_N32_n16",
+   "N_MIN": 32,
+   "n0": 16,
+   "probe_paren": 0.7336484231602363,
+   "auc_floor": 0.7,
+   "guard": 0.7212257361708304
+  },
+  "24": {
+   "setting": "tw_N32_n16",
+   "N_MIN": 32,
+   "n0": 16,
+   "probe_paren": 0.6527288320748261,
+   "auc_floor": 0.7,
+   "guard": 0.640961963279755
+  }
+ }
+}

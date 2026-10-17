@@ -1,0 +1,49 @@
+{
+ "n_named_v1battery": 64,
+ "n_unnamed": 128,
+ "named_by": {
+  "after_digit": 29,
+  "next_continuation": 13,
+  "next_newline": 12,
+  "word_continuation": 8,
+  "paren_inside": 6,
+  "next_punct": 4,
+  "quote_inside": 2,
+  "list_item": 2,
+  "in_url": 2,
+  "prev_punct": 2,
+  "after_newline": 1,
+  "prev_capitalised": 1,
+  "bracket_inside": 0,
+  "line_pos": 0,
+  "sent_pos": 0,
+  "after_colon": 0,
+  "in_caps_run": 0,
+  "code_markup": 0
+ },
+ "tail_readability_q": [
+  0.580851799249649,
+  0.6106956303119659,
+  0.656386524438858,
+  0.6920024752616882,
+  0.7552368581295014
+ ],
+ "n_read_ge_075": 22,
+ "n_read_ge_070": 46,
+ "unnamed_read_lt_070": 97,
+ "controls_readability": {
+  "paren#146": 0.7683923840522766,
+  "quote#128": 0.848631739616394
+ },
+ "controls_named": {
+  "paren#146": [
+   "paren_inside",
+   "after_digit",
+   "word_continuation",
+   "next_punct"
+  ],
+  "quote#128": [
+   "quote_inside"
+  ]
+ }
+}

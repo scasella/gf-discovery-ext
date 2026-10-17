@@ -1,0 +1,5 @@
+K=64 done in 29s
+K=128 done in 29s
+K=256 done in 32s
+recovering combinations: 0
+best paren row: {"K": 64, "tdi_cap": 3.0, "cluster_repro": 0.8, "ica_bimod": 0.0, "ica_repro": 0.0, "n_clusters_screened": 1, "n_ica_screened": 32, "paren_inside": {"max_f1": 0.036526344626061545, "null_p999_f1": 0.04054424253492832, "max_auroc": 0.6901777100216012, "null_p999_auroc": 0.5265863295828437, "recovered": false}, "quote_inside": {"max_f1": 0.026525198938992044, "null_p999_f1": 0.043117670297420856, "max_auroc": 0.6413677325585223, "null_p999_auroc": 0.5170481059580025, "recovered": false}}

@@ -1,0 +1,6 @@
+Loading weights:   0%|          | 0/340 [00:00<?, ?it/s]Loading weights: 100%|██████████| 340/340 [00:00<00:00, 8853.47it/s]
+  16/1000 seq  3s
+  336/1000 seq  64s
+  656/1000 seq  124s
+  976/1000 seq  185s
+done occR2 in 190s
