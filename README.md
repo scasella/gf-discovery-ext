@@ -5,9 +5,12 @@ autoencoders (SAEs) as the reference. Claude Opus 5.5 agents designed it, ran it
 on one M4 Pro MacBook Pro (24 GB, Apple MPS). The write-up is at
 <https://casella.dev/blog_gemma_blind_search.html>.
 
-**What it found, in three lines** (details and every source in `SUMMARY.md`):
-- The v2 instrument recovers parenthesis and quotation state without labels: |AUROC| 0.779 (L7) and 0.736 (L12) for
-  paren, 0.747 (L12) for quote, against a token-matched null p99.9 of about 0.52 (`results/e63_occurrence_v2.json`).
+**What it found, in three lines** (details and every source in `SUMMARY.md`; read its
+[correction of 2026-10-24](SUMMARY.md) at the top first):
+- The v2 instrument recovers parenthesis and quotation state from units extracted without labels: |AUROC| 0.779 (L7)
+  and 0.736 (L12) for paren, 0.747 (L12) for quote, against a token-matched null p99.9 of about 0.52
+  (`results/e63_occurrence_v2.json`). The settings were tuned with parenthesis labels on calibration block P2, so
+  quotation is the untuned control.
 - One L12 direction (logcosh #13 / skew #16) passed a preregistered steering test on untouched text: Δ 1.49, against a
   random-direction max of 0.75 and a shuffled-signature max of 0.85 (`results/e66_confirm.json`).
 - Gemma Scope 2 already covers that direction as a blend of subordinator and preposition latents (`results/e67_*`). No

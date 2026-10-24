@@ -35,6 +35,8 @@ search. Everything ran locally (M4 Pro, 24 GB, MPS), with no cloud spend.
 
 *Addendum (2026-10-17): a **coverage-test admission at L12 (e73)** (final section) tried to build the missing positive control for "uncovered" by knocking out the dictionary's own paren and quote latents, on burned D2 rows only (CPU, rubric hashed before any number). **No coverage test is admitted** for L12 16k l0_big or l0_small. Error share (T-ES) and marginal gain (T-MG) both fail on the paren control, and the geometry-only dummy (T-COS) fails too, so the rule set held. Even with 1,015 near-duplicate latents removed (l0_big), the knockout never makes paren uncovered. By the frozen stop rule, and with the user's acceptance, the "adds to the dictionary" and "not a blend" rungs (R5 and R6) close at L12 for the 16k family. 4B stays deferred. Nothing is amended.*
 
+*Correction (2026-10-24), to two readings and one figure in this report. (1) **The e66 false-pass bound of ≤ 1/77 is a rank bound, not the probability that the confirmed family is a false pass.** It is the preregistered bound of `PREREG_occurrence_v2_steering.md` §9, restated in `PREREG_occurrence_v2_confirm.md` §6, and it holds only under the exchangeability nulls stated there: absent a specific effect, the direction's push moves its signature like any of the 99 random pushes, or its signature responds like any of the 76 other signatures. Neither the direction nor its signature was assigned at random, so randomisation does not establish either null. The family was also selected from L12's 31 candidates by its B3 and B4 passes on the same rig, and under the prereg's stable-rank null a unit that has passed twice is more likely to pass again. The evidence is the margin over the controls on block C: Δ 1.49 against a random-direction maximum of 0.75 (median about −0.04) and a shuffled-signature maximum of 0.85. (2) **"Isolates known in-context variables blindly"** (Stage 4 v2, Reading) means the units are extracted without labels. The instrument's settings were chosen with parenthesis labels on calibration block P2 (corpus 13,000–13,999), as that section's design and caveats record, so parenthesis state is a tuned target and quotation, never used in any choice, is the untuned control. (3) **The e66 block-C table gave logcosh #13's Δ at c = 4 as 2.89.** `results/e66_confirm.json` gives 2.8846, so the cell now reads 2.88; this is the only figure changed in place. The write-up at <https://casella.dev/blog_gemma_blind_search.html> gives the same account. No verdict is amended.*
+
 ---
 
 ## Stage 0 — budget, SAEs, corpus
@@ -845,7 +847,9 @@ with base rates) are in `results/e63_occurrence_v2.json` → `positive_control.<
 
 ### Reading
 
-1. **The v2 instrument isolates known in-context variables blindly.**
+1. **The v2 instrument isolates known in-context variables blindly.** (Corrected 2026-10-24, see
+   the top of this report: the units are extracted without labels, but the settings were tuned
+   with parenthesis labels on P2; quotation is the untuned control.)
    - The representation removes token identity from the first moment and largely from the
      second. Full-rank ICA then returns reproducible, identity-screened directions.
    - Among those directions, two at L7 and two at L12 (one per ICA contrast) track
@@ -1307,12 +1311,14 @@ excess rule is met.
 | unit | Δ at c\* (c = 0.5 / 1 / 2 / 4) | random max | SIG max (n = 76) | sign consistency | dose vs e64 push | PASS |
 |---|---|---|---|---|---|---|
 | anchor: logcosh #33 (quote) | 0.19 / 0.41 / **0.84** / 1.64 | 0.48 (1.76×) | 0.51 (1.65×) | 0.8–0.9 | 3.65× | **yes** |
-| **primary: logcosh #13** | 0.28 / 0.63 / **1.49** / 2.89 | 0.75 (**1.99×**) | 0.85 (**1.76×**) | 0.95–1.0 | 3.07× | **yes** |
+| **primary: logcosh #13** | 0.28 / 0.63 / **1.49** / 2.88 | 0.75 (**1.99×**) | 0.85 (**1.76×**) | 0.95–1.0 | 3.07× | **yes** |
 | secondary: skew #16 | 0.28 / 0.64 / **1.38** / 2.17 | 0.72 (1.90×) | 1.03 (1.34×) | 0.95–1.0 | 3.50× | **yes** |
 
 **Verdict: CONFIRMED**, and the family as a whole is confirmed: both members pass.
 - **The bound.** The per-test false-pass bound is ≤ 1/77 ≈ 0.013. It is conservative, given the
-  earlier B3/B4 passes.
+  earlier B3/B4 passes. (Corrected 2026-10-24, see the top of this report: this is a rank bound
+  under exchangeability nulls, and the family was selected by those B3/B4 passes, so it is not
+  the probability that the family is a false pass.)
 - **What the family now has.** It is the first unit in this project to clear all three of e64's
   tiers with tier 2 confirmed out of sample:
   - battery-unnamed;
