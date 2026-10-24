@@ -13,10 +13,12 @@ Nothing here amends a verdict.*
 
 *Pointer (2026-10-17): the e73 coverage-test admission (REPORT.md, final section) tried to manufacture a positive control for "uncovered" by knocking out L12 16k latents for paren and quote, on burned D2 rows (CPU only). No test is admitted for l0_big or l0_small: error share and marginal gain fail on the paren control (first failures: rule 2 for error share on l0_big, rule 1 otherwise), and the geometry-only dummy fails as required. On l0_big, a probe still recovers paren from the reconstruction after the largest knockout (0.664, against a chance band topping out near 0.52), so the knockout never made paren uncovered. With the user's acceptance, R5/R6 are closed at L12 for the 16k family. This answers SUMMARY §7's open item for now: no usable "not a blend" criterion exists at 1B with these dictionaries. Nothing is amended.*
 
+*Correction (2026-10-24), to two readings in this summary and one figure in REPORT.md. (1) The e66 false-pass bound of ≤ 1/77 (§3) is the preregistered rank bound (`PREREG_occurrence_v2_steering.md` §9, restated in `PREREG_occurrence_v2_confirm.md` §6). It holds only under the exchangeability nulls stated there: absent a specific effect, the direction's push moves its signature like any of the 99 random pushes, or its signature responds like any of the 76 other signatures. Neither the direction nor its signature was assigned at random, so randomisation does not establish either null. The family was also selected from the 31 L12 candidates by its B3 and B4 passes on the same rig, and under the prereg's stable-rank null a unit that has passed twice is more likely to pass again. So 1/77 is not the probability that this family is a false pass. The evidence is the margin over the controls: Δ 1.49 against a random-direction maximum of 0.75 (median about −0.04) and a shuffled-signature maximum of 0.85. (2) "Recovers known in-context state blindly" (headline 1) means the units are extracted without labels. The instrument's settings were chosen with parenthesis labels on calibration block P2 (corpus 13,000–13,999), so parenthesis state is a tuned target and quotation, never used in any choice, is the untuned control. (3) REPORT.md's e66 table gave logcosh #13's Δ at c = 4 as 2.89; `results/e66_confirm.json` gives 2.8846, so the table now reads 2.88. The write-up at <https://casella.dev/blog_gemma_blind_search.html> gives the same account. No verdict is amended.*
+
 ## Headline: a methods result, not a discovery
 
 1. **A validated, identity-removed per-occurrence instrument.**
-   - Per-type covariance whitening followed by full-rank ICA-64 recovers known in-context state blindly at L7 and L12.
+   - Per-type covariance whitening followed by full-rank ICA-64 recovers known in-context state blindly at L7 and L12. (Units are extracted without labels, but the settings were tuned with parenthesis labels on P2; see the 2026-10-24 correction above.)
    - Parenthesis state reaches |AUROC| 0.779 (L7) and 0.736 (L12), and the untuned quote control 0.747 (L12). The token-matched null p99.9 is about 0.52 and the preregistered floor 0.70. [S4v2]
 2. **One direction was confirmed out of sample, and then found COVERED as a blend.**
    - The L12 family logcosh #13 / skew #16 passed a preregistered steering test on untouched contexts: Δ 1.49, against a random-direction maximum of 0.75 and a shuffled-signature maximum of 0.85. [e66]
@@ -101,7 +103,7 @@ No unnamed structure is claimed at 1B scale.
 | **primary logcosh #13** | **1.49** | 0.75 | 0.85 | **yes** |
 | skew #16 | 1.38 | 0.72 | 1.03 | yes |
 
-- The per-test false-pass bound is ≤ 1/77 ≈ 0.013. [e66]
+- The per-test false-pass bound is ≤ 1/77 ≈ 0.013. [e66] (A rank bound under exchangeability nulls, not the probability that this family is a false pass; see the 2026-10-24 correction above.)
 - **Described after the fact:** pushing the direction promotes adjunct openers (*during, because, while, before*; *with, through, from*) by 2–2.6 nats. Pulling it closes the clause or line. [e66]
 
 **Prior-feature check, e67: COVERED.** [e67]
